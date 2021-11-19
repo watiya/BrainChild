@@ -16,8 +16,15 @@
  *		#Misc
  */
 
- @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 400;
+    src: local('http://brainchild.kr/fonts/'),
+        url('NanumSquareR.woff2') format('woff2'), 
+        url('NanumSquareR.woff') format('woff'),
+        url('NanumSquareR.ttf') format('truetype'),
+        url('NanumSquareR.eot') format('embedded-opentype');
 }
 
 /* ==========================================================================
@@ -241,8 +248,7 @@
 	pre { 
 		-webkit-border-radius: 3px;
 			    border-radius: 3px;	
-		font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-		
+		font-family: Monaco, Menlo, Consolas, "Courier New", monospace;			
 	}
 	
 	code { 
