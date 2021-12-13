@@ -22,12 +22,12 @@ a {
   padding: 0 2em;
 }
 
-.et-hero-tabs .img {
+.et-hero-tabs .logo {
   min-width: 50%;
   padding-bottom: 20px;
 }
 
-.et-main .img {
+.et-main .logo {
   min-width: 50%;
   padding-bottom: 60px;
 }
@@ -70,6 +70,7 @@ a {
   font-weight: 400;
   letter-spacing: 0.1rem;
 }
+
 .et-main .btn {
   color: #fff;
   font-size: 1.2rem;
@@ -82,8 +83,9 @@ a {
   align-items: center;
   justify-content: center;
   transition: all .4s ease-in-out;
-  margin-top: 40px;
+  margin: 40px 10px 0 0;
 }
+
 .et-main .btn:hover {
   color: #fff;
   font-size: 1.2rem;
@@ -91,6 +93,15 @@ a {
   background: #5666E6;
   border: solid 1px #5666E6;
 }
+
+.et-main .btn2 {
+  position: relative;
+  height: 60px;
+  min-width: 200px;
+  display: inline-flex;
+  margin: 40px 10px 0 0;
+}
+
 
 .et-hero-tabs-container {
   display: flex;
