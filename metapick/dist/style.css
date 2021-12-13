@@ -1,12 +1,16 @@
 
 
 body {
+  padding: 0px; margin: 0px; 
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
+
 
 a {
   text-decoration: none;
 }
+
+video { width: 100%; }
 
 .et-hero-tabs,
 .et-slide {
@@ -19,7 +23,13 @@ a {
   background-image: url(../dist/img/slide_1.jpg); 
   background-size: cover;
   text-align: center;
-  padding: 0 2em;
+  padding: 0;
+}
+
+.et-hero-tabs .main {
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }
 
 .et-hero-tabs .logo {
@@ -114,6 +124,7 @@ a {
   background: #5666E6;
   z-index: 10;
 }
+
 .et-hero-tabs-container--top {
   position: fixed;
   top: 0;
