@@ -1,0 +1,287 @@
+// Search Input
+.input-container {
+    position: relative;
+    width: 562px;
+    height: 40px;
+
+    .input-field {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #e0e0e0;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 12px 75px 12px 16px;
+        color: #424242;
+        caret-color: #2196f3;
+        outline: unset;
+        font-size: 14px;
+
+        &::placeholder {
+            color: #bdbdbd;
+        }
+
+        &:hover {}
+
+        &:focus {
+            border: 1px solid #2196f3;
+            box-shadow: 0 0 2px 0 rgba(33, 150, 243, 0.5);
+        }
+
+        &:disabled {
+            color: #e0e0e0;
+            background-color: #f5f5f5;
+        }
+    }
+
+    .input-unit {
+        position: absolute;
+        right: 20px;
+        top: 25%;
+        pointer-events: none;
+    }
+
+    .input-note {
+        font-size: 12px;
+        color: #424242;
+        width: 100%;
+        display: block;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    small {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        color: #bdbdbd;
+        font-size: 12px;
+        text-align: right;
+    }
+
+    &.input-line {
+        .input-field {
+            border: none;
+            border-bottom: 1px solid $primary-1;
+        }
+
+        &.black {
+            .input-field {
+                border: none;
+                border-bottom: 1px solid $black;
+            }
+        }
+    }
+
+    &.input-focused {
+        small {
+            span {
+                color: #2196f3;
+            }
+        }
+    }
+
+    &.with-textarea {
+        height: 140px;
+
+        .input-field {
+            padding: 12px 16px 36px 16px;
+            box-sizing: border-box;
+            resize: none;
+            @include scrollbar;
+
+            &:disabled {
+                color: #e0e0e0;
+                background-color: #f5f5f5;
+            }
+        }
+
+        .max-display {
+            top: unset;
+            padding: 3px;
+            bottom: 10px;
+            width: 75px;
+            background-color: #fff;
+
+            span {
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+            }
+        }
+    }
+
+    &.with-info {
+        height: auto;
+
+        .input-field {
+            margin-bottom: 8px;
+        }
+
+        .info-content {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+
+            span {
+                width: 100%;
+                font-size: 12px;
+                color: #bdbdbd;
+            }
+
+        }
+    }
+
+    &.with-error {
+        height: auto;
+
+        .input-field {
+            border: 1px solid #f44336;
+            box-shadow: 0 0 2px 0 rgba(244, 67, 54, 0.5);
+            margin-bottom: 8px;
+            caret-color: #f44336;
+        }
+
+        .error-content {
+            width: 100%;
+            font-size: 12px;
+            color: #f44336;
+        }
+
+        &.input-focused {
+            small {
+                span {
+                    color: #f44336;
+                }
+            }
+        }
+    }
+}
+
+// Search Input Container 
+.search-input-container {
+    border: 0px;
+    width: 300px;
+    height: 40px;
+    position: relative;
+
+    &.line-36 {
+        height: 36px;
+    }
+
+    .ui-autocomplete-input,
+    .search-field {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #e0e0e0;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 12px 65px 12px 16px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        background-image: url('/static/icons/search-gray.svg');
+        color: #424242;
+        caret-color: #2196f3;
+
+        &:hover {
+            background-image: url('/static/icons/search.svg');
+            outline: none;
+        }
+
+        &:focus {
+            outline: none;
+            background-image: url('/static/icons/search-gray.svg');
+        }
+
+        &::placeholder {
+            color: #bdbdbd;
+        }
+    }
+
+    @include typography('.search-field', 14px);
+
+    .search-field-clear {
+        display: none;
+        position: absolute;
+        border: 0px;
+        top: 14px;
+        right: 40px;
+        width: 14px;
+        height: 14px;
+        outline: none;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: center;
+        background-image: url('/static/icons/close-circle.svg');
+
+        &.show {
+            display: block;
+        }
+    }
+
+    &.open {
+        .search-field-clear {
+            display: block;
+        }
+
+        .search-field {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+    }
+
+
+    &.line-container {
+
+        .ui-autocomplete-input,
+        .search-field {
+            border-radius: 0px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 1px solid #2196f3;
+            background-image: url('/static/icons/search-blue.svg');
+            padding-left: 0px;
+
+            &:focus,
+            &:hover {
+                background-image: url('/static/icons/search-blue.svg');
+            }
+        }
+    }
+}
+
+// Search results
+.ui-autocomplete {
+    padding: 12px 0 10px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 1px solid #e0e0e0 !important;
+    border-top: 0px !important;
+    margin-top: -1px;
+
+    .ui-menu-item {
+
+        .ui-menu-item-wrapper {
+            font-size: 13px;
+            color: #424242;
+            height: 36px;
+            padding: 10px 16px;
+            border: 0px !important;
+            outline: 0px !important;
+            box-shadow: unset !important;
+            margin: 0px;
+
+            &.ui-state-active {
+                border: 1px solid #003eff;
+                font-weight: normal;
+                background-color: #f5f5f5;
+
+            }
+        }
+    }
+
+}

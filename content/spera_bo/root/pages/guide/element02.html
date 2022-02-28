@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" class="spera-production">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, 
+    user-scalable=no, shrink-to-fit=yes">
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SPERA Style Guide" />
+    <meta property="og:description" content="SPERA Style Guide" />
+    <meta property="og:image" content="#" />
+    <title>Spera Style Guide | UI Element 02</title>
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../../static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/plugins/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../static/plugins/fastselect/fastselect.min.css">
+    <link rel="stylesheet" href="../../static/plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/plugins/toastr/css/toastr.min.css">
+    <link rel="stylesheet" href="../../static/plugins/dropzone/css/dropzone.min.css">
+    <link rel="stylesheet" href="../../static/plugins/pickr/css/nano.min.css">
+    <link rel="stylesheet" href="../../static/plugins/datepicker/css/datepicker.min.css">
+    <link rel="stylesheet" href="../../static/plugins/daterangepicker/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/plugins/nestable/css/nestable.css">
+    <link rel="stylesheet" href="../../static/plugins/chartist/css/chartist.min.css">
+<link href="../../static/css/app.css" rel="stylesheet"></head>
+<body>
+    <!-- Start of GNB -->
+    <header class="navbar gnb">
+        <div class="container-fluid">
+    
+            <!-- Start of Left Content -->
+            <div class="navbar-wrapper">
+                <a class="navbar-brand" href="../backoffice/account-management.html">SPERA STYLE GUIDE</a>
+    
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Components</a>
+                    </li>
+                
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Left Content -->
+            
+        </div>
+    
+    </header>
+    <!-- END of GNB -->
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        <!-- Start of LNB -->
+        <aside class="lnb">
+        
+            <!-- Navigation Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./element01.html">UI Elements 01</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./element02.html">UI Elements 02</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./element03.html">UI Elements 03</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./forms.html">Forms</a>
+                </li>
+            </ul>
+        
+            <!-- Brand Copyright -->
+            <div class="copyright">
+                <span> Copyright ⓒ <b>SPERGAMING.</b></span>
+            </div>
+        
+        </aside>
+        <!-- END of LNB -->
+        <!-- Start of Main Container-->
+        <main id="components">
+
+            <section class="content-wrapper">
+                <section class="row mb-4" id="dropdown_section">
+                    <div class="col-lg-12">
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Dropdown</h2>
+                        </div>
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="d-flex">
+                
+                                <!-- Dropdown Line 32 -->
+                                <select class="dropdown-select show-tick line-32">
+                                    <option>10개</option>
+                                    <option>25개</option>
+                                    <option>50개</option>
+                                    <option>100개</option>
+                                </select>
+                                <!-- End of Dropdown Line 32 -->
+                
+                                <!-- Dropdown Line 36 -->
+                                <select class="dropdown-select show-tick line-36">
+                                    <option>선택</option>
+                                    <option>목록</option>
+                                    <option>목록</option>
+                                    <option>목록</option>
+                                </select>
+                                <!-- End of Dropdown Line 36 -->
+                
+                                <!-- Dropdown Line 40 -->
+                                <select class="dropdown-select show-tick line-40">
+                                    <option>목록</option>
+                                    <option>목록</option>
+                                    <option>목록</option>
+                                    <option>목록</option>
+                                </select>
+                                <!-- End of Dropdown Line 40 -->
+                
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </section>                
+                <section class="row mb-4" id="dropdown_section">
+                    <div class="col-lg-12">
+                        
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Dropdown Depth</h2>
+                        </div>
+                
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="d-flex">
+                
+                                <div class="dropdown-depth">
+                
+                                    <!-- First Depth -->
+                                    <div class="dropdown-depth-scope">
+                                        <div class="ui-widget-header">
+                                            <span>목록제목</span>
+                                        </div>
+                
+                                        <div class="ui-widget-item">
+                                            <span>목록</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>목록</span>
+                                                </li>
+                                                <li>
+                                                    <span>선택목록</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                
+                                        <div class="ui-widget-item">
+                                            <span>목록</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>목록 2.1</span>
+                                                </li>
+                                                <li>
+                                                    <span>선택목록 2.2</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록 2.3</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록 2.4</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록 2.5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                
+                                        <div class="ui-widget-item">
+                                            <span>선택목록</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>목록 3.1</span>
+                                                </li>
+                                                <li>
+                                                    <span>선택목록 3.2</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록 3.3</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록 3.4</span>
+                                                </li>
+                                                <li>
+                                                    <span>목록 3.5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                
+                                        <div class="ui-widget-item">
+                                            <span>목록</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>Rock</span>
+                                                </li>
+                                                <li>
+                                                    <span>Jazz</span>
+                                                </li>
+                                                <li>
+                                                    <span>KPOP</span>
+                                                </li>
+                                                <li>
+                                                    <span>Acoustic</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                
+                                        <div class="ui-widget-item">
+                                            <span>목록</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>Rock</span>
+                                                </li>
+                                                <li>
+                                                    <span>Jazz</span>
+                                                </li>
+                                                <li>
+                                                    <span>KPOP</span>
+                                                </li>
+                                                <li>
+                                                    <span>Acoustic</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                
+                                        <div class="ui-widget-item">
+                                            <span>목록</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>Rock</span>
+                                                </li>
+                                                <li>
+                                                    <span>Jazz</span>
+                                                </li>
+                                                <li>
+                                                    <span>KPOP</span>
+                                                </li>
+                                                <li>
+                                                    <span>Acoustic</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                
+                                    </div>
+                
+                                    <div class="dropdown-depth-scope">
+                                        <div class="ui-widget-header">
+                                            <span>목록제목</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>Rock</span>
+                                                </li>
+                                                <li>
+                                                    <span>Jazz</span>
+                                                </li>
+                                                <li>
+                                                    <span>KPOP</span>
+                                                </li>
+                                                <li>
+                                                    <span>Acoustic</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                
+                                        <div class="ui-widget-item">
+                                            <span>목록</span>
+                
+                                            <!-- Second Depth -->
+                                            <ul class="dropdown-depth-content">
+                                                <li>
+                                                    <span>Rock</span>
+                                                </li>
+                                                <li>
+                                                    <span>Jazz</span>
+                                                </li>
+                                                <li>
+                                                    <span>KPOP</span>
+                                                </li>
+                                                <li>
+                                                    <span>Acoustic</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </section>
+                <section class="row mb-4" id="dropdown_section">
+                    <div class="col-lg-12">
+                        <div class="wrapper-title">
+                            <h2>Multiple Select</h2>
+                        </div>
+                        <div class="wrapper-body">
+                
+                            <div class="multi-select">
+                                <select class="multiple-select" name="kpop" multiple>
+                                    <option value="1" selected>BTS</option>
+                                    <option value="2" selected>진</option>
+                                    <option value="3">슈가</option>
+                                    <option value="4">J-Hope</option>
+                                    <option value="5">RM</option>
+                                    <option value="6">지민</option>
+                                    <option value="7">Red Velvet</option>
+                                    <option value="8">WannaOne</option>
+                                    <option value="9">Super Junior</option>
+                                    <option value="10">Twice</option>
+                                    <option value="11">Growl</option>
+                                </select>
+                            </div>
+                
+                        </div>
+                    </div>
+                </section>
+                <div class="row mb-4">
+                
+                    <div class="col-lg-12">
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Tooltip</h2>
+                        </div>
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <!-- Tooltip Bottom -->
+                            <div class="row mb-5">
+                                <div class="col-lg-3">
+                                    <label class="tooltip-label">
+                                        <span>텍스트</span>
+                                        <button type="button" class="icons icon-help-circle on-right" data-toggle="tooltip"
+                                            data-placement="bottom" title="툴팁텍스트"></button>
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="tooltip-label">
+                                        <span>텍스트</span>
+                                        <button type="button" class="icons icon-help-circle on-right" data-toggle="tooltip"
+                                            data-placement="top" title="툴팁텍스트"></button>
+                                    </label>
+                                </div>
+                
+                                <div class="col-lg-3">
+                                    <label class="tooltip-label">
+                                        <span>텍스트</span>
+                                        <button type="button" class="icons icon-help-circle on-right" data-toggle="tooltip"
+                                            data-placement="left" title="툴팁텍스트"></button>
+                                    </label>
+                                </div>
+                
+                
+                                <div class="col-lg-3">
+                                    <label class="tooltip-label">
+                                        <span>텍스트</span>
+                                        <button type="button" class="icons icon-help-circle on-right" data-toggle="tooltip"
+                                            data-placement="right" title="툴팁텍스트"></button>
+                                    </label>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </div>
+                <section class="row mb-4" id="alert_section">
+                
+                    <div class="col-lg-12">
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Alert</h2>
+                        </div>
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                
+                                <div class="col-lg-4">
+                                    <button type="button" class="btn line-32 mb-4" onclick="showDefaultAlert();">Show Alert</button>
+                                
+                                    <div class="alert default" role="alert">
+                                        <span>전정국님 로그인 하셨습니다.</span>
+                                        <button type="button" class="icons icon-close close" data-dismiss="alert"></button>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-4">
+                                    <button type="button" class="btn green-point-32 mb-4" onclick="showSuccessAlert();">Show Alert</button>
+                                
+                                    <div class="alert success" role="alert">
+                                        <i class="icons icon-check-circle"></i>
+                                        <span>전정국님 로그인 하셨습니다.</span>
+                                        <button type="button" class="icons icon-close close" data-dismiss="alert"></button>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-4">
+                                    <button type="button" class="btn red-point-32 mb-4" onclick="showErrorAlert();">Show Alert</button>
+                
+                                    <div class="alert error" role="alert">
+                                        <i class="icons icon-error-circle"></i>
+                                        <span>전정국님 로그인 하셨습니다.</span>
+                                        <button type="button" class="icons icon-close close" data-dismiss="alert"></button>
+                                    </div>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                
+                </section>
+            </section>
+
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    
+    <!-- Plugins Script -->
+    <script src="../../static/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../../static/plugins/jquery-ui/jquery-ui.js"></script>
+    <script src="../../static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../static/plugins/fastselect/fastselect.standalone.min.js"></script>
+    <script src="../../static/plugins/toastr/js/toastr.min.js"></script>
+    <script src="../../static/plugins/dropzone/js/dropzone.min.js"></script>
+    <script src="../../static/plugins/pickr/js/pickr.es5.min.js"></script>
+    <script src="../../static/plugins/moment/moment.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/datepicker.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.en.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.kr.js"></script>
+    <script src="../../static/plugins/daterangepicker/js/daterangepicker.min.js"></script>
+    <script src="../../static/plugins/nestable/js/jquery.nestable.js"></script>
+    <script src="../../static/plugins/chartist/js/chartist.min.js"></script>
+    <!-- End of Plugins Script -->
+    
+    <!-- Custom Script with Plugins Implementation -->
+    <script src="../../static/plugins/plugin-script.js"></script>
+    <script src="../../static/plugins/statistics-script.js"></script>
+<script src="../../static/js/app.js"></script></body>
+
+</html>

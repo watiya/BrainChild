@@ -1,0 +1,151 @@
+$lnb-width: 240px;
+
+aside {
+    height: inherit;
+    position: relative;
+    background-color: #ffffff; // TODO: Get from Variables
+
+
+    &.lnb {
+        position: relative;
+        width: $lnb-width;
+        min-width: $lnb-width;
+        border-right: 1px solid #e0e0e0; // TODO: Get from Variables
+
+        // Navigation
+        .navbar-nav {
+            padding: 30px;
+            overflow: auto;
+            min-height: calc(100vh - 110px); // TODO: Check Browser compatibility
+            max-height: calc(100vh - 110px); // TODO: Check Browser compatibility
+            @include scrollbar;
+
+            .nav-item {
+                height: 30px;
+                margin-bottom: 20px;
+                // outline: 1px solid red;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                .nav-link {
+                    color: $gray-2;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                }
+
+                &.active {
+                    .nav-link {
+                        font-weight: bold;
+                        color: $primary-1;
+                    }
+                }
+
+                // With sub-menu
+                &.with-sub-menu {
+                    height: 100%;
+
+                    [nav-data-toggle] {
+                        position: relative;
+                        color: #424242;
+                        height: 30px;
+                        
+                        &:after {
+                            content: "";
+                            height: 16px;
+                            width: 16px;
+                            position: absolute;
+                            right: 0px;
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-image: url('/static/icons/add.svg');
+                        }
+                    }
+                    
+                    .open-sub-menu {
+                        font-weight: bold;
+
+                        &:after {
+                            background-image: url('/static/icons/minus.svg');
+                        }
+
+                    }
+
+                    .sub-menu {
+                        margin: 0px;
+                        border-bottom: 1px solid #f5f5f5;
+                        visibility: hidden;
+                        padding: 0px;
+                        opacity: 0;
+                        height: 0px;
+                        transition: height 0.3s ease-in-out;
+                        
+                        &.open {
+                            visibility: visible;
+                            opacity: 1;
+                            height: auto;
+                            padding: 20px 0;
+                        }
+                    }
+
+                    .nav-item {
+                        height: 30px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        align-items: center;
+                        color: #757575;
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+
+                        &.active {
+                            font-weight: bold;
+                            color: $primary-1;
+                        }
+
+                        .nav-link { 
+                            padding: 0 10px;
+                            font-size: 13px;
+                            font-weight: normal;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        // Copyright
+        .copyright {
+            padding-bottom: 25px;
+            text-align: center;
+            background-color: #ffffff; // TODO: Get from Variables
+
+            span {
+                font-size: 10px;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                font-weight: 500;
+                color: #6d6d6d; // TODO: Get from Variables
+
+                b {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+}

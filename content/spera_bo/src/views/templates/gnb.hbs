@@ -1,0 +1,75 @@
+<!-- Start of GNB -->
+<header class="navbar gnb">
+    <div class="container-fluid">
+
+        <!-- Start of Left Content -->
+        <div class="navbar-wrapper">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="{{htmlWebpackPlugin.options.relativePath}}index.html">
+                <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/logo.png" alt="" srcset="">
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item {{#if htmlWebpackPlugin.options.backoffice}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../backoffice/{{else}}/pages/backoffice/{{/if}}account-management.html">백오피스</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.user}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../user/{{else}}/pages/user/{{/if}}user-inquiry.html">회원</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.accountportal}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../accountportal/{{else}}/pages/accountportal/{{/if}}account-management.html">계좌</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.portal}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../portal/{{else}}/pages/portal/{{/if}}portal-banner-main.html">포털</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.game}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../game/{{else}}/pages/game/{{/if}}game-list.html">게임</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.calculate}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../calculate/{{else}}/pages/calculate/{{/if}}calculate-portal-summary.html">정산</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.event}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../event/{{else}}/pages/event/{{/if}}weeklyrace.html">이벤트</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.withdraw}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../withdraw/{{else}}/pages/withdraw/{{/if}}withdraw-failures.html">출금</a>
+                </li>
+                <li class="nav-item {{#if htmlWebpackPlugin.options.statistics}} active{{/if}}">
+                    <a class="nav-link" 
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../statistics/{{else}}/pages/statistics/{{/if}}statistics-current-summary.html">통계</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}../guide/{{else}}/pages/guide/{{/if}}element01.html"
+                        target="_blank">GUIDE</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Left Content -->
+
+        <!-- Start of Right Content -->
+        <div class="navbar-wrapper">
+            <ul class="navbar-nav">
+                <button class="icons icon-apps btn-menu" onclick="toggleMenu();"></button>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">전정국</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Right Content -->
+
+    </div>
+
+    {{> menu }}
+</header>
+<!-- END of GNB -->

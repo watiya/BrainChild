@@ -1,0 +1,144 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+            
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>알림 메시지</h2>
+            
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">공지사항</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+            
+                <div class="wrapper-sub-header justify-content-between">
+                    <span class="title">알림 내역</span>
+                    <a class="btn solid-36" id="add-banner"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/portal/{{/if}}portal-message-notification-send.html">알림 메시지 발송</a>
+                </div>
+            
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body portal-lists-blocks">
+            
+                    <!-- Table -->
+                    <div class="tb without-side-border">
+                        <table>
+                            <colgroup>
+                                <col width="5%">
+                                <col width="5%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="30%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">발송시간</th>
+                                    <th scope="col">언어</th>
+                                    <th scope="col">발송대상</th>
+                                    <th scope="col">발송내역</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>영어/한국어/중국어</td>
+                                    <td>
+                                        <a class="button-link"
+                                            data-toggle="modal"
+                                            data-target="#portalMessageNotificationInfo">전체유저</a>
+                                    </td>
+                                    <td>% 발송내역 %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+            
+                    <!-- Body Footer -->
+                    <div class="wrapper-body-footer">
+            
+                        {{!-- Footer Actions --}}
+                        <div class="actions">
+            
+                            {{!-- Delete --}}
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+            
+                            {{!-- Dropdown --}}
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+            
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><a href="#"></a></li>
+                            <li class="page-item active"><a href="#">1</a></li>
+                            <li class="page-item"><a href="#">2</a></li>
+                            <li class="page-item"><a href="#">3</a></li>
+                            <li class="page-item"><a href="#">4</a></li>
+                            <li class="page-item"><a href="#">5</a></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><a href="#">20</a></li>
+                            <li class="page-item icons icon-chevron-right-gray"><a href="#"></a></li>
+                        </ul>
+                        <!-- End of Pagination -->
+            
+                    </div>
+                    <!-- End of Body Footer -->
+            
+                </div>
+                <!-- End of Content Wrapper Body -->
+            
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    <!-- Start of User Modal -->
+    {{> ./portal-modals }}
+    <!-- End of User Modal -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

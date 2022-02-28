@@ -1,0 +1,81 @@
+@for $i from 0 through 50 {
+    .mt-#{$i} {
+        margin-top: 5px * $i !important;
+    }
+}
+
+@for $i from 0 through 50 {
+    .ml-#{$i} {
+        margin-left: 5px * $i !important;
+    }
+}
+
+@for $i from 0 through 50 {
+    .mb-#{$i} {
+        margin-bottom: 5px * $i !important;
+    }
+}
+
+@for $i from 5 through 30 {
+    .fs-#{$i} {
+        font-size: 2px * $i !important;
+    }
+}
+
+@for $i from 1 through 100 {
+    .wdtper-#{$i} {
+        width: 1% * $i !important;
+    }
+}
+
+@for $i from 1 through 100 {
+    .wdt-#{$i} {
+        width: 50px * $i !important;
+    }
+}
+
+@for $i from 1 through 100 {
+    .hgt-#{$i} {
+        height: 50px * $i !important;
+    }
+}
+
+@for $i from 1 through 100 {
+    .hgtmax-#{$i} {
+        max-height: 50px * $i !important;
+    }
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.txt {
+    &.center {
+        text-align: center !important;
+    }
+
+    &.left {
+        text-align: left !important;
+    }
+
+    &.right {
+        text-align: right !important;
+    }
+
+    &.normal {
+        font-weight: normal !important;
+    }
+
+    &.medium {
+        font-weight: 500 !important;
+    }
+
+    &.bold {
+        font-weight: bold !important;
+    }
+
+    &.underline {
+        text-decoration: underline !important;
+    }
+}

@@ -1,0 +1,50 @@
+<section class="row mb-4" id="dropzone_section">
+
+    <div class="col-lg-12">
+
+        <!-- Content Wrapper Title -->
+        <div class="wrapper-title">
+            <h2>Dropzone</h2>
+        </div>
+
+        <!-- Content Wrapper Body -->
+        <div class="wrapper-body">
+
+            <div class="row">
+
+                <div class="dropzone-container dropzone-sm">
+                    <span class="dz-label">이미지 추가</span>
+                    <span class="dz-label-link">파일첨부</span>
+                    <form action="/file-upload" class="dropzone">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="dropzone-container dropzone-md">
+                    <span class="dz-label">이미지를</span>
+                    <span class="dz-label">끌어 놓아주세요</span>
+                    <span class="btn line-32">파일 첨부</span>
+                    <form action="/file-upload" class="dropzone">
+                        <div class="fallback">
+                            <input name="file" type="file" multiple />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="dropzone-container dropzone-lg">
+                    <i class="icons icon-photo"></i>
+                    <span class="dz-label">이미지를 끌어 놓아주세요</span>
+                    <span class="btn line-32">파일 첨부</span>
+                    <form action="/file-upload" class="dropzone">
+                        <div class="fallback">
+                            <input name="file" type="file" multiple />
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

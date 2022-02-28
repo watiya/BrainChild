@@ -1,0 +1,447 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper user-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>% 유저닉네임 %</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">유저</a></li>
+                            <li class="breadcrumb-item"><a href="#">유저조회</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">유저상세</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Tabs -->
+                <div class="wrapper-actions with-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <!-- User Details Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-1-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-details.html">계정</a>
+                        </li>
+
+                        <!-- User Account Link -->
+                        <li class="nav-item">
+                            <a class="nav-link active" id="content-2-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-account.html">계좌</a>
+                        </li>
+
+                        <!-- User Casino Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-3-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-casino.html">카지노프로그램</a>
+                        </li>
+
+                        <!-- User Security Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-4-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-security.html">보안</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Tabs -->
+
+                <!-- Block Tabs -->
+                <ul class="nav nav-tabs with-block-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="user-account-information-tab" data-toggle="tab"
+                            href="#user-account-information" role="tab" aria-controls="user-account-information-tab"
+                            aria-selected="true">계좌정보</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="user-account-cash-transaction-tab" data-toggle="tab"
+                            href="#user-account-cash-transaction" role="tab"
+                            aria-controls="user-account-cash-transaction-tab" aria-selected="false">입출금 내역</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="user-account-trade-transaction-tab" data-toggle="tab"
+                            href="#user-account-trade-transaction" role="tab"
+                            aria-controls="user-account-trade-transaction-tab" aria-selected="false">거래내역</a>
+                    </li>
+                </ul>
+                <!-- End of Block Tabs -->
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+
+                    {{!-- User Account Information Tab Content--}}
+                    <div class="tab-pane fade show active" id="user-account-information" role="tabpanel"
+                        aria-labelledby="user-account-information-tab">
+
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body with-blocks-tab user-account-blocks" style="margin-bottom: 30px;">
+
+                            <!-- Body Header -->
+                            <div class="wrapper-body-header">
+
+                                <!-- Title -->
+                                <span class="title">타이틀</span>
+
+                            </div>
+
+                            <!-- Table -->
+                            <div class="tb with-multiple-table">
+                                {{!-- Table 1 --}}
+                                <table>
+                                    <colgroup>
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                    </colgroup>
+
+                                    <!-- Table Header -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">잔액</th>
+                                            <th scope="col">출금가능액</th>
+                                            <th scope="col">최근24시간 출금액수</th>
+                                            <th scope="col">24시간 출금한도</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- Table Body -->
+                                    <tbody>
+                                        <tr>
+                                            <td>999,999.99</td>
+                                            <td>999,999.99</td>
+                                            <td>999,999.99</td>
+                                            <td>999,999.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                {{!-- Table 2 --}}
+                                <table>
+                                    <colgroup>
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                    </colgroup>
+
+                                    <!-- Table Header -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">누적 입금액</th>
+                                            <th scope="col">누적 출금액</th>
+                                            <th scope="col">누적베팅액</th>
+                                            <th scope="col">누적손실</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- Table Body -->
+                                    <tbody>
+                                        <tr>
+                                            <td>999,999.99</td>
+                                            <td>999,999.99</td>
+                                            <td>999,999.99</td>
+                                            <td>999,999.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End of Table -->
+
+                        </div>
+                        <!-- End of Content Wrapper Body -->
+
+                    </div>
+
+                    {{!-- User Account Cash Transaction Tab Content--}}
+                    <div class="tab-pane fade" id="user-account-cash-transaction" role="tabpanel"
+                        aria-labelledby="user-account-cash-transaction-tab">
+
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body with-blocks-tab user-account-blocks">
+
+                            <!-- Body Header -->
+                            <div class="wrapper-body-header">
+
+                                <!-- Title -->
+                                <span class="title">입출금내역</span>
+
+                                <!-- Dropdown -->
+                                <select class="dropdown-select show-tick line-32">
+                                    <option>1개월</option>
+                                    <option>1개월 1.1</option>
+                                    <option>1개월 1.2</option>
+                                    <option>1개월 1.3</option>
+                                    <option>1개월 1.4</option>
+                                </select>
+
+                            </div>
+
+                            <!-- Table -->
+                            <div class="tb without-side-border">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="checkbox-button">
+                                                    <label for="check_01">
+                                                        <input type="checkbox" value="" id="check_01">
+                                                        <i class="checkbox"></i>
+                                                    </label>
+                                                </div>
+                                            </th>
+                                            <th scope="col">NO</th>
+                                            <th scope="col">거래일자</th>
+                                            <th scope="col">거래구분</th>
+                                            <th scope="col">보낸토큰</th>
+                                            <th scope="col">보낸금액</th>
+                                            <th scope="col">받은토큰</th>
+                                            <th scope="col">받은금액</th>
+                                            <th scope="col" class="color-red">유저거래상세</th>
+                                            <th scope="col" class="color-red">시스탬거래상태</th>
+                                            <th scope="col">상세내역</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-button">
+                                                    <label for="check_02">
+                                                        <input type="checkbox" value="" id="check_02">
+                                                        <i class="checkbox"></i>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <a class="button-link" href="#">자세히</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End of Table -->
+
+                            <!-- Body Footer -->
+                            <div class="wrapper-body-footer">
+
+                                {{!-- Footer Actions --}}
+                                <div class="actions">
+
+                                    {{!-- Delete --}}
+                                    <div class="btn-group mr-2">
+                                        <button type="button" class="btn line-32 with icons icon-delete"></button>
+                                    </div>
+
+                                    {{!-- Dropdown --}}
+                                    <select class="dropdown-select show-tick line-40">
+                                        <option>필터</option>
+                                    </select>
+                                </div>
+
+                                <!-- Pagination -->
+                                <ul class="pagination">
+                                    <li class="page-item icons icon-chevron-left-gray"><a href="#"></a></li>
+                                    <li class="page-item active"><a href="#">1</a></li>
+                                    <li class="page-item"><a href="#">2</a></li>
+                                    <li class="page-item"><a href="#">3</a></li>
+                                    <li class="page-item"><a href="#">4</a></li>
+                                    <li class="page-item"><a href="#">5</a></li>
+                                    <li class="page-item ellipsis"></li>
+                                    <li class="page-item"><a href="#">20</a></li>
+                                    <li class="page-item icons icon-chevron-right-gray"><a href="#"></a></li>
+                                </ul>
+                                <!-- End of Pagination -->
+
+                            </div>
+                            <!-- End of Body Footer -->
+
+                        </div>
+                        <!-- End of Content Wrapper Body -->
+                    </div>
+
+                    {{!-- User Account Trade Transaction Tab Content --}}
+                    <div class="tab-pane fade" id="user-account-trade-transaction" role="tabpanel"
+                        aria-labelledby="user-account-trade-transaction-tab">
+
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body with-blocks-tab user-trade-blocks">
+
+                            <!-- Body Header -->
+                            <div class="wrapper-body-header">
+
+                                <!-- Title -->
+                                <div class="wrapper-actions">
+
+                                    <!-- Search Input -->
+                                    <div class="search-input-container line-36" data-target="#user-inquiry">
+                                        <button class="search-field-clear" data-target="#user-inquiry"></button>
+                                        <input class="search-field" id="user-inquiry"
+                                            placeholder="검색 (유저 닉네임, 이메일, 회원번호)">
+                                    </div>
+
+                                    <!-- Tags -->
+                                    <div class="tags-container">
+                                        <button type="button" class="btn point-36 tag">
+                                            검색결과
+                                            <i class="icons icon-clear on-right"></i>
+                                        </button>
+                                        <button type="button" class="btn point-36 tag">
+                                            검색결과
+                                            <i class="icons icon-clear on-right"></i>
+                                        </button>
+                                        <button type="button" class="btn point-36 tag">
+                                            검색결과
+                                            <i class="icons icon-clear on-right"></i>
+                                        </button>
+                                    </div>
+                                    <!-- End of Tags -->
+
+                                </div>
+
+                                <!-- Dropdown -->
+                                <select class="dropdown-select show-tick line-32">
+                                    <option>1개월</option>
+                                    <option>1개월 1.1</option>
+                                    <option>1개월 1.2</option>
+                                    <option>1개월 1.3</option>
+                                    <option>1개월 1.4</option>
+                                </select>
+
+                            </div>
+
+                            <!-- Table -->
+                            <div class="tb without-side-border">
+                                <table>
+                                    {{!-- <colgroup>
+                                                        <col width="5%" />
+                                                        <col width="5%" />
+                                                        <col width="22.5%" />
+                                                        <col width="22.5%" />
+                                                        <col width="22.5%" />
+                                                        <col width="22.5%" />
+                                                    </colgroup> --}}
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="checkbox-button">
+                                                    <label for="check_01">
+                                                        <input type="checkbox" value="" id="check_01">
+                                                        <i class="checkbox"></i>
+                                                    </label>
+                                                </div>
+                                            </th>
+                                            <th scope="col">NO</th>
+                                            <th scope="col">거래일자</th>
+                                            <th scope="col">거래구분</th>
+                                            <th scope="col">거래금액</th>
+                                            <th scope="col">보낸계좌</th>
+                                            <th scope="col">받는계좌</th>
+                                            <th scope="col">상태</th>
+                                            <th scope="col">상세내역</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-button">
+                                                    <label for="check_02">
+                                                        <input type="checkbox" value="" id="check_02">
+                                                        <i class="checkbox"></i>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <a class="button-link" href="#">자세히</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End of Table -->
+
+                            <!-- Body Footer -->
+                            <div class="wrapper-body-footer">
+
+                                {{!-- Footer Actions --}}
+                                <div class="actions">
+
+                                    {{!-- Delete --}}
+                                    <div class="btn-group mr-2">
+                                        <button type="button" class="btn line-32 with icons icon-delete"></button>
+                                    </div>
+
+                                    {{!-- Dropdown --}}
+                                    <select class="dropdown-select show-tick line-40">
+                                        <option>필터</option>
+                                    </select>
+                                </div>
+
+                                <!-- Pagination -->
+                                <ul class="pagination">
+                                    <li class="page-item icons icon-chevron-left-gray"><a href="#"></a></li>
+                                    <li class="page-item active"><a href="#">1</a></li>
+                                    <li class="page-item"><a href="#">2</a></li>
+                                    <li class="page-item"><a href="#">3</a></li>
+                                    <li class="page-item"><a href="#">4</a></li>
+                                    <li class="page-item"><a href="#">5</a></li>
+                                    <li class="page-item ellipsis"></li>
+                                    <li class="page-item"><a href="#">20</a></li>
+                                    <li class="page-item icons icon-chevron-right-gray"><a href="#"></a></li>
+                                </ul>
+                                <!-- End of Pagination -->
+
+                            </div>
+                            <!-- End of Body Footer -->
+
+                        </div>
+                        <!-- End of Content Wrapper Body -->
+                    </div>
+
+                </div>
+                <!-- End of Tab Content -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    <!-- Start of User Modal -->
+    {{> ./user-modals }}
+    <!-- End of User Modal -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

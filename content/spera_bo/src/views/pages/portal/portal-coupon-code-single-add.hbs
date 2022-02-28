@@ -1,0 +1,236 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>쿠폰등록</h2>
+                
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item"><a href="#">쿠폰</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">쿠폰등록</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                  <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style=" height: 290px; margin-bottom: 20px">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">기본 설정</span>
+
+                    </div>
+                    <!-- End of Body Header -->
+
+                    <!-- Table -->
+                    <div class="form-table basic-info-blocks">
+                        <table>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+                                        <label for="" style="width: 200px;">쿠폰 ID</label>
+                                        <div class="td-content">
+                                            <div class="input-container" data-target="#input-basic">
+                                                <input class="input-field" id="input-basic" type="text"
+                                                    placeholder="ID 자동 발급" maxlength="100" maxend="자" disabled>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="" style="width: 200px;">유효 기간</label>
+                                        <div class="td-content">
+                                            <div class="daterange-picker-container">
+                                                <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="" style="width: 200px;">쿠폰 상태 설정</label>
+                                        <div class="td-content">
+                                            <div class="checkbox-button">
+                                                <label for="checkbox_02">
+                                                    <input type="checkbox" value="" id="checkbox_02">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">비활성</span>
+                                                </label>
+                                            </div>
+
+                                            <span class="td-note">* 비활성 선택 시 게시기간과 관계없이 포털에 노출되지 않습니다.</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body h-auto" style="margin-bottom: 30px;">
+                
+                    <!-- Table -->
+                    <h5 class="form-table-title">쿠폰 정보</h5>
+                    <div class="form-table message-info">
+                        <table>
+                            <tbody>
+                
+                                <!-- Row -->
+                                <tr>
+                                    <td style="height: 200px;">
+                                        <label class="label-group" style="width: 310px;">
+                                            <span>쿠폰 이름</span>
+                                            <ul>
+                                                <li>추후 서비스 지역에 따라 언어가 추가 될 예정입니다.</li>
+                                            </ul>
+                                        </label>
+                                        <div class="td-content forms-container">
+                                            <div class="form-group">
+                                                <span class="form-label">영어</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text" 
+                                                        placeholder="쿠폰 이름 입력 (필수)">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <span class="form-label">한글</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text" 
+                                                        placeholder="쿠폰 이름 입력 (미입력시 영어 적용)"
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">중문간체</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text" 
+                                                        placeholder="디스크립션 입력 (미입력시 영어 적용)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td style="height: 250px;">
+                                        <label class="label-group" style="width: 310px;">
+                                            <span>쿠폰 설정쿠폰 설정</span>
+                                            <ul>
+
+                                                <li class="color-red">
+                                                    쿠폰 설정 값은 수정할 수 없습니다. 변경이 <br>
+                                                    필요한 경우, 기존 쿠폰을 폐기하고 새소 생성하세요.
+                                                </li>
+
+                                            </ul>
+                                        </label>
+                                        <div class="td-content forms-container align-items-start">
+                                
+                                            <div class="form-group">
+                                                <span class="form-label">쿠폰타입</span>
+                                                <select class="dropdown-select show-tick line-40 coupon-type-dropdown">
+                                                    <option>타입 선택 (필수)</option>
+                                                    <option>타입 선택 (필수) 1</option>
+                                                    <option>타입 선택 (필수) 2</option>
+                                                    <option>타입 선택 (필수) 3</option>
+                                                </select>
+
+                                                <div class="checkbox-button">
+                                                    <label for="register_per_account_checkbox">
+                                                        <input type="checkbox" value="" id="register_per_account_checkbox">
+                                                        <i class="checkbox"></i>
+                                                        <span for="">1계정당 1개만 등록가능</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="form-group">
+                                                <span class="form-label">총 발급 수</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text" 
+                                                        placeholder="디스크립션 입력 (미입력시 영어 적용)"
+                                                        maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+                                
+                                            <div class="form-group">
+                                                <span class="form-label">쿠폰 리워드</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text" 
+                                                        placeholder="디스크립션 입력 (미입력시 영어 적용)"
+                                                        maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">코드 발행</span>
+                                                <button type="button" class="btn solid-40">코드생성 (필수)</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+                
+                </div>
+                <!-- End of Content Wrapper Body -->
+                
+                <!-- Footer Action -->
+                <div class="wrapper-footer-action">
+                
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-solid-red-46 d-none">삭제</button>
+                    </div>
+                
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">등록</button>
+                    </div>
+                
+                </div>
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

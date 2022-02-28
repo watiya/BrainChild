@@ -1,0 +1,446 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main class="main-withdraw withdraw-policy-management">
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>출금 검토 정책</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">출금</a></li>
+                            <li class="breadcrumb-item"><a href="#">정책 관리</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">출금 검토 정책</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions med">
+                    <div class="wrapper">
+                        {{> tabs-withdraw-policy }}
+
+                        <div class="wrapper mt-4 d-flex align-items-center">
+                            <span class="fs-7">다음의 조건에 해당하는 출금 요청건은 출금 검토 프로세스를 우선 진행합니다.</span>
+                            <button type="button" class="btn btn-solid-36 btn-register">
+                                <a href="">정책 신규 등록</a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">타이틀</span>
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                        </select>
+                    </div>
+
+                    <div class="tb overflow bordered-lr">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="12.8%" />
+                                <col width="12.8%" />
+                                <col width="12.8%" />
+                                <col width="12.8%" />
+                                <col width="12.8%" />
+                                <col width="12.8%" />
+                                <col width="12.8%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col" rowspan="2">NO</th>
+                                    <th scope="col" rowspan="2">정책명 (코드)</th>
+                                    <th scope="col">조건 필터 1</th>
+                                    <th scope="col"></th>
+                                    <th scope="col" rowspan="2">조건 결합</th>
+                                    <th scope="col">조건 필터 2</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">판단 조건</th>
+                                    <th scope="col">값</th>
+                                    <th scope="col">조건 결합</th>
+                                    <th scope="col">값</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="">수정하기</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>10개</option>
+                            </select>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal modal-xlarge with-component fade modal-policy-review" tabindex="-1" role="dialog"
+                id="account_policy_management_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">출금 검토 정책</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>
+                                검토 프로세스를 적용할 조건을 설정해주세요. <br>
+                                설정한 조건에 해당하는 출금 요청건은 출금 검토 프로세스를 우선 진행합니다.
+                            </p>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="20%" />
+                                        <col width="50%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="label"><label for="">정책 코드 (ID)</label></td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="자동발급">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">정책 이름</label></td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <div class="input-container" data-target="#input-basic1">
+                                                    <input class="input-field" id="input-basic1" type="text"
+                                                        placeholder="자동발급" maxlength="15" maxend="">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="20%" />
+                                        <col width="50%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="label">
+                                                <label for="">조건 필터1 (필수)</label>
+                                                <div class="mt-10"></div>
+                                            </td>
+                                            <td>
+                                                <div class="d-block dual-label-td">
+                                                    <span class="mb-1">판단조건</span>
+                                                    <span>값</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <select class="dropdown-select show-tick line-40">
+                                                    <option>조건선택</option>
+                                                </select>
+                                                <div class="d-flex dropdown-input-td  mt-2">
+                                                    <select class="dropdown-select show-tick line-40">
+                                                        <option>값 선택</option>
+                                                    </select>
+
+                                                    <div class="input-container" data-target="#input-basic">
+                                                        <input class="input-field" id="input-basic" type="text"
+                                                            placeholder="값 입력">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">조건 결합</label></td>
+                                            <td></td>
+                                            <td>
+                                                <select class="dropdown-select show-tick line-40">
+                                                    <option>값 선택</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label">
+                                                <label for="">조건 필터2</label>
+                                                <div class="mt-10"></div>
+                                            </td>
+                                            <td>
+                                                <div class="d-block dual-label-td">
+                                                    <span class="mb-1">판단조건</span>
+                                                    <span>값</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <select class="dropdown-select show-tick line-40">
+                                                    <option>조건선택</option>
+                                                </select>
+                                                <div class="d-flex dropdown-input-td  mt-2">
+                                                    <select class="dropdown-select show-tick line-40">
+                                                        <option>값 선택</option>
+                                                    </select>
+
+                                                    <div class="input-container" data-target="#input-basic">
+                                                        <input class="input-field" id="input-basic" type="text"
+                                                            placeholder="값 입력">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-line-38">취소</button>
+                            <button type="button" class="btn popup-solid-38">신규등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal-xlarge with-component fade modal-policy-review" tabindex="-1" role="dialog"
+                id="account_policy_management_modal2">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">출금 검토 정책</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>
+                                검토 프로세스를 적용할 조건을 설정해주세요. <br>
+                                설정한 조건에 해당하는 출금 요청건은 출금 검토 프로세스를 우선 진행합니다.
+                            </p>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="20%" />
+                                        <col width="50%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="label"><label for="">정책 코드 (ID)</label></td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="% 기존 정책 코드 %">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">정책 이름</label></td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <div class="input-container" data-target="#input-basic1">
+                                                    <input class="input-field" id="input-basic1" type="text"
+                                                        placeholder="% 기존 입력된 정책 이름 %" maxlength="15" maxend="">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="20%" />
+                                        <col width="50%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="label">
+                                                <label for="">조건 필터1 (필수)</label>
+                                                <div class="mt-10"></div>
+                                            </td>
+                                            <td>
+                                                <div class="d-block dual-label-td">
+                                                    <span class="mb-1">판단조건</span>
+                                                    <span>값</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <select class="dropdown-select show-tick line-40">
+                                                    <option>% 기존 석택된 조건 %</option>
+                                                </select>
+                                                <div class="d-flex dropdown-input-td  mt-2">
+                                                    <select class="dropdown-select show-tick line-40">
+                                                        <option>기존 값</option>
+                                                    </select>
+
+                                                    <div class="input-container" data-target="#input-basic">
+                                                        <input class="input-field" id="input-basic" type="text"
+                                                            placeholder="% 기존 입력 값 %">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">조건 결합</label></td>
+                                            <td></td>
+                                            <td>
+                                                <select class="dropdown-select show-tick line-40">
+                                                    <option>% 기존 값 %</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label">
+                                                <label for="">조건 필터2</label>
+                                                <div class="mt-10"></div>
+                                            </td>
+                                            <td>
+                                                <div class="d-block dual-label-td">
+                                                    <span class="mb-1">판단조건</span>
+                                                    <span>값</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <select class="dropdown-select show-tick line-40">
+                                                    <option>% 기존 선택된 조건 %</option>
+                                                </select>
+                                                <div class="d-flex dropdown-input-td  mt-2">
+                                                    <select class="dropdown-select show-tick line-40">
+                                                        <option>기존 값</option>
+                                                    </select>
+
+                                                    <div class="input-container" data-target="#input-basic">
+                                                        <input class="input-field" id="input-basic" type="text"
+                                                            placeholder="% 기존 입력 값 %">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-line-38">취소</button>
+                            <button type="button" class="btn popup-red-38">삭제</button>
+                            <button type="button" class="btn popup-solid-38">변경</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <!-- This is sample button to show modals -->
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_policy_management_modal1">Modal
+                    1</button>
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_policy_management_modal2">Modal
+                    2</button>
+            </div>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>피쳐드</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item"><a href="#">배너</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">피쳐드</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <div class="wrapper-sub-header justify-content-between">
+                    <span class="title">피쳐드 리스트</span>
+                    <a class="btn solid-36" id="add-banner"
+                        href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/portal/{{/if}}portal-banner-featured-add.html">배너 신규 등록</a>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body portal-banner-blocks h-auto"
+                    style="margin-bottom: 20px;">
+
+                    <!-- Table -->
+                    <div class="tb without-side-border">
+                        <!-- Table 1 -->
+                        <table>
+                            <colgroup>
+                                <col width="8%" />
+                                <col width="12%" />
+                                <col width="12%" />
+                                <col width="12%" />
+                                <col width="18%" />
+                                <col width="18%" />
+                                <col width="10%" />
+                            </colgroup>
+
+                            <!-- Table Header -->
+                            <thead>
+                                <tr>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">배너 ID</th>
+                                    <th scope="col">이미지</th>
+                                    <th scope="col">타이틀</th>
+                                    <th scope="col">게시일자</th>
+                                    <th scope="col">종료일자</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+
+                            <!-- Table Body -->
+                            <tbody>
+                                <!-- Row 1 -->
+                                <tr>
+                                    <td class="color-red">게시중</td>
+                                    <td>% 배너ID %</td>
+                                    <td>
+                                        <span class="banner-thumbnail thumbnail-small">
+                                            <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-featured-banner-1.png"
+                                                alt="" srcset="">
+                                        </span>
+                                    </td>
+                                    <td>Lucky Day Welcome Pack</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>
+                                        <a href="#" class="button-link">수정</button>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 2 -->
+                                <tr>
+                                    <td class="color-blue">게시중</td>
+                                    <td>% 배너ID %</td>
+                                    <td>
+                                        <span class="banner-thumbnail thumbnail-small">
+                                            <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-featured-banner-2.png"
+                                                alt="" srcset="">
+                                        </span>
+                                    </td>
+                                    <td>Lucky Day Welcome Pack</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>
+                                        <a href="#" class="button-link">수정</button>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 3 -->
+                                <tr>
+                                    <td>게시중</td>
+                                    <td>% 배너ID %</td>
+                                    <td>
+                                        <span class="banner-thumbnail thumbnail-small">
+                                            <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-featured-banner-3.png"
+                                                alt="" srcset="">
+                                        </span>
+                                    </td>
+                                    <td>Lucky Day Welcome Pack</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>
+                                        <a href="#" class="button-link">수정</button>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 4 -->
+                                <tr>
+                                    <td>게시중</td>
+                                    <td>% 배너ID %</td>
+                                    <td>
+                                        <span class="banner-thumbnail thumbnail-small">
+                                            <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-featured-banner-4.png" alt=""
+                                                srcset="">
+                                        </span>
+                                    </td>
+                                    <td>Lucky Day Welcome Pack</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>
+                                        <a href="#" class="button-link">수정</button>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 5 -->
+                                <tr>
+                                    <td>게시중</td>
+                                    <td>% 배너ID %</td>
+                                    <td>
+                                        <span class="banner-thumbnail thumbnail-small">
+                                            <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-featured-banner-5.png" alt=""
+                                                srcset="">
+                                        </span>
+                                    </td>
+                                    <td>Lucky Day Welcome Pack</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>
+                                        <a href="#" class="button-link">수정</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

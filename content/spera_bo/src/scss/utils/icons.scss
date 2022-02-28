@@ -1,0 +1,68 @@
+// NOTE for Production: Change all icon and fonts path into "../fonts" or "../icons"
+@mixin icons($key, $size) {
+    &.icon-#{$key} {
+        width: $size;
+        height: $size;
+        background-image: url('/static/icons/#{$key}.svg');
+    }
+
+    &.on-left {
+        margin-right: 4px;
+    }
+
+    &.on-right {
+        margin-left: 4px;
+    }
+}
+
+@mixin iconbg($key, $size, $x, $y) {
+    background-image: url('/static/icons/#{$key}.svg');
+    background-position: $x $y;
+    background-size: $size $size;
+    background-repeat: no-repeat;
+}
+
+.icons {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: transparent;
+
+    @include icons('add', 16px);
+    @include icons('apps', 18px);
+    @include icons('check-circle', 18px);
+    @include icons('check-selected', 18px);
+    @include icons('chevron-down-2', 16px);
+    @include icons('chevron-down', 16px);
+    @include icons('chevron-left', 16px);
+    @include icons('chevron-left-gray', 16px);
+    @include icons('chevron-right', 16px);
+    @include icons('chevron-right-gray', 16px);
+    @include icons('chevron-up', 16px);
+    @include icons('chevron-up-2', 16px);
+    @include icons('clear', 16px);
+    @include icons('close', 24px);
+    @include icons('delete', 16px);
+    @include icons('delete-gray', 16px);
+    @include icons('done', 16px);
+    @include icons('download', 18px);
+    @include icons('ellipsis', 16px);
+    @include icons('error-circle', 18px);
+    @include icons('help-circle', 18px);
+    @include icons('photo', 24px);
+    @include icons('popup-close', 18px);
+    @include icons('email', 18px);
+    @include icons('lock', 18px);
+    @include icons('remove', 18px);
+    @include icons('visible', 18px);
+    @include icons('menu-hamburger', 16px);
+    @include icons('menu-vs', 16px);
+    @include icons('round-arrow-dark', 40px);
+
+    // Maintenance Icons
+    @include icons('maintenance-blue', 70px);
+    @include icons('maintenance-green', 70px);
+    @include icons('maintenance-orange', 70px);
+
+}

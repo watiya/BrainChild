@@ -1,0 +1,170 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper user-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>유저조회</h2>
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <div class="wrapper-actions">
+
+                    <!-- Search Input -->
+                    <div class="search-input-container" data-target="#user-inquiry">
+                        <button class="search-field-clear" data-target="#user-inquiry"></button>
+                        <input class="search-field" id="user-inquiry" placeholder="검색 (유저 닉네임, 이메일, 회원번호)">
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="tags-container">
+                        <button type="button" class="btn point-40 tag">
+                            검색결과
+                            <i class="icons icon-clear on-right"></i>
+                        </button>
+                        <button type="button" class="btn point-40 tag">
+                            검색결과
+                            <i class="icons icon-clear on-right"></i>
+                        </button>
+                        <button type="button" class="btn point-40 tag">
+                            검색결과
+                            <i class="icons icon-clear on-right"></i>
+                        </button>
+                    </div>
+                    <!-- End of Tags -->
+
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">타이틀</span>
+
+                        <!-- Dropdown -->
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                            <option>필터 1.1</option>
+                            <option>필터 1.2</option>
+                            <option>필터 1.3</option>
+                            <option>필터 1.4</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb without-side-border">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">가입일</th>
+                                    <th scope="col">최근 접속일</th>
+                                    <th scope="col">이메일</th>
+                                    <th scope="col">닉네임</th>
+                                    <th scope="col">회원번호</th>
+                                    <th scope="col">VIP레벨</th>
+                                    <th scope="col">회원상태</th>
+                                    <th scope="col">제재횟수</th>
+                                    <th scope="col">상세보기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>이메일@이메일.com</td>
+                                    <td>닉네임</td>
+                                    <td>000</td>
+                                    <td>LV.1</td>
+                                    <td>상태</td>
+                                    <td>00</td>
+                                    <td>
+                                        <a class="button-link" href="#">편집</a>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                    <!-- Body Footer -->
+                    <div class="wrapper-body-footer">
+
+                        {{!-- Footer Actions --}}
+                        <div class="actions">
+
+                            {{!-- Delete --}}
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+
+                            {{!-- Dropdown --}}
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><a href="#"></a></li>
+                            <li class="page-item active"><a href="#">1</a></li>
+                            <li class="page-item"><a href="#">2</a></li>
+                            <li class="page-item"><a href="#">3</a></li>
+                            <li class="page-item"><a href="#">4</a></li>
+                            <li class="page-item"><a href="#">5</a></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><a href="#">20</a></li>
+                            <li class="page-item icons icon-chevron-right-gray"><a href="#"></a></li>
+                        </ul>
+                        <!-- End of Pagination -->
+
+                    </div>
+                    <!-- End of Body Footer -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

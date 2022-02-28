@@ -1,0 +1,663 @@
+.portal-page {
+
+    // TODO: Validate if applicable globally
+    // Wrapper Actions
+    .wrapper-actions {
+        height: 40px !important;
+        margin-bottom: 16px !important;
+
+        &.with-tabs {
+            height: 36px !important;
+            margin-bottom: 20px !important;
+            display: flex;
+
+            .nav-tabs {
+                width: 100%;
+                margin-right: 10px;
+                border-bottom: 1px solid #eeeeee;
+            }
+        }
+
+        .search-input-container {
+            width: 400px;
+        }
+
+        .tags-container {
+            display: flex;
+
+            .tag {
+                margin-left: 10px;
+
+                .icons {
+                    &.on-right {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    // Page Buttons
+    #add-banner {
+        width: 140px;
+    }
+    // End of Page Button
+
+    // Sub Header
+    .wrapper-sub-header {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        margin-bottom: 10px;
+    }
+
+    // Wrapper Body 
+    .wrapper-body {
+        height: calc(100% - 95px);
+    }
+
+
+     // TODO: Validate if this changes is applicable globally 
+     .wrapper-body-footer {
+         border-top: 1px solid #e0e0e0;
+         height: 70px !important;
+         margin: 0px !important;
+         padding: 22px 12px 16px;
+         align-items: center;
+
+         .actions {
+             display: flex;
+         }
+
+         .dropdown-select {
+             max-width: 90px;
+             width: 90px;
+
+             * {
+                 font-size: 14px;
+                 color: #757575;
+             }
+
+             .dropdown-toggle {
+                 height: 32px;
+             }
+         }
+     }
+
+
+    // TODO : Optimize this block
+    .portal-banner-blocks {
+        padding: 30px !important;
+
+        .tb {
+            table {}
+            
+            table thead {}
+
+            table tbody {}
+
+            table tbody tr {}
+
+            table tbody tr  td{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                height: 110px;
+            }
+        }
+    }
+
+    // TODO : Optimize this block
+    .portal-lists-blocks {
+        padding: 30px !important;
+
+        .tb {
+            table {}
+
+            table thead {}
+
+            table tbody {}
+
+            table tbody tr {}
+
+            table tbody tr td {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                height: 50px;
+            }
+        }
+    }
+
+    // Basic Blocks
+    
+    .basic-info-blocks {
+        table tbody td{
+            height: 70px;
+
+            label {
+                width: 290px;
+            }
+        }
+
+        .checkbox-button {
+            margin-right: 34px;
+
+            label {
+                width: auto;
+            }
+        }
+    }
+
+    // Image Registration Blocks
+    .image-registration-blocks {
+
+        table tbody td {
+            height: 210px;
+
+            label {
+                width: 310px;
+            }
+        }
+
+        .dropzone-group {
+            display: flex;
+
+            .dropzone-wrapper {
+                margin-right: 20px;
+            }
+
+            .dropzone-label {
+                font-size: 13px;
+                font-weight: 500;
+                display: block;
+                width: 100%;
+                margin-bottom: 9px;
+            }
+
+
+            .dropzone-container {
+                
+                &.dropzone-sm {
+                    width: 124px;
+                    height: 120px;
+                }
+
+                &.dropzone-md {
+                    width: 208px;
+                    height: 120px;
+                }
+
+                &.dropzone-lg {
+                    width: 300px;
+                    height: 120px;
+                }
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+
+    }
+
+    // Campaign Registration Blocks
+    .campaign-registration-blocks {
+        table tbody td {
+            height: 200px;
+
+            label {
+                width: 310px;
+            }
+        }
+    }
+
+    // Label Group
+    .label-group {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        padding-top: 28px;
+
+        span {
+            width: 100%;
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            color: #212121;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0;
+        }
+
+        ul li {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            color: #9e9e9e;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            i {
+                font-style: normal;
+            }
+        }
+    }
+    
+
+    // TODO: Create a Global thumbnail
+    // Table Image Banner Wrapper
+    .banner-thumbnail {
+        width: 220px;
+        height: 80px;
+        border-radius: 4px;
+        overflow: hidden;
+        display: inline-block;
+
+        &.thumbnail-medium {
+            width: 138px;
+            height: 80px;
+        }
+
+        &.thumbnail-small {
+            width: 90px;
+            height: 90px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    // Table Image Banner Wrapper
+
+    // TODO: Validate if this changes is applicable globally 
+    // Table
+    .form-tb,
+    .tb {
+        border-top: 0px;
+        border-bottom: 0px;
+
+        thead {
+            tr {
+                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #eeeeee;
+
+                th {
+                    border-right: 1px solid #eeeeee;
+
+                    &:last-child {
+                        border-right: 0px;
+                    }
+                }
+            }
+        }
+
+        tbody {}
+
+        tbody tr {
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        tbody tr td {
+            height: 50px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-right: 1px solid #eeeeee;
+            color: #616161;
+
+            &:last-child {
+                border-right: 0px;
+            }
+        }
+
+        &.without-side-border {
+
+            thead tr th,
+            tbody tr td {
+                border-right: 0px;
+            }
+        }
+    }
+
+    // Form Container
+    // TODO: Validate if applicable globally 
+    .forms-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 28px;
+        padding-bottom: 32px;
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            height: 40px;
+            
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        .form-group .form-label {
+            width: 100px;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 500;
+            color: #212121;
+            text-align: left;
+        }
+
+        .form-group .input-container {
+            width: 540px;
+        }
+
+        .td-content {
+            align-items: flex-start;
+        }
+        
+    }
+
+    // TODO: Validate if applicable globally 
+    .wrapper-footer-action {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        margin-bottom: 40px;
+
+        .footer-actions {
+            
+            .btn {
+                margin-right: 10px;
+                
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+    }
+
+    // Wrapper
+    .game-selection-dropdown {
+        width: 380px !important;
+        max-width: 100%;
+        margin-right: 40px;
+    }
+
+
+    .featured-image-upload {
+        .dropzone-wrapper {
+            margin-right: 40px !important;
+
+            &:last-child {
+                margin-right: 0px;    
+            }
+        }
+    }
+
+    .lucky-day-image-upload {
+        .dropzone-wrapper {
+            margin-right: 40px !important;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+
+    // Tab Content
+    .tab-content {
+
+        .tab-pane {
+            
+            table {
+            }
+
+            table tbody {
+            }
+
+            table tbody tr {
+            }
+
+            table tbody tr td {
+                min-height: 70px;    
+
+                label {
+                    padding-top: 25px;
+                    align-items: flex-start;
+                }
+            }
+        }
+
+    }
+
+    .receiver-info {
+
+        table {}
+
+        table tr {}
+
+        table tr label {}
+
+        table tr td {
+            height: 120px;
+
+            label {
+                outline: 1px solid red;
+                width: 200px;
+                padding-top: 25px;
+                align-items: flex-start;
+            }
+
+            .td-content {
+
+            }
+
+            .td-content .radio-group {
+                display: flex;
+                flex-direction: column;
+
+                .radio-button {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    
+                    label {
+                        padding-top: 0px;
+                    }
+
+                    &.with-search-input {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .search-input-container {
+                        width: 300px;
+                        margin-right: 20px;
+                    }
+
+                    .tags-container {
+                        .btn {
+                            margin-right: 10px;
+                            
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .message-info {
+        table {}
+
+        table tr {}
+
+        table tr label {}
+
+        table tr td {
+            height: 200px;
+
+            > label {
+                padding-top: 25px;
+                align-items: flex-start;
+            }
+
+            .td-content {}
+
+        }
+
+        .form-group {
+            height: auto;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        .forms-column {
+            .input-container {
+
+                &.with-textarea {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+
+    // TODO: Validate if applicable globally
+    .td-content-title {
+        width: 200px !important;
+    }
+
+    .coupon-type-dropdown {
+        width: 340px;
+        max-width: 100%;
+        margin-right: 40px;
+    }
+}
+
+// TODO: Validate if applicable globally
+.editor-container {
+    width: 820px;
+    height: 300px;
+    border: 1px solid #e0e0e0;
+    background-color: rgba(244, 67, 54, 0.1);   
+    border-radius: 4px;
+}
+
+// TODO: Validate if applicable globally
+.maintenance-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .status-header {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        color: #424242;
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #bdbdbd;
+    }
+
+    .maintenance-current-status {
+        display: flex;
+        width: 200px;
+        flex-direction: column;
+        margin-right: 40px;
+        
+        .status {
+            width: 200px;
+            height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom: 1px solid #e0e0e0;
+            
+            .icon {
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                font-stretch: normal;
+                color: #424242;
+                margin-top: 7px;
+            }
+        }
+
+    }
+
+    .maintenace-settings {
+        width: 840px;
+        
+        .settings-forms {
+            display: flex;
+            height: 210px;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .settings-forms .forms-container {
+            width: 500px;
+            margin-right: 20px;
+        }
+
+        .settings-forms .forms-action {
+
+            .btn {
+                width: 110px;
+                height: 90px;
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+        
+    }
+
+    .forms-container {
+        
+        .form-label {
+            width: 100px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .datetime-picker-container,
+        .input-container {
+            width: 400px !important;
+        }
+
+        .datepicker-container {
+            width: 100%;
+            margin-right: 0px;
+        }
+
+    }
+
+}

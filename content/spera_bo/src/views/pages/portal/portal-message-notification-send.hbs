@@ -1,0 +1,252 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>알림 메시지 발송</h2>
+                
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item"><a href="#">메시지 발송</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">공지사항</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body h-auto" style="margin-bottom: 30px;">
+                    
+                    <!-- Table -->
+                    <h5 class="form-table-title">발송대상</h5>
+                    <div class="form-table receiver-info" style="margin-bottom: 20px;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>발송대상</label>
+                                        <div class="td-content">
+                                            <div class="radio-group">
+
+                                                <div class="radio-button">
+                                                    <label for="radio_1">
+                                                        <input type="radio" value="" id="radio_1" name="">
+                                                        <i class="radio"></i>
+                                                        <span for="">전체 유저</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="radio-button with-search-input">
+                                                    <label for="radio_2">
+                                                        <input type="radio" value="" id="radio_2" name="" checked>
+                                                        <i class="radio"></i>
+                                                        <!-- <span for="">미출시</span> -->                                                   
+                                                    </label>
+                                                    <div class="search-input-container line-container" data-target="#search-input-2">
+                                                        <button class="search-field-clear" data-target="#search-input-2"></button>
+                                                        <input class="search-field" id="search-input-2" placeholder="검색어를 입력해주세요">
+                                                    </div>
+
+                                                    <!-- Tags -->
+                                                    <div class="tags-container">
+                                                        <button type="button" class="btn point-32 tag">
+                                                            검색결과
+                                                            <i class="icons icon-clear on-right"></i>
+                                                        </button>
+                                                        <button type="button" class="btn point-32 tag">
+                                                            검색결과
+                                                            <i class="icons icon-clear on-right"></i>
+                                                        </button>
+                                                        <button type="button" class="btn point-32 tag">
+                                                            검색결과
+                                                            <i class="icons icon-clear on-right"></i>
+                                                        </button>
+                                                    </div>
+                                                    <!-- End of Tags -->
+
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                    <!-- Table -->
+                    <h5 class="form-table-title">메시지 입력</h5>
+                    <div class="form-table message-info">
+                        <table>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+                                        <label>영어 메시지 입력</label>
+                                        <div class="td-content forms-container">
+                                            
+                                            <div class="form-group align-items-start">
+                                                <span class="form-label">영어</span>
+
+                                                <div class="forms-column">
+                                                    <div class="input-container" data-target="#input-basic">
+                                                        <input class="input-field" id="input-basic" type="text"
+                                                            placeholder="타이틀 입력 (필수)" maxlength="100" maxend="자">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group align-items-start">
+                                                <span class="form-label">내용</span>
+
+                                                <div class="forms-column">
+
+                                                    <div class="input-container with-textarea" data-target="#textarea-basic">
+                                                        <textarea class="input-field" 
+                                                            placeholder="제목을 입력해주세요" 
+                                                            maxlength="1000" maxend="자"
+                                                            id="textarea-basic" 
+                                                            cols="30" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+                                        <label class="label-group">
+                                            <span>한글 메시지 입력</span>
+                                            <ul>
+                                                <li>미입력시 영어 적용</li>
+                                            </ul>
+                                        </label>
+                                        <div class="td-content forms-container">
+                                        
+                                            <div class="form-group align-items-start">
+                                                <span class="form-label">영어</span>
+                                        
+                                                <div class="forms-column">
+                                                    <div class="input-container" data-target="#input-basic">
+                                                        <input class="input-field" id="input-basic" type="text" placeholder="타이틀 입력 (필수)" maxlength="100"
+                                                            maxend="자">
+                                                    </div>
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                            <div class="form-group align-items-start">
+                                                <span class="form-label">내용</span>
+                                        
+                                                <div class="forms-column">
+                                        
+                                                    <div class="input-container with-textarea" data-target="#textarea-basic">
+                                                        <textarea class="input-field" placeholder="제목을 입력해주세요" maxlength="1000" maxend="자" id="textarea-basic"
+                                                            cols="30" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+                                        <label class="label-group">
+                                            <span>중국어(간체) 메시지 입력</span>
+                                            <ul>
+                                                <li>미입력시 영어 적용</li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content forms-container">
+                                        
+                                            <div class="form-group align-items-start">
+                                                <span class="form-label">영어</span>
+                                        
+                                                <div class="forms-column">
+                                                    <div class="input-container" data-target="#input-basic">
+                                                        <input class="input-field" id="input-basic" type="text" placeholder="타이틀 입력 (필수)" maxlength="100"
+                                                            maxend="자">
+                                                    </div>
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                            <div class="form-group align-items-start">
+                                                <span class="form-label">내용</span>
+                                        
+                                                <div class="forms-column">
+                                        
+                                                    <div class="input-container with-textarea" data-target="#textarea-basic">
+                                                        <textarea class="input-field" placeholder="제목을 입력해주세요" maxlength="1000" maxend="자" id="textarea-basic"
+                                                            cols="30" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+                    
+                
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <!-- Footer Action -->
+                <div class="wrapper-footer-action">
+                
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-solid-red-46 d-none">삭제</button>
+                    </div>
+                
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">등록</button>
+                    </div>
+                
+                </div>
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

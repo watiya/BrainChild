@@ -1,0 +1,40 @@
+@mixin typography($element, $font_size) {
+  #{$element} {
+    font-size: $font_size;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    &.font-weight {
+      &-regular {
+        font-weight: normal;
+      }
+
+      &-medium {
+        font-weight: 500;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// TODO: Create something meaningful css class name
+
+// Heading
+@include typography(h1, 26px);
+@include typography(h2, 22px);
+@include typography(h3, 18px);
+
+// Body Text
+@include typography('.body-text-1', 16px);
+@include typography('.body-text-2', 15px);
+@include typography('.body-text-3', 14px);
+@include typography('.body-text-4', 13px);
+
+// Small Text
+@include typography('.small-text-1', 12px);
+@include typography('.small-text-2', 11px);

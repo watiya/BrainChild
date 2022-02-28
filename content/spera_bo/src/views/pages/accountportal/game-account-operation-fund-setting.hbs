@@ -1,0 +1,169 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper accountportal game-account-operation-fund-setting">
+                <div class="wrapper-title">
+                    <h2>게임 운영계좌 자금변경</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">게임계좌</a></li>
+                            <li class="breadcrumb-item"><a href="#">계좌관리</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">게임 운영계좌 자금변경</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">자금 변경</span>
+                    </div>
+
+                    <div class="d-flex wdtper-100 justify-content-center  mb-20">
+                        <div class="form-dual mt-5">
+                            <div class="form-dual-wrapper">
+
+                                <div class="d-flex flex-column">
+                                    <span class="fs-7 ml-auto mb-1">단위 : USDT</span>
+                                    <div class="tb-2" style="width: 460px">
+                                        <table>
+                                            <colgroup>
+                                                <col width="35%" />
+                                                <col width="65%" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="txt left bold bg-dark-gray" colspan="2">(운영계좌) % 게임명 %
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="txt right medium">여유금</td>
+                                                    <td class="txt right bold">1,234.56</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt right medium">
+                                                        운영자금
+                                                        <div class="mt-12"></div>
+                                                    </td>
+                                                    <td class="txt right bold">
+                                                        500.00
+                                                        <div class="input-container mt-1" data-target="#input-basic">
+                                                            <input class="input-field" id="input-basic" type="text"
+                                                                placeholder="이메일 주소입력">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt right medium">
+                                                        비상자금
+                                                        <div class="mt-12"></div>
+                                                    </td>
+                                                    <td class="txt right bold">
+                                                        100.00
+                                                        <div class="input-container" data-target="#input-basic">
+                                                            <input class="input-field" id="input-basic" type="text"
+                                                                placeholder="이메일 주소입력">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="gray">
+                                                    <td class="txt right medium">자금 합계</td>
+                                                    <td class="txt right bold">1,834.56</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="form-arrow">
+                                    <i class="icons icon-round-arrow-dark"></i>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <span class="fs-7 ml-auto mb-1">단위 : USDT</span>
+                                    <div class="tb-2" style="width: 460px">
+                                        <table>
+                                            <colgroup>
+                                                <col width="35%" />
+                                                <col width="65%" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="txt left bold bg-dark-gray" colspan="2">(메인계좌) % 게임명 %
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="txt right medium">여유금</td>
+                                                    <td class="txt right bold">% 메인계좌 잔액 %</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt right medium">
+                                                        운영자금
+                                                        <div class="mt-12"></div>
+                                                    </td>
+                                                    <td class="txt right bold">
+                                                        % 변경된 운영자금 차액 %
+                                                        <div class="mt-12"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt right medium">
+                                                        비상자금
+                                                        <div class="mt-12"></div>
+                                                    </td>
+                                                    <td class="txt right bold">
+                                                        % 변경된 비상자금 차액 %
+                                                        <div class="mt-12"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="gray">
+                                                    <td class="txt right medium">변경 후 합계</td>
+                                                    <td class="txt right bold color-red">% 변경 후 메인계좌 금액 %</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <span class="fs-6  ml-auto mt-4">처리 담당자 : 이름 (이메일주소@이메일..com)</span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btns mt-5">
+                    <div></div>
+                    <div>
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">전송</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

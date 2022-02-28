@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" class="spera-production">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, 
+    user-scalable=no, shrink-to-fit=yes">
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SPERA Style Guide" />
+    <meta property="og:description" content="SPERA Style Guide" />
+    <meta property="og:image" content="#" />
+    <title>Spera Portal | Featured Banner Add</title>
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../../static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/plugins/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../static/plugins/fastselect/fastselect.min.css">
+    <link rel="stylesheet" href="../../static/plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/plugins/toastr/css/toastr.min.css">
+    <link rel="stylesheet" href="../../static/plugins/dropzone/css/dropzone.min.css">
+    <link rel="stylesheet" href="../../static/plugins/pickr/css/nano.min.css">
+    <link rel="stylesheet" href="../../static/plugins/datepicker/css/datepicker.min.css">
+    <link rel="stylesheet" href="../../static/plugins/daterangepicker/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/plugins/nestable/css/nestable.css">
+    <link rel="stylesheet" href="../../static/plugins/chartist/css/chartist.min.css">
+<link href="../../static/css/app.css" rel="stylesheet"></head>
+<body>
+    <!-- Start of GNB -->
+    <header class="navbar gnb">
+        <div class="container-fluid">
+    
+            <!-- Start of Left Content -->
+            <div class="navbar-wrapper">
+    
+                <!-- Brand -->
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../static/images/logo.png" alt="" srcset="">
+                </a>
+    
+                <!-- Navigation Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../backoffice/account-management.html">백오피스</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../user/user-inquiry.html">회원</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../accountportal/account-management.html">계좌</a>
+                    </li>
+                    <li class="nav-item  active">
+                        <a class="nav-link"
+                            href="../portal/portal-banner-main.html">포털</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../game/game-list.html">게임</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../calculate/calculate-portal-summary.html">정산</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../event/weeklyrace.html">이벤트</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../withdraw/withdraw-failures.html">출금</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" 
+                            href="../statistics/statistics-current-summary.html">통계</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="../guide/element01.html"
+                            target="_blank">GUIDE</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Left Content -->
+    
+            <!-- Start of Right Content -->
+            <div class="navbar-wrapper">
+                <ul class="navbar-nav">
+                    <button class="icons icon-apps btn-menu" onclick="toggleMenu();"></button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">전정국</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Right Content -->
+    
+        </div>
+    
+        <!-- Start of Menu -->
+        <nav class="navbar menu" id="menu">
+        
+            <div class="menu-wrapper">
+        
+                <!-- Mene Header -->
+                <div class="menu-header">
+                    <span class="info small-text-1">jungkookzzangzznagman@email.com</span>
+                    <button type="button" class="btn logout-32">로그아웃</button>
+                </div>
+        
+                <!-- Body -->
+                <div class="menu-body">
+        
+                    <div class="menu-lists">
+        
+                        <div class="menu-list-title">
+                            <h1>
+                                <i class="icons icon-apps on-left"></i>
+                                전체메뉴
+                            </h1>
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">백오피스</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">계정관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">레벨관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">입점사관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">카테고리관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">변경이력</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">회원</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">회원조회</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">관리이력</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">계좌</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">포털 계좌</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임 계좌</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">포털 관리자 지급</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임 관리자 지급</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">포털</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <p class="nav-link">배너</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">메인 배너</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">서브 배너</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">피쳐드</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">럭키데이 픽</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">공지</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <p class="nav-link">메시지 발송</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">알림 메시지</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">채팅 메시지</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">쿠폰</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">점검</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">게임</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임 현황</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">점검</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">출시서비스 설정</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">정산</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">포털 정산</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">입점사 정산</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">정산 데이터 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">이벤트</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">VIP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Referral</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Cashback</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Weekly Race</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Lucky Pot</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Event</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">출금</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">출금 실패</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">검토 대기</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">출금 내역</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">검토 내역</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">계좌 관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">정채 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">통계</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">요약 통계</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <p class="nav-link">실시간 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">포털 접속자 수</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">총 통화량</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="nav-item">
+                                        <p class="nav-link">이용자 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">이용자별 통계</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">이용자 리텐션</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+        
+                                    <li class="nav-item">
+                                        <p class="nav-link">USDT 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">통화량</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">입/출금</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">지급</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">회수</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+        
+                                    <li class="nav-item">
+                                        <p class="nav-link">게임 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">게임 전체</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">게임 별</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </nav>
+        <!-- End of Menu --></header>
+    <!-- END of GNB -->
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        <!-- Start of LNB -->
+        <aside class="lnb">
+        
+            <!-- Navigation Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item with-sub-menu">
+                    <a class="nav-link  open-sub-menu" href="#"
+                        nav-data-toggle='#banner-lists' nav-data-toggle-class="open">배너</a>
+        
+                    <ul class="sub-menu  open" id="banner-lists">
+                        <div class="nav-item ">
+                            <a class="nav-link"
+                                href="../../pages/portal/portal-banner-main.html">메인
+                                배너</a>
+                        </div>
+                        <div class="nav-item ">
+                            <a class="nav-link"
+                                href="../../pages/portal/portal-sub-banner.html">서브 배너</a>
+                        </div>
+                        <div class="nav-item  active">
+                            <a class="nav-link"
+                                href="../../pages/portal/portal-banner-featured.html">피처드</a>
+                        </div>
+                        <div class="nav-item ">
+                            <a class="nav-link"
+                                href="../../pages/portal/portal-lucky-day-pick.html">럭키데이
+                                픽</a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link"
+                        href="../../pages/portal/portal-notice-lists.html">공지사항</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link"
+                        href="../../pages/portal/portal-faq-lists.html">FAQ</a>
+                </li>
+                <li class="nav-item with-sub-menu">
+                    <a class="nav-link " href="#"
+                        nav-data-toggle='#message-lists' nav-data-toggle-class="open">메시지 발송</a>
+        
+                    <ul class="sub-menu " id="message-lists">
+                        <div class="nav-item ">
+                            <a class="nav-link"
+                                href="../../pages/portal/portal-message-notification.html">알림
+                                메시지</a>
+                        </div>
+                        <div
+                            class="nav-item ">
+                            <a class="nav-link"
+                                href="../../pages/portal/portal-message-banner.html">띠배너
+                                알림</a>
+                        </div>
+                    </ul>
+        
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link"
+                        href="../../pages/portal/portal-coupon-lists.html">쿠폰</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link"
+                        href="../../pages/portal/portal-maintenance-service.html">점검</a>
+                </li>
+            </ul>
+        
+            <!-- Brand Copyright -->
+            <div class="copyright">
+                <span> Copyright ⓒ <b>SPERGAMING.</b></span>
+            </div>
+        
+        </aside>
+        <!-- END of LNB -->
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>피쳐드 등록</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item"><a href="#">배너</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">피쳐드</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style=" height: 360px; margin-bottom: 20px">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">기본 정보</span>
+
+                    </div>
+                    <!-- End of Body Header -->
+
+                    <!-- Table -->
+                    <div class="form-table basic-info-blocks">
+                        <table>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+                                        <label for="">서브배너 ID</label>
+                                        <div class="td-content">
+                                            <div class="input-container" data-target="#input-basic">
+                                                <input class="input-field" id="input-basic" type="text"
+                                                    placeholder="ID 자동 발급" maxlength="100" maxend="자" disabled>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="">게임 선택</label>
+                                        <div class="td-content">
+
+                                            <select class="dropdown-select show-tick line-40 game-selection-dropdown">
+                                                <option>게임을 선택해주세요.</option>
+                                                <option>목록 1</option>
+                                                <option>목록 2</option>
+                                                <option>목록 3</option>
+                                                <option>목록 4</option>
+                                                <option>목록 5</option>
+                                            </select>
+
+                                            <div class="checkbox-button">
+                                                <label for="checkbox_02">
+                                                    <input type="checkbox" value="" id="checkbox_02">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">데모플레이 연결</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="">게시 기간</label>
+                                        <div class="td-content">
+                                            <div class="daterange-picker-container">
+                                                <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="">게시 상태 설정</label>
+                                        <div class="td-content">
+                                            <div class="checkbox-button">
+                                                <label for="checkbox_02">
+                                                    <input type="checkbox" value="" id="checkbox_02">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">비활성</span>
+                                                </label>
+                                            </div>
+
+                                            <span class="td-note">* 비활성 선택 시 게시기간과 관계없이 포털에 노출되지 않습니다.</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body h-auto" style="margin-bottom: 20px;">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header justify-content-between">
+
+                        <!-- Title -->
+                        <span class="title">이미지 등록</span>
+
+                        <!-- Download 디자인 가이드 -->
+                        <button type="button" class="btn solid-32">
+                            <i class="icons icon-download on-left"></i>
+                            디자인 가이드
+                        </button>
+
+                    </div>
+                    <!-- End of Body Header -->
+
+                    <!-- Table -->
+                    <div class="form-table image-registration-blocks featured-image-upload">
+                        <table>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>배너 이미지 (PC)</span>
+                                            <ul>
+                                                <li>메인화면에 표시되는 직사각형 형태의 이미지입니다.</li>
+                                                <li>
+                                                    권장 크기는 <i class="color-red">440x428</i> 사이즈이며, <br>
+                                                    500KB 이하의 jpg, png 파일만 업로드 해주세요.
+                                                </li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content">
+
+                                            <div class="dropzone-group">
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">한국어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>배너 이미지 (모바일)</span>
+                                            <ul>
+                                                <li>메인화면에 표시되는 직사각형 형태의 이미지입니다.</li>
+                                                <li>
+                                                    권장 크기는 <i class="color-red">440x428</i> 사이즈이며, <br>
+                                                    500KB 이하의 jpg, png 파일만 업로드 해주세요.
+                                                </li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content">
+
+                                            <div class="dropzone-group">
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">한국어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>배너 이미지 (태블릿)</span>
+                                            <ul>
+                                                <li>메인화면에 표시되는 직사각형 형태의 이미지입니다.</li>
+                                                <li>
+                                                    권장 크기는 <i class="color-red">440x428</i> 사이즈이며, <br>
+                                                    500KB 이하의 jpg, png 파일만 업로드 해주세요.
+                                                </li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content">
+
+                                            <div class="dropzone-group featured-image-upload-group">
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">한국어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-sm">
+                                                        <span class="dz-label">
+                                                            미등록시 영어 기준 <br>
+                                                            이미지가 적용됩니다
+                                                        </span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <div class="wrapper-footer-action">
+
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-solid-red-46">삭제</button>
+                    </div>
+
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">등록</button>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    
+    <!-- Plugins Script -->
+    <script src="../../static/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../../static/plugins/jquery-ui/jquery-ui.js"></script>
+    <script src="../../static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../static/plugins/fastselect/fastselect.standalone.min.js"></script>
+    <script src="../../static/plugins/toastr/js/toastr.min.js"></script>
+    <script src="../../static/plugins/dropzone/js/dropzone.min.js"></script>
+    <script src="../../static/plugins/pickr/js/pickr.es5.min.js"></script>
+    <script src="../../static/plugins/moment/moment.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/datepicker.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.en.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.kr.js"></script>
+    <script src="../../static/plugins/daterangepicker/js/daterangepicker.min.js"></script>
+    <script src="../../static/plugins/nestable/js/jquery.nestable.js"></script>
+    <script src="../../static/plugins/chartist/js/chartist.min.js"></script>
+    <!-- End of Plugins Script -->
+    
+    <!-- Custom Script with Plugins Implementation -->
+    <script src="../../static/plugins/plugin-script.js"></script>
+    <script src="../../static/plugins/statistics-script.js"></script>
+<script src="../../static/js/app.js"></script></body>
+
+</html>

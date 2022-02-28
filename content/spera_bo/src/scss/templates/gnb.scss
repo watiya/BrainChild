@@ -1,0 +1,84 @@
+$gnb-height: 60px;
+
+
+header {
+  z-index: 1; // TODO: Get from Variables
+
+  &.gnb {
+    height: $gnb-height;
+    background-color: #212121; // TODO: Get from Variables
+    position: relative;
+    padding: 0px;
+
+    // Container
+    .container-fluid {
+      height: 100%;
+      padding: 0px 30px;
+    }
+
+    .navbar-wrapper {
+      display: flex;
+    }
+
+    // Brand | Logo
+    .navbar-brand {
+      color: #ffffff; // TODO: Get from Variables
+      font-weight: 800;
+      margin-right: 104px;
+
+      img {
+        max-width: 136px;
+      }
+    }
+
+    // Navigation
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .nav-item {
+        margin-right: 55px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        &.active {
+          .nav-link {
+            color: #ffffff; // TODO: Get from Variables
+          }
+        }
+
+        &:hover {
+          .nav-link {
+            color: #e0e0e0; // TODO: Get from Variables
+          }
+        }
+
+        .nav-link {
+          color: #9e9e9e; // TODO: Get from Variables
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+
+          text-transform: uppercase; // TODO: For Demo Purpose
+        }
+      }
+
+
+    }
+
+  }
+
+  .btn-menu {
+    border: 0px;
+    outline: none;
+    height: 21px;
+    width: 21px;
+    margin-right: 12px;
+  }
+}

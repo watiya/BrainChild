@@ -1,0 +1,65 @@
+.pagination {
+    height: 24px;
+    margin-bottom: 0px;
+
+    .page-item {
+        @include flex-center;
+        width: auto;
+        font-weight: 500;
+        color: $gray-5;
+        height: 100% !important;
+        font-size: 14px;
+        vertical-align: top;
+        margin: 0 12px;
+        min-width: 18px;
+        padding: 0 !important;
+        border: none !important;
+        cursor: pointer;
+
+        a {
+            color: $gray-5;
+            text-decoration: unset;
+        }
+
+        &.active {
+            a {
+            font-weight: bold;
+            color: $primary-1;
+            }
+        }
+
+        &.disabled,
+        &:disabled {
+            a {
+                color: #eeeeee;
+            }
+        }
+
+        &:hover {
+            a {
+                color: #757575;
+            }
+        }
+
+        &.ellipsis {
+            cursor: default;
+            pointer-events: none;
+            height: 16px;
+            width: 16px;
+            margin: 0 5px;
+            background-position: center 5px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url('/static/icons/ellipsis.svg');
+        }
+
+        &.icons {
+            margin: 0;
+        }
+
+        >span {
+            padding: 0 !important;
+        }
+    }
+
+}

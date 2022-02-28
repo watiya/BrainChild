@@ -1,0 +1,90 @@
+.app-container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 60px); // TODO: Get from Variable
+
+    main {
+        background-color: $main-bg; // TODO: Get from Variable
+        width: 100%;
+        padding: 30px;
+        padding-top: 20px;
+        overflow-y: auto; // TODO: Validate Overflow Attribute
+        position: relative;
+    }
+
+    .content-wrapper {
+        margin-bottom: 20px;
+        height: 100%;
+
+        .wrapper-title {
+            display: flex;
+            margin-bottom: 4px;
+            height: 40px;
+
+            h2 {
+                font-weight: 500;
+                color: #424242;
+            }
+
+        }
+
+        .wrapper-actions {
+            display: flex;
+            margin-bottom: 10px;
+            height: 32px;
+
+            &.h10px {
+                height: 10px;
+            }
+
+            &.med {
+                height: 90px;
+            }
+
+            .wrapper {
+                width: 100%;
+            }
+        }
+
+        .wrapper-body {
+            display: flex;
+            flex-flow: column nowrap;
+
+            padding: 20px 30px;
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            background-color: #fff;
+            border-radius: 4px;
+
+            .wrapper-body-header {
+                margin-bottom: 8px;
+                height: 32px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .title {
+                    font-size: 18px;
+                    color: $gray-2;
+                    font-weight: 500;
+                }
+
+                select {
+                    width: 110px;
+                }
+            }
+
+            .wrapper-body-footer {
+                margin-top: 20px;
+                height: 40px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

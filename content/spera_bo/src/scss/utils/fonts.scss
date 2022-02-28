@@ -1,0 +1,79 @@
+// Thin
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 100;
+  src: url('/static/fonts/AppleSDGothicNeoT.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoT.ttf') format("truetype");
+}
+
+// Ultra Light
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 200;
+  src: url('/static/fonts/AppleSDGothicNeoUL.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoUL.ttf') format("truetype");
+}
+
+// Light
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 300;
+  src: url('/static/fonts/AppleSDGothicNeoL.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoL.ttf') format("truetype");
+  src: url('/static/fonts/AppleSDGothicNeoL.woff') format("woff");
+  src: url('/static/fonts/AppleSDGothicNeoL.woff2') format("woff2");
+}
+
+// Regular
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 400;
+  src: url('/static/fonts/AppleSDGothicNeoR.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoR.ttf') format("truetype");
+  src: url('/static/fonts/AppleSDGothicNeoR.woff') format("woff");
+  src: url('/static/fonts/AppleSDGothicNeoR.woff2') format("woff2");
+}
+
+// Medium
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 500;
+  src: url('/static/fonts/AppleSDGothicNeoM.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoM.ttf') format("truetype");
+  src: url('/static/fonts/AppleSDGothicNeoM.woff') format("woff");
+  src: url('/static/fonts/AppleSDGothicNeoM.woff2') format("woff2");
+}
+
+// Semi-Bold
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 600;
+  src: url('/static/fonts/AppleSDGothicNeoSB.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoSB.ttf') format("truetype");
+}
+
+// Black
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 700;
+  src: url('/static/fonts/AppleSDGothicNeoB.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoB.ttf') format("truetype");
+  src: url('/static/fonts/AppleSDGothicNeoB.woff') format("woff");
+  src: url('/static/fonts/AppleSDGothicNeoB.woff2') format("woff2");
+}
+
+// Extra Bold
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 800;
+  src: url('/static/fonts/AppleSDGothicNeoEB.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoEB.ttf') format("truetype");
+}
+
+// Heavy
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-weight: 900;
+  src: url('/static/fonts/AppleSDGothicNeoH.otf') format("opentype");
+  src: url('/static/fonts/AppleSDGothicNeoH.ttf') format("truetype");
+}

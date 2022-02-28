@@ -1,0 +1,110 @@
+.tab-navigation {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #eee !important;
+
+    li {
+        height: 30px;
+        margin: 1px 20px -1px 0;
+        @include flex-center;
+        cursor: pointer;
+
+        &.active {
+            border-bottom: 1px solid $black;
+
+            a {
+                color: $black;
+            }
+        }
+
+        a {
+            font-size: 15px;
+            color: $gray-5;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// TODO: Validate if applicable globally
+.nav-tabs {
+    border: 0px;
+    position: relative;
+    z-index: unset;
+
+    .nav-item {
+        margin-right: 20px;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    .nav-item .nav-link {
+        font-size: 15px;
+        font-weight: normal;
+        color: #9e9e9e;
+        border: 0px;
+        padding: 0px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid transparent;
+        background-color: transparent;
+
+        &.active {
+            color: #212121;
+            background-color: transparent;
+            font-weight: 500;
+            border-bottom-color: #212121;
+        }
+    }
+
+    &.with-block-tabs {
+        height: 36px;
+        margin-bottom: 14px;
+        border-bottom: 0px;
+
+        .nav-item {
+            width: 140px;
+            height: 100%;
+            margin-right: 2px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            a.nav-link {
+                height: 100%;
+                width: 100%;
+                border-radius: 0px;
+                font-size: 13px;
+                font-weight: 500;
+                color: #424242;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid transparent;
+                border-bottom: 0px;
+                background-color: #eeeeee;
+
+                &.active {
+                    border: 2px solid #2196f3;
+                    background-color: #fafafa;
+                    border-bottom: 0px;
+
+                }
+            }
+        }
+
+
+    }
+
+}

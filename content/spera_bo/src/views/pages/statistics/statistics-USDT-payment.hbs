@@ -1,0 +1,163 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper statistics-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>지급</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">통계</a></li>
+                            <li class="breadcrumb-item"><a href="#">USDT 통계</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">통화량</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Sub-header Actions -->
+                <div class="wrapper-sub-header justify-content-between">
+
+                    <div class="wrapper-fields">
+                        <div class="daterange-picker-container">
+                            <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                        </div>
+                    </div>
+
+                    <a class="btn solid-36 download" href="#">
+                        <i class="icons icon-download on-left"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">
+                            USDT 지급 리스트
+                            <label class="tooltip-label">
+                                <button type="button" class="icons icon-help-circle on-right" 
+                                    data-toggle="tooltip" data-placement="bottom" placement="bottom left"
+                                    data-offset="10, 10" 
+                                    data-html="true"
+                                    title="<ul class='tooltip-lists'>
+                                            <li><span>지급</span> 합계 = 우측 컬럼들의 해당일 합계 값.</li>
+                                            <li><span>Payout</span> – 해당일 Payout으로 유저에게 지급된 USDT 합계.</li>
+                                            <li><span>게임_관리자지급</span> – 해당일 게임 운영계좌로부터 ‘관리자 지급’ 항목으로 유저에게 지급된 USDT 합계.</li>
+                                            <li><span>게임_이벤트</span> 지급 – 해당일 게임 운영계좌로부터 이벤트 항목으로 유저에게 지급된 USDT 합계.</li>
+                                            <li><span>게임_기타</span> 지급 – 해당일 게임 운영계좌로부터 ‘기타’ 항목으로 유저에게 지급된 USDT 합계.</li>
+                                            <li><span>포털_관리자지급</span> – 해당일 포털 운영계좌로부터 ‘관리자 지급’ 항목으로 유저에게 지급된 USDT 합계.</li>
+                                            <li><span>포털_이벤트지급</span> – 해당일 포털 운영계좌로부터 ‘이벤트 지급’ 항목으로 유저에게 지급된 USDT 합계.</li>
+                                            <li><span>포털_기타지급</span> – 해당일 포털 운영계좌로부터 ‘기타 지급’ 항목으로 유저어게 지급된 USDT 합계.</li>
+                                            <li><span>VIP</span> 리워드 – 해당일 VIP 레벨업 보상으로 지급된 USDT 합계.</li>
+                                            <li><span>캐시백</span> – 해당일 캐시백 보상으로 지급된 USDT 합계.</li>
+                                            <li><span>레퍼럴</span> 커미션 – 해당일 레퍼럴 커미션 보상으로 지급된 USDT 합계.</li>
+                                            <li><span>럭키팟</span> – 해당일 럭키팟 보상으로 지급된 USDT 합계.</li>
+                                            <li><span>입금보너스</span> – 해당일 입금보너스 보상으로 지급된 USDT 합계.</li>
+                                        </ul>">
+                                </button>
+                            </label>
+                        </span>
+                        
+                        <!-- Dropdown -->
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                            <option>필터 1.1</option>
+                            <option>필터 1.2</option>
+                            <option>필터 1.3</option>
+                            <option>필터 1.4</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb table-responsive statistics-lists">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">일자</th>
+                                    <th scope="col" class="text-center">지급 합계</th>
+                                    <th scope="col" class="text-center">Payout</th>
+                                    <th scope="col" class="text-center">게임_관리자 지급</th>
+                                    <th scope="col" class="text-center">게임_이벤트 지급</th>
+                                    <th scope="col" class="text-center">게임_기타 지급</th>
+                                    <th scope="col" class="text-center">포털_관리자 지급</th>
+                                    <th scope="col" class="text-center">포털_ 이벤트 지급</th>
+                                    <th scope="col" class="text-center">포털_ 기타 지급</th>
+                                    <th scope="col" class="text-center">VIP 리워드</th>
+                                    <th scope="col" class="text-center">캐시백</th>
+                                    <th scope="col" class="text-center">레퍼럴 커미션</th>
+                                    <th scope="col" class="text-center">럭키팟</th>
+                                    <th scope="col" class="text-center">입금 보너스</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

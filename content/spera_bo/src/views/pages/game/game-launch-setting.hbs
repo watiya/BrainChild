@@ -1,0 +1,173 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper game game-launch-settings">
+                <div class="wrapper-title">
+                    <h2>게임 서비스 상태 설정</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">게임</a></li>
+                            <li class="breadcrumb-item"><a href="#">출시서비스 설정</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">게임 서비스 상태 설정</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">서비스 상태 설정</span>
+                    </div>
+
+                    <div class="form-tb">
+                        <table>
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="50%" />
+                                <col width="30%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="">게임 이름</label></td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="d-flex data-img-wrapper">
+                                                <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-game1.PNG"
+                                                    alt="" srcset="">
+                                            </div>
+                                            <span>Grand Spinn</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">출시 상태</label></td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="radio-button">
+                                                <label for="radio_1">
+                                                    <input type="radio" value="" id="radio_1" name="">
+                                                    <i class="radio"></i>
+                                                    <span for="">미출시</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="radio-button ml-20">
+                                                <label for="radio_2">
+                                                    <input type="radio" value="" id="radio_2" name="">
+                                                    <i class="radio"></i>
+                                                    <span for="">출시</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <span class="d-block mt-5 fs-6 color-gray">
+                                            출시 상태가 되면 포털에서 유저들이 게임에 접속할 수 있습니다. <br>
+                                            또한 상태를 되돌리 수 없으니 유의해주세요.
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <div></div>
+                    <div>
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">저장</button>
+                    </div>
+                </div>
+
+
+                <div class="wrapper-body mt-10">
+                    <div class="wrapper-body-header">
+                        <span class="title">서비스 상태 설정</span>
+                    </div>
+
+                    <div class="form-tb">
+                        <table>
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="50%" />
+                                <col width="30%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="">게임 이름</label></td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="d-flex data-img-wrapper">
+                                                <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-game1.PNG"
+                                                    alt="" srcset="">
+                                            </div>
+                                            <span>Grand Spinn</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">출시 상태</label></td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="radio-button">
+                                                <label for="radio_3">
+                                                    <input type="radio" value="" id="radio_3" name="" disabled>
+                                                    <i class="radio"></i>
+                                                    <span for="">미출시</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="radio-button ml-20">
+                                                <label for="radio_1">
+                                                    <input type="radio" value="" id="radio_1" name="" checked>
+                                                    <i class="radio"></i>
+                                                    <span for="">출시</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="radio-button ml-20">
+                                                <label for="radio_2">
+                                                    <input type="radio" value="" id="radio_2" name="" checked>
+                                                    <i class="radio"></i>
+                                                    <span for="">서비스 중단</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <span class="d-block mt-5 fs-6 color-gray">
+                                            ‘서비스 중단’ 선택 시 포털 내에서 게임이 노출되지 않으며 서비스 불가 상태가 됩니다. <br>
+                                            상태 변경에 유의해주세요.
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

@@ -1,0 +1,513 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>서브배너 편집</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item"><a href="#">배너</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">서브배너</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style=" height: 290px; margin-bottom: 20px">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">기본 정보</span>
+
+                    </div>
+                    <!-- End of Body Header -->
+
+                    <!-- Table -->
+                    <div class="form-table basic-info-blocks">
+                        <table>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+                                        <label for="">서브배너 ID</label>
+                                        <div class="td-content">
+                                            <div class="input-container" data-target="#input-basic">
+                                                <input class="input-field" id="input-basic" type="text"
+                                                    placeholder="ID 자동 발급" maxlength="100" maxend="자" disabled>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="">게시 기간</label>
+                                        <div class="td-content">
+                                            <div class="daterange-picker-container">
+                                                <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="">게시 상태 설정</label>
+                                        <div class="td-content">
+                                            <div class="checkbox-button">
+                                                <label for="checkbox_02">
+                                                    <input type="checkbox" value="" id="checkbox_02">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">비활성</span>
+                                                </label>
+                                            </div>
+
+                                            <span class="td-note">* 비활성 선택 시 게시기간과 관계없이 포털에 노출되지 않습니다.</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body h-auto" style="margin-bottom: 20px;">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header justify-content-between">
+
+                        <!-- Title -->
+                        <span class="title">이미지 등록</span>
+
+                        <!-- Download 디자인 가이드 -->
+                        <button type="button" class="btn solid-32">
+                            <i class="icons icon-download on-left"></i>
+                            디자인 가이드
+                        </button>
+
+                    </div>
+                    <!-- End of Body Header -->
+
+                    <!-- Table -->
+                    <div class="form-table image-registration-blocks">
+                        <table>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>배너 이미지 (PC)</span>
+                                            <ul>
+                                                <li>메인화면에 표시되는 직사각형 형태의 이미지입니다.</li>
+                                                <li>
+                                                    권장 크기는 <i class="color-red">3840x1400</i> 사이즈이며, <br>
+                                                    500KB 이하의 jpg, png 파일만 업로드 해주세요.
+                                                </li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content">
+
+                                            <div class="dropzone-group">
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">한국어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>배너 이미지 (모바일)</span>
+                                            <ul>
+                                                <li>메인화면에 표시되는 직사각형 형태의 이미지입니다.</li>
+                                                <li>
+                                                    권장 크기는 <i class="color-red">3840x1400</i> 사이즈이며, <br>
+                                                    500KB 이하의 jpg, png 파일만 업로드 해주세요.
+                                                </li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content">
+
+                                            <div class="dropzone-group">
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">한국어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>배너 이미지 (태블릿)</span>
+                                            <ul>
+                                                <li>메인화면에 표시되는 직사각형 형태의 이미지입니다.</li>
+                                                <li>
+                                                    권장 크기는 <i class="color-red">3840x1400</i> 사이즈이며, <br>
+                                                    500KB 이하의 jpg, png 파일만 업로드 해주세요.
+                                                </li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content">
+
+                                            <div class="dropzone-group">
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">한국어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropzone-wrapper">
+                                                    <span class="dropzone-label">영어</span>
+                                                    <div class="dropzone-container dropzone-md">
+                                                        <span class="dz-label">이미지 등록 (필수)</span>
+                                                        <span class="btn line-32">파일 첨부</span>
+                                                        <form action="/file-upload" class="dropzone">
+                                                            <div class="fallback">
+                                                                <input name="file" type="file" multiple />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body h-auto" style="margin-bottom: 20px;">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header justify-content-between">
+
+                        <!-- Title -->
+                        <span class="title">배너 캠페인 등록</span>
+
+                    </div>
+                    <!-- End of Body Header -->
+
+                    <!-- Table -->
+                    <div class="form-table campaign-registration-blocks">
+                        <table>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>타이틀</span>
+                                            <ul>
+                                                <li>메인배너에 노출할 타이틀 입니다.</li>
+                                                <li>추후 서비스 지역에 따라 언어가 추가 될 예정입니다.</li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content forms-container">
+
+                                            <div class="form-group">
+                                                <span class="form-label">영어</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="타이틀 입력 (필수)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">한글</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="타이틀 입력 (미입력시 영어 적용)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">중문간체</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="타이틀 입력 (미입력시 영어 적용)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td>
+
+                                        <label class="label-group">
+                                            <span>서브 타이틀</span>
+                                            <ul>
+                                                <li>메인배너에 노출할 디스크립션 입니다.</li>
+                                                <li>추후 서비스 지역에 따라 언어가 추가 될 예정입니다.</li>
+                                            </ul>
+                                        </label>
+
+                                        {{!-- Form Content --}}
+                                        <div class="td-content forms-container">
+
+                                            <div class="form-group">
+                                                <span class="form-label">영어</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="디스크립션 입력 (필수)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">한글</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="디스크립션 입력 (미입력시 영어 적용)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">중문간체</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="디스크립션 입력  (미입력시 영어 적용)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <td class="h-auto">
+
+                                        <label class="label-group">
+                                            <span>액션버튼</span>
+                                            <ul>
+                                                <li>메인배너 버튼의 링크 기능입니다.</li>
+                                                <li>추후 서비스 지역에 따라 언어가 추가 될 예정입니다.</li>
+                                            </ul>
+                                        </label>
+
+                                        <div class="td-content forms-container">
+
+                                            <div class="form-group">
+                                                <span class="form-label">URL</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="URL 입력(필수)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">영어</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="버튼 타이틀 입력 (필수)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">한글</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="버튼 타이틀 입력 (미엽력시 영어 적용)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="form-label">중문간체</span>
+                                                <div class="input-container" data-target="#input-basic">
+                                                    <input class="input-field" id="input-basic" type="text"
+                                                        placeholder="버튼 타이틀 입력 (미엽력시 영어 적용)" maxlength="100" maxend="자">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <div class="wrapper-footer-action">
+
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-solid-red-46">삭제</button>
+                    </div>
+
+                    <div class="footer-actions">
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">등록</button>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

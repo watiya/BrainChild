@@ -1,0 +1,16 @@
+@import './utils/utils';
+@import './components/components';
+@import './templates/templates';
+@import './pages/pages';
+
+* {
+    font-family: "AppleSDGothicNeo";
+}
+
+body {
+    color: #424242;
+}
+
+a {
+    cursor: pointer;
+}

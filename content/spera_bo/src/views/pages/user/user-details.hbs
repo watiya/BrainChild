@@ -1,0 +1,276 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper user-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>% 유저닉네임 %</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">유저</a></li>
+                            <li class="breadcrumb-item"><a href="#">유저조회</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">유저상세</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Tabs -->
+                <div class="wrapper-actions with-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <!-- User Details Link -->
+                        <li class="nav-item">
+                            <a class="nav-link active" id="content-1-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-details.html">계정</a>
+                        </li>
+
+                        <!-- User Account Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-2-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-account.html">계좌</a>
+                        </li>
+
+                        <!-- User Casino Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-3-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-casino.html">카지노프로그램</a>
+                        </li>
+
+                        <!-- User Security Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-4-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/user/{{/if}}user-security.html">보안</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Tabs -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style="height: 260px; margin-bottom: 20px;">
+                    <!-- Form Table with Two Column  -->
+                    <div class="form-table with-two-column">
+                        <table>
+                            <colgroup>
+                                <col width="50%" />
+                                <col width="50%" />
+                            </colgroup>
+                            <tbody>
+
+                                <!-- Row -->
+                                <tr>
+                                    <!-- First Column -->
+                                    <td>
+                                        <label for="">닉네임</label>
+                                        <div class="td-content">
+                                            <span>내남친전정국</span>
+                                            <button type="button" class="btn line-32" data-toggle="modal"
+                                                data-target="#userNicknameUpdate">변경</button>
+
+                                            {{!-- Note: Remove this button --}}
+                                            <button type="button" class="btn line-32 mx-3" data-toggle="modal"
+                                                data-target="#userNicknameUpdateSuccess">변경 Success</button>
+
+                                            {{!-- Note: Remove this button --}}
+                                            <button type="button" class="btn line-32" data-toggle="modal"
+                                                data-target="#userNicknameUpdateFail">변경 Fail</button>
+                                        </div>
+                                    </td>
+
+                                    <!-- Second Column -->
+                                    <td>
+                                        <label for="">이메일</label>
+                                        <div class="td-content">
+                                            <span>jungkookzangzangman@gmail.com</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <!-- First Column -->
+                                    <td>
+                                        <label for="">회원번호</label>
+                                        <div class="td-content">
+                                            <span>0000000000</span>
+                                        </div>
+                                    </td>
+
+                                    <!-- Second Column -->
+                                    <td>
+                                        <label for="">VIP레벨</label>
+                                        <div class="td-content">
+                                            <span>Lv.2</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <!-- First Column -->
+                                    <td>
+                                        <label for="">회원상태</label>
+                                        <div class="td-content">
+                                            <span>정상</span>
+                                            <button type="button" class="btn line-32" data-toggle="modal"
+                                                data-target="#userChangeMembershipStatus">변경</button>
+                                        </div>
+                                    </td>
+
+                                    <!-- Second Column -->
+                                    <td>
+                                        <label for="">제재횟수</label>
+                                        <div class="td-content">
+                                            <span>35</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row -->
+                                <tr>
+                                    <!-- First Column -->
+                                    <td>
+                                        <label for="">가입일</label>
+                                        <div class="td-content">
+                                            <span>2020-05-07 00:00:00</span>
+                                        </div>
+                                    </td>
+
+                                    <!-- Second Column -->
+                                    <td>
+                                        <label for="">최근 접속일</label>
+                                        <div class="td-content">
+                                            <span>2020-05-07 00:00:00</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Form Table with Two Column  -->
+                </div>
+                <!-- Content Wrapper Body -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style="margin-bottom: 30px;">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">타이틀</span>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb">
+                        <table>
+
+                            <!-- Table Header -->
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">최근 상태 변경 일시</th>
+                                    <th scope="col">회원상태</th>
+                                    <th scope="col">변경사유</th>
+                                    <th scope="col">담당자</th>
+                                </tr>
+                            </thead>
+
+                            <!-- Table Body -->
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-05-14 00:00:00</td>
+                                    <td>휴먼</td>
+                                    <td>%변경사유%</td>
+                                    <td>이름(이메일)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                    <!-- Body Footer -->
+                    <div class="wrapper-body-footer">
+
+                        <!-- Footer Actions -->
+                        <div class="actions">
+
+                            <!-- Delete -->
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+
+                            <!-- Dropdown -->
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><a href="#"></a></li>
+                            <li class="page-item active"><a href="#">1</a></li>
+                            <li class="page-item"><a href="#">2</a></li>
+                            <li class="page-item"><a href="#">3</a></li>
+                            <li class="page-item"><a href="#">4</a></li>
+                            <li class="page-item"><a href="#">5</a></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><a href="#">20</a></li>
+                            <li class="page-item icons icon-chevron-right-gray"><a href="#"></a></li>
+                        </ul>
+                        <!-- End of Pagination -->
+
+                    </div>
+                    <!-- End of Body Footer -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    <!-- Start of User Modal -->
+    {{> ./user-modals }}
+    <!-- End of User Modal -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

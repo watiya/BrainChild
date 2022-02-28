@@ -1,0 +1,159 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper statistics-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>통화량</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">통계</a></li>
+                            <li class="breadcrumb-item"><a href="#">USDT 통계</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">통화량</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Sub-header Actions -->
+                <div class="wrapper-sub-header justify-content-between">
+
+                    <div class="wrapper-fields">
+                        <div class="daterange-picker-container">
+                            <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                        </div>
+                    </div>
+
+                    <a class="btn solid-36 download" href="#">
+                        <i class="icons icon-download on-left"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">
+                            통화량 리스트
+                            <label class="tooltip-label">
+                                <button type="button" class="icons icon-help-circle on-right" 
+                                    data-toggle="tooltip" data-placement="bottom" placement="bottom left"
+                                    data-offset="10, 10" 
+                                    data-html="true"
+                                    title="<ul class='tooltip-lists'>
+                                            <li><span>총통화</span> – 해당 일자 집계 기준 시점에서의 전체 USDT 잔액 스냅샷. </li>
+                                            <li>(총통화 = 유저계좌 잔액 합계 + 입점사 계좌 잔액 합계 + 포털 계좌 잔액 합계)</li>
+                                            <li><span>이용자 통화_합계</span> = 유저 계좌의 USDT 잔액 합계.</li>
+                                            <li><span>입점사 통화_합계</span> = 입점사 계좌(게임운영+메인+수익+담보금)의 USDT 잔액 합계. </li>
+                                            <li><span>포털 통화_합계</span> = 포털 계좌(포털운영+메인+수익)의 USDT 잔액 합계. </li>
+                                            <li><span>입점사 통화_게임운영계좌</span> = 게임 Operation 계좌의 USDT 잔액 합계. </li>
+                                            <li><span>입점사 통화_메인계좌</span> = 입점사 Main 계좌의 USDT 잔액 합계.</li>
+                                            <li><span>입점사 통화_수익계좌</span> = 입점사 Revenue 계좌의 USDT 잔액 합계. </li>
+                                            <li><span>입점사 통화_담보금계좌</span> = 입점사 Reserve 계좌의 USDT 잔액 합계. </li>
+                                            <li><span>포털 통화_포털운영계좌</span> = 포털 Operation 계좌의 USDT 잔액 합계.</li>
+                                            <li><span>포털 통화_메인계좌</span> = 포털 Main 계좌의 USDT 잔액 합계. </li>
+                                            <li><span>포털 통화_수익계좌</span> = 포털 Revenue 계좌의 USDT 잔액 합계.</li>
+                                        </ul>">
+                                </button>
+                            </label>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                            <option>필터 1.1</option>
+                            <option>필터 1.2</option>
+                            <option>필터 1.3</option>
+                            <option>필터 1.4</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb table-responsive statistics-lists">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">일자</th>
+                                    <th scope="col" class="text-center">총통화</th>
+                                    <th scope="col" class="text-center">이용자 통화_합계</th>
+                                    <th scope="col" class="text-center">입점사 통화_합계</th>
+                                    <th scope="col" class="text-center">포털 통화_합계</th>
+                                    <th scope="col" class="text-center">입점사 통화_게임운영계좌</th>
+                                    <th scope="col" class="text-center">입점사 통화_게임운영계좌</th>
+                                    <th scope="col" class="text-center">입점사 통화_메인계좌</th>
+                                    <th scope="col" class="text-center">입점사 통화_수익 계좌</th>
+                                    <th scope="col" class="text-center">입점사 통화_담보금 계좌</th>
+                                    <th scope="col" class="text-center">포털 통화_포털운영 계좌</th>
+                                    <th scope="col" class="text-center">포털 통화_메인 계좌</th>
+                                    <th scope="col" class="text-center">포털 통화_수익 계좌</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

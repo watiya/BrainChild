@@ -1,0 +1,319 @@
+.game {
+    .wrapper-actions {
+        .btn-register {
+            width: 140px;
+            padding: 0;
+
+            a {
+                @include flex-center;
+                color: #fff;
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .wrapper-body-footer {
+        .actions {
+            display: flex;
+        }
+
+        .dropdown-select {
+            max-width: 90px;
+            width: 90px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .btns {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 180px;
+            padding: 0;
+        }
+
+        div {
+            button:first-child {
+                margin-right: 10px;
+                width: 118px;
+            }
+
+            button:last-child {
+                margin-right: 10px;
+                width: 140px;
+            }
+        }
+
+    }
+}
+
+.game.game-list {
+    .wrapper-actions {
+        justify-content: space-between;
+
+        .dropdown-select {
+            max-width: 180px;
+            width: 180px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .wrapper-body {
+        height: calc(100% - 95px);
+
+        .data-img-wrapper {
+            width: 60px;
+            height: 80px;
+            @include flex-center;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 38px;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            ~span {
+                @include flex-center;
+            }
+        }
+    }
+}
+
+.game.game-add {
+    .wrapper-body {
+        min-height: calc(40%);
+    }
+
+    .wrapper-body-header {
+        margin-bottom: 0px !important;
+    }
+
+    ul {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .multi-input-tb {
+        .input-container {
+            flex-grow: 1;
+        }
+    }
+
+    .dropzone-container {
+        border-style: dashed;
+    }
+
+}
+
+.game.game-status {
+    .wrapper-actions {
+        justify-content: space-between;
+
+        .dropdown-select {
+            max-width: 240px;
+            width: 240px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .wrapper-body {
+        height: calc(100% - 140px);
+
+        .data-img-wrapper {
+            width: 60px;
+            height: 80px;
+            @include flex-center;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 38px;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            ~span {
+                @include flex-center;
+            }
+        }
+    }
+
+    .wrapper-body-header {
+        flex-flow: column nowrap;
+        height: auto !important;
+
+        ul {
+            margin-top: 10px;
+            padding: 0px 17px;
+
+            li {
+                color: #757575;
+                font-size: 13px;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+.game.game-maintenance {
+    .wrapper-actions {
+        justify-content: space-between;
+
+        .dropdown-select {
+            max-width: 240px;
+            width: 240px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .wrapper-body {
+        height: calc(100% - 140px);
+
+        .data-img-wrapper {
+            width: 60px;
+            height: 80px;
+            @include flex-center;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 38px;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            ~span {
+                @include flex-center;
+            }
+        }
+    }
+
+    .wrapper-body-header {
+        flex-flow: column nowrap;
+        height: auto !important;
+
+        ul {
+            margin-top: 10px;
+            padding: 0px 17px;
+
+            li {
+                color: #757575;
+                font-size: 13px;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+.game.game-launch {
+    .wrapper-actions {
+        justify-content: space-between;
+
+        .dropdown-select {
+            max-width: 180px;
+            width: 180px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .wrapper-body {
+        height: calc(100% - 40px);
+
+        .data-img-wrapper {
+            width: 60px;
+            height: 80px;
+            @include flex-center;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 38px;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            ~span {
+                @include flex-center;
+            }
+        }
+    }
+}
+
+.game.game-launch-settings {
+    .wrapper-body {
+        min-height: calc(40%);
+
+        .data-img-wrapper {
+            width: 60px;
+            height: 80px;
+            @include flex-center;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 38px;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            ~span {
+                @include flex-center;
+            }
+        }
+    }
+}

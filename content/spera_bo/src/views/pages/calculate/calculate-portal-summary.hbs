@@ -1,0 +1,139 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main class="main-calculate calculate-portal-summary">
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>현황 조회</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">정산</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">포털 정산</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions">
+                    {{> tabs-portal-settlement}}
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">정산 검토 현황 (2020년 5월)</span>
+                    </div>
+
+                    <p>
+                        <span class="color-red">정산 검토 대기 : xxx건</span> <br>
+                        정산 검토 완료 : xxx건 <br>
+                        정산 검토 기한 : 2020-05-27 00:00:00 ~ 2020-05-27 00:00:00
+                    </p>
+                </div>
+
+                <div class="wrapper-body mt-4">
+                    <div class="wrapper-body-header">
+                        <span class="title">정산 예정 현황 (2020년 6월)</span>
+                        <span class="color-gray-text fs-6">* 현재 기준 계산된 금액이며, 실제 정산 시점의 결과와는 다릅니다.</span>
+                    </div>
+
+                    <span class="fs-7">1. 포털 전체</span>
+                    <div class="mt-2 tb bordered-lr center calculate-portal-summary-tb">
+                        <table>
+                            <colgroup>
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">정산 마감일</th>
+                                    <th scope="col">총수익</th>
+                                    <th scope="col">총비용</th>
+                                    <th scope="col">순수익</th>
+                                    <th scope="col">정산수익(포털)</th>
+                                    <th scope="col">정산수익(입점사)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020-05-27</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <span class="mt-10 fs-7">2. 입점사별</span>
+                    <div class="mt-2 tb bordered-lr">
+                        <table>
+                            <colgroup>
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">입점사명(ID)</th>
+                                    <th scope="col">총수익</th>
+                                    <th scope="col">분담비용</th>
+                                    <th scope="col">순수익</th>
+                                    <th scope="col">약정 수익 배분율</th>
+                                    <th scope="col">정산수익(포털)</th>
+                                    <th scope="col">정산수익(입점사)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020-05-27</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>40%</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2020-05-27</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>40%</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

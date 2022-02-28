@@ -1,0 +1,123 @@
+.login-wrapper {
+    @include flex-center;
+    height: 100vh;
+    width: 100vw;
+
+    .login-bx {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: auto;
+        width: 440px;
+
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: -5px;
+        }
+
+        .row {
+            position: relative;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+
+            &.username {
+                margin-bottom: 10px;
+            }
+        }
+
+        input {
+            height: 100%;
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 0 44px;
+            outline: none;
+            font-size: 16px;
+
+            &.inp-username {
+                @include iconbg("email", 16px, 20px, 50%)
+            }
+
+            &.inp-password {
+                @include iconbg("lock", 16px, 20px, 50%)
+            }
+        }
+
+        .btn-peek {
+            position: absolute;
+            height: 16px;
+            width: 16px;
+            border: none;
+            outline: none;
+            right: 20px;
+            padding: 0;
+            @include iconbg("visible", 16px, center, center);
+            background-color: transparent;
+        }
+
+        .btn-submit {
+            margin-top: 20px;
+            height: 60px;
+            width: 100%;
+            color: #fff;
+            background: $gray-1;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .footnote {
+            font-size: 13px;
+            width: 100%;
+            margin-top: 24px;
+            @include flex-center;
+            flex-flow: column nowrap;
+            line-height: 1.5;
+
+            span {
+                color: #757575;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        &.maintenance {
+            width: 100%;
+
+            .clipart {
+                height: 140px;
+                width: 140px;
+                margin-bottom: 30px;
+            }
+
+            .message {
+                @include flex-center;
+                flex-flow: column;
+                margin-top: 20px;
+
+                span {
+                    text-align: center;
+                    display: block;
+                    color: $black;
+                    font-size: 18px;
+                    line-height: 1.2;
+                }
+            }
+        }
+
+
+    }
+
+}

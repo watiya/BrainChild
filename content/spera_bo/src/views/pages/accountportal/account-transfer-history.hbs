@@ -1,0 +1,298 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main class="main-accountportal">
+            <section class="content-wrapper accountportal account-transferhistory">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>계정 관리</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">백오피스</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">계좌간 전송 이력</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions med">
+                    <div class="wrapper">
+                        {{> tabs-account }}
+
+                        <div class="wrapper mt-4 d-flex">
+                            <div class="search-input-container" data-target="#search-input">
+                                <button class="search-field-clear" data-target="#search-input"></button>
+                                <input class="search-field" id="search-input" placeholder="검색어를 입력해주세요">
+                            </div>
+                            <div class="tags-container">
+                                <button type="button" class="btn point-40 tag">
+                                    지구게임즈
+                                    <i class="icons icon-clear on-right"></i>
+                                </button>
+                                <button type="button" class="btn point-40 tag">
+                                    우주게임즈
+                                    <i class="icons icon-clear on-right"></i>
+                                </button>
+                                <button type="button" class="btn point-40 tag">
+                                    태양게임즈
+                                    <i class="icons icon-clear on-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">타이틀</span>
+                        <select class="dropdown-select show-tick line-32">
+                            <option>전체 거래</option>
+                        </select>
+                    </div>
+
+                    <div class="tb overflow">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="13%" />
+                                <col width="13%" />
+                                <col width="13%" />
+                                <col width="13%" />
+                                <col width="13%" />
+                                <col width="13%" />
+                                <col width="13%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">거래일</th>
+                                    <th scope="col">거래유형</th>
+                                    <th scope="col">보낸 계좌</th>
+                                    <th scope="col">받는 계좌</th>
+                                    <th scope="col">수량</th>
+                                    <th scope="col">처리자</th>
+                                    <th scope="col">상세내역</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>% 거래유형 %</td>
+                                    <td>% 주소 %</td>
+                                    <td>% 주소 %</td>
+                                    <td>% 수량 %</td>
+                                    <td>% 처리자 %</td>
+                                    <td><a href="">자세히보기</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="modal modal-medium with-component fade modal-account-sort-settings" tabindex="-1" role="dialog"
+                id="account_transfer_history_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header border-bottom">
+                            <h5 class="modal-title">정렬 설정</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <h3>기간설정</h3>
+                            <div class="btn-group">
+                                <button type="button" class="btn line-36">1주일</button>
+                                <button type="button" class="btn line-36">1개월</button>
+                                <button type="button" class="btn line-36">3개월</button>
+                                <button type="button" class="btn line-36 active">직접입력</button>
+                            </div>
+                            <div class="daterange-picker-container mb-5">
+                                <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                            </div>
+
+                            <h3>기간설정</h3>
+                            <div class="btn-group mb-5">
+                                <button type="button" class="btn line-36">계좌간전송</button>
+                                <button type="button" class="btn line-36 active">운영자금 조정</button>
+                                <button type="button" class="btn line-36">비상자금 조정</button>
+                            </div>
+
+                            <h3>기간설정</h3>
+                            <div class="btn-group">
+                                <button type="button" class="btn line-36 active">포털메인계좌</button>
+                                <button type="button" class="btn line-36">포털운영계좌</button>
+                                <button type="button" class="btn line-36">포털수익계좌</button>
+                            </div>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-line-38">취소</button>
+                            <button type="button" class="btn popup-solid-38">적용하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal-medium with-component fade" tabindex="-1" role="dialog"
+                id="account_transfer_history_modal2">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">계정 삭제</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="form-tb">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="70%" />
+                                    </colgroup>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="label"><label for="">보내는 계좌</label></td>
+                                            <td>
+                                                % 보내는 계좌명 %
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">받는 계좌</label></td>
+                                            <td>
+                                                % 받는 계좌명 %
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">보낸 금액</label></td>
+                                            <td class="txt bold">
+                                                % 보내는 금액 %
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="70%" />
+                                    </colgroup>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="label"><label for="">처리 당담자</label></td>
+                                            <td>
+                                                이름 (이메일@이메일.com)
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label">
+                                                <label for="">전송 사유</label>
+                                                <div class="mt-12"></div>
+                                            </td>
+                                            <td>
+                                                % 사유 %
+                                                <div class="mt-12"></div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <!-- This is sample button to show modals -->
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_transfer_history_modal1">Modal
+                    1</button>
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_transfer_history_modal2">Modal
+                    2</button>
+            </div>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

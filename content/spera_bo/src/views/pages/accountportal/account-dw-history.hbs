@@ -1,0 +1,237 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper accountportal account-dwhistory">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>계정 관리</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">백오피스</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">입출금 이력</li>
+                        </ol>
+                    </nav>
+                </div>
+
+
+                <div class="wrapper-actions">
+                    {{> tabs-account }}
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">타이틀</span>
+                        <select class="dropdown-select show-tick line-32">
+                            <option>전체 거래</option>
+                        </select>
+                    </div>
+
+                    <div class="tb overflow">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">거래 생성일</th>
+                                    <th scope="col">거래 완료일</th>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">보낸 토큰</th>
+                                    <th scope="col">보낸 금액</th>
+                                    <th scope="col">받은 토큰</th>
+                                    <th scope="col">받은 금액</th>
+                                    <th scope="col">요청 계정</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>% 상태 %</td>
+                                    <td>% 토큰 %</td>
+                                    <td>% 금액 %</td>
+                                    <td>% 토큰 %</td>
+                                    <td>% 금액 %</td>
+                                    <td>jungkookzangzangman@gmail.com</td>
+                                    <td>
+                                        <a href="#">자세히보기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="modal modal-medium with-component fade" tabindex="-1" role="dialog"
+                id="account_dw_history_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">거래 상세 내역</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="form-tb mt">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="70%" />
+                                    </colgroup>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="label"><label for="">거래 ID</label></td>
+                                            <td>
+                                                % 보내는 계좌명 %
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">거래 상태</label></td>
+                                            <td class="color-primary">
+                                                입금완료
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">보낸 금액</label></td>
+                                            <td class="txt bold fs-9">
+                                                % 보낸 금액 %
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">받는 금액</label></td>
+                                            <td class="txt bold fs-9">
+                                                % 받는 금액 %
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="list-mini mt-5">
+                                <div class="list-row">
+                                    <span class="list-label">USDT 전환금액</span>
+                                    <span class="list-value">8,153.366911 USDT</span>
+                                </div>
+                                <div class="list-row">
+                                    <span class="list-label">USDT 보관계좌</span>
+                                    <span class="list-value">0xfa5281bc101b1039d2093bc77ffe641f284869a6</span>
+                                </div>
+                                <div class="list-row">
+                                    <span class="list-label">교환 비율</span>
+                                    <span class="list-value">1 BTC = 8,153.366911 USDT</span>
+                                </div>
+                                <div class="list-row">
+                                    <span class="list-label">교환 거래 수수료</span>
+                                    <span class="list-value">20.434503 USDT</span>
+                                </div>
+                                <div class="list-row">
+                                    <span class="list-label">네트워크 수수료</span>
+                                    <span class="list-value">1 USDT20 (will be excluded from the final
+                                        amount)</span>
+                                </div>
+                                <div class="list-row">
+                                    <span class="list-label">예상 소요 시간</span>
+                                    <span class="list-value">≒ 5-30 minutes</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <!-- This is sample button to show modals -->
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_dw_history_modal1">Modal
+                    1</button>
+
+            </div>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

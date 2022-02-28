@@ -1,0 +1,41 @@
+.list-mini {
+    font-size: 12px;
+
+    .list-row {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list-label {
+        display: block;
+        color: $gray-5;
+    }
+
+    .list-value {
+        color: #424242;
+    }
+}
+
+.list-mini-with-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        color: #757575;
+        border-bottom: 1px solid #bdbdbd;
+        margin-bottom: 8px;
+        padding: 7px 0px;
+
+        button {
+            height: 28px;
+            width: 60px;
+        }
+    }
+}

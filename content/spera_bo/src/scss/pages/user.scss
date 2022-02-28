@@ -1,0 +1,183 @@
+// TODO: Update Color Variables
+.user-page {
+
+    // Wrapper Actions
+    .wrapper-actions {
+        height: 40px !important;
+        margin-bottom: 16px !important;
+
+        &.with-tabs {
+            height: 36px !important;
+            margin-bottom: 20px !important;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .search-input-container {
+            width: 400px;
+        }
+
+        .tags-container {
+            display: flex;
+
+            .tag {
+                margin-left: 10px;
+
+                .icons {
+                    &.on-right {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .wrapper-body {
+        height: calc(100% - 95px);
+
+        &.with-blocks-tab {
+            height: calc(100% - 150px);
+        }
+
+        &.user-trade-blocks {
+            .wrapper-body-header {
+                margin-bottom: 14px;
+                height: 36px;
+            }
+        }
+
+        &.user-casino-blocks {
+            padding: 30px;
+        }
+
+        &.user-casino-bottom-blocks {
+            height: calc(100% - 200px);
+
+            .tab-content {
+                height: 100%;
+            }
+        }
+
+    }
+
+    // TODO: Validate if this changes is applicable globally 
+    .wrapper-body-footer {
+        border-top: 1px solid #e0e0e0;
+        height: 70px !important;
+        margin: 0px !important;
+        padding: 22px 12px 16px;
+        align-items: center;
+
+        .actions {
+            display: flex;
+        }
+
+        .dropdown-select {
+            max-width: 90px;
+            width: 90px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+            }
+        }
+    }
+
+    // TODO: Validate if this changes is applicable globally 
+    // Table
+    .tb {
+        border-top: 0px;
+        border-bottom: 0px;
+
+        thead {
+            tr {
+                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #eeeeee;
+
+                th {
+                    border-right: 1px solid #eeeeee;
+
+                    &:last-child {
+                        border-right: 0px;
+                    }
+                }
+            }
+        }
+
+        tbody {}
+
+        tbody tr {
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        tbody tr td {
+            height: 50px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-right: 1px solid #eeeeee;
+            color: #616161;
+
+            &:last-child {
+                border-right: 0px;
+            }
+        }
+
+        &.without-side-border {
+
+            thead tr th,
+            tbody tr td {
+                border-right: 0px;
+            }
+        }
+    }
+
+    .with-multiple-table {
+
+        table {
+            margin-bottom: 20px !important;
+
+            thead {
+                tr {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        height: 70px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #616161;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+
+    // TODO: Validate if this changes is applicable globally 
+    .tab-content {
+        height: calc(100% - 150px);
+
+        .tab-pane {
+            height: 100%;
+        }
+
+        .user-trade-blocks,
+        .user-account-blocks,
+        .user-security-blocks {
+            height: 100%;
+        }
+
+    }
+}

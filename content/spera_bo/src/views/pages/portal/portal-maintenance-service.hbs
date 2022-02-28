@@ -1,0 +1,203 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>점검</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">점검</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style=" height: 420px; margin-bottom: 20px">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+                        <span class="title">서비스 상태</span>
+                    </div>
+                    <!-- End of Body Header -->
+
+
+                    <section class="maintenance-content">
+
+                        <div class="maintenance-current-status">
+                            <h5 class="status-header">현재 상태</h5>
+                            <div class="status">
+                                <i class="icons icon-maintenance-orange"></i>
+                                <span>점검중</span>
+                            </div>
+                        </div>
+
+                        <div class="maintenace-settings">
+                            <h5 class="status-header">현재 상태</h5>
+
+                            <div class="settings-forms">
+
+                                <div class="forms-container">
+                                    <div class="form-group">
+                                        <span class="form-label">영어</span>
+                                        <div class="datetime-picker-container">
+                                            <div class="datepicker-container">
+                                                <input type='text' class='datepicker-init' data-language='kr'
+                                                    id="datepicker_1" placeholder="YYYY-MM-DD" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="form-label">영어</span>
+                                        <div class="input-container" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text"
+                                                placeholder="타이틀 입력 (필수)" maxlength="100" maxend="자">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="forms-action">
+                                    <button type="button" class="btn solid-red-36">점검시작</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style="margin-bottom: 30px">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+                        <span class="title">서비스 상태</span>
+                    </div>
+                    <!-- End of Body Header -->
+
+                    <!-- Table -->
+                    <div class="tb without-side-border">
+                        <table>
+
+                            <colgroup>
+                                <col width="5%">
+                                <col width="15%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                            </colgroup>
+
+                            <!-- Table Header -->
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">점검 시작</th>
+                                    <th scope="col">점검 해제</th>
+                                    <th scope="col">담당자</th>
+                                    <th scope="col">점검사유</th>
+
+                                </tr>
+                            </thead>
+
+                            <!-- Table Body -->
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>2020-04-23 00:00:00</td>
+                                    <td>이름 (이메일)</td>
+                                    <td>정기점검</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+
+                    <!-- Body Footer -->
+                    <div class="wrapper-body-footer">
+
+                        <!-- Footer Actions -->
+                        <div class="actions">
+
+                            <!-- Delete -->
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+
+                            <!-- Dropdown -->
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><a href="#"></a></li>
+                            <li class="page-item active"><a href="#">1</a></li>
+                            <li class="page-item"><a href="#">2</a></li>
+                            <li class="page-item"><a href="#">3</a></li>
+                            <li class="page-item"><a href="#">4</a></li>
+                            <li class="page-item"><a href="#">5</a></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><a href="#">20</a></li>
+                            <li class="page-item icons icon-chevron-right-gray"><a href="#"></a></li>
+                        </ul>
+                        <!-- End of Pagination -->
+
+                    </div>
+                    <!-- End of Body Footer -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

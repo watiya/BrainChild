@@ -1,0 +1,508 @@
+// TODO: Get Colors From Variables  
+
+@mixin basic-button-variant($el, $height, $font-size, $padding, $border,
+    $border-hover, $border-active, $border-disabled,
+    $bg, $bg-hover, $bg-active, $bg-disabled,
+    $color, $color-hover, $color-active, $color-disabled, $border-radius: 4px) {
+
+    &-#{$el} {
+        height: $height;
+        padding: $padding;
+        font-size: $font-size;
+        border: $border;
+        border-radius: $border-radius;
+        color: $color;
+        background-color: $bg;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            border: $border-hover;
+            background-color: $bg-hover;
+            color: $color-hover;
+        }
+
+        &:active {
+            border: $border-active;
+            background-color: $bg-active;
+            color: $color-active;
+        }
+
+        &:focus {
+            box-shadow: none !important;
+        }
+
+        &:disabled {
+            border: $border-disabled;
+            background-color: $bg-disabled;
+            color: $color-disabled;
+        }
+    }
+}
+
+@mixin basic-button-sizes($el, $height, $font-size, $padding) {
+
+    &.line {
+        @include basic-button-variant($el, $height, $font-size, $padding,
+            1px solid #e0e0e0,
+            1px solid #eeeeee,
+            1px solid #bdbdbd,
+            1px solid #eeeeee,
+            #fff, #fff, #fff, #fff,
+            #757575,
+            #9e9e9e,
+            #424242,
+            #e0e0e0);
+    }
+
+    &.point {
+        @include basic-button-variant($el, $height, $font-size, $padding,
+            1px solid #757575,
+            1px solid #9e9e9e,
+            1px solid #424242,
+            1px solid #e0e0e0,
+            #fff, #fff, #fff, #fff,
+            #424242,
+            #757575,
+            #424242,
+            #e0e0e0);
+    }
+
+    &.red-point {
+        @include basic-button-variant($el, $height, $font-size, $padding,
+            1px solid #f44336,
+            1px solid #e57373,
+            1px solid #d32f2f,
+            1px solid #ffebee,
+            #fff, #fff, #fff, #fff,
+            #f44336,
+            #e57373,
+            #f44336,
+            #ef9a9a);
+    }
+
+    &.green-point {
+        @include basic-button-variant($el, $height, $font-size, $padding,
+            1px solid #4caf50,
+            1px solid #a5d6a7,
+            1px solid #388e3c,
+            1px solid #e8f5e9,
+            #fff, #fff, #fff, #fff,
+            #4caf50,
+            #a5d6a7,
+            #388e3c,
+            #e8f5e9);
+    }
+
+    &.solid {
+        @include basic-button-variant($el, $height, $font-size, $padding,
+            1px solid #2196f3,
+            1px solid #90caf9,
+            1px solid #1976d2,
+            1px solid #e3f2fd,
+            #2196f3,
+            #90caf9,
+            #1976d2,
+            #e3f2fd,
+            #fff, #fff, #fff, #fff);
+    }
+
+    &.solid-green {
+        @include basic-button-variant($el, $height, $font-size, $padding,
+            1px solid #4caf50,
+            1px solid #a5d6a7,
+            1px solid #388e3c,
+            1px solid #e8f5e9,
+            #4caf50,
+            #a5d6a7,
+            #388e3c,
+            #e8f5e9,
+            #fff, #fff, #fff, #fff);
+    }
+
+    &.solid-red {
+        @include basic-button-variant($el, $height, $font-size, $padding,
+           1px solid #f44336,
+            1px solid #e57373,
+            1px solid #d32f2f,
+            1px solid #ffebee,
+            #f44336,
+            #e57373,
+            #d32f2f,
+            #ffebee,
+            #fff, #fff, #fff, #fff);
+    }
+}
+
+.btn {
+
+    &.logout {
+        @include basic-button-variant('32', 32px, 12px, 0 16px,
+            1px solid #424242,
+            1px solid #eeeeee,
+            1px solid #bdbdbd,
+            1px solid #eeeeee,
+            transparent, transparent, transparent, transparent,
+            #9e9e9e,
+            #eeeeee,
+            #bdbdbd,
+            #eeeeee);
+    }
+
+    // Basic Buttons
+    @include basic-button-sizes('32', 32px, 12px, 0 16px);
+    @include basic-button-sizes('36', 36px, 13px, 0 16px);
+    @include basic-button-sizes('40', 40px, 14px, 0 30px);
+
+    // Confirm Buttons
+    &.confirm-line {
+        @include basic-button-variant('46', 46px, 16px, 0 44px,
+            1px solid #e0e0e0,
+            1px solid #2196f3,
+            1px solid #1976d2,
+            1px solid #eeeeee,
+            transparent, #fff, #fff, #fff,
+            #757575,
+            #2196f3,
+            #1565c0,
+            #e0e0e0,
+            26px);
+    }
+
+    &.confirm-solid {
+        @include basic-button-variant('46', 46px, 16px, 0 60px,
+            1px solid #2196f3,
+            1px solid #90caf9,
+            1px solid #1976d2,
+            1px solid #e3f2fd,
+            #2196f3,
+            #90caf9,
+            #1976d2,
+            #e3f2fd,
+            #fff, #fff, #fff, #fff,
+            26px);
+    }
+
+    &.confirm-solid-red {
+        @include basic-button-variant('46', 46px, 16px, 0 60px,
+            1px solid #f44336,
+            1px solid #e57373,
+            1px solid #d32f2f,
+            1px solid #ffebee,
+            #f44336,
+            #e57373,
+            #d32f2f,
+            #ffebee,
+            #fff, #fff, #fff, #fff,
+            26px);
+    }
+
+    // Popup Buttons
+
+    &.popup-line {
+        @include basic-button-variant('36', 36px, 13px, 0 26px,
+            1px solid #e0e0e0,
+            1px solid #2196f3,
+            1px solid #1976d2,
+            1px solid #eeeeee,
+            transparent, #fff, #fff, #fff,
+            #757575,
+            #2196f3,
+            #1565c0,
+            #e0e0e0,
+            26px);
+
+        @include basic-button-variant('38', 38px, 14px, 0 26px,
+            1px solid #e0e0e0,
+            1px solid #2196f3,
+            1px solid #1976d2,
+            1px solid #eeeeee,
+            transparent, #fff, #fff, #fff,
+            #757575,
+            #2196f3,
+            #1565c0,
+            #e0e0e0,
+            26px);
+    }
+
+
+    &.popup-red {
+        @include basic-button-variant('38', 38px, 14px, 0 26px,
+            1px solid #f44336,
+            1px solid #e57373,
+            1px solid #d32f2f,
+            1px solid #ffebee,
+            #f44336,
+            #e57373,
+            #d32f2f,
+            #ffebee,
+            #fff, #fff, #fff, #fff,
+            26px);
+
+        @include basic-button-variant('36', 36px, 13px, 0 26px,
+            1px solid #f44336,
+            1px solid #e57373,
+            1px solid #d32f2f,
+            1px solid #ffebee,
+            #f44336,
+            #e57373,
+            #d32f2f,
+            #ffebee,
+            #fff, #fff, #fff, #fff,
+            26px);
+    }
+
+    &.popup-solid {
+        @include basic-button-variant('38', 38px, 14px, 0 26px,
+            1px solid #2196f3,
+            1px solid #90caf9,
+            1px solid #1976d2,
+            1px solid #e3f2fd,
+            #2196f3,
+            #90caf9,
+            #1976d2,
+            #e3f2fd,
+            #fff,
+            #fff,
+            #fff,
+            #fff,
+            26px);
+
+        @include basic-button-variant('36', 36px, 13px, 0 26px,
+            1px solid #2196f3,
+            1px solid #90caf9,
+            1px solid #1976d2,
+            1px solid #e3f2fd,
+            #2196f3,
+            #90caf9,
+            #1976d2,
+            #e3f2fd,
+            #fff,
+            #fff,
+            #fff,
+            #fff,
+            26px);
+    }
+
+}
+
+.btn-group {
+    .btn.with.icons {
+        &.line-32 {
+            width: 32px;
+            height: 32px;
+            background-size: 16px;
+            border-left-color: #f5f5f5;
+            margin-right: 0px !important;
+            border-right: 0px;
+
+            &:first-child {
+                border-left-color: #e0e0e0;
+            }
+
+            &:last-child {
+                border-right: 1px solid #e0e0e0;
+            }
+
+            &.active {
+                background-color: #f5f5f5;
+            }
+        }
+
+        &.line-36 {
+            width: 36px;
+            height: 36px;
+            background-size: 18px;
+            margin-right: 4px !important;
+            border-radius: 4px;
+
+            &:last-child {
+                margin-right: 0px !important;
+            }
+        }
+    }
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn.with.icons {
+    border: 1px solid #e0e0e0;
+    margin: 0px;
+
+    &.line-32 {
+        width: 32px;
+        height: 32px;
+        background-size: 16px;
+        margin-right: 0px !important;
+    }
+
+    &.line-36 {
+        width: 36px;
+        height: 36px;
+        background-size: 18px;
+        margin-right: 4px !important;
+        border-radius: 4px;
+    }
+
+    &:hover:not(:disabled) {
+        box-shadow: inset 0px 0px 0px 1px #9e9e9e;
+    }
+}
+
+// TODO: Separate Checkbox and Radio Button
+
+// Checkboxes
+.checkbox-button {
+    display: inline-block;
+    background-color: transparent;
+    border: 0px;
+
+    label {
+        margin-bottom: 0px;
+        display: flex;
+        position: relative;
+        padding: 0px;
+
+        .checkbox {
+            display: block;
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            margin-right: 8px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid #1976d2;
+            }
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        input[type="checkbox"]:checked+.checkbox {
+            background-color: #2196f3;
+            border: solid 1px #2196f3;
+            background-image: url('/static/icons/done.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 16px;
+
+            &:hover {
+                background-color: #1976d2;
+                border: solid 1px #1976d2;
+            }
+        }
+
+        input[type="checkbox"]:disabled+.checkbox {
+            background-color: #eeeeee;
+            border: solid 1px #e0e0e0;
+        }
+
+
+        input[type="checkbox"]:disabled:checked+.checkbox {
+            background-color: #eeeeee;
+            border: solid 1px #e0e0e0;
+            background-image: url('/static/icons/done.svg');
+        }
+
+        span {
+            font-size: 13px;
+            color: #616161;
+            user-select: none;
+        }
+
+    }
+
+}
+
+// Radio Button
+.radio-button {
+    display: inline-block;
+
+    label {
+        margin-bottom: 0px;
+        display: flex;
+        position: relative;
+
+        .radio {
+            display: block;
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border-radius: 20px;
+            margin-right: 8px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid #1976d2;
+            }
+        }
+
+        input[type="radio"] {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        input[type="radio"]:checked+.radio {
+            background-color: #fff;
+            border: 6px solid #2196f3;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 16px;
+
+            &:hover {
+                border: solid 6px #2196f3;
+            }
+        }
+
+        input[type="radio"]:disabled+.radio {
+            background-color: #eeeeee;
+            border: solid 1px #e0e0e0;
+        }
+
+        input[type="radio"]:disabled:checked+.radio {
+            background-color: #ffffff;
+            border: solid 6px #e0e0e0;
+        }
+
+        span {
+            font-size: 13px;
+            color: #616161;
+        }
+
+    }
+
+}
+
+.btn.radio-button {
+    border: 1px solid red;
+}
+
+.button-link {
+    font-size: 13px;
+    font-weight: normal;
+    color: #2196f3;
+    text-decoration: underline;
+}

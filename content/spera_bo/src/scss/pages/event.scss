@@ -1,0 +1,43 @@
+.event {
+    .wrapper-body.wrapper-details {
+        height: auto;
+
+        .tb {
+            height: auto;
+        }
+
+        td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .wrapper-body:last-child {
+        margin-top: 20px;
+        height: calc(100% - 220px);
+    }
+
+
+    .wrapper-body-footer {
+        .actions {
+            display: flex;
+        }
+
+        .dropdown-select {
+            max-width: 90px;
+            width: 90px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.event.weeklyrace {}

@@ -1,0 +1,133 @@
+<section class="row mb-4" id="dropzone_section">
+
+    <div class="col-lg-12">
+
+        <!-- Content Wrapper Title -->
+        <div class="wrapper-title">
+            <h2>Nestable</h2>
+        </div>
+
+        <!-- Content Wrapper Body -->
+        <div class="wrapper-body">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <!-- Nestable -->
+                    <div class="nestable dd">
+                        <ol class="dd-list">
+
+                            {{!-- Item --}}
+                            <li class="dd-item" data-id="1">
+
+                                {{!-- Dragrable Handle --}}
+                                <div class="dd-handle">
+                                    <span>항목 명 1</span>
+                                </div>
+
+                                {{!-- Nestable Actions --}}
+                                <div class="nestable-actions">
+                                    <button nestable-action="depth">하위뎁스</button>
+                                    <button nestable-action="edit">편집</button>
+                                    <button nestable-action="remove"></button>
+                                </div>
+
+                                {{!-- Dragrable Item Update --}}
+                                <div class="dd-item-update" style="display: none;">
+                                    <input type="text" value="항목 명" placeholder="방탄소년단 봄날">
+                                    <div class="dd-update-actions">
+                                        <button nestable-update-action="save"></button>
+                                        <button nestable-update-action="cancel"></button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="dd-item dd-collapsible" data-id="2">
+
+                                {{!-- Dragrable Handle --}}
+                                <div class="dd-handle">
+                                    <span>항목 명 2</span>
+                                </div>
+
+                                {{!-- Nestable Actions --}}
+                                <div class="nestable-actions">
+                                    <button nestable-action="depth">하위뎁스</button>
+                                    <button nestable-action="edit">편집</button>
+                                    <button nestable-action="remove"></button>
+                                </div>
+
+                                {{!-- Dragrable Item Update --}}
+                                <div class="dd-item-update">
+                                    <input type="text" value="항목 명" placeholder="방탄소년단 봄날">
+                                    <div class="dd-update-actions">
+                                        <button nestable-update-action="save"></button>
+                                        <button nestable-update-action="cancel"></button>
+                                    </div>
+                                </div>
+
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="4">
+                                        <div class="dd-handle">
+                                            <span>Sub-항목 명 4</span>
+                                        </div>
+                                        <div class="nestable-actions">
+                                            <button nestable-action="depth">하위뎁스</button>
+                                            <button nestable-action="edit">편집</button>
+                                            <button nestable-action="remove"></button>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="5">
+                                        <div class="dd-handle">
+                                            <span>Sub-항목 명 5</span>
+                                        </div>
+                                        <div class="nestable-actions">
+                                            <button nestable-action="depth">하위뎁스</button>
+                                            <button nestable-action="edit">편집</button>
+                                            <button nestable-action="remove"></button>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="dd-item dd-collapsible" data-id="3">
+                                <div class="dd-handle">
+                                    <span>항목 명 3</span>
+                                </div>
+                                <div class="nestable-actions">
+                                    <button nestable-action="depth">하위뎁스</button>
+                                    <button nestable-action="edit">편집</button>
+                                    <button nestable-action="remove"></button>
+                                </div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="4">
+                                        <div class="dd-handle">
+                                            <span>Sub-항목 명 4</span>
+                                        </div>
+                                        <div class="nestable-actions">
+                                            <button nestable-action="depth">하위뎁스</button>
+                                            <button nestable-action="edit">편집</button>
+                                            <button nestable-action="remove"></button>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="5">
+                                        <div class="dd-handle">
+                                            <span>Sub-항목 명 5</span>
+                                        </div>
+                                        <div class="nestable-actions">
+                                            <button nestable-action="depth">하위뎁스</button>
+                                            <button nestable-action="edit">편집</button>
+                                            <button nestable-action="remove"></button>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- End of Nestable -->
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

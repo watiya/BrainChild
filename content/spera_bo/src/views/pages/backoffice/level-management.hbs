@@ -1,0 +1,149 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper backoffice level-management">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>레벨 관리</h2>
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">백오피스</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">레벨관리</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions">
+                    <span></span>
+                    <button type="button" class="btn solid-32 btn-register">
+                        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/level-registration.html">
+                            레벨 등록
+                        </a>
+                    </button>
+                </div>
+
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    <div class="tb-informational">
+                        <table>
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="60%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col" class="txt center">
+                                        <span>LV.2</span> <br />
+                                        <span>(포털운영자)</span>
+                                    </th>
+                                    <th scope="col" class="txt center">
+                                        <span>LV.3</span> <br />
+                                        <span>(게임운영자)</span>
+                                    </th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt bold">권한 레벨 편집</td>
+                                    <td class="txt center color-primary">
+                                        <a
+                                            href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/level-editing.html">
+                                            편집
+                                        </a>
+                                    </td>
+                                    <td class="txt center color-primary">
+                                        <a
+                                            href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/level-editing.html">
+                                            편집
+                                        </a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr class="gray">
+                                    <td class="txt bold">백오피스 관리 </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="thin">
+                                    <td>
+                                        <li>계정 관리</li>
+                                    </td>
+                                    <td class="txt center">O</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="thin">
+                                    <td>
+                                        <li>레벨 관리</li>
+                                    </td>
+                                    <td class="txt center">O</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="thin">
+                                    <td>
+                                        <li>계좌 관리</li>
+                                    </td>
+                                    <td class="txt center">O</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="gray">
+                                    <td class="txt bold">계좌관리 (포털)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="thin">
+                                    <td>
+                                        <li>관리자 지급/회수</li>
+                                    </td>
+                                    <td class="txt center">O</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="thin">
+                                    <td>
+                                        <li>계좌 관리 (게임)</li>
+                                    </td>
+                                    <td class="txt center">O</td>
+                                    <td class="txt center">O</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="thin">
+                                    <td> ... </td>
+                                    <td class=""></td>
+                                    <td class=""></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

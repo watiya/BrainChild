@@ -1,0 +1,222 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper statistics-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>요약 통계</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">통꼐</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">요약 통계</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Sub-header Actions -->
+                <div class="wrapper-sub-header justify-content-between">
+                    <div class="daterange-picker-container">
+                        <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12"/>
+                    </div>
+
+                    <a class="btn solid-36 download" href="#">
+                        <i class="icons icon-download on-left"></i>
+                        다운로드
+                    </a>
+                </div>  
+
+                <section class="wrapper-body statistics-data">
+                    
+                    <div class="statistics-data-header">
+                        <h3>DAU</h3>
+                    </div>
+                    <div class="stackbar-chart-container" 
+                        style="width: 100%; height: 262px">
+                        <div class="ct-chart" id="statistics_summary"></div>
+                    </div>
+                </section>
+
+                <section class="statistics-display">
+                    <div class="data-info">
+                        <h3 class="info-header">이용자</h3>
+                        <div class="info-display">
+
+                            <div class="info">
+                                <ul>
+                                    <li class="list-style-yellow">
+                                        <span>누적<small>(66.6%)</small></span>
+                                    </li>
+                                    <li class="list-style-blue">
+                                        <span>휴먼<small>(29.7%)</small></span>
+                                    </li>
+                                    <li class="list-style-green">
+                                        <span>이용자<small>(3.8%)</small></span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pie-chart-container" 
+                                style="width: 180px; height: 180px">
+                                <div class="ct-chart" id="user_statistics"></div>
+                            </div>
+
+                        </div>
+                        <div class="info-body">
+                            <ul>
+                                <li>
+                                    <span class="info-label">누적 가입자</span>
+                                    <span class="info-data">% 누적가입자 %</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">당일 이용자</span>
+                                    <span class="info-data"></span>
+                                </li>
+                                <li>
+                                    <span class="info-label">휴면 유저</span>
+                                    <span class="info-data"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-info">
+                        <h3 class="info-header">통화량</h3>
+                        <div class="info-display">
+
+                            <div class="info">
+                                <ul>
+                                    <li class="list-style-blue">
+                                        <span>입점사<small>(66.6%)</small></span>
+                                    </li>
+                                    <li class="list-style-yellow">
+                                        <span>포털<small>(29.7%)</small></span>
+                                    </li>
+                                    <li class="list-style-green">
+                                        <span>이용자<small>(3.8%)</small></span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pie-chart-container" 
+                                style="width: 180px; height: 180px">
+                                <div class="ct-chart" id="money_statistics"></div>
+                            </div>
+
+                        </div>
+                        <div class="info-body">
+                            <ul>
+                                <li>
+                                    <span class="info-label">총 통화</span>
+                                    <span class="info-data">% 누적가입자 %</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">이용자 통화</span>
+                                    <span class="info-data"></span>
+                                </li>
+                                <li>
+                                    <span class="info-label">입점사 통화</span>
+                                    <span class="info-data"></span>
+                                </li>
+                                <li>
+                                    <span class="info-label">포털 통화</span>
+                                    <span class="info-data"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-info">
+                        <h3 class="info-header">Wager</h3>
+                        <div class="info-display">
+                            <div class="info">
+                                <ul>
+                                    <li class="list-style-yellow">
+                                        <span>Win<small>(29.7%)</small></span>
+                                    </li>
+                                    <li class="list-style-green">
+                                        <span>Payout<small>(3.8%)</small></span>
+                                    </li>
+                                </ul>
+                            </div>
+                           
+                            <div class="pie-chart-container" 
+                                style="width: 180px; height: 180px">
+                                <div class="ct-chart" id="wager_statistics"></div>
+                            </div>
+                        </div>
+                        <div class="info-body">
+                            <ul>
+                                <li>
+                                    <span class="info-label">Wager 합계</span>
+                                    <span class="info-data">% 누적가입자 %</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Payout</span>
+                                    <span class="info-data"></span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Win Money</span>
+                                    <span class="info-data"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-info">
+                        <h3 class="info-header">입출금</h3>
+                        <div class="info-display">
+                            <div class="info">
+                                <ul>
+                                    <li class="list-style-green">
+                                        <span>Deposit<small>(66.6%)</small></span>
+                                    </li>
+                                    <li class="list-style-blue">
+                                        <span>Withdraw<small>(29.7%)</small></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="pie-chart-container" 
+                                style="width: 180px; height: 180px">
+                                <div class="ct-chart" id="transaction_statistics"></div>
+                            </div>
+                        </div>
+                        <div class="info-body">
+                            <ul>
+                                <li>
+                                    <span class="info-label">입금 합계</span>
+                                    <span class="info-data">% 누적가입자 %</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">당일 이용자</span>
+                                    <span class="info-data">출금 합계</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

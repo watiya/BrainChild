@@ -1,0 +1,160 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main class="main-withdraw withdraw-review">
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>검토 대기</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">출금</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">검토 대기</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">타이틀</span>
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                        </select>
+                    </div>
+
+                    <div class="tb overflow">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">TxID</th>
+                                    <th scope="col">거래일자</th>
+                                    <th scope="col">출금 요청자</th>
+                                    <th scope="col">출금 금액</th>
+                                    <th scope="col">
+                                        <span>출금 금액</span> <br>
+                                        <span class="fs-5 txt normal">(최근24시간)/한도</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span>출금 횟수</span> <br>
+                                        <span class="fs-5 txt normal">(최근24시간)/한도</span>
+                                    </th>
+                                    <th scope="col">검토일자</th>
+                                    <th scope="col">검토자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>% 상태 %</td>
+                                    <td>% TxID %</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>% 출금요청자 %</td>
+                                    <td>% 출금금액 %</td>
+                                    <td>10/1000</td>
+                                    <td>5/30</td>
+                                    <td>
+                                        <a class="color-primary txt underline"
+                                            href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-review-view.html">검토하기</a>
+                                    </td>
+                                    <td>이름 (ID)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>% 상태 %</td>
+                                    <td>% TxID %</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>% 출금요청자 %</td>
+                                    <td>% 출금금액 %</td>
+                                    <td>10/1000</td>
+                                    <td>5/30</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>이름 (ID)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>10개</option>
+                            </select>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

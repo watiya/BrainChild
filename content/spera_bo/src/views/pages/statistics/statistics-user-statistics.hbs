@@ -1,0 +1,180 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper statistics-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>총 통화량</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">정산</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">포털 정산</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Sub-header Actions -->
+                <div class="wrapper-sub-header justify-content-between">
+
+                    <div class="wrapper-fields">
+                        <div class="daterange-picker-container">
+                            <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                        </div>
+
+                        <!-- Dropdown Line 40 -->
+                        <select class="dropdown-select show-tick line-40">
+                            <option>이용자 집계 기준</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                        </select>
+                        <!-- End of Dropdown Line 40 -->
+
+                        <!-- Dropdown Line 40 -->
+                        <select class="dropdown-select show-tick line-40">
+                            <option>VIP 등급</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                        </select>
+                        <!-- End of Dropdown Line 40 -->
+                    </div>
+
+                    <a class="btn solid-36 download" href="#">
+                        <i class="icons icon-download on-left"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">
+                            이용자 통계 리스트 
+                            <label class="tooltip-label">
+                                <button type="button" class="icons icon-help-circle on-right" 
+                                    data-toggle="tooltip" data-placement="bottom" placement="bottom left"
+                                    data-offset="10, 10" 
+                                    data-html="true"
+                                    title="<ul class='tooltip-lists'>
+                                            <li><span>신규가입자</span> - 해당 일자에 멤버십 신규 가입한 계정 수. </li>
+                                            <li><span>당일이용자</span> – 멤버십 가입 계정 중 해당 일자 이용자로 측정된 계정 수.</li>
+                                            <li><span>액티브이용자(7)</span> – 최근 7일 동안 1회 이상 당일이용자에 포함된 계정 수.</li>
+                                            <li><span>액티브이용자(28)</span> – 최근 28일 동안 1회 이상 당일이용자에 포함된 계정 수. </li>
+                                            <li><span>휴면이용자(7)</span> – 최근 7일 동안 한번도 당일이용자에 포함되지 않은 계정 수. </li>
+                                            <li><span>휴면이용자(28)</span> – 최근 28일 동안 한번도 당일이용자에 포함되지 않은 계정 수. </li>
+                                            <li><span>복귀이용자(7)</span> – 휴면(7) 상태에서 해당일 당일이용자에 포함된 계정 수.</li>
+                                            <li><span>복귀이용자(28)</span> – 휴면(28) 상태에서 해당일 당일이용자에 포함된 계정 수. </li>
+                                            <li><span>당일이용자 통화량</span> – 당일이용자에 포함된 계정의 USDT 잔액 합계. </li>
+                                            <li><span>액티브(7) 통화량</span> – 액티브이용자(7)에 포함된 계정의 USDT 잔액 합계. </li>
+                                            <li><span>액티브(28) 통화량</span> – 액티브이용자(28)에 포함된 계정의 USDT 잔액 합계. </li>
+                                            <li><span>휴면(7) 통화량</span> – 휴면이용자(7)에 포함된 계정의 USDT 잔액 합계. </li>
+                                            <li><span>휴면(28) 통화량</span> – 휴면이용자(28)에 포함된 계정의 USDT 잔액 합계. </li>
+                                        </ul>">
+                                </button>
+                            </label>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                            <option>필터 1.1</option>
+                            <option>필터 1.2</option>
+                            <option>필터 1.3</option>
+                            <option>필터 1.4</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb table-responsive statistics-lists">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">일자</th>
+                                    <th scope="col" class="text-center">신규 가입자</th>
+                                    <th scope="col" class="text-center">당일 이용자</th>
+                                    <th scope="col" class="text-center">액티브 이용자(7)</th>
+                                    <th scope="col" class="text-center">액티브 이용자(28)</th>
+                                    <th scope="col" class="text-center">휴먼 이용자 (7)</th>
+                                    <th scope="col" class="text-center">휴먼 이용자 (28)</th>
+                                    <th scope="col" class="text-center">복귀 이용자 (7)</th>
+                                    <th scope="col" class="text-center">복귀 이용자 (28)</th>
+                                    <th scope="col" class="text-center">당일 이용자 통화량</th>
+                                    <th scope="col" class="text-center">액티브(7) 이용자 통화량</th>
+                                    <th scope="col" class="text-center">액티브(28) 이용자 통화량</th>
+                                    <th scope="col" class="text-center">휴먼 (7) 이용자 통화량</th>
+                                    <th scope="col" class="text-center">휴먼 (28) 이용자 통화량</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

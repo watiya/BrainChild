@@ -1,0 +1,22 @@
+<ul class="tab-navigation">
+    <li class="{{#if htmlWebpackPlugin.options.withdraw_history_pendinguser}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-history-pending-user.html">
+            출금 진행중(유저)
+        </a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.withdraw_history_pendingcompany}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-history-pending-company.html">
+            출금 진행중(입점사)
+        </a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.withdraw_history_doneuser}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-history-done-user.html">
+            출금 완료(유저)
+        </a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.withdraw_history_donecompany}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-history-done-company.html">
+            출금 완료(입점사)
+        </a>
+    </li>
+</ul>

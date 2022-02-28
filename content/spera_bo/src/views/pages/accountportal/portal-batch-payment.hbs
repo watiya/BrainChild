@@ -1,0 +1,146 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper accountportal portal-payment-batch">
+                <div class="wrapper-title">
+                    <h2>대량지급</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">계좌</a></li>
+                            <li class="breadcrumb-item"><a href="#">포털 관리자 지급</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">지급/회수 이력</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions">
+                    {{>tabs-portal}}
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title"></span>
+                    </div>
+
+                    <div class="d-flex wdtper-100 justify-content-center  mb-20">
+                        <div class="form-dual mt-5">
+                            <div class="form-dual-wrapper">
+                                <div class="form">
+                                    <div class="form-wrapper">
+                                        <div class="form-title">
+                                            <h3>보내는 계좌</h3>
+                                        </div>
+
+                                        <div class="input-container input-line mt-8 black" data-target="#input-basic">
+                                            <input class="input-field txt medium" id="input-basic" type="text"
+                                                value="포털 운영 계좌 (잔액 : 1,234.56)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-arrow">
+                                    <i class="icons icon-round-arrow-dark"></i>
+                                </div>
+
+                                <div class="form">
+                                    <div class="form-wrapper">
+                                        <div class="form-title">
+                                            <h3>받는 계좌</h3>
+                                        </div>
+
+                                        <div class="input-container input-line mt-8 primary" data-target="#input-basic">
+                                            <input class="input-field txt medium" id="input-basic" type="text"
+                                                value="회원 리스트 등록">
+                                            <button class="btn line-40 btn-enrollment">
+                                                <i class="icons icon-add"></i>&nbsp;&nbsp;&nbsp;
+                                                <span>등록</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="form-tb mt-4">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="30%" />
+                                                    <col width="70%" />
+                                                </colgroup>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td class="label"><label for="">지급대상</label></td>
+                                                        <td>
+                                                            % N % 명
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="label">
+                                                            <label for="">지급총액</label>
+                                                        </td>
+                                                        <td>
+                                                            총 % 금액 % USDT
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <span class="note txt underline color-red">
+                                            대량지급 포맷 다운로드
+                                        </span>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form form-textbox mt-4">
+                                <label for="">
+                                    전송사유 <span class="color-red">(필수) </span>
+                                </label>
+
+                                <div class="input-container with-textarea" data-target="#textarea-basic">
+                                    <textarea class="input-field" placeholder="전송사유를 입력해주세요" maxlength="200" maxend="자"
+                                        id="textarea-basic" cols="30" rows="10"></textarea>
+                                </div>
+
+                                <span class="note">
+                                    처리 담당자 : 이름 (이메일주소@이메일..com)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btns mt-5">
+                    <div></div>
+                    <div>
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">지급</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

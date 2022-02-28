@@ -1,0 +1,351 @@
+<!-- Update Nickname Complete Modal -->
+<div class="modal modal-small with-title fade" 
+    id="userNicknameUpdateSuccess" tabindex="-1" role="dialog" 
+    aria-labelledby="userNicknameUpdateSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">닉네임 변경 완료</h5>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p>변경되었습니다.</p>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn popup-solid-36" data-dismiss="modal">확인</button>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<!-- Update Modal Fail -->
+<div class="modal modal-small with-title fade" 
+    id="userNicknameUpdateFail" tabindex="-1" role="dialog"
+    aria-labelledby="userNicknameUpdateFailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">닉네임 변경 실패</h5>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p>동일한 이름이 존재합니다.</p>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn popup-solid-36" data-dismiss="modal">돌아가기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Change Nickname Modal-->
+<div class="modal modal-small with-component fade" 
+    id="userNicknameUpdate" tabindex="-1" role="dialog"
+    aria-labelledby="userNicknameUpdateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">닉네임 변경</h5>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <div class="input-container w-100" data-target="#input-basic">
+                    <input class="input-field" id="input-basic" type="text" 
+                        placeholder="변경할 닉네임을 입력해주세요" maxlength="20" maxend="자">
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn popup-line-36 border-0">취소</button>
+                <button type="button" class="btn popup-solid-36" data-dismiss="modal">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Change Membership Status -->
+<div class="modal modal-medium with-component fade" 
+    id="userChangeMembershipStatus" tabindex="-1" role="dialog"
+    aria-labelledby="userChangeMembershipStatusLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">회원 상태 변경</h5>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <div class="modal-info">
+                    <p>
+                        <span>계정명 :</span>
+                        <span>jungkook@gmail.com (회원번호:0000000000)</span>
+                    </p>
+                    <p>
+                        <span>닉네임 :</span>
+                        <span></span>
+                    </p>
+                    <p>
+                        <span>회원상태(현재) :</span>
+                        <span>정상</span>
+                    </p>
+                </div>
+
+                <select class="dropdown-select show-tick line-40 w-100">
+                    <option>변경 할 회원상태 선택</option>
+                    <option>VIP</option>
+                    <option>Not VIP</option>
+                </select>
+
+                <div class="input-container with-textarea w-100" 
+                    data-target="#textarea-basic"
+                    style="height: 100px;">
+                    <textarea class="input-field" 
+                        placeholder="변경 사유 (담당자면, 계정명)" 
+                        maxlength="1000" maxend="자"
+                        id="textarea-basic" 
+                        cols="30" rows="10"></textarea>
+                </div>
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn popup-line-36 border-0">취소</button>
+                <button type="button" class="btn popup-solid-36" data-dismiss="modal">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- User Casino Weekly Race 2020-05-15 당첨자 리스트 | Winner's Lists-->
+<div class="modal modal-large with-scroll fade" 
+    id="userCasinoWeeklyRaceWinnerLists" tabindex="-1" role="dialog"
+    aria-labelledby="userCasinoWeeklyRaceWinnerListsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content pt-0">
+            <!-- Modal Header -->
+            <div class="modal-header mb-0" style="height: 78px;">
+                <h5 class="modal-title">2020-05-15 당첨자 리스트</h5>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <div class="tb">
+                    <!-- Table 1 -->
+                    <table>
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="40%" />
+                            <col width="40%" />
+                        </colgroup>
+                
+                        <!-- Table Header -->
+                        <thead>
+                            <tr>
+                                <th scope="col">순위</th>
+                                <th scope="col">당첨자</th>
+                                <th scope="col">당첨금</th>
+                            </tr>
+                        </thead>
+                
+                        <!-- Table Body -->
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>% 닉네임 (회원번호) %</td>
+                                <td>% 금액 %</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+                <!-- End of Table -->
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn popup-solid-36">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- User Casino Luckypot 당첨 리스트 | Winner's Lists-->
+<div class="modal modal-xlarge with-scroll fade" 
+    id="userCasinoLuckypotWinnerLists" tabindex="-1" role="dialog"
+    aria-labelledby="userCasinoLuckypotWinnerListsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content pt-0">
+            <!-- Modal Header -->
+            <div class="modal-header mb-0" style="height: 78px;">
+                <h5 class="modal-title">당첨 리스트</h5>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <div class="tb">
+                    <!-- Table 1 -->
+                    <table>
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                        </colgroup>
+
+                        <!-- Table Header -->
+                        <thead>
+                            <tr>
+                                <th scope="col">티켓발행번호</th>
+                                <th scope="col">티켓숫자</th>
+                                <th scope="col">당첨순위</th>
+                                <th scope="col">당첨금액</th>
+                                <th scope="col">일자</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Table Body -->
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>03. 05. 14. 16. 28</td>
+                                <td>% 순위 %</td>
+                                <td>% 금액 %</td>
+                                <td>2020-05-15 00:00:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <!-- End of Table -->
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn popup-solid-36">확인</button>
+            </div>
+        </div>
+    </div>
+</div>

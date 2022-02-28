@@ -1,0 +1,138 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper backoffice company-registration">
+                <div class="wrapper-title">
+                    <h2>입점사 신규 등록</h2>
+
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">백오피스</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">계정관리</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">기본 정보</span>
+                    </div>
+
+                    <div class="form-tb">
+                        <table>
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="50%" />
+                                <col width="30%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="">CP ID</label></td>
+                                    <td class="horiz">
+                                        <div class="row-wrapper">
+                                            <div class="input-container wdtper-72" data-target="#input-basic">
+                                                <input class="input-field" id="input-basic" type="text"
+                                                    placeholder="ID 생성 버튼을 누르세요.">
+                                            </div>
+                                            <button type="button" class="btn solid-40 wdtper-25">ID 생성</button>
+                                        </div>
+
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">입점사 명</label></td>
+                                    <td>
+                                        <div class="input-container" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text"
+                                                placeholder="입점사명 입력 (영문)">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">입점사 IP</label></td>
+                                    <td>
+                                        <div class="input-container" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text"
+                                                placeholder="IP를 입력해주세요.">
+                                        </div>
+                                        <div class="input-container mt-2" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text"
+                                                placeholder="IP를 입력해주세요.">
+                                        </div>
+                                        <button type="button" class="btn line-40 mt-2 fs-12">+</button>
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <div></div>
+                    <div>
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">저장</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="modal modal-medium with-title fade" tabindex="-1" role="dialog"
+                id="company_registration_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">입점사 등록 완료</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>신규 입점사가 등록되었습니다.</p>
+
+
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <!-- This is sample button to show modals -->
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#company_registration_modal1">Modal
+                    1</button>
+            </div>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper backoffice account-registration">
+                <div class="wrapper-title">
+                    <h2>계정 신규 등록</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">백오피스</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">계정관리</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">기본 정보</span>
+                    </div>
+
+                    <div class="form-tb">
+                        <table>
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="50%" />
+                                <col width="30%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="">계정명</label></td>
+                                    <td>
+                                        <div class="input-container" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text"
+                                                placeholder="이메일 주소입력">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">입점사</label></td>
+                                    <td>
+                                        <select class="dropdown-select show-tick line-40">
+                                            <option selected disabled>입점사 선택</option>
+                                            <option>목록</option>
+                                            <option>목록</option>
+                                            <option>목록</option>
+                                        </select>
+                                        <div class="input-note">
+                                            <span>임점사명이 리스트에 없는경우, 우선 등록해 주셔야 합니다.</span>
+                                            <a href="">등록위치</a>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">담당자</label></td>
+                                    <td>
+                                        <div class="input-container" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text" placeholder="이름 입력">
+                                        </div>
+
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">권한 레벨</label></td>
+                                    <td>
+                                        <select class="dropdown-select show-tick line-40">
+                                            <option selected disabled>레벨 선택</option>
+                                            <option>목록</option>
+                                            <option>목록</option>
+                                            <option>목록</option>
+                                        </select>
+                                        <div class="input-note">
+                                            <span>레벨을 선택하시려면, 우선 등록해 주셔야 합니다.</span>
+                                            <a href="">등록위치</a>
+                                        </div>
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="btns">
+                    <div></div>
+                    <div>
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">저장</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal modal-small with-title fade" tabindex="-1" role="dialog" id="account_registration_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">계정 등록 완료</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p> 신규 계정이 등록되었습니다. </p>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal-small with-title fade" tabindex="-1" role="dialog" id="account_registration_modal2">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">계정 등록 불가</h5>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p> 입력되지 않은 항목이 있습니다.
+                                <br />
+                                내용을 다시 확인해주세요. </p>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <!-- This is sample button to show modals -->
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_registration_modal1">Modal 1</button>
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_registration_modal2">Modal 2</button>
+            </div>
+
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

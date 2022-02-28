@@ -1,0 +1,17 @@
+<ul class="tab-navigation">
+    <li class="{{#if htmlWebpackPlugin.options.calculate_company_summary}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/calculate/calculate-company-summary.html">
+            현황 조회
+        </a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.calculate_company_result_statement}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/calculate/calculate-company-result-statement.html">
+            정산 내역서 확인
+        </a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.calculate_company_result}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/calculate/calculate-company-result.html">
+            정산 결과
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,165 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper statistics-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>게임 통계</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">정산</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">포털 정산</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Sub-header Actions -->
+                <div class="wrapper-sub-header justify-content-between">
+
+                    <div class="wrapper-fields">
+                        <div class="daterange-picker-container">
+                            <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                        </div>
+                    </div>
+
+                    <a class="btn solid-36 download" href="#">
+                        <i class="icons icon-download on-left"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">
+                            게임 전체 통계 리스트
+                            <label class="tooltip-label">
+                                <button type="button" class="icons icon-help-circle on-right" 
+                                    data-toggle="tooltip" data-placement="bottom" placement="bottom left"
+                                    data-offset="10, 10" 
+                                    data-html="true"
+                                    title="<ul class='tooltip-lists'>
+                                            <li><span>신규 가입자</span> – 해당일 게임기준 신규 가입자 합계(Unique sum)</li>
+                                            <li><span>당일 이용자</span> – 해당일 게임기준 당일 이용자 합계(Unique sum)</li>
+                                            <li><span>당일 이용자판수</span> – 해당일 게임기준 당일 이용자가 플레이한 판 수의 합계(Sum).</li>
+                                            <li><span>당일 게임판수</span> – 해당일 각 게임이 플레이된 판 수의 합계(Sum).</li>
+                                            <li>** 이용자판수와 게임판수의 구분</li>
+                                            <li>3명이 고스톱을 2판 플레이 한 경우,</li>
+                                            <li>이용자 판수 = 6 = 3 × 2, 게임 판수 = 2</li>
+                                            <li><span>당일 Wagered</span> – 해당일 당일 이용자가 플레이하며 기록한 Wagered의 합계(Sum)</li>
+                                            <li><span>당일 Payout</span> – 해당일 각 게임이 기록한 Payout의 합계.(Sum)</li>
+                                            <li><span>당일 Fee</span> – 해당일 각 게임이 기록한 Fee의 합계. (Sum)</li>
+                                            <li>** 텍사스 홀덤과 같은 포커, PvP 게임은 Fee를 가짐.</li>
+                                            <li><span>당일 Win Money</span> – 해당일 각 게임이 기록한 Win Money의 합계. (Sum)</li>
+                                            <li><span>누적* </span> - 게임 출시 후 해당일까지 해당 게임에서 기록한 누적 가입자 / 이용자판수 / Wagered / Payout / Fee / Win money 합계.</li>
+                                        </ul>">
+                                </button>
+                            </label>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                            <option>필터 1.1</option>
+                            <option>필터 1.2</option>
+                            <option>필터 1.3</option>
+                            <option>필터 1.4</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb table-responsive statistics-lists">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">일자</th>
+                                    <th scope="col" class="text-center">신규 가입자</th>
+                                    <th scope="col" class="text-center">당일 이용자</th>
+                                    <th scope="col" class="text-center">당일 이용자판수</th>
+                                    <th scope="col" class="text-center">당일 게임판수</th>
+                                    <th scope="col" class="text-center">당일 Wagered</th>
+                                    <th scope="col" class="text-center">당일 Payout</th>
+                                    <th scope="col" class="text-center">당일 Fee</th>
+                                    <th scope="col" class="text-center">당일 Win money</th>
+                                    <th scope="col" class="text-center">누적 가입자</th>
+                                    <th scope="col" class="text-center">누적 이용자판수</th>
+                                    <th scope="col" class="text-center">누적 Wagered</th>
+                                    <th scope="col" class="text-center">누적 Payout</th>
+                                    <th scope="col" class="text-center">누적 Fee</th>
+                                    <th scope="col" class="text-center">누적 Win money</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

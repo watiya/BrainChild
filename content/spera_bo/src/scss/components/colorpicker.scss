@@ -1,0 +1,85 @@
+.color-picker {
+    position: relative;
+    display: flex;
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #e0e0e0;
+    padding: 8px 10px 8px 48px;
+   
+    .pickr {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        height: 28px;
+        display: flex;
+
+        .pcr-button {
+            height: 28px;
+            width: 28px;
+            overflow: hidden;
+            border-radius: 50px !important;
+            box-shadow: unset !important;
+            outline: none;
+
+            &.clear {
+                background-image: unset;
+                background-color: #fff;
+                border: 1px dashed #e0e0e0;
+
+                &::after {
+                    background: #fff;
+                }
+            }
+        }
+    }
+
+    .pickr-field {
+        border: 0px;
+        outline: none;
+        box-shadow: none;
+        color: #616161;
+        font-size: 14px;
+        padding: 0px;
+        text-transform: uppercase;
+
+        &::placeholder {
+            color: #9e9e9e;
+        }
+    }
+
+    .btn-apply {
+        width: 47px;
+        height: 24px;
+        outline: none;
+        box-shadow: none;
+        font-size: 12px;
+        color: #757575;
+        padding: 0px 8px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        border-radius: 4px;
+        border: solid 1px #e0e0e0;
+
+        &:hover {
+            color: #9e9e9e;
+            border: solid 1px #e0e0e0;
+        }
+
+        &:active {
+            color: #424242;
+            border: solid 1px #bdbdbd;
+        }
+
+    }
+
+}
+
+
+.pcr-app {
+    border-radius: 4px;
+    border: solid 1px #e0e0e0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    0 0 2px 0 rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,315 @@
+<!-- Start of LNB -->
+<aside class="lnb">
+
+    <!-- Navigation Links -->
+    {{#if htmlWebpackPlugin.options.backoffice}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.backoffice_account}} active {{/if}}">
+            <a class=" nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/account-management.html">계정 관리</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.backoffice_level}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/level-management.html">레벨관리</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.backoffice_company}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/company-management.html">입점사 관리</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.backoffice_game}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/game-management.html">게임 관리</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.backoffice_category}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/category-management.html">카테고리 관리</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.backoffice_history}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/history.html">변경
+                이력</a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.user}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.userinquiry}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/user/user-inquiry.html">유저
+                조회</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/user/user-account.html">관리
+                이력</a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.accountportal}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.accountportal_menu1}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/account-management.html">포털 계좌</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.accountportal_menu2}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/game-account-management-portal.html">게임
+                계좌</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.accountportal_menu3}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/portal-payment-history.html">포털
+                관리자 지급</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.accountportal_menu4}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/game-manager-payment-history.html">
+                게임 관리자 지급</a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.event}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.event_weeklyrace}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/event/weeklyrace.html">Weekly
+                Race</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.event_luckypot}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/event/luckypot.html">Lucky
+                Pot</a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.game}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.game_list}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/game/game-list.html">
+                게임 현황
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.game_check}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/game/game-status-list.html">
+                점검
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.game_launch}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/game/game-launch-list.html">
+                출시서비스 설정
+            </a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.calculate}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.calculate_portal_settlement}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/calculate/calculate-portal-summary.html">
+                포털 정산
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.calculate_company}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/calculate/calculate-company-summary.html">
+                입점사 정산
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.calculate_data}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/calculate/calculate-data-setting.html">
+                정산 데이터 관리
+            </a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.withdraw}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.withdraw_failures}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-failures.html">
+                출금 실패
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.withdraw_review}} active {{/if}}">
+            <a class="nav-link" href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-review.html">
+                검토 대기
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.withdraw_history}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-history-pending-user.html">
+
+                출금 내역
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.withdraw_review_history}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-review-history.html">
+                검토 내역
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.withdraw_account_management}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-account-management.html">
+                계좌 관리
+            </a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.withdraw_policy}} active {{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/withdraw/withdraw-policy-management.html">
+                정책 관리
+            </a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.portal}}
+    <ul class="navbar-nav">
+        <li class="nav-item with-sub-menu">
+            <a class="nav-link {{#if htmlWebpackPlugin.options.portal_banner_page}} open-sub-menu{{/if}}" href="#"
+                nav-data-toggle='#banner-lists' nav-data-toggle-class="open">배너</a>
+
+            <ul class="sub-menu {{#if htmlWebpackPlugin.options.portal_banner_page}} open{{/if}}" id="banner-lists">
+                <div class="nav-item {{#if htmlWebpackPlugin.options.main_banner}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-banner-main.html">메인
+                        배너</a>
+                </div>
+                <div class="nav-item {{#if htmlWebpackPlugin.options.sub_banner}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-sub-banner.html">서브 배너</a>
+                </div>
+                <div class="nav-item {{#if htmlWebpackPlugin.options.featured_banner}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-banner-featured.html">피처드</a>
+                </div>
+                <div class="nav-item {{#if htmlWebpackPlugin.options.portal_lucky_day_pick}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-lucky-day-pick.html">럭키데이
+                        픽</a>
+                </div>
+            </ul>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.portal_notice_lists}} active{{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-notice-lists.html">공지사항</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.portal_faq_lists}} active{{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-faq-lists.html">FAQ</a>
+        </li>
+        <li class="nav-item with-sub-menu">
+            <a class="nav-link {{#if htmlWebpackPlugin.options.portal_message_page}} open-sub-menu{{/if}}" href="#"
+                nav-data-toggle='#message-lists' nav-data-toggle-class="open">메시지 발송</a>
+
+            <ul class="sub-menu {{#if htmlWebpackPlugin.options.portal_message_page}} open{{/if}}" id="message-lists">
+                <div class="nav-item {{#if htmlWebpackPlugin.options.portal_message_notification}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-message-notification.html">알림
+                        메시지</a>
+                </div>
+                <div
+                    class="nav-item {{#if htmlWebpackPlugin.options.portal_message_notification_banner}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-message-banner.html">띠배너
+                        알림</a>
+                </div>
+            </ul>
+
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.portal_coupon_page}} active{{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-coupon-lists.html">쿠폰</a>
+        </li>
+        <li class="nav-item {{#if htmlWebpackPlugin.options.portal_maintenance_page}} active{{/if}}">
+            <a class="nav-link"
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/portal/portal-maintenance-service.html">점검</a>
+        </li>
+    </ul>
+    {{/if}}
+    {{#if htmlWebpackPlugin.options.statistics}}
+    <ul class="navbar-nav">
+        <li class="nav-item {{#if htmlWebpackPlugin.options.statistics_current_summary}} active{{/if}}">
+            <a class="nav-link" 
+                href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-current-summary.html">요약 통계</a>
+        </li>
+        <li class="nav-item with-sub-menu">
+            <a class="nav-link {{#if htmlWebpackPlugin.options.statistics_realtime}} open-sub-menu{{/if}}" href="#"
+                nav-data-toggle='#realtime-statistics' nav-data-toggle-class="open">실시간 통계</a>
+        
+            <ul class="sub-menu {{#if htmlWebpackPlugin.options.statistics_realtime}} open{{/if}}" id="realtime-statistics">
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_current_user_connection}} active{{/if}}">
+                    <a class="nav-link" 
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-current-user-connection.html">포털 접속자 수</a>
+                </div>
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_current_money_supply}} active{{/if}}">
+                    <a class="nav-link" 
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-current-money-supply.html">총 통화량</a>
+                </div>
+            </ul>
+        </li>
+        <li class="nav-item with-sub-menu">
+            <a class="nav-link {{#if htmlWebpackPlugin.options.statistics_user_statistics}} open-sub-menu{{/if}}" href="#"
+                nav-data-toggle='#user-statistics' nav-data-toggle-class="open">이용자 통계</a>
+        
+            <ul class="sub-menu {{#if htmlWebpackPlugin.options.statistics_user_statistics}} open{{/if}}" id="user-statistics">
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_user_statistics_page}} active{{/if}}">
+                    <a class="nav-link" 
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-user-statistics.html">이용자별 통계</a>
+                </div>
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_retention_statistics}} active{{/if}}">
+                    <a class="nav-link" 
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-retention-statistics.html">이용자 리텐션</a>
+                </div>
+            </ul>
+        </li>
+        <li class="nav-item with-sub-menu">
+            <a class="nav-link {{#if htmlWebpackPlugin.options.statistics_USDT}} open-sub-menu{{/if}}" href="#"
+                nav-data-toggle='#USDT-statistics' nav-data-toggle-class="open">USDT 통계</a>
+        
+            <ul class="sub-menu {{#if htmlWebpackPlugin.options.statistics_USDT}} open{{/if}}" id="USDT-statistics">
+                {{!-- Currency --}}
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_USDT_money_supply}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-USDT-money-supply.html">통화량</a> 
+                </div>
+                {{!-- Deposit and Withdrawal --}}
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_USDT_transaction}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-USDT-transaction.html">입출금</a>
+                </div>
+                {{!-- Payment --}}
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_USDT_payment}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-USDT-payment.html">지급</a>
+                </div>
+                {{!-- Collection --}}
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_USDT_retire}} active{{/if}}">
+                    <a class="nav-link"
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-USDT-retire.html">회수</a>
+                </div>
+            </ul>
+        </li>
+        <li class="nav-item with-sub-menu">
+            <a class="nav-link {{#if htmlWebpackPlugin.options.statistics_game_page}} open-sub-menu{{/if}}" href="#"
+                nav-data-toggle='#game-statistics' nav-data-toggle-class="open">게임 통계</a>
+        
+            <ul class="sub-menu {{#if htmlWebpackPlugin.options.statistics_game_page}} open{{/if}}" id="game-statistics">
+                {{!-- Game Full --}}
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_all_game}} active{{/if}}">
+                    <a class="nav-link" 
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-all-game.html">게임 전체</a>
+                </div>
+
+                {{!-- By Game --}}
+                <div class="nav-item {{#if htmlWebpackPlugin.options.statistics_USDT_game_page}} active{{/if}}">
+                    <a class="nav-link" 
+                        href="{{ htmlWebpackPlugin.options.relativePath }}pages/statistics/statistics-USDT-game.html">게임별</a>
+                </div>
+            </ul>
+        </li>
+    </ul>
+    {{/if}}
+
+    <!-- Brand Copyright -->
+    <div class="copyright">
+        <span> Copyright ⓒ <b>SPERGAMING.</b></span>
+    </div>
+
+</aside>
+<!-- END of LNB -->

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="spera-production">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, 
+    user-scalable=no, shrink-to-fit=yes">
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SPERA Style Guide" />
+    <meta property="og:description" content="SPERA Style Guide" />
+    <meta property="og:image" content="#" />
+    <title>Spera Style Guide | UI Element Forms</title>
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../../static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/plugins/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../static/plugins/fastselect/fastselect.min.css">
+    <link rel="stylesheet" href="../../static/plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/plugins/toastr/css/toastr.min.css">
+    <link rel="stylesheet" href="../../static/plugins/dropzone/css/dropzone.min.css">
+    <link rel="stylesheet" href="../../static/plugins/pickr/css/nano.min.css">
+    <link rel="stylesheet" href="../../static/plugins/datepicker/css/datepicker.min.css">
+    <link rel="stylesheet" href="../../static/plugins/daterangepicker/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/plugins/nestable/css/nestable.css">
+    <link rel="stylesheet" href="../../static/plugins/chartist/css/chartist.min.css">
+<link href="../../static/css/app.css" rel="stylesheet"></head>
+<body>
+    <!-- Start of GNB -->
+    <header class="navbar gnb">
+        <div class="container-fluid">
+    
+            <!-- Start of Left Content -->
+            <div class="navbar-wrapper">
+                <a class="navbar-brand" href="../backoffice/account-management.html">SPERA STYLE GUIDE</a>
+    
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Components</a>
+                    </li>
+                
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Left Content -->
+            
+        </div>
+    
+    </header>
+    <!-- END of GNB -->
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        <!-- Start of LNB -->
+        <aside class="lnb">
+        
+            <!-- Navigation Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./element01.html">UI Elements 01</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./element02.html">UI Elements 02</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./element03.html">UI Elements 03</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./forms.html">Forms</a>
+                </li>
+            </ul>
+        
+            <!-- Brand Copyright -->
+            <div class="copyright">
+                <span> Copyright ⓒ <b>SPERGAMING.</b></span>
+            </div>
+        
+        </aside>
+        <!-- END of LNB -->
+        <!-- Start of Main Container-->
+        <main id="components">
+
+            <section class="content-wrapper">
+
+
+                <section class="row mb-4" id="alert_section">
+                
+                    <div class="col-lg-12">
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Basic Input</h2>
+                        </div>
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                
+                                <div class="col-lg-6 mb-5">
+                                    <div class="input-container" data-target="#input-basic">
+                                        <input class="input-field" id="input-basic" type="text" 
+                                            placeholder="제목을 입력해주세요" maxlength="100" maxend="자">
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-6 mb-5">
+                
+                                    <div class="input-container" data-target="#input-basic-disabled">
+                                        <input class="input-field" id="input-basic-disabled" type="text" 
+                                            placeholder="제목을 입력해주세요" maxlength="100" maxend="자" disabled>
+                                    </div>
+                
+                                </div>
+                
+                                <div class="col-lg-6 mb-3">
+                                    <div class="input-container with-info" data-target="#input-basic-info">
+                                        <input class="input-field" id="input-basic-info" type="text" 
+                                            placeholder="제목을 입력해주세요" maxlength="100" maxend="자">
+                                        <p class="info-content">
+                                            <span>권장 사이즈 : 640x320</span>
+                                            <span>동영상 권장 사이즈 : 100MB</span>
+                                        </p>
+                                    </div> 
+                                </div>
+                
+                                <div class="col-lg-6 mb-3">
+                                    <div class="input-container with-error" data-target="#input-basic-error">
+                                        <input class="input-field" id="input-basic-error" type="text" placeholder="제목을 입력해주세요" maxlength="100" maxend="자">
+                                        <p class="error-content">정확한 정보를 입력해 주세요.</p>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-6 mb-3">
+                                    <div class="input-container with-textarea" data-target="#textarea-basic">
+                                        <textarea class="input-field" 
+                                            placeholder="제목을 입력해주세요" 
+                                            maxlength="1000" maxend="자"
+                                            id="textarea-basic" 
+                                            cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-6 mb-5">
+                                
+                                    <div class="input-container" data-target="#input-basic-no-counter">
+                                        <input class="input-field" id="input-basic-no-counter" type="text" 
+                                            placeholder="제목을 입력해주세요">
+                                    </div>
+                                
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </section>
+                <section class="row mb-4" id="alert_section">
+                
+                    <div class="col-lg-12">
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Search Input</h2>
+                        </div>
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                
+                                <div class="col-lg-4">
+                                    
+                                    <div class="search-input-container" data-target="#search-input">
+                                        <button class="search-field-clear" data-target="#search-input"></button>
+                                        <input class="search-field" id="search-input" placeholder="검색어를 입력해주세요">
+                                    </div>
+                
+                                </div>
+                
+                                <div class="col-lg-4">
+                                    
+                                    <div class="search-input-container line-container" data-target="#search-input-2">
+                                        <button class="search-field-clear" data-target="#search-input-2"></button>
+                                        <input class="search-field" id="search-input-2" placeholder="검색어를 입력해주세요">
+                                    </div>
+                
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </section>
+
+                <section class="row mb-4" id="alert_section">
+                
+                    <div class="col-lg-12">
+                        
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Date Picker</h2>
+                        </div>
+                
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                
+                                <div class="col-lg-6 mb-4">
+                                    <div class="datetime-picker-group">
+                                
+                                        <div class="datetime-picker-container">
+                                            <div class="datepicker-container">
+                                                <input type='text' class='datepicker-init' data-language='kr' id="datepicker_1"
+                                                    placeholder="YYYY-MM-DD" />
+                                            </div>
+                                            <select class="dropdown-select show-tick">
+                                                <option>00:00</option>
+                                                <option>00:30</option>
+                                                <option>01:00</option>
+                                                <option>01:30</option>
+                                                <option>02:00</option>
+                                                <option>02:30</option>
+                                                <option>03:00</option>
+                                                <option>03:30</option>
+                                                <option>04:00</option>
+                                                <option>04:30</option>
+                                                <option>05:00</option>
+                                                <option>05:30</option>
+                                                <option>06:00</option>
+                                                <option>06:30</option>
+                                                <option>07:00</option>
+                                                <option>07:30</option>
+                                                <option>08:00</option>
+                                                <option>08:30</option>
+                                                <option>09:00</option>
+                                                <option>09:30</option>
+                                                <option>10:00</option>
+                                                <option>10:30</option>
+                                                <option>11:00</option>
+                                                <option>11:30</option>
+                                                <option>12:00</option>
+                                                <option>12:30</option>
+                                            </select>
+                                        </div>
+                                
+                                        <span class="divider">~</span>
+                                
+                                        <div class="datetime-picker-container">
+                                            <div class="datepicker-container">
+                                                <input type='text' class='datepicker-init' data-language='kr' id="datepicker_2"
+                                                    placeholder="YYYY-MM-DD" />
+                                            </div>
+                                            <select class="dropdown-select show-tick">
+                                                <option>00:00</option>
+                                                <option>00:30</option>
+                                                <option>01:00</option>
+                                                <option>01:30</option>
+                                                <option>02:00</option>
+                                                <option>02:30</option>
+                                                <option>03:00</option>
+                                                <option>03:30</option>
+                                                <option>04:00</option>
+                                                <option>04:30</option>
+                                                <option>05:00</option>
+                                                <option>05:30</option>
+                                                <option>06:00</option>
+                                                <option>06:30</option>
+                                                <option>07:00</option>
+                                                <option>07:30</option>
+                                                <option>08:00</option>
+                                                <option>08:30</option>
+                                                <option>09:00</option>
+                                                <option>09:30</option>
+                                                <option>10:00</option>
+                                                <option>10:30</option>
+                                                <option>11:00</option>
+                                                <option>11:30</option>
+                                                <option>12:00</option>
+                                                <option>12:30</option>
+                                            </select>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                
+                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="row mb-4" id="alert_section">
+                
+                    <div class="col-lg-12">
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Date Range Picker</h2>
+                        </div>
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                                
+                                <div class="col-lg-6">
+                                    <div class="daterange-picker-container">
+                                        <input type="text" name="daterange" 
+                                            value="2018-06-10  ~  2018-06-12"/>
+                                    </div>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                    </div>
+                </section>
+                <section class="row mb-4" id="alert_section">
+                
+                    <div class="col-lg-12">
+                
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Date Picker</h2>
+                        </div>
+                
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                
+                                <div class="col-lg-6">
+                                    <div class="color-picker">
+                                        <div class="pickr"></div>
+                                        <input type="input" class="pickr-field" name="color" placeholder="#" value="#DC93FC">
+                                        <button class="btn-apply">적용</button>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="row mb-4" id="dropzone_section">
+                
+                    <div class="col-lg-12">
+                
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Dropzone</h2>
+                        </div>
+                
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                
+                                <div class="dropzone-container dropzone-sm">
+                                    <span class="dz-label">이미지 추가</span>
+                                    <span class="dz-label-link">파일첨부</span>
+                                    <form action="/file-upload" class="dropzone">
+                                        <div class="fallback">
+                                            <input name="file" type="file" />
+                                        </div>
+                                    </form>
+                                </div>
+                
+                                <div class="dropzone-container dropzone-md">
+                                    <span class="dz-label">이미지를</span>
+                                    <span class="dz-label">끌어 놓아주세요</span>
+                                    <span class="btn line-32">파일 첨부</span>
+                                    <form action="/file-upload" class="dropzone">
+                                        <div class="fallback">
+                                            <input name="file" type="file" multiple />
+                                        </div>
+                                    </form>
+                                </div>
+                
+                                <div class="dropzone-container dropzone-lg">
+                                    <i class="icons icon-photo"></i>
+                                    <span class="dz-label">이미지를 끌어 놓아주세요</span>
+                                    <span class="btn line-32">파일 첨부</span>
+                                    <form action="/file-upload" class="dropzone">
+                                        <div class="fallback">
+                                            <input name="file" type="file" multiple />
+                                        </div>
+                                    </form>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="row mb-4" id="dropzone_section">
+                
+                    <div class="col-lg-12">
+                
+                        <!-- Content Wrapper Title -->
+                        <div class="wrapper-title">
+                            <h2>Nestable</h2>
+                        </div>
+                
+                        <!-- Content Wrapper Body -->
+                        <div class="wrapper-body">
+                
+                            <div class="row">
+                
+                                <div class="col-lg-12">
+                
+                                    <!-- Nestable -->
+                                    <div class="nestable dd">
+                                        <ol class="dd-list">
+                
+                                            <li class="dd-item" data-id="1">
+                
+                                                <div class="dd-handle">
+                                                    <span>항목 명 1</span>
+                                                </div>
+                
+                                                <div class="nestable-actions">
+                                                    <button nestable-action="depth">하위뎁스</button>
+                                                    <button nestable-action="edit">편집</button>
+                                                    <button nestable-action="remove"></button>
+                                                </div>
+                
+                                                <div class="dd-item-update" style="display: none;">
+                                                    <input type="text" value="항목 명" placeholder="방탄소년단 봄날">
+                                                    <div class="dd-update-actions">
+                                                        <button nestable-update-action="save"></button>
+                                                        <button nestable-update-action="cancel"></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                
+                                            <li class="dd-item dd-collapsible" data-id="2">
+                
+                                                <div class="dd-handle">
+                                                    <span>항목 명 2</span>
+                                                </div>
+                
+                                                <div class="nestable-actions">
+                                                    <button nestable-action="depth">하위뎁스</button>
+                                                    <button nestable-action="edit">편집</button>
+                                                    <button nestable-action="remove"></button>
+                                                </div>
+                
+                                                <div class="dd-item-update">
+                                                    <input type="text" value="항목 명" placeholder="방탄소년단 봄날">
+                                                    <div class="dd-update-actions">
+                                                        <button nestable-update-action="save"></button>
+                                                        <button nestable-update-action="cancel"></button>
+                                                    </div>
+                                                </div>
+                
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="4">
+                                                        <div class="dd-handle">
+                                                            <span>Sub-항목 명 4</span>
+                                                        </div>
+                                                        <div class="nestable-actions">
+                                                            <button nestable-action="depth">하위뎁스</button>
+                                                            <button nestable-action="edit">편집</button>
+                                                            <button nestable-action="remove"></button>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="5">
+                                                        <div class="dd-handle">
+                                                            <span>Sub-항목 명 5</span>
+                                                        </div>
+                                                        <div class="nestable-actions">
+                                                            <button nestable-action="depth">하위뎁스</button>
+                                                            <button nestable-action="edit">편집</button>
+                                                            <button nestable-action="remove"></button>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li class="dd-item dd-collapsible" data-id="3">
+                                                <div class="dd-handle">
+                                                    <span>항목 명 3</span>
+                                                </div>
+                                                <div class="nestable-actions">
+                                                    <button nestable-action="depth">하위뎁스</button>
+                                                    <button nestable-action="edit">편집</button>
+                                                    <button nestable-action="remove"></button>
+                                                </div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="4">
+                                                        <div class="dd-handle">
+                                                            <span>Sub-항목 명 4</span>
+                                                        </div>
+                                                        <div class="nestable-actions">
+                                                            <button nestable-action="depth">하위뎁스</button>
+                                                            <button nestable-action="edit">편집</button>
+                                                            <button nestable-action="remove"></button>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="5">
+                                                        <div class="dd-handle">
+                                                            <span>Sub-항목 명 5</span>
+                                                        </div>
+                                                        <div class="nestable-actions">
+                                                            <button nestable-action="depth">하위뎁스</button>
+                                                            <button nestable-action="edit">편집</button>
+                                                            <button nestable-action="remove"></button>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <!-- End of Nestable -->
+                                    
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    
+    <!-- Plugins Script -->
+    <script src="../../static/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../../static/plugins/jquery-ui/jquery-ui.js"></script>
+    <script src="../../static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../static/plugins/fastselect/fastselect.standalone.min.js"></script>
+    <script src="../../static/plugins/toastr/js/toastr.min.js"></script>
+    <script src="../../static/plugins/dropzone/js/dropzone.min.js"></script>
+    <script src="../../static/plugins/pickr/js/pickr.es5.min.js"></script>
+    <script src="../../static/plugins/moment/moment.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/datepicker.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.en.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.kr.js"></script>
+    <script src="../../static/plugins/daterangepicker/js/daterangepicker.min.js"></script>
+    <script src="../../static/plugins/nestable/js/jquery.nestable.js"></script>
+    <script src="../../static/plugins/chartist/js/chartist.min.js"></script>
+    <!-- End of Plugins Script -->
+    
+    <!-- Custom Script with Plugins Implementation -->
+    <script src="../../static/plugins/plugin-script.js"></script>
+    <script src="../../static/plugins/statistics-script.js"></script>
+<script src="../../static/js/app.js"></script></body>
+
+</html>

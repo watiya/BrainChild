@@ -1,0 +1,167 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper statistics-page">
+
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>이용자 리텐션</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">정산</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">포털 정산</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Sub-header Actions -->
+                <div class="wrapper-sub-header justify-content-between">
+
+                    <div class="wrapper-fields">
+                        <div class="daterange-picker-container">
+                            <input type="text" name="daterange" value="2018-06-10  ~  2018-06-12" />
+                        </div>
+
+                        <!-- Dropdown Line 40 -->
+                        <select class="dropdown-select show-tick line-40">
+                            <option>이용자 집계 기준</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                        </select>
+                        <!-- End of Dropdown Line 40 -->
+
+                        <!-- Dropdown Line 40 -->
+                        <select class="dropdown-select show-tick line-40">
+                            <option>입금이력 구분</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                        </select>
+                        <!-- End of Dropdown Line 40 -->
+
+                        <!-- Dropdown Line 40 -->
+                        <select class="dropdown-select show-tick line-40">
+                            <option>값 선택</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                            <option>목록</option>
+                        </select>
+                        <!-- End of Dropdown Line 40 -->
+                    </div>
+
+                    <a class="btn solid-36 download" href="#">
+                        <i class="icons icon-download on-left"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">
+                            이용자 리텐션 리스트
+                            <label class="tooltip-label">
+                                <button type="button" class="icons icon-help-circle on-right" 
+                                    data-toggle="tooltip" data-placement="bottom" placement="bottom left"
+                                    data-offset="10, 10" 
+                                    data-html="true"
+                                    title="<ul class='tooltip-lists'>
+                                            <li><span>신규가입자(D+0)</span> - 해당 일자에 멤버십 신규 가입한 계정 수. </li>
+                                            <li><span>당일이용자(D+X)</span> <br>
+                                                – 해당 일의 신규가입자 중 X일 후 당일이용자에 포함된 계정 수. <br>
+                                                - ‘값 선택 ‘을 %로 한 경우는 % 기준으로 계산.
+                                            </li>
+                                        </ul>">
+                                </button>
+                            </label>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <select class="dropdown-select show-tick line-32">
+                            <option>필터</option>
+                            <option>필터 1.1</option>
+                            <option>필터 1.2</option>
+                            <option>필터 1.3</option>
+                            <option>필터 1.4</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb table-responsive statistics-lists">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">일자</th>
+                                    <th scope="col" class="text-center">신규 가입자 (D+0)</th>
+                                    <th scope="col" class="text-center">신규 가입자 (D+1)</th>
+                                    <th scope="col" class="text-center">신규 가입자 (D+2)</th>
+                                    <th scope="col" class="text-center">신규 가입자 (…)</th>
+                                    <th scope="col" class="text-center">신규 가입자 (D+30)</th>
+                                    <th scope="col" class="text-center">신규 가입자 (D+60)</th>
+                                    <th scope="col" class="text-center">신규 가입자 (D+90)</th>
+                                    <th scope="col" class="text-center">신규 가입자 (D+180)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2020-06-01</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

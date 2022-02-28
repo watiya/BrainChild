@@ -1,0 +1,399 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper accountportal game-account-management">
+                <div class="wrapper-title">
+                    <h2>게임 계좌</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">게임계좌</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">계좌관리</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions">
+                    {{> tabs-game-account }}
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">% 입점사명 % 계좌</span>
+                        <span class="title-note">단위 : USDT</span>
+                    </div>
+
+                    <div class="tb-2">
+                        <table>
+                            <colgroup>
+                                <col width="15%" />
+                                <col width="40%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="txt left bold  bg-dark-gray" colspan="5">게임 사업 계좌</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt right medium">게임 메인 계좌</td>
+                                    <td class="txt right">2,300.00</td>
+                                    <td class="txt center"><a class="txt underline bold color-black" href="">전송하기</a>
+                                    </td>
+                                    <td class="txt center"><a class="txt underline bold color-primary" href="">입금하기</a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt right medium">게임 수익 계좌</td>
+                                    <td class="txt right">300.00</td>
+                                    <td class="txt center"><a class="txt underline bold color-black" href="">전송하기</a>
+                                    </td>
+                                    <td></td>
+                                    <td class="txt center"><a class="txt underline bold color-red" href="">출금하기</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt right medium">
+                                        게임 운영담보금 계좌 <br>
+                                        <span class="fs-6">(설정한도 2,500.00)</span>
+                                    </td>
+                                    <td class="txt right">1500.00</td>
+                                    <td class="txt center"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="gray">
+                                    <td class="txt right medium">자금 합계</td>
+                                    <td class="txt right bold">4,100.00</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex mt-4">
+                        <div class="tb-2" style="width: 60%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bold  bg-dark-gray" colspan="2">게임 운영 계좌</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium">게임 수익 합계</td>
+                                        <td class="txt right">8,958.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">게임 운영자금 합계</td>
+                                        <td class="txt right">2,255.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">게임 비상자금 합계</td>
+                                        <td class="txt right">620.00</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td class="txt right medium">자금 합계</td>
+                                        <td class="txt right bold">11,833.12</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tb-2 ml-4" style="width: 40%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bold  bg-dark-gray" colspan="2">게임</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium bg-primary color-white">정상</td>
+                                        <td class="txt right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium bg-red color-white">경고</td>
+                                        <td class="txt right">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium bg-green color-white">점검중</td>
+                                        <td class="txt right">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">전체</td>
+                                        <td class="txt right bold">6</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-body mt-4">
+                    <div class="wrapper-body-header">
+                        <div class="wrapper-body-header">
+                            <span class="title">% 입점사명 % 계좌</span>
+                            <span class="title-note">단위 : USDT</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="tb-2" style="width: 33%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bg-primary" colspan="2">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="txt bold">게임 운영 계좌</span>
+                                                <span class="txt underline">자금변경</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium">수익</td>
+                                        <td class="txt right">1,234.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">운영자금</td>
+                                        <td class="txt right">500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">비상자금</td>
+                                        <td class="txt right">100.00</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td class="txt right medium">합계</td>
+                                        <td class="txt right bold">1,834.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tb-2 ml-4" style="width: 33%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bg-red" colspan="2">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="txt bold">게임 운영 계좌</span>
+                                                <span class="txt underline">자금변경</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium">수익</td>
+                                        <td class="txt right">1,234.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">운영자금</td>
+                                        <td class="txt right color-red">500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">비상자금</td>
+                                        <td class="txt right">100.00</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td class="txt right medium">합계</td>
+                                        <td class="txt right bold">1,834.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tb-2 ml-4" style="width: 33%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bg-green" colspan="2">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="txt bold">게임 운영 계좌</span>
+                                                <span class="txt underline">자금변경</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium">수익</td>
+                                        <td class="txt right">1,234.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">운영자금</td>
+                                        <td class="txt right">500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">비상자금</td>
+                                        <td class="txt right  color-green">100.00</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td class="txt right medium">합계</td>
+                                        <td class="txt right bold">1,834.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="tb-2" style="width: 33%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bg-primary" colspan="2">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="txt bold">게임 운영 계좌</span>
+                                                <span class="txt underline">자금변경</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium">수익</td>
+                                        <td class="txt right">1,234.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">운영자금</td>
+                                        <td class="txt right">500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">비상자금</td>
+                                        <td class="txt right">100.00</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td class="txt right medium">합계</td>
+                                        <td class="txt right bold">1,834.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tb-2 ml-4" style="width: 33%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bg-primary" colspan="2">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="txt bold">게임 운영 계좌</span>
+                                                <span class="txt underline">자금변경</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium">수익</td>
+                                        <td class="txt right">1,234.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">운영자금</td>
+                                        <td class="txt right">500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">비상자금</td>
+                                        <td class="txt right">100.00</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td class="txt right medium">합계</td>
+                                        <td class="txt right bold">1,834.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tb-2 ml-4" style="width: 33%">
+                            <table>
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="70%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="txt left bg-primary" colspan="2">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="txt bold">게임 운영 계좌</span>
+                                                <span class="txt underline">자금변경</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt right medium">수익</td>
+                                        <td class="txt right">1,234.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">운영자금</td>
+                                        <td class="txt right">500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txt right medium">비상자금</td>
+                                        <td class="txt right">100.00</td>
+                                    </tr>
+                                    <tr class="gray">
+                                        <td class="txt right medium">합계</td>
+                                        <td class="txt right bold">1,834.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/guide/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/guide/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main id="templates">
+
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>GNB | Header</h2>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    {{> ../../../views/templates/gnb }}
+                </div>
+            </section>
+
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>LNB | Left Sider</h2>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                </div>
+            </section>
+
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>Menu Navigation</h2>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    {{> ../../../views/templates/menu }}
+                </div>
+            </section>
+
+            <!-- Page Navigation -->
+            <div class="page-navigation">
+                <a href="#" class="page-previous">
+                    <span>
+                        <i class="iconify" data-icon="ion:arrow-back-sharp" data-inline="false"></i>
+                        Components
+                    </span>
+                </a>
+                <a href="#" class="page-next">
+                    <span>
+                        Pages
+                        <i class="iconify" data-icon="ion:arrow-forward-sharp" data-inline="false"></i>
+                    </span>
+                </a>
+            </div>
+            <!-- End of Page Navigation -->
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+</body>
+
+</html>

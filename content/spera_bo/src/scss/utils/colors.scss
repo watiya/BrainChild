@@ -1,0 +1,111 @@
+// Color
+
+// TODO: Create/Update meaningful color name
+
+// Primary
+
+$primary-1 : #2196f3;
+$primary-2: #64b5f6;
+$primary-3: #1976d2;
+
+$black: #212121;
+$pale-grey : #f6f6f8;
+$white: #ffffff;
+
+// Text | Gray
+$gray-1: $black;
+$gray-2: #424242;
+$gray-3: #616161;
+$gray-4: #0f0e0e;
+$gray-5: #9e9e9e;
+$gray-6: #bdbdbd;
+$gray-7: #e0e0e0;
+$gray-8: #eeeeee;
+
+// Table Line
+$table-line-1: $gray-7;
+$table-line-2: $gray-8;
+$table-line-3: #f5f5f5;
+$table-line-4: $pale-grey;
+
+// Table BG
+$table-bg-1: $white; // Normal
+$table-bg-2: $gray-7; // Hover
+$table-bg-3: #effcf3; // Selected
+
+// States
+$state-azure: $primary-1;
+$state-gray: $gray-2;
+$state-orange: #ff5722;
+$state-violet: #9c27b0;
+
+// Button States 
+// Line 
+$line-normal : $gray-6;
+$line-hover : $gray-7;
+$line-pressed : $gray-5;
+$line-disabled : $gray-8;
+
+// Point 
+$point-normal : $gray-4;
+$point-hover : $gray-5;
+$point-pressed : $gray-2;
+$point-disabled : $gray-7;
+
+// Red | Error
+$red-normal : #f44336;
+$red-hover : #e57373;
+$red-pressed : #d32f2f;
+$red-disabled : #ffebee;
+
+// Green | Success
+$green-normal : #4caf50;
+$green-hover : #a5d6a7;
+$green-pressed : #388e3c;
+$green-disabled : #e8f5e9;
+
+// Solid/Transparency 
+$transparent-normal : $white;
+$transparent-hover : $pale-grey;
+$transparent-pressed : $gray-8;
+$transparent-disabled : $white;
+
+// Solid/Gray | Disabled
+$gray-hover : #fcfcfc;
+$gray-pressed : #ebebeb;
+$gray-disabled : $white;
+
+$main-bg: #fafafa;
+
+
+// Text Colors
+@mixin color($key, $hexcode) {
+    #{$key} {
+        color: $hexcode !important;
+    }
+}
+
+@include color('.color-red', $red-normal);
+@include color('.color-blue', $primary-1);
+@include color('.color-green', $green-normal);
+@include color('.color-white', $white);
+@include color('.color-gray', $gray-6);
+@include color('.color-gray-text', #757575);
+@include color('.color-primary', $primary-1);
+@include color('.color-white', #ffffff);
+@include color('.color-black', $black);
+@include color('.color-dark', $gray-2);
+
+
+// Lined BG 
+@mixin linedBackground($key, $bg-color, $border-color) {
+    #{$key} {
+        background-color: $bg-color !important;
+        border-color: $border-color !important;
+    }
+}
+
+@include linedBackground('.bg-primary', $primary-1, $primary-1);
+@include linedBackground('.bg-red', $red-normal, $red-normal);
+@include linedBackground('.bg-green', $green-normal, $green-normal);
+@include linedBackground('.bg-dark-gray', #757575, #757575);

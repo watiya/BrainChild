@@ -1,0 +1,18 @@
+<ul class="tab-navigation">
+    <li class="{{#if htmlWebpackPlugin.options.accountportal_portalpayment}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/portal-payment-history.html">
+            지급/회수 이력</a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.accountportal_portalgeneralpayment}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/portal-general-payment.html">
+            일반지급</a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.accountportal_portalbatchpayment}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/portal-batch-payment.html">
+            대량지급</a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.accountportal_portalretrieve}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/portal-retrieve.html">
+            회수</a>
+    </li>
+</ul>

@@ -1,0 +1,100 @@
+// TODO: Update color variables
+.alert {
+    position: relative;
+    height: 50px;
+    border-radius: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    max-width: 400px;
+    min-width: 400px;
+
+    .icons {
+        margin-right: 8px;
+
+        &.close {
+            margin-right: 0px;
+            outline: none;
+            box-shadow: none;
+        }
+
+    }
+
+    .close {
+        position: absolute;
+        right: 15px;
+    }
+
+    span {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    &.default {
+        background-color: #424242;
+    }
+
+    &.success {
+        background-color: #4caf50;
+    }
+
+    &.error {
+        background-color: #ef5350;
+    }
+
+}
+
+#toast-container {
+    width: calc(100% - 240px);
+    bottom: 40px;
+    
+    .toast {
+        position: relative;
+        height: 50px;
+        border-radius: 40px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+        max-width: 400px;
+        min-width: 400px;
+        box-shadow: unset;
+        opacity: 1;
+        position: relative;
+        border: 0px;
+
+        &-info { 
+            background-color: #424242; 
+            background-image: unset !important;
+        }
+
+        &-success { 
+            padding-left: 40px;
+            background-color: #4caf50; 
+            background-image: url("/static/icons/check-circle.svg") !important;
+            background-size: 18px;
+        }
+
+        &-error { 
+            padding-left: 40px;
+            background-color: #ef5350; 
+            background-image: url("/static/icons/error-circle.svg") !important;
+            background-size: 18px;
+        }
+
+        &-close-button {
+            text-indent: 30px;
+            overflow: hidden;
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            width: 24px;
+            height: 24px;
+            background-image: url("/static/icons/close.svg") !important;
+            box-shadow: unset;
+            outline: none;
+        }
+    }
+
+}

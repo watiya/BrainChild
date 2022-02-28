@@ -1,0 +1,247 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper accountportal portal-payment-general">
+                <div class="wrapper-title">
+                    <h2>일반지급</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">계좌</a></li>
+                            <li class="breadcrumb-item"><a href="#">포털 관리자 지급</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">지급/회수 이력</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions">
+                    {{>tabs-game-manager}}
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title"></span>
+                    </div>
+
+                    <div class="d-flex wdtper-100 justify-content-center mb-20">
+                        <div class="form-dual mt-5">
+                            <div class="form-dual-wrapper">
+                                <div class="form">
+                                    <div class="form-wrapper">
+                                        <div class="form-title">
+                                            <h3>보내는 계좌</h3>
+                                        </div>
+
+                                        <div class="input-container input-line mt-8 black" data-target="#input-basic">
+                                            <input class="input-field txt medium" id="input-basic" type="text"
+                                                value="포털 운영 계좌 (잔액 : 1,234.56)">
+                                        </div>
+
+                                        <div class="input-container mt-2" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text"
+                                                placeholder="전송 수량 입력">
+                                            <span class="input-unit">USDT</span>
+                                            <span class="input-note">
+                                                전송가능 수량 : 1,250.00 USDT
+                                            </span>
+                                        </div>
+
+                                        <label class="mt-8">
+                                            전송사유 <span class="color-red">(필수) </span>
+                                        </label>
+
+                                        <div class="input-container with-textarea" data-target="#textarea-basic">
+                                            <textarea class="input-field" placeholder="전송사유를 입력해주세요" maxlength="200"
+                                                maxend="자" id="textarea-basic" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <span class="note">
+                                            처리 담당자 : 이름 (이메일주소@이메일..com)
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-arrow">
+                                    <i class="icons icon-round-arrow-dark"></i>
+                                </div>
+
+
+                                <div class="form">
+                                    <div class="form-wrapper">
+                                        <div class="form-title">
+                                            <h3>받는 계좌</h3>
+                                        </div>
+
+                                        <div class="search-input-container line-container wdtper-100 mt-8"
+                                            data-target="#search-input-2">
+                                            <button class="search-field-clear" data-target="#search-input-2"></button>
+                                            <input class="search-field" id="search-input-2" placeholder="회원검색">
+                                        </div>
+
+                                        <div class="input-container mt-2" data-target="#input-basic">
+                                            <input class="input-field txt medium" id="input-basic" type="text"
+                                                value="% 전송 수량 %" disabled>
+                                            <span class="input-unit">USDT</span>
+                                        </div>
+
+                                        <div class="form-tb mt-4 mb-4 ">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="30%" />
+                                                    <col width="70%" />
+                                                </colgroup>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td class="label"><label for="">닉네임</label></td>
+                                                        <td>
+                                                            내남친전정국
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="label">
+                                                            <label for="">회원번호</label>
+                                                        </td>
+                                                        <td>
+                                                            1128
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td class="label">
+                                                            <label for="">가입일자</label>
+                                                        </td>
+                                                        <td>
+                                                            2020-05-25 00:00:00
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td class="label">
+                                                            <label for="">계좌잔액</label>
+                                                        </td>
+                                                        <td>
+                                                            234,234.00
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btns mt-5">
+                    <div></div>
+                    <div>
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">지급</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="modal modal-medium with-component fade" tabindex="-1" role="dialog"
+                id="account_management_transfer_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">회원 조회</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="search-input-container wdtper-100" data-target="#search-input">
+                                <button class="search-field-clear" data-target="#search-input"></button>
+                                <input class="search-field" id="search-input" placeholder="닉네임,이메일,회원번호로 검색하세요.">
+                            </div>
+
+                            <h5 class="modal-title mt-4 fs-7">검색 결과</h5>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="70%" />
+                                    </colgroup>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="label"><label for="">닉네임</label></td>
+                                            <td>
+                                                내남친전정국
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">회원번호</label></td>
+                                            <td>
+                                                1128
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">가입일자</label></td>
+                                            <td class="txt bold">
+                                                2020-05-25 00:00:00
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">계좌잔액</label></td>
+                                            <td class="txt bold">
+                                                234,234.00
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <!-- This is sample button to show modals -->
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#account_management_transfer_modal1">Modal
+                    1</button>
+            </div>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

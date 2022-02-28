@@ -1,0 +1,321 @@
+.accountportal {
+    .wrapper-actions {
+        .search-input-container {
+            background: #fff;
+        }
+    }
+
+    .wrapper-body {
+        .text-active {
+            display: block;
+            font-size: 16px;
+            color: #424242;
+            margin: 27px 0 50px;
+        }
+
+        .input-container:not(.with-textarea) {
+            height: 50px;
+        }
+    }
+
+    .wrapper-body-header {
+        .dropdown-select {
+            max-width: 160px;
+            width: 160px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+
+        .dropdown-select.w300 {
+            max-width: 300px;
+            width: 300px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .wrapper-body-footer {
+        .actions {
+            display: flex;
+        }
+
+        .dropdown-select {
+            max-width: 90px;
+            width: 90px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .btns {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 180px;
+            padding: 0;
+        }
+
+        div {
+            button:first-child {
+                margin-right: 10px;
+                width: 118px;
+            }
+
+            button:last-child {
+                margin-right: 10px;
+                width: 140px;
+            }
+        }
+
+    }
+
+    .form-dual {
+        display: flex;
+        flex-flow: column nowrap;
+        box-sizing: border-box;
+
+        .form-dual-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            flex: 0 1 auto;
+            max-width: 1140px;
+
+            padding: 0 50px;
+            box-sizing: border-box;
+
+            .form {
+                flex: 1 1 auto;
+                width: 500px;
+
+                .form-wrapper {
+                    width: 100%;
+
+                    .input-container,
+                    .input-search-container {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .form-arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 50px;
+            }
+        }
+
+        .form-textbox {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            box-sizing: border-box;
+
+
+            flex: 0 1 auto;
+            max-width: 1140px;
+            padding: 0 50px;
+
+            .input-container {
+                width: 100%;
+            }
+        }
+    }
+
+
+}
+
+.accountportal.account {
+    &-management {
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+    }
+
+    &-management-transfer {
+        .wrapper-body {
+            height: auto;
+        }
+    }
+
+    &-dwhistory {
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+    }
+
+    &-transferhistory {
+        .wrapper-actions {
+            .search-input-container {
+                margin-right: 10px;
+            }
+        }
+
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+
+    }
+}
+
+.accountportal.game-account {
+    &-management {
+        .wrapper-actions {
+            .search-input-container {
+                margin-right: 10px;
+            }
+        }
+
+        .wrapper-body {
+            height: auto;
+
+            .title-note {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .tb-2 {
+                height: auto;
+            }
+        }
+    }
+
+    &-management-transfer {
+        .wrapper-body {
+            height: auto;
+        }
+    }
+
+    &-dwhistory {
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+    }
+
+    &-transferhistory {
+        .wrapper-actions {
+            .search-input-container {
+                margin-right: 10px;
+            }
+        }
+
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+
+    }
+
+    &-operation-fund-setting {
+        .wrapper-body {
+            height: auto;
+        }
+
+        .tb-2 .input-container {
+            width: 100%;
+        }
+    }
+}
+
+.accountportal.portal-payment {
+    &-history {
+        .wrapper-actions {
+            .search-input-container {
+                margin-right: 10px;
+            }
+        }
+
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+    }
+
+    &-general {
+        .wrapper-body {
+            height: auto;
+        }
+
+        .text-active {
+            display: block;
+            font-size: 16px;
+            color: #424242;
+            margin: 27px 0 50px;
+        }
+    }
+
+    &-batch {
+        .btn-enrollment {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+main.main-accountportal {
+    .modal-account-inquiry {
+        .modal-body {
+            margin: 0;
+
+            h5 {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .modal-account-sort-settings {
+        .modal-body h3 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn-group {
+            width: 100%;
+            margin-top: 10px;
+
+            .btn {
+                background: transparent;
+
+                &.active {
+                    background: #424242;
+                    border: 1px solid #424242;
+                    color: #fff;
+                }
+            }
+        }
+
+        .daterange-picker-container {
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+}

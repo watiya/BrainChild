@@ -1,0 +1,375 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main class="main-withdraw withdraw-review-view">
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>출금 검토</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">출금</a></li>
+                            <li class="breadcrumb-item"><a href="#">검토 대기</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">출금 검토</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">기본 정보</span>
+                    </div>
+
+                    <div class="form-tb">
+                        <table>
+                            <colgroup>
+                                <col width="15%" />
+                                <col width="35%" />
+                                <col width="15%" />
+                                <col width="35%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="">TxID</label></td>
+                                    <td>% TxID % </td>
+                                    <td class="label"><label for="">거래일자</label></td>
+                                    <td>2020-05-07 00:00:00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">출금 요청자</label></td>
+                                    <td>% 출금요청자 %</td>
+                                    <td class="label"><label for="">출금 금액</label></td>
+                                    <td>% 출금금액 %</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <label for="">출금 금액</label><br>
+                                        <span class="fs-5 txt regular">(최근24시간)/한도</span>
+                                    </td>
+                                    <td>10/1000</td>
+                                    <td class="label">
+                                        <label for="">출금 횟수</label><br>
+                                        <span class="fs-5 txt regular">(최근24시간)/한도</span>
+                                    </td>
+                                    <td>5/30</td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">핫월렛 No.</label></td>
+                                    <td>% 핫월렛 No%</td>
+                                    <td class="label"><label for="">이관사유</label></td>
+                                    <td>자세히 보기</td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">출금 화폐</label></td>
+                                    <td>% 출금화폐 %</td>
+                                    <td class="label"><label for="">출금 주소</label></td>
+                                    <td>% 출금주소 %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="wrapper-body mt-4">
+                    <div class="wrapper-body-header">
+                        <span class="title">출금 요청자 정보</span>
+                    </div>
+                    <div class="tb overflow withdraw-review-view-tb">
+                        <table>
+                            <colgroup>
+                                <col width="14.2%" />
+                                <col width="14.2%" />
+                                <col width="14.2%" />
+                                <col width="14.2%" />
+                                <col width="14.2%" />
+                                <col width="14.2%" />
+                                <col width="14.2%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">요청자</th>
+                                    <th scope="col">가입 일자</th>
+                                    <th scope="col">회원상태</th>
+                                    <th scope="col">누적 입금</th>
+                                    <th scope="col">누적 출금</th>
+                                    <th scope="col">Total wager </th>
+                                    <th scope="col">Total Win Money </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>% 요청자 %</td>
+                                    <td>% 가입일자 %</td>
+                                    <td>% 회원상태 %</td>
+                                    <td>% 누적입금 %</td>
+                                    <td>% 누적출금 %</td>
+                                    <td>% Total wager %</td>
+                                    <td>% Total Win Money %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="wrapper-body mt-4">
+                    <div class="wrapper-body-header">
+                        <span class="title">검토 결과 입력</span>
+                    </div>
+
+                    <div class="form-tb">
+                        <table>
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="50%" />
+                                <col width="30%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="">검토 결과 선택</label></td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="radio-button">
+                                                <label for="radio_1">
+                                                    <input type="radio" value="" id="radio_1"
+                                                        name="radio_button_group_1" checked>
+                                                    <i class="radio"></i>
+                                                    <span for="">출금 승인</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="radio-button ml-4">
+                                                <label for="radio_2">
+                                                    <input type="radio" value="" id="radio_2"
+                                                        name="radio_button_group_1">
+                                                    <i class="radio"></i>
+                                                    <span for="">출금 반려 (취소)</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="radio-button ml-4">
+                                                <label for="radio_2">
+                                                    <input type="radio" value="" id="radio_2"
+                                                        name="radio_button_group_1">
+                                                    <i class="radio"></i>
+                                                    <span for="">출금 제재 (동결)</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">판단 사유</label></td>
+                                    <td>
+                                        <div class="input-container with-textarea" data-target="#textarea-basic">
+                                            <textarea class="input-field" placeholder="제목을 입력해주세요" maxlength="200"
+                                                maxend="자" id="textarea-basic" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal modal-large with-component fade" tabindex="-1" role="dialog"
+                id="withdraw_review_view_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">출금 검토 확인</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>다음 출금건에 대해 검토 내용을 확정하겠습니까?</p>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="70%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="label"><label for="">TxID</label></td>
+                                            <td> % TxID % </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">출금 요청자</label></td>
+                                            <td> % 출금요청자 % </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label"><label for="">출금 금액</label></td>
+                                            <td> % 출금금액 % </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="70%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="label"><label for="">검토 결과</label></td>
+                                            <td>% 검토결과 %</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="label">
+                                                <label for="">판단 사유</label>
+                                                <div class="mt-8"></div>
+                                            </td>
+                                            <td>
+                                                <span> % 사유 %</span>
+                                                <div class="mt-8"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-line-38">취소</button>
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal-large with-component fade" tabindex="-1" role="dialog"
+                id="withdraw_review_view_modal2">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">출금 검토 이관 사유</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p class="color-dark">출금 검토 정책 판단 결과</p>
+
+                            <div class="tb overflow mt-4" style="max-height: 400px">
+                                <table class="tb-center">
+                                    <colgroup>
+                                        <col width="50%">
+                                        <col width="50%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>코드 이름</th>
+                                            <th>코드 이름</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W-002</td>
+                                            <td>고액 출금 시도</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <!-- This is sample button to show modals -->
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#withdraw_review_view_modal1">Modal 1</button>
+                <button type="button" class="btn solid-40" data-toggle="modal"
+                    data-target="#withdraw_review_view_modal2">Modal 2</button>
+            </div>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

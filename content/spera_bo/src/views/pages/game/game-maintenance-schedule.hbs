@@ -1,0 +1,245 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper game game-maintenance">
+                <div class="wrapper-title">
+                    <h2>점검 예정 리스트</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">게임</a></li>
+                            <li class="breadcrumb-item"><a href="#">점검</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">게임리스트</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions med">
+                    <div class="d-flex flex-column  wdtper-100">
+                        <div class="d-flex">
+                            <select class="dropdown-select show-tick line-32">
+                                <option>입점사 선택</option>
+                            </select>
+                        </div>
+                        <div class="d-flex">
+                            {{>tabs-maintenance}}
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+
+                        <div class="form-tb">
+                            <table>
+                                <colgroup>
+                                    <col width="20%" />
+                                    <col width="50%" />
+                                    <col width="30%" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="label"><label for="">점검 항목</label></td>
+                                        <td>
+                                            <div class="input-container" data-target="#input-basic">
+                                                <input class="input-field" id="input-basic" type="text"
+                                                    placeholder="점검 메시지를 입력해주세요 (ex:서비스 정기점검)">
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label"><label for="">점검 예정 시간</label></td>
+                                        <td>
+                                            <div class="d-flex">
+                                                <div class="daterange-picker-container">
+                                                    <input type="text" name="daterange"
+                                                        value="2018-06-10  ~  2018-06-12" />
+                                                </div>
+
+                                                <!-- Use d-none to toggle element-->
+                                                <button class="btn btn-solid-40 bg-green color-white ml-2">
+                                                    점검 예정 스케줄 등록
+                                                </button>
+                                                <button class="btn btn-solid-40 bg-red color-white ml-2 d-none">
+                                                    점검 예정 스케줄 취소
+                                                </button>
+                                            </div>
+                                            <span class="color-red mt-2 d-block">점검이 시작되는 시간입니다. 유효한 일자를 선택해주세요.</span>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="">
+                            <li>
+                                선택한 게임은 모두 동일한 점검 스케줄로 등록됩니다.
+                            </li>
+                            <li>
+                                점검이 필요한 게임은 “게임리스트” 메뉴에서 추가해 주세요.
+                            </li>
+                            <li>
+                                일시가 등록된 상태에서는 추가로 게임을 등록하실 수 없습니다.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tb overflow">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="10%" />
+                                <col width="50%" />
+                                <col width="20%" />
+                                <col width="10%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">게임</th>
+                                    <th scope="col">점검 일자</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="color-green">점검 예정</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="d-flex data-img-wrapper">
+                                                <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-game1.PNG"
+                                                    alt="" srcset="">
+                                            </div>
+                                            <span>% 게임이름(ID) %</span>
+                                        </div>
+                                    </td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>
+                                        <a class="color-primary txt underline"
+                                            href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/account-editing.html">즉시점검</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td class="color-green">점검 예정</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="d-flex data-img-wrapper">
+                                                <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-game2.PNG"
+                                                    alt="" srcset="">
+                                            </div>
+                                            <span>% 게임이름(ID) %</span>
+                                        </div>
+                                    </td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>
+                                        <a class="color-primary txt underline"
+                                            href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/account-editing.html">즉시점검</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td class="color-green">점검 예정</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="d-flex data-img-wrapper">
+                                                <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-game3.PNG"
+                                                    alt="" srcset="">
+                                            </div>
+                                            <span>% 게임이름(ID) %</span>
+                                        </div>
+                                    </td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>
+                                        <a class="color-primary txt underline"
+                                            href="{{ htmlWebpackPlugin.options.relativePath }}pages/backoffice/account-editing.html">즉시점검</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>10개</option>
+                            </select>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

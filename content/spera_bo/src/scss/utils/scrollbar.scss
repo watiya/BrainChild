@@ -1,0 +1,22 @@
+@mixin scrollbar {
+
+    // TODO : Create Separate Mixins for Scrollbar
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 6px;
+        margin-left: 4px
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        padding: 0 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #e0e0e0;
+        border-radius: 4px;
+    }
+}

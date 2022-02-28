@@ -1,0 +1,144 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper event luckypot">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>Lucky Pot</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">이벤트</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Lucky Pot</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body wrapper-details">
+                    <div class="tb">
+                        <table>
+                            <colgroup>
+                                <col width="50%">
+                                <col width="50%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="txt center fs-7 medium">Lucky Pot 진행 예정 일자</th>
+                                    <th class="txt center fs-7 medium">누적 상금 총액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt center fs-9 bold">24회차 (2020-05-25 00:00:00)</td>
+                                    <td class="txt center fs-9 bold">% 금액 %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">Lucky Pot 내역</span>
+                        <select class="dropdown-select show-tick line-32">
+                            <option>1개월</option>
+                        </select>
+                    </div>
+
+                    <div class="tb overflow">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">Lucky Pot 일자</th>
+                                    <th scope="col">당첨번호</th>
+                                    <th scope="col">미 발행 티켓 수</th>
+                                    <th scope="col">티켓 발행 수</th>
+                                    <th scope="col">상금 총액</th>
+                                    <th scope="col">당첨자 수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>% 당첨번호 %</td>
+                                    <td>% 미 발행 티켓 수 %</td>
+                                    <td>% 티벳 발행 수 %</td>
+                                    <td>% 금액 %</td>
+                                    <td>% 담청자 수 %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

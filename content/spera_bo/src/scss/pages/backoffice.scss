@@ -1,0 +1,289 @@
+.backoffice {
+    .wrapper-actions {
+        .btn-register {
+            width: 140px;
+            padding: 0;
+
+            a {
+                @include flex-center;
+                color: #fff;
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .wrapper-body-footer {
+        .actions {
+            display: flex;
+        }
+
+        .dropdown-select {
+            max-width: 90px;
+            width: 90px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+            }
+        }
+    }
+
+    .btns {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 180px;
+            padding: 0;
+        }
+
+        div {
+            button:first-child {
+                margin-right: 10px;
+                width: 118px;
+            }
+
+            button:last-child {
+                margin-right: 10px;
+                width: 140px;
+            }
+        }
+
+    }
+}
+
+.backoffice.account {
+    &-management {
+        .wrapper-actions {
+            justify-content: space-between;
+
+            .dropdown-select {
+                max-width: 240px;
+                width: 240px;
+
+                * {
+                    font-size: 14px;
+                    color: #757575;
+                }
+
+                .dropdown-toggle {
+                    height: 32px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+    }
+
+    &-registration,
+    &-editing {
+        .wrapper-body {
+            min-height: calc(40%);
+        }
+
+        .wrapper-body-header {
+            margin-bottom: 0px !important;
+        }
+
+
+        .input-note {
+            margin: 10px 0 5px;
+            font-size: 12px;
+
+            span {
+                color: $gray-5;
+                display: inline-block;
+                width: 280px;
+            }
+
+            a {
+                margin-left: 8px;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.backoffice.level {
+    &-management {
+        .wrapper-actions {
+            justify-content: space-between;
+        }
+    }
+
+    &-registration,
+    &-editing {
+        .wrapper-body {
+            min-height: calc(40%);
+        }
+
+        .level-tabs {
+            display: flex;
+            align-items: center;
+            height: 36px;
+            width: 100%;
+            margin-bottom: 15px;
+
+            .level-tab {
+                @include flex-center;
+                margin-right: 4px;
+                height: 100%;
+                width: 154px;
+                flex: 1 1 auto;
+
+                background: $gray-8;
+                font-size: 13px;
+                font-weight: normal;
+
+                cursor: pointer;
+                user-select: none;
+
+                &.active {
+                    border: 1px solid $primary-1;
+                    border-bottom: 0;
+                    background: transparent;
+                    cursor: default;
+                }
+
+                &:not(.active):hover {
+                    background: darken($gray-8, 10%);
+                    transition: 200ms;
+                }
+            }
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            height: 50px;
+
+            >label {
+                font-weight: 500;
+                margin: 0 40px 0 0;
+                width: 80px;
+            }
+
+            .checkbox-button {
+                margin-right: 20px;
+                width: auto;
+            }
+        }
+    }
+}
+
+.backoffice.company {
+    &-management {
+        .wrapper-actions {
+            justify-content: space-between;
+        }
+
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+    }
+
+    &-registration,
+    &-editing {
+        .wrapper-body {
+            min-height: calc(40%);
+        }
+
+
+        .wrapper-body-header {
+            margin-bottom: 0px !important;
+        }
+    }
+}
+
+.backoffice.game {
+    &-management {
+        .wrapper-actions {
+            justify-content: space-between;
+
+            .select-group {
+                height: 36px;
+                width: auto;
+            }
+
+            .dropdown-select {
+                max-width: 240px;
+                width: 240px;
+
+                * {
+                    font-size: 14px;
+                    color: #757575;
+                }
+
+                .dropdown-toggle {
+                    height: 32px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+
+    }
+
+    &-registration,
+    &-editing {
+        .wrapper-body {
+            min-height: calc(40%);
+        }
+
+        .wrapper-body-header {
+            margin-bottom: 0px !important;
+
+        }
+    }
+}
+
+.backoffice.category {
+    .wrapper-body-header {
+        margin-bottom: 0px;
+    }
+
+    &-management {
+        .wrapper-actions {
+            justify-content: space-between;
+        }
+
+        .wrapper-body {
+            height: calc(100% - 95px);
+        }
+    }
+
+    &-registration,
+    &-editing {
+        .wrapper-body {
+            min-height: calc(40%);
+        }
+
+        .wrapper-body-header {
+            margin-bottom: 0px !important;
+        }
+    }
+}
+
+.backoffice.history {
+    .wrapper-body {
+        height: calc(100% - 45px);
+    }
+}

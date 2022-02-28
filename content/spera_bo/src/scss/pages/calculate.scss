@@ -1,0 +1,425 @@
+.main-calculate {
+    .calculate-tb {
+        border-top: 1px solid #212121;
+        border-bottom: 1px solid #212121;
+
+        tr {
+            &:not(:first-child):not(:last-child) {
+                border: none;
+            }
+
+            &:first-child {
+                border-bottom: 1px solid $gray-7;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid $gray-7;
+            }
+        }
+
+        th,
+        td {
+            text-align: right;
+            padding: 15px 21px;
+
+            &:first-child {
+                text-align: left;
+            }
+        }
+    }
+
+    .calculate-form-tb {
+        border-top: 1px solid #212121;
+        border-bottom: 1px solid #212121;
+
+        width: 40%;
+        min-width: 600px;
+
+        tr:nth-child(odd) {
+            border-bottom: none;
+        }
+
+        tr:last-child {
+            td {
+                padding: 20px 20px;
+            }
+        }
+
+        td {
+            padding: 10px 20px;
+
+            &:not(.label) {
+                text-align: right;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .calculate-scrollable-tb {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #212121;
+        border-top: 1px solid #212121;
+
+        >.tb {
+            width: 240px;
+            border: none;
+            border-right: 1px solid #212121;
+
+            th {
+                padding: 40px 20px;
+            }
+
+            td {
+                border-right: none;
+            }
+
+        }
+
+        >.scrollable {
+            overflow-x: auto;
+            @include webkit-scrollbar;
+            margin-left: 1px;
+
+            >.tb {
+                width: 100vw;
+                border: none;
+            }
+        }
+    }
+
+    .calculate-double-tb {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .calculate-tb:first-child {
+            width: 60%;
+        }
+
+        .calculate-tb:last-child {
+            width: 40%;
+            margin-left: 30px;
+        }
+    }
+
+}
+
+.main-calculate.calculate-portal-summary {
+    .wrapper-body {
+        .calculate-portal-summary-tb {
+            td {
+                padding: 27px 10px;
+                text-align: right;
+
+                &:first-child {
+                    text-align: center;
+                }
+            }
+
+            th {
+                padding: 17px 0px;
+                text-align: center;
+            }
+        }
+
+        .tb {
+            height: auto;
+        }
+
+        &:last-child {
+            min-height: 70%;
+        }
+    }
+}
+
+.main-calculate.calculate-portal-result {
+    .wrapper-body {
+        height: calc(100% - 145px);
+
+        .calculate-portal-result-tb {
+            td {
+                padding: 27px 10px;
+                text-align: right;
+
+                &:first-child {
+                    text-align: center;
+                }
+            }
+
+            th {
+                padding: 17px 0px;
+                text-align: center;
+            }
+        }
+
+        .tb {
+            height: auto;
+
+            a {
+                text-decoration: underline;
+                color: $primary-1;
+            }
+        }
+
+        .calculate-portal-result-tb-2 {
+            overflow-x: auto;
+            @include scrollbar;
+
+            table {
+                width: 100vw;
+
+                th {
+                    text-align: center;
+                }
+
+                td,
+                th {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+.main-calculate.calculate-portal-review {
+    .wrapper-body {
+        height: calc(100% - 105px);
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.main-calculate.calculate-portal-review-view {
+    .wrapper-body {
+        padding: 46px 60px;
+
+        .portal-review-header {
+            display: flex;
+            flex-flow: column nowrap;
+
+            .logo {
+                margin-left: auto;
+                width: 200px;
+                height: auto;
+            }
+
+            h1 {
+                margin: 35px 0 42px 0;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            h3 {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .calculate-review-modal {
+        .input-container {
+            height: 32px;
+        }
+
+        .dropdown-select {
+            margin: 0;
+        }
+
+        .input-container.with-textarea {
+            height: 66px;
+        }
+    }
+}
+
+.main-calculate.calculate-portal-result-statement {
+    .wrapper-body {
+        padding: 46px 60px;
+
+        .portal-result-header {
+            display: flex;
+            flex-flow: column nowrap;
+
+            .logo {
+                margin-left: auto;
+                width: 200px;
+                height: auto;
+            }
+
+            h1 {
+                margin: 35px 0 42px 0;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            h3 {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .calculate-result-modal {}
+}
+
+.main-calculate.calculate-company-summary {
+    .wrapper-body {
+        .calculate-company-summary-tb {
+            td {
+                padding: 27px 10px;
+                text-align: right;
+
+                &:first-child {
+                    text-align: center;
+                }
+            }
+
+            th {
+                padding: 17px 0px;
+                text-align: center;
+            }
+        }
+
+        .tb {
+            height: auto;
+        }
+
+        .calculate-tb {
+            border: none;
+
+            table {
+                width: 100vw;
+            }
+        }
+
+        &:last-child {
+            min-height: 70%;
+        }
+    }
+}
+
+.main-calculate.calculate-company-result-statement {
+    .wrapper-body {
+        padding: 46px 60px;
+
+        .company-result-header {
+            display: flex;
+            flex-flow: column nowrap;
+
+            .logo {
+                margin-left: auto;
+                width: 200px;
+                height: auto;
+            }
+
+            h1 {
+                margin: 35px 0 42px 0;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            h3 {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .calculate-result-modal {}
+}
+
+.main-calculate.calculate-company-result {
+    .wrapper-body-header {
+        .btn-statement {
+            background: $primary-1;
+            height: 32px;
+
+            a {
+                color: #fff
+            }
+        }
+    }
+
+    .wrapper-body {
+        height: calc(100% - 145px);
+
+        .tb {
+            height: auto;
+        }
+
+        .calculate-company-result-tb {
+            td {
+                padding: 27px 10px;
+                text-align: right;
+
+                &:first-child {
+                    text-align: center;
+                }
+            }
+
+            th {
+                padding: 17px 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.main-calculate.calculate-data-setting {
+    .wrapper-body {
+        height: calc(100% - 45px);
+
+        a {
+            color: $primary-1;
+            text-decoration: underline;
+        }
+    }
+
+    .btn-register {
+        width: 140px;
+        padding: 0;
+
+        a {
+            @include flex-center;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .calculate-data-setting-modal {
+
+        .input-container,
+        .search-input-container,
+        .dropdown-select {
+            height: 32px;
+            margin: 0;
+        }
+    }
+}
+
+
+.main-calculate.calculate-data-history {
+    .wrapper-body {
+        height: calc(100% - 100px);
+
+        a {
+            color: $primary-1;
+            text-decoration: underline;
+        }
+    }
+
+}

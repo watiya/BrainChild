@@ -1,0 +1,17 @@
+<ul class="tab-navigation mt-4">
+    <li class="{{#if htmlWebpackPlugin.options.game_check_status}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/game/game-status-list.html">
+            게임리스트
+        </a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.game_check_schedule}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/game/game-maintenance-schedule.html">
+            점검 예정 리스트
+        </a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.game_check_maintenance}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/game/game-maintenance-list.html">
+            점검 중 리스트
+        </a>
+    </li>
+</ul>

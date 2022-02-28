@@ -1,0 +1,121 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper game game-launch">
+                <div class="wrapper-title">
+                    <h2>출시서비스 설정</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">게임</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">게임현황</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="tb overflow">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="10%" />
+                                <col width="50%" />
+                                <col width="20%" />
+                                <col width="10%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">게임</th>
+                                    <th scope="col">출시일자</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="color-primary">미출시</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="d-flex data-img-wrapper">
+                                                <img src="{{htmlWebpackPlugin.options.relativePath}}static/images/sample-game1.PNG"
+                                                    alt="" srcset="">
+                                            </div>
+                                            <span>Grand Spinn</span>
+                                        </div>
+                                    </td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>
+                                        <a class="color-primary txt underline"
+                                            href="{{ htmlWebpackPlugin.options.relativePath }}pages/game/game-launch-setting.html">편집</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>10개</option>
+                            </select>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

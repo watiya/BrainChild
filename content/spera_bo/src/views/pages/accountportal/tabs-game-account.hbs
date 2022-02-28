@@ -1,0 +1,14 @@
+<ul class="tab-navigation">
+    <li class="{{#if htmlWebpackPlugin.options.accountportal_gameaccountmanagement}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/game-account-management-portal.html">
+            계좌관리</a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.accountportal_gameaccountdwhistory}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/game-account-dw-history.html">입출금
+            이력</a>
+    </li>
+    <li class="{{#if htmlWebpackPlugin.options.accountportal_gameaccounttransferhistory}} active {{/if}}">
+        <a href="{{ htmlWebpackPlugin.options.relativePath }}pages/accountportal/game-account-transfer-history.html">
+            계좌간 전송 이력</a>
+    </li>
+</ul>

@@ -1,0 +1,279 @@
+.main-withdraw {
+    .wrapper-body-footer {
+        .actions {
+            display: flex;
+        }
+
+        .dropdown-select {
+            max-width: 90px;
+            width: 90px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .btns {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 180px;
+            padding: 0;
+        }
+
+        div {
+            button:first-child {
+                margin-right: 10px;
+                width: 118px;
+            }
+
+            button:last-child {
+                margin-right: 10px;
+                width: 140px;
+            }
+        }
+
+    }
+}
+
+.main-withdraw.withdraw-failures {
+    .wrapper-body {
+        height: calc(100% - 40px);
+    }
+
+    .wrapper-body-header {
+        .dropdown-select {
+            max-width: 150px;
+            width: 150px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.main-withdraw.withdraw-review {
+    .wrapper-body {
+        height: calc(100% - 40px);
+    }
+
+    .wrapper-body-header {
+        .dropdown-select {
+            max-width: 150px;
+            width: 150px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.main-withdraw.withdraw-review-view {
+    .wrapper-body {
+        height: auto;
+        min-height: initial;
+
+        .form-tb {
+            td {
+                padding-right: 20px;
+            }
+        }
+
+        .withdraw-review-view-tb {
+            td {
+                padding: 27px 0px;
+                text-align: center;
+            }
+
+            th {
+                padding: 17px 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.main-withdraw.withdraw-review-history {
+    .wrapper-body {
+        height: calc(100% - 40px);
+    }
+}
+
+.main-withdraw.withdraw-history {
+    .tags-container {
+        display: flex;
+
+        .tag {
+            margin-left: 10px;
+
+            .icons {
+                &.on-right {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    .wrapper-body {
+        height: calc(100% - 40px);
+    }
+}
+
+.main-withdraw.withdraw-account-management {
+    .wrapper-body {
+        height: calc(100% - 40px);
+    }
+
+    .tb table {
+        width: 100vw;
+    }
+
+
+    .wrapper-body-header {
+        .dropdown-select {
+            max-width: 150px;
+            width: 150px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.main-withdraw.withdraw-policy-management {
+    .wrapper-actions {
+        span {
+            color: #757575;
+        }
+
+        .btn-register {
+            width: 140px;
+            margin-left: auto;
+            background: $primary-1;
+
+            a {
+                @include flex-center;
+                color: #fff;
+                height: 100%;
+                width: 100%;
+                font-size: 13px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .wrapper-body {
+        height: calc(100% - 145px);
+    }
+
+    .wrapper-body-header {
+        .dropdown-select {
+            max-width: 150px;
+            width: 150px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .modal-policy-review {
+        .dropdown-input-td {
+            .dropdown-select {
+                max-width: 40%;
+                width: 40%;
+
+                * {
+                    font-size: 14px;
+                    color: #757575;
+                }
+
+                .dropdown-toggle {
+                    height: 40px;
+                    margin-right: 5px;
+                }
+            }
+
+            .input-container {
+                width: 60%;
+                margin-left: 10px;
+            }
+        }
+
+        .dual-label-td {
+            span {
+                display: block;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+
+        table .dropdown-select {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.main-withdraw.withdraw-policy-history {
+
+    .wrapper-body {
+        height: calc(100% - 40px);
+    }
+
+    .wrapper-body-header {
+        .dropdown-select {
+            max-width: 150px;
+            width: 150px;
+
+            * {
+                font-size: 14px;
+                color: #757575;
+            }
+
+            .dropdown-toggle {
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

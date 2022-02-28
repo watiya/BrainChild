@@ -1,0 +1,205 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main class="main-calculate calculate-company-summary">
+            <section class="content-wrapper">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>현황 조회</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">정산</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">입점사 정산</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-actions">
+                    {{> tabs-company}}
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">정산 검토 현황 (2020년 5월)</span>
+                    </div>
+
+                    <p>
+                        정산 내역서가 발급되었습니다. <br>
+                        정산 검토 기한 : 2020-05-27 00:00:00 ~ 2020-05-27 00:00:00
+                    </p>
+                </div>
+
+                <div class="wrapper-body mt-4">
+                    <div class="wrapper-body-header">
+                        <span class="title">정산 예정 현황 (2020년 6월)</span>
+                        <span class="color-gray-text fs-6">* 현재 기준 정산로직으로 계산된 금액이며, 실제 정산 시점의 결과와는 다릅니다.</span>
+                    </div>
+
+                    <span class="fs-7">1. 게임사 전체</span>
+                    <div class="mt-2 tb bordered-lr center calculate-company-summary-tb">
+                        <table>
+                            <colgroup>
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">정산 마감일</th>
+                                    <th scope="col">총수익</th>
+                                    <th scope="col">총비용</th>
+                                    <th scope="col">순수익</th>
+                                    <th scope="col">정산수익(포털)</th>
+                                    <th scope="col">정산수익(입점사)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020-05-27</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <span class="mt-10 fs-7">2. 입점사별</span>
+                    <div class="tb bordered-lr calculate-tb overflow mt-2 mb-8">
+                        <table>
+                            <colgroup>
+                                <col width="240px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="160px">
+                                <col width="240px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2" class="txt left">계좌 구분</th>
+                                    <th scope="col" colspan="2" class="txt left">Casino Win Money</th>
+                                    <th scope="col" colspan="6" class="txt left">유저계좌 순입출금</th>
+                                    <th scope="col" colspan="2" class="txt left">메인계좌 순입출금</th>
+                                    <th scope="col" colspan="2" class="txt left">담보금계좌 순입출금</th>
+                                    <th scope="col" rowspan="2" class="txt left">총 수익</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Wagered</th>
+                                    <th scope="col">Payout</th>
+                                    <th scope="col">관리자 지급</th>
+                                    <th scope="col">이벤트지급</th>
+                                    <th scope="col">기타지급</th>
+                                    <th scope="col">관리자회수</th>
+                                    <th scope="col">이벤트회수</th>
+                                    <th scope="col">기타회수</th>
+                                    <th scope="col">나간금액</th>
+                                    <th scope="col">들어온금액</th>
+                                    <th scope="col">나간금액</th>
+                                    <th scope="col">들어온금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>총 합계</td>
+                                    <td class="txt bold">15,000.00</td>
+                                    <td class="txt bold">- 15,000.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                    <td class="txt bold">- 0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>게임이름 (ID)</td>
+                                    <td>15,000.00</td>
+                                    <td>- 15,000.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>게임이름 (ID)</td>
+                                    <td>15,000.00</td>
+                                    <td>- 15,000.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>게임이름 (ID)</td>
+                                    <td>15,000.00</td>
+                                    <td>- 15,000.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                    <td>- 0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

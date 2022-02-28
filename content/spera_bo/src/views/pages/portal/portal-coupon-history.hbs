@@ -1,0 +1,195 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper portal-page">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title justify-content-between align-items-center">
+                    <h2>쿠폰목록</h2>
+
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">포털</a></li>
+                            <li class="breadcrumb-item"><a href="#">쿠폰</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">쿠폰목록</li>
+                        </ol>
+                    </nav>
+                    <!-- End of Breadcrumbs -->
+                </div>
+                <!-- End of Content Wrapper Title -->
+
+                <!-- Tabs -->
+                <div class="wrapper-actions with-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <!-- Coupon Lists -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="coupon-lists-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/portal/{{/if}}portal-coupon-lists.html">쿠폰목록</a>
+                        </li>
+
+                        <!-- Coupon History -->
+                        <li class="nav-item">
+                            <a class="nav-link active" id="coupon-history-tab"
+                                href="{{#if htmlWebpackPlugin.options.isProduction}}./{{else}}/pages/portal/{{/if}}portal-coupon-history.html">쿠폰히스토리</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- End of Tabs -->
+
+                <!-- Wrapper Actions -->
+                <div class="wrapper-actions">
+                
+                    <!-- Search Input -->
+                    <div class="search-input-container" data-target="#user-inquiry">
+                        <button class="search-field-clear" data-target="#user-inquiry"></button>
+                        <input class="search-field" id="user-inquiry" placeholder="검색 (유저 닉네임, 이메일, 회원번호)">
+                    </div>
+                
+                    <!-- Tags -->
+                    <div class="tags-container">
+                        <button type="button" class="btn point-40 tag">
+                            검색결과
+                            <i class="icons icon-clear on-right"></i>
+                        </button>
+                        <button type="button" class="btn point-40 tag">
+                            검색결과
+                            <i class="icons icon-clear on-right"></i>
+                        </button>
+                        <button type="button" class="btn point-40 tag">
+                            검색결과
+                            <i class="icons icon-clear on-right"></i>
+                        </button>
+                    </div>
+                    <!-- End of Tags -->
+                
+                </div>
+                <!-- End of Wrapper Actions -->
+
+                <!-- Content Wrapper Body -->
+                <div class="wrapper-body" style="margin-bottom: 30px;">
+
+                    <!-- Body Header -->
+                    <div class="wrapper-body-header">
+
+                        <!-- Title -->
+                        <span class="title">% 검색결과 % 의 히스토리</span>
+
+                        <!-- Dropdown -->
+                        <select class="dropdown-select show-tick line-32">
+                            <option>1개월</option>
+                            <option>1개월 1.1</option>
+                            <option>1개월 1.2</option>
+                            <option>1개월 1.3</option>
+                            <option>1개월 1.4</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="tb without-side-border">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">쿠폰ID</th>
+                                    <th scope="col">회원번호</th>
+                                    <th scope="col">계정이름</th>
+                                    <th scope="col">닉네임</th>
+                                    <th scope="col">쿠폰코드</th>
+                                    <th scope="col">등록일자</th>
+                                    <th scope="col">수령금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>% 쿠폰ID %</td>
+                                    <td>회원번호</td>
+                                    <td>계정이름</td>
+                                    <td>닉네임</td>
+                                    <td>xxxxxxxxxxxxxxxxxxxx</td>
+                                    <td>2020-00-00 00:00:00</td>
+                                    <td>금액</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of Table -->
+
+                    <!-- Body Footer -->
+                    <div class="wrapper-body-footer">
+
+                        <!-- Footer Actions -->
+                        <div class="actions">
+
+                            <!-- Delete -->
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+
+                            <!-- Dropdown -->
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><a href="#"></a></li>
+                            <li class="page-item active"><a href="#">1</a></li>
+                            <li class="page-item"><a href="#">2</a></li>
+                            <li class="page-item"><a href="#">3</a></li>
+                            <li class="page-item"><a href="#">4</a></li>
+                            <li class="page-item"><a href="#">5</a></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><a href="#">20</a></li>
+                            <li class="page-item icons icon-chevron-right-gray"><a href="#"></a></li>
+                        </ul>
+                        <!-- End of Pagination -->
+
+                    </div>
+                    <!-- End of Body Footer -->
+
+                </div>
+                <!-- End of Content Wrapper Body -->
+
+
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>

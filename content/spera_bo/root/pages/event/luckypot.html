@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" class="spera-production">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, 
+    user-scalable=no, shrink-to-fit=yes">
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SPERA Style Guide" />
+    <meta property="og:description" content="SPERA Style Guide" />
+    <meta property="og:image" content="#" />
+    <title>Spera Event |  Lucky Pot</title>
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../../static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/plugins/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../static/plugins/fastselect/fastselect.min.css">
+    <link rel="stylesheet" href="../../static/plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/plugins/toastr/css/toastr.min.css">
+    <link rel="stylesheet" href="../../static/plugins/dropzone/css/dropzone.min.css">
+    <link rel="stylesheet" href="../../static/plugins/pickr/css/nano.min.css">
+    <link rel="stylesheet" href="../../static/plugins/datepicker/css/datepicker.min.css">
+    <link rel="stylesheet" href="../../static/plugins/daterangepicker/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/plugins/nestable/css/nestable.css">
+    <link rel="stylesheet" href="../../static/plugins/chartist/css/chartist.min.css">
+<link href="../../static/css/app.css" rel="stylesheet"></head>
+<body>
+    <!-- Start of GNB -->
+    <header class="navbar gnb">
+        <div class="container-fluid">
+    
+            <!-- Start of Left Content -->
+            <div class="navbar-wrapper">
+    
+                <!-- Brand -->
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../static/images/logo.png" alt="" srcset="">
+                </a>
+    
+                <!-- Navigation Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../backoffice/account-management.html">백오피스</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../user/user-inquiry.html">회원</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../accountportal/account-management.html">계좌</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../portal/portal-banner-main.html">포털</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../game/game-list.html">게임</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../calculate/calculate-portal-summary.html">정산</a>
+                    </li>
+                    <li class="nav-item  active">
+                        <a class="nav-link"
+                            href="../event/weeklyrace.html">이벤트</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                            href="../withdraw/withdraw-failures.html">출금</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" 
+                            href="../statistics/statistics-current-summary.html">통계</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="../guide/element01.html"
+                            target="_blank">GUIDE</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Left Content -->
+    
+            <!-- Start of Right Content -->
+            <div class="navbar-wrapper">
+                <ul class="navbar-nav">
+                    <button class="icons icon-apps btn-menu" onclick="toggleMenu();"></button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">전정국</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Right Content -->
+    
+        </div>
+    
+        <!-- Start of Menu -->
+        <nav class="navbar menu" id="menu">
+        
+            <div class="menu-wrapper">
+        
+                <!-- Mene Header -->
+                <div class="menu-header">
+                    <span class="info small-text-1">jungkookzzangzznagman@email.com</span>
+                    <button type="button" class="btn logout-32">로그아웃</button>
+                </div>
+        
+                <!-- Body -->
+                <div class="menu-body">
+        
+                    <div class="menu-lists">
+        
+                        <div class="menu-list-title">
+                            <h1>
+                                <i class="icons icon-apps on-left"></i>
+                                전체메뉴
+                            </h1>
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">백오피스</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">계정관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">레벨관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">입점사관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">카테고리관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">변경이력</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">회원</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">회원조회</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">관리이력</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">계좌</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">포털 계좌</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임 계좌</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">포털 관리자 지급</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임 관리자 지급</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">포털</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <p class="nav-link">배너</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">메인 배너</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">서브 배너</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">피쳐드</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">럭키데이 픽</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">공지</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <p class="nav-link">메시지 발송</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">알림 메시지</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">채팅 메시지</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">쿠폰</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">점검</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">게임</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">게임 현황</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">점검</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">출시서비스 설정</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">정산</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">포털 정산</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">입점사 정산</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">정산 데이터 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="menu-item">
+                                <p class="text-white">이벤트</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">VIP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Referral</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Cashback</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Weekly Race</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Lucky Pot</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Event</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">출금</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">출금 실패</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">검토 대기</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">출금 내역</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">검토 내역</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">계좌 관리</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">정채 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu-list-content">
+        
+                            <div class="menu-item">
+                                <p class="text-white">통계</p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">요약 통계</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <p class="nav-link">실시간 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">포털 접속자 수</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">총 통화량</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="nav-item">
+                                        <p class="nav-link">이용자 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">이용자별 통계</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">이용자 리텐션</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+        
+                                    <li class="nav-item">
+                                        <p class="nav-link">USDT 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">통화량</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">입/출금</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">지급</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">회수</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+        
+                                    <li class="nav-item">
+                                        <p class="nav-link">게임 통계</p>
+                                        <ol>
+                                            <li class="nav-link">
+                                                <a href="#">게임 전체</a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a href="#">게임 별</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </nav>
+        <!-- End of Menu --></header>
+    <!-- END of GNB -->
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        <!-- Start of LNB -->
+        <aside class="lnb">
+        
+            <!-- Navigation Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../../pages/event/weeklyrace.html">Weekly
+                        Race</a>
+                </li>
+                <li class="nav-item  active ">
+                    <a class="nav-link" href="../../pages/event/luckypot.html">Lucky
+                        Pot</a>
+                </li>
+            </ul>
+        
+            <!-- Brand Copyright -->
+            <div class="copyright">
+                <span> Copyright ⓒ <b>SPERGAMING.</b></span>
+            </div>
+        
+        </aside>
+        <!-- END of LNB -->
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper event luckypot">
+                <!-- Content Wrapper Title -->
+                <div class="wrapper-title">
+                    <h2>Lucky Pot</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">이벤트</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Lucky Pot</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body wrapper-details">
+                    <div class="tb">
+                        <table>
+                            <colgroup>
+                                <col width="50%">
+                                <col width="50%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="txt center fs-7 medium">Lucky Pot 진행 예정 일자</th>
+                                    <th class="txt center fs-7 medium">누적 상금 총액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt center fs-9 bold">24회차 (2020-05-25 00:00:00)</td>
+                                    <td class="txt center fs-9 bold">% 금액 %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header">
+                        <span class="title">Lucky Pot 내역</span>
+                        <select class="dropdown-select show-tick line-32">
+                            <option>1개월</option>
+                        </select>
+                    </div>
+
+                    <div class="tb overflow">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox-button">
+                                            <label for="check_01">
+                                                <input type="checkbox" value="" id="check_01">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">Lucky Pot 일자</th>
+                                    <th scope="col">당첨번호</th>
+                                    <th scope="col">미 발행 티켓 수</th>
+                                    <th scope="col">티켓 발행 수</th>
+                                    <th scope="col">상금 총액</th>
+                                    <th scope="col">당첨자 수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox-button">
+                                            <label for="check_02">
+                                                <input type="checkbox" value="" id="check_02">
+                                                <i class="checkbox"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020-05-19 00:00:00</td>
+                                    <td>% 당첨번호 %</td>
+                                    <td>% 미 발행 티켓 수 %</td>
+                                    <td>% 티벳 발행 수 %</td>
+                                    <td>% 금액 %</td>
+                                    <td>% 담청자 수 %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="wrapper-body-footer">
+                        <div class="actions">
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn line-32 with icons icon-delete"></button>
+                            </div>
+                            <select class="dropdown-select show-tick line-40">
+                                <option>필터</option>
+                            </select>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item icons icon-chevron-left-gray"><span class="" href="#"></span></li>
+                            <li class="page-item active"><span class="" href="#">1</span></li>
+                            <li class="page-item"><span class="" href="#">2</span></li>
+                            <li class="page-item"><span class="" href="#">3</span></li>
+                            <li class="page-item"><span class="" href="#">4</span></li>
+                            <li class="page-item"><span class="" href="#">5</span></li>
+                            <li class="page-item ellipsis"></li>
+                            <li class="page-item"><span class="" href="#">20</span></li>
+                            <li class="page-item icons icon-chevron-right-gray"><span class="" href="#"></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    
+    <!-- Plugins Script -->
+    <script src="../../static/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../../static/plugins/jquery-ui/jquery-ui.js"></script>
+    <script src="../../static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../static/plugins/fastselect/fastselect.standalone.min.js"></script>
+    <script src="../../static/plugins/toastr/js/toastr.min.js"></script>
+    <script src="../../static/plugins/dropzone/js/dropzone.min.js"></script>
+    <script src="../../static/plugins/pickr/js/pickr.es5.min.js"></script>
+    <script src="../../static/plugins/moment/moment.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/datepicker.min.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.en.js"></script>
+    <script src="../../static/plugins/datepicker/js/i18n/datepicker.kr.js"></script>
+    <script src="../../static/plugins/daterangepicker/js/daterangepicker.min.js"></script>
+    <script src="../../static/plugins/nestable/js/jquery.nestable.js"></script>
+    <script src="../../static/plugins/chartist/js/chartist.min.js"></script>
+    <!-- End of Plugins Script -->
+    
+    <!-- Custom Script with Plugins Implementation -->
+    <script src="../../static/plugins/plugin-script.js"></script>
+    <script src="../../static/plugins/statistics-script.js"></script>
+<script src="../../static/js/app.js"></script></body>
+
+</html>

@@ -1,0 +1,221 @@
+{{> ../../../views/templates/head }}
+
+<body>
+    {{> ../../../views/templates/gnb }}
+
+
+    <!-- Start of App Container -->
+    <div class="app-container">
+
+        {{> ../../../views/templates/lnb }}
+
+
+        <!-- Start of Main Container-->
+        <main>
+            <section class="content-wrapper backoffice level-editing">
+                <div class="wrapper-title">
+                    <h2>계정 신규 등록</h2>
+
+                    <nav class="ml-auto" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">백오피스</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">레벨관리</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="wrapper-body">
+                    <div class="wrapper-body-header level-tabs">
+                        <div class="level-tab active">LV.1 (사용중)</div>
+                        <div class="level-tab">LV.2 사용중</div>
+                        <div class="level-tab">LV.3</div>
+                        <div class="level-tab">LV.4</div>
+                        <div class="level-tab">LV.5</div>
+                        <div class="level-tab">LV.6</div>
+                        <div class="level-tab">LV.7</div>
+                        <div class="level-tab">LV.8</div>
+                        <div class="level-tab">LV.9</div>
+                        <div class="level-tab">LV.10</div>
+                    </div>
+
+                    <div class="form-tb">
+                        <table>
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="55%" />
+                                <col width="25%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="">레벨 명</label></td>
+                                    <td>
+                                        <div class="input-container" data-target="#input-basic">
+                                            <input class="input-field" id="input-basic" type="text"
+                                                placeholder="레벨 이름 입력">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="">메뉴별 권한 설정</label></td>
+                                    <td>
+                                        <div class="checkbox-group">
+                                            <label for="">백오피스 관리</label>
+                                            <div class="checkbox-button">
+                                                <label for="check_01">
+                                                    <input type="checkbox" value="" id="check_01">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">계정 관리</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-button">
+                                                <label for="check_02">
+                                                    <input type="checkbox" value="" id="check_02">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">레벨관리</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-button">
+                                                <label for="check_03">
+                                                    <input type="checkbox" value="" id="check_03">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">입점사 관리</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-button">
+                                                <label for="check_04">
+                                                    <input type="checkbox" value="" id="check_04">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">변경이력</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-group">
+                                            <label for="">유저 관리</label>
+                                            <div class="checkbox-button">
+                                                <label for="check_05">
+                                                    <input type="checkbox" value="" id="check_05">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">회원 정보</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-button">
+                                                <label for="check_06">
+                                                    <input type="checkbox" value="" id="check_06">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">게좌 정보</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-button">
+                                                <label for="check_07">
+                                                    <input type="checkbox" value="" id="check_07">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">보안 정보</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-button">
+                                                <label for="check_08">
+                                                    <input type="checkbox" value="" id="check_08">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">카지노 프로그램</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-group">
+                                            <label for="">계좌 관리</label>
+                                            <div class="checkbox-button">
+                                                <label for="check_09">
+                                                    <input type="checkbox" value="" id="check_09" checked>
+                                                    <i class="checkbox"></i>
+                                                    <span for="">계좌 관리 (포털)</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-button">
+                                                <label for="check_10">
+                                                    <input type="checkbox" value="" id="check_10">
+                                                    <i class="checkbox"></i>
+                                                    <span for="">계좌 관리 (게임)</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <button type="button" class="btn confirm-solid-red-46">계정삭제</button>
+
+                    <div>
+                        <button type="button" class="btn confirm-line-46">취소</button>
+                        <button type="button" class="btn confirm-solid-46">저장</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="modal modal-medium with-component fade" tabindex="-1" role="dialog" id="level_editing_modal1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">레벨 삭제</h5>
+                            <button type="button" class="icons icon-popup-close close" data-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p> 다음 레벨을 삭제하시겠습니까? </p>
+
+
+                            <div class="form-tb mt-4">
+                                <table>
+                                    <colgroup>
+                                        <col width="30%" />
+                                        <col width="50%" />
+                                        <col width="20%" />
+                                    </colgroup>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="label"><label for="">권한 레벨</label></td>
+                                            <td>
+                                                LV.1 (포털운영자)
+                                            </td>
+                                            <td></td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn popup-line-38">취소</button>
+                            <button type="button" class="btn popup-solid-38">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-triggers">
+                <button type="button" class="btn solid-40" data-toggle="modal" data-target="#level_editing_modal1">Modal
+                    1</button>
+            </div>
+        </main>
+        <!-- End of Main Container-->
+
+    </div>
+    <!-- End of App Container -->
+
+    {{> ../../../views/templates/global-scripts }}
+
+</body>
+
+</html>
