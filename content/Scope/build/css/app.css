@@ -1187,7 +1187,7 @@ img {
   padding-left: 20px;
   padding-right: 45px;
   background: rgba(228, 228, 228, 0.3);
-  border-radius: 16px;
+  border-radius: 8px;
   border: none;
   float: none;
   line-height: 64px;
@@ -1235,7 +1235,7 @@ img {
   right: 0;
   margin-top: 7px;
   padding: 24px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid #E4E4E4;
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
@@ -1521,7 +1521,7 @@ body.dark .select.open {
   flex-shrink: 0;
   height: 48px;
   margin: 8px 0 0 8px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid #E4E4E4;
   font-size: 14px;
   font-weight: 700;
@@ -1700,7 +1700,7 @@ body.dark .page__col:nth-child(2) {
   min-width: 114px;
   height: 48px;
   padding: 0 24px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1859,7 +1859,7 @@ body.dark .btn_transparent:hover {
   width: 72px;
   height: 32px;
   background: rgba(228, 228, 228, 0.4);
-  border-radius: 16px;
+  border-radius: 8px;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
@@ -2043,7 +2043,7 @@ body.dark .switch__box {
   align-items: center;
   height: 56px;
   padding: 0 20px;
-  border-radius: 12px;
+  border-radius: 8px;
   white-space: nowrap;
   font-weight: 600;
   color: #808191;
@@ -2118,7 +2118,7 @@ body.dark .switch__box {
   position: relative;
   margin-top: auto;
   padding: 24px;
-  border-radius: 24px;
+  border-radius: 8px;
   background: -webkit-linear-gradient(226.42deg, #86E1A0 12.52%, #4FBF67 75.73%);
   background: -o-linear-gradient(226.42deg, #86E1A0 12.52%, #4FBF67 75.73%);
   background: linear-gradient(223.58deg, #86E1A0 12.52%, #4FBF67 75.73%);
@@ -2178,7 +2178,7 @@ body.dark .switch__box {
   padding: 0 56px 0 24px;
   background: rgba(228, 228, 228, 0.3);
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -2516,7 +2516,7 @@ body.dark .sidebar__start .icon {
   margin-right: 40px;
   padding: 0 12px 0 6px;
   background: #355DFF;
-  border-radius: 16px;
+  border-radius: 8px;
   font-weight: 600;
   line-height: 32px;
   color: #ffffff;
@@ -2631,7 +2631,7 @@ body.dark .sidebar__start .icon {
 .header__body {
   position: absolute;
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 8px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .2s;
@@ -2674,7 +2674,7 @@ body.dark .sidebar__start .icon {
   right: -15px;
   width: 300px;
   border: 1px solid #E4E4E4;
-  border-radius: 20px;
+  border-radius: 8px;
   -webkit-box-shadow: 0 5px 20px rgba(17, 20, 45, 0.07);
   box-shadow: 0 5px 20px rgba(17, 20, 45, 0.07);
 }
@@ -2980,7 +2980,7 @@ body.dark .header_border:before {
   position: relative;
   margin: 0 16px;
   padding: 32px 32px 64px;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -3129,7 +3129,7 @@ body.dark .slider__close .icon {
   min-width: 100px;
   margin: 8px 0 0 8px;
   padding: 0 8px;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   font-weight: 600;
   line-height: 40px;
@@ -3167,7 +3167,7 @@ body.dark .slider__close .icon {
   flex: 0 0 calc(50% - 32px);
   max-width: calc(50% - 32px);
   margin: 32px 16px 0;
-  border-radius: 24px;
+  border-radius: 8px;
   background: #ffffff;
   -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
@@ -3222,7 +3222,7 @@ body.dark .slider__close .icon {
   -ms-flex-item-align: start;
   align-self: flex-start;
   padding: 0 8px;
-  border-radius: 12px;
+  border-radius: 8px;
   background: #BCEAFF;
   font-size: 10px;
   font-weight: 700;
@@ -3262,7 +3262,7 @@ body.dark .slider__close .icon {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 0 0 24px 24px;
+  border-radius: 0 0 8px 8px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .2s;
@@ -3295,7 +3295,7 @@ body.dark .slider__close .icon {
   -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
   background: #ffffff;
-  border-radius: 24px;
+  border-radius: 8px;
   cursor: pointer;
   -webkit-transition: -webkit-box-shadow .2s;
   transition: -webkit-box-shadow .2s;
@@ -3447,7 +3447,7 @@ body.dark .widgets__favorite:hover .icon {
   display: inline-block;
   margin-bottom: 3px;
   padding: 0 11px;
-  border-radius: 13px;
+  border-radius: 8px;
   background: #FF9F38;
   font-size: 16px;
   font-weight: 600;
@@ -3632,14 +3632,14 @@ body.dark .widgets__favorite:hover .icon {
 
 .card_widget {
   padding: 32px;
-  border-radius: 24px;
+  border-radius: 8px;
   background: #ffffff;
 }
 
 .card_widget:before, .card_widget:after {
   content: "";
   position: absolute;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
 .card_widget:before {
@@ -3650,7 +3650,7 @@ body.dark .widgets__favorite:hover .icon {
   right: 8px;
   bottom: -8px;
   z-index: -1;
-  border-radius: 24px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.5);
 }
 
@@ -3744,7 +3744,7 @@ body.dark .card_widget:after {
   border: 1px solid #E4E4E4;
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
-  border-radius: 24px;
+  border-radius: 8px;
   background: #ffffff;
   visibility: hidden;
   opacity: 0;
@@ -3947,7 +3947,7 @@ body.dark .dropdown__link.selected {
   width: 100%;
   height: 48px;
   margin-bottom: 40px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 2px solid #E4E4E4;
   font-weight: 600;
   color: #11142D;
@@ -4132,7 +4132,7 @@ body.dark .login__verify.success .icon {
   width: 100%;
   height: 80px;
   padding: 18px 22px 0;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 2px solid transparent;
   background: rgba(228, 228, 228, 0.3);
   font-family: 'Inter', sans-serif;
@@ -4277,7 +4277,7 @@ body.dark .checkbox__input:checked + .checkbox__in .checkbox__text {
 
 .notifications__tags .notifications__link {
   padding: 0 16px;
-  border-radius: 20px;
+  border-radius: 8px;
   line-height: 40px;
   font-weight: 600;
   color: #808191;
@@ -4321,7 +4321,7 @@ body.dark .checkbox__input:checked + .checkbox__in .checkbox__text {
   height: 64px;
   padding: 0 64px 0 32px;
   background: rgba(228, 228, 228, 0.3);
-  border-radius: 16px;
+  border-radius: 8px;
   border: none;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -4580,7 +4580,7 @@ body.dark .notifications__item.disabled .notifications__icon {
 
 .activity__tags .activity__link {
   padding: 0 16px;
-  border-radius: 20px;
+  border-radius: 8px;
   line-height: 40px;
   font-weight: 600;
   color: #808191;
@@ -4639,7 +4639,7 @@ body.dark .notifications__item.disabled .notifications__icon {
 
 .activity__row {
   display: table-row;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
@@ -4691,11 +4691,11 @@ body.dark .notifications__item.disabled .notifications__icon {
 
 .activity__cell:first-child {
   padding-left: 25px;
-  border-radius: 12px 0 0 12px;
+  border-radius: 8px 0 0 8px;
 }
 
 .activity__cell:last-child {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 8px 8px 0;
 }
 
 .activity__table.small .activity__cell:nth-child(3) {
@@ -4835,7 +4835,7 @@ body.dark .notifications__item.disabled .notifications__icon {
 .activity__currency {
   margin-left: 20px;
   padding: 0 13px;
-  border-radius: 16px;
+  border-radius: 12px;
   background: #3DBAA2;
   font-size: 16px;
   font-weight: 600;
@@ -4902,7 +4902,7 @@ body.dark .notifications__item.disabled .notifications__icon {
 .activity__status {
   display: inline-block;
   padding: 0 8px;
-  border-radius: 12px;
+  border-radius: 8px;
   background: rgba(79, 191, 103, 0.2);
   font-size: 12px;
   line-height: 24px;
@@ -4995,7 +4995,7 @@ body.dark .activity__parameter {
   -ms-flex-align: center;
   align-items: center;
   padding: 33px 31px;
-  border-radius: 16px;
+  border-radius: 8px;
   border: 1px solid #E4E4E4;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
@@ -5951,7 +5951,7 @@ body.dark .promotion__line:first-child .icon {
   margin: 15px auto;
   padding: 40px 32px;
   background: #ffffff;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
 .popup_settings .mfp-close {
@@ -6135,14 +6135,14 @@ body.dark .popup .mfp-close {
   position: relative;
   margin-bottom: 68px;
   padding: 32px;
-  border-radius: 24px;
+  border-radius: 8px;
   background: #ffffff;
 }
 
 .wallets__wrapper:before, .wallets__wrapper:after {
   content: "";
   position: absolute;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
 .wallets__wrapper:before {
@@ -6656,7 +6656,7 @@ body.dark .balances__row:nth-child(2n+1) {
 
 .operations__item {
   padding: 24px;
-  border-radius: 24px;
+  border-radius: 8px;
   background: #ffffff;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
@@ -6792,7 +6792,7 @@ body.dark .operations__text strong {
 .search__container {
   position: relative;
   padding: 48px;
-  border-radius: 24px;
+  border-radius: 8px;
   background: -webkit-radial-gradient(0% 0%, 103.03% 103.03%, #D080FF 0%, #6C5DD3 100%);
   background: -o-radial-gradient(0% 0%, 103.03% 103.03%, #D080FF 0%, #6C5DD3 100%);
   background: radial-gradient(103.03% 103.03% at 0% 0%, #D080FF 0%, #6C5DD3 100%);
@@ -7737,7 +7737,7 @@ body.dark .details__link:hover .icon {
   position: relative;
   min-height: 335px;
   padding: 32px;
-  border-radius: 24px;
+  border-radius: 8px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -7752,7 +7752,7 @@ body.dark .details__link:hover .icon {
   right: 8px;
   bottom: -8px;
   z-index: -1;
-  border-radius: 24px;
+  border-radius: 8px;
   background: rgba(108, 93, 211, 0.5);
 }
 
@@ -8275,7 +8275,7 @@ body.dark .orders__price {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 30px 24px 15px;
-  border-radius: 24px;
+  border-radius: 8px;
   background: #ffffff;
 }
 
@@ -8287,7 +8287,7 @@ body.dark .orders__price {
   right: 12px;
   bottom: -8px;
   z-index: -1;
-  border-radius: 24px;
+  border-radius: 8px;
   background: #E4E4E4;
   -webkit-filter: blur(86.985px);
   filter: blur(86.985px);
@@ -8785,7 +8785,7 @@ body.dark .actions .select.open {
     max-width: 630px;
     margin: auto;
     padding: 32px;
-    border-radius: 24px;
+    border-radius: 8px;
     background: #ffffff;
   }
   .activity__head {
@@ -8960,7 +8960,7 @@ body.dark .actions .select.open {
     max-width: 630px;
     margin: auto;
     padding: 32px;
-    border-radius: 24px;
+    border-radius: 8px;
     background: #ffffff;
   }
   .wallets__head {
