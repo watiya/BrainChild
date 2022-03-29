@@ -2980,7 +2980,7 @@ body.dark .header_border:before {
   position: relative;
   margin: 0 16px;
   padding: 32px 32px 64px;
-  border-radius: 24px;
+  border-radius: 16px;
   overflow: hidden;
 }
 
