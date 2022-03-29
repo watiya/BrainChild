@@ -1,0 +1,82 @@
+.users
+    &__head
+        display: flex
+        align-items: center
+        margin-bottom: 24px
+    &__button
+        +m
+            margin-left: 16px
+        span
+            margin-left: 4px
+            +m
+                display: none
+    &__info
+        max-width: 240px
+        margin-right: auto
+        font-weight: 500
+        color: $n4
+        strong
+            font-weight: 600
+            color: $n7
+            +dark
+                color: $n1
+    &__list
+        display: flex
+    &__item,
+    &__all
+        display: flex
+        justify-content: center
+        flex-direction: column
+        padding: 32px 16px
+        flex: 0 0 25%
+        text-align: center
+        color: $n7
+        transition: color .2s
+        +m
+            flex: 0 0 33.333%
+            padding: 16px 8px
+        +dark
+            color: $n1
+        &:hover
+            color: $p1
+    &__item
+        +caption1-m
+        &:nth-child(n+3)
+            +a
+                display: none
+    &__all
+        +caption1
+    &__avatar,
+    &__icon
+        width: 64px
+        height: 64px
+        margin: 0 auto 12px
+    &__avatar
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+    &__icon
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 2px solid $n3
+        border-radius: 50%
+        background: $n3
+        transition: all .2s
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        +dark
+            background: $n6
+            border-color: $n6
+    &__all
+        &:hover
+            .users__icon
+                border-color: $p1
+                background: none
+                .icon
+                    fill: $p1

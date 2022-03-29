@@ -1,0 +1,201 @@
+.popup.popup_product.js-popup.js-popup-product
+	.popup__overlay.js-popup-overlay
+	.popup__wrap.js-popup-wrap
+		.product.js-product
+			.product__control
+				a.button-white.product__button(href="products-add.html") Edit product
+				button.product__close.js-popup-close
+					+i('close')
+			.product__wrapper
+				.product__details
+					.product__overview
+						.product__head
+							.product__nav
+								button.product__link.js-product-open.active Product
+								button.product__link.js-product-comments Comments
+							.product__btns
+								button.button-stroke.product__favorite
+									+i('heart-fill')
+									span 32
+								button.button.product__buy
+									span.product__price $89
+									span.product__inner Download<span> now</span>
+										+i('download')
+						.product__title.h4 Fleet - Travel shopping UI design kit
+						.product__info Elegant product mockup for your next project
+						.product__line
+							.product__author
+								.product__avatar
+									img(src="img/content/avatar.jpg" alt="Avatar")
+								| by <span>Chelsie Haley</span>
+							.product__rating
+								+i('star-fill')
+								| 4.8
+								span.product__counter (87)
+						.product__gallery
+							.product__box
+								a.product__preview(href="img/content/photo-1.jpg" data-fancybox="gallery" data-caption="Spectacular views of Queenstown")
+									img(src="img/content/photo-1.jpg" alt="Product")
+								a.product__preview(href="img/content/photo-2.jpg" data-fancybox="gallery" data-caption="Spectacular views of Queenstown")
+									img(src="img/content/photo-2.jpg" alt="Product")
+								a.product__preview(href="img/content/photo-1.jpg" data-fancybox="gallery" data-caption="Spectacular views of Queenstown")
+									img(src="img/content/photo-1.jpg" alt="Product")
+								a.product__preview(href="img/content/photo-2.jpg" data-fancybox="gallery" data-caption="Spectacular views of Queenstown")
+									img(src="img/content/photo-2.jpg" alt="Product")
+							a.button-white.product__button(href="#") Show all preview
+						.product__row
+							.product__col
+								.title-red.product__subtitle Overview
+								.product__content
+									p Meet Node - a crypto NFT marketplace iOS UI design kit for Figma, Sketch, and Adobe XD. The kit includes 126 stylish mobile screens in light and dark mode, a bunch of crypto 3D illustrations, 1 SaaS landing page with full premade breakpoints, and hundreds of components to help you ship your next crypto, NFT product faster.
+									p Types of screens included: onboarding, connect wallet, home feed, profile, upload, menu, search, product detail, notification...
+									p If you have any questions or requests, please feel free to leave them all in the comments section.
+							.product__col
+								.title-purple.product__subtitle Features
+								ul.product__features
+									li 128 prebuilt screens
+									li SaaS landing page ready
+									li Global styleguide
+									li Dark + light more ready
+					include hit
+				.product__comments.comments
+					.comments__head
+						.comments__title
+							.comments__counter 4
+							| Comments
+						button.comments__close.js-comments-close
+							+i('close')
+					+editor('Review this product?', 'You’re product owner', 'Comment')
+					.comments__list
+						.comments__item
+							.comments__avatar
+								img(src="img/content/avatar-1.jpg" alt="Avatar")
+							.comments__details
+								.comments__line
+									.comments__author Stephon Schumm
+									.comments__time 2h
+									.comments__rating 5.0
+										+i('star-fill')
+								.comments__login @ivawelch
+								.comments__content Purchased the pack and loaded it in Adobe xd (installed fonts as well), some text and titles are off in some screens, is that a compatibility problem with the latest version of xd?
+								.comments__control
+									button.comments__favorite
+										+i('heart')
+										+i('heart-fill')
+										| Like
+									button.comments__reply
+										+i('repeat')
+										| Reply
+								+answer
+						.comments__answer
+							.comments__avatar
+								img(src="img/content/avatar.jpg" alt="Avatar")
+							.comments__details
+								.comments__line
+									.comments__author Chelsie Haley
+									.comments__time 18h
+									.comments__rating 4.0
+										+i('star-fill')
+								.comments__content Hi <strong>@ivawelch</strong>, let me check then tell you soon.
+								.comments__control
+									button.comments__favorite
+										+i('heart')
+										+i('heart-fill')
+										| Like
+									button.comments__reply
+										+i('repeat')
+										| Reply
+								+answer
+						.comments__item
+							.comments__avatar
+								img(src="img/content/avatar-2.jpg" alt="Avatar")
+							.comments__details
+								.comments__line
+									.comments__author Sabryna Mills
+									.comments__time 15h
+									.comments__rating 5.0
+										+i('star-fill')
+								.comments__login @ivawelch
+								.comments__content Five stars. I love this product!
+								.comments__control
+									button.comments__favorite
+										+i('heart')
+										+i('heart-fill')
+										| Like
+									button.comments__reply
+										+i('repeat')
+										| Reply
+								+answer
+						.comments__item
+							.comments__avatar
+								img(src="img/content/avatar-4.jpg" alt="Avatar")
+							.comments__details
+								.comments__line
+									.comments__author Micaela Mayer
+									.comments__time 1 day ago
+									.comments__rating 5.0
+										+i('star-fill')
+								.comments__login @ivawelch
+								.comments__content Purchased the pack and loaded it in Adobe xd (installed fonts as well), some text and titles are off in some screens, is that a compatibility problem with the latest version of xd?
+								.comments__control
+									button.comments__favorite
+										+i('heart')
+										+i('heart-fill')
+										| Like
+									button.comments__reply
+										+i('repeat')
+										| Reply
+								+answer
+						.comments__item
+							.comments__avatar
+								img(src="img/content/avatar-3.jpg" alt="Avatar")
+							.comments__details
+								.comments__line
+									.comments__author Daphne Goodwin
+									.comments__time 2 days ago
+									.comments__rating 5.0
+										+i('star-fill')
+								.comments__login @ivawelch
+								.comments__content Purchased the pack and loaded it in Adobe xd (installed fonts as well), some text and titles are off in some screens, is that a compatibility problem with the latest version of xd?
+								.comments__control
+									button.comments__favorite
+										+i('heart')
+										+i('heart-fill')
+										| Like
+									button.comments__reply
+										+i('repeat')
+										| Reply
+								+answer
+				.product__panel
+					.product__avatar
+						img(src="img/content/avatar.jpg" alt="Avatar")
+					.product__brand
+						img(src="img/content/figma.png" alt="Figma")
+						.product__number 3
+					button.product__share(data-popup=".js-popup-share")
+						+i('share')
+				a.product__next(href="#")
+					+i('arrow-right')
+
+.popup.popup_share.js-popup.js-popup-share
+	.popup__overlay.js-popup-overlay
+	.popup__wrap.js-popup-wrap
+		.share
+			.share__head
+				.title-red.share__title Share this product
+			.share__field
+				.share__icon
+					+i('link')
+				input.share__input(type="text" name="site" value="https://ui8.net/feel-travel")
+				button.share__copy Copy
+			.share__preview
+				img(src="img/content/photo-1.jpg" alt="Share")
+			.share__btns
+				a.button-stroke.share__button(href="https://www.facebook.com/ui8.net/" target="_blank")
+					+i('facebook')
+				a.button-stroke.share__button(href="https://twitter.com/ui8" target="_blank")
+					+i('twitter')
+				a.button-stroke.share__button(href="https://www.instagram.com/ui8net/" target="_blank")
+					+i('instagram')
+		button.popup__close.js-popup-close
+			+i('close')

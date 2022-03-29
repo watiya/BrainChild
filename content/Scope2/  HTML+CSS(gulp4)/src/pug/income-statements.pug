@@ -1,0 +1,100 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarIncome: visible
+classSidebarIncomeStatements: active
+pageTitle: "Statements"
+---
+extends layouts/layout
+block content
+	.card
+		.income
+			.income__list
+				.income__item
+					.income__icon(style="background-color: #B5E4CA;")
+						+i('activity')
+					.income__line
+						.income__details
+							.income__label Funds
+								.tooltip(title="Small description Funds")
+									+i('info')
+							.income__counter $128,789
+				.income__item
+					.income__icon(style="background-color: #CABDFF;")
+						+i('pie-chart')
+					.income__line
+						.income__details
+							.income__label Earning
+								.tooltip(title="Small description Earning")
+									+i('info')
+							.income__counter $128,789
+				.income__item
+					.income__icon(style="background-color: #B1E5FC;")
+						+i('donut-chart')
+					.income__line
+						.income__details
+							.income__label Fees
+								.tooltip(title="Small description Fees")
+									+i('info')
+							.income__counter $338.98
+	.transactions.card
+		.card__head
+			.title-blue.card__title Transactions
+			select.select.select_small
+				option Last 30 days
+				option This month
+				option All time
+			button.button-small.card__button Download SCV
+		.transactions__wrapper
+			.transactions__table
+				.transactions__row
+					.transactions__col Date
+					.transactions__col Type
+					.transactions__col Detail
+					.transactions__col Price
+					.transactions__col Amount
+				mixin transactionsRow(date, status, product, invoice, price, amountPositive, amountNegative)
+					.transactions__row
+						.transactions__col
+							.transactions__label Date
+							=date
+						.transactions__col
+							.transactions__details
+								.transactions__product=product
+								.transactions__invoice=invoice 
+							if status
+								.status-green-dark.transactions__status Sale
+							else
+								.status-red-dark.transactions__status Author fee
+						.transactions__col
+							.transactions__product=product
+							.transactions__invoice=invoice 
+						.transactions__col
+							.transactions__label Price
+							=price
+						.transactions__col
+							.transactions__label Amount
+							if amountPositive
+								.transactions__amount=amountPositive
+							if amountNegative
+								.transactions__amount.transactions__amount_negative=amountNegative
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$98.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', false, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', false, '-$9.80')
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$98.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', false, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', false, '-$9.80')
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$98.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', false, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', false, '-$9.80')
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$98.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', false, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', false, '-$9.80')
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$98.00', '+$88.20', false)
+				+transactionsRow('14 Oct 2021', true, 'Fleet - Travel shopping UI Design kit', 'Invoice: UI8-8934AS', '$123.00', '+$88.20', false)
+			.transactions__foot
+				button.button-stroke.button-small.transactions__button
+					+loader
+					span Load more
+
+				
+	

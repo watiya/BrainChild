@@ -1,0 +1,114 @@
+---
+title: "Core - Dashboard Builder"
+pageTitle: "Settings"
+headerLinkEditProfile: active
+---
+extends layouts/layout
+block content
+	.settings
+		.settings__menu
+			a.settings__link.active(href="#basics") Basics
+			a.settings__link(href="#account") Account
+			a.settings__link(href="#notifications") Notifications
+			a.settings__link(href="#payment") Payment
+		.settings__wrapper
+			select.select
+				option Basics
+				option Account
+				option Notifications
+				option Payment
+			.settings__list
+				.settings__item
+					.settings__anchor#basics(data-value="Basics")
+					.title-green.settings__title Profile information
+					.settings__profile
+						.settings__avatar
+							img(src="img/content/avatar.jpg" alt="Avatar")
+							button.settings__remove
+								+i('close')
+						.settings__file
+							input(type="file")
+							button.button.settings__button(type="button")
+								+i('add')
+								span Upload new picture
+						button.button-stroke.settings__button Remove
+					.settings__fieldset
+						.field
+							.field__label Display name
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							.field__wrap
+								input.field__input(type="text" name="display-name")
+						.field
+							.field__label Email
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							.field__wrap
+								input.field__input(type="email" name="email")
+						.field
+							.field__label Location
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							.field__wrap
+								input.field__input(type="text" name="location")
+						+editor('Bio', 'Description')
+				.settings__item
+					.settings__anchor#account(data-value="Account")
+					.title-purple.settings__title Login
+					.settings__fieldset
+						.field
+							.field__label Old password
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							.field__wrap
+								input.field__input(type="password" name="old-password")
+						.settings__row
+							.field
+								.field__label New password
+									.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+										+i('info')
+								.field__wrap
+									input.field__input(type="password" name="new-password")
+							.field
+								.field__label Confirm new password
+									.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+										+i('info')
+								.field__wrap
+									input.field__input(type="password" name="Confirm-password")
+						button.button-stroke.settings__button Update password
+				.settings__item
+					.settings__anchor#notifications(data-value="Notifications")
+					.title-red.settings__title Notifications
+					.settings__list
+						.settings__line
+							.settings__label Product updates and community announcements
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							+switch(true)
+						.settings__line
+							.settings__label Market newsletter
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							+switch(false)
+						.settings__line
+							.settings__label Comments
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							+switch(true)
+						.settings__line
+							.settings__label Purchases
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							+switch(true)
+				.settings__item
+					.settings__anchor#payment(data-value="Payment")
+					.title-green.settings__title Payment
+					.settings__top
+						.settings__label Paypal
+							.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+								+i('info')
+						button.button-stroke.button-small.settings__button Update
+					.settings__email tam@ui8.net
+					.settings__content Payout fee is 1% of the amount transferred, with a minimum of USD $0.25 and a maximum of USD $20
+			button.button.settings__button Save
+

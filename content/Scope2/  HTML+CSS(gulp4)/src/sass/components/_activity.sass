@@ -1,0 +1,117 @@
+.activity
+    &__table
+        display: table
+        width: 100%
+        +m
+            display: block
+    &__row
+        display: table-row
+        +m
+            display: block
+        &:first-child
+            +m
+                display: none
+            .activity__col
+                padding-bottom: 24px
+                border-bottom: 1px solid $n3
+                white-space: nowrap
+                +caption1
+                color: $n4
+                +dark
+                    border-color: $n6
+        &:not(:first-child)
+            .activity__col
+                padding-top: 24px
+                +m
+                    padding: 0
+                &:first-child
+                    +base2
+                    color: $n4
+                    +w
+                        font-size: 12px
+                    +t
+                        font-size: 14px
+        &:nth-child(2)
+            .activity__col
+                padding-top: 32px
+                +m
+                    padding-top: 0
+        &:not(:last-child):not(:first-child)
+            +m
+                margin-bottom: 24px
+                padding-bottom: 24px
+                border-bottom: 1px solid $n3
+                +dark
+                    border-color: $n6
+            .activity__col
+                padding-bottom: 16px
+                border-bottom: 1px solid $n3
+                +m
+                    padding-bottom: 0
+                    border: none
+                +dark
+                    border-color: $n6
+    &__col
+        display: table-cell
+        vertical-align: middle
+        +m
+            display: flex
+            align-items: center
+        &:not(:last-child)
+            padding-right: 16px    
+            +m
+                margin-bottom: 8px
+                padding-right: 0
+    &__label
+        display: none
+        +m
+            display: block
+            flex-shrink: 0
+            width: 116px
+            padding-right: 12px
+            +caption1
+            color: $n4
+    &__item
+        display: inline-flex
+        align-items: center
+    &__counter
+        padding: 0 6px
+        border-radius: 6px
+        cursor: pointer
+        +dark
+            color: $n7
+        &:hover + .balance
+            visibility: visible
+            opacity: 1
+    .balance
+        margin-left: 6px
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +d
+            visibility: visible
+            opacity: 1
+            font-size: 11px
+        +t
+            font-size: 12px
+    &__nav
+        display: none
+        margin-top: 32px
+        +m
+            display: flex
+    &__link
+        flex: 1
+        padding: 8px 16px
+        border-radius: 8px
+        +base1-s
+        color: $n4
+        transition: all .2s
+        &:hover,
+        &.active
+            color: $n7
+            +dark
+                color: $n1
+        &.active
+            background: $n3
+            +dark
+                background: $n6

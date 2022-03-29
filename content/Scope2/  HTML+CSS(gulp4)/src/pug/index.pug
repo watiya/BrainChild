@@ -1,0 +1,223 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarHome: active
+pageTitle: "Dashboard"
+classHeader: unauthorized
+---
+extends layouts/layout
+block content
+	.page__row
+		.page__col
+			.card
+				.card__head
+					.title-red.card__title Overview
+					select.select.select_small
+						option All time
+						option In a year
+						option Per month
+				.overview.js-tabs
+					.overview__nav
+						a.overview__link.js-tabs-link.active(href="#")
+							.overview__icon(style="background-color: #B1E5FC;")
+								+i('shopping-bag')
+							.overview__details
+								.overview__subtitle Customers
+									.tooltip(title="Small description")
+										+i('info')
+								.overview__counter 1024
+							.balance.background.negative
+								+i('arrow-bottom')
+								| 37.8%
+						a.overview__link.js-tabs-link(href="#")
+							.overview__icon(style="background-color: #CABDFF;")
+								+i('activity')
+							.overview__details
+								.overview__subtitle Income
+									.tooltip(title="Small description")
+										+i('info')
+								.overview__counter 256k
+							.balance.background.positive
+								+i('arrow-top')
+								| 37.8%
+					.overview__container
+						.overview__item.js-tabs-item(style="display: block;")
+							include partials/users
+						.overview__item.js-tabs-item
+							.overview__chart
+								div(id="oveview-income")
+			.card
+				.card__head
+					.title-purple.card__title Product views
+					select.select.select_small
+						option Last 7 days
+						option This month
+						option All time
+				.card__chart.card__chart_product-views
+					div(id="product-views")
+			.card
+				.card__head
+					.title-green.card__title Pro tips
+				.tips
+					.tips__info Need some ideas for the next product?
+					.tips__list
+						a.tips__item(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-caption="Use guidelines")
+							.tips__icon
+								+i('schedule')
+							.tips__details
+								.tips__title Early access
+								.tips__line
+									.status-purple.tips__status New
+									.tips__user
+										.tips__avatar
+											img(src="img/content/avatar.jpg" alt="Avatar")
+										.tips__action 3 mins read
+						a.tips__item(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-caption="Use guidelines")
+							.tips__icon
+								+i('arrow-right')
+							.tips__details
+								.tips__title Asset use guidelines
+								.tips__line
+									.status-green-dark.tips__status Small label
+									.tips__user
+										.tips__avatar
+											img(src="img/content/avatar-3.jpg" alt="Avatar")
+										.tips__action Time
+						a.tips__item(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-caption="Use guidelines")
+							.tips__icon
+								+i('design')
+							.tips__details
+								.tips__title Exclusive downloads
+								.tips__line
+									.tips__user
+										.tips__avatar
+											img(src="img/content/avatar-1.jpg" alt="Avatar")
+										.tips__action 2 mins read
+						a.tips__item(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-caption="Use guidelines")
+							.tips__icon
+								+i('video-recorder')
+							.tips__details
+								.tips__title Behind the scenes
+								.tips__line
+									.status-red-dark.tips__status Hot
+									.tips__user
+										.tips__avatar
+											img(src="img/content/avatar-2.jpg" alt="Avatar")
+										.tips__action 3 mins read
+						a.tips__item(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-caption="Use guidelines")
+							.tips__icon
+								+i('phone')
+							.tips__details
+								.tips__title Asset use guidelines
+								.tips__line
+									.status-green-dark.tips__status Popular
+									.tips__user
+										.tips__avatar
+											img(src="img/content/avatar.jpg" alt="Avatar")
+										.tips__action Time
+						a.tips__item(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-caption="Use guidelines")
+							.tips__icon
+								+i('multiselect')
+							.tips__details
+								.tips__title Life & work updates
+								.tips__line
+									.tips__user
+										.tips__avatar
+											img(src="img/content/avatar-2.jpg" alt="Avatar")
+										.tips__action 3 mins read
+			.card
+				.card__head
+					.title-blue.card__title Get more customers!
+				.media
+					.media__content 50% of new customers explore products because the author sharing the work on the social media network. Gain your earnings right now! 🔥
+					.media__btns
+						a.button-stroke.media__button(href="https://www.facebook.com/ui8.net/" target="_blank")
+							+i('facebook')
+							span Facebook
+						a.button-stroke.media__button(href="https://twitter.com/ui8" target="_blank")
+							+i('twitter')
+							span Twitter
+						a.button-stroke.media__button(href="https://www.instagram.com/ui8net/" target="_blank")
+							+i('instagram')
+							span Instagram
+		.page__col
+			.card
+				.card__head
+					.title-blue.card__title Popular products
+				.popular
+					.popular__head
+						.popular__stage Products
+						.popular__stage Earning
+					.popular__list
+						+popularItem('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Crypter - NFT UI kit', '$2,453.80', true)
+						+popularItem('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'Bento Matte 3D illustration 1.0', '$105.60', false)
+						+popularItem('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Excellent material 3D chair', '$648.60', true)
+						+popularItem('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'Fleet - travel shopping kit', '$648.60', true)
+					a.button-stroke.popular__button(href="products-dashboard.html") All products
+			.card
+				.card__head
+					.title-yellow.card__title Comments
+				.review
+					.review__list
+						.review__item
+							.review__avatar
+								img(src="img/content/avatar.jpg" alt="Avatar")
+							.review__details
+								.review__line
+									.review__user
+										span.review__title Ethel
+										span.review__login @ethel
+									.review__time 1h
+								.review__product On <strong>Smiles – 3D icons</strong>
+								.review__content Great work 😊
+								.review__control
+									a.review__link(href="message-center.html")
+										+i('message')
+									+favorite
+									a.review__link(href="products-comments.html")
+										+i('link')
+						.review__item
+							.review__avatar
+								img(src="img/content/avatar-1.jpg" alt="Avatar")
+							.review__details
+								.review__line
+									.review__user
+										span.review__title Jazmyn
+										span.review__login @jaz.designer
+									.review__time 8h
+								.review__product On <strong>Fleet - Travel shopping</strong>
+								.review__content I need react version asap!
+								.review__control
+									a.review__link(href="message-center.html")
+										+i('message')
+									+favorite
+									a.review__link(href="products-comments.html")
+										+i('link')
+						.review__item
+							.review__avatar
+								img(src="img/content/avatar-2.jpg" alt="Avatar")
+							.review__details
+								.review__line
+									.review__user
+										span.review__title Ethel
+										span.review__login @ethel
+									.review__time 1h
+								.review__product On <strong>Smiles – 3D icons</strong>
+								.review__content How can I buy only the design?
+								.review__control
+									a.review__link(href="message-center.html")
+										+i('message')
+									+favorite
+									a.review__link(href="products-comments.html")
+										+i('link')
+					a.button-stroke.review__button(href="products-comments.html") View all
+			.card
+				.card__head
+					.title-red.card__title Refund requestsd
+				.refund
+					.refund__list
+						.refund__item
+							.refund__icon
+								+i('basket')
+							.refund__content You have <strong>52 open refund requests</strong> to action. This includes <strong>8 new requests</strong>. 👀
+					a.button-stroke.refund__button(href="income-refunds.html") Review refund requests
+	

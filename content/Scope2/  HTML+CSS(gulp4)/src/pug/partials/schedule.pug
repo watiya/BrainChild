@@ -1,0 +1,73 @@
+.schedule
+	.schedule__wrapper
+		.schedule__table
+			.schedule__row
+				.schedule__col
+					label.checkbox
+						input.checkbox__input(type="checkbox")
+						span.checkbox__inner
+							span.checkbox__tick
+				.schedule__col Product
+				.schedule__col Price
+				.schedule__col=parameterSchedule
+			mixin row(srcSet, src, title, priceStatus, price, date)
+				.schedule__row
+					.schedule__col
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+					.schedule__col
+						.schedule__item(data-popup=".js-popup-product")
+							.schedule__preview
+								img(srcSet=`${srcSet} 2x` src=src alt="Product")
+							.schedule__details
+								.schedule__product=title 
+								.schedule__link ui8.net/product/product-link
+								.schedule__date
+									+i('clock')
+									=date
+								if priceStatus
+									.schedule__price $
+										=price
+								else
+									.schedule__empty $
+										=price
+						.actions
+							button.actions__button
+								+i('more-horizontal')
+							.actions__body
+								button.actions__option(data-popup=".js-popup-schedule")
+									+i('calendar')
+									| Schedule product
+								button.actions__option
+									+i('edit')
+									| Edit title & description
+								button.actions__option
+									+i('trash')
+									| Delete forever
+					.schedule__col
+						if priceStatus
+							.schedule__price $
+								=price
+						else
+							.schedule__empty $
+								=price
+					.schedule__col
+						.schedule__date=date
+						.schedule__control
+							button.schedule__button(data-popup=".js-popup-schedule")
+								+i('calendar')
+							button.schedule__button
+								+i('edit')
+							button.schedule__button
+								+i('trash')
+			+row('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Bento Matte 3D Illustration', true, '123', 'Apr 9, 2021 at 1:55 PM')
+			+row('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'DSM - Geometry pattern', false, '0.0', 'Apr 12, 2021 at 9:22 PM')
+			+row('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Node - Crypto iOS UI design kit', true, '95', 'Apr 15, 2021 at 7:43 PM')
+			+row('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'TaskEz: Productivity App iOS UI Kit', true, '23', 'Apr 21, 2021 at 1:04 PM')
+			+row('img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'Bento Matte 3D Illustration', true, '212', 'Apr 30, 2021 at 10:12 PM')
+	.schedule__foot
+		button.button-stroke.button-small.schedule__button
+			+loader
+			span Load more

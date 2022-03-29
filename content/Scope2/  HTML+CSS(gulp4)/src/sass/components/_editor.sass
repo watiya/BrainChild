@@ -1,0 +1,104 @@
+.editor
+    &__label
+        margin-bottom: 14px
+        +base2
+        color: $n5
+        +dark
+            color: $n3
+    .tooltip
+        position: relative
+        top: -1px
+        .icon
+            fill: $shades1
+    .richText
+        background: $n2
+        border: 2px solid rgba($shades1, .25)
+        border-radius: 12px
+        +dark
+            background: $n8
+            border-color: rgba($shades1, .15)
+        &-toolbar
+            border: none 
+            padding: 0 3px 
+            ul
+                li
+                    margin: 6px
+                    +m
+                        margin: 3px
+                    a
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 30px
+                        height: 30px
+                        padding: 0
+                        border: none
+                        background: none !important
+                        transition: color .2s
+                        &:hover
+                            color: $p1
+                        +dark
+                            color: $shades1
+                            &:hover
+                                color: $n1
+            &:first-child
+                padding-right: 100px
+                background: $n1
+                border-radius: 10px 10px 0 0
+                +dark
+                    background: $n6
+                +m
+                    padding-right: 85px
+            &:last-child
+                position: absolute
+                top: 0
+                right: 0
+                font-size: 16px
+        &-undo,
+        &-redo
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 30px
+            height: 30px
+            margin: 6px
+            padding: 0
+            border: none
+            transition: color .2s
+            +m
+                margin: 3px
+            +dark
+                color: $shades1
+            &:not(.is-disabled)
+                &:hover
+                    color: $p1
+                    +dark
+                        color: $n1
+        &-undo
+        &-help
+            display: none
+        &-editor
+            min-height: 122px
+            max-height: 200px
+            height: auto
+            padding: 12px
+            border: none !important
+            background: none
+            border-radius: 0 0 10px 10px
+            +inter
+            color: $n5
+            +dark
+                color: $n1
+        &-dropdown
+            z-index: 2
+    &__wrap
+        position: relative
+        .richText
+            padding-bottom: 60px
+            &-editor
+                min-height: 60px
+    &__button
+        position: absolute
+        left: 12px
+        bottom: 12px
+        z-index: 1

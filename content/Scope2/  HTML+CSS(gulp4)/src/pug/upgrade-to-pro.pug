@@ -1,0 +1,101 @@
+---
+title: "Core - Dashboard Builder"
+pageTitle: "Upgrade to Pro"
+headerLinkUpgradeToPro: active
+---
+extends layouts/layout
+block content
+	.packages
+		.packages__group
+			.packages__item
+				.packages__top
+					.title-blue.packages__title Lite
+				.packages__content Basic shop and tools to set up your profile
+				.packages__line
+					.h1.packages__percent 8%
+					.packages__note of the monthly income you earn on the market
+					.tooltip(title="Small description Lite")
+						+i('info')
+				ul.packages__list
+					li Basic shop profile
+					li Customer communication tools
+					li 100 promotion posts
+					li Maximum 50 product uploads
+				button.button-stroke.packages__button Your plan
+			.packages__item
+				.packages__top
+					.title-purple.packages__title Pro
+					.packages__recommended Recommended
+				.packages__content Pro shop and tools to set up your profile 🔥
+				.packages__line
+					.h1.packages__percent 12%
+					.packages__note of the monthly income you earn on the market
+					.tooltip(title="Small description Pro")
+						+i('info')
+				ul.packages__list
+					li Extended shop profile
+					li Customer communication tools
+					li Unlimited promotion posts
+					li Unlimited product uploads
+					li Special offers promo tool
+					li Analytics and insights
+					li Bulk message to all customers
+				button.button.packages__button Upgrade now
+	.faq.js-tabs
+		.h3.faq__title Frequently asked questions
+		.faq__container
+			.faq__sidebar
+				.faq__menu
+					a.faq__link.js-tabs-link.active(href="#") Get started
+					a.faq__link.js-tabs-link(href="#") Login & access
+					a.faq__link.js-tabs-link(href="#") Billing & payments
+					a.faq__link.js-tabs-link(href="#") My benefits
+					a.faq__link.js-tabs-link(href="#") Account settings
+				select.select.js-tabs-select
+					option Get started
+					option Login & access
+					option Billing & payments
+					option My benefits
+					option Account settings
+			.faq__wrapper
+				.faq__tab.js-tabs-item(style='display: block')
+					mixin faqItem(title)
+						.faq__item
+							.faq__head
+								.faq__subtitle=title
+								+i('plus-circle')
+							.faq__body Enjoy instant access to our vast library of 5,121 premium products and all upcoming new releases with super-fast download speeds powered by Amazon S3. Yes, you read that right. Getting $127,035 in value means you're saving more than 99% on all products making it the sweetest deal for premium design assets around.
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('I forgot my password')
+					+faqItem('I can’t reset my password')
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('How do I change and reset my password')
+				.faq__tab.js-tabs-item
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('I forgot my password')
+					+faqItem('I can’t reset my password')
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('How do I change and reset my password')
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('I forgot my password')
+				.faq__tab.js-tabs-item
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('I forgot my password')
+					+faqItem('I can’t reset my password')
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('How do I change and reset my password')
+					+faqItem('How to upgrade to Pro account?')
+				.faq__tab.js-tabs-item
+					+faqItem('I can’t reset my password')
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('How do I change and reset my password')
+					+faqItem('How to upgrade to Pro account?')
+				.faq__tab.js-tabs-item
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('I forgot my password')
+					+faqItem('I can’t reset my password')
+					+faqItem('How to upgrade to Pro account?')
+					+faqItem('How do I change and reset my password')
+					+faqItem('How to upgrade to Pro account?')
+
+

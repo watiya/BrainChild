@@ -1,0 +1,97 @@
+.popup
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    min-width: 320px
+    padding: 20px 10px
+    visibility: hidden
+    opacity: 0
+    pointer-events: none
+    overflow: auto
+    z-index: 999
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    &.visible
+        pointer-events: all
+        visibility: visible
+        opacity: 1
+    &.animation &__wrap
+        opacity: 1
+    &__overlay
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($n2, .8)
+        +dark
+            background: rgba($n6, .9)
+    &__wrap
+        position: relative
+        z-index: 3
+        width: 100%
+        padding: 26px 24px 24px
+        margin: auto
+        opacity: 0
+        background: $n1
+        border-radius: 16px
+        box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.05), 0px 32px 48px -8px rgba(0, 0, 0, 0.1)
+        transition: opacity .5s
+        +dark
+            background: $n7
+        +m
+            box-shadow: none
+    &:not(.popup_product) &__wrap
+        max-width: 408px
+    &__close
+        position: absolute
+        top: 24px
+        right: 24px
+        z-index: 2
+        width: 36px
+        height: 36px
+        border-radius: 50% 
+        background: $n3
+        // font-size: 0
+        transition: background .2s 
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n5
+            transition: transform .25s
+        +dark
+            background: $n6
+            .icon
+                fill: $n1
+        &:hover 
+            .icon
+                transform: rotate(90deg)
+    &_product
+        padding: 120px 24px 24px
+        +m
+            padding: 88px 16px 24px
+    &_product &__overlay
+        background: $n2
+        +dark
+            background: $n8
+    &_product &__wrap
+        position: static
+        display: inline-block
+        width: auto
+        max-width: 100%
+        padding: 0
+        border-radius: 8px
+        z-index: 2
+        box-shadow: none
+        +d
+            background: none
+    &_post:not(.popup_product) &__wrap,
+    &_success:not(.popup_product) &__wrap
+        max-width: 560px
+    &_refunds:not(.popup_product) &__wrap
+        max-width: 896px
+        +m
+            padding: 28px 16px 16px

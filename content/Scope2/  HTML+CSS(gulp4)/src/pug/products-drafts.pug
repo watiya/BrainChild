@@ -1,0 +1,43 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarProducts: visible
+classSidebarProductsDrafts: active
+pageTitle: "Drafts"
+parameterSchedule: "Last edited"
+---
+extends layouts/layout
+block content
+	.drafts.card.js-tabs
+		.card__head
+			.title-purple.card__title Products
+			+form('text', 'search', 'Search product', 'search')
+			.card__sorting
+				a.card__link.js-tabs-link.active(href="#")
+					+i('list')
+				a.card__link.js-tabs-link(href="#")
+					+i('grid')
+		.drafts__container
+			.drafts__tab.js-tabs-item(style="display: block")
+				include partials/schedule
+			.drafts__tab.js-tabs-item
+				.drafts__list
+					+summary(true, 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', true, '64', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Fleet - Travel shopping UI design kit')
+					+summary(true, 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', true, '123', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Node - Crypto iOS UI design kit')
+					+summary(true, 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', true, '54', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'TaskEz: Productivity App iOS UI Kit')
+					+summary(true, 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', true, '64', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Bento Matte 3D Illustration')
+					+summary(true, 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', true, '123', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Node - Crypto iOS UI design kit')
+					+summary(true, 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg', true, '222', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'TaskEz: Productivity App iOS UI Kit')
+	.panel.tablet-hide
+		.panel__info
+			+i('check-all')
+			| 2 products selected
+		.panel__btns
+			button.button-stroke-red.panel__button
+				span Deleted
+				+i('trash')
+			button.button.panel__button Publish
+	include partials/popup-schedule
+
+
+
+	

@@ -1,0 +1,71 @@
+.sidebar
+	button.sidebar__close
+		+i('close')
+	a.sidebar__logo(href="index.html")
+		img.some-icon(src="img/logo-dark.png" alt="Core")
+		img.some-icon-dark(src="img/logo-light.png" alt="Core")
+	.sidebar__menu
+		a.sidebar__item(href="index.html" class=classSidebarHome)
+			+i('home')
+			| Home
+		.sidebar__item.sidebar__item_dropdown(class=classSidebarProducts)
+			.sidebar__top(class=classSidebarProductsAdd)
+				button.sidebar__head
+					+i('diamond')
+					| Products
+					+i('arrow-down')
+				a.sidebar__add(href="/products-add.html" class=classSidebarProductsAdd)
+					+i('plus')
+			.sidebar__body
+				a.sidebar__link(href="/products-dashboard.html" class=classSidebarProductsDashboard) Dashboard
+					+i('arrow-next')
+				a.sidebar__link(href="/products-drafts.html" class=classSidebarProductsDrafts) Drafts
+					+i('arrow-next')
+					.sidebar__counter(style="background-color: #FFBC99") 2
+				a.sidebar__link(href="/products-released.html" class=classSidebarProductsReleased) Released
+					+i('arrow-next')
+				a.sidebar__link(href="/products-comments.html" class=classSidebarProductsComments) Comments
+					+i('arrow-next')
+				a.sidebar__link(href="/products-scheduled.html" class=classSidebarProductsScheduled) Scheduled
+					+i('arrow-next')
+					.sidebar__counter(style="background-color: #B5E4CA") 8
+		.sidebar__item.sidebar__item_dropdown(class=classSidebarCustomers)
+			button.sidebar__head
+				+i('profile-circle')
+				| Customers
+				+i('arrow-down')
+			.sidebar__body
+				a.sidebar__link(href="/customers-overview.html" class=classSidebarCustomersOverview) Overview
+					+i('arrow-next')
+				a.sidebar__link(href="/customer-list.html" class=classSidebarCustomerList) Customer list
+					+i('arrow-next')
+		a.sidebar__item(href="shop.html" class=classSidebarShop)
+			+i('store')
+			| Shop
+		.sidebar__item.sidebar__item_dropdown(class=classSidebarIncome)
+			button.sidebar__head
+				+i('pie-chart')
+				| Income
+				+i('arrow-down')
+			.sidebar__body
+				a.sidebar__link(href="/income-earning.html" class=classSidebarIncomeEarning) Earning
+					+i('arrow-next')
+				a.sidebar__link(href="/income-refunds.html" class=classSidebarIncomeRefunds) Refunds
+					+i('arrow-next')
+				a.sidebar__link(href="/income-payouts.html" class=classSidebarIncomePayouts) Payouts
+					+i('arrow-next')
+				a.sidebar__link(href="/income-statements.html" class=classSidebarIncomeStatements) Statements
+					+i('arrow-next')
+		a.sidebar__item(href="promote.html" class=classSidebarPromote)
+			+i('promotion')
+			| Promote
+	button.sidebar__toggle
+		+i('arrow-right')
+		+i('close')
+	.sidebar__foot
+		button.sidebar__help
+			+i('help')
+			| Help & getting started
+			.sidebar__counter 8
+		+theme
+.overlay

@@ -1,0 +1,182 @@
+.messages
+    display: flex
+    height: 776px
+    padding: 12px
+    border-radius: 8px
+    background: $n1
+    +w
+        height: 700px
+    +t
+        display: block
+        height: calc(100vh - 218px)
+        padding: 0
+        &.active
+            .messages__users
+                display: none
+            .messages__messenger
+                display: block
+    +m
+        height: calc(100vh - 184px)
+    +dark
+        background: $n7
+    &__users
+        display: flex
+        flex-direction: column
+        flex-shrink: 0
+        width: 340px
+        margin-right: 12px
+        padding: 12px
+        +d
+            width: 310px
+        +t
+            width: 100%
+            height: 100%
+            margin-right: 0
+            padding: 24px 32px
+        +m
+            padding: 16px
+    &__nav
+        display: flex
+        margin-bottom: 36px
+        padding: 4px
+        border-radius: 20px
+        background: $n2
+        +d
+            margin-bottom: 24px
+        +m
+            margin-bottom: 16px
+        +dark
+            background: $n8
+    &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        flex: 0 0 50%
+        height: 32px
+        border-radius: 16px
+        +base1-s
+        color: $n4
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
+        transition: color .2s
+        .icon
+            width: 24px
+            height: 24px
+            margin-right: 8px
+            fill: $n4
+            transition: fill .2s
+        &:hover,
+        &.active
+            color: $n7
+            .icon
+                fill: $n7
+            +dark
+                color: $n1
+                .icon
+                    fill: $n1
+        &.active
+            box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.25), inset 0px -1px 1px rgba(0, 0, 0, 0.04), inset 0px 2px 0px rgba(255, 255, 255, 0.25)
+            background: $n1
+            +dark
+                box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.25), inset 0px -1px 1px rgba(0, 0, 0, 0.49), inset 0px 2px 1px rgba(255, 255, 255, 0.06)
+                background: $n6
+    &__list
+        max-height: 100%
+        margin: 0 -12px 16px
+        overflow: auto
+        -webkit-overflow-scrolling: touch
+        +m
+            margin: 0 -8px 16px
+    &__item
+        display: flex
+        align-items: center
+        padding: 12px
+        border-radius: 12px
+        cursor: pointer
+        transition: all .2s
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
+        +m
+            padding: 8px
+        &:hover,
+        &.active
+            background: $n3
+            +dark
+                background: $n6
+        &.new
+            .messages__head:after
+                background: $p1
+        &.online
+            .messages__avatar
+                position: relative
+                &:before
+                    content: ""
+                    position: absolute
+                    top: -2px
+                    left: -2px
+                    width: 20px
+                    height: 20px
+                    border-radius: 50%
+                    background: $p2
+                    border: 4px solid $n1
+                    transition: border-color .2s
+                    +dark
+                        border-color: $n7
+            &:hover
+                .messages__avatar:before
+                    border-color: $n3
+                    +dark
+                        border-color: $n6
+        &:not(:last-child)
+            margin-bottom: 8px
+            +m
+                margin-bottom: 0
+    &__avatar
+        flex-shrink: 0
+        width: 56px
+        height: 56px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+    &__details
+        flex: 0 0 calc(100% - 56px)
+        max-width: calc(100% - 56px)
+        padding-left: 12px
+    &__head
+        position: relative
+        display: flex
+        align-items: center
+        margin-bottom: 4px
+        &:after
+            content: ""
+            flex-shrink: 0
+            display: block
+            width: 12px
+            height: 12px
+            margin-left: 12px
+            border-radius: 50%
+            background: $shades1
+            transition: background .2s
+    &__man
+        margin-right: auto
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+        font-weight: 700
+    &__time
+        flex-shrink: 0
+        margin-left: 24px
+        +caption1
+        color: $shades1
+    &__content
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+        font-weight: 500
+        color: $n4
+    .form
+        width: 100%
+        margin-top: auto
+    &__messenger
+        +t
+            display: none

@@ -1,0 +1,395 @@
+.sidebar
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    display: flex
+    flex-direction: column
+    width: 340px
+    padding: 24px
+    background: $n1
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    -ms-overflow-style: none
+    scrollbar-width: none
+    &::-webkit-scrollbar
+        display: none 
+    +x
+        width: 300px
+        padding: 16px
+    +d
+        z-index: 30
+        width: 96px
+        align-items: center
+    +m
+        width: 100%
+        align-items: stretch
+        transform: translateX(-100%)
+        transition: transform .3s
+    +dark
+        background: $n7
+    &.visible
+        transform: translateX(0)
+    &.active
+        +d
+            align-items: stretch
+            width: 300px
+            box-shadow: 4px 0 32px rgba($n8, .05)
+            .sidebar__item,
+            .sidebar__link,
+            .sidebar__help
+                width: 100%
+                font-size: 15px
+            .sidebar__item,
+            .sidebar__help
+                & > .icon
+                    margin-right: 12px
+            .sidebar__counter
+                display: block
+            .sidebar__toggle
+                position: absolute
+                top: 16px 
+                right: 16px
+                .icon
+                    fill: $n7
+                    &:first-child
+                        display: none
+                    &:nth-child(2)
+                        display: inline-block
+        +m
+            width: 100%
+    &__logo
+        display: block
+        width: 48px
+        margin-bottom: 48px
+        +x
+            margin-bottom: 24px
+        +m
+            margin-left: auto
+        img
+            width: 100%
+    &__menu
+        display: flex
+        flex-direction: column
+        margin-bottom: auto
+    &__item
+        &:not(:last-child)
+            margin-bottom: 8px
+    &__item[href],
+    &__help,
+    &__head,
+    &__link
+        position: relative
+        display: flex
+        align-items: center
+        width: 100%
+        height: 48px
+        padding: 0 12px
+        border-radius: 12px
+        white-space: nowrap
+        +inter
+        +base1-s
+        color: $n4
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
+        transition: background .2s, box-shadow .2s, color .2s
+    &__item[href],
+    &__help,
+    &__head
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            +rmin(1024)
+                color: $n7
+                .icon
+                    fill: $n7
+                +dark
+                    color: $n1
+                    .icon
+                        fill: $n1
+    &__item[href],
+    &__help
+        &.active
+            color: $n7
+            .icon
+                fill: $n7
+            +dark
+                color: $n1
+                .icon
+                    fill: $n1
+    &__item[href],
+    &__help
+        +d
+            width: 48px
+            font-size: 0
+        +m
+            width: 100%
+            font-size: 15px
+        .icon
+            margin-right: 12px
+            +d
+                margin-right: 0
+            +m
+                margin-right: 12px
+        &.active
+            background: $n3
+            box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.05), inset 0px 1px 1px #FFFFFF
+            +dark
+                background: $n6
+                box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(255, 255, 255, 0.11)
+    &__item_dropdown
+        &.active,
+        &.visible
+            .sidebar__body
+                display: block
+                +d
+                    display: none
+                +m
+                    display: block
+        &.active,
+        &.visible:not(.wide)
+            .sidebar__head
+                & > .icon
+                    &:last-child
+                        transform: rotate(180deg)
+        &.wide
+            +d
+                .sidebar__head
+                    font-size: 15px
+                    & > .icon
+                        &:first-child
+                            +d
+                                margin-right: 12px
+                        &:last-child
+                            +d
+                                display: inline-block
+                .sidebar__add
+                    display: flex
+        &.wide.active
+            .sidebar__head
+                & > .icon
+                    &:last-child
+                        +d
+                            transform: rotate(180deg)
+            .sidebar__body
+                +d
+                    display: block
+    &__top
+        position: relative
+        &.active
+            .sidebar__head
+                background: $n3
+                box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.05), inset 0px 1px 1px #FFFFFF
+                color: $n7
+                +dark
+                    background: $n6
+                    box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(255, 255, 255, 0.11)
+                    color: $n1
+    &__item.visible:not(.wide) &__head
+        +d
+            background: $n3
+            box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.05), inset 0px 1px 1px #FFFFFF
+            color: $n7
+        +m
+            background: none
+            box-shadow: none
+            color: $n4
+        +dark
+            +d
+                background: $n6
+                box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(255, 255, 255, 0.11)
+                color: $n1
+                .icon
+                    fill: $n1
+            +m
+                background: none
+                box-shadow: none
+                color: $n4
+                .icon
+                    fill: $n4
+    &__head
+        +d
+            font-size: 0
+        +m
+            font-size: 15px
+        .icon
+            transition: transform .2s, fill .2s
+            &:first-child
+                margin-right: 12px
+                +d
+                    margin-right: 0
+                +m
+                    margin-right: 12px
+            &:last-child
+                margin-left: auto
+                +d
+                    display: none
+                +m
+                    display: inline-block
+    &__add
+        position: absolute
+        top: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        right: 48px
+        width: 24px
+        height: 24px
+        border-radius: 50%
+        border: 2px solid $n3
+        transform: translateY(-50%)
+        font-size: 0
+        transition: border-color .2s 
+        +d
+            display: none
+        +m
+            display: flex
+        +dark
+            border-color: $n5
+        .icon
+            width: 10px
+            height: 10px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            border-color: $n7
+            .icon
+                fill: $n7
+            +dark
+                border-color: $shades1
+                .icon
+                    fill: $shades1
+        &.active
+            border-color: $shades1
+            .icon
+                fill: $shades1
+    &__body
+        position: relative
+        display: none
+        padding-left: 36px
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 23px
+            bottom: 32px
+            width: 2px
+            border-radius: 2px
+            background: $n3
+            +dark
+                background: $n6
+    &__link
+        &:before
+            content: ""
+            position: absolute
+            top: 12px
+            left: -13px
+            width: 12px
+            height: 12px
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' viewBox='0 0 14 14'%3E%3Cpath d='M1 1v4a8 8 0 0 0 8 8h4' stroke='%23efefef' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 50% 50% / 100% auto
+            +dark
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' viewBox='0 0 14 14'%3E%3Cpath d='M1 1v4a8 8 0 0 0 8 8h4' stroke='%23272B30' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E")
+        .icon
+            position: absolute
+            top: 50%
+            right: 12px
+            transform: translateY(-50%) 
+            width: 24px
+            height: 24px  
+            opacity: 0
+            fill: $n7
+            transition: opacity .2s
+            +dark
+                fill: $n1
+        &:hover
+            color: $n7
+            +dark
+                color: $n1
+        &.active
+            background: $n3
+            box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.05), inset 0px 1px 1px #FFFFFF
+            color: $n7
+            +dark
+                background: $n6
+                box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(255, 255, 255, 0.11)
+                color: $n1
+            .icon
+                opacity: 1
+    &__counter
+        position: relative
+        z-index: 2 
+        flex-shrink: 0
+        min-width: 24px
+        margin-left: auto
+        border-radius: 6px
+        text-align: center
+        line-height: 24px
+        color: $n7
+    &__toggle
+        display: none
+        width: 48px
+        height: 48px
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
+        +d
+            display: inline-block
+        +m
+            display: none
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            &:nth-child(2)
+                display: none
+    &__close
+        display: none
+        +m
+            display: block
+            position: absolute
+            top: 16px
+            left: 16px
+            width: 48px
+            height: 48px
+            .icon
+                width: 24px
+                height: 24px
+                fill: $n7
+                +dark
+                    fill: $n1
+    &__foot
+        margin-top: 24px
+        padding-top: 18px
+        border-top: 2px solid $n2
+        +d
+            margin-top: 12px
+            padding-top: 12px
+        +dark
+            border-color: $n6
+    .theme
+        margin-top: 16px
+    &__help &__counter
+        background: $s2
+        +d
+            display: none
+        +m
+            display: block
+    & + .overlay
+        +d
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            z-index: 25
+            background: rgba($n2, .8)
+            visibility: hidden
+            opacity: 0
+            transition: all .2s
+            +dark
+                background: rgba($n6, .9)
+            &.active
+                visibility: visible
+                opacity: 1
+        +m
+            display: none

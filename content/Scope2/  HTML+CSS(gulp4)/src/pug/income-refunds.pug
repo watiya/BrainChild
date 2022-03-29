@@ -1,0 +1,119 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarIncome: visible
+classSidebarIncomeRefunds: active
+pageTitle: "Refunds"
+---
+extends layouts/layout
+block content
+	.refunds.card
+		.card__head
+			.title-purple.card__title Refund requests
+			.card__nav
+				button.card__link.active(href="#") Open requests
+				button.card__link(href="#") Closed requests
+		.refunds__wrapper
+			.refunds__table
+				.refunds__row
+					.refunds__col Product
+					.refunds__col Status
+					.refunds__col Date
+					.refunds__col Customer
+				mixin refundsRow(srcSet, src, title, category, status, date, avatar, user)
+					.refunds__row(data-popup=".js-popup-refunds")
+						.refunds__col
+							.refunds__item
+								.refunds__preview
+									img(srcSet=`${srcSet} 2x` src=src alt="Product")
+								.refunds__details
+									.refunds__product=title
+									.refunds__category=category
+									if status
+										.refunds__new New request
+									else
+										.refunds__progress In progress
+						.refunds__col
+							if status
+								.refunds__new New request
+							else
+								.refunds__progress In progress
+						.refunds__col=date
+						.refunds__col
+							.refunds__user
+								.refunds__avatar
+									img(src=avatar alt="Avatar")
+								=user
+				+refundsRow('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Bento Matte 3D Illustration', 'UI design kit', true, '13 Sep', 'img/content/avatar-1.jpg', 'Kyler Kuphal')
+				+refundsRow('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'Node - Crypto iOS', 'UI design kit', false, '12 Sep', 'img/content/avatar-2.jpg', 'Eldred Lockman') 
+				+refundsRow('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'TaskEz: Productivity App iOS', 'UI design kit', true, '11 Sep', 'img/content/avatar-3.jpg', 'Carlo Herman') 
+				+refundsRow('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'Fleet - Travel shopping', 'UI design kit', false, '10 Sep', 'img/content/avatar-4.jpg', 'Camille Koss') 
+				+refundsRow('img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'Academe 3D Education Icons', 'UI design kit', true, '9 Sep', 'img/content/avatar-5.jpg', 'Reyna Nikolaus') 
+		.refunds__foot
+			button.button-stroke.button-small.refunds__button
+				+loader
+				span Load more
+	.popup.popup_refunds.js-popup.js-popup-refunds
+		.popup__overlay.js-popup-overlay
+		.popup__wrap.js-popup-wrap
+			.description
+				.title-purple.description__title Refunds request
+				.description__row
+					.description__col
+						.description__product
+							.description__preview
+								img(srcSet="img/content/product-pic-1@2x.jpg 2x" src="img/content/product-pic-1.jpg" alt="Product")
+							.description__details
+								.description__subtitle Bento Matte 3D Illustration
+								.description__new New request
+								//- .description__progress In progress
+						ul.description__parameters
+							li
+								.description__label Request send
+								.description__content Aug 20, 2021
+							li
+								.description__label Reason
+								.description__content Download link is broken
+							li
+								.description__label Product downloaded
+								.description__yes Yes
+								//- .description__no No
+							li
+								.description__label Purchase date
+								.description__content July 01, 2021
+							li
+								.description__label Purchase code
+								.description__content 6373ads-hd73h-8373DS
+							li
+								.description__label Request ID
+								.description__content 8975ads-hd73h-8974DS
+							li
+								.description__label Market fee
+									.tooltip(title="Description Market fee")
+										+i('info-stroke')
+								.description__content $7.28
+							li
+								.description__label Price
+									.tooltip(title="Description Price")
+										+i('info-stroke')
+								.description__content $72.88
+						.description__btns
+							button.button-stroke.description__button Decline refund
+							button.button.description__button Give refund
+					.description__col
+						.description__box
+							.description__info Suggestions
+							ul.description__list
+								li Talk to customer to see if you can help.
+								li If not, approve or decline the request.
+						.description__box
+							.description__info Download link is broken
+							.description__comment “ I can’t download your item at all. Even tried to change the DNS or VNP, it still doesn’t work. 😢” 
+							.description__user
+								.description__avatar
+									img(src="img/content/avatar-1.jpg" alt="Avatar")
+								| Eldred Lockman
+							+editor('Send message', 'Description', 'Send')
+			button.popup__close.js-popup-close
+				+i('close')
+
+	

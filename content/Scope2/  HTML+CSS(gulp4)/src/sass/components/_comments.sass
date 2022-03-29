@@ -1,0 +1,162 @@
+.comments
+    padding: 24px
+    border-left: 1px solid $n3
+    +m
+        padding: 16px 16px 24px
+    +dark
+        border-color: $n8
+    &__head
+        display: flex
+        align-items: center
+        height: 48px
+    &__title
+        display: flex
+        align-items: center
+        margin-right: auto
+        +title1-s
+    &__counter
+        flex-shrink: 0
+        min-width: 38px
+        margin-right: 12px
+        padding: 0 6px
+        border-radius: 8px
+        background: $s2
+        text-align: center
+        line-height: 36px
+        +dark
+            color: $n7
+    &__close
+        flex-shrink: 0
+        width: 36px
+        height: 36px
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n5
+            transition: fill .2s
+            +dark
+                fill: $n1
+        &:hover
+            .icon
+                fill: $p1
+    .editor
+        margin-top: 24px
+    &__list
+        margin-top: 40px
+        +m
+            margin-top: 24px
+    &__item,
+    &__answer
+        display: flex
+    &__item
+        .comments__avatar
+            width: 48px
+            height: 48px
+        .comments__details
+            flex: 0 0 calc(100% - 48px)
+            width: calc(100% - 48px)
+            padding-left: 16px
+        &:not(:first-child)
+            margin-top: 32px
+            padding-top: 24px
+            border-top: 1px solid $n3
+            +dark
+                border-color: $n6
+    &__answer
+        margin-top: 32px
+        padding: 24px 0 0 64px
+        border-top: 1px solid $n3
+        +dark
+            border-color: $n6
+        .comments__avatar
+            width: 32px
+            height: 32px
+        .comments__details
+            flex: 0 0 calc(100% - 32px)
+            width: calc(100% - 32px)
+            padding-left: 16px
+    &__avatar
+        flex-shrink: 0
+        img
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            object-fit: cover
+    &__line
+        display: flex
+        align-items: center
+    &__author
+        margin-right: auto
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+    &__time
+        margin-left: 8px
+        white-space: nowrap
+        +caption2
+        font-weight: 500
+        color: $shades1
+    &__rating
+        display: flex
+        align-items: center
+        margin-left: 16px
+        +base2
+        .icon
+            width: 24px
+            height: 24px
+            margin-left: 8px
+            fill: #FFC554
+    &__login
+        margin-top: 4px
+        +caption1
+        font-weight: 500
+        color: $n4
+    &__content
+        margin-top: 12px
+        font-weight: 500
+        color: $n5
+        +dark
+            color: $n1
+        strong
+            font-weight: 600
+    &__control
+        display: flex
+        align-items: center
+        margin-top: 20px
+    &__favorite,
+    &__reply
+        display: flex
+        align-items: center
+        font-size: 13px
+        font-weight: 700
+        line-height: (16/13)
+        color: $shades1
+        transition: color .2s
+        .icon
+            width: 20px
+            height: 20px
+            margin-right: 10px
+            fill: $shades1
+            transition: fill .2s
+        &:hover,
+        &.active
+            color: $n7
+            .icon
+                fill: $n7
+            +dark
+                color: $n1
+                .icon
+                    fill: $n1
+        &:not(:last-child)
+            margin-right: 24px
+    &__favorite
+        .icon
+            &:nth-child(2)
+                display: none
+        &.active
+            .icon
+                &:first-child
+                    display: none
+                &:nth-child(2)
+                    display: inline-block
+ 

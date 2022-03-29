@@ -1,0 +1,107 @@
+.filters
+    position: relative
+    &__head
+        .icon
+            width: 24px
+            height: 24px
+    &__body
+        position: absolute
+        top: -24px
+        right: -24px
+        z-index: 30
+        width: 408px
+        padding: 24px
+        border-radius: 16px
+        box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.05), 0px 32px 48px -8px rgba(0, 0, 0, 0.1)
+        background: $n1
+        visibility: hidden
+        opacity: 0
+        transition: all .3s
+        +m
+            position: fixed
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            width: auto
+            overflow: auto 
+        +dark
+            background: $n7
+    &__top
+        display: flex
+        align-items: center
+        margin-bottom: 24px
+    &__title
+        margin-right: auto
+    &__close
+        flex-shrink: 0
+        width: 36px
+        height: 36px
+        border-radius: 50%
+        background: $n3
+        margin-left: 24px
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n7
+            transition: transform .2s
+        +dark
+            background: $n6
+            .icon
+                fill: $n1
+        &:hover
+            .icon
+                transform: rotate(90deg)
+    .form
+        width: 100%
+        margin-bottom: 24px
+    &__item
+        &:not(:last-child)
+            margin-bottom: 24px
+    &__label,
+    .field__label
+        margin-bottom: 12px
+        +base2
+        color: $n4
+    .checkbox
+        &:not(:last-child)
+            margin-bottom: 12px
+    &__range
+        margin: 20px 0
+    &__box
+        position: relative
+        .select
+            padding-left: 48px
+        .icon
+            position: absolute
+            left: 12px
+            bottom: 12px
+            z-index: 10
+            pointer-events: none
+            width: 24px
+            height: 24px
+            fill: $s5
+    &__btns
+        display: flex
+        justify-content: flex-end
+        margin-top: 24px
+        .filters__button
+            &:not(:last-child)
+                margin-right: 12px
+    &__overlay
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 28
+        background: rgba($n2, .8)
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +dark
+            background: rgba($n6, .9)
+    &.active &__body,
+    &.active &__overlay
+        visibility: visible
+        opacity: 1

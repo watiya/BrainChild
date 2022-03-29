@@ -1,0 +1,212 @@
+.schedule
+    &__wrapper
+        margin: 0 -12px
+        +t
+            margin: 0
+    &__table
+        display: table
+        width: 100%
+        +t
+            display: block
+    &__row
+        display: table-row
+        &:first-child
+            +t
+                display: none
+            .schedule__col
+                padding: 0 12px 16px
+                +caption1
+                color: $n4
+        &:not(:first-child)
+            transition: background .2s
+            +t
+                position: relative
+                display: block
+                margin-bottom: 24px
+                padding-bottom: 24px
+                border-bottom: 1px solid $n3
+                +dark
+                    border-color: $n6
+            &:hover
+                +rmin(1260)
+                    background: $n2
+                    +dark
+                        background: $n6
+                    .schedule__control
+                        visibility: visible
+                        opacity: 1
+    &__col
+        position: relative
+        display: table-cell
+        padding: 16px 12px
+        vertical-align: middle
+        color: $n7
+        +t
+            display: block
+            position: static
+            padding: 0
+        &:after
+            content: ""
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            height: 1px
+            background: $n3
+            +dark
+                background: $n6
+            +t
+                display: none
+        &:first-child
+            width: 56px
+            border-radius: 8px 0 0 8px
+            font-size: 0
+            +t
+                display: none
+            &:after
+                left: 12px
+        &:last-child
+            padding-right: 164px
+            border-radius: 0 8px 8px 0
+            color: $n4
+            +t
+                padding: 0
+            &:after
+                right: 12px
+        &:not(:nth-child(2))
+            +t
+                display: none
+    &__item
+        display: flex
+        align-items: center
+        cursor: pointer
+        transition: color .2s
+        +m
+            align-items: stretch
+        +dark
+            color: $n1
+        &:hover
+            color: $p1
+        .schedule__price,
+        .schedule__empty,
+        .schedule__date
+            display: none
+        .schedule__price,
+        .schedule__empty
+            +t
+                display: inline-block
+        .schedule__date
+            +t
+                display: flex
+                align-items: center
+                margin-bottom: 8px
+                +caption1
+                color: $shades1
+                .icon
+                    width: 20px
+                    height: 20px
+                    margin-right: 8px
+                    fill: $shades1
+    &__preview
+        flex-shrink: 0
+        width: 80px
+        height: 80px
+        margin-right: 20px
+        border-radius: 8px
+        overflow: hidden
+        +t
+            width: 104px
+            height: 116px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__product
+        max-width: 170px
+        margin-bottom: 4px
+        font-weight: 700
+        +t
+            max-width: 100%
+            margin-bottom: 8px
+            padding-right: 44px
+            +title2
+    &__link
+        +caption1
+        color: $shades1
+        +t
+            display: none
+    &__price,
+    &__empty
+        flex-shrink: 0
+        display: inline-block
+        padding: 0 8px
+        border-radius: 6px
+        line-height: 32px
+        font-weight: 700
+    &__price
+        background: $s4
+        +dark
+            color: $n7
+    &__empty
+        background: $n3
+        +dark
+            background: $n6
+            color: $n1
+    &__control
+        position: absolute
+        top: 50%
+        right: 12px
+        display: flex
+        align-items: center
+        transform: translateY(-50%)
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +d
+            visibility: visible
+            opacity: 1
+        +t
+            display: none
+    &__control &__button
+        flex-shrink: 0
+        width: 36px
+        height: 36px
+        border-radius: 50%
+        background: $n1
+        +d
+            background: $n3
+        +dark
+            background: $n7
+            +d
+                background: $n6
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $p1
+        &:not(:last-child)
+            margin-right: 16px
+    .actions
+        display: none
+        +t
+            display: block
+            position: absolute
+            top: 0
+            right: 0
+            z-index: 2
+            &.active
+                z-index: 10
+    .actions__button
+        +dark
+            background: none
+    &__foot
+        margin-top: 20px
+        text-align: center
+        +t
+            margin-top: 0
+    &__foot &__button .loader
+        transform: scale(.8)
+        margin: 0 18px 0 8px

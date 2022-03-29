@@ -1,0 +1,39 @@
+---
+title: "Core - Dashboard Builder"
+pageContainerHide: true
+pageClass: page_simple
+---
+extends layouts/layout
+block content
+	.entry
+		.entry__wrapper
+			a.entry__logo(href="#")
+				img.some-icon(src="img/logo-dark.png" alt="Core")
+				img.some-icon-dark(src="img/logo-light.png" alt="Core")
+			.h2.entry__title Sign in
+			.entry__top
+				.entry__text Sign up with Open account
+				.entry__btns
+					button.button-stroke.entry__button
+						img(src="img/content/google.svg" alt="Google")
+						| Google
+					button.button-stroke.entry__button
+						img.some-icon(src="img/content/apple-dark.svg" alt="Apple")
+						img.some-icon-dark(src="img/content/apple-light.svg" alt="Apple")
+						| Apple ID
+			.entry__text Or continue with email address
+			.entry__fieldset
+				.field.field_icon
+					.field__wrap
+						input.field__input(type="emial" name="email" placeholder="Your email")
+						.field__icon
+							+i('mail')
+				.field.field_icon
+					.field__wrap
+						input.field__input(type="password" name="password" placeholder="Password")
+						.field__icon
+							+i('lock')
+				a.button.entry__button(href="index.html#header") Sign in
+			.entry__note This site is protected by reCAPTCHA and the Google Privacy Policy.
+			.entry__info Don’t have an account? <a href="sign-up.html">Sign up</a>
+				

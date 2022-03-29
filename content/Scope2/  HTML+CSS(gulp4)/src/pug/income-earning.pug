@@ -1,0 +1,121 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarIncome: visible
+classSidebarIncomeEarning: active
+pageTitle: "Earning"
+---
+extends layouts/layout
+block content
+	.card
+		.income
+			.income__list
+				.income__item
+					.income__icon(style="background-color: #B5E4CA;")
+						+i('activity')
+					.income__line
+						.income__details
+							.income__label Earning
+								.tooltip(title="Small description Earning")
+									+i('info')
+							.income__counter $128k
+							.income__indicator 
+								.balance.positive
+									+i('arrow-top')
+									| 37.8%
+								<span>this week</span>
+				.income__item
+					.income__icon(style="background-color: #CABDFF;")
+						+i('pie-chart')
+					.income__line
+						.income__details
+							.income__label Balance
+								.tooltip(title="Small description Balance")
+									+i('info')
+							.income__counter $512.64
+							.income__indicator 
+								.balance.negative
+									+i('arrow-top')
+									| 17.8%
+								<span>this week</span>
+				.income__item
+					.income__icon(style="background-color: #B1E5FC;")
+						+i('shopping-bag')
+					.income__line
+						.income__details
+							.income__label Total value of sales
+								.tooltip(title="Small description Total value of sales")
+									+i('info')
+							.income__counter $64k
+							.income__indicator 
+								.balance.positive
+									+i('arrow-top')
+									| 24.3%
+								<span>this week</span>
+	.page__row
+		.page__col
+			.card
+				.card__head
+					.title-purple.card__title Product sales
+					select.select.select_small
+						option Last 7 days
+						option This month
+						option All time
+				.card__chart.card__chart_product-sales
+					div(id="product-sales")
+		.page__col
+			.card
+				.card__head
+					.title-blue.card__title Top countries
+				.countries
+					.countries__list
+						.countries__item
+							.countries__flag 🇺🇸
+							.countries__title United States
+							.countries__price $876.77
+						.countries__item
+							.countries__flag 🇩🇪
+							.countries__title Germany
+							.countries__price $128.77
+						.countries__item
+							.countries__flag 🇳🇱
+							.countries__title Netherlands
+							.countries__price $124.77
+						.countries__item
+							.countries__flag 🇬🇧
+							.countries__title United Kingdom
+							.countries__price $82.36
+						.countries__item
+							.countries__flag 🇮🇹
+							.countries__title Italy
+							.countries__price $32.00
+						.countries__item
+							.countries__flag 🇻🇳
+							.countries__title Vietnam
+							.countries__price $41.89
+	.earning
+		.earning__table
+			.earning__row
+				.earning__col Date
+				.earning__col Status
+				.earning__col Product sales count
+				.earning__col Earnings
+			mixin earningRow(date, status, sales, earnings)
+				.earning__row
+					.earning__col=date
+					.earning__col
+						if status
+							.status-green-dark.earning__status Paid
+						else
+							.status-yellow.earning__status Pending
+					.earning__col=sales
+					.earning__col $
+						=earnings
+			+earningRow('Fri, Apr 9', false, '28', '3,140.00')
+			+earningRow('Sat, Apr 10', true, '24', '2,568.00')
+			+earningRow('Sun, Apr 11', false, '16', '1,375.88')
+			+earningRow('Mon, Apr 12', true, '48', '4,955.86')
+			+earningRow('Tue, Apr 13', true, '32', '2,233.44')
+			+earningRow('Wed, Apr 14', false, '64', '6,140.00')
+			+earningRow('Thu, Apr 15', true, '8', '789.32')
+
+	

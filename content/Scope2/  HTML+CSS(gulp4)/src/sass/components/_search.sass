@@ -1,0 +1,232 @@
+.search
+    position: relative
+    flex-shrink: 0
+    width: 360px
+    +m
+        position: absolute
+        left: 0
+        right: 0
+        top: 80px
+        width: 100%
+        padding: 12px 16px
+        background: $n
+        box-shadow: 0 8px 12px rgba($n8, .05)
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +dark
+            background: $n8
+    &.active
+        .search__start,
+        .search__result,
+            visibility: hidden
+            opacity: 0
+        .search__direction,
+        .search__close
+            visibility: visible
+            opacity: 1
+        .search__body
+            visibility: visible
+            opacity: 1
+    &.visible
+        +m
+            visibility: visible
+            opacity: 1
+    &__head
+        position: relative
+        z-index: 2
+    &__start,
+    &__direction,
+    &__result,
+    &__head &__close
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        transition: all .2s
+        .icon
+            width: 24px
+            height: 24px
+            transition: fill .2s
+    &__start
+        left: 12px
+        .icon
+            fill: $n4
+        &:hover
+            .icon
+                fill: $n7
+    &__result
+        right: 8px
+        width: 56px
+        height: 32px
+        background: $n
+        border-radius: 8px
+        box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.05), inset 0px -1px 1px rgba(0, 0, 0, 0.04), inset 0px 2px 0px rgba(255, 255, 255, 0.25)
+        font-size: 16px
+        font-weight: 600
+        color: $n7
+        +dark
+            background: $n7
+            box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.05), inset 0px -1px 1px rgba(0, 0, 0, 0.04), inset 0px 1px 0px rgba(255, 255, 255, 0.08)
+            color: $n1
+        +m
+            display: none
+        &:hover
+            color: $p1
+    &__direction
+        left: 10px
+        .icon
+            fill: $p1
+        &:hover
+            transform: translate(-2px,-50%)
+    &__head &__close
+        right: 10px
+        width: 32px
+        height: 32px
+        .icon
+            fill: $shades1
+        &:hover
+            .icon
+                fill: $p3
+    &__direction,
+    &__head &__close
+        visibility: hidden
+        opacity: 0
+    &__input
+        width: 100%
+        height: 48px
+        padding: 0 68px 0 42px
+        background: $n2
+        border: 2px solid transparent
+        border-radius: 12px
+        +base1-s
+        color: $n7
+        transition: all .2s
+        +dark
+            background: $n6
+            color: $n1
+        &::placeholder
+            color: $shades1
+        &:focus
+            border-color: $p1
+            background: $n
+            +dark
+                background: $n8
+    &__body
+        position: absolute
+        top: -12px
+        left: -12px
+        right: -12px
+        padding: 84px 12px 12px
+        border: 1px solid transparent
+        box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.05), 0px 32px 48px -8px rgba(0, 0, 0, 0.1)
+        background: $n
+        border-radius: 16px
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +m
+            top: 100%
+            left: 0
+            right: 0
+            max-height: calc(100vh - 152px)
+            padding: 16px 8px
+            border-radius: 0
+            border-top: 1px solid $n3
+            box-shadow: 0 12px 32px rgba($n8, .05)
+            overflow: auto
+        +dark
+            background: $n7
+            border-color: $n6
+    &__box
+        &:not(:last-child)
+            margin-bottom: 24px
+            padding-bottom: 24px
+            border-bottom: 1px solid $n3
+            +dark
+                border-color: $n6
+            +m
+                margin-bottom: 16px
+                padding-bottom: 16px
+    &__category
+        margin-bottom: 12px
+        padding-left: 12px
+        +caption1
+        color: $n4
+    &__item,
+    &__suggestion
+        display: flex
+        align-items: center
+        padding: 12px
+        cursor: pointer
+    &__link
+        display: flex
+        align-items: center
+        flex-grow: 1
+        &:hover
+            .search__title
+                color: $p1
+    &__suggestion
+        &:hover
+            .search__title
+                color: $p1
+            .search__arrow
+                transform: translateX(2px)
+    &__preview
+        flex-shrink: 0
+        width: 48px
+        height: 48px
+        margin-right: 16px
+        border-radius: 8px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__icon
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        width: 48px
+        height: 48px
+        margin-right: 16px
+        border-radius: 50%
+        border: 2px solid $s2
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n7
+            +dark
+                fill: $n1
+    &__details
+        flex-grow: 1 
+    &__content
+        +caption1
+        color: $n4
+    &__item &__content
+        margin-bottom: 4px
+    &__title
+        color: $n7
+        transition: color .2s
+        +dark
+            color: $n1
+    &__suggestion &__title
+        margin-bottom: 4px
+    &__remove
+        flex-shrink: 0
+        margin-left: 24px
+        .icon
+            width: 24px
+            height: 24px
+            fill: $shades1
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $p3
+    &__arrow
+        margin-left: 24px
+        transition: transform .2s
+        .icon
+            width: 24px
+            height: 24px
+            fill: $shades1

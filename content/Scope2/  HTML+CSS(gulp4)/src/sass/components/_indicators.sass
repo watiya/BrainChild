@@ -1,0 +1,77 @@
+.indicators
+    background: $n1
+    border-radius: 8px
+    +dark
+        background: $n7
+    &__table
+        display: table
+        width: 100%
+    &__row
+        display: table-row
+        &:first-child
+            .indicators__col
+                padding-top: 24px
+                padding-bottom: 24px
+                +caption2
+                font-weight: 500
+                color: $n4
+                +m
+                    padding: 16px
+        &:nth-child(2n)
+            .indicators__col
+                background: rgba($n3, .35)
+                +dark
+                    background: rgba($n8, .5)
+    &__col
+        display: table-cell
+        padding: 16px
+        white-space: nowrap
+        +d
+            padding: 16px 8px
+        +m
+            padding-left: 16px
+        &:first-child
+            padding-left: 24px
+            color: $n4
+            +d
+                font-size: 13px
+            +m
+                padding-left: 16px
+        &:last-child
+            padding-right: 24px 
+        &:nth-child(3n+1)
+            +m
+                display: none
+    .tooltip
+        position: relative
+        top: -1px
+        .icon
+            fill: $shades1 
+    &__box
+        display: flex
+        align-items: center
+    &__line
+        position: relative
+        flex-shrink: 0
+        width: 44px
+        height: 12px
+        margin-left: 8px
+    &__progress
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        border-radius: 2px
+        &_blue
+            background: $p1
+        &_purple
+            background: $p4
+    .counter
+        padding: 0 7px
+        border-radius: 6px
+        background: $n3
+        +dark
+            background: $n6
+
+    .balance
+        margin-top: 10px 

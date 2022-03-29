@@ -1,0 +1,48 @@
+.control
+    display: flex
+    align-items: center
+    &__button
+        flex-shrink: 0
+        width: 36px
+        height: 36px
+        margin-right: 24px
+        border-radius: 50%
+        background: $n1
+        +t
+            display: none
+        +dark
+            background: $n7
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $p1
+    .actions__button
+        width: 36px
+        height: 36px
+        background: $n1
+        +dark
+            background: $n7
+        &:hover
+            .icon
+                fill: $p1
+        .icon
+            fill: $n4
+    .actions.active .actions__button
+        background: $n1
+        +dark
+            background: $n7
+    .actions__body
+        &:before
+            right: 19px
+            +dark
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='10' fill='none' viewBox='0 0 20 10'%3E%3Cpath d='M6.927 1.687L0 10h20l-6.927-8.313a4 4 0 0 0-6.146 0z' fill='%23111315'/%3E%3C/svg%3E")
+    .actions__option
+        &:first-child,
+        &:nth-child(2)
+            display: none
+            +t
+                display: flex

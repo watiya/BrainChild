@@ -1,0 +1,47 @@
+.popular
+    &__head
+        display: flex
+        justify-content: space-between
+        margin-bottom: 12px
+        padding-bottom: 24px
+        border-bottom: 1px solid $n3
+        +caption1
+        color: $n4
+        +dark
+            border-color: $n6
+    &__list
+        margin: 0 -12px
+    &__item
+        display: flex
+        align-items: center
+        padding: 12px
+        color: $n7
+        cursor: pointer
+        +dark
+            color: $n1
+        &:hover
+            .popular__title
+                color: $p1
+        &:not(:last-child)
+            margin-bottom: 12px
+    &__preview
+        flex-shrink: 0
+        width: 64px
+        height: 64px
+        margin-right: 12px
+        border-radius: 8px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title
+        flex-grow: 1
+        padding-right: 16px
+        transition: color .2s
+    &__details
+        flex-shrink: 0
+        text-align: right
+    &__button
+        width: 100%
+        margin-top: 12px

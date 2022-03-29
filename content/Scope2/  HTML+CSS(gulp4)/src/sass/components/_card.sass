@@ -1,0 +1,153 @@
+.card
+    position: relative
+    padding: 24px
+    background: $n1
+    border-radius: 8px
+    +m
+        padding: 16px
+    +dark
+        background: $n7
+    &__head
+        display: flex
+        align-items: center
+        min-height: 40px
+        margin-bottom: 32px
+        +m
+            margin-bottom: 24px
+        &_wide
+            +m
+                display: block
+            .card__title
+                +m
+                    margin-bottom: 16px
+    &__title
+        margin-right: auto
+        +m
+            padding-top: 6px
+            padding-bottom: 6px
+    &__chart
+        width: auto
+        &_product-views
+            height: 274px
+            margin-left: -10px
+            margin-bottom: -10px
+        &_product-views-small
+            height: 172px
+            margin-left: -10px
+            margin-bottom: -10px
+        &_traffic-channel
+            height: 358px
+            margin-left: -10px
+        &_active-customers
+            height: 244px
+            margin-left: -10px
+            margin-bottom: -10px
+        &_top-country
+            height: 274px
+            margin-bottom: -10px
+            +m
+                margin-top: -10px
+                margin-bottom: 0
+        &_new-customers
+            height: 274px
+            margin-bottom: -10px
+            +t
+                max-width: 310px
+                margin: 0 auto
+            +m
+                margin: -10px auto 0
+        &_performance-by-day
+            height: 250px
+            margin-left: -15px
+            margin-bottom: -10px
+        &_product-sales
+            height: 335px
+            margin-left: -15px
+            margin-bottom: -15px
+    &__full
+        width: 40px
+        height: 40px
+        margin-left: auto
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $p1
+    &__sorting
+        display: flex
+        margin-left: auto
+    &__sorting &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        width: 40px
+        height: 40px
+        border-radius: 8px
+        .icon
+            width: 24px
+            height: 24px
+            fill: $shades1
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $n7
+                +dark
+                    fill: $n1
+        &.active
+            background: $n1
+            box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(0, 0, 0, 0.04), inset 0px 2px 0px rgba(255, 255, 255, 0.25)
+            .icon
+                fill: $n7
+            +dark
+                box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(0, 0, 0, 0.04), inset 0px 2px 0px rgba(255, 255, 255, 0.05)
+                background: $n8
+                .icon
+                    fill: $n1
+        &:not(:last-child)
+            margin-right: 12px
+    &__nav
+        display: flex
+        +m
+            width: 100%
+    &__nav &__link
+        padding: 8px 16px
+        border-radius: 8px
+        +base1-s
+        color: $n4
+        transition: all .2s
+        +m
+            flex: 1
+        &:hover,
+        &.active
+            color: $n7
+            +dark
+                color: $n1
+        &.active
+            background: $n3
+            +dark
+                background: $n6
+        &:not(:last-child)
+            margin-right: 8px
+            +m
+                margin-right: 0
+    &__legend
+        display: flex
+        justify-content: space-between
+        margin-top: 12px
+    &__indicator
+        display: flex
+        align-items: center
+        +caption2
+        font-weight: 700
+    &__color
+        flex-shrink: 0
+        width: 16px
+        height: 16px
+        margin-right: 8px
+        border-radius: 4px
+    &:not(:last-child)
+        margin-bottom: 8px

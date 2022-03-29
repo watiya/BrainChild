@@ -1,0 +1,192 @@
+.notification
+    &__row
+        display: flex
+        align-items: flex-start
+        +t
+            display: block
+    &__col
+        &:first-child
+            flex: 0 0 calc(100% - 340px)
+            width: calc(100% - 340px)
+            padding-right: 8px
+            +d
+                flex: 0 0 calc(100% - 300px)
+                width: calc(100% - 300px)
+            +t
+                width: 100%
+                padding-right: 0
+        &:nth-child(2)
+            flex-shrink: 0
+            width: 340px
+            position: sticky
+            top: 102px
+            +x
+                top: 86px
+            +d
+                width: 300px
+            +t
+                display: none
+    .actions
+        margin-left: 16px
+    .actions__button
+        +dark
+            background: $n6
+    .select
+        min-width: 105px
+    &__item
+        position: relative
+        display: flex
+        padding: 12px
+        border-radius: 12px
+        transition: background .2s
+        +m
+            padding: 0
+            border-radius: 0
+        &:hover
+            +rmin(768)
+                background: $n2
+                +dark
+                    background: $n6
+        &:after
+            content: ""
+            position: absolute
+            top: 18px
+            right: 12px
+            width: 12px
+            height: 12px
+            border-radius: 50%
+            background: $shades1
+            transition: background .2s
+            +m
+                display: none
+        &.new
+            &:after
+                background: $p1
+        &:not(:last-child)
+            margin-bottom: 41px
+            +m
+                margin-bottom: 24px
+                padding-bottom: 24px
+                border-bottom: 1px solid $n3
+                +dark
+                    border-color: $n6
+            &:before
+                content: ""
+                position: absolute
+                top: calc(100% + 20px)
+                left: 12px
+                right: 12px
+                height: 1px
+                background: $n3
+                +m
+                    display: none
+                +dark
+                    background: $n6
+    &__avatar
+        position: relative
+        flex-shrink: 0
+        width: 64px
+        height: 64px
+        & > img
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            object-fit: cover
+    &__icon
+        position: absolute
+        right: -2px
+        bottom: -2px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 28px
+        height: 28px
+        border-radius: 50%
+        border: 2px solid $n
+        +dark
+            border-color: $n7
+        img
+            width: 16px
+    &__details
+        flex: 0 0 calc(100% - 64px)
+        width: calc(100% - 64px)
+        padding-left: 12px
+    &__line
+        display: flex
+        align-items: center
+        padding-right: 24px
+    &__subtitle
+        margin-right: 4px
+        font-weight: 700
+        color: $n7
+        +dark
+            color: $n1
+    &__login
+        margin-right: auto
+        font-weight: 500
+        color: $shades1
+    &__time
+        margin-left: 16px
+        +caption1
+        color: $shades1
+    &__content
+        font-weight: 500
+        color: $n4
+        strong
+            font-weight: 700
+            color: $n7
+            +dark
+                color: $n1
+    &__comment
+        margin-top: 8px
+        font-weight: 500
+    &__control
+        display: flex
+        align-items: center
+        margin-top: 8px
+    &__action
+        +button1
+        color: $n7
+        transition: color .2s
+        +dark
+            color: $n1
+        &:hover
+            color: $p1
+        &:not(:last-child)
+            margin-right: 24px
+        &_favorite
+            span
+                display: none
+            &.active
+                color: $p1
+                span
+                    display: inline
+    &__group
+        display: flex
+        flex-direction: column
+    .checkbox,
+    .radio
+        &:not(:last-child)
+            margin-bottom: 16px
+    &__btns
+        display: flex
+        margin: 32px -6px 0
+        .notification__button
+            width: calc(50% - 12px)
+            flex: 0 0 calc(50% - 12px)
+            margin: 0 6px
+    &__variants
+        display: flex
+        flex-direction: column
+        margin-top: 32px
+        padding-top: 32px
+        border-top: 1px solid $n3
+        +dark
+            border-color: $n6
+    &__foot
+        margin-top: 32px
+        text-align: center
+        .notification__button
+            .loader
+                transform: scale(.8)
+                margin: 0 18px 0 8px

@@ -1,0 +1,109 @@
+.post
+    &__title
+        margin-bottom: 24px
+    &__list
+        display: flex
+        margin-bottom: 24px
+    &__avatar
+        position: relative
+        width: 48px
+        height: 48px
+        & > img
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            object-fit: cover
+        &:not(:last-child)
+            margin-right: 24px
+    &__social
+        position: absolute
+        right: -4px
+        bottom: -4px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 24px
+        height: 24px
+        border-radius: 50%
+        border: 2px solid $n1
+        background: $p1
+        +dark
+            border-color: $n7
+        .icon
+            width: 12px
+            height: 12px
+            fill: $n1
+    &__textarea
+        width: 100%
+        height: 132px
+        background: none
+        border: none
+        box-shadow: none
+        resize: none
+        +title1-s
+        color: $n7
+        +dark
+            color: $n1
+        &::placeholder
+            color: $shades3 
+            +dark
+                color: $shades1
+    &__info
+        margin-bottom: 12px
+        +title1-s
+    &__preview
+        img
+            width: 100%
+            border-radius: 8px
+    &__foot
+        display: flex
+        align-items: center
+        margin-top: 24px
+        padding-top: 24px
+        border-top: 1px solid $n3
+        +dark
+            border-color: $n6
+    &__files
+        display: flex
+        margin-right: auto
+    &__file
+        position: relative
+        border-radius: 50%
+        overflow: hidden
+        input
+            position: absolute
+            top: 0 
+            left: 0
+            font-size: 120px
+            opacity: 0
+        input:hover + .post__icon
+            background: $n3
+            cursor: pointer
+            .icon
+                fill: $n7
+            +dark
+                background: $n6
+                .icon
+                    fill: $n1
+        &.active
+            .post__icon
+                background: $n3
+        &:not(:last-child)
+            margin-right: 16px
+    &__icon
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        transition: all .2s
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n4
+            transition: fill .2s
+    &__button
+        .icon
+            width: 24px
+            height: 24px

@@ -1,0 +1,201 @@
+.messenger
+    flex-grow: 1
+    border: 1px solid $n3
+    border-radius: 12px
+    +t
+        height: 100%
+        border: none
+    +dark
+        border-color: $n6
+    &__wrapper
+        position: relative
+        height: calc(100% - 104px)
+        padding: 96px 24px
+        +t
+            height: calc(100% - 88px)
+        +m
+            height: calc(100% - 72px)
+            padding: 64px 16px 72px
+    &__wrapper > &__button
+        position: absolute
+        top: 24px
+        left: 50%
+        transform: translateX(-50%)
+        +m
+            top: 12px
+    &__list
+        max-height: 100%
+        flex-grow: 1
+        overflow: auto
+        -webkit-overflow-scrolling: touch
+    &__panel
+        padding: 24px
+        border-radius: 12px 12px 0 0
+        background: $n2
+        +t
+            background: none
+            box-shadow: inset 0 -1px 0 0 $n3
+        +m
+            padding: 16px
+        +dark
+            background: $n6
+            +t
+                background: none
+                box-shadow: inset 0 -1px 0 0 $n6
+    &__line
+        display: flex
+        align-items: center
+    &__line &__man
+        margin-right: auto
+        +title1-s
+    &__close
+        display: none
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        margin-left: 12px
+        +t
+            display: inline-block
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+        +dark
+            +t
+                background: $n6
+    &__parameters
+        display: flex
+        flex-wrap: wrap
+        margin-left: -12px
+        +w
+            margin-top: 8px
+        +t
+            display: none
+    &__parameter
+        margin-left: 12px
+        +caption1
+        font-weight: 500
+        color: $n4
+        span
+            font-weight: 700
+            color: $n5
+            +dark
+                color: $n1
+        &:not(:first-child)
+            position: relative
+            padding-left: 14px
+            &:before
+                content: ""
+                position: absolute
+                top: 2px
+                left: 0
+                width: 2px
+                height: 12px
+                border-radius: 2px
+                background: rgba($n4, .51)
+    .actions__button
+        background: $n1 !important
+        +dark
+            background: $shades4 !important
+            +t
+                background: $n6 !important
+    .actions__body:before
+        +dark
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='10' fill='none' viewBox='0 0 20 10'%3E%3Cpath d='M6.927 1.687L0 10h20l-6.927-8.313a4 4 0 0 0-6.146 0z' fill='%23111315'/%3E%3C/svg%3E")
+            +t
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='10' fill='none' viewBox='0 0 20 10'%3E%3Cpath d='M6.927 1.687L0 10h20l-6.927-8.313a4 4 0 0 0-6.146 0z' fill='%23272B30'/%3E%3C/svg%3E")
+    &__item
+        display: flex
+        &:not(:last-child)
+            margin-bottom: 32px
+    &__avatar
+        flex-shrink: 0
+        width: 40px
+        height: 40px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+    &__details
+        flex: 0 0 calc(100% - 40px)
+        max-width: calc(100% - 40px)
+        padding-left: 16px
+    &__head
+        display: flex
+        align-items: center
+        margin-bottom: 4px
+    &__head &__man
+        color: $n4
+    &__time
+        margin-left: 12px
+        +caption1
+        color: $shades1
+    &__content
+        font-weight: 500
+        a
+            font-weight: 600
+            color: $p1
+    &__send
+        position: absolute
+        left: 24px
+        right: 24px
+        bottom: 24px
+        display: flex
+        align-items: center
+        +m
+            left: 16px
+            right: 16px
+            bottom: 16px
+    &__file,
+    .smile
+        flex-shrink: 0
+        margin-right: 24px
+        +m
+            margin-right: 12px
+    &__file
+        position: relative
+        overflow: hidden
+        input
+            position: absolute
+            top: 0
+            left: 0
+            font-size: 140px
+            opacity: 0
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        input:hover + svg
+            fill: $n7
+            +dark
+                fill: $p1
+    &__form
+        position: relative
+        flex-grow: 1
+    &__input
+        width: 100%
+        height: 48px
+        padding: 0 96px 0 10px
+        border-radius: 12px
+        border: 2px solid $n3
+        background: $n2
+        +base1-s
+        color: $n7
+        &::placeholder
+            color: $n4
+        &:focus
+            border-color: rgba($p1, .35)
+            background: $n
+        +dark
+            background: $n6
+            border-color: $n6
+            color: $n1
+            &:focus
+                background: $n8
+    &__form &__button
+        position: absolute
+        top: 50%
+        right: 4px
+        transform: translateY(-50%)

@@ -1,0 +1,62 @@
+---
+title: "Core - Dashboard Builder"
+pageContainerHide: true
+pageClass: page_simple
+---
+extends layouts/layout
+block content
+	.login
+		.login__col
+			.login__wrap
+				.login__preview
+					img(src="img/content/login-pic.png" alt="Login")
+				.h4.login__subtitle Plan includes
+				ul.login__list
+					li Unlimited product uploads
+					li Pro tips
+					li Free forever
+					li Full author options
+		.login__col
+			.login__head
+				a.login__logo(href="#")
+					img.some-icon(src="img/logo-dark.png" alt="Core")
+					img.some-icon-dark(src="img/logo-light.png" alt="Core")
+				.login__info Already a member? <a href="sign-in.html">Sign in</a>
+			.login__wrapper
+				.h2.login__title Sign up
+				.login__entry
+					.login__top
+						.login__text Sign up with Open account
+						.login__btns
+							button.button-stroke.login__button
+								img(src="img/content/google.svg" alt="Google")
+								| Google
+							button.button-stroke.login__button
+								img.some-icon(src="img/content/apple-dark.svg" alt="Apple")
+								img.some-icon-dark(src="img/content/apple-light.svg" alt="Apple")
+								| Apple ID
+					.login__text Or continue with email address
+					.login__fieldset
+						.field.field_icon
+							.field__wrap
+								input.field__input(type="emial" name="email" placeholder="Your email")
+								.field__icon
+									+i('mail')
+						button.button.login__button Continue
+						.login__note This site is protected by reCAPTCHA and the Google Privacy Policy.
+				.login__code
+					.login__text We just send you a verify code. Check your inbox to get them.
+					.login__row
+						.login__field
+							input.error(type="tel" name="code1" autocomplete="off")
+						.login__field
+							input(type="tel" name="code2" autocomplete="off")
+						.login__field
+							input(type="tel" name="code3" autocomplete="off")
+						.login__field
+							input(type="tel" name="code4" autocomplete="off")
+					.login__error The code you entered is incorrect.
+					a.button.login__button(href="index.html#header")
+						+loader
+						span Continue
+					.login__note This site is protected by reCAPTCHA and the Google Privacy Policy.

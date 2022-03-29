@@ -1,0 +1,855 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarProducts: visible
+classSidebarProductsDashboard: active
+pageTitle: "Products dashboard"
+---
+extends layouts/layout
+block content
+	.card
+		.card__head
+			.title-purple.card__title Overview
+			select.select.select_small
+				option This week
+				option This month
+				option This year
+		.stock
+			.stock__list
+				.stock__item(style="background-color: #edf8f2;")
+					.stock__icon
+						+i('activity')
+					.stock__line
+						.stock__details
+							.stock__category Earning
+								.tooltip(title="Small description")
+									+i('info')
+							.stock__counter 128k
+							.stock__indicator 
+								.balance.positive
+									+i('arrow-top')
+									| 37.8%
+								<span>this week</span>
+						.stock__chart
+							div#dashboard-products-earning
+				.stock__item(style="background-color: #ecf9fe;")
+					.stock__icon
+						+i('shopping-bag')
+					.stock__line
+						.stock__details
+							.stock__category Customer
+								.tooltip(title="Small description")
+									+i('info')
+							.stock__counter 512
+							.stock__indicator 
+								.balance.negative
+									+i('arrow-bottom')
+									| 37.8%
+								<span>this week</span>
+						.stock__chart
+							div#dashboard-products-customer
+				.stock__item(style="background-color: #f2efff;")
+					.stock__icon
+						+i('payment')
+					.stock__line
+						.stock__details
+							.stock__category Payouts
+								.tooltip(title="Small description")
+									+i('info')
+							.stock__counter 64k
+							.stock__indicator 
+								.balance.positive
+									+i('arrow-top')
+									| 37.8%
+								<span>this week</span>
+						.stock__chart
+							div#dashboard-products-payouts
+	.page__row
+		.page__col
+			.card
+				.card__head
+					.title-green.card__title Product activity
+					.card__select.mobile-hide
+						select.select.select_small
+							option Last 2 weeks
+							option Last 7 days
+				.activity
+					.activity__table
+						.activity__row
+							.activity__col Week
+							.activity__col Products
+							.activity__col Views
+							.activity__col Likes
+							.activity__col Comments
+						.activity__row
+							.activity__col
+								.activity__label Week
+								| 25 Sep - 1 Oct
+							.activity__col
+								.activity__label Products
+								.activity__item
+									.activity__counter(style="background-color: #B5E4CA;") 8
+									.balance.positive
+										+i('arrow-top')
+										| 37.8%
+							.activity__col
+								.activity__label Views
+								.activity__item
+									.activity__counter(style="background-color: #CABDFF;") 24k
+									.balance.positive
+										+i('arrow-top')
+										| 24.3%
+							.activity__col
+								.activity__label Likes
+								.activity__item
+									.activity__counter(style="background-color: #B1E5FC;") 48
+									.balance.negative
+										+i('arrow-bottom')
+										| 17.8%
+							.activity__col
+								.activity__label Comments
+								.activity__item
+									.activity__counter(style="background-color: #FFD88D;") 16
+									.balance.negative
+										+i('arrow-bottom')
+										| 56%
+						.activity__row
+							.activity__col
+								.activity__label Week
+								| 18 Sep - 24 Oct
+							.activity__col
+								.activity__label Products
+								.activity__item
+									.activity__counter(style="background-color: #EFEFEF;") 8
+									.balance.positive
+										+i('arrow-top')
+										| 17.2%
+							.activity__col
+								.activity__label Views
+								.activity__item
+									.activity__counter(style="background-color: #EFEFEF;") 24k
+									.balance.positive
+										+i('arrow-top')
+										| 11.4%
+							.activity__col
+								.activity__label Likes
+								.activity__item
+									.activity__counter(style="background-color: #EFEFEF;") 48
+									.balance.negative
+										+i('arrow-bottom')
+										| 22.8%
+							.activity__col
+								.activity__label Comments
+								.activity__item
+									.activity__counter(style="background-color: #EFEFEF;") 16
+									.balance.negative
+										+i('arrow-bottom')
+										| 49.5%
+					.activity__nav
+						button.activity__link.active Last 2 weeks
+						button.activity__link Last 7 days
+		.page__col
+			.card
+				.card__head
+					.title-blue.card__title Product views
+				.card__chart.card__chart_product-views-small
+					div(id="product-views-small")
+	.products.card.js-tabs
+		.products__head
+			.title-purple.products__title Products
+			+form('text', 'search', 'Search product', 'search')
+			.products__indicators
+				button.button-stroke.button-small.products__button Deleted
+				button.button-stroke.button-small.products__button Set status
+				.products__counter 3 selected
+			.products__nav
+				button.products__link.js-tabs-link.active Market
+				button.products__link.js-tabs-link Traffic sources
+				button.products__link.js-tabs-link Viewers
+			.products__select.tablet-show
+				select.select.select_small.js-tabs-select
+					option Market
+					option Traffic sources
+					option Viewers
+		.products__container
+			.products__tab.js-tabs-item(style="display: block;")
+				.products__wrapper
+					.products__table
+						.products__row
+							.products__col
+								label.checkbox
+									input.checkbox__input(type="checkbox")
+									span.checkbox__inner
+										span.checkbox__tick
+							.products__col Product
+							.products__col Status
+							.products__col Price
+							.products__col Sales
+							.products__col Views
+							.products__col Likes
+						mixin productsRow(srcSet, src, title, category, status, price, sales, balanceStatus, balance, views, viewsPercent, likes, likesPercent, classActions)
+							.products__row
+								.products__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.products__col
+									a.products__item(href="#" data-popup=".js-popup-product")
+										.products__preview
+											img(srcSet=`${srcSet} 2x` src=src alt="Product")
+										.products__details
+											.products__subtitle=title
+											.products__wrap
+												.products__price $
+													=price
+												.products__category=category
+								.products__col
+									.products__label Status
+									if status
+										.status-green.products__status Active
+									else
+										.status-red.products__status Deactive
+									+control(classActions)
+								.products__col $
+									=price
+								.products__col
+									.products__label Sales
+									.products__sales
+										.products__number $
+											=sales
+										if balanceStatus
+											.balance.positive
+												+i('arrow-top')
+												=balance
+										else
+											.balance.negative
+												+i('arrow-bottom')
+												=balance
+								.products__col
+									.products__label Views
+									.products__box
+										.products__number=views
+										.products__line
+											.products__progress.products__progress_views(style=`width: ${viewsPercent}`)
+								.products__col
+									.products__label Likes
+									.products__box
+										.products__number=likes
+										.products__line
+											.products__progress.products__progress_likes(style=`width: ${likesPercent}`)
+						+productsRow('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Bento Matte 3D Illustration', 'UI design kit', true, '98', '3,200', true, '37.8', '48k', '20%', '111', '90%')
+						+productsRow('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'DSM - Geometry pattern', 'UI design kit', false, '48', '800', true, '10.8', '80k', '100%', '17', '20%')
+						+productsRow('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Node - Crypto iOS UI design kit', 'UI design kit', true, '98', '3,200', false, '24.2', '48k', '40%', '111', '90%')
+						+productsRow('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'TaskEz: Productivity App iOS UI Kit', 'UI design kit', false, '48', '800', true, '40.1', '32k', '40%', '34', '40%')
+						+productsRow('img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'Bento Matte 3D Illustration', 'UI design kit', true, '98', '3,200', false, '15.2', '48k', '20%', '111', '90%')
+						+productsRow('img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg', 'DSM - Geometry pattern', 'UI design kit', false, '48', '800', true, '44.4', '80k', '100%', '17', '20%')
+						+productsRow('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Bento Matte 3D Illustration', 'UI design kit', true, '98', '3,200', true, '37.8', '48k', '20%', '80', '70%', 'actions_up')
+						+productsRow('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'DSM - Geometry pattern', 'UI design kit', false, '48', '800', true, '10.8', '40k', '50%', '17', '20%', 'actions_up')
+						+productsRow('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Node - Crypto iOS UI design kit', 'UI design kit', true, '98', '3,200', false, '24.2', '48k', '20%', '111', '90%', 'actions_up')
+						+productsRow('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'TaskEz: Productivity App iOS UI Kit', 'UI design kit', false, '48', '800', true, '40.1', '80k', '100%', '17', '20%', 'actions_up')
+				.products__foot
+					button.products__arrow
+						+i('arrow-left')
+					button.products__arrow
+						+i('arrow-right')
+			.products__tab.js-tabs-item
+				.statistics
+					.statistics__wrapper
+						.statistics__table
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col Product
+								.statistics__col
+									.statistics__control
+										.statistics__info Traffic source
+										.statistics__indicators
+											.statistics__legend
+												.statistics__color(style="background-color: #FFBC99;")
+												| Market
+											.statistics__legend
+												.statistics__color(style="background-color: #CABDFF;")
+												| Social media
+											.statistics__legend
+												.statistics__color(style="background-color: #B5E4CA;")
+												| Direct
+											.statistics__legend
+												.statistics__color(style="background-color: #B1E5FC;")
+												| UI8
+											.statistics__legend
+												.statistics__color(style="background-color: #FFD88D;")
+												| Others
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-1@2x.jpg 2x" src="img/content/product-pic-1.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Bento Matte 3D Illustration
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 40%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #B1E5FC; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 60%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control(classActions)
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-2@2x.jpg 2x" src="img/content/product-pic-2.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Node - Crypto iOS UI design kit
+											.statistics__date 4 Oct - 11 Oct
+								.statistics__col
+									.statistics__line(style="width: 70%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 12%;")
+											.statistics__tooltip
+												.statistics__subtitle Social media
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 320k
+										.statistics__box(style="background-color: #B5E4CA; width: 30%;")
+											.statistics__tooltip
+												.statistics__subtitle Direct
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 650k
+										.statistics__box(style="background-color: #B1E5FC; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 18%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control(classActions)
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-3@2x.jpg 2x" src="img/content/product-pic-3.jpg" alt="Product")
+										.statistics__details
+											.statistics__product TaskEz: Productivity App iOS UI Kit
+											.statistics__date 11 Oct - 18 Oct
+								.statistics__col
+									.statistics__line(style="width: 100%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #B5E4CA; width: 30%;")
+											.statistics__tooltip
+												.statistics__subtitle Direct
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 650k
+										.statistics__box(style="background-color: #B1E5FC; width: 40%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 10%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control(classActions)
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-4@2x.jpg 2x" src="img/content/product-pic-4.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Academe 3D Education Icons
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 50%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #B1E5FC; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 60%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control(classActions)
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-5@2x.jpg 2x" src="img/content/product-pic-5.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Node - Crypto iOS UI design kit
+											.statistics__date 4 Oct - 11 Oct
+								.statistics__col
+									.statistics__line(style="width: 70%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 12%;")
+											.statistics__tooltip
+												.statistics__subtitle Social media
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 320k
+										.statistics__box(style="background-color: #B5E4CA; width: 30%;")
+											.statistics__tooltip
+												.statistics__subtitle Direct
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 650k
+										.statistics__box(style="background-color: #B1E5FC; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 18%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control('actions_up')
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-6@2x.jpg 2x" src="img/content/product-pic-6.jpg" alt="Product")
+										.statistics__details
+											.statistics__product TaskEz: Productivity App iOS UI Kit
+											.statistics__date 11 Oct - 18 Oct
+								.statistics__col
+									.statistics__line(style="width: 100%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #B5E4CA; width: 30%;")
+											.statistics__tooltip
+												.statistics__subtitle Direct
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 650k
+										.statistics__box(style="background-color: #B1E5FC; width: 40%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 10%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control('actions_up')
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-1@2x.jpg 2x" src="img/content/product-pic-1.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Bento Matte 3D Illustration
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 40%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #B1E5FC; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 60%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control('actions_up')
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-2@2x.jpg 2x" src="img/content/product-pic-2.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Node - Crypto iOS UI design kit
+											.statistics__date 4 Oct - 11 Oct
+								.statistics__col
+									.statistics__line(style="width: 70%")
+										.statistics__box(style="background-color: #FFBC99; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Market
+												.statistics__legend
+													.statistics__color(style="background-color: #FFBC99;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 12%;")
+											.statistics__tooltip
+												.statistics__subtitle Social media
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 320k
+										.statistics__box(style="background-color: #B5E4CA; width: 30%;")
+											.statistics__tooltip
+												.statistics__subtitle Direct
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 650k
+										.statistics__box(style="background-color: #B1E5FC; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle UI8
+												.statistics__legend
+													.statistics__color(style="background-color: #B1E5FC;")
+													| 512k
+										.statistics__box(style="background-color: #FFD88D; width: 18%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #FFD88D;")
+													| 498k
+									+control('actions_up')
+					.statistics__foot
+						button.button-stroke.statistics__button Load more
+			.products__tab.js-tabs-item
+				.statistics
+					.statistics__wrapper
+						.statistics__table
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col Product
+								.statistics__col
+									.statistics__control
+										.statistics__info Viewer
+										.statistics__indicators
+											.statistics__legend
+												.statistics__color(style="background-color: #B5E4CA;")
+												| Followers
+											.statistics__legend
+												.statistics__color(style="background-color: #CABDFF;")
+												| Others
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-1@2x.jpg 2x" src="img/content/product-pic-1.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Bento Matte 3D Illustration
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 40%")
+										.statistics__box(style="background-color: #B5E4CA; width: 40%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 60%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-2@2x.jpg 2x" src="img/content/product-pic-2.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Node - Crypto iOS UI design kit
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 100%")
+										.statistics__box(style="background-color: #B5E4CA; width: 30%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 70%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-3@2x.jpg 2x" src="img/content/product-pic-3.jpg" alt="Product")
+										.statistics__details
+											.statistics__product TaskEz: Productivity App iOS UI Kit
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 60%")
+										.statistics__box(style="background-color: #B5E4CA; width: 80%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 20%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-4@2x.jpg 2x" src="img/content/product-pic-4.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Bento Matte 3D Illustration
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 30%")
+										.statistics__box(style="background-color: #B5E4CA; width: 50%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 50%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-5@2x.jpg 2x" src="img/content/product-pic-5.jpg" alt="Product")
+										.statistics__details
+											.statistics__product TaskEz: Productivity App iOS UI Kit
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 40%")
+										.statistics__box(style="background-color: #B5E4CA; width: 40%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 60%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-6@2x.jpg 2x" src="img/content/product-pic-6.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Bento Matte 3D Illustration
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 100%")
+										.statistics__box(style="background-color: #B5E4CA; width: 40%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 60%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control('actions_up')
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-1@2x.jpg 2x" src="img/content/product-pic-1.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Bento Matte 3D Illustration
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 60%")
+										.statistics__box(style="background-color: #B5E4CA; width: 70%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 30%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control('actions_up')
+							.statistics__row
+								.statistics__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.statistics__col
+									a.statistics__item(href="#" data-popup=".js-popup-product")
+										.statistics__preview
+											img(srcSet="img/content/product-pic-3@2x.jpg 2x" src="img/content/product-pic-3.jpg" alt="Product")
+										.statistics__details
+											.statistics__product Bento Matte 3D Illustration
+											.statistics__date 25 Sep - 4 Oct
+								.statistics__col
+									.statistics__line(style="width: 90%")
+										.statistics__box(style="background-color: #B5E4CA; width: 40%;")
+											.statistics__tooltip
+												.statistics__subtitle Followers
+												.statistics__legend
+													.statistics__color(style="background-color: #B5E4CA;")
+													| 550k
+										.statistics__box(style="background-color: #CABDFF; width: 60%;")
+											.statistics__tooltip
+												.statistics__subtitle Others
+												.statistics__legend
+													.statistics__color(style="background-color: #CABDFF;")
+													| 512k
+									+control('actions_up')
+					.statistics__foot
+						button.button-stroke.statistics__button Load more
+
+	

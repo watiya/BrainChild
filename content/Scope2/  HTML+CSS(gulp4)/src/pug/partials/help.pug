@@ -1,0 +1,39 @@
+.help
+	.help__head
+		+i('help')
+		| Help & getting started
+		button.help__close
+			+i('close')
+	.help__list
+		mixin itemHelp(srcSet, src, title, classStatus, statusText, avatar, time)
+			a.help__item(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-caption="Use guidelines")
+				.help__preview
+					img(srcSet=`${srcSet} 2x` src=src alt=title)
+				.help__details
+					.help__title=title
+					.help__line
+						if statusText
+							div(class=classStatus)=statusText 
+						.help__user
+							.help__avatar
+								img(src=avatar alt="Avatar")
+							.help__time=time
+		+itemHelp('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Exclusive downloads', 'status-purple help__status', 'New', 'img/content/avatar-1.jpg', '3 mins')
+		+itemHelp('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'Behind the scenes', 'status-purple help__status', 'New', 'img/content/avatar-2.jpg', '5 mins')
+		+itemHelp('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Use guidelines', '', '', 'img/content/avatar-3.jpg', '8 mins')
+		+itemHelp('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'Life & work update', '', '', 'img/content/avatar-4.jpg', '12 mins')
+		+itemHelp('img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'Promote your product', '', '', 'img/content/avatar-5.jpg', '33 mins')
+	.help__menu
+		a.help__link(href="upgrade-to-pro.html" class=classUpgradeToPro)
+			+i('lightning')
+			| Upgrade to Pro
+			.help__arrow
+				+i('arrow-next')
+		a.help__link(href="index.html")
+			+i('download')
+			| Download desktop app
+		a.help__link(href="message-center.html" class=classMessageCenter)
+			+i('message')
+			| Message center
+			.help__counter 8
+.overlay

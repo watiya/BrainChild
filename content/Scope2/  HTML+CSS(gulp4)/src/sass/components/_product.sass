@@ -1,0 +1,383 @@
+.product
+    &__wrapper
+        position: relative
+        width: 100%
+        max-width: 1020px
+        background: $n1
+        border-radius: 8px
+        +d
+            max-width: calc(100% - 88px)
+        +m
+            max-width: 100%
+        +dark
+            background: $n7
+    &__details
+        padding: 24px
+        flex-grow: 1
+        +m
+            padding: 16px
+            overflow: hidden
+    &__comments
+        display: none
+        flex-shrink: 0
+        width: 472px
+        +d
+            width: 600px
+        +t
+            width: 100%
+    &__next
+        position: absolute
+        left: calc(100% + 24px)
+        bottom: 256px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 64px
+        height: 64px
+        background: $n
+        border-radius: 50%
+        +d
+            left: auto
+            right: -88px
+            bottom: 0
+        +m
+            display: none
+        +dark
+            background: $n6
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $p1
+    &__control
+        position: absolute
+        top: 24px
+        left: 24px
+        right: 24px
+        display: flex
+        align-items: center
+        +m
+            top: 16px
+            left: 16px
+            right: 16px
+        .product__button
+            +dark
+                background: $n7
+                box-shadow: inset 0 0 0 2px $n6
+                color: $n1
+                &:hover
+                    background: $n6
+    &__close
+        width: 36px
+        height: 36px
+        margin-left: auto
+        border-radius: 50%
+        background: $n
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06)
+        font-size: 0
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n5
+            transition: transform .2s
+        +dark
+            background: $n7
+            .icon
+                fill: $n1
+        &:hover
+            .icon
+                transform: rotate(90deg)
+    &__head
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+        +m
+            flex-wrap: wrap
+            margin-bottom: 32px
+    &__nav
+        display: flex
+        margin-right: auto
+        +m
+            width: 100%
+            margin: 0 0 16px
+    &__link
+        padding: 8px 16px
+        border-radius: 8px
+        +base1-s
+        color: $n4
+        transition: all .2s
+        +m
+            flex: 1
+        &:hover,
+        &.active
+            color: $n7
+            +dark
+                color: $n1
+        &.active
+            background: $n3
+            +dark
+                background: $n6
+        &:not(:last-child)
+            margin-right: 8px
+            +m
+                margin-right: 0
+    &__btns
+        display: flex
+        align-items: center
+    &__favorite
+        margin-right: 16px
+        .icon
+            width: 24px
+            height: 24px
+            fill: $p3
+        &:hover
+            box-shadow: inset 0 0 0 1px $p3
+            background: $p3
+            color: $n1
+            +dark
+                box-shadow: inset 0 0 0 1px $p3
+            .icon
+                fill: $n1
+    &__buy
+        +t
+            padding: 0 16px
+        +m
+            flex-grow: 1
+        .icon
+            width: 24px
+            height: 24px
+    &__inner
+        display: inline-flex
+        align-items: center
+        span
+            margin-left: 4px
+            +t
+                display: none
+    &__price
+        margin-right: 20px
+        padding-right: 20px
+        border-right: 1px solid #4493FC
+        box-shadow: 1px 0 0 0 #186FE3
+        line-height: 48px
+        +t
+            margin-right: 16px
+            padding-right: 16px
+        +m
+            margin-right: 12px
+            padding-right: 12px
+    &__title
+        margin-bottom: 12px
+        +m
+            font-size: 24px
+    &__info
+        margin-bottom: 12px
+        +title1-m
+        color: $n4
+        +m
+            font-size: 14px
+    &__line
+        display: flex
+        align-items: center
+    &__author
+        display: flex
+        align-items: center
+        +base2
+        color: $n4
+        span
+            margin-left: 4px
+            color: $n7
+            +dark
+                color: $n1
+    &__author &__avatar
+        flex-shrink: 0
+        width: 32px
+        height: 32px
+        margin-right: 12px
+    &__avatar
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+    &__rating
+        display: flex
+        align-items: center
+        margin-left: 12px
+        +base2
+        .icon
+            width: 24px
+            height: 24px
+            margin-right: 8px
+            fill: #FFC554
+    &__counter
+        margin-left: 4px
+        color: $n4
+    &__gallery
+        position: relative
+        margin-top: 40px
+        +m
+            margin-top: 32px
+        .product__button
+            position: absolute
+            left: 12px
+            bottom: 12px
+            pointer-events: none
+            +m
+                bottom: 5px
+            +dark
+                box-shadow: inset 0 0 0 2px $n6
+                background: $n7
+                color: $n1
+                &:hover
+                    background: $n6
+    &__preview
+        display: block
+        cursor: pointer
+        img
+            width: 100%
+            border-radius: 12px
+        &:not(:first-child)
+            display: none
+    &__row
+        display: flex
+        margin-top: 40px
+        +t
+            display: block
+        +m
+            margin-top: 32px
+    &__col
+        &:first-child
+            flex-grow: 1
+            padding-right: 64px
+            +d
+                padding-right: 48px
+            +t
+                padding-right: 0
+        &:nth-child(2)
+            flex-shrink: 0
+            width: 308px
+            +t
+                width: 100%
+                margin-top: 32px
+    &__subtitle
+        margin-bottom: 32px
+        +t
+            margin-bottom: 24px
+        +m
+            margin-bottom: 12px
+    &__content
+        font-weight: 500
+        color: $n5
+        +dark
+            color: $n3
+        p
+            &:not(:last-child)
+                margin-bottom: 16px
+    &__features
+        +m
+            margin-top: 12px
+        li
+            position: relative
+            padding-left: 40px
+            color: $n5
+            +dark
+                color: $n3
+            &:before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                width: 24px
+                height: 24px
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M20.707 6.293a1 1 0 0 1 0 1.414l-8.586 8.586a3 3 0 0 1-4.243 0l-3.586-3.586a1 1 0 0 1 1.414-1.414l3.586 3.586a1 1 0 0 0 1.414 0l8.586-8.586a1 1 0 0 1 1.414 0z' fill='%23b5e4ca'/%3E%3C/svg%3E") no-repeat 50% 50% / 100% auto
+            &:not(:last-child)
+                margin-bottom: 20px
+                padding-bottom: 20px
+                border-bottom: 1px solid $n3
+                +m
+                    margin-bottom: 16px
+                    padding-bottom: 16px
+                +dark
+                    border-color: $n6
+    &__panel
+        position: absolute
+        top: 16px
+        left: calc(100% + 24px)
+        display: flex
+        flex-direction: column
+        +d
+            top: 0
+            left: auto
+            right: -88px
+        +m
+            display: none
+    &__panel &__avatar,
+    &__brand,
+    &__share
+        &:not(:last-child)
+            margin-bottom: 24px
+    &__panel &__avatar,
+    &__brand,
+    &__share
+        flex-shrink: 0
+        width: 64px
+        height: 64px
+    &__brand
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        background: $n
+        +dark
+            background: $n6
+        img
+            max-height: 32px
+    &__number
+        position: absolute
+        top: 0
+        left: 0
+        min-width: 20px
+        padding: 0 4px
+        background: $n7
+        border-radius: 50%
+        text-align: center
+        font-size: 14px
+        line-height: 20px
+        color: $n1
+        +dark
+            background: $n1
+            color: $n7
+    &__share
+        background: $n
+        border-radius: 50%
+        +dark
+            background: $n6
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $p1
+    &.active
+        .product__wrapper
+            display: flex
+            max-width: 1440px
+            +d
+                max-width: 100%
+                margin-right: 0
+        .product__details
+            flex: 0 0 calc(100% - 472px)
+            width: calc(100% - 472px)
+            +d
+                display: none
+        .product__comments
+            display: block
+        .product__panel,
+        .product__next
+            display: none

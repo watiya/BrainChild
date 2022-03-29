@@ -1,0 +1,40 @@
+.search
+	.search__head
+		button.search__start
+			+i('search')
+		button.search__direction
+			+i('arrow-left')
+		input.search__input(type="text" placeholder="Search or type a command")
+		button.search__result ⌘ F
+		button.search__close
+			+i('close-circle')
+	.search__body
+		.search__box
+			.search__category Recent search
+			.search__list
+				mixin item(srcSet, src, content, title)
+					.search__item
+						a.search__link.js-popup-open(href="#popup-product" data-effect="mfp-zoom-in")
+							.search__preview
+								img(srcSet=`${srcSet} 2x` src=src alt=title)
+							.search__details
+								.search__content=content
+								.search__title=title 
+						button.search__remove
+							+i('close')
+				+item('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Small caption', 'Put your title here')
+				+item('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'Small caption', 'Put your title here')
+		.search__box
+			.search__category Suggestions
+			.search__list
+				mixin suggestion(icon, title, content)
+					a.search__suggestion(href="#" data-popup=".js-popup-product")
+						.search__icon
+							+i(icon)
+						.search__details
+							.search__title=title 
+							.search__content=content
+						.search__arrow
+							+i('arrow-next')
+				+suggestion('photos', 'Put your title here', 'Small caption')
+				+suggestion('photos', 'Put your title here', 'Small caption')

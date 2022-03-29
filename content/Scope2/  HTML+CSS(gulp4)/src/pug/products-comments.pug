@@ -1,0 +1,75 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarProducts: visible
+classSidebarProductsComments: active
+pageTitle: "Comments"
+---
+extends layouts/layout
+block content
+	.recall.card
+		.card__head
+			.title-purple.card__title Product comments
+			+form('text', 'search', 'Search product', 'search')
+		.recall__wrapper
+			.recall__table
+				.recall__row
+					.recall__col
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+					.recall__col Comments
+					.recall__col Products
+				mixin recallRow(product, category, srcSet, src, time, author, avatar, content)
+					.recall__row
+						.recall__col
+							label.checkbox
+								input.checkbox__input(type="checkbox")
+								span.checkbox__inner
+									span.checkbox__tick
+						.recall__col
+							.recall__box
+								.recall__avatar
+									img(src=avatar alt="Avatar")
+								.recall__details
+									.recall__line
+										.recall__author=author
+										.recall__time=time
+									.recall__content=content
+									.recall__control
+										button.recall__button
+											+i('repeat')
+										+favorite
+										button.recall__button
+											+i('trash')
+										+smile('smile_right')
+									+answer
+						.recall__col
+							.recall__item
+								.recall__preview
+									img(srcSet=`${srcSet} 2x` src=src alt="Product")
+								.recall__details
+									.recall__product=product
+									.recall__category=category
+				+recallRow('DSM - Geometry pattern', 'UI design kit', 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', '8h', 'Samson Heathcote', 'img/content/avatar-1.jpg', 'Awesome, keep it up.')
+				+recallRow('Node - Crypto iOS UI design kit', 'UI design kit', 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', '14h', 'Maureen Russel', 'img/content/avatar-2.jpg', 'Dude, I am unable to download, please check the link. 😢')
+				+recallRow('TaskEz: Productivity App iOS UI Kit', 'UI design kit', 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', '16h', 'Whitney Nicolas', 'img/content/avatar-3.jpg', 'Awesome, keep it up.')
+				+recallRow('Bitcloud - Crypto exchange UI kit', 'UI design kit', 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', '18h', 'Amani Rempel', 'img/content/avatar-4.jpg', 'Awesome, keep it up.')
+				+recallRow('Academe 3D Education Icons', 'UI design kit', 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', '1day', 'Corene Toy', 'img/content/avatar-5.jpg', 'Awesome, keep it up.')
+		.recall__foot
+			button.button-stroke.button-small.recall__button
+				+loader
+				span Load more
+	.panel.tablet-hide
+		.panel__info
+			+i('check-all')
+			| No comment selected
+		.panel__btns
+			button.button-stroke-red.panel__button
+				span Deleted
+				+i('trash')
+	include partials/popup-schedule
+
+
+
+	

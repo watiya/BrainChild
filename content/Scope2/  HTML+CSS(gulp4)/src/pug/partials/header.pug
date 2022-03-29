@@ -1,0 +1,141 @@
+header.header(class=classHeader data-id="#header")
+	button.header__burger
+	include search
+	button.header__search
+		+i('search')
+	.header__control
+		a.button.header__button(href="/products-add.html")
+			+i('add')
+			<span>Create</span>
+		.header__item.header__item_messages
+			button.header__head.active
+				+i('message')
+			.header__body
+				.header__top
+					.header__title Message
+					.actions.actions_small
+						button.actions__button
+							+i('more-horizontal')
+						.actions__body
+							button.actions__option
+								+i('check')
+								| Mark as read
+							button.actions__option
+								+i('trash')
+								| Delete message
+				.header__list
+					mixin message(classMessage, avatar, title, time, content)
+						a.header__message(href="message-center.html" class=classMessage)
+							.header__avatar
+								img(src=avatar alt="Avatar")
+							.header__details
+								.header__line
+									.header__subtitle=title
+									.header__time=time
+								.header__content=content
+					+message('new', 'img/content/avatar-1.jpg', 'Jarret Waelchi', '03:30PM', 'When do you release the coded template')
+					+message('online', 'img/content/avatar-2.jpg', 'Orval Casper', '11:59AM', 'When do you release the coded template')
+					+message('new', 'img/content/avatar-3.jpg', 'Michel Emard', '09:30AM', 'When do you release the coded template')
+					+message('', 'img/content/avatar-4.jpg', 'Reuben Ward', '08:00AM', 'When do you release the coded template')
+					+message('', 'img/content/avatar-5.jpg', 'Evalyn Jenkins', '07:01AM', 'When do you release the coded template')
+				a.button.header__button(href="message-center.html") View in message center
+		.header__item.header__item_notifications
+			button.header__head.active
+				+i('notification')
+			.header__body
+				.header__top
+					.header__title Notification
+					.actions.actions_small
+						button.actions__button
+							+i('more-horizontal')
+						.actions__body
+							button.actions__option
+								+i('check')
+								| Mark as read
+							button.actions__option
+								+i('trash')
+								| Delete notifications
+				.header__list
+					a.header__notification.new(href="notification.html")
+						.header__avatar
+							img(src="img/content/avatar-1.jpg" alt="Avatar")
+							.header__icon(style="background-color: #2A85FF;")
+								img(src="img/content/message.svg" alt="Status")
+						.header__details
+							.header__line
+								.header__subtitle Domenica
+								.header__login @domenica
+								.header__time 1h
+							.header__content Comment on <strong>Smiles – 3D icons</strong>
+					a.header__notification.new(href="notification.html")
+						.header__avatar
+							img(src="img/content/avatar-2.jpg" alt="Avatar")
+							.header__icon(style="background-color: #FF6A55;")
+								img(src="img/content/heart.svg" alt="Status")
+						.header__details
+							.header__line
+								.header__subtitle Janice
+								.header__login @ethel
+								.header__time 2h
+							.header__content Likes <strong>Smiles – 3D icons</strong>
+					a.header__notification.new(href="notification.html")
+						.header__avatar
+							img(src="img/content/avatar-3.jpg" alt="Avatar")
+							.header__icon(style="background-color: #83BF6E;")
+								img(src="img/content/shopping-bag.svg" alt="Status")
+						.header__details
+							.header__line
+								.header__subtitle Janiya
+								.header__login @ethel
+								.header__time 4h
+							.header__content Purchased <strong>Smiles – 3D icons</strong>
+					a.header__notification(href="notification.html")
+						.header__avatar
+							img(src="img/content/avatar-4.jpg" alt="Avatar")
+							.header__icon(style="background-color: #8E59FF;")
+								img(src="img/content/star.svg" alt="Status")
+						.header__details
+							.header__line
+								.header__subtitle Danial
+								.header__login @danial
+								.header__time 6h
+							.header__content Rate <img src="img/content/rating-star.svg" alt="Star"/> <strong>5</strong> for <strong>Smiles – 3D icons</strong>
+					a.header__notification(href="notification.html")
+						.header__avatar
+							img(src="img/content/avatar-5.jpg" alt="Avatar")
+							.header__icon(style="background-color: #2A85FF;")
+								img(src="img/content/message.svg" alt="Status")
+						.header__details
+							.header__line
+								.header__subtitle Esmeralda
+								.header__login @esmeralda
+								.header__time 8h
+							.header__content Comment on <strong>Smiles – 3D icons</strong>
+				a.button.header__button(href="notification.html") See all notifications
+		.header__item.header__item_user
+			button.header__head
+				img(src="img/content/avatar.jpg" alt="Avatar")
+			.header__body
+				.header__nav
+					a.header__link(href="shop.html" class=headerLinkProfile) Profile
+					a.header__link(href="settings.html" class=headerLinkEditProfile) Edit profile
+				.header__nav
+					a.header__link(href="customers-overview.html" class=headerLinkAnalytics)
+						+i('bar-chart')
+						| Analytics
+					a.header__link(href="affiliate-center.html" class=headerLinkAffiliateCenter)
+						+i('ticket')
+						| Affiliate center
+					a.header__link(href="explore-creators.html" class=headerLinkExploreCreators)
+						+i('grid')
+						| Explore creators
+				.header__nav
+					a.header__link.color(href="upgrade-to-pro.html" class=headerLinkUpgradeToPro)
+						+i('leaderboard')
+						| Upgrade to Pro
+				.header__nav
+					a.header__link(href="settings.html" class=headerLinkAccountSettings) Account settings
+					a.header__link(href="#") Log out
+	.header__btns
+		a.header__link(href="sign-in.html") Sign in
+		a.button.header__button(href="sign-up.html") Sign up

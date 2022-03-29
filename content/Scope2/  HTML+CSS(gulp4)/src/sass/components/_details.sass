@@ -1,0 +1,146 @@
+.details
+    position: relative
+    flex-grow: 1
+    padding: 60px 0 0 48px
+    +w
+        padding: 48px 0 0 48px
+    +t
+        padding: 0
+    &__close
+        position: absolute
+        top: 0
+        right: 0
+        width: 36px
+        height: 36px
+        border-radius: 50%
+        background: $n3
+        +t
+            top: -90px
+            background: $n1
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)
+        +m
+            top: -70px
+        .icon
+            width: 20px
+            height: 20px
+            transition: transform .2s
+        +dark
+            background: $n6
+            .icon
+                fill: $n1
+        &:hover
+            .icon
+                transform: rotate(90deg)
+    &__head,
+    .editor
+        margin-bottom: 48px
+        +x
+            margin-bottom: 32px
+    &__head
+        display: flex
+        align-items: center
+        +m
+            display: block
+    &__user
+        display: flex
+        align-items: center
+        margin-right: 24px
+        +m
+            margin: 0 0 24px
+    &__avatar
+        flex-shrink: 0
+        width: 80px
+        height: 80px
+        margin-right: 24px
+        +w
+            width: 64px
+            height: 64px
+            margin-right: 16px
+        img
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            object-fit: cover
+    &__man
+        margin-bottom: 4px
+        +title1-s
+    &__login
+        +caption1
+        color: $shades1
+    &__btns
+        display: flex
+        align-items: center
+        margin-left: auto
+        .details__button
+            .icon
+                width: 24px
+                height: 24px
+            +m
+                flex-grow: 1
+            &:first-child
+                +w
+                    width: 48px
+                    padding: 0 
+                    font-size: 0
+                    .icon
+                        &:last-child
+                            margin: 0
+                +m
+                    width: auto
+                    padding: 0 20px
+                    font-size: 15px
+                    .icon
+                        &:last-child
+                            margin-left: 8px
+            &:not(:last-child)
+                margin-right: 8px
+    &__line
+        display: flex
+        align-items: center
+        +base2
+        color: $n7
+        transition: color .2s
+        .icon
+            width: 24px
+            height: 24px
+            margin-right: 12px
+            fill: $n4
+            transition: fill .2s
+        +dark
+            color: $n1
+        &:hover
+            color: $p1
+            .icon
+                fill: $p1
+    &__socials
+        display: flex
+        align-items: center
+        padding: 20px 0
+        border-width: 1px 0
+        border-style: solid
+        border-color: $n3
+        +m
+            padding: 16px 0
+        +dark
+            border-color: $n6
+    &__social
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            .icon
+                fill: $p1
+        &:not(:last-child)
+            margin-right: 32px
+    &__line,
+    &__socials
+        &:not(:last-child)
+            margin-bottom: 20px
+            +m
+                margin-bottom: 16px
+    .history
+        margin-top: 48px
+        +x
+            margin-top: 32px

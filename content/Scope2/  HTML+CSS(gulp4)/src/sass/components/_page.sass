@@ -1,0 +1,68 @@
+.page
+    padding: 96px 0 0 340px
+    +x
+        padding: 80px 0 0 300px
+    +d
+        padding-left: 96px
+    +t
+        overflow: hidden
+    +m
+        padding-left: 0
+    &__inner
+        display: flex
+        flex-direction: column
+        min-height: calc(100vh - 96px)
+        padding: 40px
+        +x
+            padding: 32px 24px
+        +m
+            padding: 24px 16px
+    &__container
+        display: flex
+        flex-direction: column
+        flex-grow: 1
+        width: 100%
+        max-width: 1200px
+        margin: 0 auto
+        &.wide
+            max-width: 100%
+    &__title
+        margin-bottom: 24px
+        +m
+            margin-bottom: 16px
+    &__row
+        display: flex
+        +t
+            display: block
+        &:not(:last-child)
+            margin-bottom: 8px
+    &__col
+        &:first-child
+            flex: 0 0 calc(100% - 340px)
+            width: calc(100% - 340px)
+            padding-right: 8px
+            +x
+                flex: 0 0 calc(100% - 324px)
+                width: calc(100% - 324px)
+            +d
+                flex: 0 0 calc(100% - 312px)
+                width: calc(100% - 312px)
+            +t
+                width: 100%
+                margin-bottom: 8px
+                padding-right: 0
+        &:nth-child(2)
+            flex-shrink: 0
+            width: 340px
+            +x
+                width: 324px
+            +d
+                width: 312px
+            +t
+                width: 100%
+    &_simple
+        padding: 0
+        +x
+            padding: 0
+        +d
+            padding-left: 0

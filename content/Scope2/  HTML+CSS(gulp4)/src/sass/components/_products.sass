@@ -1,0 +1,305 @@
+.products
+    &__head
+        display: flex
+        align-items: center
+        margin-bottom: 44px
+        +t
+            margin-bottom: 32px
+        +m
+            flex-wrap: wrap
+            margin-bottom: 24px
+        .form
+            +w
+                width: 300px
+            +t
+                width: 250px
+            +m
+                width: 100%
+                margin: 16px 0 0
+    &__title
+        margin-right: 24px
+        +m
+            margin-right: 0
+    &__indicators
+        display: none
+        align-items: center
+        +t
+            display: none
+        .products__button
+            margin-right: 8px
+    &__counter
+        margin-left: 16px
+        +button2
+    &__select
+        min-width: 154px
+        margin-left: auto
+        +m
+            width: 100%
+            margin-top: 16px
+        .select
+            +m
+                +dark
+                    background: $n6
+                    box-shadow: inset 0 0 0 2px $n6
+                    color: $n1
+    &__nav
+        display: flex
+        margin-left: auto
+        +t
+            display: none
+    &__link
+        padding: 8px 16px
+        border-radius: 8px
+        +base1-s
+        color: $n4
+        transition: all .2s
+        &:hover,
+        &.active
+            color: $n7
+            +dark
+                color: $n1
+        &.active
+            background: $n3
+            +dark
+                background: $n6
+        &:not(:last-child)
+            margin-right: 8px
+    &__tab
+        display: none
+    &__wrapper
+        margin: 0 -12px
+        +t
+            margin: 0
+    &__table
+        display: table
+        width: 100%
+        +t
+            display: block
+    &__row
+        display: table-row
+        +t
+            position: relative
+            display: block
+        &:first-child
+            +t
+                display: none
+            .products__col
+                padding: 0 12px 16px
+                vertical-align: middle
+                +caption1
+                color: $n4
+        &:not(:first-child)
+            transition: background .2s
+            .products__col
+                &:not(:first-child):not(:nth-child(2))
+                    padding-top: 20px
+                    +t
+                        padding-top: 0
+            &:hover
+                +rmin(1024)
+                    background: $n2
+                    +dark
+                        background: $n6
+                    .products__number,
+                    .products__status
+                        background: $n1
+                    .products__number
+                        +dark
+                            background: $n5
+                    .products__status
+                        +dark
+                            background: $n7
+                    .control
+                        visibility: visible
+                        opacity: 1
+        &:not(:last-child)
+            +t
+                margin-bottom: 24px
+                padding-bottom: 24px
+                border-bottom: 1px solid $n3
+                +dark
+                    border-color: $n6
+    &__col
+        position: relative
+        display: table-cell
+        padding: 16px 12px
+        vertical-align: top
+        color: $n7
+        +t
+            position: static
+            display: flex
+            align-items: center
+            padding: 0
+        +dark
+            color: $n1
+        &:after
+            content: ""
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            height: 1px
+            background: $n3
+            +dark
+                background: $n6
+            +t
+                display: none
+        &:first-child
+            width: 56px
+            border-radius: 8px 0 0 8px
+            font-size: 0
+            +t
+                display: none
+            &:after
+                left: 12px
+        &:nth-child(4)
+            +t
+                display: none
+        &:last-child
+            border-radius: 0 8px 8px 0
+            &:after
+                right: 12px
+        &:not(:first-child):not(:last-child)
+            +t
+                margin-bottom: 12px
+    &__item
+        display: flex
+        align-items: center
+        cursor: pointer
+        color: $n7
+        transition: color .2s
+        +m
+            align-items: stretch
+        +dark
+            color: $n1
+        &:hover
+            color: $p1
+            +dark
+                color: $p1
+    &__preview
+        flex-shrink: 0
+        width: 80px
+        height: 80px
+        margin-right: 20px
+        border-radius: 8px
+        overflow: hidden
+        +t
+            width: 104px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__subtitle
+        max-width: 170px
+        margin-bottom: 4px
+        +t
+            max-width: 100%
+            margin-bottom: 8px
+            padding-right: 42px
+            +title2
+    &__wrap
+        +t
+            display: flex
+            align-items: center
+    &__category
+        +caption1
+        color: $n4
+        +t
+            font-size: 15px
+        +dark
+            color: $shades1
+    &__sales
+        display: inline-flex
+        align-items: center
+    &__number,
+    &__price
+        display: inline-block
+        padding: 0 8px
+        border-radius: 6px
+        background: $n3
+        transition: background .2s
+        +dark
+            background: $n5
+            color: $n1
+    &__price
+        display: none
+        +t
+            display: inline-block
+            margin-right: 12px
+    .balance
+        margin-left: 8px
+    &__box
+        display: flex
+        align-items: center
+    &__line
+        position: relative
+        flex-shrink: 0
+        width: 44px
+        height: 8px
+        margin-left: 8px
+        +d
+            width: 36px
+        +t
+            width: 44px
+    &__progress
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        border-radius: 2px
+        &_views
+            background: $p1
+        &_likes
+            background: $p4
+    &__status
+        transition: background .2s
+    .control
+        position: absolute
+        left: 12px
+        bottom: 16px
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +t
+            top: 0
+            left: auto
+            right: 0
+            bottom: auto
+            visibility: visible
+            opacity: 1
+    &__label
+        display: none
+        +t
+            display: block
+            flex-shrink: 0
+            width: 124px
+            padding-right: 20px
+            +caption1
+            color: $n4
+    &__foot
+        display: flex
+        justify-content: center
+        margin-top: 24px
+    &__arrow
+        width: 40px
+        height: 40px
+        border: 2px solid $n3
+        border-radius: 50%
+        transition: border-color .2s
+        +dark
+            border-color: transparent
+        .icon
+            width: 20px
+            height: 20px
+            fill: $n4
+            transition: fill .2s
+        &:hover
+            border-color: $n3
+            .icon
+                fill: $n7
+            +dark
+                border-color: $n6
+                .icon
+                    fill: $n1
+        &:not(:last-child)
+            margin-right: 8px

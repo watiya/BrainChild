@@ -1,0 +1,28 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarProducts: visible
+classSidebarProductsScheduled: active
+pageTitle: "Scheduled"
+parameterSchedule: "Scheduled for"
+---
+extends layouts/layout
+block content
+	.drafts.card
+		.card__head
+			.title-purple.card__title Products
+			+form('text', 'search', 'Search product', 'search')
+		include partials/schedule
+	.panel.tablet-hide
+		.panel__info
+			+i('check-all')
+			| 2 products selected
+		.panel__btns
+			button.button-stroke-red.panel__button
+				span Deleted
+				+i('trash')
+			button.button.panel__button Publish
+	include partials/popup-schedule
+
+
+
+	

@@ -1,0 +1,161 @@
+.login
+    position: relative
+    display: flex
+    min-height: calc(var(--vh, 1vh) * 100)
+    background: $n1
+    +dark
+        background: $n7
+    &__col
+        padding: 96px 24px
+        +m
+            padding-bottom: 32px
+        &:first-child
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-shrink: 0
+            width: 400px
+            background: $n2
+            +t
+                display: none
+            +dark
+                background: $n8
+        &:nth-child(2)
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-grow: 1
+    &__wrap
+        max-width: 212px
+    &__preview
+        max-width: 180px
+        margin: 0 auto 40px
+        img
+            width: 100%
+    &__subtitle
+        margin-bottom: 48px
+        text-align: center
+    &__list
+        li
+            position: relative
+            padding-left: 36px
+            +base2
+            color: $n4
+            &:before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                width: 24px
+                height: 24px
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-2 0a8 8 0 1 1-16 0 8 8 0 0 1 8-8 7.98 7.98 0 0 1 5.942 2.644L11 13.586l-2.793-2.793a1 1 0 0 0-1.414 1.414L9.586 15a2 2 0 0 0 2.828 0l6.687-6.687C19.676 9.416 20 10.67 20 12z' fill='%2383bf6e'/%3E%3C/svg%3E") no-repeat 50% 50% / 100% auto
+            &:not(:last-child)
+                margin-bottom: 20px
+    &__logo
+        display: inline-block
+        position: absolute
+        top: 24px
+        left: 24px
+        z-index: 2
+        width: 48px
+        img
+            width: 100%
+    &__info
+        position: absolute
+        top: 40px
+        right: 40px
+        +caption1
+        color: $shades1
+        +t
+            padding-left: 80px
+        +m
+            right: 24px
+        a
+            font-weight: 700
+            color: $n7
+            transition: color .2s
+            +dark
+                color: $n1
+            &:hover
+                color: $p1
+    &__wrapper
+        max-width: 296px
+        +m
+            max-width: 100%
+    &__title
+        margin-bottom: 32px
+    &__top
+        margin-bottom: 32px
+        padding-bottom: 32px
+        border-bottom: 2px solid $n3
+        +dark
+            border-color: $n6
+    &__text
+        margin-bottom: 20px
+        +body2-s
+    &__btns
+        display: flex
+        margin: 0 -4px
+        .login__button
+            flex: 0 0 calc(50% - 8px)
+            width: calc(50% - 8px)
+            margin: 0 4px
+            padding: 0 16px
+            img
+                margin-right: 10px
+    &__fieldset
+        .login__button
+            width: 100%
+    .field
+        margin-bottom: 12px
+    &__note
+        margin-top: 32px
+        +body2-s
+        color: $shades1
+    &__code
+        display: none
+    &__row
+        display: flex
+        margin: 0 -6px
+    &__field
+        flex: 0 0 calc(25% - 12px)
+        width: calc(25% - 12px)
+        margin: 0 6px
+        input
+            width: 100%
+            height: 72px
+            padding: 0 6px
+            border-radius: 12px
+            border: 2px solid transparent
+            background: $n3
+            text-align: center
+            +inter
+            font-size: 48px
+            font-weight: 600
+            color: $n7
+            transition: all .2s
+            &:focus
+                border-color: $shades1
+                background: $n
+            +dark
+                background: $n6
+                color: $n1
+                &:focus
+                    background: transparent
+            &.error
+                background: rgba($s1, .25)
+                border-color: transparent
+                color: $p3
+    &__error
+        display: none
+        margin-top: 12px
+        +caption2
+        font-weight: 500
+        color: $p3
+    &__code .login__button
+        width: 100%
+        margin-top: 12px
+        .loader
+            display: none
+            margin-right: 16px
+

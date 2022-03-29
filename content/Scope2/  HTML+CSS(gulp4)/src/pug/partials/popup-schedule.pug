@@ -1,0 +1,82 @@
+.popup.popup_schedule.js-popup.js-popup-schedule
+	.popup__overlay.js-popup-overlay
+	.popup__wrap.js-popup-wrap
+		.calendar.js-calendar
+			.title-red.calendar__title Reschedule product
+			.calendar__note Choose a day and time in the future you want your product to be published.
+			.calendar__list
+				.calendar__item.calendar__item_date.js-calendar-item
+					.calendar__head.js-calendar-head
+						+i('calendar')
+						.calendar__details
+							.calendar__category Date
+							input.calendar__value.js-date-range(type="text" data-single-month="true" data-container=".js-date-container")
+					.calendar__body.js-calendar-body
+						.calendar__container.js-date-container
+						.calendar__foot
+							button.button-stroke.button-small.calendar__button.js-date-clear Clear
+							button.button-small.calendar__button.js-calendar-close Close
+				.calendar__item.calendar__item_time.js-calendar-item
+					.calendar__head.js-calendar-head
+						+i('clock')
+						.calendar__details
+							.calendar__category Time
+							.calendar__value.js-calendar-value 
+					.calendar__body.js-calendar-body
+						.calendar__top
+							.calendar__subtitle.js-calendar-title
+							button.calendar__close.js-calendar-close
+								+i('close')
+						ul.calendar__time.js-calendar-time
+							li 12:00 AM
+							li 12:30 AM
+							li 1:00 AM
+							li.active 1:30 AM
+							li 2:00 AM
+							li 2:30 AM
+							li 3:00 AM
+							li 3:30 AM
+							li 4:00 AM
+							li 4:30 AM
+							li 5:00 AM
+							li 5:30 AM
+							li 6:00 AM
+							li 6:30 AM
+							li 7:00 AM
+							li 7:30 AM
+							li 8:00 AM
+							li 8:30 AM
+							li 9:00 AM
+							li 9:30 AM
+							li 10:00 AM
+							li 10:30 AM
+							li 11:00 AM
+							li 11:30 AM
+							li 12:00 PM
+							li 12:30 PM
+							li 1:00 PM
+							li 1:30 PM
+							li 2:00 PM
+							li 2:30 PM
+							li 3:00 PM
+							li 3:30 PM
+							li 4:00 PM
+							li 4:30 PM
+							li 5:00 PM
+							li 5:30 PM
+							li 6:00 PM
+							li 6:30 PM
+							li 7:00 PM
+							li 7:30 PM
+							li 8:00 PM
+							li 8:30 PM
+							li 9:00 PM
+							li 9:30 PM
+							li 10:00 PM
+							li 10:30 PM
+							li 11:00 PM
+							li 11:30 PM
+			.calendar__btns
+				button.button.calendar__button Reschedule
+		button.popup__close.js-popup-close
+			+i('close')

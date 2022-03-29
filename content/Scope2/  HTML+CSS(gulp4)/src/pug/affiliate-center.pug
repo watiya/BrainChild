@@ -1,0 +1,168 @@
+---
+title: "Core - Dashboard Builder"
+pageTitle: "Affiliate center"
+headerLinkAffiliateCenter: active
+---
+extends layouts/layout
+block content
+	.page__row
+		.page__col
+			.card
+				.card__head
+					.title-red.card__title Snapshot
+					select.select.select_small
+						option Last 7 days
+						option This month
+						option All time
+				.overview.js-tabs
+					.overview__nav
+						a.overview__link.js-tabs-link.active(href="#")
+							.overview__icon(style="background-color: #B1E5FC;")
+								+i('mouse')
+							.overview__details
+								.overview__subtitle Clicks
+									.tooltip(title="Small description")
+										+i('info')
+								.overview__counter 411
+							.balance.background.negative
+								+i('arrow-bottom')
+								| 37.8%
+						a.overview__link.js-tabs-link(href="#")
+							.overview__icon(style="background-color: #CABDFF;")
+								+i('activity')
+							.overview__details
+								.overview__subtitle Payouts
+									.tooltip(title="Small description")
+										+i('info')
+								.overview__counter $89
+							.balance.background.positive
+								+i('arrow-top')
+								| 37.8%
+					.overview__container
+						.overview__item.js-tabs-item(style="display: block;")
+							.overview__chart.overview__chart_snapshot
+								div(id="snapshot-clicks")
+						.overview__item.js-tabs-item
+							.overview__chart.overview__chart_snapshot
+								div(id="oveview-income")
+			.card
+				.card__head.card__head_wide
+					.title-purple.card__title Performance by day
+					select.select.select_small
+						option Last 7 days
+						option This month
+						option All time
+				.card__chart.card__chart_performance-by-day
+					div(id="performance-by-day")
+			.indicators
+				.indicators__table
+					.indicators__row
+						.indicators__col Date
+						.indicators__col Impressions
+							.tooltip(title="Small description impressions")
+								+i('info')
+						.indicators__col Clicks
+							.tooltip(title="Small description clicks")
+								+i('info')
+						.indicators__col Total earnings
+						.indicators__col EPC
+							.tooltip(title="Small description EPC")
+								+i('info')
+					mixin indicatorsRow(date, total, epc, counter1, progress1, balanceStatus1, balance1, counter2, progress2, balanceStatus2, balance2)
+						.indicators__row
+							.indicators__col=date 
+							.indicators__col
+								.indicators__item
+									.indicators__box
+										.indicators__counter=counter1
+										.indicators__line
+											.indicators__progress.indicators__progress_blue(style=`width: ${progress1}`)
+									if balanceStatus1
+										.balance.positive
+											+i('arrow-top')
+											=balance1
+									else
+										.balance.negative
+											+i('arrow-bottom')
+											=balance1
+							.indicators__col
+								.indicators__item
+									.indicators__box
+										.indicators__counter=counter2
+										.indicators__line
+											.indicators__progress.indicators__progress_purple(style=`width: ${progress2}`)
+									if balanceStatus2
+										.balance.positive
+											+i('arrow-top')
+											=balance2
+									else
+										.balance.negative
+											+i('arrow-bottom')
+											=balance2
+							.indicators__col $
+								=total
+							.indicators__col $
+								=epc
+					+indicatorsRow('Oct 09, 2021', '0.00', '0.00', '263', '50%', true, '37.8%', '72', '25%', true, '25.2%')
+					+indicatorsRow('Oct 13, 2021', '18.00', '0.06', '20', '90%', true, '17.8%', '72', '44%', false, '11.9%')
+					+indicatorsRow('Oct 24, 2021', '24.00', '0.06', '252', '20%', false, '37.8%', '72', '77%', true, '25.8%')
+					+indicatorsRow('Oct 27, 2021', '0.00', '0.07', '138', '100%', true, '24.8%', '72', '100%', false, '33.4%')
+					+indicatorsRow('Oct 28, 2021', '0.00', '0.08', '149', '80%', false, '14.3%', '72', '33%', true, '5.5%')
+					+indicatorsRow('Oct 29, 2021', '64.00', '0.24', '263', '50%', true, '4.5%', '72', '67%', false, '25.4%')
+		.page__col
+			.card
+				.card__head
+					.title-blue.card__title Create a link
+				.link
+					.link__fieldset
+						.link__title Promote any product with a simple link
+						select.select
+							option Choose your product
+							option Choose your product 1
+							option Choose your product 2
+						.field
+							.field__wrap
+								input.field__input(type="text" name="linkproduct" placeholder="Or enter a product link")
+						button.button-small.link__button Create
+					.link__box
+						.link__label Use this link to promote.
+						.field.field_icon.field_copy
+							.field__wrap
+								input.field__input(type="text" name="link-promote" placeholder="Enter link promote")
+								.field__icon
+									+i('link')
+								button.field__copy
+									+i('copy')
+					.link__box
+						.link__label Share to social accounts
+						.link__line
+							.link__list
+								.link__avatar
+									img(src="img/content/avatar.jpg" alt="Avatar")
+									.link__icon
+										+i('facebook-fill')
+								.link__avatar
+									img(src="img/content/avatar.jpg" alt="Avatar")
+									.link__icon
+										+i('twitter-fill')
+							button.button-small.link__button
+								span Share
+								+i('arrow-right')
+			.card
+				.card__head
+					.title-blue.card__title Popular products
+				.popular
+					.popular__head
+						.popular__stage Products
+						.popular__stage Earning
+					.popular__list
+						+popularItem('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Crypter - NFT UI kit', '$2,453.80', true)
+						+popularItem('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'Bento Matte 3D illustration 1.0', '$105.60', false)
+						+popularItem('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Excellent material 3D chair', '$648.60', true)
+						+popularItem('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'Fleet - travel shopping kit', '$648.60', true)
+						+popularItem('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Crypter - NFT UI kit', '$2,453.80', true)
+						+popularItem('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'Bento Matte 3D illustration 1.0', '$105.60', false)
+						+popularItem('img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'Excellent material 3D chair', '$648.60', true)
+						+popularItem('img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'Fleet - travel shopping kit', '$648.60', true)
+					a.button-stroke.popular__button(href="products-dashboard.html") All products
+	

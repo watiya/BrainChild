@@ -1,0 +1,354 @@
+// common styles
+body
+    min-width: 375px
+    background: $n2
+    +inter
+    +base1-s
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    letter-spacing: -.01em
+    color: $n7
+    &.dark
+        background: $n8
+        color: $n1
+
+body,
+html
+    &.no-scroll
+        height: calc(var(--vh, 1vh) * 100)
+        overflow: hidden 
+        
+a
+    text-decoration: none
+    
+button
+    background: none
+
+button,
+input,
+textarea
+    +inter
+
+svg,
+img
+    vertical-align: middle
+
+.icon
+    width: 16px
+    height: 16px
+    fill: $n7
+    
+.some-icon
+    +dark
+        display: none
+
+.some-icon-dark
+    display: none
+    +dark
+        display: inline-block
+
+.select
+    float: none
+    width: auto
+    height: 48px
+    padding: 0 48px 0 16px
+    background: none
+    box-shadow: inset 0 0 0 2px $n3
+    border-radius: 12px 
+    border: none
+    opacity: 1
+    font-size: 14px
+    font-weight: 600
+    line-height: 48px
+    color: $n7
+    &:after
+        display: none 
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        width: 48px
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12.707 15.707l-.094.083a1 1 0 0 1-1.32-.083h0l-6-6-.083-.094a1 1 0 0 1 1.497-1.32h0L12 13.585l5.293-5.292.094-.083a1 1 0 0 1 1.32 1.497h0l-6 6z' fill='%236f767e'/%3E%3C/svg%3E") no-repeat 50% 50% / 24px auto
+        transition: transform .2s
+    +dark
+        background: none
+        box-shadow: inset 0 0 0 2px $n6
+        -webkit-appearance: none
+        color: $n4
+    &:hover
+        box-shadow: inset 0 0 0 2px $shades1
+        +dark
+            box-shadow: inset 0 0 0 2px $n5
+    &.open
+        box-shadow: inset 0 0 0 2px $shades1
+        background: $n
+        +dark
+            box-shadow: inset 0 0 0 2px $n5
+            background: $n8
+            color: $n1
+        &:before
+            transform: rotate(180deg)
+    .current
+        display: block
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    .list
+        right: 0
+        margin-top: 2px 
+        padding: 8px 0
+        border-radius: 12px
+        background: $n
+        border: none
+        box-shadow: inset 0 0 0 2px $n3, 0 4px 12px rgba($n2, .1)
+        +dark
+            background: $n8
+            box-shadow: inset 0 0 0 2px $n5, 0 4px 12px rgba($n8, .1)
+    .option
+        min-height: auto
+        padding: 8px 16px
+        background: none
+        +base2
+        color: $n4
+        &:hover,
+        &.focus,
+        &.selected.focus
+            background: none
+        &:hover,
+        &.focus
+            font-weight: 600
+            color: $n7
+            +dark
+                color: $n1 
+        &.selected
+            font-weight: 600
+            color: $p1
+            +dark
+                color: $p1
+    &_small
+        height: 40px
+        padding: 0 40px 0 16px
+        line-height: 40px
+        &:before
+            width: 40px
+            background-size: 16px auto
+        .option
+            padding: 4px 16px
+    &_up .list
+        top: auto
+        bottom: 100%
+        margin: 0 0 2px 
+
+.tooltip
+    display: inline-block
+    margin-left: 4px
+    cursor: pointer
+
+.tooltipster-base
+    .tooltipster-box
+        margin: 0 !important
+        background: $n6
+        border: none
+        border-radius: 4px
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 0px 1px #000000
+    .tooltipster-content
+        padding: 3px 12px
+        font-size: 12px
+        font-weight: 600
+        line-height: 1.6
+        color: $n2
+    .tooltipster-arrow
+        display: none
+
+
+.apexcharts-canvas
+    .apexcharts-text
+        font-size: 12px
+        font-weight: 500
+        letter-spacing: -.01em
+        fill: $shades1
+    .apexcharts-gridline
+        stroke: #EFEFEF
+        +dark
+            stroke: $n6 !important
+    .apexcharts-xcrosshairs.apexcharts-active,
+    .apexcharts-ycrosshairs.apexcharts-active
+        stroke: rgba($n4, .5)
+        +dark
+            stroke: $n4
+    .apexcharts-marker
+        stroke-width: 0
+    .apexcharts-tooltip
+        padding: 8px
+        border-radius: 8px
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 0px 1px #000000
+        &-title
+            margin-bottom: 8px
+            padding: 0
+        &-series-group
+            background: none !important
+            padding: 0 !important
+        &-y-group
+            padding: 0
+        &-marker
+            margin-right: 4px
+            border-radius: 4px
+        &-text
+            font-weight: 600
+            color: $n1
+        &.apexcharts-theme-light
+            border-color: rgba($n, .12)
+            background: $n6
+            .apexcharts-tooltip-title
+                background: none
+                border: none
+                color: $n3
+    .apexcharts-legend.position-bottom.apexcharts-align-center,
+    .apexcharts-legend.position-top.apexcharts-align-center
+        justify-content: space-between
+        +m
+            justify-content: center
+    .apexcharts-legend-marker
+        border-radius: 4px !important
+    .apexcharts-legend-series
+        margin-top: 6px !important
+    .apexcharts-legend-text
+        font-weight: 600 !important
+        color: $n7 !important
+        +dark
+            color: $n3 !important
+    .apexcharts-pie-area
+        +dark
+            stroke: $n7
+
+.slick-arrow
+    position: absolute
+    z-index: 2
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    font-size: 0
+    transition: all .2s
+    svg
+        position: relative
+        z-index: 2
+    path
+        fill: $n4
+        transition: fill .2s
+    &:hover
+        box-shadow: inset 0 0 0 2px $n6
+    +dark
+        &:hover
+            box-shadow: inset 0 0 0 2px $n3
+            path
+                fill: $n6
+
+.fancybox
+    &-caption__body
+        color: $n4
+    &-image
+        border-radius: 16px
+    &-infobar
+        // +dm-sans
+        font-size: 14px
+        font-weight: 700 
+        color: $n4
+    &-bg
+        background: $n7
+    &-is-open &-bg  
+        opacity: 1 
+
+.tagify
+    padding: 3px
+    background: $n2
+    border: none
+    border-radius: 6px
+    +dark
+        background: $n6
+    &__tag > div::before
+        border-radius: 6px
+    &__input
+        &::before
+            line-height: 1.4em
+            +dark
+                color: $n1
+        &::after
+            color: $shades1
+        &:focus:empty:before
+            color: $shades1
+
+.noUi
+    &-horizontal
+        height: 4px 
+    &-target
+        border: none
+        background: $n3
+        box-shadow: none 
+        +dark
+            background: $n6 
+    &-connect
+        background: $p1
+    &-handle
+        border: none
+        box-shadow: none
+        background: $n1
+        border-radius: 50%
+        cursor: pointer 
+        &:before,
+        &:after
+            display: none
+    &-horizontal &-handle
+        right: -12px
+        top: -6px
+        width: 16px
+        height: 16px
+        border: 2px solid $p1
+        background: $n1
+        box-shadow: 0px 1px 2px #2881FF, inset 0px 2px 2px #FFFFFF
+    &-tooltip
+        display: flex
+        justify-content: center
+        align-items: center
+        min-width: 40px
+        padding: 3px 10px 
+        background: $n6
+        border-radius: 8px 
+        border: 1px solid rgba($n1, .12)
+        font-size: 12px
+        font-weight: 600 
+        color: $n1
+        visibility: hidden
+        opacity: 0
+        transition: all .2s 
+        &:before
+            content: ""
+            position: absolute
+            top: 100%
+            left: 50%
+            transform: translateX(-50%)  
+            +arr(8,4,$n6,b)
+        +dark
+            background: $n8
+            &:before
+                +arr(8,4,$n8,b)
+    &-handle:hover &-tooltip
+        visibility: visible
+        opacity: 1
+    &-horizontal &-tooltip
+        bottom: 24px
+        
+.range_time
+    .noUi
+        &-horizontal
+            height: 2px
+        &-handle
+            top: -11px
+
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle
+    right: -12px
+
+
+
+

@@ -1,0 +1,56 @@
+.link
+    &__title
+        margin-bottom: 16px
+        color: $n4
+    &__fieldset
+        margin-bottom: 32px
+        .select,
+        .field
+            margin-bottom: 12px
+    &__box
+        &:not(:last-child)
+            margin-bottom: 32px
+    &__label
+        margin-bottom: 16px
+        +caption1
+        font-weight: 500
+        color: $n4
+    &__line
+        display: flex
+        align-items: center
+    &__list
+        display: flex
+        margin-right: auto
+    &__avatar
+        position: relative
+        width: 48px
+        height: 48px
+        img
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            object-fit: cover
+        &:not(:last-child)
+            margin-right: 24px
+    &__icon
+        position: absolute
+        right: -4px
+        bottom: -4px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 24px
+        height: 24px
+        border-radius: 50%
+        border: 2px solid $n
+        background: $p1
+        +dark
+            border-color: $n7
+        .icon
+            width: 12px
+            height: 12px
+            fill: $n1
+    &__button
+        .icon
+            width: 24px
+            height: 24px

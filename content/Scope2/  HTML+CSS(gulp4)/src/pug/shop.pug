@@ -1,0 +1,143 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarShop: active
+headerLinkProfile: active
+---
+extends layouts/layout
+block content
+	.shop
+		.shop__background
+			img(src="img/content/bg-shop.jpg" alt="Background")
+		.shop__tabs.card.js-tabs
+			.shop__profile
+				.shop__details
+					.shop__avatar
+						img(src="img/content/avatar.jpg" alt="Avatar")
+						button.shop__add
+							+i('add')
+					.shop__wrap
+						.h4.shop__man Chelsie Haley
+						.shop__info Dream big. Think different. Do great!
+				.shop__contacts
+					.shop__socials
+						a.shop__social(href="https://twitter.com/ui8" target="_blank")
+							+i('twitter')
+						a.shop__social(href="https://www.instagram.com/ui8net/" target="_blank")
+							+i('instagram')
+						a.shop__social(href="https://www.pinterest.com/ui8m/" target="_blank")
+							+i('pinterest')
+					button.button.shop__button Follow
+			.shop__control
+				.shop__nav
+					a.shop__link.js-tabs-link.active(href='#') Products
+					a.shop__link.js-tabs-link(href='#') Followers
+					a.shop__link.js-tabs-link(href='#') Following
+				.shop__select
+					select.select.select_small
+						option Most recent
+						option Most new
+						option Most popular
+				.filters
+					button.button-square-stroke.button-small.filters__head
+						+i('filter')
+					.filters__body
+						.filters__top
+							.title-red.filters__title Showing 9 of 32 products
+							button.filters__close
+								+i('close')
+						+form('text', 'search', 'Search for products', 'search')
+						.filters__group
+							.filters__item
+								.field
+									.field__label Sort by
+									.field__wrap
+										select.select
+											option Featured
+											option Last
+											option New
+							.filters__item
+								.filters__label Showing
+								.filters__list
+									label.checkbox.checkbox_reverse
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+											span.checkbox__text All products
+									label.checkbox.checkbox_reverse
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+											span.checkbox__text UI Kit
+									label.checkbox.checkbox_reverse
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+											span.checkbox__text Illustration
+									label.checkbox.checkbox_reverse
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+											span.checkbox__text Wireframe kit
+									label.checkbox.checkbox_reverse
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+											span.checkbox__text Icons
+							.filters__item
+								.filters__label Price
+								.filters__range.js-slider(
+									data-min='0'
+									data-max='100'
+									data-start='20'
+									data-end='50'
+									data-step='1'
+									data-tooltips='true'
+									data-prefix='$')
+							.filters__item
+								.filters__box
+									.field
+										.field__label Rating
+										.field__wrap
+											select.select.select_up
+												option 1 and up
+												option 2 and up
+												option 3 and up
+												option(selected) 4 and up
+												option 5
+									+i('heart-fill')
+						.filters__btns
+							button.button-stroke.filters__button Reset
+							button.button.filters__button Apply
+					.filters__overlay
+			.shop__container
+				.shop__tab.js-tabs-item(style="display: block;")
+					.shop__products
+						+summary(false, 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', true, '64', false, true, '4.8', '87', 'Bento Matte 3D Illustration')
+						+summary(false, 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', true, '123', false, true, '4.9', '87', 'Node - Crypto iOS UI design kit')
+						+summary(false, 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', false, '0', false, false, false, false, 'TaskEz: Productivity App iOS UI Kit')
+						+summary(false, 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg', true, '64', false, true, '4.8', '87', 'Bento Matte 3D Illustration')
+						+summary(false, 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', true, '123', false, true, '4.9', '87', 'Node - Crypto iOS UI design kit')
+						+summary(false, 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', true, '45', false, true, '4.9', '87', 'TaskEz: Productivity App iOS UI Kit')
+						+summary(false, 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', true, '64', false, true, '4.8', '87', 'Bento Matte 3D Illustration')
+						+summary(false, 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', true, '123', false, true, '4.9', '87', 'Node - Crypto iOS UI design kit')
+						+summary(false, 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', true, '45', false, true, '4.9', '87', 'TaskEz: Productivity App iOS UI Kit')
+					.shop__foot
+						button.button-stroke.button-small.shop__button Load more
+				.shop__tab.js-tabs-item
+					.shop__group
+						+follower('img/content/avatar-1.jpg', 'Reed Parker', '16', '3,568', true, false, 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg')
+						+follower('img/content/avatar-2.jpg', 'Tristian Hermiston', '43', '1,345', true, false, 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg')
+						+follower('img/content/avatar-3.jpg', 'Rosetta Gottlieb', '9', '876', true, true, 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg')
+						+follower('img/content/avatar-4.jpg', 'Reed Parker', '43', '1,345', true, false, 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg')
+						+follower('img/content/avatar-5.jpg', 'Tristian Hermiston', '9', '2,789', true, true, 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg', 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg')
+					.shop__foot
+						button.button-stroke.button-small.shop__button Load more
+				.shop__tab.js-tabs-item
+					.shop__group
+						+follower('img/content/avatar-1.jpg', 'Reed Parker', '16', '3,568', false, false, 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg')
+						+follower('img/content/avatar-2.jpg', 'Tristian Hermiston', '43', '1,345', false, false, 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg')
+						+follower('img/content/avatar-3.jpg', 'Rosetta Gottlieb', '9', '876', false, true, 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg')
+						+follower('img/content/avatar-4.jpg', 'Reed Parker', '43', '1,345', false, false, 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg')
+						+follower('img/content/avatar-5.jpg', 'Tristian Hermiston', '9', '2,789', false, true, 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg', 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg')
+					.shop__foot
+						button.button-stroke.button-small.shop__button Load more

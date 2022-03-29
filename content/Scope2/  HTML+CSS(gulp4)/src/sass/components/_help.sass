@@ -1,0 +1,178 @@
+.help
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    z-index: 30
+    display: flex
+    flex-direction: column
+    width: 340px
+    padding: 24px 12px
+    background: $n
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    transform: translateX(-100%)
+    transition: transform .3s
+    +x
+        width: 320px
+        padding: 16px 8px
+    +m
+        width: 100%
+    +dark
+        background: $n8
+    &.active
+        transform: translateX(0)
+        +d
+            box-shadow: 4px 0 32px rgba($n8, .05)
+    &__head
+        display: flex
+        align-items: center
+        margin-bottom: 12px
+        padding: 12px
+        & > .icon
+            width: 24px
+            height: 24px
+            margin-right: 12px
+            fill: $n7
+            +dark
+                fill: $n1
+    &__close
+        margin-left: auto
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n7
+            transition: fill .2s
+            +dark
+                fill: $n1
+        &:hover
+            .icon
+                fill: $p1
+                +dark
+                    fill: $p1
+    &__list
+        margin-bottom: auto
+        padding: 24px 0
+        border-top: 1px solid $n3
+        +dark
+            border-color: rgba($n4, .2)
+    &__menu
+        display: flex
+        flex-direction: column
+    &__item
+        display: flex
+        align-items: center
+        padding: 12px
+        border-radius: 12px
+        color: $n7 
+        cursor: pointer
+        transition: all .2s
+        +x
+            padding: 6px
+        +dark
+            color: $n1
+        &:hover
+            background: $n2
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+            +dark
+                background: $n7
+                box-shadow: none
+        &:not(:last-child)
+            margin-bottom: 8px
+    &__preview
+        flex-shrink: 0
+        width: 96px
+        height: 72px
+        margin-right: 16px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 8px
+    &__title
+        margin-bottom: 8px
+    &__line
+        display: flex
+        align-items: center
+    &__status
+        margin-right: 4px
+        color: $n7
+    &__user
+        display: flex
+        align-items: center
+        padding: 1px 8px 1px 1px
+        border: 1px solid $n3
+        border-radius: 4px
+        +dark
+            border-color: $n6
+    &__avatar
+        flex-shrink: 0
+        width: 20px
+        height: 20px
+        margin-right: 4px
+        font-size: 0
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 2px
+    &__time
+        +caption2
+        color: $n4
+    &__link
+        display: flex
+        align-items: center
+        height: 48px
+        padding: 0 12px
+        border-radius: 12px
+        color: $n4
+        transition: all .2s
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n4
+            transition: fill .2s
+        & > .icon
+            margin-right: 12px
+        &:hover
+            color: $n7
+            .icon
+                fill: $n7
+            +dark
+                color: $n1
+                .icon
+                    fill: $n1
+        &:not(:last-child)
+            margin-bottom: 8px
+            +x
+                margin-bottom: 4px
+    &__arrow
+        margin-left: auto
+        .icon
+            width: 24px
+            height: 24px
+    &__counter
+        flex-shrink: 0
+        min-width: 24px
+        margin-left: auto
+        border-radius: 6px
+        background: $s1
+        text-align: center
+        line-height: 24px
+        color: $n7
+    & + .overlay
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 25
+        background: rgba($n2, .8)
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +dark
+            background: rgba($n6, .9)
+        &.active
+            visibility: visible
+            opacity: 1

@@ -1,0 +1,172 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarCustomers: visible
+classSidebarCustomersOverview: active
+headerLinkAnalytics: active
+pageTitle: "Customers"
+---
+extends layouts/layout
+block content
+	.page__row
+		.page__col
+			.total.card
+				.card__head
+					.title-red.card__title Total customers
+					select.select.select_small
+						option Last 28 days
+						option Last 14 days
+						option Last 7 days
+				.total__overview
+					.total__details
+						.h4.total__title 1,509 customers
+						.total__line
+							.balance.background.positive
+								+i('arrow-top')
+								| 37.8%
+							| vs. Sep 8, 2021
+					.total__chart
+						div(id="total-customers")
+				include partials/users
+			.card
+				.card__head
+					.title-purple.card__title Traffic channel
+					select.select.select_small
+						option Last 7 days
+						option This month
+						option All time
+				.card__chart.card__chart_traffic-channel
+					div(id="traffic-channel")
+			.card
+				.card__head.card__head_wide
+					.title-purple.card__title Active customers
+					select.select.select_small
+						option Last 30 days
+						option Last 20 days
+						option Last 10 days
+				.card__chart.card__chart_active-customers
+					div(id="active-customers")
+			.card.promote
+				.card__head
+					.title-blue.card__title Share your products
+					button.button-stroke.button-small.mobile-hide
+						span Go to promote
+						+i('promotion')
+				.promote__list
+					+summary(false, 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', true, '64', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Fleet - Travel shopping UI design kit')
+					+summary(false, 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', true, '123', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Node - Crypto iOS UI design kit')
+				.media
+					.media__content 50% of new customers explore products because the author sharing the work on the social media network. Gain your earnings right now! 🔥
+					.media__btns
+						a.button-stroke.media__button(href="https://www.facebook.com/ui8.net/" target="_blank")
+							+i('facebook')
+							span Facebook
+						a.button-stroke.media__button(href="https://twitter.com/ui8" target="_blank")
+							+i('twitter')
+							span Twitter
+						a.button-stroke.media__button(href="https://www.instagram.com/ui8net/" target="_blank")
+							+i('instagram')
+							span Instagram
+		.page__col
+			.card
+				.card__head
+					.title-red.card__title Refund requests
+				.refund
+					.refund__list
+						.refund__item
+							.refund__icon
+								+i('basket')
+							.refund__content You have <strong>52 open refund requests</strong> to action. This includes <strong>8 new requests</strong>. 👀
+					a.button-stroke.refund__button(href="income-refunds.html") Review refund requests
+			.card
+				.card__head
+					.title-blue.card__title Top device
+				.device
+					.device__chart
+						div(id="top-device")
+					.device__legend
+						.device__indicator.device__indicator_mobile
+							+i('mobile')
+							.device__title Mobile
+							.device__percent 20%
+						.device__indicator.device__indicator_tablet
+							+i('tablet')
+							.device__title Tablet
+							.device__percent 5%
+						.device__indicator.device__indicator_desktop
+							+i('desktop')
+							.device__title Desktop
+							.device__percent 75%
+			.card
+				.card__head
+					.title-purple.card__title Top country
+				.card__chart.card__chart_top-country
+					div(id="top-country")
+			.card
+				.card__head
+					.title-purple.card__title Message
+				.message
+					.message__list
+						.message__item
+							.message__avatar
+								img(src="img/content/avatar-1.jpg" alt="Avatar")
+							.message__details
+								.message__line
+									.message__user
+										span.message__title Winnifred
+										span.message__login @username
+									.message__time 30m
+								.message__content Message goes here 😊
+						.message__item
+							.message__avatar
+								img(src="img/content/avatar-2.jpg" alt="Avatar")
+							.message__details
+								.message__line
+									.message__user
+										span.message__title Esther
+										span.message__login @username
+									.message__time 1h
+								.message__content Message goes here 😊
+						.message__item
+							.message__avatar
+								img(src="img/content/avatar-3.jpg" alt="Avatar")
+							.message__details
+								.message__line
+									.message__user
+										span.message__title Leland
+										span.message__login @username
+									.message__time 3h
+								.message__content Message goes here 😊
+						.message__item
+							.message__avatar
+								img(src="img/content/avatar-4.jpg" alt="Avatar")
+							.message__details
+								.message__line
+									.message__user
+										span.message__title Jimmy
+										span.message__login @username
+									.message__time 10h
+								.message__content Message goes here 😊
+						.message__item
+							.message__avatar
+								img(src="img/content/avatar-5.jpg" alt="Avatar")
+							.message__details
+								.message__line
+									.message__user
+										span.message__title Chad
+										span.message__login @username
+									.message__time 1day
+								.message__content Message goes here 😊
+					a.button-stroke.review__button.message__button(href="message-center.html") View all message
+			.card
+				.card__head
+					.title-purple.card__title New customer
+				.card__chart.card__chart_new-customers
+					div(id="new-customer")
+				.card__legend
+					.card__indicator
+						.card__color(style="background-color: #B5E4CA;")
+						| New customer
+					.card__indicator
+						.card__color(style="background-color: #CABDFF;")
+						| Returning customer
+	

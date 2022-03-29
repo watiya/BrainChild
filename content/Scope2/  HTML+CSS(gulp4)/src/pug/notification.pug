@@ -1,0 +1,161 @@
+---
+title: "Core - Dashboard Builder"
+pageTitle: "Notification"
+---
+extends layouts/layout
+block content
+	.notification
+		.notification__row
+			.notification__col
+				.card
+					.card__head
+						.title-red.card__title New
+						select.select.select_small
+							option Recent
+							option New
+							option This year
+						.actions
+							button.actions__button
+								+i('more-horizontal')
+							.actions__body
+								button.actions__option
+									+i('check')
+									| Mark as read
+								button.actions__option
+									+i('setting')
+									| Go setting
+					.notification__list
+						.notification__item.new
+							.notification__avatar
+								img(src="img/content/avatar-1.jpg" alt="Avatar")
+								.notification__icon(style="background-color: #2A85FF")
+									img(src="img/content/message.svg" alt="Status")
+							.notification__details
+								.notification__line
+									.notification__subtitle Domenica
+									.notification__login @domenica
+									.notification__time 1h
+								.notification__content Comment on <strong>Smiles – 3D icons</strong>
+								.notification__comment "Great work, I just purchased this product"
+								.notification__control
+									button.notification__action.notification__action_favorite Like<span>d</span>
+									button.notification__action Reply
+								+answer
+						.notification__item.new
+							.notification__avatar
+								img(src="img/content/avatar-2.jpg" alt="Avatar")
+								.notification__icon(style="background-color: #FF6A55")
+									img(src="img/content/heart.svg" alt="Status")
+							.notification__details
+								.notification__line
+									.notification__subtitle Janice
+									.notification__login @ethel
+									.notification__time 2h
+								.notification__content Likes <strong>Smiles – 3D icons</strong>
+								.notification__comment "Great work, I just purchased this product"
+								.notification__control
+									button.notification__action.notification__action_favorite Like<span>d</span>
+									button.notification__action Reply
+								+answer
+						.notification__item.new
+							.notification__avatar
+								img(src="img/content/avatar-3.jpg" alt="Avatar")
+								.notification__icon(style="background-color: #83BF6E")
+									img(src="img/content/shopping-bag.svg" alt="Status")
+							.notification__details
+								.notification__line
+									.notification__subtitle Janiya
+									.notification__login @domenica
+									.notification__time 4h
+								.notification__content Purchased <strong>Smiles – 3D icons</strong>
+								.notification__comment "Great work, I just purchased this product"
+								.notification__control
+									button.notification__action.notification__action_favorite Like<span>d</span>
+									button.notification__action Reply
+								+answer
+						.notification__item
+							.notification__avatar
+								img(src="img/content/avatar-4.jpg" alt="Avatar")
+								.notification__icon(style="background-color: #8E59FF")
+									img(src="img/content/star.svg" alt="Status")
+							.notification__details
+								.notification__line
+									.notification__subtitle Danial
+									.notification__login @danial
+									.notification__time 6h
+								.notification__content Rate <img src="img/content/rating-star.svg" alt="Star" /> <strong>5</strong> for <strong>Smiles – 3D icons</strong>
+								.notification__comment "Great work, I just purchased this product"
+								.notification__control
+									button.notification__action.notification__action_favorite Like<span>d</span>
+									button.notification__action Reply
+								+answer
+						.notification__item
+							.notification__avatar
+								img(src="img/content/avatar-5.jpg" alt="Avatar")
+								.notification__icon(style="background-color: #2A85FF")
+									img(src="img/content/message.svg" alt="Status")
+							.notification__details
+								.notification__line
+									.notification__subtitle Esmeralda
+									.notification__login @esmeralda
+									.notification__time 8h
+								.notification__content Comment on <strong>Smiles – 3D icons</strong>
+								.notification__comment "Great work, I just purchased this product"
+								.notification__control
+									button.notification__action.notification__action_favorite Like<span>d</span>
+									button.notification__action Reply
+								+answer
+					.notification__foot
+						button.button-stroke.button-small.notification__button
+							+loader
+							span Load more
+			.notification__col
+				.card
+					.card__head
+						.title-red.card__title Filter
+					.notification__filters
+						label.checkbox.checkbox_reverse
+							input.checkbox__input(type="checkbox" checked)
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Comments
+						label.checkbox.checkbox_reverse
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Likes
+						label.checkbox.checkbox_reverse
+							input.checkbox__input(type="checkbox" checked)
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Review
+						label.checkbox.checkbox_reverse
+							input.checkbox__input(type="checkbox" checked)
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Mentions
+						label.checkbox.checkbox_reverse
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Purchases
+						label.checkbox.checkbox_reverse
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Message
+					.notification__btns
+						button.button-stroke.button-small.notification__button Select all
+						button.button-stroke.button-small.notification__button Unslect all
+					.notification__variants
+						label.radio
+							input.radio__input(type="radio" name="customers")
+							span.radio__inner
+								span.radio__text Everyone
+								span.radio__tick
+						label.radio
+							input.radio__input(type="radio" name="customers" checked)
+							span.radio__inner
+								span.radio__text Everyone
+								span.radio__tick
+

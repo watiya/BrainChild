@@ -1,0 +1,86 @@
+.tips
+    &__info
+        margin-bottom: 24px
+        font-weight: 500
+        color: $n4
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: -32px -16px 0
+        +m
+            display: block
+            margin: 0
+    &__item
+        display: flex
+        align-items: center
+        flex: 0 0 calc(50% - 32px)
+        width: calc(50% - 32px)
+        margin: 32px 16px 0
+        color: $n7
+        cursor: pointer
+        +m
+            width: 100%
+            margin: 0
+        +dark
+            color: $n1
+        &:hover
+            .tips__icon
+                background: $n3
+                +dark
+                    background: $n6
+        &:not(:last-child)
+            +m
+                margin-bottom: 24px
+    &__icon
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        width: 64px
+        height: 64px
+        border-radius: 50%
+        border: 2px solid $n3
+        margin-right: 12px
+        transition: background .2s
+        .icon
+            width: 24px
+            height: 24px
+            fill: $n6
+        +dark
+            border-color: $n6
+            .icon
+                fill: $n1
+    &__details
+        flex-grow: 1
+    &__title
+        margin-bottom: 8px
+    &__line
+        display: flex
+        align-items: center
+    &__status
+        margin-right: 4px
+        color: $n7
+    &__user
+        display: inline-flex
+        align-items: center
+        padding: 1px 8px 1px 1px
+        border: 1px solid $n3
+        border-radius: 4px
+        +dark
+            border-color: $n6
+    &__avatar
+        flex-shrink: 0
+        width: 20px
+        height: 20px
+        margin-right: 4px
+        font-size: 0
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 2px
+    &__action
+        +caption2
+        color: $n4
+
+

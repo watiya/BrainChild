@@ -1,0 +1,195 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarPromote: active
+pageTitle: "Promote"
+---
+extends layouts/layout
+block content
+	.card
+		.card__head
+			.title-red.card__title Insights
+			select.select.select_small
+				option Last 7 days
+				option Last 14 days
+				option Last 21 days
+		.quality
+			.quality__list
+				.quality__item
+					.quality__icon(style="background-color: #B5E4CA;")
+						+i('profile-circle')
+					.quality__details
+						.quality__label People reached
+							.tooltip(title="Small description")
+								+i('info')
+						.quality__counter 256k
+						.quality__indicator
+							.balance.positive
+								+i('arrow-top')
+								| 37.8%
+							span this week
+				.quality__item
+					.quality__icon(style="background-color: #CABDFF;")
+						+i('arrows-up-down')
+					.quality__details
+						.quality__label Engagement
+							.tooltip(title="Small description")
+								+i('info')
+						.quality__counter 1.2x
+						.quality__indicator
+							.balance.negative
+								+i('arrow-bottom')
+								| 17.8%
+							span this week
+				.quality__item
+					.quality__icon(style="background-color: #FFBC99;")
+						+i('messages')
+					.quality__details
+						.quality__label Comments
+							.tooltip(title="Small description")
+								+i('info')
+						.quality__counter 128
+						.quality__indicator
+							.balance.positive
+								+i('arrow-top')
+								| 24.8%
+							span this week
+				.quality__item
+					.quality__icon(style="background-color: #B1E5FC;")
+						+i('mouse')
+					.quality__details
+						.quality__label Link clicks
+							.tooltip(title="Small description")
+								+i('info')
+						.quality__counter 80
+						.quality__indicator
+							.balance.negative
+								+i('arrow-bottom')
+								| 11.3%
+							span this week
+	.press.card
+		.card__head
+			.title-blue.card__title Recent post
+			select.select.select_small
+				option Last 7 days
+				option This month
+				option All time
+			button.button-small.card__button(data-popup=".js-popup-post") New post
+		.press__table
+			.press__row
+				.press__col Post
+				.press__col Distribution
+				.press__col Link clicks
+				.press__col Views
+				.press__col Engagement
+			mixin pressRow(icon, post, srcSet, src, facebook, statusDistribution, distribution, counter1, progress1, statusBalance1, balance1, counter2, progress2, statusBalance2, balance2, counter3, progress3, statusBalance3, balance3)
+				.press__row
+					.press__col
+						.press__item
+							.press__preview
+								img(srcSet=`${srcSet} 2x` src=src alt="Product")
+								.press__icon
+									+i(icon)
+							.press__details
+								.press__post=post
+								.press__socials
+									if facebook
+										a.press__social(href="https://www.facebook.com/ui8.net/" target="_blank")
+											+i('facebook')
+									a.press__social(href="https://twitter.com/ui8" target="_blank")
+										+i('twitter')
+					.press__col
+						.press__label Distribution
+						if statusDistribution
+							.status-green-dark.press__distribution=distribution 
+						else
+							.status-red-dark.press__distribution=distribution 
+					.press__col
+						.press__label Link clicks
+						.press__cell
+							.press__box
+								.press__number=counter1 
+								.press__line
+									.press__progress.press__progress_red(style=`width: ${progress1}`)
+							if statusBalance1
+								.balance.positive
+									+i('arrow-top')
+									=balance1
+							else
+								.balance.negative
+									+i('arrow-bottom')
+									=balance1
+					.press__col
+						.press__label Views
+						.press__cell
+							.press__box
+								.press__number=counter2 
+								.press__line
+									.press__progress.press__progress_green(style=`width: ${progress2}`)
+							if statusBalance2
+								.balance.positive
+									+i('arrow-top')
+									=balance2
+							else
+								.balance.negative
+									+i('arrow-bottom')
+									=balance2
+					.press__col
+						.press__label Engagement
+						.press__cell
+							.press__box
+								.press__number=counter3
+								.press__line
+									.press__progress.press__progress_blue(style=`width: ${progress3}`)
+							if statusBalance3
+								.balance.positive
+									+i('arrow-top')
+									=balance3
+							else
+								.balance.negative
+									+i('arrow-bottom')
+									=balance3
+			+pressRow('image', 'Hurry up! You got 50% off - all items 🔥', 'img/content/post-pic-1@2x.jpg', 'img/content/post-pic-1.jpg', true, true, '+1.2x', '26', '90%', true, '37.8', '256', '50%', true, '17.8', '15', '20%', false, '37.8')
+			+pressRow('video', 'HTML version has been released', 'img/content/post-pic-2@2x.jpg', 'img/content/post-pic-2.jpg', false, false, '-1.2x', '16', '70%', false, '37.8', '256', '20%', true, '22.2', '15', '60%', true, '11.5')
+			+pressRow('image', 'Hurry up! You got 50% off - all items 🔥', 'img/content/post-pic-3@2x.jpg', 'img/content/post-pic-3.jpg', true, true, '+1.2x', '26', '90%', true, '37.8', '256', '50%', true, '17.8', '15', '20%', false, '37.8')
+			+pressRow('video', 'HTML version has been released', 'img/content/post-pic-4@2x.jpg', 'img/content/post-pic-4.jpg', false, false, '-1.2x', '16', '70%', false, '37.8', '256', '20%', true, '22.2', '15', '60%', true, '11.5')
+			+pressRow('image', 'Hurry up! You got 50% off - all items 🔥', 'img/content/post-pic-5@2x.jpg', 'img/content/post-pic-5.jpg', true, true, '+1.2x', '26', '90%', true, '37.8', '256', '50%', true, '17.8', '15', '20%', false, '37.8')
+		.press__foot
+			button.button-stroke.button-small.press__button
+				+loader
+				span Load more
+	.popup.popup_post.js-popup.js-popup-post
+		.popup__overlay.js-popup-overlay
+		.popup__wrap.js-popup-wrap
+			.post
+				.title-green.post__title New post
+				.post__list
+					.post__avatar
+						img(src="img/content/avatar.jpg" alt="Avatar")
+						.post__social
+							+i('facebook-fill')
+					.post__avatar
+						img(src="img/content/avatar.jpg" alt="Avatar")
+						.post__social
+							+i('twitter-fill')
+				.post__field
+					textarea.post__textarea(type="post" placeholder="What you would like to share?")
+				.post__info Fleet coded version has been released 🔥
+				.post__preview
+					img(src="img/content/bg-video.jpg" alt="Video")
+				.post__foot
+					.post__files
+						.post__file
+							input(type="file")
+							.post__icon
+								+i('image-stroke')
+						.post__file
+							input(type="file")
+							.post__icon
+								+i('video-stroke')
+					button.button.post__button
+						span Post
+						+i('arrow-right')
+			button.popup__close.js-popup-close
+				+i('close')
+
+

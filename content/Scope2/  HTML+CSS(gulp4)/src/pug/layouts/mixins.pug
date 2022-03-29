@@ -1,0 +1,205 @@
+mixin i(name)
+	svg.icon(class='icon-' + name)
+		use(xlink:href='#icon-' + name)
+
+mixin theme
+	label.theme.js-theme
+		input.theme__input(type="checkbox")
+		span.theme__inner
+			span.theme__box
+				+i('sun')
+				| Light
+			span.theme__box
+				+i('moon')
+				| Dark
+
+mixin switch(checked)
+	label.switch
+		if checked
+			input.switch__input(type="checkbox" checked)
+		else
+			input.switch__input(type="checkbox")
+		span.switch__inner
+			span.switch__box
+
+mixin popularItem(srcSet, src, title, price, status)
+	a.popular__item(href="#" data-popup=".js-popup-product")
+		.popular__preview
+			img(srcSet=`${srcSet} 2x` src=src alt=title)
+		.popular__title=title
+		.popular__details
+			.popular__price=price
+			if status
+				.status-green.popular__status Active
+			else
+				.status-red.popular__status Deactive
+
+mixin favorite
+	button.favorite
+		+i('heart')
+		+i('heart-fill')
+
+mixin summary(checkbox, srcSet, src, priceStatus, price, date, ratingStatus, rating, counter, title)
+	.summary
+		.summary__preview
+			if checkbox
+				label.checkbox
+					input.checkbox__input(type="checkbox")
+					span.checkbox__inner
+						span.checkbox__tick
+			img(srcSet=`${srcSet} 2x` src=src alt="Product")
+			.summary__control
+				button.summary__button
+					+i('edit')
+				button.summary__button
+					+i('trash')
+				button.summary__button(data-popup=".js-popup-product")
+					+i('arrow-right')
+		.summary__line
+			.summary__title=title
+			if priceStatus
+				.summary__price $
+					=price
+			else
+				.summary__empty $
+					=price
+		if date
+			.summary__date
+				+i('clock')
+				=date
+		else
+			if ratingStatus
+				.summary__rating
+					+i('star-fill')
+					=rating
+					.summary__counter (
+						=counter
+						| )
+			else
+				.summary__rating.summary__rating_empty
+					+i('star-stroke')
+					| No ratings
+
+mixin editor(label, tooltip, button)
+	.editor
+		if label
+			.editor__label
+				=label
+				if tooltip
+					.tooltip(title=tooltip)
+						+i('info')
+		if button
+			.editor__wrap
+				textarea.editor__textarea.js-editor
+				button.button-small.editor__button.disabled=button
+		else
+			textarea.editor__textarea.js-editor
+
+mixin answer
+	.answer
+		.answer__avatar
+			img(src="img/content/avatar.jpg" alt="Avatar")
+		.answer__details
+			.answer__message
+				textarea.answer__textarea(name="answer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Leave something to reply" required)
+			.answer__btns
+				button.button.button-small.answer__button.disabled Reply
+				button.button-stroke.button-small.answer__button Cancel
+
+mixin form(typeInput, name, placeholder, icon, classForm)
+	form.form(class=classForm)
+		input.form__input(type=typeInput name=name placeholder=placeholder required autocomplete="off")
+		button.form__button
+			+i(icon)
+
+mixin control(classActions)
+	.control
+		button.control__button
+			+i('edit')
+		button.control__button
+			+i('message')
+		.actions(class=classActions)
+			button.actions__button
+				+i('more-horizontal')
+			.actions__body
+				button.actions__option
+					+i('edit')
+					| Edit product
+				button.actions__option
+					+i('message')
+					| View comment
+				button.actions__option
+					+i('edit')
+					| Edit title & description
+				button.actions__option
+					+i('link')
+					| Get shareable link 
+				button.actions__option
+					+i('trash')
+					| Delete forever 
+
+mixin file(label, tooltip, title)
+	.file
+		.file__label=label
+			.tooltip(title=tooltip data-position="right")
+				+i('info')
+		.file__wrap
+			input.file__input(type="file")
+			.file__box
+				+i('upload')
+				=title
+
+mixin loader(classLoader)
+	.loader(class=classLoader)
+
+mixin smile(classSmile)
+	.smile(class=classSmile)
+		button.smile__head
+			+i('smile')
+		.smile__body
+			.smile__list
+				button.smile__item
+					img(src="img/smileys/blush.png" alt="Smile")
+				button.smile__item
+					img(src="img/smileys/surprised.png" alt="Smile")
+				button.smile__item
+					img(src="img/smileys/sweat-grinning.png" alt="Smile")
+				button.smile__item
+					img(src="img/smileys/cool.png" alt="Smile")
+				button.smile__item
+					img(src="img/smileys/sleepy.png" alt="Smile")
+				button.smile__item
+					img(src="img/smileys/crying-with-laughter.png" alt="Smile")
+				button.smile__item
+					img(src="img/smileys/heart-eyes.png" alt="Smile")
+				button.smile__item
+					img(src="img/smileys/surprised.png" alt="Smile")
+
+mixin follower(avatar, man, products, followers, follow, message, srcSet1, src1, srcSet2, src2, srcSet3, src3)
+	.follower
+		.follower__details
+			.follower__avatar
+				img(src=avatar alt="Avatar")
+			.follower__wrap
+				.follower__man=man
+				.follower__list
+					.follower__counter
+						span=products
+						| products
+					.follower__counter
+						span=followers
+						| followers
+				.follower__btns
+					if follow
+						button.button-stroke.follower__button.follower__button_follow Follow<span>ing</span>
+					else
+						button.button-stroke.follower__button Unfollow
+					if message
+						a.button.follower__button(href="message-center.html") Message
+		.follower__gallery
+			.follower__preview
+				img(srcSet=`${srcSet1} 2x` src=src1 alt=title)
+			.follower__preview
+				img(srcSet=`${srcSet2} 2x` src=src2 alt=title)
+			.follower__preview
+				img(srcSet=`${srcSet3} 2x` src=src3 alt=title)

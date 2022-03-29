@@ -1,0 +1,104 @@
+---
+title: "Core - Dashboard Builder"
+pageTitle: "Message center"
+---
+extends layouts/layout
+block content
+	.messages
+		.messages__users
+			.messages__nav
+				a.messages__link.active(href="#")
+					+i('profile-circle')
+					| Customers
+				a.messages__link(href="#")
+					+i('lightning')
+					| Everyone
+			.messages__list
+				.messages__item.new.active
+					.messages__avatar
+						img(src="img/content/avatar-1.jpg" alt="Avatar")
+					.messages__details
+						.messages__head
+							.messages__man Jarret Waelchi
+							.messages__time 03:30PM
+						.messages__content When do you release the coded for the Fleet - Travel kit?
+				.messages__item.online
+					.messages__avatar
+						img(src="img/content/avatar-2.jpg" alt="Avatar")
+					.messages__details
+						.messages__head
+							.messages__man Orval Casper
+							.messages__time 11:59AM
+						.messages__content When do you release the coded for the Fleet - Travel kit?
+				.messages__item.new
+					.messages__avatar
+						img(src="img/content/avatar-3.jpg" alt="Avatar")
+					.messages__details
+						.messages__head
+							.messages__man Michel Emard
+							.messages__time 09:30AM
+						.messages__content When do you release the coded for the Fleet - Travel kit?
+				.messages__item
+					.messages__avatar
+						img(src="img/content/avatar-4.jpg" alt="Avatar")
+					.messages__details
+						.messages__head
+							.messages__man Reuben Ward
+							.messages__time 08:00AM
+						.messages__content When do you release the coded for the Fleet - Travel kit?
+				.messages__item
+					.messages__avatar
+						img(src="img/content/avatar-5.jpg" alt="Avatar")
+					.messages__details
+						.messages__head
+							.messages__man Evalyn Jenkins
+							.messages__time 07:01AM
+						.messages__content When do you release the coded for the Fleet - Travel kit?
+			+form('text', 'search', 'Search message', 'search')
+		.messages__messenger.messenger
+			.messenger__panel
+				.messenger__line
+					.messenger__man Orval Casper
+					.actions
+						button.actions__button
+							+i('more-horizontal')
+						.actions__body
+							button.actions__option
+								+i('check')
+								| Mark as read
+							button.actions__option
+								+i('trash')
+								| Delete message
+					button.messenger__close
+						+i('close')
+				.messenger__parameters
+					.messenger__parameter Customer since: <span>Sep 2021</span>
+					.messenger__parameter Purchased: <span>21 items</span>
+					.messenger__parameter Lifetime: <span>$1,235.00</span>
+			.messenger__wrapper
+				button.button-stroke.button-small.messenger__button Load conversation
+				.messenger__list
+					.messenger__item
+						.messenger__avatar
+							img(src="img/content/avatar-1.jpg" alt="Avatar")
+						.messenger__details
+							.messenger__head
+								.messenger__man Orval Casper
+								.messenger__time 11:59AM
+							.messenger__content When do you release the coded for the Fleet - Travel kit? <a href="https://ui8.net" target="_blank">https://ui8.net/product-link</a>
+					.messenger__item
+						.messenger__avatar
+							img(src="img/content/avatar.jpg" alt="Avatar")
+						.messenger__details
+							.messenger__head
+								.messenger__man Britney Beer
+								.messenger__time 11:59AM
+							.messenger__content Hi @orval, thanks for contacting.<br>Yes, I’m working on it. It would be released next 2 weeks. You could check the progress here: <a href="https://ui8.net" target="_blank" rel="noopener noreferrer">https://ui8.net/progress</a><br></br>Thanks for your patience and understanding. 🙌<br> Regards,<br></br>Br
+				.messenger__send
+					.messenger__file
+						input(type="file")
+						+i('file-add')
+					+smile('smile_up')
+					.messenger__form
+						input.messenger__input(type="text" name="message" placeholder="Message")
+						button.button-small.messenger__button Send

@@ -1,0 +1,232 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarProducts: visible
+classSidebarProductsAdd: active
+pageTitle: "New product"
+---
+extends layouts/layout
+block content
+	.create
+		.create__row
+			.create__col
+				.create__card.card
+					.card__head
+						.title-green.card__title Name & description
+						a.button-stroke.button-small.card__button(href="products-dashboard.html")
+							+i('arrow-left')
+							span Back
+					.field
+						.field__label Product title
+							.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+								+i('info')
+						.field__wrap
+							input.field__input(type="text" name="title" required)
+					+editor('Description', 'Description')
+					.create__group
+						.field
+							.field__label Key features
+								.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+									+i('info')
+							.field__wrap
+								input.field__input(type="text" name="value1" placeholder="Value" required)
+						.field
+							.field__wrap
+								input.field__input(type="text" name="value2" placeholder="Value" required)
+						.field
+							.field__wrap
+								input.field__input(type="text" name="value2" placeholder="Value" required)
+						.field
+							.field__wrap
+								input.field__input(type="text" name="value2" placeholder="Value" required)
+				.create__card.card
+					.card__head
+						.title-blue.card__title Images & CTA
+					+file('Cover images', 'Maximum 100 characters. No HTML or emoji allowed', 'Click or drop image')
+					.field
+						.field__label Dropdown
+							.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+								+i('info')
+						.field__wrap
+							select.select
+								option Purchase now
+								option Purchase tomorrow
+								option Buy later
+				.create__card.card
+					.card__head
+						.title-green.card__title Price
+					.field.field_currency
+						.field__label Amount
+							.tooltip(title="Small description")
+								+i('info')
+						.field__wrap
+							input.field__input(type="text" name="amount" required)
+							.field__currency $
+					.create__line
+						.create__info Allow customers to pay they want
+							.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+								+i('info')
+						+switch(true)
+					.create__fieldset
+						.field.field_currency
+							.field__label Minimum amount
+							.field__wrap
+								input.field__input(type="text" name="minimum-amount" required)
+								.field__currency $
+						.field.field_currency
+							.field__label Suggested amount
+							.field__wrap
+								input.field__input(type="text" name="suggested-amount" required)
+								.field__currency $
+				.create__card.card
+					.card__head
+						.title-purple.card__title Category & attibutes
+					.field
+						.field__label Category
+							.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+								+i('info')
+						.field__wrap
+							select.select
+								option Select category
+								option Category 1
+								option Category 2
+					.create__label Compatibility
+						.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+							+i('info')
+					.create__list
+						label.checkbox
+							input.checkbox__input(type="checkbox" checked)
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Sketch
+						label.checkbox
+							input.checkbox__input(type="checkbox" checked)
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text WordPress
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Procreate
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Figma
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text HTML
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Illustrator
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Adobe XD
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Keynote
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Framer
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Photoshop
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Maya
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text In Design
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Cinema 4D
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text Blender
+						label.checkbox
+							input.checkbox__input(type="checkbox")
+							span.checkbox__inner
+								span.checkbox__tick
+								span.checkbox__text After Effect
+					.create__top
+						.create__label Tags
+							.tooltip(title="Maximum 100 characters. No HTML or emoji allowed")
+								+i('info')
+						.create__counter <span>1</span>/12 tags
+					.create__tags
+						input(name="tags" placeholder="Enter tags to describe your item" value="Geometry")
+				.create__card.card
+					.card__head
+						.title-blue.card__title Product files
+					+file('Content', 'Maximum 100 characters. No HTML or emoji allowed', 'Click or drop files')
+					+file('Fonts', 'Maximum 100 characters. No HTML or emoji allowed', 'Click or drop files')
+				.create__card.card
+					.card__head
+						.title-red.card__title Discussion
+					+editor('Message to reviewer', 'Description')
+			.create__col
+				.create__preview.js-preview
+					button.create__close.js-preview-close
+						+i('close')
+					.card
+						.card__head
+							.title-blue.card__title Preview
+							button.card__full
+								+i('expand')
+						.create__photo
+							img(src="img/content/photo-1.jpg" alt="Product")
+						.create__flex
+							.create__subtitle Fleet - Travel shopping UI design kit
+							.create__price $98
+						.create__user
+							.create__avatar
+								img(src="img/content/avatar.jpg" alt="Avatar")
+							.create__text by <span>Hortense</span>
+	.panel
+		.panel__info
+			+i('check-all')
+			| Last saved <span>Oct 4, 2021 - 23:32</span>
+		.panel__btns
+			button.button-stroke.panel__button Save Draft
+			button.button.panel__button Publish now
+			.actions.actions_up
+				button.actions__button
+					+i('more-horizontal')
+				.actions__body
+					button.actions__option.js-preview-open
+						+i('expand')
+						| Preview
+					button.actions__option(data-popup=".js-popup-schedule")
+						+i('calendar')
+						| Schedule product
+					button.actions__option
+						+i('link')
+						| Get shareable link
+					button.actions__option
+						+i('close')
+						| Clear data
+	include partials/popup-schedule
+
+
+
+	

@@ -1,0 +1,213 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarCustomers: visible
+classSidebarCustomerList: active
+pageTitle: "Customer list"
+---
+extends layouts/layout
+block content
+	.customer.card
+		.card__head
+			.title-purple.card__title Customer
+			+form('text', 'search', 'Search by name or email', 'search')
+			.card__nav
+				button.card__link.active Active
+				button.card__link New
+			.filters
+				button.button-square-stroke.button-small.filters__head
+					+i('filter')
+				.filters__body
+					.filters__top
+						.title-red.filters__title Showing 10 of 24 customer
+						button.filters__close
+							+i('close')
+					+form('text', 'search', 'Search for products', 'search')
+					.filters__group
+						.filters__item
+							.field
+								.field__label Sort by
+								.field__wrap
+									select.select
+										option Featured
+										option Last
+										option New
+						.filters__item
+							.filters__label Showing
+							.filters__list
+								label.checkbox.checkbox_reverse
+									input.checkbox__input(type="checkbox")
+									span.checkbox__inner
+										span.checkbox__tick
+										span.checkbox__text All products
+								label.checkbox.checkbox_reverse
+									input.checkbox__input(type="checkbox" checked)
+									span.checkbox__inner
+										span.checkbox__tick
+										span.checkbox__text UI Kit
+								label.checkbox.checkbox_reverse
+									input.checkbox__input(type="checkbox" checked)
+									span.checkbox__inner
+										span.checkbox__tick
+										span.checkbox__text Illustration
+								label.checkbox.checkbox_reverse
+									input.checkbox__input(type="checkbox")
+									span.checkbox__inner
+										span.checkbox__tick
+										span.checkbox__text Wireframe kit
+								label.checkbox.checkbox_reverse
+									input.checkbox__input(type="checkbox")
+									span.checkbox__inner
+										span.checkbox__tick
+										span.checkbox__text Icons
+						.filters__item
+							.filters__label Price
+							.filters__range.js-slider(
+								data-min='0'
+								data-max='100'
+								data-start='20'
+								data-end='50'
+								data-step='1'
+								data-tooltips='true'
+								data-prefix='$')
+					.filters__btns
+						button.button-stroke.filters__button Reset
+						button.button.filters__button Apply
+				.filters__overlay
+		.customer__inner
+			.customer__container
+				.customer__wrapper
+					.customer__table
+						.customer__row
+							.customer__col
+								label.checkbox
+									input.checkbox__input(type="checkbox")
+									span.checkbox__inner
+										span.checkbox__tick
+							.customer__col Name
+							.customer__col Email
+							.customer__col Purchase
+							.customer__col Lifetime
+							.customer__col Comments
+							.customer__col Likes
+						mixin customerRow(user, login, avatar, email, purchase, price, balanceStatus, balance, comments, likes)
+							.customer__row
+								.customer__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.customer__col
+									.customer__item
+										.customer__avatar
+											img(src=avatar alt="Avatar")
+										.customer__description
+											.customer__user=user
+											.customer__login=login
+											.customer__email=email
+								.customer__col
+									.customer__email=email
+								.customer__col
+									.status-green-dark.customer__purchase=purchase
+								.customer__col
+									.customer__lifetime
+										.customer__price $
+											=price
+										if balanceStatus
+											.balance.positive
+												+i('arrow-top')
+												=balance
+										else
+											.balance.negative
+												+i('arrow-bottom')
+												=balance
+								.customer__col=comments
+								.customer__col=likes
+						+customerRow('Chelsie Haley', '@username', 'img/content/avatar-1.jpg', 'chelsie@ui8.net', '4', '384', false, '12.8%', '8', '16')
+						+customerRow('Filomena Fahey', '@username', 'img/content/avatar-2.jpg', 'fahey.designer@robot.co', '12', '223', true, '2.8%', '14', '6')
+						+customerRow('Orion Luettgen', '@username', 'img/content/avatar-3.jpg', 'orion88@yahoo.com', '4', '384', false, '12.8%', '8', '16')
+						+customerRow('Brown Beatty', '@username', 'img/content/avatar-4.jpg', 'brown.be@gmail.com', '12', '223', true, '2.8%', '14', '6')
+						+customerRow('Chelsie Haley', '@username', 'img/content/avatar-5.jpg', 'chelsie@ui8.net', '4', '384', false, '12.8%', '5', '33')
+						+customerRow('Filomena Fahey', '@username', 'img/content/avatar-1.jpg', 'fahey.designer@robot.co', '12', '223', true, '2.8%', '14', '6')
+						+customerRow('Chelsie Haley', '@username', 'img/content/avatar-2.jpg', 'chelsie@ui8.net', '4', '384', true, '44.2%', '12', '36')
+						+customerRow('Filomena Fahey', '@username', 'img/content/avatar-3.jpg', 'fahey.designer@robot.co', '12', '223', true, '2.8%', '14', '6')
+						+customerRow('Chelsie Haley', '@username', 'img/content/avatar-4.jpg', 'chelsie@ui8.net', '4', '384', false, '12.8%', '4', '27')
+						+customerRow('Filomena Fahey', '@username', 'img/content/avatar-5.jpg', 'fahey.designer@robot.co', '12', '223', true, '2.8%', '14', '6')
+				.customer__foot
+					button.button-stroke.button-small.customer__button
+						+loader
+						span Load more
+			.customer__details.details
+				button.details__close
+					+i('close')
+				.details__head
+					.details__user
+						.details__avatar
+							img(src='img/content/avatar-1.jpg' alt="Avatar")
+						.details__wrap
+							.details__man Chelsie Haley
+							.details__login @chelsiehaly
+					.details__btns
+						button.button-stroke.details__button
+							span Follow
+							+i('add')
+						a.button.details__button(href="message-center.html")
+							span Message
+							+i('message')
+				+editor('Private note', 'Description Private note')
+				.details__group
+					a.details__line(href="mailto:fahey.designer@robot.co")
+						+i('mail')
+						| fahey.designer@robot.co
+					.details__socials
+						a.details__social(href="https://twitter.com/ui8" target="_blank")
+							+i('twitter')
+						a.details__social(href="https://www.instagram.com/ui8net/" target="_blank")
+							+i('instagram')
+						a.details__social(href="https://www.pinterest.com/ui8m/" target="_blank")
+							+i('pinterest')
+						a.details__social(href="https://www.facebook.com/ui8.net/" target="_blank")
+							+i('facebook')
+					a.details__line(href="https://ui8.net/")
+						+i('link')
+						| robot.co
+				.history
+					.history__label Purchase history
+						.tooltip(title="Maximum 100 characters. No HTML or emoji allowed" data-position="right")
+							+i('info')
+					.history__inner
+						.history__table
+							.history__row
+								.history__col Product
+								.history__col Price
+								.history__col Date
+							mixin historyRow(title, srcSet, src, link, price, date)
+								.history__row(data-popup=".js-popup-product")
+									.history__col
+										.history__item
+											.history__preview
+												img(srcSet=`${srcSet} 2x` src=src alt="Product")
+											.history__details
+												.history__product=title
+												.history__link=link
+												.history__price $
+													=price
+									.history__col
+										.history__price $
+											=price
+									.history__col
+										.history__date=date
+							+historyRow('Bento Matte 3D Illustration', 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'ui8.net/product/product-link', '64', 'Apr 9, 2021')
+							+historyRow('Node - Crypto iOS UI design kit', 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'ui8.net/product/product-link', '123', 'Apr 15, 2021')
+							+historyRow('TaskEz: Productivity App iOS UI Kit', 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', 'ui8.net/product/product-link', '49', 'Apr 24, 2021')
+							+historyRow('Fleet - Travel shopping UI design kit', 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', 'ui8.net/product/product-link', '89', 'Apr 31, 2021')
+					.history__foot
+						button.button-stroke.button-small.history__button
+							+loader
+							span Load more
+	.panel.tablet-hide
+		.panel__info
+			+i('check-all')
+			| <span>2 customers</span> selected
+		.panel__btns
+			a.button.panel__button(href="message-center.html") Message
+	

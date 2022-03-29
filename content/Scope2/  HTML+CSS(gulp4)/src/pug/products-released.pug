@@ -1,0 +1,129 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarProducts: visible
+classSidebarProductsReleased: active
+pageTitle: "Released"
+parameterSchedule: "Last edited"
+---
+extends layouts/layout
+block content
+	.drafts.card.js-tabs
+		.card__head
+			.title-purple.card__title Products
+			+form('text', 'search', 'Search product', 'search')
+			.card__sorting
+				a.card__link.js-tabs-link.active(href="#")
+					+i('list')
+				a.card__link.js-tabs-link(href="#")
+					+i('grid')
+		.drafts__container
+			.drafts__tab.js-tabs-item(style="display: block")
+				.released
+					.released__wrapper
+						.released__table
+							.released__row
+								.released__col
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__inner
+											span.checkbox__tick
+								.released__col Product
+								.released__col Price
+								.released__col Status
+								.released__col Rating
+								.released__col Sales
+								.released__col Views
+							mixin releasedRow(srcSet, src, title, category, price, status, rating, counter, sales, balanceStatus, balance, views, viewsPercent)
+								.released__row
+									.released__col
+										label.checkbox
+											input.checkbox__input(type="checkbox")
+											span.checkbox__inner
+												span.checkbox__tick
+									.released__col
+										a.released__item(href="#" data-popup=".js-popup-product")
+											.released__preview
+												img(srcSet=`${srcSet} 2x` src=src alt="Product")
+											.released__details
+												.released__product=title
+												.released__wrap
+													.released__price $
+														=price
+													.released__category=category
+									.released__col $
+										=price
+									.released__col
+										.released__label Status
+										if status
+											.status-green.released__status Active
+										else
+											.status-red.released__status Deactive
+									.released__col
+										.released__label Rating
+										if rating
+											.released__rating
+												+i('star-fill')
+												=rating
+												.released__counter (
+													=counter
+													| )
+										else
+											.released__rating.released__rating_empty
+												+i('star-stroke')
+												| No ratings
+									.released__col
+										.released__label Sales
+										.released__sales
+											.released__number $
+												=sales
+											if balanceStatus
+												.balance.positive
+													+i('arrow-top')
+													=balance
+													| %
+											else
+												.balance.negative
+													+i('arrow-bottom')
+													=balance
+													| %
+									.released__col
+										.released__label Views
+										.released__box
+											.released__number=views
+											.released__line
+												.released__progress(style=`width: ${viewsPercent}`)
+							+releasedRow('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Fleet - Travel shopping UI design kit', 'UI design kit', '64', true, '4.8', '87', '3,200', true, '55.8', '48k', '100%')
+							+releasedRow('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'Node - Crypto iOS UI design kit', 'UI design kit', '123', false, false, false, '1,800', false, '32.5', '12k', '25%')
+							+releasedRow('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'TaskEz: Productivity App iOS UI Kit', 'UI design kit', '54', true, '4.8', '43', '4,500', true, '33.1', '12k', '25%')
+							+releasedRow('img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', 'Bento Matte 3D Illustration', 'UI design kit', '64', false, '4.8', '123', '1,800', false, '12.3', '24k', '50%')
+							+releasedRow('img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', 'Node - Crypto iOS UI design kit', 'UI design kit', '123', true, '4.8', '17', '2,700', true, '55.8', '34k', '75%')
+					.released__foot
+						button.button-stroke.button-small.released__button
+							+loader
+							span Load more
+			.drafts__tab.js-tabs-item
+				.drafts__list
+					+summary(true, 'img/content/product-pic-1@2x.jpg', 'img/content/product-pic-1.jpg', true, '64', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Fleet - Travel shopping UI design kit')
+					+summary(true, 'img/content/product-pic-2@2x.jpg', 'img/content/product-pic-2.jpg', true, '123', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Node - Crypto iOS UI design kit')
+					+summary(true, 'img/content/product-pic-3@2x.jpg', 'img/content/product-pic-3.jpg', true, '54', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'TaskEz: Productivity App iOS UI Kit')
+					+summary(true, 'img/content/product-pic-4@2x.jpg', 'img/content/product-pic-4.jpg', true, '64', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Bento Matte 3D Illustration')
+					+summary(true, 'img/content/product-pic-5@2x.jpg', 'img/content/product-pic-5.jpg', true, '123', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'Node - Crypto iOS UI design kit')
+					+summary(true, 'img/content/product-pic-6@2x.jpg', 'img/content/product-pic-6.jpg', true, '222', 'Apr 9, 2021 at 3:55 PM', false, '', '', 'TaskEz: Productivity App iOS UI Kit')
+	.panel.tablet-hide
+		.panel__info
+			+i('check-all')
+			| 2 products selected
+		//- .panel__note
+		//- 	+i('check-circle')
+		//- 	| Products deleted 🙌
+		//- 	button.panel__close
+		//- 		+i('close')
+		.panel__btns
+			button.button-stroke-red.panel__button
+				span Deleted
+				+i('trash')
+			button.button.panel__button Publish
+
+
+
+	

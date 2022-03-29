@@ -1,0 +1,31 @@
+.device
+    &__chart
+        width: auto
+        height: 230px
+        +t
+            max-width: 310px
+            margin: 0 auto
+    &__legend
+        display: flex
+        justify-content: space-between
+        margin-top: 32px
+        .icon
+            width: 24px
+            height: 24px
+            margin-bottom: 12px
+    &__indicator
+        &_mobile
+            .icon
+                fill: #8E59FF
+        &_tablet
+            .icon
+                fill: #83BF6E
+        &_desktop
+            .icon
+                fill: #2A85FF
+    &__title
+        +caption2
+        font-weight: 500
+        color: $n4
+    &__percent
+        +title1-s

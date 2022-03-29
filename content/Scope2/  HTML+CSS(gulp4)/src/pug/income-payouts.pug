@@ -1,0 +1,87 @@
+---
+title: "Core - Dashboard Builder"
+classSidebarIncome: visible
+classSidebarIncomePayouts: active
+pageTitle: "Payouts"
+---
+extends layouts/layout
+block content
+	.card
+		.card__head
+			.title-blue.card__title Current balance
+		.balance
+			.balance__list
+				.balance__item
+					.balance__icon(style="background-color: #B5E4CA;")
+						+i('activity')
+					.balance__line
+						.balance__details
+							.balance__label Current account balance
+								.tooltip(title="Small description Current account balance")
+									+i('info')
+							.balance__counter $128k
+				.balance__item
+					.balance__icon(style="background-color: #CABDFF;")
+						+i('pie-chart')
+					.balance__line
+						.balance__details
+							.balance__label Available for withdrawal
+								.tooltip(title="Small description vailable for withdrawal")
+									+i('info')
+							.balance__counter $0.00
+			button.button.balance__button(data-popup=".js-popup-success") Withdraw balance
+	.card
+		.card__head
+			.title-blue.card__title Payout history
+		.payout
+			.payout__wrapper
+				.payout__table
+					.payout__row
+						.payout__col Month
+						.payout__col Status
+						.payout__col Method
+						.payout__col Earnings
+						.payout__col Amount withdrawn
+					mixin earningRow(month, status, paypal, earnings, withdrawn)
+						.payout__row
+							.payout__col=month
+							.payout__col
+								if status
+									.status-green-dark.payout__status Paid
+								else
+									.status-yellow.payout__status Pending
+							.payout__col
+								if paypal
+									.status-blue.payout__status Paypal
+								else
+									.status-purple.payout__status SWIFT
+							.payout__col $
+								=earnings
+							.payout__col $
+								=withdrawn
+					+earningRow('Oct 2021', true, true, '98,165.00', '128,899.00')
+					+earningRow('Sep 2021', true, false, '128,899.00', '43,899.00')
+					+earningRow('Aug 2021', true, true, '134,899.00', '128,899.00')
+					+earningRow('Jul 2021', true, false, '128,899.00', '45,111.00')
+					+earningRow('Jun 2021', true, false, '128,899.00', '128,899.00')
+					+earningRow('May 2020', true, true, '45,899.00', '134,899.00')
+					+earningRow('Jun 2020', true, true, '128,899.00', '128,899.00')
+					+earningRow('Jul 2020', true, false, '43,899.00', '128,899.00')
+					+earningRow('Aug 2020', true, true, '128,899.00', '45,899.00')
+					+earningRow('Sep 2020', true, false, '45,111.00', '98,165.00')
+					+earningRow('Nov 2020', true, true, '128,899.00', '128,899.00')
+	.popup.popup_success.js-popup.js-popup-success
+		.popup__overlay.js-popup-overlay
+		.popup__wrap.js-popup-wrap
+			.success
+				.success__icon 🎉
+				.success__info Success!
+				.h2.success__price $128,000
+				.success__text Has been sent to your <span>Paypal: tam@ui8.net</span>
+				button.button.success__button.js-popup-close Done!
+			button.popup__close.js-popup-close
+				+i('close')
+
+	
+
+	
