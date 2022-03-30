@@ -12,6 +12,14 @@
 @import url(https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&display=swap);
 /* Import: GT Walsheim */
 @font-face {
+	font-family:'KakaoBig';
+	font-weight:400;
+	src:local("☺"),
+	url(http://saraswati.cafe24.com/fonts/93b6a9f.woff2) format("woff2"),
+	url(http://saraswati.cafe24.com/fonts/aaf1e56.woff) format("woff")
+}
+
+@font-face {
   font-family: "GT Walsheim";
   src: local("GT Walsheim Light"),url('../../fonts/gt-walsheim/gt-walsheim-light.woff');
   font-weight: 300;
