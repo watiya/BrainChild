@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><linearGradient id="a" x1="3.03" y1="3.03" x2="28.97" y2="28.97" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff5722"/><stop offset=".11" stop-color="#ff4a23"/><stop offset=".19" stop-color="#ff3e24"/><stop offset=".27" stop-color="#fe3b2a"/><stop offset=".38" stop-color="#fc333a"/><stop offset=".5" stop-color="#f92454"/><stop offset=".62" stop-color="#f41179"/><stop offset="1" stop-color="#ff5f89"/></linearGradient></defs><rect width="32" height="32" rx="10.32" fill="url(#a)"/><path d="M9.72 22.28V12.13a2 2 0 01.53-1.49 2 2 0 011.5-.5l7.83.19v3.31l-6.08-.14v8.78zm12.21.24a2.47 2.47 0 01-1.93-.75 2.66 2.66 0 01-.69-1.88A2.6 2.6 0 0120 18a2.78 2.78 0 013.78 0 2.48 2.48 0 01.73 1.83 2.56 2.56 0 01-.73 1.88 2.53 2.53 0 01-1.85.81z" fill="#fff"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="34px" viewBox="0 0 25 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo-image</title>
+    <defs>
+        <linearGradient x1="41.6878065%" y1="25.0094733%" x2="58.3121935%" y2="74.9905267%" id="linearGradient-1">
+            <stop stop-color="#FF00FF" offset="0%"></stop>
+            <stop stop-color="#9D00FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="55.0212603%" y1="81.5217391%" x2="44.9787397%" y2="18.4782609%" id="linearGradient-2">
+            <stop stop-color="#00FFBE" offset="0%"></stop>
+            <stop stop-color="#603CF7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="62.5%" y1="62.5166128%" x2="37.5%" y2="37.4833872%" id="linearGradient-3">
+            <stop stop-color="#00FFBE" offset="0%"></stop>
+            <stop stop-color="#508CFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="37.5123072%" y1="37.4751701%" x2="62.520512%" y2="62.5248299%" id="linearGradient-4">
+            <stop stop-color="#FF00FF" offset="0%"></stop>
+            <stop stop-color="#9D00FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-image" transform="translate(0.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="url(#linearGradient-1)" points="16.1839242 29.325 16.1839242 29.325 16.1839242 19.9803125 24.2705766 15.3053125 24.2705766 24.65"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-2)" points="0 4.675 0 29.325 8.09196209 24.65 8.09196209 0"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-3)" points="16.1839242 29.325 8.09196209 24.65 0 29.325 8.09196209 34"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-4)" points="24.2705766 15.3053125 16.1839242 10.6303125 8.09196209 15.3053125 16.1839242 19.9803125"></polygon>
+        </g>
+    </g>
+</svg>

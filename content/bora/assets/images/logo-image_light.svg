@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"><defs><linearGradient id="a" x1="8.96" y1="11.62" x2="21.69" y2="22.1" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff5722"/><stop offset=".11" stop-color="#ff4a23"/><stop offset=".19" stop-color="#ff3e24"/><stop offset=".27" stop-color="#fe3b2a"/><stop offset=".38" stop-color="#fc333a"/><stop offset=".5" stop-color="#f92454"/><stop offset=".62" stop-color="#f41179"/><stop offset="1" stop-color="#ff5f89"/></linearGradient><linearGradient id="b" x1="10.13" y1="10.2" x2="22.86" y2="20.68" xlink:href="#a"/></defs><rect width="32" height="32" rx="10.32" fill="#fff"/><path d="M9.72 22.28V12.13a2 2 0 01.53-1.49 2 2 0 011.5-.5l7.83.19v3.31l-6.08-.14v8.78z" fill="url(#a)"/><path d="M21.93 22.52a2.47 2.47 0 01-1.93-.75 2.66 2.66 0 01-.69-1.88A2.6 2.6 0 0120 18a2.78 2.78 0 013.78 0 2.48 2.48 0 01.73 1.83 2.56 2.56 0 01-.73 1.88 2.53 2.53 0 01-1.85.81z" fill="url(#b)"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="34px" viewBox="0 0 25 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 10</title>
+    <defs>
+        <polygon id="path-1" points="0 0.852266667 16.19046 0.852266667 16.19046 10.2 0 10.2"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10">
+            <polygon id="Fill-1" fill="#FFFFFF" points="16.19046 29.3261333 16.19046 29.3261333 16.19046 19.9784 24.28586 15.3045333 24.28586 24.6522667"></polygon>
+            <polygon id="Fill-3" fill="#FFFFFF" points="0 4.67386667 0 29.3261333 8.0954 24.6522667 8.0954 0"></polygon>
+            <g id="Group-7" transform="translate(0.000000, 23.800000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-6"></g>
+                <polygon id="Fill-5" fill="#D1D1D1" mask="url(#mask-2)" points="16.19046 5.52613333 8.09506 0.852266667 -0.00034 5.52613333 8.09506 10.2"></polygon>
+            </g>
+            <polygon id="Fill-8" fill="#D1D1D1" points="24.2856333 15.30476 16.1902333 10.6308933 8.09483333 15.30476 16.1902333 19.9786267"></polygon>
+        </g>
+    </g>
+</svg>
