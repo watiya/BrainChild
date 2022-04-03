@@ -500,16 +500,16 @@
    * Css vars color
    *//*
    * Css vars color-primary
-   */--color-primary-10: #ffe6ef;
-  --color-primary-20: #ffaccc;
-  --color-primary-30: #ff73a9;
-  --color-primary-40: #ff3985;
+   */--color-primary-10: #e6ecff;
+  --color-primary-20: #b3c7ff;
+  --color-primary-30: #80a2ff;
+  --color-primary-40: #4d7cff;
   --color-primary: #2963FF;
-  --color-primary-60: #d10050;
-  --color-primary-70: #a3003f;
-  --color-primary-80: #75002d;
-  --color-primary-90: #47001b;
-  --color-primary-100: #1a000a;
+  --color-primary-60: #0044ff;
+  --color-primary-70: #0036cc;
+  --color-primary-80: #002999;
+  --color-primary-90: #001b66;
+  --color-primary-100: #000e33;
   /*
    * Css vars color-secondary
    */--color-secondary-10: #ffeee9;
