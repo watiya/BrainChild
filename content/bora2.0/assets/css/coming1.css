@@ -18,22 +18,13 @@
 .main .vision .bg-img { position:absolute; left:578px; top:-250px; display:block; content:''; width:958px; height:958px; background:url('../img/main/img_bg.png') no-repeat; z-index:2; }
 
 .main .meta { position: relative;  min-width:1264px;  margin:0 auto; }
-.main .meta .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 200px 0; }
+.main .meta .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 150px 0; }
 .main .meta h2 { margin-bottom:0px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #222; }
 .main .meta img { width:100%; height:auto;}
 .main .meta p { width:800px; margin-bottom:30px; margin-left:250px; font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9; text-align: left;}
 .main .meta p a,
 .main .meta p a:hover {color:#2140fe;}
 .main .meta p a:hover:before  { background:#2140fe}
-
-.main .meta2 { position: relative;  min-width:1264px;  margin:0 auto; background:#f5f5f5; }
-.main .meta2 .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 200px 0; }
-.main .meta2 h2 { margin-bottom:0px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #222; }
-.main .meta2 img { width:100%; height:auto;}
-.main .meta2 p { width:1264px; margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9; text-align: center;}
-.main .meta2 p a,
-.main .meta2 p a:hover {color:#2140fe;}
-.main .meta2 p a:hover:before  { background:#2140fe}
 
 /*-----------------------------------------
             mobile
@@ -62,14 +53,24 @@
     .main .meta p a:hover {color:#2140fe;}
     .main .meta p a:hover:before  { background:#2140fe;}
 
-    .main .meta2 { position: relative;  min-width:auto; max-width:auto;  margin:0 auto; background:#f5f5f5; }
-    .main .meta2 .inner { position:relative; width:86%; margin:0 auto;  box-sizing:border-box; padding:0px 0px 0px 0x; }
-    .main .meta2 h2 { margin-bottom:17px; font-size: 28px; line-height: 1.29;}
-    .main .meta2 img { width:100%; height:auto;}
-    .main .meta2 p { clear:both; width:auto; margin:0 0 20px 0;  font-size: 14px; line-height: 1.78; }
-    .main .meta2 p a,
-    .main .meta2 p a:hover {color:#2140fe;}
-    .main .meta2 p a:hover:before  { background:#2140fe;}
+}
 
+/*   이미지 반응형 조정 */
 
+@media(min-width: 1024px){
+    #image_large{
+        display: block;
+    }
+    #image_small{   
+        display: none;
+    }
+}
+    
+    @media(max-width: 768px){    
+    #image_large{
+        display: none;
+     }
+    #image_small{       
+        display: block;
+    }   
 }
