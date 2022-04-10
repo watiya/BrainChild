@@ -38,21 +38,20 @@
     .main .vision { width:100%; min-width:auto; max-width:auto; height:auto; text-align:left; }
     .main .wrap-vision .link-pos { top:-160px}
     .main .vision .bg { width:100%; min-width:auto; height:100%; background:url('../img/main/background2_m.png') center no-repeat; background-size: cover;}
-    .main .vision p { width:300px; padding:0 0 0 30px; margin:200px 0 0 0;  line-height: 1.41;  font-size: 34px; }
-    .main .vision dl { width:auto; padding:0 10px 0px 30px; font-size: 28px; line-height: 1.63; }
-    .main .vision dt { font-size:28px;  line-height:1.41; margin-bottom:10px; }
-    .main .vision dd { font-size: 16px; line-height: 1.57; opacity: 0.9;}
+    .main .vision p {  width:300px; padding:0 0 0 30px; margin:151px 0 0 0;  line-height: 1.41;  font-size: 34px; }
+    .main .vision dl { width:auto; padding:0 30px 57px 30px; margin:100px auto 0px auto; font-size: 32px; line-height: 1.63; }
+    .main .vision dt { font-size:28px;  line-height:0.9; margin-bottom:30px; }
+    .main .vision dd { font-size: 14px; line-height: 1.57; opacity: 0.9; margin-bottom:22px;}
     .main .vision .bg-img { display: none; }
 
     .main .meta { position: relative;  min-width:auto; max-width:auto;  margin:0 auto; background:#fff; }
-    .main .meta .inner { position:relative; width:86%; margin:0 auto;  box-sizing:border-box; padding:50px 0 50px 0; }
-    .main .meta h2 { margin-bottom:17px; font-size: 28px; line-height: 1.29;}
+    .main .meta .inner { position:relative; width:100%; margin:0 auto;  box-sizing:border-box; padding:60px 20px 60px 30px; }
+    .main .meta h2 { margin-bottom:17px; font-size: 28px; line-height: 1.29; text-align:left;}
     .main .meta img { width:100%; height:auto;}
-    .main .meta p { clear:both; width:auto; margin:0 0 20px 0;  font-size: 14px; line-height: 1.78; }
+    .main .meta p { clear:both; width:auto; margin:0 0 20px 0; font-size: 14px; line-height: 1.78; text-align:left;}
     .main .meta p a,
     .main .meta p a:hover {color:#2140fe;}
     .main .meta p a:hover:before  { background:#2140fe;}
-
 }
 
 /*   이미지 반응형 조정 */
