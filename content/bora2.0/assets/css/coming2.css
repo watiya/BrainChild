@@ -1,0 +1,81 @@
+/*-----------------------------------------
+            common
+-------------------------------------------*/
+
+.main .link-pos { position:absolute; left:0; top:-100px; }
+
+/*-----------------------------------------
+            contents
+-------------------------------------------*/
+.main .vision { position: relative; min-width:1264px; height:1300px; margin:0 auto; overflow:hidden;  }
+.main .wrap-vision { position:relative; }
+.main .wrap-vision .link-pos { top:-460px}
+.main .vision .bg { position:absolute; left:0; top:0; width:100%; min-width:1264px; height:1300px; background:url('../img/main/background.jpg') center no-repeat; }
+.main .vision p { position:relative; width:1000px; padding-right:264px; margin:279px auto 0 auto;  line-height: 1.25; font-weight: bold; font-size: 80px; color: #fff;}
+.main .vision dl { position:relative; width:1264px; padding-left:20px; margin:249px auto 0px auto; font-size: 32px; line-height: 1.63; color: #fff;}
+.main .vision dt { font-size:40px; font-weight:bold; line-height:0.9; margin-bottom:29px; }
+.main .vision dd { font-size: 18px; line-height: 1.75; opacity: 0.9; margin-bottom:27px; font-weight:normal; }
+
+.main .meta { position: relative;  min-width:1264px; height:790px;  margin:0 auto;  }
+.main .meta .inner { position:relative; width:1264px;  margin:0 auto;  padding:200px 0 0 0 }
+.main .meta .bg-logo { position:absolute; left:578px; top:18px; display:block; content:''; width:958px; height:958px;  background:url('../img/main/img_meta1.png') no-repeat; z-index:2; }
+.main .meta h2 { margin-bottom:32px; color:#222222;  font-size: 52px; font-weight: bold; line-height: 0.69; }
+.main .meta h2 span {font-family: "Roboto"; }
+.main .meta p { width:665px; margin-bottom:20px;  font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9;}
+.main .meta p a,
+.main .meta p a:hover {color:#2140fe;}
+.main .meta p a:hover:before  { background:#2140fe}
+
+.main .meta2 { position: relative;  min-width:1264px;  margin:0 auto; background:#f5f5f5; }
+.main .meta2 .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 200px 0; }
+.main .meta2 h2 { margin-bottom:0px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #222; }
+.main .meta2 .list { overflow:hidden;}
+.main .meta2 .list ul { margin-left:-32px; width:1296px;  }
+.main .meta2 .list li { float:left; width:292px; height:160px; padding:0 0 32px 32px; }
+.main .meta2 .list img { width:100%; height:auto;}
+.main .meta2 p { width:1264px; margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9; text-align: center;}
+.main .meta2 p a,
+.main .meta2 p a:hover {color:#2140fe;}
+.main .meta2 p a:hover:before  { background:#2140fe}
+
+/*-----------------------------------------
+            mobile
+-------------------------------------------*/
+@media all and (max-width:1023px){
+
+    .main {overflow-x:hidden;}
+
+    .main .link-pos { position:absolute; left:0; top:-53px; }
+
+    .main .vision { width:100%; min-width:auto; max-width:auto; height:auto; text-align:left; }
+    .main .wrap-vision .link-pos { top:-160px}
+    .main .vision .bg { width:100%; min-width:auto; height:100%; background:url('../img/main/main_visual_m.png') center no-repeat; background-size: cover;}
+    .main .vision p {  width:300px; padding:0 0 0 30px; margin:151px 0 0 0;  line-height: 1.41;  font-size: 34px; }
+    .main .vision dl { width:auto; padding:0 30px 57px 30px; margin:100px auto 0px auto; font-size: 32px; line-height: 1.63; }
+    .main .vision dt { font-size:28px;  line-height:0.9; margin-bottom:30px; }
+    .main .vision dd { font-size: 14px; line-height: 1.57; opacity: 0.9; margin-bottom:22px;}
+
+    .main .meta {  min-width:auto; max-width:auto; width:100%; height:auto; overflow-x:hidden; overflow:inherit; background-size: cover;}
+    .main .meta .inner {  width:100%;  margin:0 auto;  padding:58px 20px 0px 30px; box-sizing: border-box;}
+    .main .meta .bg-logo { position:relative; left:inherit; top:inherit; width:100vw; height:124.16vw; margin:-25px -20px -130px 0px; background:url('../img/main/img_meta1@2x.png') -5.5vw top no-repeat; background-size: 100vw auto; z-index:2;}
+    .main .meta h2 { margin-bottom:30px; font-size: 28px; line-height: 0.69; }
+    .main .meta p { clear:both; width:auto; margin-bottom:20px; font-size: 14px; line-height: 1.78;  }
+    .main .meta .inline { display: none;}
+    .main .meta p a,
+    .main .meta p a:hover {color:#2140fe;}
+    .main .meta p a:hover:before  { background:#2140fe;}
+
+    .main .meta2 { position: relative;  min-width:auto; max-width:auto;  margin:0 auto; background:#f5f5f5; }
+    .main .meta2 .inner { position:relative; width:100%; margin:0 auto;  box-sizing:border-box; padding:100px 15px 195px 15px; }
+    .main .meta2 h2 { margin-bottom:17px; font-size: 28px; line-height: 1.29;}
+    .main .meta2 .list { overflow:hidden;}
+    .main .meta2 .list ul { margin-left:0; width:auto;  }
+    .main .meta2 .list li { float:left; width:50%; box-sizing: border-box; height:auto; padding:5px; }
+    .main .meta2 .list img { width:100%; height:auto;}
+    .main .meta2 p { clear:both; width:auto; margin-bottom:0; font-size: 14px; line-height: 1.78; }
+    .main .meta2 p a,
+    .main .meta2 p a:hover {color:#2140fe;}
+    .main .meta2 p a:hover:before  { background:#2140fe;}
+
+
+}
