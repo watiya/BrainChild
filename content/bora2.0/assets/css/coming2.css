@@ -46,7 +46,7 @@
 
     .main .vision { width:100%; min-width:auto; max-width:auto; height:auto; text-align:left; }
     .main .wrap-vision .link-pos { top:-160px}
-    .main .vision .bg { width:100%; min-width:auto; height:100%; background:url('../img/main/main_visual_m.png') center no-repeat; background-size: cover;}
+    .main .vision .bg { width:100%; min-width:auto; height:100%; background:url('../img/main/background2_m.png') center no-repeat; background-size: cover;}
     .main .vision p {  width:300px; padding:0 0 0 30px; margin:151px 0 0 0;  line-height: 1.41;  font-size: 34px; }
     .main .vision dl { width:auto; padding:0 30px 57px 30px; margin:100px auto 0px auto; font-size: 32px; line-height: 1.63; }
     .main .vision dt { font-size:28px;  line-height:0.9; margin-bottom:30px; }
