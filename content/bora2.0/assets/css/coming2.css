@@ -10,11 +10,11 @@
 .main .vision { position: relative; min-width:1264px; height:1300px; margin:0 auto; overflow:hidden;  }
 .main .wrap-vision { position:relative; }
 .main .wrap-vision .link-pos { top:-460px}
-.main .vision .bg { position:absolute; left:0; top:0; width:100%; min-width:1264px; height:1300px; background:url('../img/main/background.jpg') center no-repeat; }
+.main .vision .bg { position:absolute; left:0; top:0; width:100%; min-width:1264px; height:1300px; background:url('../img/main/background2.jpg') center no-repeat; }
 .main .vision p { position:relative; width:1000px; padding-right:264px; margin:279px auto 0 auto;  line-height: 1.25; font-weight: bold; font-size: 80px; color: #fff;}
 .main .vision dl { position:relative; width:1264px; padding-left:20px; margin:249px auto 0px auto; font-size: 32px; line-height: 1.63; color: #fff;}
 .main .vision dt { font-size:40px; font-weight:bold; line-height:0.9; margin-bottom:29px; }
-.main .vision dd { font-size: 18px; line-height: 1.75; opacity: 0.9; margin-bottom:27px; font-weight:normal; }
+.main .vision dd { font-size: 24px; line-height: 1.75; opacity: 0.9; margin-bottom:27px; font-weight:normal; }
 
 .main .meta { position: relative;  min-width:1264px; height:790px;  margin:0 auto;  }
 .main .meta .inner { position:relative; width:1264px;  margin:0 auto;  padding:200px 0 0 0 }
