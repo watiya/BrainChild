@@ -15,6 +15,7 @@
 .main .vision dl { position:relative; width:1264px; padding-left:20px; margin:249px auto 0px auto; font-size: 32px; line-height: 1.63; color: #fff;}
 .main .vision dt { font-size:40px; font-weight:bold; line-height:0.9; margin-bottom:29px; }
 .main .vision dd { font-size: 24px; line-height: 1.75; opacity: 0.9; margin-bottom:27px; font-weight:normal; }
+video { width: 100%;}
 
 .main .meta { position: relative;  min-width:1264px; height:790px;  margin:0 auto;  }
 .main .meta .inner { position:relative; width:1264px;  margin:0 auto;  padding:200px 0 0 0 }

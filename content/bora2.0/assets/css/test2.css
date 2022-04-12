@@ -2,17 +2,17 @@
             common
 -------------------------------------------*/
 
+#bora {z-index: -1;}
 .main .link-pos { position:absolute; left:0; top:-100px; }
-video { width: 100%;}
+
 /*-----------------------------------------
             contents
 -------------------------------------------*/
-.main .vision { position: relative; min-width:1264px; height:1080px; margin:0 auto; overflow:hidden; }
-.main .vision .mask {position: absolute;top: 0;left: 0;width: 100%;height: 100vh;min-height: 100rem;background-color: rgba(0,0,0,0.6);z-index: 4;}
-.main .vision .intro-movie {position:absolute;top:0;left:0;width:100%;height:100vh;min-height:100rem;overflow:hidden; z-index:2}
-.main .wrap-vision { position:relative; z-index:5}
+.main .vision { position: relative; min-width:1264px; height:1080px; margin:0 auto; overflow:hidden;  }
+.main .wrap-vision { position:relative; }
 .main .wrap-vision .link-pos { top:-460px}
-.main .vision p { position:relative; width:1000px; padding-right:264px; margin:200px auto 0 auto;  line-height: 1.25; font-weight: bold; font-size: 80px; color: #fff; z-index:5}
+.main .vision .bg { position:absolute; left:0; top:0; width:100%; min-width:1264px; height:1300px; }
+.main .vision p { position:relative; width:1000px; padding-right:264px; margin:200px auto 0 auto;  line-height: 1.25; font-weight: bold; font-size: 80px; color: #fff;}
 .main .vision dl { position:relative; width:1264px; padding-left:20px; margin:200px auto 0px auto; font-size: 32px; line-height: 1.63; color: #fff;}
 .main .vision dt { font-size:40px; font-weight:bold; line-height:0.9; margin-bottom:29px; }
 .main .vision dd { font-size: 24px; line-height: 1.75; opacity: 0.9; margin-bottom:27px; font-weight:normal; }
@@ -47,10 +47,8 @@ video { width: 100%;}
     .main .link-pos { position:absolute; left:0; top:-53px; }
 
     .main .vision { width:100%; min-width:auto; max-width:auto; height:auto; text-align:left; }
-    .main .vision .mask {position: absolute;top: 0;left: 0;width: 100%;height: 100vh;min-height: 100rem;background-color: rgba(0,0,0,0.6);z-index: 4;}
-    .main .vision .intro-movie {position:absolute;top:0;left:0;width:100%;height:100vh;min-height:100rem;overflow:hidden; z-index:2}
-    .main .vision .intro-movie.intro-movie video{position:relative;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;-ms-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);z-index:3}    
     .main .wrap-vision .link-pos { top:-160px}
+    .main .vision .bg { width:100%; min-width:auto; height:100%; background:url('../img/main/background2_m.png') center no-repeat; background-size: cover;}
     .main .vision p {  width:300px; padding:0 0 0 30px; margin:151px 0 0 0;  line-height: 1.41;  font-size: 34px; }
     .main .vision dl { width:auto; padding:0 30px 57px 30px; margin:100px auto 0px auto; font-size: 32px; line-height: 1.63; }
     .main .vision dt { font-size:28px;  line-height:0.9; margin-bottom:30px; }
