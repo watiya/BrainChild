@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="description" content="Store, secure and grow your entertainment crypto assets." />
+    <meta name="keywords" content="BORA" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.borachain.io/"/>
+    <meta property='og:title' id='meta_og_title'  content='BORA Chain' />
+    <meta property='og:description' content='Store, secure and grow your entertainment crypto assets.' />
+    <meta property="og:image" id='meta_og_image'  content="https://static.boraportal.com/borachain/3206f0c8c378c.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="627"/>
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="website"/>
+    <title>BORA</title>
+    <link rel="canonical" href="https://www.borachain.io/" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://static.boraportal.com/borachain/75771dad2807b.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://static.boraportal.com/borachain/047c397e8b05b.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://static.boraportal.com/borachain/014f5641eb9da.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://static.boraportal.com/borachain/805504783adfc.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://static.boraportal.com/borachain/3fc4b6ce0e3f7.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://static.boraportal.com/borachain/89f7192fc8416.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://static.boraportal.com/borachain/cdef22e0b84ce.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://static.boraportal.com/borachain/e83ef1d2762c4.png" />
+    <link rel="icon" type="image/png" href="https://static.boraportal.com/borachain/33c4759065f07.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://static.boraportal.com/borachain/ebd333dc83e2c.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://static.boraportal.com/borachain/c6cb254276a1c.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://static.boraportal.com/borachain/2de372962e807.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="https://static.boraportal.com/borachain/905f4648a57d7.png" sizes="196x196" />
+    <meta name="msapplication-TileImage" content="https://static.boraportal.com/borachain/cdef22e0b84ce.png" />
+    <meta name="msapplication-square70x70logo" content="https://static.boraportal.com/borachain/72d134c85d9db.png" />
+    <meta name="msapplication-square150x150logo" content="https://static.boraportal.com/borachain/6ee52fc200e8b.png" />
+    <meta name="msapplication-square310x150logo" content="https://static.boraportal.com/borachain/86cbd865c14ed.png" />
+    <meta name="msapplication-square310x310logo" content="https://static.boraportal.com/borachain/776b59c63ac20.png" />
+    <meta name="application-name" content="BORA Chain" />
+    <meta name="msapplication-tooltip" content="BORA Chain" />
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/test.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/aos.css" />
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/aos.js"></script>
+    <script type="text/javascript" src="./assets/js/ui.js"></script>
+</head>
+<body class="main">
+<div class="header">
+    <div class="inner">
+        <div class="logo-wrap">
+            <h1 class="logo"><a href="/">BORA</a></h1>
+        </div>
+        <div class="gnb">
+            <div id="gnbLayer" class="layer">
+                <div class="menu">
+                </div>
+                <button class="btn-layer-close" onclick="gnbLayerClose()"><span>close</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contents">
+    <div class="vision">
+        <p class="txt" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <span data-aos="fade-up" data-aos-delay="50" data-aos-duration="300">BORA PORTAL</span>
+            <span data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">AND GROW</span>
+            <span data-aos="fade-up" data-aos-delay="50" data-aos-duration="900">YOUR ENTERTAINMENT</span>
+            <span data-aos="fade-up" data-aos-delay="50" data-aos-duration="1200">CRYPTO ASSETS.</span>
+        </p>
+        <div class="wrap-vision">
+            <span class="link-pos" id="vision"></span>
+            <dl data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
+                <dt>BORA PORTAL Coming Soon</dt>
+                <dd> 보라포털 이용을 위한 준비사항</dd>
+            </dl>
+        </div>
+        <div id="bora" class="player" data-property="{
+            videoURL: 'https://youtu.be/-zPsEqtoC28',
+            mute: true,
+            showControls: false,
+            useOnMobile: true,
+            quality: 'highres',
+            containment: 'body',
+            loop: true,
+            autoPlay: true,
+            stopMovieOnBlur: false,
+            startAt: 0,
+            opacity: 90
+          }">
+          </div>
+    </div>
+    
+<!--
+    <div class="meta">
+        <span class="link-pos" id="meta"></span>
+        <div class="inner">
+            <h2 data-aos="fade-left" data-aos-delay="50" data-aos-duration="300">메타마스크 설치하기</h2>
+            <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+                BORA PORTAL은 메타마스크를 통해 서비스를 이용하실 수 있습니다. <br /><strong><a href="https://metamask.io" target="new">메타마스크 설치하기</a></strong>
+            </p>
+            <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="900">
+                BORA PORTAL이 오픈되면 메타마스크 지갑을 손쉽게 이용하실 수 있도록 네트워크 추가 기능을 제공해 드리기 때문에 별도로 설정하지 않으셔도 됩니다.
+            </p>
+            <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="900">
+                이미 메타마스크에서 클레이튼 네트워크 지갑을 사용하고 계신 사용자 분들께서는 RPC를 확인해주시기 바랍니다. <br /><strong><a href="https://public-node-api.klaytnapi.com/v1/cypress" target="new">cypress RPC</a></strong>
+            </p>
+            <div class="bg-logo" data-aos="fade-up" data-aos-duration="500"></div>
+        </div>
+    </div>
+-->
+    <div class="meta2">
+        <span class="link-pos" id="meta2"></span>
+        <div class="inner">
+            <h2 data-aos="fade-left" data-aos-delay="50" data-aos-duration="300">메타마스크 지갑을 카이카스에서 사용하기</h2>
+            <div class="list" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                <img id="image_large" src="./assets/img/main/img_meta3@2x.png" alt="" width="50%"/>
+                <img id="image_small" src="./assets/img/main/img_meta3_m.png" alt=""/>
+            </div>
+            <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="900">
+                만약 기존에 카이카스 지갑을 이용중은 분들께서는 메타마스크에서도 그대로 사용하실 수 있습니다.
+            </p>
+            <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1200">
+                <strong><a href="#" target="new">카이카스에서 메타마스크로 지갑주소 가져오기</a></strong>
+            </p>
+        </div>
+    </div>
+
+    <div class="meta2" style="background-color:#fff;">
+        <span class="link-pos" id="meta2"></span>
+        <div class="inner">
+            <h2 data-aos="fade-left" data-aos-delay="50" data-aos-duration="300">OPENSEA에서 NFT 거래하기</h2>
+            <div class="list" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                <img id="image_large" src="./assets/img/main/img_meta4@2x.png" alt="" width="50%"/>
+                <img id="image_small" src="./assets/img/main/img_meta4_m.png" alt=""/>
+            </div>
+            <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="900">
+                Opensea의 경우, 클레이튼 네트워크에 있는 NFT 거래를 원하시는 경우, 카이카스 지갑이 필요합니다.
+            </p>
+            <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1200">
+                <strong><a href="#" target="new">메타마스크에서 카이카스로 지갑주소 가져오기</a></strong> <br /> <span>(*이더리움 지갑은 가져오실 수 없습니다.)</span>
+            </p>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer" style="padding-top: 20px;">
+    <div class="inner">
+        <h1 class="logo"><a href="/">BORA</a></h1>
+        <p class="copyright">© BORANETWORK. PTE. LTD. All Rights Reserved.</p>
+        <ul class="link">
+            <li><a href="https://medium.com/boraecosystem" target="_blank" class="medium">medium</a></li>
+            <li><a href="https://twitter.com/bora_ecosystem" target="_blank" class="twitter">twitter</a></li>
+            <li><a href="https://discord.com/invite/borachain" target="_blank" class="discord">discord</a></li>
+            <li><a href="https://t.me/boraofficial" target="_blank" class="telegram">telegram</a></li>
+            <li><a href="https://www.facebook.com/BORAGlobal" class="facebook">facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCmL8W7lM_lLUut_gM-4HVBA" target="_blank" class="youtube">youtube</a></li>
+       </ul>
+    </div>
+</div>
+
+
+<script>
+    AOS.init({
+        easing: 'ease-out-sine',
+        offset: 50,
+        duration: 1000,
+        disable: false,
+        once: true,
+    });
+
+
+    var swiper = new Swiper(".banner-swiper", {
+        navigation: {
+            nextEl: ".swiper-btn-next",
+            prevEl: ".swiper-btn-prev",
+        },
+        loop: true, 
+    });
+
+    var swiperMobile = new Swiper(".banner-swiper-mobile", {
+        slidesPerView: "auto",
+        loop: false,
+        spaceBetween: 10,
+    });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js'></script>
+<script  src="./assets/js/script.js"></script>
+</body>
+</html>
