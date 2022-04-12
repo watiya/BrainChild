@@ -31,7 +31,7 @@
 .main .meta2 .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 150px 0; }
 .main .meta2 h2 { margin-bottom:0px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #222; }
 .main .meta2 img { width:100%; height:auto;}
-.main .meta2 p { width:1264px; margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9; text-align: center;}
+.main .meta2 p { width:800px; margin-left: 250px; margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9; text-align: left;}
 .main .meta2 p a,
 .main .meta2 p a:hover {color:#2140fe;}
 .main .meta2 p a:hover:before  { background:#2140fe}
