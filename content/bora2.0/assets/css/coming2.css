@@ -19,12 +19,13 @@
 
 .main .meta { position: relative;  min-width:1264px;  margin:0 auto; }
 .main .meta .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 150px 0; }
-.main .meta h2 { margin-bottom:0px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #222; }
+.main .meta h2 { margin-bottom:0px; font-size: 48px; font-weight: bold; text-align:center; line-height: 1.2; color: #222; }
 .main .meta img { width:100%; height:auto;}
 .main .meta p { width:800px; margin-bottom:30px; margin-left:250px; font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9; text-align: left;}
 .main .meta p a,
 .main .meta p a:hover {color:#2140fe;}
 .main .meta p a:hover:before  { background:#2140fe}
+.main .meta2 p span{ color: #FF1100;}
 
 /*-----------------------------------------
             mobile
