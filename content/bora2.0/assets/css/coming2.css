@@ -34,6 +34,7 @@
 .main .meta2 p a,
 .main .meta2 p a:hover {color:#2140fe;}
 .main .meta2 p a:hover:before  { background:#2140fe}
+.main .meta2 p span{ color: #FF1100;}
 
 /*-----------------------------------------
             mobile
