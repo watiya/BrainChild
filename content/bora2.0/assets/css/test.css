@@ -57,7 +57,7 @@
     .main .meta {  min-width:auto; max-width:auto; width:100%; height:auto; overflow-x:hidden; overflow:inherit; background-size: cover; background:#fff;}
     .main .meta .inner {  width:100%;  margin:0 auto;  padding:60px 20px 0px 30px; box-sizing: border-box;}
     .main .meta .bg-logo { position:relative; left:inherit; top:inherit; width:90vw; height:124.16vw; margin:0px 0px -250px 0px; background:url('../img/main/img_meta1@2x.png') -5.5vw top no-repeat; background-size: 90vw auto; z-index:2;}
-    .main .meta h2 { margin-bottom:30px; font-size: 28px; line-height: 0.69; }
+    .main .meta h2 { margin-bottom:30px; font-size: 28px; line-height: 1.2; }
     .main .meta p { clear:both; width:auto; margin-bottom:20px; font-size: 14px; line-height: 1.78;  }
     .main .meta .inline { display: none;}
     .main .meta p a,
