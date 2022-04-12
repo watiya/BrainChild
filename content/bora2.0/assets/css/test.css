@@ -20,7 +20,7 @@
 .main .meta { position: relative;  min-width:1264px; height:790px;  margin:0 auto; background:#fff; }
 .main .meta .inner { position:relative; width:1264px;  margin:0 auto;  padding:200px 0 0 0 }
 .main .meta .bg-logo { position:absolute; left:578px; top:18px; display:block; content:''; width:958px; height:958px;  background:url('../img/main/img_meta1.png') no-repeat; z-index:2; }
-.main .meta h2 { margin-bottom:32px; color:#222222;  font-size: 52px; font-weight: bold; line-height: 0.69; }
+.main .meta h2 { margin-bottom:32px; color:#222222;  font-size: 52px; font-weight: bold; line-height: 1.2; }
 .main .meta h2 span {font-family: "Roboto"; }
 .main .meta p { width:665px; margin-bottom:20px;  font-size: 18px; line-height: 1.78; color: #666;  opacity: 0.9;}
 .main .meta p a,
