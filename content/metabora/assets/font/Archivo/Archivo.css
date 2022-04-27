@@ -1,0 +1,71 @@
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Archivo.
+https://github.com/orioncactus/Archivo
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Archivo Black'), url('./woff2/Archivo-Black.woff2') format('woff2'), url('./woff/Archivo-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Archivo ExtraBold'), url('./woff2/Archivo-ExtraBold.woff2') format('woff2'), url('./woff/Archivo-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: bold;
+	font-display: swap;
+	src: local('Archivo Bold'), url('./woff2/Archivo-Bold.woff2') format('woff2'), url('./woff/Archivo-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Archivo SemiBold'), url('./woff2/Archivo-SemiBold.woff2') format('woff2'), url('./woff/Archivo-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Archivo Medium'), url('./woff2/Archivo-Medium.woff2') format('woff2'), url('./woff/Archivo-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Archivo Regular'), url('./woff2/Archivo-Regular.woff2') format('woff2'), url('./woff/Archivo-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Archivo Light'), url('./woff2/Archivo-Light.woff2') format('woff2'), url('./woff/Archivo-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Archivo ExtraLight'), url('./woff2/Archivo-ExtraLight.woff2') format('woff2'), url('./woff/Archivo-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Archivo Thin'), url('./woff2/Archivo-Thin.woff2') format('woff2'), url('./woff/Archivo-Thin.woff') format('woff');
+}
