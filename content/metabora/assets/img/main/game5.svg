@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Google</title>
+    <defs>
+        <linearGradient x1="80.9187692%" y1="48.9153285%" x2="-158.377231%" y2="48.9153285%" id="linearGradient-1">
+            <stop stop-color="#FFE000" offset="0%"></stop>
+            <stop stop-color="#FED000" offset="19.41%"></stop>
+            <stop stop-color="#F9B400" offset="54.69%"></stop>
+            <stop stop-color="#F6A200" offset="82.79%"></stop>
+            <stop stop-color="#F59B00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="86.4104478%" y1="30.9157124%" x2="-50.058209%" y2="136.079771%" id="linearGradient-2">
+            <stop stop-color="#E7383D" offset="0%"></stop>
+            <stop stop-color="#C81166" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-50.6664179%" y1="-36.54415%" x2="60.7567164%" y2="49.3195886%" id="linearGradient-3">
+            <stop stop-color="#229966" offset="0%"></stop>
+            <stop stop-color="#4EA663" offset="31.68%"></stop>
+            <stop stop-color="#70B65D" offset="73.98%"></stop>
+            <stop stop-color="#7CBC5B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Metabora-Copy" transform="translate(-1390.000000, -2486.000000)">
+            <g id="Games2" transform="translate(0.000000, 2090.000000)">
+                <g id="Socail" transform="translate(1280.000000, 396.000000)">
+                    <g id="Google" transform="translate(110.000000, 0.000000)">
+                        <circle id="Oval" fill="#FFFFFF" cx="38" cy="38" r="38"></circle>
+                        <g transform="translate(25.000000, 19.000000)" fill-rule="nonzero" id="Path">
+                            <path d="M0.64119996,0.597541279 C0.183199989,1.05554125 6.50857105e-15,1.7883412 6.50857105e-15,2.70434115 L6.50857105e-15,35.2223391 C6.50857105e-15,36.1383391 0.274799983,36.871139 0.64119996,37.329139 L0.732799954,37.420739 L19.0527988,19.1007401 L19.0527988,18.9175401 L19.0527988,18.7343401 L0.824399948,0.505941285 L0.64119996,0.597541279 Z" fill="#70C9F3"></path>
+                            <path d="M25.0983984,25.2379397 L19.0527988,19.1923401 L19.0527988,19.0091401 L19.0527988,18.8259401 L25.0983984,12.7803405 L25.1899984,12.8719405 L32.426398,16.9939403 C34.4415978,18.1847402 34.4415978,20.1083401 32.426398,21.20754 L25.1899984,25.3295397 L25.0983984,25.2379397 Z" fill="url(#linearGradient-1)"></path>
+                            <path d="M25.1899984,25.1463397 L18.9611988,18.9175401 L0.64119996,37.237539 C1.28239992,37.9703389 2.47319985,38.0619389 3.66399977,37.329139 L25.1899984,25.1463397" fill="url(#linearGradient-2)"></path>
+                            <path d="M25.1899984,12.6887405 L3.66399977,0.505941285 C2.38159985,-0.226858669 1.28239992,-0.135258675 0.64119996,0.597541279 L18.9611988,18.9175401 L25.1899984,12.6887405 Z" fill="url(#linearGradient-3)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

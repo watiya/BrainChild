@@ -21,35 +21,32 @@
 .main .games .inner { position:relative; width:1264px;  margin:0 auto;  padding:247px 0 0 0 ;}
 .main .games .bg-logo { position:absolute; left:578px; top:18px; display:block; content:''; width:958px; height:958px;  background:url('../img/main/img_game.png') no-repeat; z-index:2; }
 .main .games h2 { margin-bottom:32px; color:#ffffff;  font-size: 52px; font-weight: bold; line-height: 0.69;}
-.main .games h2 span {font-family: "Roboto"; }
 .main .games p { width:665px; margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #bdc5da;  opacity: 0.9;}
-.main .games .logo ul { float:left;}
 .main .games .logo li { float:left; margin-left:0px; }
 .main .games .logo img { width:100%; height:auto;}
 
 .main .games2 { position: relative;  min-width:1264px; height:790px;  margin:0 auto; background:#202534; }
 .main .games2 .inner { position:relative; width:1264px;  margin:0 auto;  padding:247px 0 0 0 ;}
-.main .games2 .bg-logo2 { position:absolute; left:0px; top:18px; display:block; content:''; width:958px; height:958px;  background:url('../img/main/img_game2.png') no-repeat; z-index:2; }
+.main .games2 .inner .con{ position:relative; width:632px;  margin:0 auto;  padding:0; float: right;}
+.main .games2 .bg-logo2 { position:absolute; left:-50px; top:-50px; display:block; content:''; width:700px; height:700px;  background:url('../img/main/img_game2.png') no-repeat; z-index:2; }
 .main .games2 h2 { margin-bottom:32px; color:#ffffff;  font-size: 52px; font-weight: bold; line-height: 0.69;}
-.main .games2 h2 span {font-family: "Roboto"; }
 .main .games2 p { width:665px; margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #bdc5da;  opacity: 0.9;}
-.main .games2 .logo ul { float:left;}
-.main .games2 .logo li { float:left; margin-left:0px; }
-.main .games2 .logo img { width:100%; height:auto;}
+.main .games2 .logo2 li { float:left; margin-left:30px; }
+.main .games2 .logo2 img { width:100%; height:auto;}
 
 
-.main .platform { position: relative;  min-width:1264px;  margin:0 auto; background:#f5f5f5; }
-.main .platform .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 288px 0;text-align:center; }
-.main .platform h2 { margin-bottom:80px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #222; }
-.main .platform p { margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #666666;  opacity: 0.9; text-align: center;}
+.main .platform { position: relative;  min-width:1264px;  margin:0 auto; background:#16171D; }
+.main .platform .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 260px 0; text-align:center; }
+.main .platform h2 { margin-bottom:50px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #fff; }
+.main .platform p { margin-bottom:80px;  font-size: 18px; line-height: 1.78; color: #fff;  opacity: 0.9; text-align: center; }
 .main .platform .list { overflow:hidden;}
-.main .platform .list ul { margin-left:-32px; width:1296px;  }
-.main .platform .list li { float:left; width:292px; height:160px; padding:0 0 32px 32px; }
+.main .platform .list ul { width:700px; margin: auto; }
+.main .platform .list li { float:left; padding:0 0 0 32px; }
 .main .platform .list img { width:100%; height:auto;}
 
 .main .banner { position:relative; width:1264px; height:240px; margin:-120px auto 0 auto; }
-.main .banner .swiper-btn-prev { position:absolute; left:50px; top:50%; display:block; width:40px; height:44px; margin-top:-22px; cursor: pointer; background:url('../img/main/btn_prev.png') no-repeat; z-index:1; }
-.main .banner .swiper-btn-next { position:absolute; right:50px; top:50%; display:block; width:40px; height:44px; margin-top:-22px; cursor: pointer; background:url('../img/main/btn_next.png') no-repeat; z-index:1; }
+.main .banner .swiper-btn-prev { position:absolute; left:50px; top:50%; display:block; width:40px; height:44px; margin-top:-22px; cursor: pointer; background:url('../img/main/btn_prev.svg') no-repeat; z-index:1; }
+.main .banner .swiper-btn-next { position:absolute; right:50px; top:50%; display:block; width:40px; height:44px; margin-top:-22px; cursor: pointer; background:url('../img/main/btn_next.svg') no-repeat; z-index:1; }
 
 .main .banner .banner-swiper { display: block;}
 .main .banner .banner-swiper-mobile { display:none; }

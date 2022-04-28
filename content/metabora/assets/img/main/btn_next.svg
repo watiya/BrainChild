@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="44px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Btn</title>
+    <defs>
+        <pattern id="pattern-1" patternUnits="objectBoundingBox" x="0%" width="100%" height="100%">
+            <use xlink:href="#image-2"></use>
+        </pattern>
+        <image id="image-2" width="40" height="44" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAsCAYAAAAXb/p7AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKKADAAQAAAABAAAALAAAAACPZsBsAAAA50lEQVRYCeXXOw7CMBAEUAeRU1Hn1NScKgVkJA6wn5lZCVZyYcn2PLvyrvUL9T7PB8bEXW6J0GMCeY8At31/XTgsBXJhHtnHWBMCImgKGQZOIVPACWQa6EaWgE5kGehCtoAOZBuoRlKASiQNqEJSgQokHchGSoBMpAzIQkqBDKQc2EVagB2kDVhFZnoSZNhrcyZ+m67jynxG+xobsILD41mAVZwF2MHJgV2cFMjAyYAsnATIxNGBbBwVqMDRgCocBajEtYFqXAvowJWBLlwJ6MSlgW5cCjiBCwOncABmepLwNx0H/019AJfH/yNp3ZfeAAAAAElFTkSuQmCC"></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Metabora-Copy" transform="translate(-1842.000000, -3628.000000)">
+            <g id="Platform" transform="translate(0.000000, 2882.000000)">
+                <g id="Btn" transform="translate(1842.000000, 746.000000)">
+                    <rect id="Rectangle" fill="url(#pattern-1)" x="0" y="0" width="40" height="44"></rect>
+                    <polyline id="Path-2" stroke="#FFFFFF" points="9.80834961 2.00500488 29.8944092 22 9.80834961 41.6636047"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

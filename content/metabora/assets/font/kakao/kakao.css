@@ -7,7 +7,8 @@
 
 @font-face{
     font-family:KakaoSmall;
-    font-weight:400;src:local("☺"),url(./woff2/25e471a.woff2) format("woff2"),url(./woff2/fe6f124.woff) format("woff")
+    font-weight:400;
+    src:local("☺"),url(./woff2/25e471a.woff2) format("woff2"),url(./woff2/fe6f124.woff) format("woff")
 }
     
 @font-face{
