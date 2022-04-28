@@ -38,7 +38,7 @@
 .main .platform { position: relative;  min-width:1264px;  margin:0 auto; background:#16171D; }
 .main .platform .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 260px 0; text-align:center; }
 .main .platform h2 { margin-bottom:50px; font-size: 48px; font-weight: bold; text-align:center; line-height: 0.75; color: #fff; }
-.main .platform p { margin-bottom:80px;  font-size: 18px; line-height: 1.78; color: #fff;  opacity: 0.9; text-align: center; }
+.main .platform p { margin-bottom:80px;  font-size: 18px; line-height: 1.78; color: #fff;  opacity: 0.9; text-align: center;}
 .main .platform .list { overflow:hidden;}
 .main .platform .list ul { width:700px; margin: auto; }
 .main .platform .list li { float:left; padding:0 0 0 32px; }
