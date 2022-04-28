@@ -33,7 +33,9 @@
 .main .games2 p { width:665px; margin-bottom:30px;  font-size: 18px; line-height: 1.78; color: #bdc5da;  opacity: 0.9;}
 .main .games2 .logo2 li { float:left; margin-left:30px; }
 .main .games2 .logo2 img { width:100%; height:auto;}
-
+.main .games2 .logo2 li:first-child {margin-left:0;}
+.main .games2 .play2bit { display: block;}
+.main .games2 .play2bit-mobile { display:none; }
 
 .main .platform { position: relative;  min-width:1264px;  margin:0 auto; background:#16171D; }
 .main .platform .inner { position:relative; width:1264px; margin:0 auto; padding:150px 0 260px 0; text-align:center; }
@@ -62,18 +64,34 @@
 
     .main .vision { width:100%; min-width:auto; max-width:auto; height:auto; text-align:left; }
     .main .wrap-vision .link-pos { top:-160px}
-    .main .vision .bg { width:100%; min-width:auto; height:100%; background:url('../img/main/main_visual_m.png') center no-repeat; background-size: cover;}
-    .main .vision p {  width:300px; padding:0 0 0 30px; margin:151px 0 0 0;  line-height: 1.41;  font-size: 34px; }
+    .main .vision .bg { width:100%; min-width:auto; height:100%; background:url('../img/main/background2_m.png') center no-repeat; background-size: cover;}
+    .main .vision p {  width:300px; padding:0 0 0 30px; margin:151px 0 0 0; line-height: 1.41; font-size: 34px; }
     .main .vision dl { width:auto; padding:0 30px 57px 30px; margin:100px auto 0px auto; font-size: 32px; line-height: 1.63; }
     .main .vision dt { font-size:28px;  line-height:0.9; margin-bottom:30px; }
     .main .vision dd { font-size: 14px; line-height: 1.57; opacity: 0.9; margin-bottom:22px;}
 
-    .main .games {  min-width:auto; max-width:auto; width:100%; height:auto; overflow:initial; background-size: cover;}
+    .main .games { min-width:auto; max-width:auto; width:100%; height:auto; overflow:initial; background:#16171D;}
     .main .games .inner {  width:100%;  margin:0 auto;  padding:58px 20px 0px 30px; box-sizing: border-box;}
-    .main .games .bg-logo { position:relative; left:inherit; top:inherit; width:100vw; height:124.16vw; margin:-25px -20px -130px -30px; background:url('../img/main/img_dice@2x.png') -5.5vw top no-repeat; background-size: 139vw auto; z-index:2;}
-    .main .games h2 { margin-bottom:30px; font-size: 28px; line-height: 0.69; }
-    .main .games p { clear:both; width:auto; margin-bottom:0; font-size: 14px; line-height: 1.57;  }
+    .main .games .bg-logo { position:relative; left:inherit; top:inherit; width:100vw; height:124.16vw; margin:-25px -20px -130px -30px; background:url('../img/main/img_game@2x.png') -5.5vw top no-repeat; background-size: 139vw auto; z-index:2;}
+    .main .games h2 { margin-bottom:30px; font-size: 28px; line-height: 1.2; }
+    .main .games p { clear:both; width:auto; margin-bottom:0; font-size: 14px; font-weight: 300; line-height:1.57; color:#bdc5da; opacity: 0.9;}
     .main .games .inline { display: none;}
+    .main .games .logo ul { margin-left:0; margin-top:20px; width:auto;}
+    .main .games .logo li { float:left; width:30%; margin-left:0px;}
+    .main .games .logo img { width:100%; height:auto;}
+
+    .main .games2 {position: relative;  min-width:auto; max-width:auto; width:100%; height:auto; overflow:initial; background:#202534;}
+    .main .games2 .inner { width:100%;  margin:0 auto;  padding:80px 20px 0px 30px; box-sizing: border-box;}
+    .main .games2 .bg-logo2 { position:relative; left:inherit; top:inherit; width:100vw; height:124.16vw; margin:-25px -20px 50px -30px; background:url('../img/main/img_game2@2x.png') -5.5vw top no-repeat; background-size: 130vw auto; z-index:2;}
+    .main .games2 h2 { margin-bottom:30px; font-size: 28px; line-height: 1.2; }
+    .main .games2 p { clear:both; width:auto; margin-bottom:0; font-size: 14px; font-weight: 300; line-height:1.57; color:#bdc5da; opacity: 0.9;}
+    .main .games2 .inline { display: none;}
+    .main .games2 .logo2 ul { margin-left:0; margin-top:20px; width:auto; }
+    .main .games2 .logo2 li { float:left; width:15%; margin-left:20px; }
+    .main .games2 .logo2 li:first-child {margin-left:0;}
+    .main .games2 .logo2 img { width:100%; height:auto;}
+    .main .games2 .play2bit { display:none;}
+    .main .games2 .play2bit-mobile { display:block; }
 
     .main .banner { position:relative; width:100%; height:auto; margin:-125px 0 50px 0;  }
     .main .banner .swiper-btn-prev { position:absolute; left:50px; top:50%; display:block; width:40px; height:44px; margin-top:-22px; cursor: pointer; background:url('../img/main/btn_prev.png') no-repeat; z-index:1; }
@@ -84,12 +102,13 @@
     .main .banner .banner-swiper-mobile .swiper-slide { width:88.98vw; }
     .main .banner .banner-swiper-mobile .swiper-slide img { width:100%; }
 
-    .main .platform { position: relative;  min-width:auto; max-width:auto;  margin:0 auto; background:#f5f5f5; }
-    .main .platform .inner { position:relative; width:100%; margin:0 auto;  box-sizing:border-box; padding:100px 15px 195px 15px; }
+    .main .platform { position: relative;  min-width:auto; max-width:auto;  margin:0 auto; background:#16171D; }
+    .main .platform .inner { position:relative; width:100%; margin:0 auto;  box-sizing:border-box; padding:100px 20px 195px 20px; }
     .main .platform h2 { margin-bottom:17px; font-size: 28px; line-height: 1.29;}
+    .main .platform p { margin-bottom:30px; font-size: 14px; font-weight: 300; line-height: 1.78;color:#bdc5da; opacity: 0.9; text-align:left;}
     .main .platform .list { overflow:hidden;}
     .main .platform .list ul { margin-left:0; width:auto;  }
-    .main .platform .list li { float:left; width:50%; box-sizing: border-box; height:auto; padding:5px; }
+    .main .platform .list li { float:left; width:40%; padding:5px; }
     .main .platform .list img { width:100%; height:auto;}
 
 

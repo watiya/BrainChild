@@ -49,10 +49,11 @@ body { line-height:1.4; min-width:1264px; background:#202534; }
 .footer .inner {  position:relative; width:1264px;   padding:80px 0 150px 0; margin:0 auto; overflow:hidden; }
 .footer .logo { float:left; padding:0; line-height:1;  margin-right:12px; margin-bottom:15px; }
 .footer .logo a { display: block; width:146px; height: 26px; overflow:hidden; text-indent:-100px; font-size:1px; background:url('../img/common/logo_mono.svg') no-repeat;}
-.footer .business-info {clear:both; display: flex; font-weight: 300; font-size: 13px; line-height: 1.5;color: #8A91A8;}
+.footer .business-info ul {clear:both; display: flex; font-weight: 300; font-size: 13px; line-height: 1.5; color: #8A91A8;}
 .footer .business-info li:first-child {font-weight: 700;}
 .footer .business-info li { margin-right: 12px;}
-.footer .copyright {clear:both; float:left; font-size: 12px; line-height:26px; font-weight: 300; text-align: right; color: #8A91A8; margin-top:30px;}
+.footer .copyright {clear:both; float:left; font-size: 12px; line-height:26px; font-weight: 300; color: #8A91A8; margin-top:30px;}
+.footer .terms {clear:both; float:left;font-size: 13px; line-height:26px; font-weight:700; color: #8A91A8; text-decoration: underline;}
 
 
 
@@ -84,13 +85,15 @@ body { line-height:1.4; min-width:1264px; background:#202534; }
     .header .gnb .layer .menu a.btn-whitepaper { padding:0 20px; font-size:20px; line-height:38px;  border-color: #fff !important; }
 
 
-    .footer { position:relative; width:auto; min-width:auto; max-width: auto; }
+    .footer { position:relative; width:auto; min-width:auto; max-width: auto; background:#202534;}
     .footer .inner { position:relative; float:left; padding:0 20px 52px 20px;  width:100%; box-sizing :border-box; overflow: inherit;}
     .footer .inner:before { margin-bottom:22px;}
     .footer .logo { float:left; margin:0 0 20px 0; vertical-align: middle; }
     .footer .logo a { width:140px; background:url('../img/common/logo_mono@2x.svg') no-repeat; background-size: 140px auto; margin-top: -3px;}
+    .footer .business-info { font-weight: 300; font-size: 13px; line-height: 1.8; color: #8A91A8;}
+    .footer .business-info ul { display: inline-block; }
+    .footer .business-info li:first-child {font-weight: 700;}
     .footer .copyright {clear:both; display:block; display: inline-block; text-align: left; line-height:1;  font-size:11px;}
-    .footer .link { position:absolute; right:20px; top:-3px; z-index:2;}
-    .footer .link li {  width:24px; height:24px;  margin-left:3px; }
-    .footer .link a { width:24px; height:24px; background-size:24px 24px !important; }
+    .footer .terms {clear:both; float:left;font-size: 13px; line-height:26px; font-weight:700; color: #8A91A8; text-decoration: underline;}
+
 }
