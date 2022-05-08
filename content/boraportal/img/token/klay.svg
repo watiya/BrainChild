@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>klay</title>
+    <defs>
+        <circle id="path-1" cx="16" cy="16" r="16"></circle>
+        <linearGradient x1="16.8256426%" y1="83.3486614%" x2="87.1626287%" y2="18.9115258%" id="linearGradient-3">
+            <stop stop-color="#800D00" offset="0%"></stop>
+            <stop stop-color="#FF2600" offset="52.3551036%"></stop>
+            <stop stop-color="#FF8B01" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="klay">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <path d="M16.4998141,17.7293952 L22.5690354,23.7982035 C20.9230679,25.1666076 18.807886,25.9902109 16.4998141,25.9902109 C14.2070247,25.9902109 12.1038211,25.1777597 10.46281,23.8250511 L10.46281,23.8250511 L10.4987446,23.7304648 L16.4998141,17.7293952 Z M23.8079926,10.4212168 C25.1763967,12.0671843 26,14.1823662 26,16.4900251 C26,18.798097 25.1763967,20.9128658 23.8079926,22.5588333 L23.8079926,22.5588333 L17.7391843,16.4900251 Z M14.4491905,8.62791764 L9.13872518,22.4941098 C7.80253824,20.8572292 7,18.7676559 7,16.490149 C7,16.3443456 7.01321731,16.2014335 7.01982596,16.0572822 L7.01982596,16.0572822 L14.4491905,8.62791764 Z M16.8866681,7 C19.0435671,7.08632552 21.0154238,7.89051593 22.5688702,9.18209446 L22.5688702,9.18209446 L12.0293085,19.7216562 Z" id="Fill-2" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
