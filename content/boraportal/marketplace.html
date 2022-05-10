@@ -174,183 +174,368 @@
       </header>
       <!-- container-->
       <div class="outer__content">
-        <div class="section-pb portfolio">
-          <div class="portfolio__center center">
-            <div class="portfolio__top">
-              <div class="status-green portfolio__status">Air Drop</div>
-              <h1 class="portfolio__title h1">Earn more with your crypto</h1>
-              <div class="portfolio__info">Swap, Lend, Farm & Leverage, Stake And maximize your yields on the liquidity BORA</div>
+        <div class="section-pb catalog">
+          <div class="catalog__center center">
+            <div class="catalog__head">
+              <div class="catalog__title">Find a class that fit with you</div>
+              <form class="catalog__search">
+                <input class="catalog__input" type="text" placeholder="Find a class">
+                <button class="catalog__result">
+                  <svg class="icon icon-search">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
             </div>
-            <div class="portfolio__gallery">
-              <div class="portfolio__preview" data-aos="animation-translate-up" data-aos-anchor=".portfolio__gallery"><img class="some-icon" srcSet="img/content/watch@2x.png 2x" src="img/content/watch.png" alt="Watch"><img class="some-icon-dark" srcSet="img/content/watch-dark@2x.png 2x" src="img/content/watch-dark.png" alt="Watch"></div>
-              <div class="portfolio__preview" data-aos="animation-translate-up" data-aos-delay="300" data-aos-anchor=".portfolio__gallery"><img srcSet="img/content/ball@2x.png 2x" src="img/content/ball.png" alt="Ball"></div>
-              <div class="portfolio__preview" data-aos="animation-translate-up" data-aos-delay="600" data-aos-anchor=".portfolio__gallery"><img srcSet="img/content/bottle@2x.png 2x" src="img/content/bottle.png" alt="Bottle"></div>
-              <div class="portfolio__preview" data-aos="animation-translate-up" data-aos-delay="900" data-aos-anchor=".portfolio__gallery"><img srcSet="img/content/ball-black@2x.png 2x" src="img/content/ball-black.png" alt="Ball"></div>
+            <div class="catalog__wrap">
+              <div class="catalog__top">
+                <select class="select">
+                  <option>Newest</option>
+                  <option>Olest</option>
+                </select>
+                <div class="catalog__nav"><a class="catalog__link active" href="#">Yoga</a><a class="catalog__link" href="#">Fitness & Gym</a><a class="catalog__link" href="#">Mindfulness</a><a class="catalog__link" href="#">Gymnastics</a></div>
+                <div class="catalog__filter">
+                  <div class="catalog__text">Filter</div>
+                  <button class="catalog__close">
+                    <svg class="icon icon-close">
+                      <use xlink:href="#icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="catalog__sorting">
+                <div class="catalog__cell">
+                  <div class="catalog__label">Style</div>
+                  <select class="select">
+                    <option>AcroYoga</option>
+                    <option>Morning Yoga</option>
+                  </select>
+                </div>
+                <div class="catalog__cell">
+                  <div class="catalog__label">time of day</div>
+                  <select class="select">
+                    <option>Morning</option>
+                    <option>Dinner</option>
+                    <option>Evening</option>
+                  </select>
+                </div>
+                <div class="catalog__cell">
+                  <div class="catalog__label">DIFFICULTY</div>
+                  <select class="select">
+                    <option>Beginner</option>
+                    <option>Advanced</option>
+                    <option>Intermediate</option>
+                  </select>
+                </div>
+                <div class="catalog__cell">
+                  <div class="catalog__label">INTENSITY</div>
+                  <select class="select">
+                    <option>Level</option>
+                    <option>Level 1</option>
+                    <option>Level 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__list"><a class="card" href="class01-details.html" data-aos="animation-opacity">
+                <div class="card__preview"><img srcSet="img/content/card-pic-1@2x.png 2x" src="img/content/card-pic-1.png" alt="yoga"/>
+                  <div class="status-green card__category">yoga</div>
+                </div>
+                <div class="card__head">
+                  <div class="card__user">
+                    <div class="card__avatar"><img src="img/content/avatar-1.png" alt="Avatar"/></div>
+                    <div class="card__details">
+                      <div class="card__title">7-days barre body</div>
+                      <div class="card__trainer">First name Last name</div>
+                    </div>
+                  </div>
+                  <div class="status-stroke-green card__level">beginner</div>
+                </div>
+                <div class="card__parameters">
+                  <div class="card__parameter">
+                    <svg class="icon icon-button-play">
+                      <use xlink:href="#icon-button-play"></use>
+                    </svg>7
+                  </div>
+                  <div class="card__parameter">
+                    <svg class="icon icon-user">
+                      <use xlink:href="#icon-user"></use>
+                    </svg>160
+                  </div>
+                </div></a><a class="card" href="class01-details.html" data-aos="animation-opacity">
+                <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.png 2x" src="img/content/card-pic-2.png" alt="fitness"/>
+                  <div class="status-red card__category">fitness</div>
+                  <div class="play-small">
+                    <svg class="icon icon-play">
+                      <use xlink:href="#icon-play"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card__head">
+                  <div class="card__user">
+                    <div class="card__avatar"><img src="img/content/avatar-2.png" alt="Avatar"/></div>
+                    <div class="card__details">
+                      <div class="card__title">Sweet and tone</div>
+                      <div class="card__trainer">First name Last name</div>
+                    </div>
+                  </div>
+                  <div class="status-stroke-red card__level">Advanced</div>
+                </div>
+                <div class="card__parameters">
+                  <div class="card__parameter">
+                    <svg class="icon icon-button-play">
+                      <use xlink:href="#icon-button-play"></use>
+                    </svg>7
+                  </div>
+                  <div class="card__parameter">
+                    <svg class="icon icon-user">
+                      <use xlink:href="#icon-user"></use>
+                    </svg>160
+                  </div>
+                </div></a><a class="card" href="class01-details.html" data-aos="animation-opacity">
+                <div class="card__preview"><img srcSet="img/content/card-pic-3@2x.png 2x" src="img/content/card-pic-3.png" alt="fitness"/>
+                  <div class="status-red card__category">fitness</div>
+                </div>
+                <div class="card__head">
+                  <div class="card__user">
+                    <div class="card__avatar"><img src="img/content/avatar-3.png" alt="Avatar"/></div>
+                    <div class="card__details">
+                      <div class="card__title">Baseline Bootcamp</div>
+                      <div class="card__trainer">First name Last name</div>
+                    </div>
+                  </div>
+                  <div class="status-stroke-purple card__level">Intermediate</div>
+                </div>
+                <div class="card__parameters">
+                  <div class="card__parameter">
+                    <svg class="icon icon-button-play">
+                      <use xlink:href="#icon-button-play"></use>
+                    </svg>7
+                  </div>
+                  <div class="card__parameter">
+                    <svg class="icon icon-user">
+                      <use xlink:href="#icon-user"></use>
+                    </svg>160
+                  </div>
+                </div></a><a class="card" href="class01-details.html" data-aos="animation-opacity">
+                <div class="card__preview"><img srcSet="img/content/card-pic-4@2x.png 2x" src="img/content/card-pic-4.png" alt="yoga"/>
+                  <div class="status-green card__category">yoga</div>
+                </div>
+                <div class="card__head">
+                  <div class="card__user">
+                    <div class="card__avatar"><img src="img/content/avatar-4.png" alt="Avatar"/></div>
+                    <div class="card__details">
+                      <div class="card__title">Beach run 7</div>
+                      <div class="card__trainer">First name Last name</div>
+                    </div>
+                  </div>
+                  <div class="status-stroke-green card__level">beginner</div>
+                </div>
+                <div class="card__parameters">
+                  <div class="card__parameter">
+                    <svg class="icon icon-button-play">
+                      <use xlink:href="#icon-button-play"></use>
+                    </svg>7
+                  </div>
+                  <div class="card__parameter">
+                    <svg class="icon icon-user">
+                      <use xlink:href="#icon-user"></use>
+                    </svg>160
+                  </div>
+                </div></a><a class="card" href="class01-details.html" data-aos="animation-opacity">
+                <div class="card__preview"><img srcSet="img/content/card-pic-5@2x.png 2x" src="img/content/card-pic-5.png" alt="fitness"/>
+                  <div class="status-red card__category">fitness</div>
+                </div>
+                <div class="card__head">
+                  <div class="card__user">
+                    <div class="card__avatar"><img src="img/content/avatar-5.png" alt="Avatar"/></div>
+                    <div class="card__details">
+                      <div class="card__title">Train 360</div>
+                      <div class="card__trainer">First name Last name</div>
+                    </div>
+                  </div>
+                  <div class="status-stroke-purple card__level">Intermediate</div>
+                </div>
+                <div class="card__parameters">
+                  <div class="card__parameter">
+                    <svg class="icon icon-button-play">
+                      <use xlink:href="#icon-button-play"></use>
+                    </svg>7
+                  </div>
+                  <div class="card__parameter">
+                    <svg class="icon icon-user">
+                      <use xlink:href="#icon-user"></use>
+                    </svg>160
+                  </div>
+                </div></a><a class="card" href="class01-details.html" data-aos="animation-opacity">
+                <div class="card__preview"><img srcSet="img/content/card-pic-6@2x.png 2x" src="img/content/card-pic-6.png" alt="yoga"/>
+                  <div class="status-green card__category">yoga</div>
+                </div>
+                <div class="card__head">
+                  <div class="card__user">
+                    <div class="card__avatar"><img src="img/content/avatar-6.png" alt="Avatar"/></div>
+                    <div class="card__details">
+                      <div class="card__title">Power Yoga Sculpt</div>
+                      <div class="card__trainer">First name Last name</div>
+                    </div>
+                  </div>
+                  <div class="status-stroke-red card__level">Advanced</div>
+                </div>
+                <div class="card__parameters">
+                  <div class="card__parameter">
+                    <svg class="icon icon-button-play">
+                      <use xlink:href="#icon-button-play"></use>
+                    </svg>7
+                  </div>
+                  <div class="card__parameter">
+                    <svg class="icon icon-user">
+                      <use xlink:href="#icon-user"></use>
+                    </svg>160
+                  </div>
+                </div></a>
+            </div>
+            <div class="catalog__btns">
+              <button class="button-stroke catalog__button">Discover more
+                <svg class="icon icon-arrow-bottom">
+                  <use xlink:href="#icon-arrow-bottom"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
-        <div class="workouts">
-          <div class="workouts__center center">
-            <div class="workouts__gallery">
-              <div class="workouts__preview"><img class="some-icon" srcSet="img/content/phones@2x.png 2x" src="img/content/phones.png" alt="Phones"><img class="some-icon-dark" srcSet="img/content/dumbbell-dark@2x.png 2x" src="img/content/dumbbell-dark.png" alt="Phones"></div>
-            </div>
-            <div class="workouts__wrap">
-              <h2 class="workouts__title h2">What is IGO?</h2>
-              <div class="workouts__info">IGOs, or Initial Game Offering, are NFT assets from top-tier gaming projects available exclusively on Binance NFT. The assets can launch either via auction, fixed price or mystery boxes.
-                IGOs are purely for gaming and all drop content will consist of in-game assets such as early-access passes, weapons and items, exclusive Binance cosmetics and skins and much more!  
-                If you’re interested in launching an IGO collection , please complete the application form. The Binance NFT team will review and contact you if your submission is approved. For more questions, please send to IGO@binance.com.</div>
-              <div class="workouts__btns"><a class="button workouts__button" href="">Aply IGO</a><a class="button-stroke workouts__button" href="#">Aply IGO</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="section-pb interesting">
-          <div class="interesting__center center">
-            <div class="interesting__wrapper">
-              <h2 class="interesting__title h2">Upcoming IGO</h2>
-              <div class="interesting__wrap">
-                <div class="interesting__slider js-slider-interesting">
-                  <div class="interesting__slide"><a class="card" href="" data-aos="animation-opacity">
-                      <div class="card__preview"><img srcSet="img/content/card-pic-1@2x.png 2x" src="img/content/card-pic-1.png" alt="yoga"/>
-                        <div class="status-green card__category">Closed</div>
+        <div class="section-pb testimonials js-tabs">
+          <div class="testimonials__center center">
+            <div class="testimonials__container">
+              <div class="testimonials__item js-tabs-item">
+                <div class="testimonials__row">
+                  <div class="testimonials__col">
+                    <div class="testimonials__logo"><img src="img/content/goldlines.svg" alt="Logo"></div>
+                    <div class="testimonials__comment">“ Fitness Pro is the greatest fitness app. It's clear the makers behind this thing use it every week, because it is so perfect. “</div>
+                    <div class="testimonials__details">
+                      <div class="testimonials__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                          <path fill-rule="evenodd" d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z" fill="#ff592c"></path>
+                        </svg>
                       </div>
-                      <div class="card__head">
-                        <div class="card__user">
-                          <div class="card__avatar"><img src="img/content/avatar-1.png" alt="Avatar"/></div>
-                          <div class="card__details">
-                            <div class="card__title">BIRDIESHOT</div>
-                            <div class="card__trainer">BIRDIESHOT Character NFT 1st mint for whitelist</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card__parameters">
-                        <div class="card__parameter">
-                          <svg class="icon icon-calendar">
-                            <use xlink:href="#icon-calendar"></use>
-                          </svg>04-25-2022 11:00(UTC+0) ~ 15:00(UTC+0)
-                        </div>
-                      </div></a>
-                  </div>
-                  <div class="interesting__slide"><a class="card" href="" data-aos="animation-opacity">
-                      <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.png 2x" src="img/content/card-pic-2.png" alt="fitness"/>
-                        <div class="status-red card__category">Upcoming</div>
-                        <div class="play-small">
-                          <svg class="icon icon-play">
-                            <use xlink:href="#icon-play"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="card__head">
-                        <div class="card__user">
-                          <div class="card__avatar"><img src="img/content/avatar-1.png" alt="Avatar"/></div>
-                          <div class="card__details">
-                            <div class="card__title">BIRDIESHOT</div>
-                            <div class="card__trainer">Character NFT 2nd mint for public</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card__parameters">
-                        <div class="card__parameter">
-                          <svg class="icon icon-calendar">
-                            <use xlink:href="#icon-calendar"></use>
-                          </svg>04-25-2022 11:00(UTC+0) ~ 15:00(UTC+0)
-                        </div>
-                      </div></a>
-                  </div>
-                  <div class="interesting__slide"><a class="card" href="class01-details.html" data-aos="animation-opacity">
-                      <div class="card__preview"><img srcSet="img/content/card-pic-3@2x.png 2x" src="img/content/card-pic-3.png" alt="fitness"/>
-                        <div class="status-red card__category">Upcoming</div>
-                      </div>
-                      <div class="card__head">
-                        <div class="card__user">
-                          <div class="card__avatar"><img src="img/content/avatar-3.png" alt="Avatar"/></div>
-                          <div class="card__details">
-                            <div class="card__title">COMPETZ </div>
-                            <div class="card__trainer">COMPETZ PFP 1st Round of Public Minting</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card__parameters">
-                        <div class="card__parameter">
-                          <svg class="icon icon-calendar">
-                            <use xlink:href="#icon-calendar"></use>
-                          </svg>04-25-2022 11:00(UTC+0) ~ 15:00(UTC+0)
-                        </div>
-                      </div></a>
-                  </div>
-                  <div class="interesting__slide"><a class="card" href="" data-aos="animation-opacity">
-                    <div class="card__preview"><img srcSet="img/content/card-pic-1@2x.png 2x" src="img/content/card-pic-1.png" alt="yoga"/>
-                      <div class="status-green card__category">Closed</div>
+                      <div class="testimonials__author">Megane Schumm</div>
+                      <div class="testimonials__description">Legacy Data Coordinator</div>
                     </div>
-                    <div class="card__head">
-                      <div class="card__user">
-                        <div class="card__avatar"><img src="img/content/avatar-1.png" alt="Avatar"/></div>
-                        <div class="card__details">
-                          <div class="card__title">BIRDIESHOT</div>
-                          <div class="card__trainer">BIRDIESHOT Character NFT 1st mint for whitelist</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card__parameters">
-                      <div class="card__parameter">
-                        <svg class="icon icon-calendar">
-                          <use xlink:href="#icon-calendar"></use>
-                        </svg>04-25-2022 11:00(UTC+0) ~ 15:00(UTC+0)
-                      </div>
-                    </div></a>
+                    <button class="button-stroke testimonials__button">Read full story</button>
                   </div>
-                  <div class="interesting__slide"><a class="card" href="" data-aos="animation-opacity">
-                    <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.png 2x" src="img/content/card-pic-2.png" alt="fitness"/>
-                      <div class="status-red card__category">Upcoming</div>
-                      <div class="play-small">
+                  <div class="testimonials__col">
+                    <div class="testimonials__preview"><img srcSet="img/content/trainer-pic@2x.png 2x" src="img/content/trainer-pic.png" alt="Trainer">
+                      <button class="play">
                         <svg class="icon icon-play">
                           <use xlink:href="#icon-play"></use>
                         </svg>
-                      </div>
+                      </button>
                     </div>
-                    <div class="card__head">
-                      <div class="card__user">
-                        <div class="card__avatar"><img src="img/content/avatar-1.png" alt="Avatar"/></div>
-                        <div class="card__details">
-                          <div class="card__title">BIRDIESHOT</div>
-                          <div class="card__trainer">Character NFT 2nd mint for public</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card__parameters">
-                      <div class="card__parameter">
-                        <svg class="icon icon-calendar">
-                          <use xlink:href="#icon-calendar"></use>
-                        </svg>04-25-2022 11:00(UTC+0) ~ 15:00(UTC+0)
-                      </div>
-                    </div></a>
                   </div>
-                  <div class="interesting__slide"><a class="card" href="class01-details.html" data-aos="animation-opacity">
-                    <div class="card__preview"><img srcSet="img/content/card-pic-3@2x.png 2x" src="img/content/card-pic-3.png" alt="fitness"/>
-                      <div class="status-red card__category">Upcoming</div>
-                    </div>
-                    <div class="card__head">
-                      <div class="card__user">
-                        <div class="card__avatar"><img src="img/content/avatar-3.png" alt="Avatar"/></div>
-                        <div class="card__details">
-                          <div class="card__title">COMPETZ </div>
-                          <div class="card__trainer">COMPETZ PFP 1st Round of Public Minting</div>
-                        </div>
+                </div>
+              </div>
+              <div class="testimonials__item js-tabs-item">
+                <div class="testimonials__row">
+                  <div class="testimonials__col">
+                    <div class="testimonials__logo"><img src="img/content/velocity9.svg" alt="Logo"></div>
+                    <div class="testimonials__comment">“ Fitness Pro is the greatest fitness app. “</div>
+                    <div class="testimonials__details">
+                      <div class="testimonials__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                          <path fill-rule="evenodd" d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z" fill="#ff592c"></path>
+                        </svg>
                       </div>
+                      <div class="testimonials__author">Megane Schumm</div>
+                      <div class="testimonials__description">Legacy Data Coordinator</div>
                     </div>
-                    <div class="card__parameters">
-                      <div class="card__parameter">
-                        <svg class="icon icon-calendar">
-                          <use xlink:href="#icon-calendar"></use>
-                        </svg>04-25-2022 11:00(UTC+0) ~ 15:00(UTC+0)
+                    <button class="button-stroke testimonials__button">Read full story</button>
+                  </div>
+                  <div class="testimonials__col">
+                    <div class="testimonials__preview"><img srcSet="img/content/trainer-pic@2x.png 2x" src="img/content/trainer-pic.png" alt="Trainer">
+                      <button class="play">
+                        <svg class="icon icon-play">
+                          <use xlink:href="#icon-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item js-tabs-item">
+                <div class="testimonials__row">
+                  <div class="testimonials__col">
+                    <div class="testimonials__logo"><img src="img/content/velocity9.svg" alt="Logo"></div>
+                    <div class="testimonials__comment">“ Fitness Pro is the greatest fitness app. It's clear the makers behind this thing use it every week, because it is so perfect. “</div>
+                    <div class="testimonials__details">
+                      <div class="testimonials__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                          <path fill-rule="evenodd" d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z" fill="#ff592c"></path>
+                        </svg>
                       </div>
-                    </div></a>
+                      <div class="testimonials__author">Megane Schumm</div>
+                      <div class="testimonials__description">Legacy Data Coordinator</div>
+                    </div>
+                    <button class="button-stroke testimonials__button">Read full story</button>
+                  </div>
+                  <div class="testimonials__col">
+                    <div class="testimonials__preview"><img srcSet="img/content/trainer-pic@2x.png 2x" src="img/content/trainer-pic.png" alt="Trainer">
+                      <button class="play">
+                        <svg class="icon icon-play">
+                          <use xlink:href="#icon-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item js-tabs-item">
+                <div class="testimonials__row">
+                  <div class="testimonials__col">
+                    <div class="testimonials__logo"><img src="img/content/goldlines.svg" alt="Logo"></div>
+                    <div class="testimonials__comment">“ Fitness Pro is the greatest fitness app. “</div>
+                    <div class="testimonials__details">
+                      <div class="testimonials__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                          <path fill-rule="evenodd" d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z" fill="#ff592c"></path>
+                        </svg>
+                      </div>
+                      <div class="testimonials__author">Megane Schumm</div>
+                      <div class="testimonials__description">Legacy Data Coordinator</div>
+                    </div>
+                    <button class="button-stroke testimonials__button">Read full story</button>
+                  </div>
+                  <div class="testimonials__col">
+                    <div class="testimonials__preview"><img srcSet="img/content/trainer-pic@2x.png 2x" src="img/content/trainer-pic.png" alt="Trainer">
+                      <button class="play">
+                        <svg class="icon icon-play">
+                          <use xlink:href="#icon-play"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="interesting__btns">
-              <button class="button-stroke interesting__button">Browse more</button>
-            </div>
+            <div class="testimonials__nav"><a class="testimonials__link js-tabs-link active" href="#" data-aos="animation-opacity">
+                <div class="testimonials__avatar"><img src="img/content/avatar-5.png" alt="Avatar"></div>
+                <div class="testimonials__group">
+                  <div class="testimonials__man">Jazmin Grady</div>
+                  <div class="testimonials__position">Personal Trainer</div>
+                </div></a><a class="testimonials__link js-tabs-link" href="#" data-aos="animation-opacity">
+                <div class="testimonials__avatar"><img src="img/content/avatar-1.png" alt="Avatar"></div>
+                <div class="testimonials__group">
+                  <div class="testimonials__man">Kaylah Botsford</div>
+                  <div class="testimonials__position">Personal Trainer</div>
+                </div></a><a class="testimonials__link js-tabs-link" href="#" data-aos="animation-opacity">
+                <div class="testimonials__avatar"><img src="img/content/avatar-2.png" alt="Avatar"></div>
+                <div class="testimonials__group">
+                  <div class="testimonials__man">Reinhold Ullrich</div>
+                  <div class="testimonials__position">Personal Trainer</div>
+                </div></a><a class="testimonials__link js-tabs-link" href="#" data-aos="animation-opacity">
+                <div class="testimonials__avatar"><img src="img/content/avatar-3.png" alt="Avatar"></div>
+                <div class="testimonials__group">
+                  <div class="testimonials__man">Josh Bartoletti</div>
+                  <div class="testimonials__position">Personal Trainer</div>
+                </div></a></div>
           </div>
         </div>
       </div>
