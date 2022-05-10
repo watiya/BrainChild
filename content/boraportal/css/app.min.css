@@ -6927,9 +6927,9 @@ body.dark .pricing {
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(33.333% - 32px);
-            flex: 0 0 calc(33.333% - 32px);
-    width: calc(33.333% - 32px);
+        -ms-flex: 0 0 calc(25% - 32px);
+            flex: 0 0 calc(25% - 32px);
+    width: calc(25% - 32px);
     margin: 64px 16px 0;
     padding-bottom: 40px;
     border-bottom: 2px solid #E6E8EC;
@@ -6962,7 +6962,7 @@ body.dark .pricing {
                 -ms-transform: scale(1);
                     transform: scale(1); } }
   .post__preview {
-    width: 60%;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 32px;
     border-radius: 16px;
@@ -6985,7 +6985,7 @@ body.dark .pricing {
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin-bottom: 34px;
-    width: 60%;
+    width: 100%;
     font-size: 24px;
     line-height: 1.33333;
     font-weight: 600; }
