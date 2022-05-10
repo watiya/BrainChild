@@ -6996,7 +6996,7 @@ body.dark .pricing {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 60%;
+    width: 100%;
     font-size: 14px;
     line-height: 1.71429;
     font-weight: 500;
