@@ -5003,7 +5003,7 @@ body.dark .some-icon {
       height: 14px;
       fill: #FCFCFD; }
     .subscription__btn:hover {
-      background: #f83500; }
+      background: #5914ce; }
 
 .footer {
   border-top: 1px solid rgba(119, 126, 144, 0.3); }
@@ -6817,7 +6817,8 @@ body.dark .pricing {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 24px;
-  background: #7265E3;
+  background: rgba(157,0,255,1);
+  background: linear-gradient(90deg, rgba(247,0,255,1) 0%, rgba(18,0,255,1) 100%);
   font-family: 'SFProDisplay-Bold';
   font-size: 16px;
   line-height: 48px;
@@ -7418,7 +7419,7 @@ body.dark .pricing {
     height: 16px;
     fill: #FCFCFD; }
   .catalog__result:hover {
-    background: #f83500; }
+    background: #5914ce; }
 
 .catalog__wrap {
   margin-bottom: 80px;
@@ -7980,9 +7981,9 @@ body.dark .pricing {
                 box-shadow: 0 0 0 2px #7265E3 inset;
         color: #FCFCFD; }
         .programs__item:hover .programs__button:hover {
-          background: #f83500;
-          -webkit-box-shadow: 0 0 0 2px #f83500 inset;
-                  box-shadow: 0 0 0 2px #f83500 inset;
+          background: #5914ce;
+          -webkit-box-shadow: 0 0 0 2px #5914ce inset;
+                  box-shadow: 0 0 0 2px #5914ce inset;
           color: #FCFCFD; }
     body.dark .programs__item {
       background: #23262F; }
