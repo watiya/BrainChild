@@ -4803,8 +4803,8 @@ body.dark .some-icon {
   .workouts__gallery {
     position: absolute;
     top: 50%;
-    right: calc(50% - 663px);
-    width: 450px;
+    right: calc(55% - 663px);
+    width: 500px;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
