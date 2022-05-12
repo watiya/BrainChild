@@ -3432,7 +3432,7 @@ body.dark .some-icon {
         display: none; } }
   .main1__gallery {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: calc(50% - 650px);
     width: 780px;
     -webkit-transform: translateY(-50%);
