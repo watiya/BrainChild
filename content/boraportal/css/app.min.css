@@ -3371,10 +3371,10 @@ body.dark .some-icon {
     z-index: 1;
     width: 45%; }
   .main__preview:nth-child(4) {
-    left: 11%;
-    bottom: 13%;
+    left: -5%;
+    bottom: 5%;
     z-index: 3;
-    width: 18%; }
+    width: 40%; }
   .main__preview:not(:first-child) {
     position: absolute; }
   .main__preview img {
@@ -3433,7 +3433,7 @@ body.dark .some-icon {
   .main1__gallery {
     position: absolute;
     top: 50%;
-    right: calc(50% - 720px);
+    right: calc(50% - 650px);
     width: 780px;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -8247,15 +8247,15 @@ body.dark .pricing {
     z-index: 3;
     width: 45%; }
   .portfolio__preview:nth-child(3) {
-    top: -12%;
+    top: -25%;
     right: 0%;
     z-index: 1;
     width: 43%; }
   .portfolio__preview:nth-child(4) {
-    left: 0%;
-    bottom: 14%;
+    left: -5%;
+    top: 0%;
     z-index: 3;
-    width: 30%; }
+    width: 22%; }
   .portfolio__preview:not(:first-child) {
     position: absolute; }
   .portfolio__preview img {
