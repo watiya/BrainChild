@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  background-image: url(./asset/bg.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -104,7 +104,7 @@ img {
   stroke: var(--theme-color);
 }
 .light-mode .profile-img {
-  border: 2px solid var(--theme-bg-color);
+  width: 24px;
 }
 .light-mode .content-section ul {
   background-color: var(--theme-bg-color);
@@ -142,6 +142,7 @@ body.light-mode .video-bg:before {
   border-radius: 14px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   font-size: 15px;
   font-weight: 500;
 }
@@ -188,7 +189,7 @@ body.light-mode .video-bg:before {
 .notify:before {
   content: "";
   position: absolute;
-  background-color: #3a6df0;
+  background-color: #18F3B2;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -278,7 +279,7 @@ body.light-mode .video-bg:before {
 }
 .notification-number {
   position: absolute;
-  background-color: #3a6df0;
+  background-color: #18F3B2;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -441,10 +442,21 @@ body.light-mode .video-bg:before {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png"), linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
+  background-image: url("./asset/cubes.png"), linear-gradient(300deg, rgba(245,6,250,1) 0%, rgba(49,32,240,1) 35%, rgba(4,244,186,1) 70%, rgba(254,216,0,1) 100%);
   border-radius: 14px;
   padding: 20px 40px;
 }
+
+.content-wrapper-header2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-image: url("./asset/cubes.png"), linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
+  border-radius: 14px;
+  padding: 20px 40px;
+}
+
 @media screen and (max-width: 415px) {
   .content-wrapper-header {
     padding: 20px;
@@ -476,11 +488,16 @@ body.light-mode .video-bg:before {
 .img-content {
   font-weight: 500;
   font-size: 17px;
+  color: #202534;
   display: flex;
   align-items: center;
   margin: 0;
 }
 .img-content svg {
+  width: 28px;
+  margin-right: 14px;
+}
+.img-content-img {
   width: 28px;
   margin-right: 14px;
 }
@@ -490,7 +507,7 @@ body.light-mode .video-bg:before {
   font-size: 14px;
   margin-top: 16px;
   line-height: 1.7em;
-  color: #ebecec;
+  color: #202534;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -503,15 +520,16 @@ body.light-mode .video-bg:before {
 }
 
 .content-button {
-  background-color: #3a6df0;
+  background-color: #18F3B2;
   border: none;
   padding: 8px 26px;
-  color: #fff;
-  border-radius: 20px;
+  color: #202534;
+  border-radius: 6px;
   margin-top: 16px;
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%, 0 85%);
 }
 
 .content-wrapper-img {
@@ -615,7 +633,8 @@ body.light-mode .video-bg:before {
   background-color: #3bf083;
 }
 .status-button {
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
   margin-top: 0;
   padding: 6px 24px;
 }
@@ -635,7 +654,7 @@ body.light-mode .video-bg:before {
 }
 
 .content-button:not(.open):hover {
-  background: #1e59f1;
+  background: #28CD95;
 }
 
 .menu {
@@ -788,8 +807,8 @@ body.light-mode .video-bg:before {
 }
 
 .checkbox:checked + label:before {
-  background-color: #3a6df0;
-  border-color: #3a6df0;
+  background-color: #18F3B2;
+  border-color: #18F3B2;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
   background-position: 50%;
   background-size: 12px;
@@ -830,6 +849,11 @@ body.light-mode .video-bg:before {
 .app-card svg {
   width: 28px;
   border-radius: 6px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+.app-card-img {
+  width: 28px;
   margin-right: 12px;
   flex-shrink: 0;
 }
