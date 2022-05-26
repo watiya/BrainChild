@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bora</title>
+    <defs>
+        <circle id="path-1" cx="16" cy="16" r="16"></circle>
+        <linearGradient x1="41.6814819%" y1="25.0278499%" x2="58.3395072%" y2="75.0150072%" id="linearGradient-3">
+            <stop stop-color="#FF00FF" offset="0%"></stop>
+            <stop stop-color="#9D00FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="55.0268218%" y1="81.5269151%" x2="44.9780173%" y2="18.4772257%" id="linearGradient-4">
+            <stop stop-color="#00FFBE" offset="3.570406e-05%"></stop>
+            <stop stop-color="#603CF7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="62.515875%" y1="62.5075672%" x2="37.515875%" y2="37.5009509%" id="linearGradient-5">
+            <stop stop-color="#00FFBE" offset="0%"></stop>
+            <stop stop-color="#508CFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="37.51575%" y1="37.5139447%" x2="62.515875%" y2="62.5204887%" id="linearGradient-6">
+            <stop stop-color="#FF00FF" offset="0%"></stop>
+            <stop stop-color="#9D00FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bora">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g id="Group" mask="url(#mask-2)" fill-rule="nonzero">
+                <g transform="translate(9.000000, 6.000000)" id="Path">
+                    <polygon fill="url(#linearGradient-3)" points="9.55952381 17.25 9.55952381 17.25 9.55952381 11.75 14.3214286 9 14.3214286 14.5"></polygon>
+                    <polygon fill="url(#linearGradient-4)" points="0.0357142857 2.75 0.0357142857 17.25 4.79761905 14.5 4.79761905 0"></polygon>
+                    <polygon fill="url(#linearGradient-5)" points="9.55952381 17.25 4.79761905 14.5 0.0357142857 17.25 4.79761905 20"></polygon>
+                    <polygon fill="url(#linearGradient-6)" points="14.3214286 9 9.55952381 6.25 4.79761905 9 9.55952381 11.75"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

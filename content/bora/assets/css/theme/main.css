@@ -488,14 +488,14 @@
    * Css vars heading-color
    */--heading-color-text: var(--color-gray-100);
   --root-size: 18;
-  --radius: 9px;
+  --radius: 6px;
   --border-color: rgba(131, 131, 131, 0.25);
   /*
    * Css vars gradient
-   */--gradient-first: #2178FF;
-  --gradient-second: #3B34FF;
-  --gradient-third: #129EFF;
-  --gradient-angle: 124deg;
+   */--gradient-first: #fee400;
+  --gradient-second: #01ffc2;
+  --gradient-third: #1500ff;
+  --gradient-angle: 130deg;
   /*
    * Css vars color
    *//*
@@ -504,7 +504,7 @@
   --color-primary-20: #b3c7ff;
   --color-primary-30: #80a2ff;
   --color-primary-40: #4d7cff;
-  --color-primary: #2963FF;
+  --color-primary: #18F3B2;
   --color-primary-60: #0044ff;
   --color-primary-70: #0036cc;
   --color-primary-80: #002999;
@@ -8398,7 +8398,8 @@ html.bp-xl .uk-form-large\@xl {
   border-radius: var(--button-border-radius, 0);
   outline: none;
   cursor: pointer;
-  transition: 200ms ease
+  transition: 200ms ease;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 18% 100%, 0 75%);
 }
 .uk-button {
   color: inherit
@@ -8477,7 +8478,7 @@ html.bp-xl .uk-form-large\@xl {
   z-index: -1;
   transition: 200ms ease;
   background-color: var(--color-primary);
-  background-image: linear-gradient(var(--gradient-angle), var(--gradient-first), var(--gradient-second), var(--gradient-third))
+  background-image: linear-gradient(var(--gradient-angle), var(--gradient-first) 0%, var(--gradient-second)30%, var(--gradient-third) 100%)
 }
 .uk-button-gradient:hover::after {
   opacity: 0.85
