@@ -2164,7 +2164,7 @@ body.dark .some-icon {
 
 .button-small {
   height: 40px;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 0 16px;
   font-size: 14px; }
 
@@ -3330,7 +3330,7 @@ body.dark .some-icon {
   .main__gallery {
     position: absolute;
     top: 50%;
-    right: calc(50% - 465px);
+    right: calc(50% - 520px);
     width: 512px;
     -webkit-transform: translateY(-58%);
         -ms-transform: translateY(-58%);
@@ -3362,18 +3362,18 @@ body.dark .some-icon {
     position: relative;
     z-index: 2; }
   .main__preview:nth-child(2) {
-    top: 36%;
-    right: -18%;
+    top: 32%;
+    right: -15%;
     z-index: 3;
-    width: 45%; }
+    width: 38%; }
   .main__preview:nth-child(3) {
-    top: -12%;
-    right: -7%;
+    top: -8%;
+    right: 10%;
     z-index: 1;
-    width: 45%; }
+    width: 40%; }
   .main__preview:nth-child(4) {
-    left: -5%;
-    bottom: 5%;
+    left: -15%;
+    bottom: 20%;
     z-index: 3;
     width: 40%; }
   .main__preview:not(:first-child) {
