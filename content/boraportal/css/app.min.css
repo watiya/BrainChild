@@ -3286,7 +3286,7 @@ body.dark .some-icon {
   @media only screen and (max-width: 767px) {
     .main {
       min-height: auto;
-      padding: 64px 0 152px; } }
+      padding: 34px 0 152px; } }
   .main__wrap {
     position: relative;
     z-index: 3;
