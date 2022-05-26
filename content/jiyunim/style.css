@@ -376,6 +376,10 @@ body.light-mode .video-bg:before {
   width: 16px;
   margin-right: 8px;
 }
+.side-menu-img {
+  width: 16px;
+  margin-right: 8px;
+}
 
 .updates {
   position: relative;
