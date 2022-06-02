@@ -303,10 +303,8 @@ body.light-mode .video-bg:before {
 .profile-img {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 2px solid var(--theme-color);
   margin-left: 22px;
 }
 
@@ -377,7 +375,7 @@ body.light-mode .video-bg:before {
   margin-right: 8px;
 }
 .side-menu-img {
-  width: 16px;
+  width: 20px;
   margin-right: 8px;
 }
 
@@ -533,7 +531,6 @@ body.light-mode .video-bg:before {
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%, 0 85%);
 }
 
 .content-wrapper-img {
@@ -601,6 +598,11 @@ body.light-mode .video-bg:before {
   margin-right: 16px;
   flex-shrink: 0;
 }
+.content-section ul img {
+  width: 28px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
 
 .products {
   display: flex;
@@ -648,9 +650,11 @@ body.light-mode .video-bg:before {
   }
 }
 .status-button.open {
-  background: none;
+  background-image: url(./asset/bg_button.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
   color: var(--button-inactive);
-  border: 1px solid var(--button-inactive);
 }
 .status-button:not(.open):hover {
   color: #fff;

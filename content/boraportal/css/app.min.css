@@ -3375,7 +3375,8 @@ body.dark .some-icon {
     left: -15%;
     bottom: 20%;
     z-index: 3;
-    width: 40%; }
+    width: 40%;
+   }
   .main__preview:not(:first-child) {
     position: absolute; }
   .main__preview img {
