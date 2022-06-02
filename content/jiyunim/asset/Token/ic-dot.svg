@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Token / ic-dot</title>
+    <defs>
+        <circle id="path-1" cx="16" cy="16" r="16"></circle>
+    </defs>
+    <g id="Token-/-ic-dot" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Oval" fill="#E6007A" xlink:href="#path-1"></use>
+        <g id="polkadot-new-dot-logo" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+            <g transform="translate(6.000000, 6.000000)" id="Oval">
+                <ellipse cx="10.0003381" cy="2.00448536" rx="3.44652215" ry="2.00448536"></ellipse>
+                <ellipse cx="10.0003381" cy="17.1079234" rx="3.44652215" ry="2.00448536"></ellipse>
+                <ellipse transform="translate(3.460319, 5.780732) rotate(-59.999272) translate(-3.460319, -5.780732) " cx="3.46031908" cy="5.78073248" rx="3.44644633" ry="2.00579653"></ellipse>
+                <ellipse transform="translate(16.540043, 13.332228) rotate(-59.999272) translate(-16.540043, -13.332228) " cx="16.5400428" cy="13.3322279" rx="3.44644633" ry="2.00444126"></ellipse>
+                <ellipse transform="translate(3.460799, 13.331768) rotate(-30.000728) translate(-3.460799, -13.331768) " cx="3.46079886" cy="13.3317684" rx="2.00579653" ry="3.44644633"></ellipse>
+                <ellipse transform="translate(16.540855, 5.781172) rotate(-30.000728) translate(-16.540855, -5.781172) " cx="16.5408546" cy="5.78117159" rx="2.00444126" ry="3.44644633"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

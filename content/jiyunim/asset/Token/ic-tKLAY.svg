@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Token / ic-tKLAY</title>
+    <defs>
+        <linearGradient x1="84.3599319%" y1="14.3667221%" x2="17.2767639%" y2="88.3350372%" id="linearGradient-1">
+            <stop stop-color="#FF8E02" offset="0%"></stop>
+            <stop stop-color="#F6252E" offset="56.6251955%"></stop>
+            <stop stop-color="#7C0C00" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="16" cy="16" r="16"></circle>
+    </defs>
+    <g id="Token-/-ic-tKLAY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Oval" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <g id="ic-klay" mask="url(#mask-3)">
+            <g transform="translate(6.000000, 6.000000)" id="64*64">
+                <g transform="translate(0.400000, 0.400000)">
+                    <path d="M9.94242736,9.3822906 L16.384,15.8938804 C18.0346716,14.1309916 18.9381082,11.7971139 18.9046154,9.3822906 C18.8926108,6.97586124 17.9953808,4.65801684 16.384,2.87070086 L9.94242736,9.3822906 Z" id="패스_172" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <polygon id="패스_173" fill="#FFFFFF" fill-rule="nonzero" points="9.45230768 9.87241024 3.08075214 16.2439658 9.45230768 18.9046154 15.8238632 16.2439658"></polygon>
+                    <polygon id="패스_174" fill="#FFFFFF" fill-rule="nonzero" points="9.2422564 9.17223932 15.8238632 2.52061538 9.73237608 0 3.71090598 14.7736068"></polygon>
+                    <path d="M-7.23197583e-07,9.3822906 C-0.000659183744,11.7702309 0.89946356,14.0705446 2.52061538,15.8238632 L8.89217096,0.420102564 L-7.23197583e-07,9.3822906 Z" id="패스_175" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

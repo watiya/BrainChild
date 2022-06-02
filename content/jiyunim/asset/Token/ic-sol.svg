@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Token / ic-sol</title>
+    <defs>
+        <linearGradient x1="12.0347023%" y1="82.5500965%" x2="93.0957794%" y2="22.1618652%" id="linearGradient-1">
+            <stop stop-color="#DC1FFF" offset="0%"></stop>
+            <stop stop-color="#01FDA3" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="16" cy="16" r="16"></circle>
+        <filter x="-10.9%" y="-7.8%" width="121.9%" height="121.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Token-/-ic-sol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <g id="Oval">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+        </g>
+        <g id="solana-sol-logo" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="nonzero">
+            <g transform="translate(7.000000, 9.000000)" id="Path">
+                <path d="M2.92442782,10.1469072 C3.03304141,10.0541237 3.18238508,10 3.34077988,10 L17.7049259,10 C17.9674088,10 18.0986502,10.2706186 17.913102,10.4291237 L15.0755722,12.8530928 C14.9669586,12.9458763 14.8176149,13 14.6592201,13 L0.295074057,13 C0.0325912365,13 -0.0986501736,12.7293814 0.0868980269,12.5708763 L2.92442782,10.1469072 Z"></path>
+                <path d="M2.92442782,0.146907216 C3.03756697,0.0541237113 3.18691065,0 3.34077988,0 L17.7049259,0 C17.9674088,0 18.0986502,0.270618557 17.913102,0.429123711 L15.0755722,2.85309278 C14.9669586,2.94587629 14.8176149,3 14.6592201,3 L0.295074057,3 C0.0325912365,3 -0.0986501736,2.72938144 0.0868980269,2.57087629 L2.92442782,0.146907216 Z"></path>
+                <path d="M15.0755722,5.14690722 C14.9669586,5.05412371 14.8176149,5 14.6592201,5 L0.295074057,5 C0.0325912365,5 -0.0986501736,5.27061856 0.0868980269,5.42912371 L2.92442782,7.85309278 C3.03304141,7.94587629 3.18238508,8 3.34077988,8 L17.7049259,8 C17.9674088,8 18.0986502,7.72938144 17.913102,7.57087629 L15.0755722,5.14690722 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
