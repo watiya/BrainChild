@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Page Title -->
+    <title>FLASK</title>
+    <!--/ Page Title -->
+
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <!--/ Favicons -->
+</head>
+
+
+<body data-barba="wrapper" data-cursor="true" data-header-sticky="true" data-menu-style="classic" data-page-layout="dark" data-header-layout="light" data-menu-layout="dark" data-footer-layout="dark" data-page-loader="true">
+
+    <!--Page Loader-->
+    <div data-duration="5" class="Flask-page-loader" data-layout="dark">
+
+        <span class="apl-background"></span>
+
+        <!--Loader Percentage (Don't Touch)-->
+        <div class="apl-count"></div>
+        <!--Loader Percentage (Don't Touch)-->
+
+    </div>
+    <!--/Page Loader-->
+
+    <!--Page Transitions-->
+    <div class="Flask-page-transitions" data-layout="dark">
+
+        <!--Transition Background (Don't touch)-->
+        <span class="apt-bg"></span>
+        <!--/Transition Background (Don't touch)-->
+
+        <!--Transition Text-->
+        <div class="trans-text">Loading, please wait..</div>
+        <!--Transition Text-->
+
+    </div>
+    <!--/Page Transitions-->
+
+    <!-- Mouse Cursor -->
+    <div data-dark-circle="rgba(25,27,29,.6)" data-dark-dot="#191b1d" data-light-circle="hsla(0,0%,100%,.2)" data-light-dot="#fff" id="mouseCursor">
+        <div id="cursor"></div>
+        <div id="dot"></div>
+    </div>
+    <!-- /Mouse Cursor -->
+
+    <!-- Header -->
+    <div class="site-header">
+
+        <div class="header-wrapper">
+
+            <!-- Site Branding -->
+            <div class="site-branding">
+
+                <!-- Site Logos -->
+                <div class="site-logo">
+                    <a href="index.html">
+                        <img alt="Site Logo" class="dark-logo" src="img/logo_flask.svg">
+                        <img alt="Site Logo Light" class="light-logo" src="img/logo_flask_light.svg">
+                    </a>
+                </div>
+                <!-- /Site Logos -->
+
+            </div>
+            <!-- /Site Branding -->
+
+            <!-- Menu Toggle Button (Don't touch) -->
+            <div class="menu-toggle">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </div>
+            <!-- /Menu Toggle Button (Don't touch) -->
+
+            <!-- Site Navigation -->
+            <div class="site-navigation">
+
+                <span class="sub-back"><i class="icofont-long-arrow-left"></i></span>
+
+                <!-- Main Menu -->
+                <ul class="menu main-menu">
+
+                    <li class="menu-item"><a href="section_home.html">Home Section</a></li>
+
+                    <li class="menu-item"><a href="section_about.html">About Section</a></li>
+
+                    <li class="menu-item"><a href="section_project.html">Project Section</a></li>
+
+                    <li class="menu-item"><a href="section_press.html">Press Section</a></li>
+
+                    <li class="menu-item"><a href="section_etc.html">Etc Section</a></li>
+
+                </ul>
+                <!-- /Main Menu -->
+
+            </div>
+            <!-- /Site Navigation -->
+
+
+        </div>
+
+    </div>
+    <!-- /Header -->
+
+
+    <!-- Page -->
+    <div id="page" data-barba="container">
+        <!-- Page Content -->
+
+        <div id="content" class="page-content">
+
+            <!--Section-->
+            <div class="section" style="margin-top: 100px">
+
+                <!--Wrapper-->
+                <div class="wrapper-small no-margin">
+
+                    <!--Column-->
+                    <div class="c-col-12 hide_mobile">
+
+                        <!--Heading-->
+                        <div data-parallax="true" data-image="false" data-background-text="Press" class="Flask-heading">
+
+                            <!--Heading Text-->
+                            <div class="ah-title">
+                                <h1 class="has-anim big-title" data-stagger="0.01" data-duration="1" data-delay=".1" data-animation="charsUp">
+                                    Latest Stories
+                                </h1>
+                            </div>
+                            <!--/Heading Text-->
+
+                        </div>
+                        <!--Heading-->
+
+                    </div>
+                    <!--/Column-->
+
+                    <!--Column-->
+                    <div class="c-col-12 hide_desktop">
+
+                        <!--Heading-->
+                        <div data-parallax="true" data-image="false" data-background-text="Blog Posts" class="Flask-heading">
+
+                            <!--Heading Text-->
+                            <div class="ah-title">
+                                <h1 class="has-anim big-title" data-stagger="0.01" data-duration="1" data-delay=".1" data-animation="charsUp">
+                                    Latest Stories
+                                </h1>
+                            </div>
+                            <!--/Heading Text-->
+
+                        </div>
+                        <!--Heading-->
+
+                    </div>
+                    <!--/Column-->
+
+                </div>
+                <!--/Wrapper-->
+
+                <!--Wrapper-->
+                <div class="wrapper-small">
+
+                    <div class="c-col-12">
+
+                        <!--Flask Blog List-->
+                        <div class="Flask-blog blog-list">
+
+                            <!--Blog Post-->
+                            <div class="post Flask-post sticky">
+
+                                <!--Blog Post Image-->
+                                <div class="post-image">
+
+                                    <img alt="Post Image" src="img/post/post_01.jpg">
+
+                                </div>
+                                <!--/Blog Post Image-->
+
+                                <!--Blog Post URL--><a href="https://news.mt.co.kr/mtview.php?no=2022102414525981584" target="_blank">
+
+                                    <!--Blog Post Date-->
+                                    <div class="post-date">2022.10.24</div>
+                                    <!--/Blog Post Date-->
+
+                                    <!--Blog Post Cat-->
+                                    <div class="post-cat">Financial News</div>
+                                    <!--/Blog Post Cat-->
+
+
+                                    <!--Blog Post Title-->
+                                    <div class="post-title">
+
+                                        <h2>Flask to launch blockchain game platform 'NAODA'</h2>
+
+                                    </div>
+                                    <!--Blog Post Title-->
+
+                                    <!--Blog Post Summary-->
+                                    <h5 class="post-summary">NAODA Foundation provides the tools to help create a world where your participation is immortalized. In our world, you choose what memories you want to cherish forever. </h5>
+                                    <!--/Blog Post Summary-->
+                                </a>
+
+                            </div>
+                            <!--/Blog Post-->
+
+                            <!--Blog Post-->
+                            <div class="post Flask-post sticky">
+
+                                <!--Blog Post Image-->
+                                <div class="post-image">
+
+                                    <img alt="Post Image" src="img/post/post_02.jpg">
+
+                                </div>
+                                <!--/Blog Post Image-->
+
+                                <!--Blog Post URL--><a href="https://news.mt.co.kr/mtview.php?no=2022102414525981584" target="_blank">
+
+                                    <!--Blog Post Date-->
+                                    <div class="post-date">2022.10.24</div>
+                                    <!--/Blog Post Date-->
+
+                                    <!--Blog Post Cat-->
+                                    <div class="post-cat">Financial News</div>
+                                    <!--/Blog Post Cat-->
+
+
+                                    <!--Blog Post Title-->
+                                    <div class="post-title">
+
+                                        <h2>Flask to launch blockchain game platform 'NAODA'</h2>
+
+                                    </div>
+                                    <!--Blog Post Title-->
+
+                                    <!--Blog Post Summary-->
+                                    <h5 class="post-summary">NAODA Foundation provides the tools to help create a world where your participation is immortalized. In our world, you choose what memories you want to cherish forever. </h5>
+                                    <!--/Blog Post Summary-->
+                                </a>
+
+                            </div>
+                            <!--/Blog Post-->
+
+                           <!--Blog Post-->
+                           <div class="post Flask-post sticky">
+
+                            <!--Blog Post Image-->
+                            <div class="post-image">
+
+                                <img alt="Post Image" src="img/post/post_01.jpg">
+
+                            </div>
+                            <!--/Blog Post Image-->
+
+                            <!--Blog Post URL--><a href="https://news.mt.co.kr/mtview.php?no=2022102414525981584" target="_blank">
+
+                                <!--Blog Post Date-->
+                                <div class="post-date">2022.10.24</div>
+                                <!--/Blog Post Date-->
+
+                                <!--Blog Post Cat-->
+                                <div class="post-cat">Financial News</div>
+                                <!--/Blog Post Cat-->
+
+
+                                <!--Blog Post Title-->
+                                <div class="post-title">
+
+                                    <h2>Flask to launch blockchain game platform 'NAODA'</h2>
+
+                                </div>
+                                <!--Blog Post Title-->
+
+                                <!--Blog Post Summary-->
+                                <h5 class="post-summary">NAODA Foundation provides the tools to help create a world where your participation is immortalized. In our world, you choose what memories you want to cherish forever. </h5>
+                                <!--/Blog Post Summary-->
+                            </a>
+
+                        </div>
+                        <!--/Blog Post-->
+                            <!--Post Images Wrap (Don't Touch)-->
+                            <div class="post-images"></div>
+                            <!--Post Images Wrap (Don't Touch)-->
+
+                        </div>
+                        <!--/Flask Blog List-->
+
+                        <!-- Button -->
+                        <div class="a-button style_1">
+
+                            <!-- Button URL-->
+                            <a href="blog-classic.html">Read All Posts</a>
+                            <!--/ Button URL-->
+
+                            <!-- Button Icon-->
+                            <i class="icofont-arrow-right"></i>
+                            <!--/ Button Icon-->
+
+                        </div>
+                        <!--/ Button -->
+
+                    </div>
+                    <!--/Column-->
+
+                </div>
+                <!--/Wrapper-->
+
+            </div>
+            <!--/Section -->
+
+            <!--Section-->
+            <div class="section">
+
+                <!--Wrapper-->
+                <div class="wrapper">
+
+                    <!--Column-->
+                    <div class="c-col-12 hide_mobile">
+
+                        <!--Heading-->
+                        <div style="padding-left: 100px" data-parallax="true" data-image="false" data-background-text="Blog Posts" class="Flask-heading">
+
+                            <!--Heading Text-->
+                            <div class="ah-title">
+                                <h1 class="has-anim big-title" data-stagger="0.01" data-duration="1" data-delay=".1" data-animation="charsUp">
+                                    On the Blog
+                                </h1>
+                            </div>
+                            <!--/Heading Text-->
+
+                        </div>
+                        <!--Heading-->
+
+                    </div>
+                    <!--/Column-->
+
+                    <!--Column-->
+                    <div class="c-col-12 hide_desktop">
+
+                        <!--Heading-->
+                        <div data-parallax="true" data-image="false" data-background-text="Blog Posts" class="Flask-heading">
+
+                            <!--Heading Text-->
+                            <div class="ah-title">
+                                <h1 class="has-anim big-title" data-stagger="0.01" data-duration="1" data-delay=".1" data-animation="charsUp">
+                                    On the Blog
+                                </h1>
+                            </div>
+                            <!--/Heading Text-->
+
+                        </div>
+                        <!--Heading-->
+
+                    </div>
+                    <!--/Column-->
+
+                    <div class="c-col-12 no-gap">
+
+                        <!--Flask Latest Posts-->
+                        <div class="Flask-latest-posts">
+
+                            <!--Post-->
+                            <div class="post">
+
+                                <!--Post URL--><a href="single-post.html">
+
+                                    <!--Post Image-->
+                                    <div class="post-featured-image">
+                                        <img alt="Post Image" src="img/post/post_03.jpg">
+                                    </div>
+                                    <!--/Post Image-->
+
+                                    <!--Post Title-->
+                                    <h4 class="post-title">Flask to launch blockchain game platform 'NAODA'</h4>
+                                    <!--Post Title-->
+
+                                </a>
+                            </div>
+                            <!--Post-->
+
+                            <!--Post-->
+                            <div class="post">
+
+                                 <!--Post URL--><a href="single-post.html">
+
+                                    <!--Post Image-->
+                                    <div class="post-featured-image">
+                                        <img alt="Post Image" src="img/post/post_02.jpg">
+                                    </div>
+                                    <!--/Post Image-->
+
+                                    <!--Post Title-->
+                                    <h4 class="post-title">Flask to launch blockchain game platform 'NAODA'</h4>
+                                    <!--Post Title-->
+
+                                </a>
+                            </div>
+                            <!--Post-->
+
+                        </div>
+                        <!--/Flask Latest Posts-->
+
+                    </div>
+                    <!--/Column-->
+
+
+                    <div class="c-col-12 align-center">
+
+                        <div class="a-button style_1 align-center">
+
+                            <!--Recent Works Button URL-->
+                            <a href="blog-classic.html">Read All Posts</a>
+                            <!--/Recent Works Button URL-->
+
+                            <!--Recent Works Button Icon-->
+                            <i class="icofont-arrow-right"></i>
+                            <!--/Recent Works Button Icon-->
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!--/Wrapper-->
+
+            </div>
+            <!--/Section -->           
+
+        </div>
+        <!-- /Page Content -->
+
+    </div>
+    <!-- /Page -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/barba.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
