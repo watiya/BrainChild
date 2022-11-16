@@ -5186,7 +5186,7 @@ body.dark .next-project-wrap h1 {
     display: block;
     margin-bottom: 200px;
     overflow: hidden;
-    height: 500px
+    /* height: 500px */
 }
 
 .aw-project-image,
