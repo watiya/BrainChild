@@ -1,4 +1,4 @@
-var btcPath = "https://i.ibb.co/YWgn0V9/btcLogo.jpg";
+var btcPath = "https://watiya.github.io/jiyunim/content/codepen/4/img/btcLogo.jpeg";
 
 var sketch = function(p){
 
