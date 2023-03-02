@@ -74,7 +74,7 @@ button,
 .post-info-aside,
 .accordion > ul > li > a,
 .tab-nav > li > a{
-	font-family: 'Orbitron', 'Helvetica Neue', sans-serif;
+	font-family: 'Bai Jamjuree', 'Helvetica Neue', sans-serif;
 }
 
 /* Titles */
@@ -84,6 +84,7 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6{
+	font-family: 'Permanent Marker', 'Helvetica Neue', sans-serif;
 	line-height: 1;
 	font-weight: 700;
 	text-transform: none;
