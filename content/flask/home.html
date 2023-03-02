@@ -39,8 +39,8 @@
 				</div>
 				<nav class="side-navigation left">
 					<ul>
-						<li>
-                            <a href="#home" data-offset="-60">Home</a>
+						<li class="current">
+                            <a href="home.html" data-offset="-60">Home</a>
                         </li>
                         <li>
                             <a href="about.html" data-offset="-60">About</a>
@@ -48,7 +48,7 @@
                         <li>
                             <a href="games.html" data-offset="-60">Games</a>
                         </li>
-                        <li class="current">
+                        <li>
                             <a href="pop.html" data-offset="-60">POPs</a>
                         </li>
                         <li>
@@ -105,7 +105,7 @@
 							</nav>
 							<nav class="navigation nav-block primary-navigation nav-center">
 								<ul>
-									<li>
+									<li class="current">
                                         <a href="home.html" data-offset="-60">Home</a>
                                     </li>
                                     <li>
@@ -114,7 +114,7 @@
                                     <li>
                                         <a href="games.html" data-offset="-60">Games</a>
                                     </li>
-                                    <li class="current">
+                                    <li>
                                         <a href="pop.html" data-offset="-60">POPs</a>
                                     </li>
                                     <li>
@@ -132,124 +132,228 @@
 			<!-- Content -->
 			<div class="content clearfix">
 
-				<!-- Full Width Slider Section -->
-				<section id="home" class="section-block featured-media window-height tm-slider-parallax-container">
-					<div class="tm-slider-container full-width-slider" data-parallax data-parallax-fade-out data-animation="slide" data-scale-under="1140" data-scale-min-height="500">
+				<!-- Fullscreen Slider Section -->
+				<section class="section-block featured-media window-height tm-slider-parallax-container">
+					<div class="tm-slider-container full-width-slider" data-featured-slider data-parallax data-scale-under="960" data-scale-min-height="400">
 						<ul class="tms-slides">
-							<li class="tms-slide" data-image data-force-fit data-animation="scaleIn" data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.35">
+							<li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#333333" data-overlay-bkg-opacity="0.4">
 								<div class="tms-content">
 									<div class="tms-content-inner center v-align-middle">
 										<div class="row">
 											<div class="column width-12">
-												<h1 class="title-xlarge2 color-white mb-30">
-													<span class="tms-caption" data-animate-in="preset:slideInDownShort;duration:800ms;delay:200;" data-no-scale>CREATE</span><br><span class="tms-caption" data-animate-in="preset:flipInX;duration:800ms;delay:500ms;" data-no-scale>YOUR LEGACY</span>
+												<h1 class="title-xlarge color-white mb-20">
+													<span class="tms-caption" data-animate-in="preset:slideInDownShort;duration:800ms;" data-no-scale>Welcome To Naoda.</span>
 												</h1>
 											</div>
 										</div>
 										<div class="row">
 											<div class="column width-6 offset-3">
 												<p class="tms-caption lead weight-regular color-white mb-30"
-													data-animate-in="preset:slideInUpShort;duration:1000ms;delay:200ms;"
+													data-animate-in="preset:slideInUpShort;duration:1000ms;delay:400ms;"
 													data-no-scale
 												>
-												PARTICIPATION IS THE ONLY WAY TO EARN POP!
-												<div class="tms-caption"
-													data-animate-in="preset:slideInUpShort;duration:1000ms;delay:400ms;"
-													data-x="center"
-													data-y="bottom"
-													data-offsety="50"
-												>	
-													<a href="#" class="button rounded bkg-white bkg-hover-theme color-theme color-hover-white">VIEW MY POP</a>
-												</div>
+													Naoda is the perfect toolkit for startups that need a professional way to present their products or services.
+												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<img data-src="images/naoda/fs-section-1.jpg" data-retina src="images/blank.png" alt=""/>
+								<div class="tms-caption"
+									data-animate-in="preset:slideInUpShort;duration:1000ms;delay:1000ms;"
+									data-x="center"
+									data-y="bottom"
+									data-offsety="50"
+								>
+									<a href="#about" class="icon-circled icon-down-open-mini medium scroll-link bkg-white color-theme no-margins" data-offset="-60"></a>
+								</div>
+								<img data-src="images/naoda/slide-14-fs.jpg" data-retina src="images/blank.png" alt=""/>
 							</li>
 						</ul>
 					</div>
 				</section>
-				<!-- Full Width Slider Section -->              
+				<!-- Fullscreen Slider Section End -->
 
-				<!-- Vimeo Embed -->
-				<div id="features" class="section-block">
+				<!-- Basic Feature Columns -->
+				<div id="about" class="section-block">
 					<div class="row flex">
-						<div class="column width-6 v-align-middle">
-							<div class="hero-content split-hero-content">
-								<div class="hero-content-inner left horizon" data-animate-in="preset:turnInLeft;duration:1000ms;" data-threshold="0.7">
-									<h2 class="mb-50">WHAT IS POP?</h2>
-									<p class="mb-50">NAODA envisions a world where Souls that store POPs, 
-										corresponding to a series of participations and contributions, 
-										can form a co-determined sociality; thus leading to our ultimate goal:​
-										Decentralized Social Platform.</p>
-									<div class="row">
-										<div class="column width-12">
-											<h4 class="color-grey">poppopop</h4>
-											<ul>
-												<li><span class="icon-check"></span>popopopop</li>
-												<li><span class="icon-check"></span>popopopop</li>
-												<li><span class="icon-check"></span>popopopop</li>
-												<li><span class="icon-check"></span>popopopop</li>
-												<li><span class="icon-check"></span>and much more...</li>
-											</ul>
+						<div class="column width-10 offset-1 center">
+							<p class="lead text-xlarge weight-regular mb-100">We've built a product that makes your startup look professional, elegant and focused. Start building a beautiful site today.</p>
+						</div>
+						<div class="column width-10 offset-1 center">
+							<div class="row flex">
+								<div class="column width-6">
+									<div class="feature-column horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="1">
+										<div class="feature-text">
+											<span class="title-xlarge font-alt-1 opacity-02">70+</span>
+											<h6>Carfully Crafted Pages</h6>
+											<p>Naoda comes with a wide variety of carfully crafted pages that are ready-to-use and built to save you time. Naoda includes product, service &amp; portfolio layouts, e-commerce layouts, utility layouts, a ton of components and so much more.</p>
+										</div>
+									</div>
+								</div>
+								<div class="column width-6">
+									<div class="feature-column horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;" data-threshold="1">
+										<div class="feature-text">
+											<span class="title-xlarge font-alt-1 opacity-02">100+</span>
+											<h6>Purpose-built Blocks</h6>
+											<p>With over 100 purpose-built content blocks building a site is both fast and easy. Move content blocks around to get new professional looking layouts. The possibilities are endless; create a beautiful site today.</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="column width-6 v-align-middle">
-							<div class="feature-image mb-mobile-50 horizon">
-								<div class="feature-image-inner center-on-mobile horizon">
-									<img src="images/naoda/POP_Animation_DeMain.gif" alt=".." title=".." />
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
-				<!-- Vimeo Embed End -->
-				
-				<!-- Feature Column Section -->
-				<div id="discover" class="section-block pb-30 bkg-grey-ultralight">
-					<div class="row">
-						<div class="column width-8 offset-2 center">
-							<h2 class="mb-30">POP</h2>
-							<p class="lead weight-regular mb-80">Welcome to our community, create your legacy today</p>
-						</div>
-					</div>
-					<div class="row flex">
+				<!-- Basic Feature Columns End -->
+
+                <!-- Overlapping Feature Columns Section -->
+				<div class="tm-slider-container full-width-slider page-intro" data-animation="slide" data-scale-under="1140" data-nav-pagination="false">
+					<ul class="tms-slides">
+						<li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.3">
+							<div class="tms-content">
+								<div class="tms-content-inner center">
+									<div class="row">
+										<div class="column width-8 offset-2">
+											<h3 class="tms-caption title-medium color-white mb-20"
+												data-animate-in="preset:scaleOut;duration:1000ms;"
+												data-no-scale
+											>
+                                            PLAY THE MOMENTS
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img data-src="images/naoda/slide-1-page-intro.jpg" data-retina src="images/blank.png" alt=""/>
+						</li>
+						<li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.3">
+							<div class="tms-content">
+								<div class="tms-content-inner center">
+									<div class="row">
+										<div class="column width-12">
+											<h3 class="tms-caption title-medium color-white mb-40"
+												data-animate-in="preset:scaleOut;duration:1000ms;"
+												data-no-scale
+											>
+												You app page could look this good. Yup it's true.
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img data-src="images/naoda/slide-2-page-intro.jpg" data-retina src="images/blank.png" alt=""/>
+						</li>
+					</ul>
+				</div>
+				<div class="section-block section-overlap replicable-content bkg-grey-ultralight">
+					<div class="row flex boxes">
 						<div class="column width-4">
-							<div class="feature-column box rounded large bkg-white center horizon bkg-hover-theme" data-animate-in="preset:flipInY;duration:1000ms;" data-threshold="1">
-								<span class="feature-icon icon-upload-to-cloud color-theme"></span>
+							<div class="feature-column box rounded large bkg-white center">
+								<img src="images/blog/bio-avatar.jpg" alt="Avatar"/>
 								<div class="feature-text">
-									<h5>WHAT IS NFT</h5>
-									<p>Souls are accounts, or wallets, that hold publicly visible, non-transferable (but possibly revocable-by-the-issuer) tokens.</p>
+									<h5>Upload It</h5>
+									<p>Use feature columns to highlight key information of one or multiple sections. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 								</div>
 							</div>
 						</div>
 						<div class="column width-4">
-							<div class="feature-column box rounded large bkg-white center horizon" data-animate-in="preset:flipInY;duration:1000ms;delay:200ms;" data-threshold="1">
+							<div class="feature-column box rounded large bkg-white center">
 								<span class="feature-icon icon-fingerprint color-theme"></span>
 								<div class="feature-text">
-									<h5>WHAT IS SBT</h5>
-									<p>Souls are accounts, or wallets, that hold publicly visible, non-transferable (but possibly revocable-by-the-issuer) tokens.</p>
+									<h5>Fingerprint</h5>
+									<p>Use feature columns to highlight key information of one or multiple sections. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
 								</div>
 							</div>
 						</div>
 						<div class="column width-4">
-							<div class="feature-column box rounded large bkg-white center horizon" data-animate-in="preset:flipInY;duration:1000ms;delay:400ms;" data-threshold="1">
+							<div class="feature-column box rounded large bkg-white center">
 								<span class="feature-icon icon-crop color-theme"></span>
 								<div class="feature-text">
-									<h5>WHAT IS POP</h5>
-									<p>Souls are accounts, or wallets, that hold publicly visible, non-transferable (but possibly revocable-by-the-issuer) tokens. </p>
+									<h5>Crop It</h5>
+									<p>Use feature columns to highlight key information of one or multiple sections. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. </p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Feature Column Section End -->
+				<!-- Overlapping Feature Columns End -->
 
-				<!-- Signup 2 Custom Section -->
+				<!-- Client Section -->
+				<div id="clients">
+
+					<div class="section-block pt-130 pb-0 bkg-grey-ultralight">
+						<div class="row">
+							<div class="column width-8 offset-2 center">
+								<h3 class="mb-40">You're In Great Company</h3>
+								<p class="lead weight-regular">We've been lucky enough to work with some of the best companies in the world, and we'd love for you to join the list.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Logo 4 Section -->
+					<div class="section-block logos-1 pt-40 pb-130 bkg-grey-ultralight">
+						<div class="row">
+							<div class="column width-12">
+								<div class="row content-grid-5">
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;">
+											<img src="images/logos/app-love-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:200ms;">
+											<img src="images/logos/air-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:250ms;">
+											<img src="images/logos/techmag-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:300ms;">
+											<img src="images/logos/harvest-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:400ms;">
+											<img src="images/logos/nyt-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:200ms;">
+											<img src="images/logos/rosco-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:100ms;">
+											<img src="images/logos/smashing-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:350ms;">
+											<img src="images/logos/repetition-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:200ms;">
+											<img src="images/logos/macaw-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+									<div class="grid-item">
+										<a href="#" class="horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:100ms;">
+											<img src="images/logos/adventure-logo-grid.svg" alt=""/>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Logo 4 Section End -->
+
+				</div>
+				<!-- Client Section End -->
+
+                <!-- Signup 2 Custom Section -->
 				<div class="section-block signup-2 signup-2-shop-1 left middle">
 					<div class="media-overlay bkg-black opacity-02"></div>
 					<div>
@@ -334,6 +438,7 @@
 				</div>
 			</footer>
 			<!-- Footer End -->
+
 
 		</div>
 	</div>
