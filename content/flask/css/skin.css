@@ -53,7 +53,7 @@ body,
 input, 
 textarea,
 select{
-	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Bai Jamjuree', 'Helvetica Neue', sans-serif;
 }
 h1, 
 h2, 
@@ -75,6 +75,10 @@ button,
 .accordion > ul > li > a,
 .tab-nav > li > a{
 	font-family: 'Bai Jamjuree', 'Helvetica Neue', sans-serif;
+}
+
+.font-alt-2 {
+	font-family: 'Orbitron', sans-serif;
 }
 
 /* Titles */
@@ -2140,7 +2144,7 @@ body,
 	background-image: url(../images/generic/signup-3.jpg);
 }
 .signup-2-shop-1{
-	background-image: url(../images/generic/signup-4.jpg);
+	background-image: url(../images/naoda/signup-4.jpg);
 }
 
 /* Fullscreen Section */
@@ -2327,7 +2331,7 @@ body,
 	background-color: rgba(255,255,255,.6);
 }
 h3.project-title{
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .project-title .label{
 	font-size: 1rem;
@@ -2517,7 +2521,7 @@ h3.project-title{
 }
 .blog-masonry .post-title{
 	margin-bottom: 0;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	text-transform: none;
 	display: block;
@@ -2552,14 +2556,15 @@ h3.project-title{
 
 /* Common */
 .post-content .with-background{
-	padding: 3rem;
+	padding: 2rem;
+	margin: 0;
 	background-color: #f8f8f8;
 }
 .home-page .with-background{
 	background-color: #fff;
 }
 .post-info{
-	margin-top: 0.5rem;
+	margin-top: 2.5rem;
 	margin-bottom: 1rem;
 	display: block;
 	font-size: 1.1rem;
