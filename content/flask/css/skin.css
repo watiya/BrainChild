@@ -281,6 +281,10 @@ blockquote{
 	.title-xlarge{
 		font-size: 4rem;
 	}
+	h1,
+	.title-xlarge2{
+		font-size: 4rem;
+	}
 	h2,
 	.title-large{
 		font-size: 2.8rem;
