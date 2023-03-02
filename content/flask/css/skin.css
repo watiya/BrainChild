@@ -84,7 +84,7 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6{
-	font-family: 'Permanent Marker', 'Helvetica Neue', sans-serif;
+	font-family: 'Orbitron', 'Helvetica Neue', sans-serif;
 	line-height: 1;
 	font-weight: 700;
 	text-transform: none;
@@ -220,6 +220,12 @@ blockquote{
 
 /* Title Classes */
 .title-xlarge{
+	font-size: 9.6rem;
+	line-height: 1;
+}
+.title-xlarge2{
+	font-family: 'Permanent Marker', 'Helvetica Neue', sans-serif;
+	color: #75FBC8;
 	font-size: 9.6rem;
 	line-height: 1;
 }
