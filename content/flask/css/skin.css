@@ -2033,6 +2033,15 @@ body,
 	text-transform: none;
 	font-weight: 400;
 }
+.overlay-info .project-title2{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 6.4rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.1rem;
+	color: #fff;
+	text-transform: uppercase;
+}
 
 /* Overlay */
 .overlay-info{
