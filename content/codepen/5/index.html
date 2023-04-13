@@ -2,33 +2,74 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - scrolltrigger 3d geometrical shapes </title>
-  <link rel="stylesheet" href="./style.css">
+  <title>CodePen - Swiper Slider</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="header">
-
-        <div class="shapes-container">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/bg.png" id="bg">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/group.png" id="group">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/hb.png" id="hb">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/hb2.png" id="hb2">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/b1.png" id="b1">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/b2.png" id="b2">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/b3.png" id="b3">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/dots.png" id="dots1">
-            <img src="https://watiya.github.io/jiyunim/content/codepen/5/img/dots.png" id="dots2">
-            
-           
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<!-- start of hero -->
+<section class="hero-slider hero-style">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner slide-bg-image" data-background="https://watiya.github.io/jiyunim/content/flask/images/slider/slide-20-fs.jpg">
+          <div class="container">
+            <div data-swiper-parallax="300" class="slide-title">
+              <h2>GUITAR CLASSES
+FOR KIDS</h2>
+            </div>
+            <div data-swiper-parallax="400" class="slide-text">
+              <p>Want to see your kid become more expressive?</p>
+            </div>
+            <div class="clearfix"></div>
+            <div data-swiper-parallax="500" class="slide-btns">
+              <a href="#" class="theme-btn-s2">Register now</a>
+              <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i> Get Info</a>
+            </div>
+          </div>
         </div>
+        <!-- end slide-inner -->
+      </div>
+      <!-- end swiper-slide -->
 
+      <div class="swiper-slide">
+        <div class="slide-inner slide-bg-image" data-background="https://watiya.github.io/jiyunim/content/flask/images/slider/slide-21-fs.jpg">
+          <div class="container">
+            <div data-swiper-parallax="300" class="slide-title">
+              <h2>GUITAR CLASSES
+FOR KIDS</h2>
+            </div>
+            <div data-swiper-parallax="400" class="slide-text">
+              <p>Want to see your kid become more expressive?</p>
+            </div>
+            <div class="clearfix"></div>
+            <div data-swiper-parallax="500" class="slide-btns">
+              <a href="#" class="theme-btn-s2">Register now</a>
+              <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- end slide-inner -->
+      </div>
+      <!-- end swiper-slide -->
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <!-- end swiper-wrapper -->
+
+    <!-- swipper controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+<!-- end of hero slider -->
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
