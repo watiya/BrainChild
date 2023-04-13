@@ -12,7 +12,7 @@
 }
 body {
   margin: 0;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 h2 {
       line-height:1.1;
@@ -208,7 +208,8 @@ h2 {
 }
 
 .hero-style .slide-title h2 {
-  font-size: 100px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
