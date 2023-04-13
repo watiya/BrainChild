@@ -162,7 +162,6 @@ body a {
 #section-1 .content-slider .slider .banner .banner-inner-wrapper {
   height: 100%;
   padding-top: 6em;
-  background: url('https://watiya.github.io/jiyunim/content/flask/images/slider/slide-20-fs.jpg') no-repeat center;
   box-sizing: border-box;
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
@@ -202,7 +201,7 @@ body a {
   transition: 0.3s;
 }
 #section-1 .content-slider .slider #top-banner-1 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-1.png') no-repeat center center;
+  background: url('https://watiya.github.io/jiyunim/content/flask/images/slider/slide-20-fs.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-2 {
