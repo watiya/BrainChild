@@ -19,7 +19,7 @@ h2 {
 }
 .hero-slider {
   width: 100%;
-  height: 700px;
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@ h2 {
 	#hero-style
 --------------------------------------------------------------*/
 .hero-style {
-  height: 850px;
+  height: 900px;
   transition:all .4s ease;
 }
 
@@ -269,7 +269,7 @@ h2 {
 --------------------------------------------------------------*/
 .theme-btn, .theme-btn-s2{
     background-color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
