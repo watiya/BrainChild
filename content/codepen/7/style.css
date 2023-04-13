@@ -21,12 +21,12 @@ body li {
   padding: 0;
 }
 body h1 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 body h2 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.875em;
   font-weight: 700;
   text-transform: uppercase;
@@ -37,14 +37,14 @@ body h3 {
   font-weight: 400;
 }
 body h4 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 0.875em;
   font-weight: 400;
   text-transform: uppercase;
 }
 body p {
   line-height: 150%;
-  font-family: Roboto, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.9375em;
   color: #999;
 }
@@ -162,7 +162,7 @@ body a {
 #section-1 .content-slider .slider .banner .banner-inner-wrapper {
   height: 100%;
   padding-top: 6em;
-  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  background: url('https://watiya.github.io/jiyunim/content/flask/images/slider/slide-20-fs.jpg') no-repeat center;
   box-sizing: border-box;
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {

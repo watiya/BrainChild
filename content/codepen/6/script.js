@@ -2,19 +2,19 @@ const tiles = [
 {
   image: 'https://watiya.github.io/jiyunim/content/flask/images/slider/slide-20-fs.jpg',
   thumb: 'https://watiya.github.io/jiyunim/content/flask/images/slider/slide-20-thumb.jpg',
-  title: 'Summer treads on <br />the heels of spring.',
+  title: 'EXPLORE NAODA COLLECT YOUR POPs',
   nextTitle: 'Blue <br />Mountains' },
 
 {
   image: 'https://watiya.github.io/jiyunim/content/flask/images/slider/slide-21-fs.jpg',
   thumb: 'https://watiya.github.io/jiyunim/content/flask/images/slider/slide-21-thumb.jpg',
-  title: 'Jellyfish make <br />everything better.',
+  title: 'EXPLORE NAODA COLLECT YOUR POPs',
   nextTitle: 'Squishy <br />Jellies' },
 
 {
   image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/ui8-luca-bravo-bTxMLuJOff4-unsplash.jpg',
   thumb: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/ui8-luca-bravo-bTxMLuJOff4-unsplash--thumb.jpg',
-  title: 'Design adds value <br />faster than it adds costs.',
+  title: 'EXPLORE NAODA COLLECT YOUR POPs',
   nextTitle: 'Paper <br />Cut' }];
 
 
