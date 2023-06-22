@@ -2390,7 +2390,7 @@ img,video {
 
 .bg-stroke-1 {
     --tw-bg-opacity: 1;
-    background-color: rgb(64 65 65/var(--tw-bg-opacity))
+    background-color: rgb(64 65 67/var(--tw-bg-opacity))
 }
 
 .bg-transparent {
@@ -3377,7 +3377,7 @@ img,video {
 
     .md\:border-n-6 {
         --tw-border-opacity: 1;
-        border-color: rgb(37 33 52/var(--tw-border-opacity))
+        border-color: rgb(63 65 67/var(--tw-border-opacity))
     }
 
     .md\:object-right {
