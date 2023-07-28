@@ -73,7 +73,7 @@
     .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu {
         display: flex !important;
     }
-    .resume-area,
+    .roadmap-area,
     .about-area {
         padding-bottom: 50px;
     }
@@ -132,7 +132,7 @@
     .hero-section .hero-content .go-to-project-btn {
         margin-left: 0;
     }
-    .skills-area .skills-content .row .col-md-3 {
+    .games-area .games-content .row .col-md-3 {
         flex: 0 0 auto;
         width: 50%;
     }
@@ -273,9 +273,9 @@
         font-size: 38px;
         line-height: 1.4;
     }
-    .skills-area,
+    .games-area,
     .services-area,
-    .resume-area,
+    .roadmap-area,
     .about-area,
     .hero-section {
         padding-bottom: 0;
@@ -293,13 +293,13 @@
     .hero-section .hero-content .facts {
         gap: 20px;
     }
-    .resume-area .resume-content .resume-timeline .item {
+    .roadmap-area .roadmap-content .roadmap-timeline .item {
         padding-left: 50px;
     }
     .services-items {
         grid-template-columns: 1fr;
     }
-    .portfolio-area {
+    .pop-area {
         padding-top: 40px;
     }
     .clients-logos .row .col-md-3 {

@@ -11,10 +11,10 @@
     * 08 - Home 3
     * 09 - Home 5
     * 10 - About
-    * 11 - Resume
+    * 11 - roadmap
     * 12 - Services
-    * 13 - Skills
-    * 14 - Portfolio
+    * 13 - games
+    * 14 - pop
     * 15 - Testimonial
     * 16 - Client
     * 17 - Pricing Table
@@ -47,6 +47,7 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
     height: 100vh;
+    letter-spacing: .02em;
 }
 .bg-white {
     background: #fff;
@@ -161,10 +162,10 @@ ul {
     top: 60px;
     width: 55px;
     height: 55px;
-    border-radius: 50%;
+    border-radius: 0%;
     display: flex;
     flex-direction: column;
-    border: 1px solid #575757;
+    border: 1px solid  hsla(0,0%,100%,.3);
     align-items: center;
     justify-content: center;
     gap: 4px;
@@ -213,7 +214,7 @@ main.drake-main {
 /* 01 - Menu */
 .menu {
     flex-direction: column;
-    border: 1px solid #575757;
+    border: 1px solid  hsla(0,0%,100%,.3);
     border-radius: 30px;
     position: fixed;
     right: 68px;
@@ -649,11 +650,14 @@ main.drake-main {
 
 /* 05 - Section Header */
 .section-header h1 {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 60px;
     color: #fff;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 33px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    
 }
 .section-header h1 span {
     color: var(--primary_color);
@@ -677,9 +681,8 @@ main.drake-main {
     display: none;
 }
 .left-sidebar > img.me {
-    border-radius: 30px;
     display: block;
-    margin-bottom: 56px;
+    margin-bottom: 32px;
 }
 .left-sidebar .sidebar-header {
     margin-bottom: 65px;
@@ -688,17 +691,23 @@ main.drake-main {
     max-width: 110px;
     text-align: right;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .12em;
 }
 .left-sidebar h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     text-align: center;
     font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .12em;
 }
 .left-sidebar .address {
     margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
 }
 .left-sidebar .copyright {
     font-size: 14px;
@@ -711,8 +720,8 @@ main.drake-main {
 }
 .left-sidebar .social-profile li a {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     line-height: 46px;
     text-align: center;
     border: 1px solid hsla(0,0%,100%,.3);
@@ -742,11 +751,12 @@ main.drake-main {
     z-index: 3;
 }
 .hero-section .hero-content h1 {
-    font-size: 78px;
-    letter-spacing: -0.2px;
-    line-height: 90px;
+    font-size: 4.5rem;
+    letter-spacing: .1em;
+    line-height: 1.14;
     margin-bottom: 43px;
-    font-weight: 300;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 .hero-section .hero-content h1 span {
     color: var(--primary_color);
@@ -754,6 +764,11 @@ main.drake-main {
 .hero-section .hero-content > p {
     max-width: 480px;
     margin-bottom: 31px;
+    font-size: 1.1rem;
+    line-height: 2.25rem;
+    letter-spacing: .12em;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 .hero-section .hero-content .go-to-project-btn {
     width: 175px;
@@ -763,7 +778,7 @@ main.drake-main {
     justify-content: center;
     margin-left: auto;
     border-radius: 50%;
-    border: 1px solid #575757;
+    border: 1px solid  hsla(0,0%,100%,.3);
     position: relative;
     overflow: hidden;
     margin-right: 15px;
@@ -856,23 +871,23 @@ body .body-overlay {
 }
 
 
-/* 11 - Resume */
-.resume-area {
+/* 11 - roadmap */
+.roadmap-area {
     padding-top: 90px;
     padding-bottom: 90px;
 }
-.resume-area .resume-content .resume-timeline .item {
+.roadmap-area .roadmap-content .roadmap-timeline .item {
     position: relative;
     padding-left: 74px;
     padding-bottom: 68px;
 }
-.resume-area .resume-content .resume-timeline .item:last-child {
+.roadmap-area .roadmap-content .roadmap-timeline .item:last-child {
     padding-bottom: 0;
 }
-.resume-area .resume-content .resume-timeline .item:last-child::after {
+.roadmap-area .roadmap-content .roadmap-timeline .item:last-child::after {
     height: calc(100% - 10px);
 }
-.resume-area .resume-content .resume-timeline .item::after {
+.roadmap-area .roadmap-content .roadmap-timeline .item::after {
     content: '';
     background: #333333;
     width: 1px;
@@ -882,7 +897,7 @@ body .body-overlay {
     top: 10px;
     z-index: -1;
 }
-.resume-area .resume-content .resume-timeline .item::before {
+.roadmap-area .roadmap-content .roadmap-timeline .item::before {
     content: '';
     position: absolute;
     width: 12px;
@@ -893,33 +908,36 @@ body .body-overlay {
     top: 7px;
     transition: .3s;
 }
-.resume-area .resume-content .resume-timeline .item .date {
+.roadmap-area .roadmap-content .roadmap-timeline .item .date {
     display: block;
     margin-bottom: 28px;
     transition: .3s;
 }
-.resume-area .resume-content .resume-timeline .item h2 {
-    font-size: 24px;
-    font-weight: 300;
+.roadmap-area .roadmap-content .roadmap-timeline .item h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-transform: uppercase;
     margin-bottom: 5px;
     color: #fff;
 }
-.resume-area .resume-content .resume-timeline .item h2 a {
+.roadmap-area .roadmap-content .roadmap-timeline .item h2 a {
     color: #fff;
     display: block;
 }
-.resume-area .resume-content .resume-timeline .item p {
+.roadmap-area .roadmap-content .roadmap-timeline .item p {
     font-size: 13px;
     color: #999999;
     margin-bottom: 18px;
 }
-.resume-area .resume-content .resume-timeline .item p:last-child {
+.roadmap-area .roadmap-content .roadmap-timeline .item p:last-child {
     margin-bottom: 0;
 }
-.resume-area .resume-content .resume-timeline .item:hover::before {
+.roadmap-area .roadmap-content .roadmap-timeline .item:hover::before {
     background: var(--primary_color);
 }
-.resume-area .resume-content .resume-timeline .item:hover .date {
+.roadmap-area .roadmap-content .roadmap-timeline .item:hover .date {
     color: var(--primary_color);
 }
 
@@ -931,19 +949,24 @@ body .body-overlay {
     padding-bottom: 90px;
 }
 .services-items .service-item {
-    border: 1px solid #565656;
-    border-radius: 20px;
+    border: 1px solid  hsla(0,0%,100%,.2);
+    border-radius: 0%;
     transition: .3s;
     position: relative;
     padding: 44px 48px 41px 48px;
     margin-bottom: 10px;
+    background-color: hsla(0,0%,100%,.06);
+    backdrop-filter: blur(12px);
 }
 .services-items .service-item:last-child {
     margin-bottom: 0;
 }
 .services-items .service-item h2 {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-transform: uppercase;
     margin-bottom: 8px;
     color: #fff;
 }
@@ -981,70 +1004,73 @@ body .body-overlay {
 
 
 
-/* 13 - Skills */
-.skills-area {
+/* 13 - games */
+.games-area {
     padding-top: 90px;
     padding-bottom: 40px;
 }
-.skills .skill {
+.games .game {
     margin-bottom: 50px;
 }
-.skills .skill .skill-inner {
-    border: 2px solid #565656;
-    border-radius: 85px;
-    padding: 54px 0 48px 0;
+.games .game .game-inner {
+    border: 2px solid  hsla(0,0%,100%,.2);
+    border-radius: 0%;
+    padding: 0;
     margin-bottom: 20px;
     transition: .3s;
 }
-.skills .skill:hover .skill-inner {
+.games .game:hover .game-inner {
     border-color: var(--primary_color);
 }
-.skills .skill .skill-inner img {
+.games .game .game-inner img {
     display: block;
-    margin: auto auto 29px auto;
+    margin: auto;
 }
-.skills .skill .skill-inner h1 {
-    font-size: 30px;
+.games .game h1 {
+    font-size: 16px;
     color: var(--primary_color);
     font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .11em;
     margin: 0;
 }
-.skills .skill p {
-    font-size: 14px;
+.games .game p {
+    font-size: 12px;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .12em;
     margin: 0;
 }
 
 
-
-/* 14 - Portfolio */
-.portfolio-area {
+/* 14 - pop */
+.pop-area {
     padding-top: 90px;
     padding-bottom: 90px;
 }
-.portfolio-items .portfolio-item {
+.pop-items .pop-item {
     margin-bottom: 62px;
 }
-.portfolio-items > div:last-child .portfolio-item {
+.pop-items > div:last-child .pop-item {
     margin-bottom: 0;
 }
-.portfolio-items .portfolio-item .portfolio-item-inner {
-    height: 370px;
+.pop-items .pop-item .pop-item-inner {
+    height: 100%;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 0%;
     position: relative;
     margin-bottom: 30px;
 }
-.portfolio-items .portfolio-item.portfolio-full .portfolio-item-inner {
-    height: 410px;
+.pop-items .pop-item.pop-full .pop-item-inner {
+    height: 100%;
 }
-.portfolio-items .portfolio-item .portfolio-item-inner img {
+.pop-items .pop-item .pop-item-inner img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories {
+.pop-items .pop-item .pop-item-inner .pop-categories {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -1053,7 +1079,7 @@ body .body-overlay {
     bottom: 20px;
     left: 20px;
 }
-.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories li a {
+.pop-items .pop-item .pop-item-inner .pop-categories li a {
     display: block;
     font-size: 14px;
     background: #fff;
@@ -1062,22 +1088,22 @@ body .body-overlay {
     border-radius: 19px;
     transition: .3s;
 }
-.portfolio-items .portfolio-item:hover .portfolio-item-inner .portfolio-categories li a {
+.pop-items .pop-item:hover .pop-item-inner .pop-categories li a {
     background: #1f1f1f;
     color: #fff;
 }
-.portfolio-items .portfolio-item h2 {
+.pop-items .pop-item h2 {
     font-size: 24px;
     font-weight: 300;
     margin: 0;
 }
-.portfolio-items .portfolio-item h2 a {
+.pop-items .pop-item h2 a {
     color: #fff;
     display: inline-block;
     border-bottom: 1px solid transparent;
     transition: .3s;
 }
-.portfolio-items .portfolio-item:hover h2 a {
+.pop-items .pop-item:hover h2 a {
     border-color: #ffffff;
 }
 
@@ -1086,8 +1112,8 @@ body .body-overlay {
 
 /* 15 - Testimonial */
 .testimonial-item .testimonial-item-inner {
-    border: 2px solid #565656;
-    border-radius: 30px;
+    border: 1px solid  hsla(0,0%,100%,.3);
+    border-radius: 0%;
     padding: 50px 50px 43px 50px;
 }
 .testimonial-item .testimonial-item-inner .author {
@@ -1140,9 +1166,9 @@ body .body-overlay {
     height: 45px;
     display: block;
     background: none;
-    border-radius: 50%;
+    border-radius: 0%;
     text-align: center;
-    border: 2px solid #565656;
+    border: 1px solid  hsla(0,0%,100%,.3);
     font-size: 18px;
     color: #fff;
     transition: .3s;
@@ -1176,7 +1202,6 @@ body .body-overlay {
 }
 .clients-logos img {
     display: block;
-    opacity: 0.3;
     transition: .3s;
 }
 .clients-logos img:hover {
