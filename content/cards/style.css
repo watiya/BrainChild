@@ -1,19 +1,19 @@
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
-  --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
+  --back: url(img/Cardback.jpg);
   --charizard1: #fac;
   --charizard2: #ddccaa;
-  --charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp);
+  --charizardfront: url(img/pop-default.png);
   --pika1: #54a29e;
   --pika2: #a79d66;
-  --pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp);
+  --pikafront: url(img/pop-default.png);
   --eevee1: #efb2fb;
   --eevee2: #acc6f8;
-  --eeveefront: url(https://assets.codepen.io/13471/eevee-gx.webp);
+  --eeveefront: url(img/pop-default.png);
   --mewtwo1: #efb2fb;
   --mewtwo2: #acc6f8;
-  --mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
+  --mewtwofront: url(img/pop-default.png);
 }
 
 .card {
@@ -26,10 +26,10 @@
   z-index: 10;
   touch-action: none;
   border-radius: 5%/3.5%;
-  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2), -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  /* box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2), -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5); */
   transition: transform 0.5s ease, box-shadow 0.2s ease;
   will-change: transform, filter;
-  background-color: #040712;
+  background-color: transparent;
   background-image: var(--front);
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 }
 
 .card:hover {
-  box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  /* box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5); */
 }
 
 .card.charizard {
@@ -365,7 +365,7 @@
 
 html, body {
   height: 100%;
-  background-color: #333844;
+  background-color: #04071;
   padding: 0;
   z-index: 1;
   transform: translate3d(0, 0, 0.1px);
@@ -373,8 +373,8 @@ html, body {
 
 body {
   color: white;
-  background-color: #333844;
-  font-family: "Heebo", sans-serif;
+  background-color: #040712;
+  font-family: "Chakra Petch", sans-serif;
   text-align: center;
 }
 
