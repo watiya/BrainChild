@@ -29,7 +29,8 @@ a {
   width: 0;
   overflow: hidden;
   background: #161C24;
-  border: 1px solid hsla(0,0%,100%,.3);
+  /* border: 1px solid hsla(0,0%,100%,.3); */
+  border: 1px solid #03FFD1;
   display: flex;
 }
 .modal * {
