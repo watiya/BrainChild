@@ -20,7 +20,7 @@ function Title({ material, texture, map, layers, ...props }) {
   return (
     <group {...props}>
       <Text ref={textRef} name="text-olga" depthTest={false} position={[0, -1, 0]} {...TEXT_PROPS}>
-        OLGA
+      NAODA
         <meshPhysicalMaterial envMap={texture} map={map} roughness={0} metalness={1} color="#FFFFFF" />
       </Text>
     </group>
