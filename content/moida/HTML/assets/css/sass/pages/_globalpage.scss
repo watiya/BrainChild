@@ -1,68 +1,68 @@
 /*
-CircularStd @font-face kit
+Pretendard @font-face kit
 */
+
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-Black.eot");
-    src: url("../fonts/text-font/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Black.woff") format("woff"), url("../fonts/text-font/CircularStd-Black.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 800;
-    font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('../fonts/text-font/woff2/Pretendard-Black.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Black.woff') format('woff');
 }
 
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-BlackItalic.eot");
-    src: url("../fonts/text-font/CircularStd-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-BlackItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-BlackItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-BlackItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 800;
-    font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('../fonts/text-font/woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-ExtraBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-Bold.eot");
-    src: url("../fonts/text-font/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Bold.woff") format("woff"), url("../fonts/text-font/CircularStd-Bold.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Bold.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 600;
-    font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('../fonts/text-font/woff2/Pretendard-Bold.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-BoldItalic.eot");
-    src: url("../fonts/text-font/CircularStd-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-BoldItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-BoldItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-BoldItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 600;
-    font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('../fonts/text-font/woff2/Pretendard-SemiBold.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-SemiBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-Medium.eot");
-    src: url("../fonts/text-font/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Medium.woff") format("woff"), url("../fonts/text-font/CircularStd-Medium.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Medium.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 500;
-    font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../fonts/text-font/woff2/Pretendard-Medium.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Medium.woff') format('woff');
 }
 
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-MediumItalic.eot");
-    src: url("../fonts/text-font/CircularStd-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-MediumItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-MediumItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-MediumItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 500;
-    font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('../fonts/text-font/woff2/Pretendard-Regular.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-Book.eot");
-    src: url("../fonts/text-font/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Book.woff") format("woff"), url("../fonts/text-font/CircularStd-Book.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('../fonts/text-font/woff2/Pretendard-Light.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Light.woff') format('woff');
 }
 
 @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/text-font/CircularStd-BookItalic.eot");
-    src: url("../fonts/text-font/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-BookItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-BookItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-BookItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-    font-weight: 400;
-    font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('../fonts/text-font/woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('../fonts/text-font/woff2/Pretendard-Thin.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Thin.woff') format('woff');
 }
 
 // End @font-face kit
@@ -75,7 +75,7 @@ body {
     background-color: var(--bg-white);
     min-height: 100vh;
     font: {
-        family: "CircularStd", sans-serif;
+        family: "Pretendard", sans-serif;
         size: 14px;
         weight: 400;
     };

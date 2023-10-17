@@ -35,7 +35,7 @@ template.
   --color-black: #000;
   --color-white: #fff;
   --color-primary: #556fff;
-  --color-secondary: #0e132d;
+  --color-secondary: #181a23;
   --color-snow: #cbcdd8;
   --color-red: #ff4040;
   --color-orange: #ff702c;
@@ -50,7 +50,7 @@ template.
   --bg-black: #000;
   --bg-white: #fff;
   --bg-primary: #556fff;
-  --bg-secondary: #0e132d;
+  --bg-secondary: #181a23;
   --bg-snow: #f7f7f8;
   --bg-red: #ff4040;
   --bg-orange: #ff702c;
@@ -63,7 +63,7 @@ template.
   --border-black: #000;
   --border-white: #fff;
   --border-primary: #556fff;
-  --border-secondary: #0e132d;
+  --border-secondary: #181a23;
   --border-snow: #efeff6;
   --border-red: #ff4040;
   --border-orange: #ff702c;
@@ -18954,7 +18954,7 @@ layout
 }
 .sidebarMenu.-withBackground .modal-dialog .modal-content .modal-header .em_profile_user .txt .btn_logOut {
   background-color: #fff;
-  color: #0e132d;
+  color: #181a23;
 }
 .sidebarMenu.-withBackground .modal-dialog .modal-content .modal-header .close {
   border-color: rgba(255, 255, 255, 0.3);
@@ -20537,7 +20537,7 @@ layout
 .tooltip.bs-tooltip-top .arrow::before {
   content: "\e9ad";
   font-family: "The-Icon-of" !important;
-  color: #0e132d;
+  color: #181a23;
   font-size: 25px;
   top: -17px;
   border: 0 !important;
@@ -20550,7 +20550,7 @@ layout
 .tooltip.bs-tooltip-left .arrow::before {
   content: "\e9af";
   font-family: "The-Icon-of" !important;
-  color: #0e132d;
+  color: #181a23;
   font-size: 25px;
   left: -11px;
   border: 0 !important;
@@ -20563,7 +20563,7 @@ layout
 .tooltip.bs-tooltip-right .arrow::before {
   content: "\e9ae";
   font-family: "The-Icon-of" !important;
-  color: #0e132d;
+  color: #181a23;
   font-size: 25px;
   right: -11px;
   border: 0 !important;
@@ -20576,7 +20576,7 @@ layout
 .tooltip.bs-tooltip-bottom .arrow::before {
   content: "\e9b0";
   font-family: "The-Icon-of" !important;
-  color: #0e132d;
+  color: #181a23;
   font-size: 25px;
   top: -13px;
   border: 0 !important;
@@ -24460,7 +24460,7 @@ layout
 }
 .emPage__savingsWallet .emBK__save .ele .item_progress input {
   color: var(--color-secondary) !important;
-  font-family: "CircularStd", sans-serif !important;
+  font-family: "Pretendard", sans-serif !important;
   font-weight: 500 !important;
   font-size: 11px !important;
   margin-top: 14px !important;
@@ -24718,7 +24718,7 @@ layout
 }
 .course__list .em_itemCourse_grid.list .card .card-body .itemCircle input {
   color: var(--color-secondary) !important;
-  font-family: "CircularStd", sans-serif !important;
+  font-family: "Pretendard", sans-serif !important;
   font-weight: 500 !important;
   font-size: 11px !important;
   margin-top: 14px !important;
@@ -26246,7 +26246,7 @@ layout
   display: inline-block;
 }
 .background_header.dark_header {
-  background-color: #0e132d;
+  background-color: #181a23;
   position: relative;
   height: 160px;
 }
@@ -27291,64 +27291,72 @@ layout
 pages
 ============== */
 /*
-CircularStd @font-face kit
+Pretendard @font-face kit
 */
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-Black.eot");
-  src: url("../fonts/text-font/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Black.woff") format("woff"), url("../fonts/text-font/CircularStd-Black.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 800;
-  font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('../fonts/text-font/woff2/Pretendard-Black.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Black.woff') format('woff');
 }
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-BlackItalic.eot");
-  src: url("../fonts/text-font/CircularStd-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-BlackItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-BlackItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-BlackItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 800;
-  font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('../fonts/text-font/woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-ExtraBold.woff') format('woff');
 }
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-Bold.eot");
-  src: url("../fonts/text-font/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Bold.woff") format("woff"), url("../fonts/text-font/CircularStd-Bold.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Bold.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 600;
-  font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('../fonts/text-font/woff2/Pretendard-Bold.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Bold.woff') format('woff');
 }
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-BoldItalic.eot");
-  src: url("../fonts/text-font/CircularStd-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-BoldItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-BoldItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-BoldItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 600;
-  font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('../fonts/text-font/woff2/Pretendard-SemiBold.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-SemiBold.woff') format('woff');
 }
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-Medium.eot");
-  src: url("../fonts/text-font/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Medium.woff") format("woff"), url("../fonts/text-font/CircularStd-Medium.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Medium.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 500;
-  font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../fonts/text-font/woff2/Pretendard-Medium.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Medium.woff') format('woff');
 }
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-MediumItalic.eot");
-  src: url("../fonts/text-font/CircularStd-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-MediumItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-MediumItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-MediumItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 500;
-  font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('../fonts/text-font/woff2/Pretendard-Regular.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Regular.woff') format('woff');
 }
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-Book.eot");
-  src: url("../fonts/text-font/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-Book.woff") format("woff"), url("../fonts/text-font/CircularStd-Book.ttf") format("truetype"), url("../fonts/text-font/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('../fonts/text-font/woff2/Pretendard-Light.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Light.woff') format('woff');
 }
+
 @font-face {
-  font-family: "CircularStd";
-  src: url("../fonts/text-font/CircularStd-BookItalic.eot");
-  src: url("../fonts/text-font/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/text-font/CircularStd-BookItalic.woff") format("woff"), url("../fonts/text-font/CircularStd-BookItalic.ttf") format("truetype"), url("../fonts/text-font/CircularStd-BookItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-  font-weight: 400;
-  font-style: italic;
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('../fonts/text-font/woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-ExtraLight.woff') format('woff');
 }
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('../fonts/text-font/woff2/Pretendard-Thin.woff2') format('woff2'), url('../fonts/text-font/woff/Pretendard-Thin.woff') format('woff');
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -27356,7 +27364,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-white);
   min-height: 100vh;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Pretendard", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: var(--color-secondary);
@@ -28509,7 +28517,7 @@ body.darkMode-active {
   --color-text: #9498ac;
   --color-comment: #5d6072;
   --bg-black: #fff;
-  --bg-white: #0e132d;
+  --bg-white: #181a23;
   --bg-primary: #556fff;
   --bg-secondary: #9498ac;
   --bg-snow: #0a0f27;
@@ -28519,9 +28527,9 @@ body.darkMode-active {
   --bg-yellow: #fa9905;
   --bg-green: #41bd83;
   --border-black: #000;
-  --border-white: #0e132d;
+  --border-white: #181a23;
   --border-primary: #556fff;
-  --border-secondary: #0e132d;
+  --border-secondary: #181a23;
   --border-snow: #242a48;
   --border-red: #ff4040;
   --border-orange: #ff702c;
