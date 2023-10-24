@@ -1,0 +1,90 @@
+:root {
+	--lqd-container-width: 1170px;
+	--lqd-container-width-md: 970px;
+	--lqd-container-width-sm: 750px;
+	--lqd-row-gutter-y: 0;
+	--lqd-row-gutter-x: 30px;
+	/*  */
+	--lqd-color-primary: #d42828;
+	--lqd-color-gradient-start: #ce2350;
+	--lqd-color-gradient-stop: #c62224;
+	--lqd-color-blue-900: #0f144e;
+	--lqd-color-gray-300: #e3e3e3;
+	--lqd-color-gray-400: #737a80;
+	--lqd-color-gray-700: #3b3b3b;
+	--lqd-color-gray-900: #222226;
+	--lqd-color-cyan-700: #081b22;
+	--lqd-color-purple-200: rgba(54, 90, 214, 0.39);
+	/*  */
+	--lqd-body-font-family: chivo, sans-serif;
+	--lqd-body-font-weight: 400;
+	--lqd-body-line-height: 1.7em;
+	--lqd-body-font-size: 1em;
+	--lqd-body-color: #8a8a91;
+	/*  */
+	--lqd-heading-font-family: inter, sans-serif;
+	--lqd-heading-font-weight: 700;
+	--lqd-heading-line-height: 1.2em;
+	--lqd-heading-color: #181b31;
+	--lqd-h1-font-size: 52px;
+	--lqd-h2-font-size: 40px;
+	--lqd-h3-font-size: 32px;
+	--lqd-h4-font-size: 25px;
+	--lqd-h6-letter-spacing: .1em;
+	--lqd-h6-font-size: 12px;
+	--lqd-h6-text-transform: uppercase;
+}
+
+.lqd-highlight-inner svg {
+	height: 0.275em;
+	max-height: 0.475em;
+}
+
+/* Hover 3D */
+.lqd-imggrp-single[data-hover3d],
+.ld-flipbox {
+	perspective: 1200px;
+}
+
+.lqd-imggrp-single[data-hover3d] .lqd-imggrp-img-container,
+.ld-flipbox-wrap,
+.ld-flipbox-face {
+	transform-style: preserve-3d;
+}
+
+/* Main Header */
+.main-header .main-nav {
+	--lqd-menu-items-right-padding: 30px;
+	--lqd-menu-items-left-padding: 30px;
+}
+
+.main-header .lqd-head-col > .lqd-active-row-light.header-module .navbar-brand .logo-dark {
+	opacity: 1;
+	visibility: visible;
+}
+
+.main-header .lqd-head-col > .lqd-active-row-light.header-module > .navbar-collapse .main-nav > li > a {
+	color: rgba(0, 0, 0, .8);
+}
+
+.main-header .lqd-head-col > .lqd-active-row-light.header-module > .el-btn {
+	color: rgb(0, 0, 0);
+	border-color: rgb(0, 0, 0);
+}
+
+.lqd-head-col > .lqd-active-row-light.header-module > .el-btn:hover {
+	border-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+/* Footer */
+.main-footer .ld-sf button.ld_sf_submit {
+	background: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+	border-color: rgba(151, 151, 151, 0.2);
+}
+
+.main-footer .ld-sf .submit-text + .submit-icon {
+	margin-inline-start: 0;
+}

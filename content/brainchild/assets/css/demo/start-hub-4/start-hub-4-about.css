@@ -1,0 +1,213 @@
+/*  Features  */
+.features .lqd-iconbox-scale:hover {
+	transform: scale(1.1);
+	background-color: #fff;
+	box-shadow: 0px 20px 70px 0px rgb(0 0 0 / 10%);
+}
+
+.features .iconbox-side .iconbox-icon-wrap {
+	margin-inline-end: 24px;
+}
+
+.features .lqd-iconbox-scale:hover .iconbox-heading-arrow-onhover h3 svg {
+	opacity: 1;
+	transform: translateX(.5em);
+}
+
+.features .iconbox h3 {
+	margin: 0 0 20px;
+}
+
+@media (max-width: 1199px) {
+	.features {
+		padding: 100px 20px;
+	}
+
+	.features .lqd-iconbox-scale {
+		margin: 0 0 20px 0;
+	}
+
+	.features .col-12:first-child .d-flex {
+		margin: 0 0 30px 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.features {
+		padding: 40px 0;
+	}
+
+	.features .lqd-iconbox-scale {
+		margin: 0 0 20px;
+	}
+}
+
+/*  Carousel Text LG  */
+.carousel-text-lg .carousel-item-content {
+	font-size: 12vw;
+}
+
+.carousel-text-lg .carousel-item-content > * {
+	white-space: nowrap;
+}
+
+.carousel-text-lg .module-title-top h2 {
+	background: linear-gradient(to right, #CCD0FB, #CCD0FB, #4452F2);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.carousel-text-lg .module-title-bottom h2 {
+	-webkit-text-stroke-color: #000;
+	-webkit-text-stroke-width: 1px;
+}
+
+@media (max-width: 767px) {
+	.carousel-text-lg .carousel-item-content {
+		font-size: 17vw;
+	}
+}
+
+/*  Tab Box  */
+.tab-box .lqd-tabs-nav {
+	--icon-size: 1em;
+}
+
+.tab-box .lqd-tabs .lqd-tabs-nav li a.active,
+.tab-box .lqd-tabs-style-5 .lqd-tabs-nav a:after {
+	background-color: transparent;
+	background-image: linear-gradient(180deg, rgb(234, 244, 243) 0%, rgb(255, 255, 255) 100%);
+}
+
+.tab-box .lqd-tabs-nav > li > a,
+.tab-box .lqd-tabs-nav .h3,
+.tab-box .lqd-tabs-nav > li > a .lqd-tabs-nav-txt {
+	font-family: var(--lqd-accent-font-family), Sans-serif;
+	font-size: var(--lqd-accent-font-size);
+	line-height: var(--lqd-accent-line-height);
+	letter-spacing: var(--lqd-accent-letter-spacing);
+	word-spacing: var(--lqd-accent-word-spacing);
+}
+
+.tab-box .lqd-tabs .lqd-tabs-nav li a.active {
+	color: #35399F;
+}
+
+.lqd-tabs-style-13 .lqd-tabs-nav li a.active .lqd-tabs-nav-ext {
+	display: block;
+	color: var(--lqd-body-text-color);
+}
+
+.tab-box .lqd-tabs .lqd-tabs-nav .lqd-tabs-nav-ext {
+	font-family: var(--lqd-body-font-family);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.tab-box .lqd-counter-element {
+	margin-bottom: .3em;
+	font-size: 51px;
+}
+
+@media (max-width: 1199px) {
+	.tab-box {
+		padding: 50px 40px;
+	}
+
+	.tab-box .module-clients {
+		margin-top: 30px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.lqd-tabs-style-13 {
+		flex-direction: column-reverse !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.tab-box {
+		padding: 40px 20px;
+	}
+
+	.tab-box .module-clients {
+		margin-top: 30px;
+		margin-right: 0;
+	}
+
+	.tab-box .lqd-counter-element {
+		font-size: 12vw;
+	}
+}
+
+/*  Testimonials About  */
+.testimonials-about .module-slider {
+	max-width: 470px;
+}
+
+.testimonials-about .lqd-shape-top svg {
+	width: calc(300% + 1.3px);
+	height: 100px;
+	transform: translateX(-50%) rotateY(180deg);
+}
+
+.testimonials-about .module-shape-1 {
+	right: 10%;
+}
+
+.testimonials-about .module-shape-2 {
+	left: 10%;
+}
+
+.testimonials-about .module-shape-3 {
+	left: 66%;
+}
+
+.testimonials-about .carousel-nav {
+	top: auto;
+	bottom: 80px;
+}
+
+.testimonials-about .carousel-nav .flickity-button {
+	color: #0E524A;
+	background: transparent;
+}
+
+.testimonials-about .carousel-nav .flickity-button svg {
+	fill: #0E524A;
+}
+
+.testimonials-about .carousel-nav .flickity-button.previous {
+	left: -100px;
+}
+
+.testimonials-about .carousel-nav .flickity-button.next {
+	right: -100px;
+}
+
+@media (max-width: 1199px) {
+	.testimonials-about .module-shape-1 {
+		right: -31px;
+	}
+}
+
+/*  Faq  */
+.faq .accordion-item.active .accordion-title a {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+@media (max-width: 1199px) {
+	.faq {
+		padding: 50px 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.faq {
+		padding: 40px 20px;
+	}
+}

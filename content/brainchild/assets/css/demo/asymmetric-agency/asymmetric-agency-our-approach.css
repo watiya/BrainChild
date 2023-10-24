@@ -1,0 +1,136 @@
+.main-header .main-nav {
+	--lqd-menu-items-right-padding: 20px;
+	--lqd-menu-items-left-padding: 20px;
+}
+
+/* ***** Banner ***** */
+@media (max-width: 991px) {
+	.banner-our-approach {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+
+	.banner-our-approach h1 {
+		margin-bottom: 0.5em;
+	}
+}
+
+@media (max-width: 1199px) {
+	.banner-our-approach h1 {
+		font-size: 17vw;
+	}
+}
+
+/* ***** Services ***** */
+@media (max-width: 991px) {
+	.services .module-title {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.services {
+		padding-bottom: 15px;
+	}
+}
+
+/* ***** Icon Box ***** */
+@media (max-width: 991px) {
+	.icon-box .iconbox {
+		margin-bottom: 35px;
+	}
+}
+
+/* ***** What We Do ***** */
+@media (max-width: 1199px) {
+	.what-we-do .module-content {
+		padding-left: 10%;
+	}
+}
+
+@media (max-width: 991px) {
+	.what-we-do .module-line {
+		margin-bottom: 15px;
+	}
+
+	.what-we-do .module-content {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.what-we-do .module-img {
+		margin-top: 35%;
+	}
+}
+
+/* ***** Steps ***** */
+.steps .ld-fh-txt-outline {
+	-webkit-text-stroke-color: #d8d8d8;
+}
+
+@media (max-width: 991px) {
+	.steps {
+		padding-bottom: 40px;
+	}
+}
+
+/* ***** Our vision ***** */
+.our-vision .module-content {
+	-webkit-backdrop-filter: blur(7px) saturate(1) brightness(1.25) contrast(1) grayscale(0) hue-rotate(0deg) sepia(1) opacity(1);
+	backdrop-filter: blur(7px) saturate(1) brightness(1.25) contrast(1) grayscale(0) hue-rotate(0deg) sepia(1) opacity(1);
+}
+
+.our-vision .btn-hover-reveal {
+	--icon-move: 0.5em;
+	--icon-ms: -1em;
+}
+
+.our-vision .btn-hover-reveal:hover .btn-icon i {
+	opacity: 1;
+	transform: translateX(1em);
+}
+
+.our-vision .btn-hover-reveal:hover.btn-underlined .btn-icon,
+.our-vision .btn-hover-reveal:hover.btn-naked .btn-icon {
+	transform: translateX(.5em);
+}
+
+@media (max-width: 991px) {
+	.our-vision {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.our-vision .module-content {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.our-vision {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.our-vision .module-content {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
+/* ***** About Accordion ***** */
+@media (max-width: 767px) {
+	.about-accordion .module-line {
+		margin-bottom: 30px;
+	}
+}
+
+/* ***** Lets Talk ***** */
+@media (max-width: 767px) {
+	.lets-talk h2 {
+		font-size: 16vw;
+		margin-bottom: 0.5em;
+	}
+}

@@ -1,0 +1,60 @@
+/* Banner */
+@media (max-width: 991px) {
+	.banner h1 {
+		font-size: 52px;
+	}
+	.banner .lqd-imggrp-single {
+		margin-top: 50px;
+	}
+}
+@media (max-width: 767px) {
+	.banner {
+		padding-bottom: 45px;
+	}
+}
+
+/* About */
+@media (max-width: 767px) {
+	.about {
+		padding-top: 40px;
+	}
+}
+
+/* Carousel Full */
+.carousel-full .carousel-items {
+	margin-inline-start: -3%;
+	margin-inline-end: -3%;
+}
+.carousel-full .carousel-item {
+	padding-inline-start: 3%;
+	padding-inline-end: 3%;
+}
+@media (max-width: 767px) {
+	.carousel-full .carousel-items {
+		margin-inline-start: -2%;
+		margin-inline-end: -2%;
+	}
+	.carousel-full .carousel-item {
+		padding-inline-start: 2%;
+		padding-inline-end: 2%;
+	}
+}
+
+/* Image Box */
+@media (max-width: 767px) {
+	.image-box {
+		padding-top: 70px;
+	}
+}
+
+/* Dark Carousel */
+@media (max-width: 767px) {
+	.dark-carousel .social-media {
+		padding-top: 70px;
+	}
+}
+@media (max-width: 767px) {
+	.dark-carousel {
+		padding-top: 35px;
+	}
+}

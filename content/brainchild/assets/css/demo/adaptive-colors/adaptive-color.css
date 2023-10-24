@@ -1,0 +1,62 @@
+/* ***** Banner ***** */
+@media (max-width: 991px) {
+	.banner h1 {
+		font-size: 8vw;
+	}
+}
+@media (max-width: 767px) {
+	.banner h1 {
+		font-size: 10vw;
+	}
+}
+
+/* ***** Module Sec ***** */
+.module-sec {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.module-sec h2 {
+	font-size: 9vw;
+}
+@media (max-width: 991px) {
+	.module-sec {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+/* ***** Help ***** */
+.help .module-accordion a {
+	padding-right: 30px;	
+}
+@media (max-width: 991px) {
+	.help {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.help .module-col {
+		padding-right: 15px;
+	}
+	.help .module-accordion {
+		margin-top: 0;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.help .module-accordion {
+		margin-top: 50px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+/* ***** Clients ***** */
+@media (max-width: 991px) {
+	.clients .module-client {
+		padding-bottom: 30px;
+	}
+	.clients {
+		padding-bottom: 60px;
+	}
+}

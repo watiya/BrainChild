@@ -1,0 +1,18 @@
+/* Blog */
+.titlebar-inner h1 {
+  font-size: 60px;
+}
+.blog .lqd-lp-style-2-alt .lqd-lp-author figure {
+  margin-inline-end: 0;
+}
+@media (max-width: 1199px) {
+	.blog {
+		padding: 45px 35px 40px 35px;
+	}
+}
+
+@media (max-width: 767px) {
+	.blog {
+		padding: 45px 15px;
+	}
+}

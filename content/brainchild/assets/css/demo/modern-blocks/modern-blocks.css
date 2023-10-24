@@ -1,0 +1,31 @@
+.slide-one .lqd-af-slide__img .liquid-overlay-link {
+	background-color: transparent;
+}
+
+.lqd-af-slide__img .liquid-overlay-link {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.slide-one h2,
+.slide-three h2,
+.slide-five h2 {
+	font-size: clamp(70px, 9vw, 130px);
+}
+
+.slide-two h2 {
+	font-size: clamp(55px, 9vw, 130px);
+}
+
+.slide-four h2 {
+	font-size: clamp(60px, 9vw, 130px);
+}
+
+/* Slide Two */
+.slide-two .lqd-af-slide__img .liquid-overlay-link {
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.slide-two .lqd-vbg-loader {
+	background-size: 55px;
+}

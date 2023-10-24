@@ -1,0 +1,156 @@
+:root {
+	--lqd-h2-line-height: 0.85em;
+}
+
+/* ***** Page Footer ***** */
+.page-header .lqd-stickybar-wrap {
+	--padding-top: 5vh;
+	--padding-bottom: 80px;
+}
+
+/* ***** Banner Case Studies ***** */
+@media (max-width: 991px) {
+	.banner-case-studies {
+		padding-top: 160px;
+		padding-bottom: 100px;
+	}
+
+	.banner-case-studies h1 {
+		font-size: 100px;
+	}
+}
+
+@media (max-width: 767px) {
+	.banner-case-studies h1 {
+		font-size: 80px;
+	}
+}
+
+/* ***** Section Navigation ***** */
+.section-navigation .module-navigation {
+	max-width: 1170px;
+}
+
+.section-navigation .lqd-scrl-indc-el {
+	background-color: var(--lqd-color-primary);
+}
+
+@media (max-width: 991px) {
+	.section-navigation .module-navigation {
+		width: 100%;
+	}
+
+}
+
+/* ***** Services Accordion ***** */
+@media (max-width: 767px) {
+	.services-accordion {
+		padding-bottom: 15px;
+	}
+
+	.services-accordion .module-first {
+		margin-bottom: 30px;
+	}
+
+	.services-accordion .accordion-expander {
+		right: 15px;
+	}
+}
+
+/* ***** Case Studies Row ***** */
+.case-studies-row .lqd-fb-style-6 .lqd-fb-content {
+	padding: 0;
+}
+
+.case-studies-row .lqd-fb-style-6 .lqd-fb-content h6 {
+	letter-spacing: 0.2em;
+}
+
+@media (max-width: 1199px) {
+	.case-studies-row .lqd-fb-content-inner {
+		padding: 1.5rem;
+	}
+}
+
+/* ***** Careers ***** */
+.careers .module-sticky {
+	top: calc(var(--lqd-sticky-header-height, 0) + 90px);
+}
+
+.careers .btn-hover-reveal {
+	--icon-move: 0.5em;
+	--icon-ms: -1em;
+}
+
+.careers .btn-hover-reveal:hover .btn-icon i {
+	opacity: 1;
+	transform: translateX(1em);
+}
+
+.careers .btn-hover-reveal:hover.btn-underlined .btn-icon,
+.careers .btn-hover-reveal:hover.btn-naked .btn-icon {
+	transform: translateX(.5em);
+}
+
+.careers .module-content {
+	padding-right: 7%;
+}
+
+@media (max-width: 1199px) {
+	.careers .module-content {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.careers {
+		padding-bottom: 70px;
+		padding-top: 80px;
+	}
+
+	.careers .module-spacer {
+		height: 32px;
+	}
+}
+
+@media (max-width: 767px) {
+	.careers {
+		padding-bottom: 50px;
+	}
+
+	.careers .module-content {
+		padding-right: 0;
+	}
+}
+
+/* ***** Process *****  */
+@media (max-width: 991px) {
+	.process {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	.process .module-icon-box {
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.process {
+		padding-bottom: 40px;
+	}
+}
+
+/* ***** How It Work ***** */
+@media (max-width: 991px) {
+	.how-it-work {
+		padding-top: 70px;
+		padding-bottom: 60px;
+	}
+}
+
+@media (max-width: 767px) {
+	.how-it-work .module-title {
+		margin-bottom: 0.35em;
+	}
+}

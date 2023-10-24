@@ -1,0 +1,246 @@
+@font-face {
+	font-family: "aktiv-grotesk";
+	src: url(../../../fonts/aktiv-grotesk/aktivgrotesk-xbold.woff2) format("woff2");
+	font-weight: 800;
+	font-style: normal;
+	font-display: wrap;
+}
+
+@font-face {
+	font-family: "aktiv-grotesk";
+	src: url(../../../fonts/aktiv-grotesk/aktivgrotesk-black.woff2) format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: wrap;
+}
+
+:root {
+	--lqd-container-width: 1250px;
+	--lqd-container-width-md: 1024px;
+	--lqd-container-width-sm: 1024px;
+	--lqd-row-gutter-x: 30px;
+	--lqd-row-gutter-y: 30px;
+	/*  */
+	--lqd-color-primary: #0B054B;
+	--lqd-color-secondary: #FEFE43;
+	--lqd-color-text: #4E4F62;
+	--lqd-color-accent: #EB7556;
+	--lqd-color-gradient-start: #007fff;
+	--lqd-color-gradient-stop: #ff4d54;
+	--lqd-color-gray-100: #f5f5f7;
+	--lqd-color-gray-200: #EBEFF1;
+	--lqd-color-gray-300: rgba(95, 96, 127, 0.702);
+	--lqd-color-gray-900: #121212;
+	--lqd-color-slate-100: rgba(35, 48, 64, 0.1);
+	--lqd-color-slate-200: rgba(35, 48, 64, 0.08);
+	--lqd-color-slate-300: #B0B9D5;
+	--lqd-color-slate-400: #587685;
+	--lqd-color-slate-700: #233040;
+	--lqd-color-yellow-500: #E0FF5C;
+	/*  */
+	--lqd-typography-primaryfont-family: 'Be Vietnam Pro', sans-serif;
+	--lqd-typography-primary-font-weight: 400;
+	--lqd-typography-text-font-family: var(--lqd-typography-primaryfont-family);
+	--lqd-typography-text-font-size: 17px;
+	--lqd-typography-text-font-weight: 400;
+	--lqd-typography-text-line-height: 1.29em;
+	--lqd-typography-accentfont-family: var(--lqd-typography-primaryfont-family);
+	--lqd-typography-accent-font-weight: 700;
+	/*  */
+	--lqd-body-color: var(--lqd-color-text);
+	--lqd-body-font-family: var(--lqd-typography-text-font-family), Sans-serif;
+	--lqd-body-font-size: var(--lqd-typography-text-font-size);
+	--lqd-body-font-weight: var(--lqd-typography-text-font-weight);
+	--lqd-body-line-height: var(--lqd-typography-text-line-height);
+	/*  */
+	--lqd-heading-color: var(--lqd-color-slate-700);
+	--lqd-heading-font-family: "aktiv-grotesk", Sans-serif;
+	--lqd-heading-font-weight: 900;
+	--lqd-heading-line-height: 1em;
+	--lqd-h1-font-size: 55px;
+	--lqd-h1-letter-spacing: -0.4px;
+	--lqd-h2-font-size: 50px;
+	--lqd-h2-letter-spacing: -0.5px;
+	--lqd-h3-font-size: 42px;
+	--lqd-h4-font-size: 32px;
+	--lqd-h5-font-size: 22px;
+	--lqd-h6-font-size: 10px;
+	--lqd-h6-font-weight: 800;
+	--lqd-h6-text-transform: uppercase;
+	--lqd-h6-letter-spacing: 1.1px;
+}
+
+/* Main Header */
+.main-header .header-desktop .main-nav {
+	--lqd-menu-items-top-padding: 10px;
+	--lqd-menu-items-right-padding: 30px;
+	--lqd-menu-items-bottom-padding: 10px;
+	--lqd-menu-items-left-padding: 30px;
+}
+
+.nav-trigger,
+.nav-trigger:hover,
+.nav-trigger:focus {
+	font-size: 12px;
+	color: #fff;
+}
+
+.is-stuck {
+	background-color: #fff;
+}
+
+.is-stuck .ld-module-sd > .nav-trigger {
+	color: #000000;
+}
+
+.is-stuck .module-logo {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.is-stuck .navbar-collapse .main-nav > li > a {
+	color: rgba(0, 0, 0, 0.72);
+}
+
+.is-stuck .btn-underlined {
+	color: var(--lqd-color-slate-700);
+}
+
+.is-stuck .btn-underlined:before {
+	background-color: var(--lqd-color-slate-700);
+}
+
+.is-stuck .btn-underlined:after {
+	background-color: var(--lqd-color-accent);
+}
+
+.is-stuck .btn-underlined:hover,
+.is-stuck .btn-underlined:focus {
+	color: var(--lqd-color-accent);
+}
+
+@media (max-width: 1199px) {
+	.main-header .header-desktop .main-nav {
+		--lqd-menu-items-top-padding: 0;
+		--lqd-menu-items-right-padding: 10px;
+		--lqd-menu-items-bottom-padding: 0;
+		--lqd-menu-items-left-padding: 10px;
+	}
+
+	.main-header .header-desktop .main-nav > li > a {
+		font-size: 12px;
+	}
+
+	.main-header .module-sec {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-header .module-sec {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.main-header .module-sec .ld-module-dropdown {
+		width: 80vw;
+	}
+}
+
+/* Mobile Header */
+.main-header .module-sec .module-social {
+	--grid-template-columns: repeat(0, auto);
+	--icon-size: 28px;
+	--grid-column-gap: 17px;
+	--grid-row-gap: 0px;
+}
+
+/* Hover 3D */
+.lqd-imggrp-single[data-hover3d] {
+	perspective: 1200px;
+}
+
+.lqd-imggrp-single[data-hover3d] .lqd-imggrp-img-container {
+	transform-style: preserve-3d;
+}
+
+/* Counter */
+.countdown-row {
+	justify-content: center;
+}
+
+/* Road Map */
+.one-roadmap-item-checked .one-roadmap-bar,
+.one-roadmap-item-checked .one-roadmap-info {
+	opacity: .6;
+}
+
+.one-roadmap-item .one-roadmap-bar:before,
+.one-roadmap-item:not(:last-child) .one-roadmap-bar:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	background: #6C0FFC;
+	transition: transform .45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.one-roadmap-bar:before {
+	width: 100%;
+	height: 15px;
+	border-radius: 50em;
+}
+
+.one-roadmap-bar:after {
+	width: 2px;
+	left: 6px;
+	bottom: -3px;
+	transform-origin: top center;
+}
+
+.one-roadmap-item-checked .one-roadmap-mark {
+	opacity: 1;
+}
+
+@media (max-width: 767px) {
+	.module-roadmap {
+		padding: 25px 15px 25px 20px;
+	}
+}
+
+/* Main Footer */
+.main-footer .footer-content .container {
+	max-width: 500px;
+}
+
+.main-footer .footer-content .social-icons-wrapper {
+	--icon-size: 28px;
+}
+
+@media (max-width: 767px) {
+	.main-footer .footer-content {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+
+	.main-footer .footer-content .lqd-fancy-menu > ul > li:not(:last-child) {
+		margin-inline-end: 15px;
+	}
+}
+
+/* ******* */
+.screen-only,
+.screen-reader-text,
+.screen-reader-text span,
+.ui-helper-hidden-accessible {
+	position: absolute;
+	top: -10000em;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}

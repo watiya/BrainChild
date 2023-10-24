@@ -1,0 +1,23 @@
+/* Banner */
+@media (max-width: 991px) {
+	.banner {
+		padding-top: 120px;
+		padding-bottom: 80px;
+	}
+	.banner h1 {
+		font-size: 42px;
+	}
+}
+
+/* Featured */
+.featured .module-btn:hover {
+	background-color: var(--lqd-color-purple-500);
+}
+.featured .module-btn-naked:before {
+  background: var(--lqd-color-purple-500);
+}
+@media (max-width: 991px) {
+	.featured .module-content {
+		padding-left: 25px;
+	}
+}

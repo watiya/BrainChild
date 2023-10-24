@@ -1,0 +1,186 @@
+:root {
+	--lqd-container-width-lg: 1170px;
+	--lqd-container-width-md: 970px;
+	--lqd-container-width-sm: 750px;
+	--lqd-container-width-xs: 100%;
+	--lqd-row-gutter-y: 0;
+	--lqd-row-gutter-x: 30px;
+	/*  */
+	--lqd-color-primary: #1c4e4e;
+	--lqd-color-gradient-start: #007fff;
+	--lqd-color-gradient-stop: #ff4d54;
+	--lqd-color-link: #a3816a;
+	--lqd-color-link-hover: #181b31;
+	--lqd-color-amber-600: #bb9857;
+	--lqd-color-amber-700: #b17856;
+	--lqd-color-gray-100: #f7f7f7;
+	--lqd-color-slate-50: rgba(15,64,100,.08);
+	--lqd-color-slate-100: rgba(15,64,100,.13);
+	--lqd-color-slate-200: rgba(15,64,100,.6);
+	--lqd-color-slate-300: #86939e;
+	--lqd-color-slate-500: #0f4064;
+	--lqd-color-slate-700: #232a3b;
+	--lqd-color-green-300: rgba(21,81,83,.85);
+	--lqd-color-green-600: #1c4e4e;
+	--lqd-color-green-700: #185757;
+
+	/*  */
+	--lqd-body-font-family: 'Libre Franklin', sans-serif;
+	--lqd-body-font-weight: 400;
+	--lqd-body-line-height: 1.5em;
+	--lqd-body-font-size: 16px;
+	--lqd-body-color: #56565c;
+	/*  */
+	--lqd-heading-font-family: "marcellus",Arial,Helvetica,sans-serif;
+	--lqd-heading-font-weight: 400;
+	--lqd-heading-color: var(--lqd-color-slate-700);
+	--lqd-h2-line-height: 1.13em;
+	--lqd-h2-font-size: 42px;
+	--lqd-h3-line-height: 1.21em;
+	--lqd-h3-font-size: 28px;
+	--lqd-h4-line-height: 1.2em;
+	--lqd-h4-font-size: 25px;
+	--lqd-h6-font-family: var(--lqd-font-family, Arial,Helvetica,sans-serif);
+	--lqd-h6-font-weight: 700;
+	--lqd-h6-line-height: 1.2em;
+	--lqd-h6-letter-spacing: .11em;
+	--lqd-h6-font-size: 12px;
+	--lqd-h6-text-transform: uppercase;
+}
+
+/* ***** Typography ***** */
+.ld-fh-element u {
+	text-decoration-thickness: 2px;
+}
+@media (max-width: 991px) {
+	.module-mb-init {
+		margin-bottom: 0.5em;
+	}
+	.module-h2-init-md {
+		font-size: var(--lqd-h2-font-size);
+	}
+}
+@media (max-width: 767px) {
+	.module-h2-init-sm {
+		font-size: var(--lqd-h2-font-size);
+	}
+}
+
+/* ***** Button ***** */
+.border-thick:before,
+.border-thick:after {
+	width: 30%;
+	background: var(--lqd-color-slate-700);
+}
+.border-thick.border-thick-white:before,
+.border-thick.border-thick-white:after {
+	background: #fff;
+}
+.btn-underlined .btn-txt {
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+
+/* ***** Icon ***** */
+.lqd-fb-style-8 .lqd-fb-content .lqd-fb-icon {
+	color: var(--lqd-color-amber-700);
+}
+
+/* ***** Main Header ***** */
+.main-header .main-nav  {
+	--lqd-menu-items-right-padding: 22px;
+	--lqd-menu-items-left-padding: 22px;
+}
+
+.main-header .module-trigger .bars:before {
+	background-color: #fff;
+}
+
+.main-header .ld-module-dropdown {
+	width: 445px;
+}
+.main-header .ld-module-dropdown .btn-solid {
+	--icon-ms: 20px;
+}
+
+.main-header .lqd-mobile-sec .main-nav {
+	--lqd-menu-items-top-padding: 15px;
+	--lqd-menu-items-right-padding: 25px;
+	--lqd-menu-items-bottom-padding: 15px;
+	--lqd-menu-items-left-padding: 25px;
+}
+
+.main-header .submenu-expander:before {
+	content: '\ea2f';
+	display: inline-flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	font: normal 1em/1 'lqd-essentials';
+}
+
+.is-stuck .module-header {
+	background-color: rgba(255, 255, 255, 0.95);
+	border: none;
+}
+
+.is-stuck  .nav-trigger.collapsed {
+	z-index: 1;
+}
+
+.is-stuck .main-nav > li > a,
+.is-stuck .module-number,
+.is-stuck .module-trigger {
+	color: var(--lqd-color-slate-700);
+}
+.is-stuck .module-trigger .bars:before {
+	background-color: rgba(35,42,59,.05);
+}
+
+
+/* ***** Lity Modal ***** */
+.lqd-modal[data-modal-type=fullscreen] {
+	padding: 25px 2em;
+}
+.lity-modal .ld-fancy-heading span {
+	font-family: 'DM Serif Text', serif;
+	font-style: italic;
+}
+
+.lity-modal .lqd-contact-form {
+	--input-margin-bottom: 13px;
+	--inputs-margin: 0 0 var(--input-margin-bottom) 0;
+}
+
+.lity-modal input:focus,
+.lity-modal select:focus,
+.lity-modal textarea:focus,
+.lity-modal .ui-button.ui-selectmenu-button:hover {
+	border-color: rgb(0, 0, 0);
+}
+
+.lity-modal .lqd-contact-form input:focus {
+	color: #000000;
+}
+
+@media (max-width: 991px) {
+	.lity-modal .ld-fancy-heading h2 {
+		font-size: 34px;
+		line-height: 0.75em;
+	}
+}
+
+/*  */
+.lqd-imggrp-single[data-animate-shadow] .lqd-imggrp-img-container {
+	box-shadow: 0 0 0 rgba(0,0,0,.3);
+	transition: box-shadow .5s cubic-bezier(.7,0,.3,1);
+}
+
+/* ***** Footer ***** */
+.main-footer .footer-menu .lqd-fancy-menu {
+	--lqd-badge-color: rgb(255, 255, 255);
+}

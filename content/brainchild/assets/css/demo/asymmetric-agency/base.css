@@ -1,0 +1,208 @@
+:root {
+	--lqd-container-width-md: 970px;
+	--lqd-container-width-sm: 750px;
+
+	--lqd-color-primary: #e20b0b;
+	--lqd-body-text-color: #626974;
+	--lqd-color-link: #5b7bfb;
+	--lqd-color-link-hover: #181b31;
+	--lqd-color-dark: #292929;
+	--lqd-color-blue-900: #0a1e26;
+	--lqd-color-gray-100: #f2f2f2;
+	--lqd-color-gray-200: #e6e6e6;
+	--lqd-color-gray-300: #b7b9c4;
+	--lqd-color-gray-400: #7a7a7a;
+	--lqd-color-gray-500: #666666;
+	--lqd-color-gray-600: #3a3a3a;
+	--lqd-color-gray-700: #202020;
+	--lqd-color-gray-800: #151515;
+	--lqd-color-gray-900: #191919;
+	--lqd-color-green-700: #121b1d;
+	--lqd-color-green-900: #0b1415;
+	--lqd-color-slate-300: rgba(9, 94, 193, 0.11);
+	--lqd-color-slate-400: #99a4a8;
+	--lqd-color-red-100: rgba(193, 9, 9, 0.11);
+	--lqd-color-red-300: #f03a22;
+	--lqd-color-red-500: #c41313;
+	--lqd-color-yellow-500: #ffda01;
+
+	--lqd-body-font-family: 'Be Vietnam Pro', sans-serif;
+	--lqd-body-font-size: 17px;
+	--lqd-body-line-height: 1.64em;
+
+	--lqd-heading-font-family: var(--lqd-body-font-family);
+	--lqd-heading-font-weight: 500;
+	--lqd-heading-line-height: 1.2em;
+	--lqd-heading-color: #000;
+	--lqd-h1-font-size: 55px;
+	--lqd-h1-font-weight: 700;
+	--lqd-h1-line-height: 1em;
+	--lqd-h2-font-size: 40px;
+	--lqd-h2-line-height: 1.25em;
+	--lqd-h3-font-size: 30px;
+	--lqd-h3-line-height: 1.4em;
+	--lqd-h4-font-size: 28px;
+	--lqd-h5-font-size: 18px;
+	--lqd-h5-line-height: 1.21em;
+	--lqd-h6-font-size: 13px;
+	--lqd-h6-font-weight: 700;
+	--lqd-h6-text-transform: uppercase;
+	--lqd-h6-letter-spacing: 0.1em;
+
+	--lqd-cc-size-inner: 12px;
+	--lqd-cc-active-bw: 1px;
+	--lqd-cc-active-bg: #fff;
+	--lqd-cc-active-bc: #fff;
+	--lqd-cc-active-circle-color: #fff;
+}
+
+@media (max-width: 991px) {
+	h2.text-init {
+		font-size: var(--lqd-h2-font-size);
+	}
+}
+
+.one-bullet-list li:before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin-inline-end: 1em;
+	border-radius: 50em;
+	background: #000;
+}
+
+/* ***** Main Header ***** */
+.main-header .main-nav {
+	--lqd-menu-items-right-padding: 20px;
+	--lqd-menu-items-left-padding: 20px;
+}
+
+.main-header .btn-solid {
+	--btn-ps: 1.5em;
+	--btn-pe: 1.5em;
+}
+
+.main-header .main-nav .link-sup {
+	top: -2em;
+	inset-inline-end: 1em;
+	font-size: .625em;
+	line-height: 1;
+}
+
+.main-header .lqd-stickybar-wrap .nav-trigger {
+	transform: rotate(-90deg);
+}
+
+/* Left Sticky */
+.main-header .lqd-stickybar-wrap {
+	--padding-top: 22px;
+}
+
+.main-header .is-stuck .lqd-stickybar-wrap {
+	padding-top: 0;
+}
+
+.main-header .lqd-stickybar-inline-start .lqd-head-col:not(:first-child) {
+	flex-grow: 1;
+}
+
+.main-header .ld-module-sd>.nav-trigger {
+	height: auto;
+}
+
+.main-header .lqd-active-row-dark .nav-trigger .bar:before,
+.main-header .lqd-active-row-dark .nav-trigger .bar:after {
+	background: #fff;
+}
+
+.main-header .lqd-active-row-dark .lqd-scrl-indc-line {
+	background-color: #ffffff;
+}
+
+/* Left Side */
+.main-header .ld-module-dropdown {
+	width: 450px;
+}
+
+/* ***** Site Header ***** */
+.site-header .main-nav {
+	--lqd-menu-items-right-padding: 15px;
+	--lqd-menu-items-left-padding: 15px;
+}
+
+.site-header .module-dropdown {
+	width: 350px;
+}
+
+/* ***** Lity Modal ***** */
+.lqd-modal[data-modal-type=fullscreen] {
+	padding: 25px 2em;
+}
+
+.lqd-contact-form {
+	--input-margin-bottom: 13px;
+	--inputs-margin: 0 0 var(--input-margin-bottom) 0;
+}
+
+.lity-modal .ld-fancy-heading h2 span {
+	font-family: 'DM Serif Text', serif;
+	font-style: italic;
+}
+
+@media (max-width: 1199px) {
+	.main-header .main-nav {
+		--lqd-menu-items-left-padding: 10px;
+		--lqd-menu-items-right-padding: 10px;
+	}
+
+	.lity-modal .ld-fancy-heading h2 {
+		font-size: 48px;
+		line-height: 1em;
+	}
+}
+
+@media (max-width: 767px) {
+	.lity-modal .lqd-modal-content {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.lity-modal .lqd-modal-content .module-col {
+		margin-bottom: 100px;
+	}
+}
+
+@media (max-width: 767px) {
+	.lity-modal .ld-fancy-heading h2 {
+		font-size: 34px;
+	}
+}
+
+/* ***** Contact Info ***** */
+@media (max-width: 767px) {
+	.contact-info .module-content {
+		margin-bottom: 20px;
+	}
+}
+
+/* ***** Lets Talk ***** */
+@media (max-width: 991px) {
+	.lets-talk h2 {
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 767px) {
+	.lets-talk h2 {
+		font-size: 16vw;
+		margin-bottom: 0.5em;
+	}
+}
+
+/* ***** Page Footer ***** */
+@media (max-width: 991px) {
+	.page-footer .module-top {
+		padding-top: 50px;
+	}
+}

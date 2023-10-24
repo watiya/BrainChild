@@ -1,0 +1,190 @@
+/*  Global  */
+:root {
+	--lqd-container-width: 1060px;
+	--lqd-container-width-md: 100%;
+	--lqd-container-width-sm: 100%;
+	--lqd-row-gutter-x: 0;
+	--lqd-row-gutter-y: 0;
+	
+	--lqd-color-primary: #675DE1;
+	--lqd-color-secondary: #6BCD94;
+	--lqd-color-dark: #292929;
+	--lqd-color-purple-500: #8745D5;
+	--lqd-color-blue-500: #007fff;
+	--lqd-color-blue-600: #354B60;
+	--lqd-color-blue-700: #032A3E;
+	--lqd-color-blue-900: #282734;
+	--lqd-color-brown-300: #F5DBB8;
+	--lqd-color-brown-500: #A25139;
+	--lqd-color-green-300: #82B541;
+	--lqd-color-green-400: #84F0B2;
+	--lqd-color-green-500: #49C193;
+	--lqd-color-green-700: #26372D;
+	--lqd-color-slate-100: rgba(110, 127, 153, 0.1);
+	--lqd-color-slate-200: #b4b6c6;
+	--lqd-color-slate-300: #9999A3;
+	--lqd-color-slate-400: #6e7f99;
+	--lqd-color-slate-500: rgba(69, 67, 113, 0.58);
+	--lqd-color-slate-600: #61969D;
+	--lqd-color-slate-700: #45485F;
+	--lqd-color-orange: #ed6a04;
+	--lqd-badge-color: #6E7F99;
+	--lqd-color-gradient-start: var(--lqd-color-purple-500);
+	--lqd-color-gradient-stop: var(--lqd-color-green-500);
+	--lqd-color-orange-100: rgba(196, 116, 66, 0.15);
+	--lqd-color-green-100: rgba(66, 196, 106, 0.2);
+	--lqd-color-purple-100: rgba(142, 114, 235, 0.17);
+	--lqd-color-yellow-100: rgba(249, 223, 104, 0.22);
+	--lqd-color-pink-100: rgba(196, 66, 132, 0.15);
+	--lqd-color-blue-100: rgba(47, 178, 187, 0.22);
+	--lqd-body-text-color: #3C4B62;
+
+	--lqd-body-font-family: 'Be Vietnam Pro', sans-serif;
+	--lqd-body-font-size: 17px;
+	--lqd-body-font-weight: 400;
+	--lqd-body-line-height: 1.35em;
+	--lqd-accent-font-family: 'Rubik',sans-serif;
+	--lqd-accent-font-size: 16px;
+	--lqd-accent-line-height: 2em;
+
+	--lqd-heading-color: var(--lqd-color-blue-900);
+	--lqd-heading-font-family: var(--lqd-body-font-family);
+	--lqd-h1-font-size: 40px;
+	--lqd-heading-font-weight: 700;
+	--lqd-heading-line-height: 1em;
+	--lqd-h1-letter-spacing: -1.5px;
+	--lqd-h2-font-size: 36px;
+	--lqd-h2-letter-spacing: -1.5px;
+	--lqd-h3-font-size: 32px;
+	--lqd-h4-font-size: 25px;
+	--lqd-h5-font-size: 21px;
+	--lqd-h6-font-size: 18px;
+
+	--lqd-cc-size-inner: 17px;
+	--lqd-cc-bg: rgb(255, 255, 255);
+	--lqd-cc-active-bw: 1px;
+	--lqd-cc-active-bg: rgb(255, 251, 251);
+	--lqd-cc-active-bc: rgb(255, 251, 251);
+	--lqd-cc-active-circle-txt: rgb(255, 251, 251);
+	--lqd-cc-blend-mode: difference;
+}
+
+@media (max-width: 1199px) {
+	.container {
+		--lqd-row-gutter-x: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.module-content-col {
+		padding: 30px;
+	}
+
+	.module-first-col {
+		margin: 0 0 20px 0;
+	}
+}
+
+/* Titlebar */
+.titlebar-inner h1 {
+	font-size: 72px;
+}
+
+@media (max-width: 767px) {
+	.titlebar-inner h1 {
+		font-size: 62px;
+	}
+}
+
+/*  Button  */
+.nav-trigger .bars {
+	width: 41px;
+	height: 41px;
+}
+
+.nav-trigger.style-2 .bar {
+	width: 15px;
+}
+
+.module-btn-sm {
+	--btn-pt: 8px;
+	--btn-pe: 22px;
+	--btn-pb: 8px;
+	--btn-ps: 22px;
+}
+
+.module-btn-md {
+	--icon-ms: 12px;
+	--btn-pt: 1em;
+	--btn-pe: 1.66em;
+	--btn-pb: 1em;
+	--btn-ps: 1.66em;
+}
+
+.btn .btn-icon {
+	--icon-ms: 12px;
+}
+
+/*  Main Header  */
+.main-header .main-nav {
+	--lqd-menu-items-top-padding: 15px;
+	--lqd-menu-items-right-padding: 22px;
+	--lqd-menu-items-bottom-padding: 15px;
+	--lqd-menu-items-left-padding: 22px;
+}
+
+.main-header .main-nav li a:before {
+	background-color: #F7F7F7;
+}
+
+.main-header .main-nav>li.is-active>a,
+.main-header .main-nav>li.current-menu-item>a,
+.main-header .main-nav>li.current-menu-ancestor>a,
+.navbar-fullscreen .main-header .main-nav>li.is-active>a,
+.navbar-fullscreen .main-header .main-nav>li.current-menu-item>a,
+.navbar-fullscreen .main-header .main-nav>li.current-menu-ancestor>a {
+	color: #000000;
+}
+
+.site-header.is-stuck .module-bg {
+	background-color: #fff;
+}
+
+/*  Left Side Drawer  */
+.main-header .ld-module-sd-left .ld-module-dropdown {
+	width: 40vw;
+}
+
+/*  Sticky Bar Left  */
+.main-header .lqd-stickybar-left .btn {
+	box-shadow: 0 0 0 11px rgba(128, 179, 65, 0.27);
+}
+
+/*  Lity Modal  */
+.lity-modal .ld-fancy-heading h2 span {
+	font-family: 'DM Serif Text', serif;
+	font-style: italic
+}
+
+.lity-modal .lqd-contact-form {
+	--inputs-margin: 0 0 30px 0;
+	--input-margin-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+	.lity-modal .module-content {
+		padding: 10px;
+	}
+
+	.lity-modal .ld-fancy-heading h2 {
+		font-size: 48px;
+		line-height: 1em;
+	}
+}
+
+@media (max-width: 767px) {
+	.lity-modal .ld-fancy-heading h2 {
+		font-size: 34px;
+	}
+}
+

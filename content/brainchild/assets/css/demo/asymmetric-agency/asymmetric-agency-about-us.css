@@ -1,0 +1,175 @@
+/* ***** Site Header ***** */
+.main-header.is-stuck .lqd-head-sec-wrap {
+	padding-top: 0;
+}
+
+.main-header .lqd-stickybar-wrap {
+	--padding-top: 5vh;
+	--padding-bottom: 5vh;
+}
+
+.nav-trigger:hover {
+	color: #fff;
+}
+
+.nav-trigger.style-2 .bar:before,
+.nav-trigger.style-2 .bar:after {
+	background: #fff;
+}
+
+/* ***** Typography ***** */
+@media (max-width: 991px) {
+	h2.module-h2 {
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 767px) {
+	h2.module-h2 {
+		font-size: 9.5vw;
+	}
+}
+
+/* ***** Banner ***** */
+.banner .module-title {
+	margin-bottom: -12%;
+}
+
+.lqd-imggrp-single[data-hover3d] {
+	perspective: 1200px;
+}
+
+.lqd-imggrp-single[data-hover3d] .lqd-imggrp-img-container {
+	transform-style: preserve-3d;
+}
+
+@media (max-width: 1199px) {
+	.banner h1 {
+		font-size: 95px;
+	}
+}
+
+@media (max-width: 991px) {
+	.banner h1 {
+		font-size: 8vw;
+	}
+}
+
+@media (max-width: 767px) {
+	.banner h1 {
+		font-size: 10vw;
+	}
+}
+
+/* ***** Text Box ***** */
+@media (max-width: 991px) {
+	.text-box {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+}
+
+/* ***** Icon Box ***** */
+@media (max-width: 991px) {
+	.icon-box h2 {
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 767px) {
+	.icon-box .module-icon-box {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.icon-box .module-icon-box-2,
+	.icon-box .module-icon-box-3 {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+/* ***** Accordion Design ***** */
+.accordion-design .accordion-item.active .accordion-title a {
+	border-color: #ffffff;
+	color: #ffffff;
+}
+
+@media (max-width: 991px) {
+	.accordion-design h2 {
+		margin-bottom: 1.25em;
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 767px) {
+	.accordion-design h2 {
+		font-size: 11vw;
+	}
+}
+
+/* ***** Team ***** */
+@media (max-width: 991px) {
+	.team {
+		padding-top: 20px;
+	}
+
+	.team .module-spacer {
+		height: 55px;
+	}
+}
+
+/* ***** Clients ***** */
+@media (max-width: 767px) {
+	.clients-page .ld-img-hover-opacity {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+/* ***** Testimonials ***** */
+.testimonials-page .carousel-dots {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: -25px;
+	left: auto;
+}
+
+.testimonials-page .lqd-carousel-slides-current {
+	color: #ffffff;
+}
+
+.testimonials-page .lqd-carousel-slides-numbers svg,
+.testimonials-page .lqd-carousel-slides-numbers {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.testimonials-page .lqd-carousel-numbers-line path {
+	opacity: 1;
+}
+
+.testimonials-page .lqd-carousel-numbers-line path:last-of-type {
+	stroke: #ffffff;
+}
+
+@media (max-width: 991px) {
+	.testimonials-page {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+/* ***** Awards ***** */
+@media (max-width: 991px) {
+	.awards h2 {
+		font-size: 45px;
+	}
+}
+
+/* ***** Footer ***** */
+@media (max-width: 991px) {
+	.page-footer .module-first h2 {
+		font-size: 45px;
+	}
+}

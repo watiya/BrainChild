@@ -1,0 +1,96 @@
+:root {
+	--lqd-container-width: 1270px;
+	--lqd-container-width-sm: 750px;
+	--lqd-container-width-md: 970px;
+	--lqd-row-gutter-y: 0;
+	--lqd-row-gutter-x: 30px;
+	/*  */
+	--lqd-color-primary: #f40460;
+	--lqd-color-secondary: #5b7bfb;
+	--lqd-color-gradient-start: #ed6a04;
+	--lqd-color-gradient-stop: #ed6a04;
+	--lqd-badge-color: var(--lqd-color-red-400);
+	--lqd-color-blue-300: #5b7bfb;
+	--lqd-color-blue-400: #006dff;
+	--lqd-color-blue-600: #003179;
+	--lqd-color-blue-700: #002352;
+	--lqd-color-blue-800: #001634;
+	--lqd-color-gray-200: #f4f4f4;
+	--lqd-color-gray-400: #7e8085;
+	--lqd-color-gray-900: #27292c;
+	--lqd-color-green-500: #00937e;
+	--lqd-color-orange-100: rgb(237 106 4 / 5%);
+	--lqd-color-orange-500: #ed6b03;
+	--lqd-color-red-400: #fd7171;
+	--lqd-color-slate-100: rgba(0,22,52,0.703);
+	--lqd-color-slate-200: #f8f8fd;
+	--lqd-color-slate-300: #50596c;
+	--lqd-color-purple-500: #5b44ff;
+	--lqd-color-zinc-900: #191919;
+	/*  */
+	--lqd-body-font-family: 'Be Vietnam Pro', sans-serif;
+	--lqd-body-font-weight: 400;
+	--lqd-body-line-height: 1.5em;
+	--lqd-body-letter-spacing: 0.01em;
+	--lqd-body-font-size: 16px;
+	--lqd-body-color: #878b91;
+	--lqd-body-text-color: var(--lqd-body-color);
+	/*  */
+	--lqd-heading-font-family: var(--lqd-body-font-family);
+	--lqd-heading-font-weight: 700;
+	--lqd-h1-line-height: 1.15em;
+	--lqd-h1-font-size: 52px;
+	--lqd-heading-color: #181b31;
+	--lqd-heading-line-height: 1.2em;
+	--lqd-h2-letter-spacing: -0.0125em;
+	--lqd-h2-font-size: 42px;
+	--lqd-h3-font-size: 34px;
+	--lqd-h4-font-size: 30px;
+	--lqd-h5-font-size: 25px;
+	--lqd-h6-font-weight: 600;
+	--lqd-h6-letter-spacing: 0.1em;
+	--lqd-h6-font-size: 12px;
+	--lqd-h6-text-transform: uppercase;
+	--lqd-h6-color: #ed6a04;
+	/*  */
+	--lqd-cc-active-bw: 1px;
+}
+
+/* Main Header */
+.main-header .header-desktop .main-nav{
+  --lqd-menu-items-top-padding: 3px;
+  --lqd-menu-items-right-padding: 20px;
+  --lqd-menu-items-bottom-padding: 3px;
+  --lqd-menu-items-left-padding: 20px;
+}
+@media (max-width: 1199px) {
+	.main-header .main-nav li a {
+		font-size: 12px;
+	}
+	.main-header .header-desktop .main-nav {
+		--lqd-menu-items-right-padding: 10px;
+		--lqd-menu-items-left-padding: 10px;
+	}
+}
+
+/* Stickybar Left */
+.main-header .lqd-stickybar-left .module-btn:hover .btn-icon {
+	background: #ef4557;
+}
+
+/* Main Footer */
+.main-footer .ld-sf input[type="email"]:focus {
+	border-color: transparent;
+	color: #000;
+}
+.main-footer .ld-sf--button-naked [type=submit] {
+	color: var(--lqd-color-green-500);
+}
+.main-footer .footer-menu li > a:hover {
+	color: var(--lqd-color-blue-800);
+}
+@media (max-width: 991px) {
+	.main-footer .footer-contact {
+		padding-top: 70px;
+	}
+}

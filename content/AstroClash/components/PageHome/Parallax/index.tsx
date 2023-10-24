@@ -310,7 +310,7 @@ const Parallax = ({ children }: ParallaxProps) => {
                             <div className={styles.slide_1} ref={slide1}>
                                 <div className={styles.text_1} ref={text1}>
                                     <div className={cn("hero", styles.title)}>
-                                        Join the intergalactic battle.
+                                        Explore beyond boundaries.
                                     </div>
                                     <div className={cn("h5", styles.info)}>
                                         Play-to-Earn NFT Marketplace
@@ -322,7 +322,7 @@ const Parallax = ({ children }: ParallaxProps) => {
                                                 styles.button
                                             )}
                                         >
-                                            Get a character
+                                            start
                                         </a>
                                     </Link>
                                 </div>

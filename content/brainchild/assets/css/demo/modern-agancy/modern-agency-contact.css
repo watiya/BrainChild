@@ -1,0 +1,48 @@
+/* ***** Titlebar ***** */
+@media (max-width: 767px) {
+	.titlebar-inner h1 {
+		font-size: 60px;
+	}
+}
+/* ***** Form ***** */
+.form .module-form {
+	box-shadow: 0 40px 80px 0px rgba(83, 94, 132, 0.15);
+}
+.form .lqd-contact-form {
+  --input-margin-bottom: 20px;
+  --inputs-margin: 0 0 var(--input-margin-bottom) 0;
+}
+@media (max-width: 767px) {
+	.form {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.form .module-form {
+		margin-right: 10px;
+		margin-left: 10px;
+		padding: 35px 15px;
+	}
+}
+
+/* ***** Map ***** */
+.map .module-contact {
+	box-shadow: 20px 40px 60px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1199px) {
+	.map .module-col {
+		padding-right: 50px;
+		padding-left: 50px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.map .module-col {
+		padding-right: 20px;
+		padding-left: 20px;
+		margin: 0;
+	}
+	.map .module-contact {
+		padding: 45px 20px;
+	}
+}

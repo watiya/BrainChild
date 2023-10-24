@@ -1,0 +1,125 @@
+:root {
+	--lqd-container-width: 1170px;
+	--lqd-container-width-md: 970px;
+	--lqd-container-width-sm: 750px;
+	--lqd-row-gutter-y: 0;
+	--lqd-row-gutter-x: 30px;
+	/*  */
+	--lqd-color-primary: #d3aa85;
+	--lqd-color-gradient-start: #d3aa85;
+	--lqd-color-gradient-stop: #d3aa85;
+	--lqd-color-gray-300: #9d9d9d;
+	--lqd-color-gray-400: #777777;
+	--lqd-color-gray-800: #161616;
+	--lqd-color-gray-900: #141414;
+	--lqd-color-orange-300: #c2895c;
+	--lqd-color-orange-500: #b77f51;
+	/*  */
+	--lqd-body-font-family: 'Be Vietnam Pro', sans-serif;
+	--lqd-body-font-weight: 400;
+	--lqd-body-line-height: 27px;
+	--lqd-body-font-size: 15px;
+	--lqd-body-text-color:#9a9a9a;
+	/*  */
+	--lqd-heading-font-family: var(--lqd-body-font-family);
+	--lqd-heading-font-weight: 500;
+	--lqd-heading-color: #000000;
+	--lqd-h1-font-size: 46px;
+	--lqd-h1-line-height: 1.5em;
+	--lqd-h2-font-size: 35px;
+	--lqd-h2-line-height: 1.5em;
+	--lqd-h3-font-size: 30px;
+	--lqd-h3-line-height: 1.2em;
+	--lqd-h4-font-size: 26px;
+	--lqd-h4-line-height: 1.2em;
+	--lqd-h5-font-size: 22px;
+	--lqd-h5-line-height: 1.2em;
+	--lqd-h5-color: #d3aa85;
+	--lqd-h6-font-size: 18px;
+	--lqd-h6-font-weight: 700;
+	--lqd-h6-line-height: 1.2em;
+	--lqd-h6-color: #d3aa85;
+	/*  */
+	--lqd-cc-bg: rgba(255, 255, 255, 0);
+	--lqd-cc-bc: #fffafa;
+	--lqd-cc-active-bw: 1px;
+	--lqd-cc-active-bg: #1f1f1f;
+	--lqd-cc-active-bc: #1f1f1f;
+	--lqd-cc-active-circle-color: #0f0f0f;
+  --lqd-cc-size-outer: 35px;
+  --lqd-cc-size-inner: 7px;
+  --lqd-cc-bw: 1px;
+  --lqd-cc-br: calc(var(--lqd-cc-size-outer) / 2);
+  --lqd-cc-active-arrow-color: #fff;
+}
+
+.lqd-cc-wrap {
+	color: var(--lqd-cc-bc);
+}
+
+
+/* ***** Main Header ***** */
+.main-header .nav-item-children:before {
+  background: #242424;
+}
+.main-header .nav-item-children > li > a {
+  color: rgba(255, 255, 255, 0.66);
+}
+.main-header .nav-item-children > li > a:hover {
+  color: #ffffff;
+}
+.main-header .module-trigger .bars {
+  width: 62px;
+  height: 62px;
+}
+.main-header .module-trigger .bars:before {
+  background-color: rgba(255, 255, 255, 0);
+}
+.main-header .module-trigger:hover .bars:before {
+  background-color: #fff;
+}
+.main-header .module-trigger .bar:before, 
+.main-header .module-trigger .bar:after {
+  background: #fff;
+}
+.main-header .module-trigger:hover .bar:before, 
+.main-header .module-trigger:hover .bar:after {
+  background: #000;
+}
+
+.main-header .lqd-mobile-sec .nav-trigger {
+	color: #fff;
+}
+
+.main-header .lqd-mobile-sec .main-nav {
+  --lqd-menu-items-top-padding: 15px;
+  --lqd-menu-items-bottom-padding: 15px;
+  --lqd-menu-items-left-padding: 25px;
+  --lqd-menu-items-right-padding: 25px;
+  flex: 1 auto;
+}
+
+.is-stuck .lqd-head-sec-wrap {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 2.5%, rgba(0, 0, 0, 0.65) 19%, rgba(0, 0, 0, 0.54) 34%, rgba(0, 0, 0, 0.38) 48.5%, rgba(0, 0, 0, 0.19) 65.5%, rgba(0, 0, 0, 0.13) 73%, rgba(0, 0, 0, 0.07) 81%, rgba(0, 0, 0, 0.04) 86.5%, rgba(0, 0, 0, 0.02) 88.5%, rgba(17, 17, 17, 0.01) 96.5%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
+}
+
+.is-stuck .module-logo {
+	padding: 30px 0;
+}
+
+/* ***** Main Footer ***** */
+.main-footer .btn-xlg {
+	--btn-pt: 1.5em;
+	--btn-ps: 6.5em;
+	--btn-pb: 1.5em;
+	--btn-pe: 6.5em;
+}
+@media (max-width: 767px){
+	.main-footer .footer-content {
+		padding-top: 100px;
+		padding-bottom: 70px;
+	}
+	.main-footer h2 {
+		font-size: 28px;
+	}
+}

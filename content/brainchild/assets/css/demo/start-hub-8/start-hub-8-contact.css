@@ -1,0 +1,23 @@
+/* Faq */
+.faq {
+	--lqd-color-brown-300: #F5DBB8;
+	--lqd-color-brown-500: #A25139;
+	--lqd-color-gray-100: #F7F7F8;
+	--lqd-color-slate-600: #225469;
+}
+.faq .accordion-item.active .accordion-title a {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+@media (max-width: 1199px) {
+	.faq {
+		padding: 50px 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.faq {
+		padding: 40px 20px;
+	}
+}

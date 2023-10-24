@@ -1,0 +1,48 @@
+/* ***** Portfolio ***** */
+.portfolio .filter-list li.active,
+.portfolio .filter-list li:hover {
+  color: #ffffff;
+}
+.portfolio .lqd-filter-dropdown .ui-button {
+  color: #979797;
+  border-color: #979797
+}
+.portfolio .btn .btn-icon {
+	width: auto;
+	margin-inline-start: 15px;
+}
+@media (max-width: 991px) {
+	.portfolio {
+		padding-top: 140px;
+		padding-bottom: 50px;
+	}
+	.portfolio .module-title {
+		font-size: 8vw;
+	}
+}
+@media (max-width: 575px) {
+	.portfolio .lqd-pf-item {
+		margin-bottom: 30px;
+	}
+}
+/* ***** About ***** */
+@media (max-width: 991px) {
+	.about {
+		padding-bottom: 70px;
+	}
+}
+@media (max-width: 767px) {
+	.about .module-text {
+		line-height: 0.9em;
+	}
+}
+
+/* ***** Clients ***** */
+@media (max-width: 991px) {
+	.clients {
+		padding-bottom: 70px;
+	}
+	.clients .module-col {
+		margin-bottom: 30px;
+	}
+}

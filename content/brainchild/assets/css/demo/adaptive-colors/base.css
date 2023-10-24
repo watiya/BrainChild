@@ -1,0 +1,117 @@
+:root {
+	--lqd-container-width-lg: 1170px;
+	--lqd-container-width-md: 970px;
+	--lqd-container-width-sm: 750px;
+	--lqd-container-width-xs: 100%;
+	--lqd-row-gutter-y: 0;
+	--lqd-row-gutter-x: 30px;
+	/*  */
+	--lqd-color-primary: #f13c46;
+	--lqd-color-gradient-start: #f42958;
+	--lqd-color-gradient-stop: #f42958;
+	--lqd-color-blue-100: #d1f0fc;
+	--lqd-color-blue-700: #004ac7;
+	--lqd-color-brown-700: #5a220c;
+	--lqd-color-gray-800: #1f1f1f;
+	--lqd-color-gray-900: #141414;
+	--lqd-color-purple-100: #d7c9f6;
+	--lqd-color-purple-700: #2f1c58;
+	--lqd-color-red-100: #ffc1c5;
+	--lqd-color-red-300: #ff4e5c;
+	--lqd-color-slate-100: #e8fcff;
+	--lqd-color-slate-200: #d5f5ff;
+	--lqd-color-orange-100: #ffc29b;
+	/*  */
+	--lqd-body-font-family: 'Be Vietnam Pro', sans-serif;
+	--lqd-body-font-weight: 400;
+	--lqd-body-line-height: 1.5em;
+	--lqd-body-font-size: 1em;
+	--lqd-body-color: #000000;
+	/*  */
+	--lqd-heading-font-family: var(--lqd-body-font-family);
+	--lqd-heading-line-height: 1.2em;
+	--lqd-heading-font-weight: 500;
+	--lqd-heading-color: #181b31;
+	--lqd-h1-font-weight: 700;
+	--lqd-h1-font-size: 52px;
+	--lqd-h2-font-size: 40px;
+	--lqd-h3-font-size: 32px;
+	--lqd-h4-font-size: 25px;
+	--lqd-h5-font-size: 22px;
+	--lqd-h6-font-size: 17px;
+	/*  */
+	--lqd-cc-size-inner: 17px;
+	--lqd-cc-bg: rgb(32, 38, 76);
+	--lqd-cc-active-bw: 1px;
+	--lqd-cc-active-bg: rgba(0, 0, 0, 0.68);
+	--lqd-cc-active-bc: rgba(0, 0, 0, 0.68);
+}
+
+/* ***** Main Header ***** */
+.main-header .main-nav-trigger .bars:before {
+	background-color: rgba(255, 255, 255, 0);
+}
+.main-header .main-nav {
+	--lqd-menu-items-right-padding: 22px;
+	--lqd-menu-items-left-padding: 22px;
+}
+.main-header .module-navbar.show {
+	display: inline-flex;
+}
+.main-header .main-nav-trigger:hover .bars:before {
+	background-color: #ffffff;
+}
+.main-header .main-nav .link-sup {
+	top: -2em;
+	right: 1em;
+}
+.submenu-expander:before {
+	content: '\ea2f';
+	display: inline-flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	font: normal 1em/1 'lqd-essentials';
+}
+
+/* ***** Main Footer ***** */
+.main-footer .footer-content {
+	padding-right: 12vw;
+	padding-left: 12vw;
+}
+.main-footer .module-btn {
+	font-size: clamp(60px, 8vw, 70px);
+}
+.main-footer .module-title {
+	font-size: 3vw;
+}
+@media (max-width: 1199px) {
+	.main-footer .footer-content {
+		padding: 100px 7vw;
+	}
+}
+@media (max-width: 991px) {
+	.main-footer .footer-content {
+		padding: 100px 0;
+	}
+	.main-footer .module-title {
+		font-size: 35px;
+		margin-top: 40px;
+		margin-bottom: 0.5em;
+	}
+	.main-footer .module-space {
+		height: 50px;
+	}
+	.main-footer .module-info {
+		margin-bottom: 45px;
+	}
+}
+@media (max-width: 767px) {
+	.main-footer .module-email {
+		margin-bottom: 20px;
+	}
+}

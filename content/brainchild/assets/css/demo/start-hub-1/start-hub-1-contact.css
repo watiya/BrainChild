@@ -1,0 +1,21 @@
+/* Form */
+.form .module-container {
+	max-width: 945px;
+}
+.form .module-form {
+	border-top: 10px solid #E66C6C;
+}
+@media (max-width: 1199px) {
+	.form {
+		padding: 0 10px;
+	}
+	.form .module-col {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}
+@media (max-width: 767px) {
+	.form .module-form {
+		padding: 45px 30px;
+	}
+}

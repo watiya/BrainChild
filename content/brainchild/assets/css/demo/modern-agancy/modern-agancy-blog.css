@@ -1,0 +1,16 @@
+/* Blog */
+.titlebar-inner h1 {
+  font-size: 60px;
+}
+@media (max-width: 1199px) {
+	.blog {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.blog {
+		padding: 0 10px 80px 10px;
+	}
+}
