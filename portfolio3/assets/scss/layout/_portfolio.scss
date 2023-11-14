@@ -1,0 +1,189 @@
+
+/* Portfolio
+-----------------------------------------------------------------*/
+
+.portfolio{
+
+    .gallery{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    .items{
+        margin-top: 40px;
+    }
+
+    .item{
+        background: #0c0c0c;
+        position: relative;
+        border-radius: 10px;
+        padding: 10px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(120deg, rgba(255,255,255,0.24), rgba(255,255,255,0.04));
+            opacity: 0.3;
+            pointer-events: none;
+            border-radius: 10px;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            left: -1px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+            z-index: -1;
+            pointer-events: none;
+            border-radius: 10px;
+        }
+
+        .img{
+            position: relative;
+            z-index: 2;
+            border-radius: 10px;
+            overflow: hidden;
+
+            a.link{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .cont{
+            padding: 20px 10px 10px;
+
+            h6{
+                font-weight: 500;
+            }
+
+            .tag{
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 12px;
+                padding: 4px 15px;
+                background: rgba(255, 255, 255, 0.03);
+                border-radius: 30px;
+                margin-bottom: 15px;
+                transition: all .4s;
+            }
+
+            h6{
+                margin-bottom: 10px;
+            }
+
+            .arrow{
+                width: 45px;
+                height: 45px;
+                line-height: 40px;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.03);
+                border-radius: 50%;
+
+                svg{
+                    stroke: #fff;
+                    fill: #fff;
+                    width: 15px;
+                    transform: rotate(-45deg);
+                    transition: all .4s;
+                }
+            }
+        }
+
+        &:hover{
+
+            .img{
+
+                &:after{
+                    opacity: 1;
+                }
+            }
+
+            .cont{
+
+                .tag{
+                    background: var(--maincolor);
+                    color: #1d1d1d;
+                }
+
+                .arrow{
+
+                    svg{
+                        stroke: var(--maincolor);
+                        fill: var(--maincolor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project{
+
+    .info{
+        padding: 40px;
+        position: relative;
+        background: #0c0c0c;
+        border-radius: 10px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(140deg, rgba(255,255,255,0.24), rgba(255,255,255,0.04));
+            opacity: 0.3;
+            pointer-events: none;
+            border-radius: 10px;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            left: -1px;
+            background: linear-gradient(140deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+            z-index: -1;
+            pointer-events: none;
+            border-radius: 10px;
+        }
+
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+
+        .sub-title{
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+    }
+
+    .next-prev{
+
+        .sub-title{
+            letter-spacing: 1px;
+
+            &:hover{
+                color: var(--maincolor);
+            }
+        }
+    }
+}
+

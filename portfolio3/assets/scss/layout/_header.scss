@@ -1,0 +1,104 @@
+
+/* Header
+-----------------------------------------------------------------*/
+
+.header-crev{
+    padding-top: 80px;
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 55%;
+        bottom: 40%;
+        left: 0;
+        transform: translateY(50%);
+        background-image: url(../imgs/header/lines.png);
+        background-size: cover;
+        background-position: center top;
+        opacity: .03;
+        z-index: -1;
+    }
+
+    .content{
+
+        h1{
+            font-size: 85px;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        p{
+            font-size: 14px;
+            width: 90%;
+        }
+
+        .skill{
+
+            .img{
+                width: 60px;
+                height: 60px;
+                border-radius: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.01);
+                backdrop-filter: blur(5px);
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .img-author{
+        position: relative;
+
+        .box-shadwo{
+            position: absolute;
+            padding: 10px 60px 10px 30px;
+            background-color: #0c0c0c;
+            width: max-content;
+            margin-bottom: 30px;
+            border-radius: 40px 40px 40px 0;
+            top: 50%;
+            left: -10px;
+
+            h2{
+                font-size: 70px;
+                font-weight: 700;
+                margin-right: 15px;
+            }
+
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(120deg, rgba(255,255,255,0.24), rgba(255,255,255,0.04));
+                opacity: 0.3;
+                pointer-events: none;
+                border-radius: 40px 40px 40px 0;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                left: -1px;
+                background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+                z-index: -1;
+                pointer-events: none;
+                border-radius: 40px 40px 40px 0;
+            }
+        }
+
+        img{
+            position: relative;
+            z-index: 3;
+        }
+    }
+}

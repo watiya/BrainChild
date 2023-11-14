@@ -1,0 +1,138 @@
+
+/* Contact
+-----------------------------------------------------------------*/
+
+.contact{
+
+    .google-map{
+        height: 450px;
+        width: 100%;
+        position: relative;
+        filter: grayscale(100%);
+    
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .info{
+        
+        .item{
+            padding: 30px 25px;
+            border-radius: 10px;
+            position: relative;
+            background: #0c0c0c;
+
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(140deg, rgba(255,255,255,0.24), rgba(255,255,255,0.04));
+                opacity: 0.3;
+                pointer-events: none;
+                border-radius: 10px;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                left: -1px;
+                background: linear-gradient(140deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+                z-index: -1;
+                pointer-events: none;
+                border-radius: 10px;
+            }
+
+            h4{
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .form-group{
+        position: relative;
+
+        label{
+            padding: 5px 10px;
+            background: #0c0c0c;
+            position: absolute;
+            left: 15px;
+            top: -15px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+    input,
+    textarea{
+        width: 100%;
+        border: 1px solid rgba(255,255,255,.1);
+        border-radius: 10px;
+        background: transparent;
+        color: #fff;
+        padding: 20px;
+        transition: all .4s;
+
+        &:focus{
+            border-color: #fff;
+        }
+    }
+
+    textarea{
+        min-height: 180px;
+    }
+
+    button{
+        padding: 15px 35px;
+        width: 100%;
+        background: transparent;
+        backdrop-filter: blur(4px);
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1px;
+        position: relative;
+        border: 1px solid rgba(255,255,255,.2);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all .4s;
+
+        .text{
+            position: relative;
+            z-index: 4;
+        }
+
+        &:hover{
+            color: #1d1d1d;
+
+            &:after{
+                width: 100%;
+            }
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--maincolor);
+            transition: all .4s;
+        }
+    }
+}

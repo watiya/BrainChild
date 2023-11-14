@@ -1,0 +1,119 @@
+
+/* Testimonials
+-----------------------------------------------------------------*/
+
+.testimonials{
+
+    .container-fluid{
+        max-width: 1700px;
+    }
+
+    .testim-swiper,
+    .testim-swiper2{
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .swiper-slide{
+        padding: 10px;
+    }
+
+    .item{
+        position: relative;
+        background: #0c0c0c;
+        border-radius: 10px;
+        padding: 40px;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            left: -1px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+            z-index: -1;
+            pointer-events: none;
+            border-radius: 10px;
+        }
+
+        .img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+
+    .testim-swiper2{
+
+        .item{
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            &:before,
+            &:after{
+                display: none;
+            }
+        }
+    }
+
+    .swiper-pagination{
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+.swiper-controls{
+    position: relative;
+    z-index: 4;
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        position: static;
+        display: inline-block;
+
+        &:after{
+            display: none;
+        }
+    }
+
+    &.arrow-out{
+
+        .swiper-button-prev,
+        .swiper-button-next{
+
+            &:hover{
+
+                .left,
+                .right{
+                    background: rgba(255, 255, 255, 0.05);
+                }
+            }
+        }
+
+        .left,
+        .right{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,.2);
+            border-radius: 50%;
+            color: #fff;
+        }
+
+        .left{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.swiper-pagination-bullet{
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 7px;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--maincolor);
+}
