@@ -1,14 +1,5 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Gilb
-    Theme URI: http://
-    Description: Creative Personal & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
 /************ TABLE OF CONTENTS ***************
 
   01. variables
@@ -67,7 +58,7 @@ body {
   background-color: #0c0c0c;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   overflow-x: hidden !important;
   position: relative;
@@ -194,7 +185,7 @@ p {
   line-height: 1.75;
   font-size: 15px;
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   color: #ddd;
   margin: 0;
 }
