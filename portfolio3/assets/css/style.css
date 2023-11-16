@@ -1991,6 +1991,18 @@ body.loaded {
   font-size: 20px;
 }
 
+.about .bord {
+  padding: 0 10px;
+  background: #28e98c;
+  color: #0c0c0c;
+  font-weight: 600;
+  font-size: 24px;
+  border-radius: 40px;
+  -webkit-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
 /* Awards
 -----------------------------------------------------------------*/
 .awards .award-item {
@@ -3443,6 +3455,7 @@ body.loaded {
   pointer-events: none;
   border-radius: 30px;
 }
+
 
 /* Portfolio
 -----------------------------------------------------------------*/
