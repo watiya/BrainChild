@@ -16,16 +16,7 @@
  *		#Misc
  */
 
-@font-face {
-    font-family: 'NanumSquare';
-    font-style: normal;
-    font-weight: 400;
-    src: local('http://saraswati.cafe24.com/fonts/'),
-        url('NanumSquareR.woff2') format('woff2'), 
-        url('NanumSquareR.woff') format('woff'),
-        url('NanumSquareR.ttf') format('truetype'),
-        url('NanumSquareR.eot') format('embedded-opentype');
-}
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* ==========================================================================
    #CssReset
@@ -141,8 +132,8 @@
 		background: #222 url(../images/bg-body21.jpg) no-repeat fixed top left;
 		*/
 		
-		color: #444;
-		font: 13px 'NanumSquare', Arial, sans-serif;
+		color: #333;
+		font: 13px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 		line-height: 21px;	
 	}
 	
@@ -152,9 +143,9 @@
 	h4, 
 	h5, 
 	h6 {
-		color: #444;
-		font-family: 'NanumSquare', Arial, sans-serif;
-		font-weight: 300; 
+		color: #333;
+		font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+		font-weight: 500; 
 	}
 		
 	h1 a, 
@@ -248,7 +239,7 @@
 	pre { 
 		-webkit-border-radius: 3px;
 			    border-radius: 3px;	
-		font-family: Monaco, Menlo, Consolas, "Courier New", monospace;			
+				font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;		
 	}
 	
 	code { 
@@ -306,7 +297,7 @@
 	
 	a, 
 	a:visited { 
-		color: #444; 
+		color: #333; 
 		text-decoration: none; 
 	}
 	
@@ -441,7 +432,7 @@
 		margin-bottom: 10px;
 		background: #fff;
 		color: #666;
-		font: 12px 'Open Sans', Arial, sans-serif;			 
+		font: 12px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	}
 	
 	input[type="text"]:focus,
