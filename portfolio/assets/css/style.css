@@ -3579,6 +3579,44 @@ body.loaded {
   fill: var(--maincolor);
 }
 
+.portfolio .item2 {
+  padding: 50px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.portfolio .item2 .cont {
+  position: relative;
+  z-index: 3;
+}
+
+.portfolio .item2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0c0c0c;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.portfolio .item2:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  background: -o-linear-gradient(310deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
 .project .info {
   padding: 40px;
   position: relative;
@@ -3632,6 +3670,10 @@ body.loaded {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: none;
+}
+
+.project .info .sub-title .des a {
+ color: var(--maincolor);
 }
 
 .project .next-prev .sub-title {
