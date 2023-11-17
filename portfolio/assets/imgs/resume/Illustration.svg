@@ -1,0 +1,39 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="#636878"/>
+<mask id="mask0_23_56436" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+<path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_23_56436)">
+<path d="M7.7002 7.70002L28.0002 -12.6L48.3002 7.70002L28.0002 28L7.7002 7.70002Z" fill="#444854"/>
+</g>
+<mask id="mask1_23_56436" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+<path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_23_56436)">
+<path d="M23 57H33V43H23V57Z" fill="#81838A"/>
+</g>
+<mask id="mask2_23_56436" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+<path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_23_56436)">
+<path d="M33 57H43V43H33V57Z" fill="#444854"/>
+</g>
+<mask id="mask3_23_56436" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+<path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_23_56436)">
+<path d="M13 57H23V43H13V57Z" fill="#E2E3E4"/>
+</g>
+<mask id="mask4_23_56436" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+<path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="white"/>
+</mask>
+<g mask="url(#mask4_23_56436)">
+<path d="M13 43H43L28 28L13 43Z" fill="#E2E3E4"/>
+</g>
+<mask id="mask5_23_56436" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+<path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="white"/>
+</mask>
+<g mask="url(#mask5_23_56436)">
+<path d="M19.9951 36H36.0091L28.0001 28L19.9951 36Z" fill="#1B1C1C"/>
+</g>
+</svg>

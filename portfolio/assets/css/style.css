@@ -1985,14 +1985,25 @@ body.loaded {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  background: #28e98c;
+  background: #f9d853;
+  color: #0c0c0c;
+  font-size: 20px;
+}
+
+.about .info .item .icon2 {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #e95e35;
   color: #0c0c0c;
   font-size: 20px;
 }
 
 .about .bord {
   padding: 0 10px;
-  background: #28e98c;
+  background: #4c8ef2;
   color: #0c0c0c;
   font-weight: 600;
   font-size: 24px;
@@ -3580,7 +3591,7 @@ body.loaded {
 }
 
 .portfolio .item2 {
-  padding: 50px 30px;
+  padding: 40px 32px;
   position: relative;
   border-radius: 10px;
 }
