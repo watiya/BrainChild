@@ -3628,6 +3628,12 @@ body.loaded {
   margin-bottom: 5px;
 }
 
+.project .info .sub-title .des {
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
 .project .next-prev .sub-title {
   letter-spacing: 1px;
 }
