@@ -3695,6 +3695,9 @@ body.loaded {
   color: var(--maincolor);
 }
 
+.project .next-prev .sub-title .all {
+  color:var(--maincolor);
+}
 
 /* Pricing
 -----------------------------------------------------------------*/
