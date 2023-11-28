@@ -30,11 +30,11 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 
 :root {
-    --primary_color: #03FFD1;
+    --primary_color: #00ffcc;
 }
 *,*::before,*::after {
     margin: 0;
@@ -43,7 +43,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
     color: #999999;
@@ -92,6 +92,7 @@ ul {
     transition: .3s;
     cursor: pointer;
     border: 1px solid var(--primary_color);
+    background: transparent;
 }
 .theme-btn i {
     font-size: 16px;
@@ -502,7 +503,7 @@ main.naoda-main {
     height: 30px;
     border-radius: 50%;
     position: relative;
-    background: #03FFD1;
+    background: #00ffcc;
 }
 .global-color .global-color-option .color-boxed a::before {
     content: '';
@@ -657,12 +658,10 @@ main.naoda-main {
     font-size: 36px;
     line-height: 60px;
     color: #fff;
-    font-weight: 600;
-    margin-bottom: 33px;
-    text-transform: uppercase;
-    letter-spacing: .12em;
-    
+    font-weight: 500;
+    margin-bottom: 33px; 
 }
+
 .section-header h1 span {
     color: var(--primary_color);
 }
@@ -756,11 +755,11 @@ main.naoda-main {
 }
 .hero-section .hero-content h1 {
     font-size: 4.5rem;
-    letter-spacing: .1em;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: .08em;
     line-height: 1.14;
     margin-bottom: 43px;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: 600;
 }
 .hero-section .hero-content h1 span {
     color: var(--primary_color);
@@ -769,10 +768,8 @@ main.naoda-main {
     max-width: 480px;
     margin-bottom: 31px;
     font-size: 1.1rem;
-    line-height: 2.25rem;
-    letter-spacing: .12em;
-    font-weight: 300;
-    text-transform: uppercase;
+    line-height: 2rem;
+    letter-spacing: .1em;
 }
 .hero-section .hero-content .go-to-project-btn {
     width: 175px;
@@ -921,8 +918,6 @@ body .body-overlay {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 500;
-    letter-spacing: .02em;
-    text-transform: uppercase;
     margin-bottom: 5px;
     color: #fff;
 }
