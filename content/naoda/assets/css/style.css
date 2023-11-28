@@ -755,10 +755,10 @@ main.naoda-main {
     z-index: 3;
 }
 .hero-section .hero-content h1 {
-    font-size: 4.8rem;
+    font-size: 5.4rem;
     font-family: 'Space Grotesk', sans-serif;
-    letter-spacing: .04em;
-    line-height: 1.14;
+    letter-spacing: 0.0125em;
+    line-height: 1;
     margin-bottom: 43px;
     font-weight: 600;
 }
