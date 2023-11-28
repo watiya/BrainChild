@@ -656,6 +656,7 @@ main.naoda-main {
 /* 05 - Section Header */
 .section-header h1 {
     font-size: 36px;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 60px;
     color: #fff;
     font-weight: 500;
