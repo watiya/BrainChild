@@ -27,8 +27,8 @@ if( typeof jQuery !== 'undefined' ) {
 		cssFolder: 'css/',
 	};
 
-	if( typeof cnvsOptions !== 'undefined' ) {
-		options = Object.assign({}, options, cnvsOptions);
+	if( typeof ottmOptions !== 'undefined' ) {
+		options = Object.assign({}, options, ottmOptions);
 	}
 
 	var vars = {
@@ -211,7 +211,7 @@ if( typeof jQuery !== 'undefined' ) {
 					window.matchMedia('(prefers-color-scheme: dark)').matches ? vars.elBody.classList.add( 'dark' ) : vars.elBody.classList.remove('dark');
 				}
 
-				var bodyColorScheme = Core.cookie.get('__cnvs_body_color_scheme');
+				var bodyColorScheme = Core.cookie.get('__ottm_body_color_scheme');
 
 				if( bodyColorScheme && bodyColorScheme != '' ) {
 					bodyColorScheme.split(" ").includes('dark') ? vars.elBody.classList.add( 'dark' ) : vars.elBody.classList.remove( 'dark' );
@@ -275,9 +275,9 @@ if( typeof jQuery !== 'undefined' ) {
 
 				vars.viewport = viewport;
 
-				document.documentElement.style.setProperty('--cnvs-viewport-width', viewport.width);
-				document.documentElement.style.setProperty('--cnvs-viewport-height', viewport.height);
-				document.documentElement.style.setProperty('--cnvs-body-height', vars.elBody.clientHeight);
+				document.documentElement.style.setProperty('--ottm-viewport-width', viewport.width);
+				document.documentElement.style.setProperty('--ottm-viewport-height', viewport.height);
+				document.documentElement.style.setProperty('--ottm-body-height', vars.elBody.clientHeight);
 
 				return viewport;
 			},
@@ -751,62 +751,62 @@ if( typeof jQuery !== 'undefined' ) {
 			},
 
 			goToTop: function() {
-				CNVS.GoToTop.init('#gotoTop');
+				ottm.GoToTop.init('#gotoTop');
 			},
 
 			stickFooterOnSmall: function() {
-				CNVS.StickFooterOnSmall && CNVS.StickFooterOnSmall.init('#footer');
+				ottm.StickFooterOnSmall && ottm.StickFooterOnSmall.init('#footer');
 			},
 
 			logo: function() {
-				CNVS.Logo.init('#logo');
+				ottm.Logo.init('#logo');
 			},
 
 			headers: function() {
 				Core.getVars.headerClasses = vars.elHeader?.className || '';
 				Core.getVars.headerWrapClasses = vars.elHeaderWrap?.className || '';
-				CNVS.Headers.init('#header');
+				ottm.Headers.init('#header');
 			},
 
 			menus: function() {
-				CNVS.Menus.init('#header');
+				ottm.Menus.init('#header');
 			},
 
 			pageMenu: function() {
-				CNVS.PageMenu && CNVS.PageMenu.init('#page-menu');
+				ottm.PageMenu && ottm.PageMenu.init('#page-menu');
 			},
 
 			sliderDimensions: function() {
-				CNVS.SliderDimensions && CNVS.SliderDimensions.init('.slider-element');
+				ottm.SliderDimensions && ottm.SliderDimensions.init('.slider-element');
 			},
 
 			sliderMenuClass: function() {
-				CNVS.SliderMenuClass && CNVS.SliderMenuClass.init('.transparent-header + .swiper_wrapper,.swiper_wrapper + .transparent-header,.transparent-header + .revslider-wrap,.revslider-wrap + .transparent-header');
+				ottm.SliderMenuClass && ottm.SliderMenuClass.init('.transparent-header + .swiper_wrapper,.swiper_wrapper + .transparent-header,.transparent-header + .revslider-wrap,.revslider-wrap + .transparent-header');
 			},
 
 			topSearch: function() {
-				CNVS.TopSearch.init('#top-search-trigger');
+				ottm.TopSearch.init('#top-search-trigger');
 			},
 
 			topCart: function() {
-				CNVS.TopCart.init('#top-cart');
+				ottm.TopCart.init('#top-cart');
 			},
 
 			sidePanel: function() {
-				CNVS.SidePanel && CNVS.SidePanel.init('#side-panel');
+				ottm.SidePanel && ottm.SidePanel.init('#side-panel');
 			},
 
 			adaptiveColorScheme: function() {
-				CNVS.AdaptiveColorScheme && CNVS.AdaptiveColorScheme.init('.adaptive-color-scheme');
+				ottm.AdaptiveColorScheme && ottm.AdaptiveColorScheme.init('.adaptive-color-scheme');
 			},
 
 			portfolioAjax: function() {
-				CNVS.PortfolioAjax && CNVS.PortfolioAjax.init('.portfolio-ajax');
+				ottm.PortfolioAjax && ottm.PortfolioAjax.init('.portfolio-ajax');
 			},
 
 			cursor: function() {
 				if( vars.customCursor ) {
-					CNVS.Cursor && CNVS.Cursor.init('body');
+					ottm.Cursor && ottm.Cursor.init('body');
 				}
 			},
 
@@ -836,7 +836,7 @@ if( typeof jQuery !== 'undefined' ) {
 						el.getAttributeNames().some( function(text) {
 							if( text.includes('data-bs') ) {
 								notExec = false;
-								CNVS.Bootstrap && CNVS.Bootstrap.init('body');
+								ottm.Bootstrap && ottm.Bootstrap.init('body');
 								return true;
 							}
 						});
@@ -845,229 +845,229 @@ if( typeof jQuery !== 'undefined' ) {
 			},
 
 			resizeVideos: function(element) {
-				CNVS.ResizeVideos && CNVS.ResizeVideos.init(element ? element : 'iframe[src*="youtube"],iframe[src*="vimeo"],iframe[src*="dailymotion"],iframe[src*="maps.google.com"],iframe[src*="google.com/maps"]');
+				ottm.ResizeVideos && ottm.ResizeVideos.init(element ? element : 'iframe[src*="youtube"],iframe[src*="vimeo"],iframe[src*="dailymotion"],iframe[src*="maps.google.com"],iframe[src*="google.com/maps"]');
 			},
 
 			pageTransition: function() {
 				if( vars.pageTransition ) {
-					CNVS.PageTransition && CNVS.PageTransition.init('body');
+					ottm.PageTransition && ottm.PageTransition.init('body');
 				}
 			},
 
 			lazyLoad: function(element) {
-				CNVS.LazyLoad && CNVS.LazyLoad.init(element ? element : '.lazy:not(.lazy-loaded)');
+				ottm.LazyLoad && ottm.LazyLoad.init(element ? element : '.lazy:not(.lazy-loaded)');
 			},
 
 			dataClasses: function() {
-				CNVS.DataClasses && CNVS.DataClasses.init('[data-class]');
+				ottm.DataClasses && ottm.DataClasses.init('[data-class]');
 			},
 
 			dataHeights: function() {
-				CNVS.DataHeights && CNVS.DataHeights.init('[data-height-xxl],[data-height-xl],[data-height-lg],[data-height-md],[data-height-sm],[data-height-xs]');
+				ottm.DataHeights && ottm.DataHeights.init('[data-height-xxl],[data-height-xl],[data-height-lg],[data-height-md],[data-height-sm],[data-height-xs]');
 			},
 
 			lightbox: function(element) {
-				CNVS.Lightbox && CNVS.Lightbox.init(element ? element : '[data-lightbox]');
+				ottm.Lightbox && ottm.Lightbox.init(element ? element : '[data-lightbox]');
 			},
 
 			modal: function(element) {
-				CNVS.Modal && CNVS.Modal.init(element ? element : '.modal-on-load');
+				ottm.Modal && ottm.Modal.init(element ? element : '.modal-on-load');
 			},
 
 			animations: function(element) {
-				CNVS.Animations && CNVS.Animations.init(element ? element : '[data-animate]');
+				ottm.Animations && ottm.Animations.init(element ? element : '[data-animate]');
 			},
 
 			hoverAnimations: function(element) {
-				CNVS.HoverAnimations && CNVS.HoverAnimations.init(element ? element : '[data-hover-animate]');
+				ottm.HoverAnimations && ottm.HoverAnimations.init(element ? element : '[data-hover-animate]');
 			},
 
 			gridInit: function(element) {
-				CNVS.Grid && CNVS.Grid.init(element ? element : '.grid-container');
+				ottm.Grid && ottm.Grid.init(element ? element : '.grid-container');
 			},
 
 			filterInit: function(element) {
-				CNVS.Filter && CNVS.Filter.init(element ? element : '.grid-filter,.custom-filter');
+				ottm.Filter && ottm.Filter.init(element ? element : '.grid-filter,.custom-filter');
 			},
 
 			canvasSlider: function(element) {
-				CNVS.CanvasSlider && CNVS.CanvasSlider.init(element ? element : '.swiper_wrapper');
+				ottm.CanvasSlider && ottm.CanvasSlider.init(element ? element : '.swiper_wrapper');
 			},
 
 			sliderParallax: function() {
-				CNVS.SliderParallax && CNVS.SliderParallax.init('.slider-parallax');
+				ottm.SliderParallax && ottm.SliderParallax.init('.slider-parallax');
 			},
 
 			flexSlider: function(element) {
-				CNVS.FlexSlider && CNVS.FlexSlider.init(element ? element : '.fslider');
+				ottm.FlexSlider && ottm.FlexSlider.init(element ? element : '.fslider');
 			},
 
 			html5Video: function(element) {
-				CNVS.FullVideo && CNVS.FullVideo.init(element ? element : '.video-wrap');
+				ottm.FullVideo && ottm.FullVideo.init(element ? element : '.video-wrap');
 			},
 
 			youtubeBgVideo: function(element) {
-				CNVS.YoutubeBG && CNVS.YoutubeBG.init(element ? element : '.yt-bg-player');
+				ottm.YoutubeBG && ottm.YoutubeBG.init(element ? element : '.yt-bg-player');
 			},
 
 			toggle: function(element) {
-				CNVS.Toggle && CNVS.Toggle.init(element ? element : '.toggle');
+				ottm.Toggle && ottm.Toggle.init(element ? element : '.toggle');
 			},
 
 			accordion: function(element) {
-				CNVS.Accordion && CNVS.Accordion.init(element ? element : '.accordion');
+				ottm.Accordion && ottm.Accordion.init(element ? element : '.accordion');
 			},
 
 			counter: function(element) {
-				CNVS.Counter && CNVS.Counter.init(element ? element : '.counter');
+				ottm.Counter && ottm.Counter.init(element ? element : '.counter');
 			},
 
 			countdown: function(element) {
-				CNVS.Countdown && CNVS.Countdown.init(element ? element : '.countdown');
+				ottm.Countdown && ottm.Countdown.init(element ? element : '.countdown');
 			},
 
 			gmap: function(element) {
-				CNVS.GoogleMaps && CNVS.GoogleMaps.init(element ? element : '.gmap');
+				ottm.GoogleMaps && ottm.GoogleMaps.init(element ? element : '.gmap');
 			},
 
 			roundedSkills: function(element) {
-				CNVS.RoundedSkills && CNVS.RoundedSkills.init(element ? element : '.rounded-skill');
+				ottm.RoundedSkills && ottm.RoundedSkills.init(element ? element : '.rounded-skill');
 			},
 
 			progress: function(element) {
-				CNVS.Progress && CNVS.Progress.init(element ? element : '.skill-progress');
+				ottm.Progress && ottm.Progress.init(element ? element : '.skill-progress');
 			},
 
 			twitterFeed: function(element) {
-				CNVS.Twitter && CNVS.Twitter.init(element ? element : '.twitter-feed');
+				ottm.Twitter && ottm.Twitter.init(element ? element : '.twitter-feed');
 			},
 
 			flickrFeed: function(element) {
-				CNVS.Flickr && CNVS.Flickr.init(element ? element : '.flickr-feed');
+				ottm.Flickr && ottm.Flickr.init(element ? element : '.flickr-feed');
 			},
 
 			instagram: function(element) {
-				CNVS.Instagram && CNVS.Instagram.init(element ? element : '.instagram-photos');
+				ottm.Instagram && ottm.Instagram.init(element ? element : '.instagram-photos');
 			},
 
 			// Dribbble Pending
 
 			navTree: function(element) {
-				CNVS.NavTree && CNVS.NavTree.init(element ? element : '.nav-tree');
+				ottm.NavTree && ottm.NavTree.init(element ? element : '.nav-tree');
 			},
 
 			carousel: function(element) {
-				CNVS.Carousel && CNVS.Carousel.init(element ? element : '.carousel-widget');
+				ottm.Carousel && ottm.Carousel.init(element ? element : '.carousel-widget');
 			},
 
 			masonryThumbs: function(element) {
-				CNVS.MasonryThumbs && CNVS.MasonryThumbs.init(element ? element : '.masonry-thumbs');
+				ottm.MasonryThumbs && ottm.MasonryThumbs.init(element ? element : '.masonry-thumbs');
 			},
 
 			notifications: function(element) {
-				CNVS.Notifications && CNVS.Notifications.init(element ? element : false);
+				ottm.Notifications && ottm.Notifications.init(element ? element : false);
 			},
 
 			textRotator: function(element) {
-				CNVS.TextRotator && CNVS.TextRotator.init(element ? element : '.text-rotater');
+				ottm.TextRotator && ottm.TextRotator.init(element ? element : '.text-rotater');
 			},
 
 			onePage: function(element) {
-				CNVS.OnePage && CNVS.OnePage.init(element ? element : '[data-scrollto],.one-page-menu');
+				ottm.OnePage && ottm.OnePage.init(element ? element : '[data-scrollto],.one-page-menu');
 			},
 
 			ajaxForm: function(element) {
-				CNVS.AjaxForm && CNVS.AjaxForm.init(element ? element : '.form-widget');
+				ottm.AjaxForm && ottm.AjaxForm.init(element ? element : '.form-widget');
 			},
 
 			subscribe: function(element) {
-				CNVS.Subscribe && CNVS.Subscribe.init(element ? element : '.subscribe-widget');
+				ottm.Subscribe && ottm.Subscribe.init(element ? element : '.subscribe-widget');
 			},
 
 			conditional: function(element) {
-				CNVS.Conditional && CNVS.Conditional.init(element ? element : '.form-group[data-condition],.form-group[data-conditions]');
+				ottm.Conditional && ottm.Conditional.init(element ? element : '.form-group[data-condition],.form-group[data-conditions]');
 			},
 
 			shapeDivider: function(element) {
-				CNVS.ShapeDivider && CNVS.ShapeDivider.init(element ? element : '.shape-divider');
+				ottm.ShapeDivider && ottm.ShapeDivider.init(element ? element : '.shape-divider');
 			},
 
 			stickySidebar: function(element) {
-				CNVS.StickySidebar && CNVS.StickySidebar.init(element ? element : '.sticky-sidebar-wrap');
+				ottm.StickySidebar && ottm.StickySidebar.init(element ? element : '.sticky-sidebar-wrap');
 			},
 
 			cookies: function(element) {
-				CNVS.Cookies && CNVS.Cookies.init(element ? element : '.gdpr-settings,[data-cookies]');
+				ottm.Cookies && ottm.Cookies.init(element ? element : '.gdpr-settings,[data-cookies]');
 			},
 
 			quantity: function(element) {
-				CNVS.Quantity && CNVS.Quantity.init(element ? element : '.quantity');
+				ottm.Quantity && ottm.Quantity.init(element ? element : '.quantity');
 			},
 
 			readmore: function(element) {
-				CNVS.ReadMore && CNVS.ReadMore.init(element ? element : '[data-readmore]');
+				ottm.ReadMore && ottm.ReadMore.init(element ? element : '[data-readmore]');
 			},
 
 			pricingSwitcher: function(element) {
-				CNVS.PricingSwitcher && CNVS.PricingSwitcher.init(element ? element : '.pricing-tenure-switcher');
+				ottm.PricingSwitcher && ottm.PricingSwitcher.init(element ? element : '.pricing-tenure-switcher');
 			},
 
 			ajaxTrigger: function(element) {
-				CNVS.AjaxTrigger && CNVS.AjaxTrigger.init(element ? element : '[data-ajax-loader]');
+				ottm.AjaxTrigger && ottm.AjaxTrigger.init(element ? element : '[data-ajax-loader]');
 			},
 
 			videoFacade: function(element) {
-				CNVS.VideoFacade && CNVS.VideoFacade.init(element ? element : '.video-facade');
+				ottm.VideoFacade && ottm.VideoFacade.init(element ? element : '.video-facade');
 			},
 
 			schemeToggle: function(element) {
-				CNVS.SchemeToggle && CNVS.SchemeToggle.init(element ? element : '.body-scheme-toggle');
+				ottm.SchemeToggle && ottm.SchemeToggle.init(element ? element : '.body-scheme-toggle');
 			},
 
 			clipboardCopy: function(element) {
-				CNVS.Clipboard && CNVS.Clipboard.init(element ? element : '.clipboard-copy');
+				ottm.Clipboard && ottm.Clipboard.init(element ? element : '.clipboard-copy');
 			},
 
 			codeHighlight: function(element) {
-				CNVS.CodeHighlight && CNVS.CodeHighlight.init(element ? element : '.code-highlight');
+				ottm.CodeHighlight && ottm.CodeHighlight.init(element ? element : '.code-highlight');
 			},
 
 			tips: function() {
 				if( vars.tips ) {
-					CNVS.Tips && CNVS.Tips.init('body');
+					ottm.Tips && ottm.Tips.init('body');
 				}
 			},
 
 			textSplitter: function(element) {
-				CNVS.TextSplitter && CNVS.TextSplitter.init(element ? element : '.text-splitter');
+				ottm.TextSplitter && ottm.TextSplitter.init(element ? element : '.text-splitter');
 			},
 
 			mediaActions: function(element) {
-				CNVS.MediaActions && CNVS.MediaActions.init(element ? element : '.media-wrap');
+				ottm.MediaActions && ottm.MediaActions.init(element ? element : '.media-wrap');
 			},
 
 			viewportDetect: function(element) {
-				CNVS.ViewportDetect && CNVS.ViewportDetect.init(element ? element : '.viewport-detect');
+				ottm.ViewportDetect && ottm.ViewportDetect.init(element ? element : '.viewport-detect');
 			},
 
 			scrollDetect: function(element) {
-				CNVS.ScrollDetect && CNVS.ScrollDetect.init(element ? element : '.scroll-detect');
+				ottm.ScrollDetect && ottm.ScrollDetect.init(element ? element : '.scroll-detect');
 			},
 
 			fontSizer: function(element) {
-				CNVS.FontSizer && CNVS.FontSizer.init(element ? element : '.font-sizer');
+				ottm.FontSizer && ottm.FontSizer.init(element ? element : '.font-sizer');
 			},
 
 			hover3D: function(element) {
-				CNVS.Hover3D && CNVS.Hover3D.init(element ? element : '.hover-3d');
+				ottm.Hover3D && ottm.Hover3D.init(element ? element : '.hover-3d');
 			},
 
 			buttons: function(element) {
-				CNVS.Buttons && CNVS.Buttons.init(element ? element : '.button-text-effect');
+				ottm.Buttons && ottm.Buttons.init(element ? element : '.button-text-effect');
 			},
 
 			bsComponents: function(element) {
-				CNVS.BSComponents && CNVS.BSComponents.init(element ? element : '[data-bs-toggle="tooltip"],[data-bs-toggle="popover"],[data-bs-toggle="tab"],[data-bs-toggle="pill"],.style-msg');
+				ottm.BSComponents && ottm.BSComponents.init(element ? element : '[data-bs-toggle="tooltip"],[data-bs-toggle="popover"],[data-bs-toggle="tab"],[data-bs-toggle="pill"],.style-msg');
 			}
 		};
 	}();
@@ -1122,7 +1122,7 @@ if( typeof jQuery !== 'undefined' ) {
 				Core.run(vars.resizers);
 
 				Custom.onResize();
-				Core.addEvent( window, 'cnvsResize' );
+				Core.addEvent( window, 'ottmResize' );
 			}
 		};
 	}();
@@ -1191,7 +1191,7 @@ if( typeof jQuery !== 'undefined' ) {
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
-	( global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.CNVS = factory() );
+	( global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.ottm = factory() );
 } (this, (function() {
 	// USE STRICT
 	"use strict";
@@ -1789,7 +1789,7 @@ if( typeof jQuery !== 'undefined' ) {
 					return true;
 				}
 
-				var menuHoverDelay = getComputedStyle(__core.getVars.elHeader).getPropertyValue('--cnvs-primary-menu-submenu-display-speed') || 666;
+				var menuHoverDelay = getComputedStyle(__core.getVars.elHeader).getPropertyValue('--ottm-primary-menu-submenu-display-speed') || 666;
 
 				if( !isNaN(menuHoverDelay.split('ms')[0]) ) {
 					menuHoverDelay = menuHoverDelay.split('ms')[0];
@@ -2092,7 +2092,7 @@ if( typeof jQuery !== 'undefined' ) {
 				}
 
 				if( __core.getVars.elHeader.classList.contains('floating-header') ) {
-					var floatingHeaderPadding = getComputedStyle(document.querySelector('#header')).getPropertyValue('--cnvs-header-floating-padding');
+					var floatingHeaderPadding = getComputedStyle(document.querySelector('#header')).getPropertyValue('--ottm-header-floating-padding');
 					document.querySelectorAll('.mega-menu:not(.mega-menu-full):not(.mega-menu-small) .mega-menu-content').forEach( function(el) {
 						el.style.width = (headerWidth + (Number(floatingHeaderPadding.split('px')[0]) *2)) + 'px';
 					});
@@ -2202,12 +2202,12 @@ if( typeof jQuery !== 'undefined' ) {
 					if( __core.getVars.elHeader.classList.contains('no-sticky') ) {
 						headerHeight = 0;
 					} else if( __core.getVars.elHeader.getAttribute('data-sticky-shrink') == 'false' ) {
-						headerHeight = getComputedStyle(__core.getVars.elHeader).getPropertyValue('--cnvs-header-height').split('px')[0];
+						headerHeight = getComputedStyle(__core.getVars.elHeader).getPropertyValue('--ottm-header-height').split('px')[0];
 					} else {
-						headerHeight = getComputedStyle(__core.getVars.elHeader).getPropertyValue('--cnvs-header-height-shrink').split('px')[0];
+						headerHeight = getComputedStyle(__core.getVars.elHeader).getPropertyValue('--ottm-header-height-shrink').split('px')[0];
 					}
 
-					pageMenu.style.setProperty("--cnvs-page-submenu-sticky-offset", headerHeight+'px');
+					pageMenu.style.setProperty("--ottm-page-submenu-sticky-offset", headerHeight+'px');
 
 					setTimeout(function() {
 						__core.getVars.pageMenuOffset = __core.offset(pageMenu).top - headerHeight;
@@ -2814,9 +2814,9 @@ if( typeof jQuery !== 'undefined' ) {
 				init: function(selector) {
 					__core.initFunction({ class: 'has-plugin-cursor', event: 'pluginCursorReady' });
 
-					var cursor = document.querySelector('.cnvs-cursor');
-					var cursorFollower = document.querySelector('.cnvs-cursor-follower');
-					var cursorDot = document.querySelector('.cnvs-cursor-dot');
+					var cursor = document.querySelector('.ottm-cursor');
+					var cursorFollower = document.querySelector('.ottm-cursor-follower');
+					var cursorDot = document.querySelector('.ottm-cursor-dot');
 
 					var addCursorEl = function(selector, parent) {
 						var el = document.createElement('div');
@@ -2827,15 +2827,15 @@ if( typeof jQuery !== 'undefined' ) {
 					};
 
 					if( !cursor ) {
-						cursor = addCursorEl('.cnvs-cursor', __core.getVars.elWrapper);
+						cursor = addCursorEl('.ottm-cursor', __core.getVars.elWrapper);
 					}
 
 					if( !cursorFollower ) {
-						cursorFollower = addCursorEl('.cnvs-cursor-follower', cursor);
+						cursorFollower = addCursorEl('.ottm-cursor-follower', cursor);
 					}
 
 					if( !cursorDot ) {
-						cursorDot = addCursorEl('.cnvs-cursor-dot', cursor);
+						cursorDot = addCursorEl('.ottm-cursor-dot', cursor);
 					}
 
 					var onMouseMove = function(event) {
@@ -2846,21 +2846,21 @@ if( typeof jQuery !== 'undefined' ) {
 
 					document.querySelectorAll('a,button').forEach( function(el) {
 						el.addEventListener('mouseenter', function() {
-							cursor.classList.add('cnvs-cursor-action');
+							cursor.classList.add('ottm-cursor-action');
 						});
 
 						el.addEventListener('mouseleave', function() {
-							cursor.classList.remove('cnvs-cursor-action');
+							cursor.classList.remove('ottm-cursor-action');
 						});
 					});
 
 					document.querySelectorAll('.cursor-disable').forEach( function(el) {
 						el.addEventListener('mouseenter', function() {
-							cursor.classList.add('cnvs-cursor-disabled');
+							cursor.classList.add('ottm-cursor-disabled');
 						});
 
 						el.addEventListener('mouseleave', function() {
-							cursor.classList.remove('cnvs-cursor-disabled');
+							cursor.classList.remove('ottm-cursor-disabled');
 						});
 					});
 				}
@@ -2974,9 +2974,9 @@ if( typeof jQuery !== 'undefined' ) {
 
 					if( elLoaderColor ) {
 						if( elLoaderColor == 'theme' ) {
-							elLoaderCSSVar = ' style="--cnvs-loader-color:var(--cnvs-themecolor);"';
+							elLoaderCSSVar = ' style="--ottm-loader-color:var(--ottm-themecolor);"';
 						} else {
-							elLoaderCSSVar = ' style="--cnvs-loader-color:'+elLoaderColor+';"';
+							elLoaderCSSVar = ' style="--ottm-loader-color:'+elLoaderColor+';"';
 						}
 					}
 
@@ -3034,9 +3034,9 @@ if( typeof jQuery !== 'undefined' ) {
 					}
 
 					if( elSpeedIn ) {
-						__core.getVars.elWrapper.style.setProperty('--cnvs-animate-duration', Number(elSpeedIn)+'ms');
+						__core.getVars.elWrapper.style.setProperty('--ottm-animate-duration', Number(elSpeedIn)+'ms');
 						if( elAnimIn == 'fadeIn' ) {
-							pageTransition.style.setProperty('--cnvs-animate-duration', Number(elSpeedIn)+'ms');
+							pageTransition.style.setProperty('--ottm-animate-duration', Number(elSpeedIn)+'ms');
 						}
 					}
 
@@ -3067,7 +3067,7 @@ if( typeof jQuery !== 'undefined' ) {
 							}, 333);
 
 							setTimeout(function() {
-								__core.getVars.elWrapper.style.removeProperty('--cnvs-animate-duration');
+								__core.getVars.elWrapper.style.removeProperty('--ottm-animate-duration');
 							}, 666);
 						};
 
@@ -3457,7 +3457,7 @@ if( typeof jQuery !== 'undefined' ) {
 						selector.each( function(){
 							var element = jQuery(this),
 								elTarget = element.attr('data-target'),
-								elTargetValue = '__cnvs_' + elTarget.split('#')[1],
+								elTargetValue = '__ottm_' + elTarget.split('#')[1],
 								elDelay = element.attr('data-delay') || 500,
 								elTimeout = element.attr('data-timeout'),
 								elAnimateIn = element.attr('data-animate-in'),
@@ -4072,7 +4072,7 @@ if( typeof jQuery !== 'undefined' ) {
 								elementNavPrev = element.querySelector('.slider-arrow-left'),
 								elementScollBar = element.querySelector('.swiper-scrollbar');
 
-							var cnvsSwiper = new Swiper( element.querySelector('.swiper-parent'), {
+							var ottmSwiper = new Swiper( element.querySelector('.swiper-parent'), {
 								direction: elDirection,
 								speed: Number( elSpeed ),
 								autoplay: {
@@ -4251,9 +4251,9 @@ if( typeof jQuery !== 'undefined' ) {
 
 							if( slideNumberCurrent ) {
 								if( elLoop == true ) {
-									slideNumberCurrent.innerHTML = cnvsSwiper.realIndex + 1;
+									slideNumberCurrent.innerHTML = ottmSwiper.realIndex + 1;
 								} else {
-									slideNumberCurrent.innerHTML = cnvsSwiper.activeIndex + 1;
+									slideNumberCurrent.innerHTML = ottmSwiper.activeIndex + 1;
 								}
 							}
 
@@ -5291,7 +5291,7 @@ if( typeof jQuery !== 'undefined' ) {
 
 							elSpeed = Number(elSpeed) + 'ms';
 
-							elBar.style.setProperty( '--cnvs-progress-speed', elSpeed );
+							elBar.style.setProperty( '--ottm-progress-speed', elSpeed );
 
 							var observer = new IntersectionObserver( function(entries, observer){
 								entries.forEach( function(entry) {
@@ -5912,7 +5912,7 @@ if( typeof jQuery !== 'undefined' ) {
 							toast.hide();
 
 							jQuery(elTarget).get(0).addEventListener('hidden.bs.toast', function() {
-								CNVS.Notifications.init( selector );
+								ottm.Notifications.init( selector );
 							});
 						}
 
@@ -7174,8 +7174,8 @@ if( typeof jQuery !== 'undefined' ) {
 					}
 
 					if( elPersist == 'true' ) {
-						__core.cookie.set('__cnvs_cookies_accept', '');
-						__core.cookie.remove('__cnvs_cookies_decline');
+						__core.cookie.set('__ottm_cookies_accept', '');
+						__core.cookie.remove('__ottm_cookies_decline');
 					}
 
 					if( cookieBar ) {
@@ -7199,7 +7199,7 @@ if( typeof jQuery !== 'undefined' ) {
 
 						cookieBar.style[elDirection] = elSize + 'px';
 
-						if( __core.cookie.get('__cnvs_cookies_accept') != '1' ) {
+						if( __core.cookie.get('__ottm_cookies_accept') != '1' ) {
 							setTimeout( function() {
 								cookieBar.style.display = 'block';
 								cookieBar.style.pointerEvents = 'auto';
@@ -7227,8 +7227,8 @@ if( typeof jQuery !== 'undefined' ) {
 									};
 								}
 
-								__core.cookie.set('__cnvs_cookies_accept', '1', elExpire);
-								__core.cookie.set('__cnvs_cookies_decline', '0', elExpire);
+								__core.cookie.set('__ottm_cookies_accept', '1', elExpire);
+								__core.cookie.set('__ottm_cookies_decline', '0', elExpire);
 
 								_resetPage(btn);
 							};
@@ -7249,20 +7249,20 @@ if( typeof jQuery !== 'undefined' ) {
 									};
 								}
 
-								__core.cookie.set('__cnvs_cookies_accept', '0', elExpire);
-								__core.cookie.set('__cnvs_cookies_decline', '1', elExpire);
+								__core.cookie.set('__ottm_cookies_accept', '0', elExpire);
+								__core.cookie.set('__ottm_cookies_decline', '1', elExpire);
 
 								_resetPage(btn);
 							};
 						});
 					}
 
-					var acceptCookies = __core.cookie.get('__cnvs_cookies_accept'),
-						declineCookies = __core.cookie.get('__cnvs_cookies_decline'),
+					var acceptCookies = __core.cookie.get('__ottm_cookies_accept'),
+						declineCookies = __core.cookie.get('__ottm_cookies_decline'),
 						cookiesAllowed = (acceptCookies || acceptCookies != '0') && (!declineCookies || declineCookies != '1');
 
 					elSwitches?.forEach( function(el) {
-						var elCookie = '__cnvs_gdpr_' + el.getAttribute('data-cookie-name'),
+						var elCookie = '__ottm_gdpr_' + el.getAttribute('data-cookie-name'),
 							getCookie = __core.cookie.get(elCookie);
 
 						if( typeof getCookie !== 'undefined' && getCookie == '1' && cookiesAllowed ) {
@@ -7277,11 +7277,11 @@ if( typeof jQuery !== 'undefined' ) {
 							btn.onclick = function(e) {
 								e.preventDefault();
 
-								__core.cookie.set('__cnvs_cookies_accept', '1', elExpire);
-								__core.cookie.set('__cnvs_cookies_decline', '0', elExpire);
+								__core.cookie.set('__ottm_cookies_accept', '1', elExpire);
+								__core.cookie.set('__ottm_cookies_decline', '0', elExpire);
 
 								elSwitches.forEach( function(el) {
-									var elCookie = '__cnvs_gdpr_' + el.getAttribute( 'data-cookie-name' );
+									var elCookie = '__ottm_gdpr_' + el.getAttribute( 'data-cookie-name' );
 
 									if( el.checked == true ) {
 										__core.cookie.set(elCookie, '1', elExpire);
@@ -7300,7 +7300,7 @@ if( typeof jQuery !== 'undefined' ) {
 					}
 
 					document.querySelectorAll('.gdpr-container')?.forEach( function(element) {
-						var elCookie = '__cnvs_gdpr_' + element.getAttribute('data-cookie-name'),
+						var elCookie = '__ottm_gdpr_' + element.getAttribute('data-cookie-name'),
 							elContent = element.getAttribute('data-cookie-content'),
 							elContentAjax = element.getAttribute('data-cookie-content-ajax'),
 							getCookie = __core.cookie.get(elCookie);
@@ -7788,7 +7788,7 @@ if( typeof jQuery !== 'undefined' ) {
 
 					// Set Storage
 					if( remember == "true" && action ) {
-						localStorage.setItem('cnvsBodyColorScheme', 'dark');
+						localStorage.setItem('ottmBodyColorScheme', 'dark');
 					}
 
 					if( 'checkbox' == toggleType && sibling ) {
@@ -7805,7 +7805,7 @@ if( typeof jQuery !== 'undefined' ) {
 
 					// Remove Storage
 					if( remember == "true" && action ) {
-						localStorage.removeItem('cnvsBodyColorScheme');
+						localStorage.removeItem('ottmBodyColorScheme');
 					}
 
 					if( 'checkbox' == toggleType && sibling ) {
@@ -7979,7 +7979,7 @@ if( typeof jQuery !== 'undefined' ) {
 							return false;
 						}
 
-						if( typeof cnvsTips === "undefined" || cnvsTips.length < 1 ) {
+						if( typeof ottmTips === "undefined" || ottmTips.length < 1 ) {
 							return false;
 						}
 
@@ -7991,22 +7991,22 @@ if( typeof jQuery !== 'undefined' ) {
 							return false;
 						}
 
-						var randomIndex = Math.floor(Math.random() * cnvsTips.length);
-						var randomTip = cnvsTips[randomIndex];
+						var randomIndex = Math.floor(Math.random() * ottmTips.length);
+						var randomTip = ottmTips[randomIndex];
 
-						var tipsEl = document.getElementById('cnvs-tips-element');
+						var tipsEl = document.getElementById('ottm-tips-element');
 
 						if( !tipsEl ) {
-							var tipsHTML = '<div class="position-fixed bottom-0 end-0 p-3 text-start" style="z-index: 699;"><div id="cnvs-tips-element" data-notify-trigger="custom" data-notify-target="#cnvs-tips-element" data-notify-timeout="7777" class="toast hide p-3" role="alert" aria-live="assertive" aria-atomic="true" style="--bs-toast-max-width:400px;--bs-toast-bg: rgba(var(--bs-body-bg-rgb),.925);"><div class="toast-header bg-transparent border-0 mb-0 align-items-center pb-1"><h5 id="cnvs-tips-element-title" class="me-auto fs-6 fw-semibold mb-0"></h5><button type="button" class="btn-close me-1" data-bs-dismiss="toast" aria-label="Close"></button></div><div id="cnvs-tips-element-content" class="toast-body small pt-1"></div><a href="#" id="cnvs-tips-element-disable" class="text-muted text-decoration-underline op-06 h-op-08 px-2 pb-2 ms-1 mt-1 d-inline-block" data-cookies="true" style="font-size:.75rem;text-underline-offset:3px;">Disable Random Tips</a></div></div>';
+							var tipsHTML = '<div class="position-fixed bottom-0 end-0 p-3 text-start" style="z-index: 699;"><div id="ottm-tips-element" data-notify-trigger="custom" data-notify-target="#ottm-tips-element" data-notify-timeout="7777" class="toast hide p-3" role="alert" aria-live="assertive" aria-atomic="true" style="--bs-toast-max-width:400px;--bs-toast-bg: rgba(var(--bs-body-bg-rgb),.925);"><div class="toast-header bg-transparent border-0 mb-0 align-items-center pb-1"><h5 id="ottm-tips-element-title" class="me-auto fs-6 fw-semibold mb-0"></h5><button type="button" class="btn-close me-1" data-bs-dismiss="toast" aria-label="Close"></button></div><div id="ottm-tips-element-content" class="toast-body small pt-1"></div><a href="#" id="ottm-tips-element-disable" class="text-muted text-decoration-underline op-06 h-op-08 px-2 pb-2 ms-1 mt-1 d-inline-block" data-cookies="true" style="font-size:.75rem;text-underline-offset:3px;">Disable Random Tips</a></div></div>';
 
 							__core.getVars.elWrapper.insertAdjacentHTML('beforeend', tipsHTML);
-							tipsEl = document.getElementById('cnvs-tips-element');
+							tipsEl = document.getElementById('ottm-tips-element');
 						}
 
-						var tipsTitle = document.getElementById('cnvs-tips-element-title');
-						var tipsContent = document.getElementById('cnvs-tips-element-content');
-						var tipsDisable = document.getElementById('cnvs-tips-element-disable');
-						var tipsEnable = document.getElementById('cnvs-tips-element-enable');
+						var tipsTitle = document.getElementById('ottm-tips-element-title');
+						var tipsContent = document.getElementById('ottm-tips-element-content');
+						var tipsDisable = document.getElementById('ottm-tips-element-disable');
+						var tipsEnable = document.getElementById('ottm-tips-element-enable');
 
 						tipsTitle.innerHTML = randomTip.title;
 						tipsContent.innerHTML = randomTip.content;
@@ -8015,10 +8015,10 @@ if( typeof jQuery !== 'undefined' ) {
 							tipsDisable.onclick = function(e) {
 								e.preventDefault();
 
-								var tipsToast = bootstrap.Toast.getOrCreateInstance(document.getElementById('cnvs-tips-element'));
+								var tipsToast = bootstrap.Toast.getOrCreateInstance(document.getElementById('ottm-tips-element'));
 								tipsToast.hide();
 
-								__core.cookie.set('__cnvs_tips_cookies', 'hide', 1);
+								__core.cookie.set('__ottm_tips_cookies', 'hide', 1);
 							};
 						}
 
@@ -8026,7 +8026,7 @@ if( typeof jQuery !== 'undefined' ) {
 							tipsEnable.onclick = function(e) {
 								e.preventDefault();
 
-								__core.cookie.remove('__cnvs_tips_cookies');
+								__core.cookie.remove('__ottm_tips_cookies');
 								window.location.reload();
 							};
 						}
@@ -8034,7 +8034,7 @@ if( typeof jQuery !== 'undefined' ) {
 						(function(){
 							var enabled = true;
 
-							if( __core.cookie.get('__cnvs_tips_cookies' ) == 'hide' ) {
+							if( __core.cookie.get('__ottm_tips_cookies' ) == 'hide' ) {
 								enabled = false;
 							}
 
@@ -8079,7 +8079,7 @@ if( typeof jQuery !== 'undefined' ) {
 				el.innerHTML = type == 'letter' ? _letters(el) : _words(el);
 
 				el.querySelectorAll('span')?.forEach( function(elem, index) {
-					elem.style.setProperty('--cnvs-split-index', index + 1);
+					elem.style.setProperty('--ottm-split-index', index + 1);
 				});
 			};
 
@@ -8369,10 +8369,10 @@ if( typeof jQuery !== 'undefined' ) {
 							params.elem.classList.remove('scroll-detect-inview-end');
 						}
 
-						params.elem.style.setProperty('--cnvs-scroll-percent', percent);
-						params.elem.style.setProperty('--cnvs-scroll-ratio', ratio);
-						params.elem.style.setProperty('--cnvs-scroll-start', start);
-						params.elem.style.setProperty('--cnvs-scroll-end', end);
+						params.elem.style.setProperty('--ottm-scroll-percent', percent);
+						params.elem.style.setProperty('--ottm-scroll-ratio', ratio);
+						params.elem.style.setProperty('--ottm-scroll-start', start);
+						params.elem.style.setProperty('--ottm-scroll-end', end);
 					});
 				};
 
@@ -8458,19 +8458,19 @@ if( typeof jQuery !== 'undefined' ) {
 								params.offset = elemOffset;
 
 								if( includeWidth == 'true' || (elem.classList.contains('parallax') && elem.getAttribute('data-parallax-direction') == 'horizontal') ) {
-									elem.style.setProperty('--cnvs-scroll-width', params.width);
+									elem.style.setProperty('--ottm-scroll-width', params.width);
 								}
 
 								if( includeHeight == 'true' || (elem.classList.contains('parallax') && elem.getAttribute('data-parallax-direction') != 'horizontal') ) {
-									elem.style.setProperty('--cnvs-scroll-height', params.height);
+									elem.style.setProperty('--ottm-scroll-height', params.height);
 								}
 
 								if( includeOffset == 'true' ) {
-									elem.style.setProperty('--cnvs-scroll-offset', params.offset);
+									elem.style.setProperty('--ottm-scroll-offset', params.offset);
 								}
 
 								if( !isNaN(parallaxRatio) ) {
-									elem.style.setProperty('--cnvs-parallax-ratio', parallaxRatio);
+									elem.style.setProperty('--ottm-parallax-ratio', parallaxRatio);
 								}
 
 								_percent(params);

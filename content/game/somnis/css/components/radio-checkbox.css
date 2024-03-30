@@ -38,7 +38,7 @@
 .radio-style-2-label:before,
 .radio-style-3-label:before { border-radius: 50%; }
 
-.checkbox-style:checked + .checkbox-style-1-label:before { background: var(--cnvs-themecolor); }
+.checkbox-style:checked + .checkbox-style-1-label:before { background: var(--ottm-themecolor); }
 .radio-style:checked + .radio-style-1-label:before { background: #CCC; }
 
 /* Checkbox-small + Radio-small */
@@ -56,7 +56,7 @@
 
 /* Style-2 */
 .checkbox-style:checked + .checkbox-style-2-label:before {
-	background: var(--cnvs-themecolor);
+	background: var(--ottm-themecolor);
 	box-shadow: inset 0px 0px 0px 4px #fff;
 }
 
@@ -73,7 +73,7 @@
 .radio-style:checked + .radio-style-3-label:before {
 	content: "\F633";
 	font-family: "bootstrap-icons";
-	background: var(--cnvs-themecolor);
+	background: var(--ottm-themecolor);
 	color: #FFF;
 }
 .radio-style:checked + .radio-style-3-label:before {
