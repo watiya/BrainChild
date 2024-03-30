@@ -30,7 +30,7 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 :root {
@@ -43,7 +43,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
     color: #999999;
@@ -71,7 +71,6 @@ ul {
     padding: 0;
 }
 .content-width {
-    max-width: 770px;
     width: 100%;
     margin-left: auto;
 }
@@ -105,7 +104,7 @@ ul {
     color: #000000;
 }
 .custom-container {
-    max-width: 1130px;
+    max-width: 1280px;
     padding: 0 15px;
     margin: auto;
 }
@@ -656,11 +655,11 @@ main.naoda-main {
 /* 05 - Section Header */
 .section-header h1 {
     font-size: 36px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     line-height: 60px;
     color: #fff;
     font-weight: 500;
-    margin-bottom: 33px; 
+    margin-bottom: 33px;  
 }
 
 .section-header h1 span {
@@ -749,6 +748,9 @@ main.naoda-main {
     padding: 68px 0;
     position: relative;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh !important;
 }
 .hero-section .hero-content {
     position: relative;
@@ -756,7 +758,7 @@ main.naoda-main {
 }
 .hero-section .hero-content h1 {
     font-size: 5.4rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     letter-spacing: 0.0125em;
     line-height: 1;
     margin-bottom: 43px;
