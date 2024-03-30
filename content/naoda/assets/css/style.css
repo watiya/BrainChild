@@ -46,7 +46,7 @@ body {
     font-family: "Chakra Petch", sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
-    color: #999999;
+    color: hsla(0,0%,100%,.8);
     background: #1f1f1f;
     line-height: 1.7;
     overflow-x: hidden;
@@ -75,7 +75,7 @@ ul {
     margin-left: auto;
 }
 .theme-btn {
-    color: var(--primary_color);
+    color: #000000;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: .12em;
@@ -90,8 +90,7 @@ ul {
     border: none;
     transition: .3s;
     cursor: pointer;
-    border: 1px solid var(--primary_color);
-    background: transparent;
+    background: var(--primary_color);
 }
 .theme-btn i {
     font-size: 16px;
@@ -100,26 +99,25 @@ ul {
     margin-bottom: 3px;
 }
 .theme-btn:hover {
-    background: var(--primary_color);
-    color: #000000;
+    background: transparent;
+    border: 1px solid var(--primary_color);
+    color: var(--primary_color);
 }
 .custom-container {
-    max-width: 1280px;
+    max-width: 1080px;
     padding: 0 15px;
     margin: auto;
 }
 .subtitle {
-    font-size: 12px;
-    color: #ffffff;
+    font-size: 0.8rem;
+    color: var(--primary_color);
     text-transform: uppercase;
     font-weight: 300;
     margin: 0;
-    border: 1px solid #565656;
-    padding: 9px 20px;
-    border-radius: 30px;
-    margin-bottom: 53px;
+    margin-bottom: 16px;
     display: inline-flex;
     align-items: center;
+    letter-spacing: .12em;
 }
 .subtitle i {
     margin-bottom: 1px;
@@ -218,8 +216,6 @@ main.naoda-main {
 /* 01 - Menu */
 .menu {
     flex-direction: column;
-    border: 1px solid  hsla(0,0%,100%,.3);
-    border-radius: 30px;
     position: fixed;
     right: 68px;
     top: 322px;
@@ -227,7 +223,6 @@ main.naoda-main {
     text-align: center;
     gap: 20px;
     padding: 24px 0;
-    background: #1f1f1f;
     z-index: 20;
 }
 .menu li .scroll-to,
@@ -654,12 +649,13 @@ main.naoda-main {
 
 /* 05 - Section Header */
 .section-header h1 {
-    font-size: 36px;
+    font-size: 2rem;
     font-family: 'Chakra Petch', sans-serif;
-    line-height: 60px;
+    letter-spacing: .12em;
     color: #fff;
-    font-weight: 500;
-    margin-bottom: 33px;  
+    font-weight: 400;
+    margin-bottom: 32px;
+    text-transform: uppercase;
 }
 
 .section-header h1 span {
@@ -755,14 +751,14 @@ main.naoda-main {
 .hero-section .hero-content {
     position: relative;
     z-index: 3;
+    margin-top: 30%;
 }
 .hero-section .hero-content h1 {
-    font-size: 5.4rem;
+    font-size: 3.25rem;
     font-family: 'Chakra Petch', sans-serif;
-    letter-spacing: 0.0125em;
-    line-height: 1;
-    margin-bottom: 43px;
-    font-weight: 600;
+    letter-spacing: .12em;
+    margin-bottom: 32px;
+    font-weight: 400;
 }
 .hero-section .hero-content h1 span {
     color: var(--primary_color);
@@ -770,9 +766,10 @@ main.naoda-main {
 .hero-section .hero-content > p {
     max-width: 480px;
     margin-bottom: 31px;
-    font-size: 1.1rem;
-    line-height: 2rem;
-    letter-spacing: .1em;
+    font-size: .85rem;
+    line-height: 1.5rem;
+    letter-spacing: .12em;
+    font-weight: 300;
 }
 .hero-section .hero-content .go-to-project-btn {
     width: 175px;
@@ -870,8 +867,11 @@ body .body-overlay {
     padding-bottom: 90px;
 }
 .about-area .about-content p {
-    line-height: 30px;
+    font-size: .85rem;
+    line-height: 1.5rem;
+    letter-spacing: .12em;;
     max-width: 610px;
+    font-weight: 300;
 }
 
 
@@ -967,9 +967,9 @@ body .body-overlay {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 500;
-    letter-spacing: .02em;
+    letter-spacing: .12em;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 32px;
     color: #fff;
 }
 .services-items .service-item h2 a {
@@ -983,18 +983,18 @@ body .body-overlay {
     color: var(--primary_color);
 }
 .services-items .service-item p {
-    font-size: 14px;
-    color: #999999;
-    margin-bottom: 30px;
+    font-size: 0.8rem;
+    color: hsla(0,0%,100%,.5);
+    letter-spacing: .12em;
+    font-weight: 300;
 }
 .services-items .service-item .projects {
-    font-size: 12px;
+    font-size: 1rem;
     color: #fff;
+    letter-spacing: .12em;
+    line-height: 2rem;
     text-transform: uppercase;
-    display: inline-block;
-}
-.services-items .service-item:hover .projects {
-    text-decoration: underline;
+    font-weight: 400;
 }
 .services-items .service-item i {
     position: absolute;
@@ -1002,6 +1002,11 @@ body .body-overlay {
     color: var(--primary_color);
     top: 45px;
     right: 50px;
+}
+.services-items .service-item img {
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
 }
 
 
