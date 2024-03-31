@@ -1026,7 +1026,7 @@ body .body-overlay {
     padding-bottom: 144px;
 }
 .games .game {
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .games .game .game-inner {
     padding: 0;
@@ -1041,16 +1041,16 @@ body .body-overlay {
     margin: auto;
 }
 .games .game h1 {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--primary_color);
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .11em;
     margin: 0;
 }
 .games .game p {
-    font-size: 12px;
-    color: #fff;
+    font-size: .8rem;
+    color: hsla(0,0%,100%,.6);
     text-transform: uppercase;
     letter-spacing: .12em;
     margin: 0;
