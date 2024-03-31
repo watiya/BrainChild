@@ -15,7 +15,7 @@
     * 12 - Services
     * 13 - games
     * 14 - press
-    * 15 - Testimonial
+    * 15 - partners
     * 16 - Client
     * 17 - Pricing Table
     * 18 - Contact
@@ -249,7 +249,7 @@ main.naoda-main {
 }
 .menu li .scroll-to i,
 .menu li a i {
-    font-size: 20px;
+    font-size: .8rem;
     display: block;
 }
 .menu li .scroll-to span,
@@ -260,6 +260,7 @@ main.naoda-main {
     background: #404042;
     right: 100%;
     color: #fff;
+    text-transform: uppercase;
     display: block;
     padding: 3px 8px;
     border-radius: 5px;
@@ -337,7 +338,7 @@ main.naoda-main {
     background: none;
     border-radius: 0;
     border: none;
-    margin-bottom: 30px;
+    margin: 20px 0 30px 0;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu li a {
     display: flex;
@@ -356,6 +357,7 @@ main.naoda-main {
     opacity: 1;
     visibility: visible;
     color: #999999;
+    text-transform: uppercase;
     background: none;
     margin: 0;
     padding: 0;
@@ -366,11 +368,13 @@ main.naoda-main {
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu li a.active span {
     color: #fff;
+    font-weight: 500;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .global-color-option,
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social {
     width: 46%;
     margin: auto;
+    text-transform: uppercase;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul {
     gap: 15px;
@@ -864,8 +868,8 @@ body .body-overlay {
 
 /* 10 - About */
 .about-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 144px;
+    padding-bottom: 144px;
 }
 .about-area .about-content p {
     font-size: .85rem;
@@ -878,8 +882,8 @@ body .body-overlay {
 
 /* 11 - roadmap */
 .roadmap-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 144px;
+    padding-bottom: 144px;
 }
 .roadmap-area .roadmap-content .roadmap-timeline .item {
     position: relative;
@@ -933,7 +937,7 @@ body .body-overlay {
 }
 .roadmap-area .roadmap-content .roadmap-timeline .item .list {
     font-size: 0.8rem;
-    color: hsla(0,0%,100%,.5);
+    color: hsla(0,0%,100%,.6);
     font-weight: 300;
     letter-spacing: .12em;
     margin-bottom: 18px;
@@ -952,8 +956,8 @@ body .body-overlay {
 
 /* 12 - Services */
 .services-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 144px;
+    padding-bottom: 144px;
 }
 .services-items .service-item {
     border: 1px solid  hsla(0,0%,100%,.2);
@@ -1018,8 +1022,8 @@ body .body-overlay {
 
 /* 13 - games */
 .games-area {
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding-top: 144px;
+    padding-bottom: 144px;
 }
 .games .game {
     margin-bottom: 50px;
@@ -1055,11 +1059,15 @@ body .body-overlay {
 
 /* 14 - press */
 .press-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 144px;
+    padding-bottom: 144px;
 }
 .press-items .press-item {
-    margin-bottom: 62px;
+    border: 1px solid  hsla(0,0%,100%,.2);
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: hsla(0,0%,100%,.06);
+    backdrop-filter: blur(12px);
 }
 .press-items > div:last-child .press-item {
     margin-bottom: 0;
@@ -1069,7 +1077,7 @@ body .body-overlay {
     overflow: hidden;
     border-radius: 0%;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 .press-items .press-item.press-full .press-item-inner {
     height: 100%;
@@ -1080,32 +1088,27 @@ body .body-overlay {
     height: 100%;
     object-fit: cover;
 }
-.press-items .press-item .press-item-inner .press-categories {
-    position: absolute;
+.press-items .press-item .press-categories {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
-    bottom: 20px;
-    left: 20px;
 }
-.press-items .press-item .press-item-inner .press-categories li a {
+.press-items .press-item .press-categories li {
     display: block;
-    font-size: 14px;
-    background: #fff;
-    color: #000;
-    padding: 7px 20px;
-    border-radius: 19px;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: hsla(0,0%,100%,.6);
     transition: .3s;
 }
-.press-items .press-item:hover .press-item-inner .press-categories li a {
-    background: #1f1f1f;
-    color: #fff;
-}
 .press-items .press-item h2 {
-    font-size: 24px;
-    font-weight: 300;
-    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-weight: 400;
+    margin-bottom: 12px;
 }
 .press-items .press-item h2 a {
     color: #fff;
@@ -1114,64 +1117,68 @@ body .body-overlay {
     transition: .3s;
 }
 .press-items .press-item:hover h2 a {
-    border-color: #ffffff;
+    color: var(--primary_color);
 }
 
 
 
 
-/* 15 - Testimonial */
-.testimonial-item .testimonial-item-inner {
+/* 15 - partners */
+.partners-area {
+    padding-top: 144px;
+    padding-bottom: 144px;
+}
+.partners-item .partners-item-inner {
     border: 1px solid  hsla(0,0%,100%,.3);
     border-radius: 0%;
     padding: 50px 50px 43px 50px;
 }
-.testimonial-item .testimonial-item-inner .author {
+.partners-item .partners-item-inner .author {
     gap: 16px;
     margin-bottom: 45px;
 }
-.testimonial-item .testimonial-item-inner .author img {
+.partners-item .partners-item-inner .author img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }
-.testimonial-item .testimonial-item-inner .author h3 {
+.partners-item .partners-item-inner .author h3 {
     font-size: 18px;
     font-weight: 300;
     color: #fff;
     margin-bottom: 6px;
 }
-.testimonial-item .testimonial-item-inner .author p {
+.partners-item .partners-item-inner .author p {
     color: #999999;
     font-size: 13px;
     margin: 0;
     line-height: 1.3;
 }
-.testimonial-item .testimonial-item-inner .author p span {
+.partners-item .partners-item-inner .author p span {
     color: var(--primary_color);
 }
-.testimonial-item .testimonial-item-inner > p {
+.partners-item .partners-item-inner > p {
     font-size: 24px;
     color: #fff;
     font-weight: 300;
     line-height: 36px;
     margin-bottom: 27px;
 }
-.testimonial-item .testimonial-item-inner .project-btn {
+.partners-item .partners-item-inner .project-btn {
     font-size: 12px;
     color: #fff;
     text-transform: uppercase;
     display: inline-block;
 }
 
-.testimonial-area .testimonial-slider-wrap .testimonial-footer-nav {
+.partners-area .partners-slider-wrap .partners-footer-nav {
     margin-top: 50px;
 }
-.testimonial-area .testimonial-slider-wrap .testimonial-footer-nav .testimonial-nav {
+.partners-area .partners-slider-wrap .partners-footer-nav .partners-nav {
     gap: 15px;
 }
-.testimonial-area .testimonial-slider-wrap .testimonial-footer-nav .testimonial-nav button {
+.partners-area .partners-slider-wrap .partners-footer-nav .partners-nav button {
     width: 45px;
     height: 45px;
     display: block;
@@ -1183,16 +1190,16 @@ body .body-overlay {
     color: #fff;
     transition: .3s;
 }
-.testimonial-area .testimonial-slider-wrap .testimonial-footer-nav .testimonial-nav button:hover {
+.partners-area .partners-slider-wrap .partners-footer-nav .partners-nav button:hover {
     border-color: var(--primary_color);
     color: var(--primary_color);
 }
-.testimonial-area .testimonial-slider-wrap .testimonial-footer-nav .testimonial-nav #testimonial-slide-count {
+.partners-area .partners-slider-wrap .partners-footer-nav .partners-nav #partners-slide-count {
     font-size: 13px;
     color: #666666;
     font-weight: 300;
 }
-.testimonial-area .testimonial-slider-wrap .testimonial-footer-nav .testimonial-nav #testimonial-slide-count .left {
+.partners-area .partners-slider-wrap .partners-footer-nav .partners-nav #partners-slide-count .left {
     color: #fff;
 }
 
@@ -1201,6 +1208,7 @@ body .body-overlay {
     padding-top: 0px;
 }
 .clients-logos h4 {
+    color: hsla(0,0%,100%,.6);;
     font-size: .85rem;
     line-height: 1.5rem;
     letter-spacing: .12em;
