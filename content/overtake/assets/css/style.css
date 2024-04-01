@@ -306,7 +306,7 @@ main.naoda-main {
     height: 100%;
     z-index: -1;
     background: #565656;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .responsive-sidebar-menu .sidebar-menu-inner {
     max-width: 345px;
@@ -861,7 +861,7 @@ body .body-overlay {
 .home1-page .body-overlay,
 .home4-page .body-overlay,
 .home5-page .body-overlay {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 
