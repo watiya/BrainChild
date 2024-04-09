@@ -1208,7 +1208,7 @@ nav.nav-inner {
     border: 2px dotted rgba(255,255,255,.3);
 }
 .promo-video-btn:hover {
-	background: #fff;
+	background:  rgb(0 255 204 / 40%);
 }
 .start-btn_sin {
 	position: absolute;
