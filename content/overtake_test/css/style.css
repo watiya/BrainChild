@@ -320,7 +320,7 @@ blockquote p {
     top: 0;
     left: 0;
     z-index: 20;
-    height: 100px;
+    height: 80px;
     width: 100%;
     background: #111;
     transform: translate3d(0,0,0);
@@ -331,8 +331,8 @@ blockquote p {
 	top: 0;
 	left: 0;
 	width: 200px;
-	height: 100px;
-	line-height: 100px;
+	height: 80px;
+	line-height: 80px;
 	overflow: hidden;
 }
 .logo-holder img {
@@ -384,8 +384,8 @@ blockquote p {
 }
 .share_btn  {
 	float: right;
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 80px;
  	transition: all 300ms linear;
 	cursor: pointer;
 	color: #fff;
@@ -450,7 +450,7 @@ blockquote p {
 }
 .nav-button-wrap {
 	float: right;
-	height: 100px;
+	height: 80px;
 	background: rgba(255,255,255,.1);
 	padding: 0 60px;
 	position: relative;
@@ -461,7 +461,7 @@ blockquote p {
 	height: 50px;
 	cursor: pointer;
 	position: relative;
-	top: 42px;
+	top: 36px;
 	overflow: hidden;
 	z-index: 2;
 }
@@ -506,7 +506,7 @@ blockquote p {
 }
 .menu-button-text {
 	float: left;
-	margin: 46px 20px 0 0;
+	margin: 36px 20px 0 0;
 	position: relative;
 	z-index: 2;
 	color: #fff;
@@ -527,11 +527,11 @@ blockquote p {
 }
 .nav-container {
 	position: absolute;
-	top: 100px;
+	top: 80px;
 	padding-bottom: 150px;
 	background: #EFEFEF;
 	width: 650px;
-	right: 30%;
+	right: 80px;
 	transition: all .3s ease-out;
 	opacity: 0;
 	visibility: hidden;
@@ -701,7 +701,7 @@ nav.nav-inner {
 	padding: 0 90px 0 60px;
 	background: #1E1E1E;
 	color:#fff;
-	margin: 22px 40px 0 0;
+	margin: 12px 40px 0 0;
 	overflow: hidden;
 	position: relative;
 }
