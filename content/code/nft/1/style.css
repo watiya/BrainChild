@@ -1,8 +1,8 @@
 :root {
     --bg: #111316;
-    --logo: url(https://assets.codepen.io/13471/threads.svg);
-    --logopng: url(https://assets.codepen.io/13471/threads.png);
-    --ticket: url(img/ticket-shape.svg);
+    --logo: url(https://watiya.github.io/BrainChild/content/code/nft/1/img/threads.svg);
+    --logopng: url(https://watiya.github.io/BrainChild/content/code/nft/1/img/threads.png);
+    --ticket: url(https://watiya.github.io/BrainChild/content/code/nft/1/img/ticket-shape.svg);
     --ar: 20/30;
     --gutter: 8%;
 }
@@ -35,7 +35,6 @@
     background-size: 100% 220vh;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
     display: grid;
     -webkit-backface-visibility: visible;
             backface-visibility: visible;
