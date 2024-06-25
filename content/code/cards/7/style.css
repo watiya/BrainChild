@@ -1,0 +1,166 @@
+.card {
+  width: 320px;
+  height: 452px;
+  background-color: #211799;
+  background-image: url(https://i.imgur.com/t1TBwxw.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: -3px -3px 3px 0 rgba(38, 230, 247, 0.6), 3px 3px 3px 0 rgba(247, 89, 228, 0.6), 0 0 6px 2px rgba(255, 231, 89, 0.6), 0 35px 25px -15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px 10px;
+}
+
+.card > span {
+  position: relative;
+  top: 45%;
+}
+
+.card:before,
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-image: linear-gradient(115deg, transparent 0%, #00e7ff 30%, #ff00e7 70%, transparent 100%);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  mix-blend-mode: color-dodge;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.card:after {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+  background-position: center;
+  background-size: 180%;
+  mix-blend-mode: color-dodge;
+  opacity: 1;
+  z-index: 2;
+}
+
+.card.active:before {
+  opacity: 1;
+  animation: none;
+  transition: none;
+  background-image: linear-gradient(115deg, transparent 0%, transparent 25%, rgba(0, 231, 255, 0.7) 45%, rgba(255, 0, 231, 0.7) 55%, transparent 70%, transparent 100%);
+}
+
+.card:nth-of-type(1),
+.card:nth-of-type(2),
+.card:nth-of-type(3) {
+  width: 160px;
+  height: 226px;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.4), 0 25px 15px -10px rgba(0, 0, 0, 0.5);
+}
+
+.card:nth-of-type(1):before, .card:nth-of-type(1):after,
+.card:nth-of-type(2):before,
+.card:nth-of-type(2):after,
+.card:nth-of-type(3):before,
+.card:nth-of-type(3):after {
+  animation: none;
+  opacity: 1;
+}
+
+.card:nth-of-type(1):before, .card:nth-of-type(1):after {
+  display: none;
+}
+
+.card:nth-of-type(2) {
+  background: none;
+}
+.card:nth-of-type(2):before {
+  display: none;
+}
+
+.card:nth-of-type(3) {
+  background: none;
+}
+.card:nth-of-type(3):before {
+  background-position: center;
+}
+.card:nth-of-type(3):after {
+  display: none;
+}
+
+.operator {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 45px;
+}
+
+@keyframes holoSparkle {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.2;
+  }
+}
+@keyframes holoGradient {
+  3% {
+    opacity: 0;
+  }
+  5% {
+    background-position: 0% 0%;
+  }
+  7% {
+    opacity: 0.5;
+  }
+  9% {
+    background-position: 100% 100%;
+  }
+  11% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    background-position: 100% 100%;
+  }
+  55% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0;
+    background-position: 0% 0%;
+  }
+}
+body {
+  color: white;
+  background: #333844;
+  font-family: "Heebo", sans-serif;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+}
+
+html {
+  height: 100%;
+}
+
+h1 {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 5px;
+  font-weight: 200;
+}

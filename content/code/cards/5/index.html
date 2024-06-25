@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Holo card effect</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>    
+    <header>
+      <div class="PNL_options">
+        <select onchange='adaptCardType(this);'>
+        <option>rare ultra</option>
+          <option>normal</option>
+        <option>rare holo galaxy</option>
+        <option>rare holo galaxyFullshine</option>
+          <option>rare radiant</option>
+        <option>rare holo</option>
+        <option>rare holo v</option>
+        <option>rare holo vmax</option>
+        <option>rare holo vstar</option>
+        <option>rare rainbow</option>
+        <option>rare secret</option>
+      </select>  <BR/>    
+      <input type="radio" id='mouseMove' checked name='GRP_CardMove' onchange='ChangeCardMove(this);'><span id="mouseMoveLabel">move ?</span></input><BR/>    
+    <input type="radio" id='autoMove' name='GRP_CardMove' onchange='ChangeCardMove(this);'>Rotate auto</input>
+      </div>
+      <div class="PNL_Infos"></div>
+<div class="PNL_ChooseCard"><select onchange='changeCard(this)'>
+  <option value="https://cdn.vox-cdn.com/thumbor/oZYCqiW5LvEgU10oDFM4s9CUzlI=/0x0:744x1039/920x0/filters:focal(0x0:744x1039):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/9976137/Sun_Collared_Raptor_EN_HRR_copy.png">Sun-Collared Raptor</option><option value="https://aetherhub.b-cdn.net/images/cards/mtg-KLR/Aviary%20Mechanic.jpg">Aviary Mechanic</option><option value="https://images.saymedia-content.com/.image/t_share/MTc0NDYwNzg5MzQzMDA0Mjk0/top-god-cards-in-magic-the-gathering.jpg">The Locus God</option><option value="https://images.saymedia-content.com/.image/t_share/MTc0NDU3MjU4MzQyNjIyNTY4/best-spectacle-cards-mtg.jpg">Blade Juggler</option><option value="https://i.kinja-img.com/gawker-media/image/upload/t_original/cc647lnzecphzuonwzqk.png">Steel Squirrel</option><option value="https://i.kinja-img.com/gawker-media/image/upload/t_original/l0pz7awq1fjujuhdnz06.png">Weldfast Wingsmith</option><option value="https://images.saymedia-content.com/.image/t_share/MTc0NDYwODg2MjQ4MzM0Njk2/top-10-most-expensive-mtg-cards.jpg">Autochthon Wurm</option></select></div>
+      <div class="showcase">        
+<div id="acard" class="card svelte-166jv0z" data-supertype="MagicTG" data-rarity="rare ultra"  style="
+		--mx: 50%;
+		--my: 50%;
+		--tx: 0px;
+		--ty: 0px;
+		--s: 1;
+		--o: 1;
+		--rx: 0deg;
+		--ry: 0deg;
+		--pos: 50% 50%;
+		--posx: 50%;
+		--posy: 50%;
+		--hyp: 0;
+    --galaxybg: center 740px;
+	"><div class="card__translater svelte-166jv0z"><button class="card__rotator svelte-166jv0z" aria-label="Expand the Pokemon Card; Morpeko V." tabindex="0"><img class="card__back svelte-166jv0z" src="https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg" alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below" loading="lazy" width="660" height="921"> <div class="card__front svelte-166jv0z"><img id="card_front_pic" src="https://cdn.vox-cdn.com/thumbor/oZYCqiW5LvEgU10oDFM4s9CUzlI=/0x0:744x1039/920x0/filters:focal(0x0:744x1039):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/9976137/Sun_Collared_Raptor_EN_HRR_copy.png" alt="Front design of the Morpeko V Pokemon Card, with the stats and info around the edge" loading="lazy" width="660" height="921" class="svelte-166jv0z"> <div class="card__shine basic v pokémon svelte-8e4zv4"></div> <div class="card__glare basic v rare ultra svelte-y0attf"></div></div></button></div></div>
+        
+      </div>
+    </header>
+  </main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

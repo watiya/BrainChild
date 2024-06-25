@@ -4,16 +4,16 @@
   --back: url(img/Cardback.jpg);
   --charizard1: #fac;
   --charizard2: #ddccaa;
-  --charizardfront: url(img/pop-default.png);
+  --charizardfront: url(img/overtake_genesis.png);
   --pika1: #54a29e;
   --pika2: #a79d66;
-  --pikafront: url(img/pop-default2.png);
+  --pikafront: url(img/overtake_genesis.png);
   --eevee1: #efb2fb;
   --eevee2: #acc6f8;
-  --eeveefront: url(img/pop-default3.png);
+  --eeveefront: url(img/overtake_genesis.png);
   --mewtwo1: #efb2fb;
   --mewtwo2: #acc6f8;
-  --mewtwofront: url(img/pop-default.png);
+  --mewtwofront: url(img/overtake_genesis.png);
 }
 
 .card {
@@ -25,7 +25,7 @@
   overflow: hidden;
   z-index: 10;
   touch-action: none;
-  border-radius: 5%/3.5%;
+  /* border-radius: 5%/3.5%; */
   /* box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2), -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5); */
   transition: transform 0.5s ease, box-shadow 0.2s ease;
   will-change: transform, filter;
@@ -99,7 +99,7 @@
 
 .card:after {
   opacity: 1;
-  background-image: url("https://assets.codepen.io/13471/sparkles.gif"), url(https://assets.codepen.io/13471/holo.png), linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
+  background-image: url("img/sparkles.webp"), url(img/holo.webp), linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
   background-position: 50% 50%;
   background-size: 160%;
   background-blend-mode: overlay;

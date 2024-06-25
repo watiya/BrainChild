@@ -9,7 +9,7 @@ html {
   --px: calc(var(--zoom) * (var(--unit) / var(--available-screen-min)));
   --bg: #060809;
   --logopng: url();
-  --ticket: url(https://assets.codepen.io/13471/ticket-shape.svg);
+  --ticket: url(https://watiya.github.io/BrainChild/content/code/nft/1/img/ticket-shape.svg);
   --ar: 10/30;
   --gutter: 8%;
 }
