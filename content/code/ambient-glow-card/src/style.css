@@ -1,0 +1,197 @@
+@property --bgrotate {
+  initial-value: 120deg;
+  inherits: false;
+  syntax: "<angle>";
+}
+@property --bgrotate2 {
+  initial-value: 255deg;
+  inherits: false;
+  syntax: "<angle>";
+}
+@property --text {
+  initial-value: 220deg;
+  inherits: false;
+  syntax: "<angle>";
+}
+
+:root {
+  --ar: 0.718;
+  --br: 4.55% / 3.5%;
+  --hl: 0;
+  --bg: hsl(var(--canvas), 15%, 12%);
+  --t: all .66s
+    linear(
+      0,
+      0.007,
+      0.028 2.1%,
+      0.112 4.6%,
+      0.224 6.9%,
+      0.604 14.2%,
+      0.713,
+      0.803,
+      0.879,
+      0.939,
+      0.985 26.2%,
+      1.019 28.9%,
+      1.034 30.7%,
+      1.045,
+      1.051 34.8%,
+      1.053 37.2%,
+      1.046 41.6%,
+      1.012 54.7%,
+      1.001 62.8%,
+      0.997 73%,
+      1
+    )
+}
+
+.card {
+  width: 320px;
+  aspect-ratio: var(--ar);
+  border-radius: var(--br);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  position: relative;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 50% 50%, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      farthest-side circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+      hsla(222, 100%, 94%, var(--hl)) 8%,
+      hsla(222, 100%, 80%, var(--hl)) 22%,
+      hsla(222, 100%, 70%, 0) 66%
+    ),
+    radial-gradient(40% 51% at 7% 32%, #57d6ffff 0%, #073aff00 100%),
+    radial-gradient(40% 52% at 85% 67%, #00ffc3c4 0%, #073aff00 100%),
+    radial-gradient(80% 80% at 50% 50%, #00c1ffff 27%, #073aff00 58%),
+    conic-gradient(
+      from var(--bgrotate) at 50% 50%,
+      #a94cff 5%,
+      #07c6ff00 17%,
+      #07c6ff00 40%,
+      #00ffc3ff 48%,
+      #00ffc3ff 51%,
+      #07c6ff00 59%,
+      #07c6ff00 83%,
+      #a94cff 95%
+    ),
+    conic-gradient(
+      from var(--bgrotate2) at 50% 50%,
+      #5afff3ff 0%,
+      #be78ffff 34%,
+      #be78ffff 64%,
+      #5afff3ff 100%
+    );
+  background-blend-mode: color-dodge, normal, normal, normal, normal;
+  animation: glow-bg 44s linear infinite;
+  transform: translate3d(0, 0, 0.1px);
+  z-index: 1;
+}
+.card:hover {
+  --hl: 1;
+}
+
+.card::before,
+.card::after,
+.inside {
+  border-radius: inherit;
+  content: "";
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  inset: 1px;
+  position: absolute;
+}
+
+.inside {
+  display: flex;
+  align-items: center;
+  border-radius: inherit;
+  overflow: hidden;
+  justify-content: center;
+  background: hsl(var(--canvas), 15%, 16%);
+  z-index: 2;
+}
+
+.inside::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(
+      farthest-corner circle at var(--pointer-x) var(--pointer-y),
+      hsl(248, 25%, 80%) 12%,
+      hsla(207, 40%, 30%, .2) 90%
+    );
+  mix-blend-mode: overlay;
+  filter: brightness(1) contrast(1.2);
+  opacity: var(--hl);
+  transition: var(--t);
+}
+
+.card::after {
+  background: inherit;
+  inset: -10px;
+  scale: 0.8;
+  filter: blur(36px) brightness(1) contrast(0.85) saturate(1.4);
+  z-index: 0;
+  transition: var(--t);
+}
+
+.card:hover::after {
+  scale: 0.9;
+  filter: blur(36px) brightness(1) contrast(1) saturate(1);
+}
+
+.card::before {
+  content: "";
+  inset: 0;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 20px -5px;
+  z-index: 1;
+}
+
+@keyframes glow-bg {
+  0% {
+    --bgrotate: 0deg;
+    --bgrotate2: 0deg;
+    --text: 90deg;
+  }
+  25% {
+    --bgrotate2: 360deg;
+    --text: 260deg;
+  }
+  50% {
+    --bgrotate2: 720deg;
+  }
+  100% {
+    --bgrotate: 720deg;
+    --bgrotate2: 0deg;
+    --text: 90deg;
+  }
+}
+
+main,
+body,
+html {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  text-wrap: balance;
+  text-align: center;
+  animation: glow-bg 14s ease infinite;
+  background-image: linear-gradient(to bottom, white 40%, hsl(var(--text,120deg) 100% 60%));
+  background-size: 1em 1lh;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0 0.025em 0.05em rgba(0,0,0,0.2)) drop-shadow(0 1px 1px black);
+}
