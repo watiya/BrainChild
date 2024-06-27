@@ -74,9 +74,9 @@ h3,
 h4 {
   text-transform: uppercase;
   background: #fff;
-  background: -webkit-linear-gradient(to right, #00a6fb 0%, #00fddc 100%);
-  background: -moz-linear-gradient(to right, #00a6fb 0%, #00fddc 100%);
-  background: linear-gradient(to right, #00a6fb 0%, #00fddc 100%);
+  background: -webkit-linear-gradient(to right, #00a6fb 0%, #00FFCC 100%);
+  background: -moz-linear-gradient(to right, #00a6fb 0%, #00FFCC 100%);
+  background: linear-gradient(to right, #00a6fb 0%, #00FFCC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -111,7 +111,7 @@ p {
 .card {
   background: radial-gradient(100% 100% at 50% 5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   padding: 0.5rem;
   backdrop-filter: blur(4px);
 }
@@ -393,15 +393,15 @@ p {
   text-transform: uppercase;
   outline: none;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   border: none;
   cursor: pointer;
   display: inline-flex;
   background-size: 200% auto;
-  background-image: linear-gradient(to right, #00a6fb 0%, #00fddc 50%, #00a6fb 100%);
+  background-image: linear-gradient(to right, #3333FF 0%, #00FFCC 50%, #00a6fb 100%);
   background-position: left center;
   transition: all 0.4s ease-out;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   padding: 0.8rem 1.2rem;
   flex-direction: row;
   justify-content: center;
