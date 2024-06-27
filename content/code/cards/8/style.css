@@ -22,7 +22,7 @@
   position: relative;
   overflow: hidden;
   margin: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 10;
   touch-action: none;
   border-radius: 5%/3.5%;
@@ -39,7 +39,7 @@
 @media screen and (min-width: 600px) {
   .card {
     width: clamp(12.9vw, 61vh, 16vw);
-    height: clamp(18vw, 85vh, 25.2vw);
+    height: clamp(18vw, 85vh, 25.6vw);
   }
 }
 
