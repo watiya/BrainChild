@@ -1,7 +1,7 @@
 /*----------------------------*/
 /* GENERAL */
 /*----------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 *,
 *::before,
 *::after {
@@ -9,9 +9,9 @@
 }
 
 html {
-  background: #1a1b3a;
+  background: #000;
   font-size: 16px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 body {
@@ -111,7 +111,7 @@ p {
 .card {
   background: radial-gradient(100% 100% at 50% 5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   padding: 0.5rem;
   backdrop-filter: blur(4px);
 }
@@ -137,7 +137,7 @@ p {
 }
 
 .website {
-  /*background-image: url(https://images.ctfassets.net/r5o0jpcspr8j/7GhRd9rrHpjyGCRVU2k75E/13ab5c94ad9019a9a9695425195d1f21/TOURNAMENTS.jpg);*/
+  background-image: url(img/bg.png);
   background-size: cover;
   background-position: center top;
   position: absolute;
@@ -175,7 +175,7 @@ p {
   width: 550px;
   height: 550px;
   max-width: 90vw;
-  filter: drop-shadow(0 0 6px #00ff80) drop-shadow(0 0 16px rgba(0, 255, 128, 0.75)) drop-shadow(0 0 32px rgba(0, 255, 128, 0.5));
+  filter: drop-shadow(0 0 6px #00FFCC) drop-shadow(0 0 16px rgba(0, 255, 204, 0.75)) drop-shadow(0 0 32px rgba(0, 255, 204, 0.5));
 }
 @media only screen and (max-width: 768px) {
   #anim1 {
@@ -389,7 +389,7 @@ p {
 /* BUTTON */
 /*----------------------------*/
 .button {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   text-transform: uppercase;
   outline: none;
   font-weight: 700;
@@ -401,7 +401,7 @@ p {
   background-image: linear-gradient(to right, #00a6fb 0%, #00fddc 50%, #00a6fb 100%);
   background-position: left center;
   transition: all 0.4s ease-out;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   padding: 0.8rem 1.2rem;
   flex-direction: row;
   justify-content: center;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root {
   --color-bg1: rgb(8, 10, 15);
   --color-bg2: rgb(0, 17, 32);
@@ -25,7 +25,7 @@
 }
 
 html, body {
-  font-family: "Dongle", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -34,12 +34,12 @@ html, body {
 
 body {
   background: #FFF;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   overflow: hidden;
 }
 
 h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
 }
 
