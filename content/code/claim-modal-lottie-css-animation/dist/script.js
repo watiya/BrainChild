@@ -5,7 +5,7 @@ var anim1 = lottie.loadAnimation({
 	renderer: "svg",
 	loop: false,
 	autoplay: true,
-	path: "https://watiya.github.io/BrainChild/content/code/claim-modal-lottie-css-animation/dist/explosions/lf30_brfwfvq7.json"
+	path: "https://watiya.github.io/BrainChild/content/code/claim-modal-lottie-css-animation/dist/img/lf30_brfwfvq7.json"
 });
 
 // first click: open modal
