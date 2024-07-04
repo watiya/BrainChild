@@ -16,17 +16,17 @@ body {
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 48px;
   text-transform: uppercase;
   text-align: center;
   background: linear-gradient(
     to right,
-    #fc72ff,
+    #00FFCC,
     #8f68ff,
     #487bff,
     #8f68ff,
-    #fc72ff
+    #00FFCC
   );
   background-size: 200%;
   background-clip: text;
