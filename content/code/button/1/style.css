@@ -262,7 +262,7 @@ a {color: #fff; text-decoration: none;}
 /*  Old PC Plastic BTN */
 .btn-old-pc {
    background-color: #080808;
-   color: #6b778400;
+   color: #00FFCC00;
    text-align: center;
    position: relative;
    width: 120px;
@@ -284,7 +284,7 @@ a {color: #fff; text-decoration: none;}
    position: absolute;
    z-index: -1;
    background-color: #2a3c44;
-   color: #495f64;
+   color: #00FFCC;
    text-shadow: 0px 2px 1px #1a2b2c;
    font-weight: bold;
    top: 0;
@@ -307,7 +307,7 @@ a {color: #fff; text-decoration: none;}
    border-bottom: 9px solid #101b1c;
    border-right: 8px solid #2b2725;
    background-color: #1d323b;
-   color: #35494e;
+   color: #00a37d;
    box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #3a373566;
 }
 
