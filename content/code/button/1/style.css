@@ -358,18 +358,18 @@ a {color: #fff; text-decoration: none;}
    justify-content: center;
 }
 .redalert-btn:hover::after {
-   color: #dfc1c1;
-   background-color: #a54343;
+   color: #002c20;
+   background-color: #43a58c;
    transform: scale(.97);
    transform: translateY(3px);
    box-shadow:
-      inset 0px -5px 10px #6e1306,
-      inset -3px -5px 14px #6c190e,
-      inset -10px -7px 22px #4e2d2d,
-      0 6px 0 #501616,
-      -1px 3px 3px 2px #461111,
-      1px 3px 3px 3px #4a1a1a,
-      0 5px 40px #6e1306aa;
+      inset 0px -5px 10px #066e43,
+      inset -3px -5px 14px #0e6c61,
+      inset -10px -7px 22px #2d4e45,
+      0 6px 0 #165040,
+      -1px 3px 3px 2px #114637,
+      1px 3px 3px 3px #1a4a38,
+      0 5px 40px #066e4daa;
 }
 
 /* Rainbow glow button */
