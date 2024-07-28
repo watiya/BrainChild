@@ -432,6 +432,51 @@ a {color: #fff; text-decoration: none;}
       1px 3px 3px 3px #1a4a38,
       0 5px 40px #066e4daa;
 }
+.earn2-btn {
+   background-color: #080808;
+   color: #6b778400;
+   text-align: center;
+   position: relative;
+   height: 80px;
+   width: 80px;
+   text-decoration: none;
+   padding: 10px 20px;
+   display: inline-block;
+   box-shadow: 0px 0px 2px 4px #0d0e0d, 2px 4px 2px 2px #292c2a, 2px 0px 2px 2px #222423, -2px 4px 2px 2px #2b3230;
+   border-radius: 13px;
+   z-index: 1;
+   font-size: 14px;
+   line-height: 1em;
+   transition: .2s;
+   cursor: pointer;
+}
+.earn2-btn::after {
+   content: attr(data-title);
+   position: absolute;
+   z-index: -1;
+   background-color: #003f32;
+   color: #0b2020;
+   text-shadow: 0px 1px 1px #003f32, 0px 0px 6px #003f32;
+   font-weight: bold;
+   top: 4px;
+   left: 4px;
+   right: 4px;
+   bottom: 10px;
+   border-radius: 12px;
+   opacity: 1;
+   box-shadow:
+      inset 0px -5px 10px #033029,
+      inset -3px -5px 14px #062c26,
+      inset -10px -7px 22px #14231f,
+      0 6px 0 #0a2623,
+      -1px 3px 3px 2px #11463f,
+      1px 3px 3px 3px #0b1e17,
+      0 5px 40px #066e6c00;
+   transition: .4s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
 /* Rainbow glow button */
 .rainbow-btn {
