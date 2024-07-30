@@ -260,7 +260,7 @@ a {color: #fff; text-decoration: none;}
 
 
 /*  Old PC Plastic BTN */
-.btn-old-pc {
+.btn-earn {
    background-color: #080808;
    color: #00FFCC00;
    text-align: center;
@@ -270,14 +270,14 @@ a {color: #fff; text-decoration: none;}
    text-decoration: none;
    padding: 10px 20px;
    display: inline-block;
-   box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
+   box-shadow: 0px -2px 2px 4px #0d0e0e, 2px 2px 2px 2px #292c2b, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
    border-radius: 5px;
    z-index: 1;
    font-size: 1em;
    transition: .2s;
    cursor: pointer;
 }
-.btn-old-pc::after {
+.btn-earn::after {
    content: attr(data-title);
    line-height: 2.6em;
    display: block;
@@ -293,22 +293,22 @@ a {color: #fff; text-decoration: none;}
    bottom: 0;
    border-top: 5px solid #3e5156;
    border-left: 8px solid #213234;
-   border-right: 8px solid #3c3836;
+   border-right: 8px solid #363c3b;
    border-bottom: 12px solid #101b1c;
    border-radius: 6px;
    opacity: 1;
-   box-shadow: inset 10px -5px 14px #293e44, inset -10px -7px 22px #443f3d;
+   box-shadow: inset 10px -5px 14px #293e44, inset -10px -7px 22px #3d4442;
    transition: .2s;
 }
-.btn-old-pc:hover::after {
+.btn-earn:hover::after {
    opacity: 1;
    transform: scale(.97);
-   border-top: 8px solid #26363a;
+   border-top: 8px solid #263a3a;
    border-bottom: 9px solid #101b1c;
-   border-right: 8px solid #2b2725;
-   background-color: #1d323b;
+   border-right: 8px solid #252b2a;
+   background-color: #1d383b;
    color: #00a37d;
-   box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #3a373566;
+   box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #353a3866;
 }
 
 /* Red Allert Button */
@@ -373,7 +373,7 @@ a {color: #fff; text-decoration: none;}
 }
 
 /* Earn Button */
-.earn-btn {
+.btn-earn2 {
    background-color: #080808;
    color: #6b778400;
    text-align: center;
@@ -391,7 +391,7 @@ a {color: #fff; text-decoration: none;}
    transition: .2s;
    cursor: pointer;
 }
-.earn-btn::after {
+.btn-earn2::after {
    content: attr(data-title);
    position: absolute;
    z-index: -1;
@@ -418,7 +418,7 @@ a {color: #fff; text-decoration: none;}
    align-items: center;
    justify-content: center;
 }
-.earn-btn:hover::after {
+.btn-earn2:hover::after {
    color: #002c20;
    background-color: #43a58c;
    transform: scale(.97);
@@ -432,7 +432,7 @@ a {color: #fff; text-decoration: none;}
       1px 3px 3px 3px #1a4a38,
       0 5px 40px #066e4daa;
 }
-.earn2-btn {
+.btn-earn2_inactive {
    background-color: #080808;
    color: #6b778400;
    text-align: center;
@@ -450,7 +450,7 @@ a {color: #fff; text-decoration: none;}
    transition: .2s;
    cursor: pointer;
 }
-.earn2-btn::after {
+.btn-earn2_inactive::after {
    content: attr(data-title);
    position: absolute;
    z-index: -1;
