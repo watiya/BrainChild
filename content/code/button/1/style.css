@@ -311,6 +311,57 @@ a {color: #fff; text-decoration: none;}
    box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #353a3866;
 }
 
+.btn-earn_dis {
+   background-color: #080808;
+   color: #00FFCC00;
+   text-align: center;
+   position: relative;
+   width: 120px;
+   height: 60px;
+   text-decoration: none;
+   padding: 10px 20px;
+   display: inline-block;
+   box-shadow: 0px -2px 2px 4px #0d0e0e, 2px 2px 2px 2px #292c2b, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
+   border-radius: 5px;
+   z-index: 1;
+   font-size: 1em;
+   transition: .2s;
+   cursor: pointer;
+}
+.btn-earn_dis::after {
+   content: attr(data-title);
+   line-height: 2.6em;
+   display: block;
+   position: absolute;
+   z-index: -1;
+   background-color: #2a3c44;
+   color: #495f64;
+   text-shadow: 0px 2px 1px #1a2b2c;
+   font-weight: bold;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   border-top: 5px solid #3e5156;
+   border-left: 8px solid #213234;
+   border-right: 8px solid #363c3b;
+   border-bottom: 12px solid #101b1c;
+   border-radius: 6px;
+   opacity: 1;
+   box-shadow: inset 10px -5px 14px #293e44, inset -10px -7px 22px #3d4442;
+   transition: .2s;
+}
+/* .btn-earn_dis:hover::after {
+   opacity: 1;
+   transform: scale(.97);
+   border-top: 8px solid #263a3a;
+   border-bottom: 9px solid #101b1c;
+   border-right: 8px solid #252b2a;
+   background-color: #1d383b;
+   color: #35494e;
+   box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #353a3866;
+} */
+
 /* Red Allert Button */
 .redalert-btn {
    background-color: #080808;
