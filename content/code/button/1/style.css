@@ -457,13 +457,13 @@ a {color: #fff; text-decoration: none;}
    border-radius: 12px;
    opacity: 1;
    box-shadow:
-      inset 0px -5px 10px #066e5e,
-      inset -3px -5px 14px #0e6c5c,
-      inset -10px -7px 22px #2d4e46,
-      0 6px 0 #16504a,
-      -1px 3px 3px 2px #11463f,
-      1px 3px 3px 3px #1a4a39,
-      0 5px 40px #066e6c00;
+      inset 0px -5px 10px #099c86,
+      inset -3px -5px 14px #19c1a5,
+      inset -10px -7px 22px #56aa9e,
+      0 6px 0 #24847b,
+      -1px 3px 3px 2px #1a6b61,
+      1px 3px 3px 3px #349384,
+      0 5px 40px #08878500;
    transition: .4s;
    display: flex;
    align-items: center;
@@ -471,17 +471,17 @@ a {color: #fff; text-decoration: none;}
 }
 .btn-earn2:hover::after {
    color: #002c20;
-   background-color: #43a58c;
+   background-color: #49b7b0;
    transform: scale(.97);
    transform: translateY(3px);
    box-shadow:
-      inset 0px -5px 10px #066e43,
-      inset -3px -5px 14px #0e6c61,
-      inset -10px -7px 22px #2d4e45,
-      0 6px 0 #165040,
-      -1px 3px 3px 2px #114637,
-      1px 3px 3px 3px #1a4a38,
-      0 5px 40px #066e4daa;
+      inset 0px -5px 10px #07816a,
+      inset -3px -5px 14px #118376,
+      inset -10px -7px 22px #39625b,
+      0 6px 0 #1b635d,
+      -1px 3px 3px 2px #196866,
+      1px 3px 3px 3px #1f5853,
+      0 5px 40px #078478aa;
 }
 .btn-earn2_inactive {
    background-color: #080808;
