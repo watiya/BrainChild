@@ -362,6 +362,59 @@ a {color: #fff; text-decoration: none;}
    box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #353a3866;
 } */
 
+.btn-earn3 {
+   background-color: #080808;
+   color: #00FFCC00;
+   text-align: center;
+   position: relative;
+   width: 120px;
+   height: 60px;
+   text-decoration: none;
+   padding: 10px 20px;
+   display: inline-block;
+   box-shadow: 0px -2px 2px 4px #0d0e0e, 2px 2px 2px 2px #292c2b, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
+   border-radius: 5px;
+   z-index: 1;
+   font-size: 1em;
+   transition: .2s;
+   cursor: pointer;
+}
+.btn-earn3::after {
+   content: attr(data-title);
+   line-height: 2.6em;
+   display: block;
+   position: absolute;
+   z-index: -1;
+   background-color: #00FFCC;
+   color: #000000;
+   text-shadow: 0px 2px 1px #00FFCC;
+   font-weight: bold;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   border-top: 5px solid #77ffe4;
+   border-left: 8px solid #00b994;
+   border-right: 8px solid #00bb96;
+   border-bottom: 12px solid #008268;
+   border-radius: 6px;
+   opacity: 1;
+   box-shadow: inset 10px -5px 14px #1edeb8, inset -10px -7px 22px #3bd1b3;
+   transition: .2s;
+}
+.btn-earn3:hover::after {
+   opacity: 1;
+   transform: scale(.97);
+   border-top: 5px solid #00987a;
+   border-left: 8px solid #00ab89;
+   border-right: 8px solid #009477;
+   border-bottom: 12px solid #007c63;
+   background-color: #00ad8a;
+   color: #004739;
+   text-shadow: 0px 0px 0px #00725b;
+   box-shadow: inset 10px -5px 14px #07b592, inset -10px -7px 22px #08ab8b;
+}
+
 /* Red Allert Button */
 .redalert-btn {
    background-color: #080808;
