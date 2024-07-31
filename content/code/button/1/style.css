@@ -405,14 +405,14 @@ a {color: #fff; text-decoration: none;}
 .btn-earn3:hover::after {
    opacity: 1;
    transform: scale(.97);
-   border-top: 5px solid #00987a;
-   border-left: 8px solid #00ab89;
+   border-top: 5px solid #00a584;
+   border-left: 8px solid #009a7b;
    border-right: 8px solid #009477;
-   border-bottom: 12px solid #007c63;
-   background-color: #00ad8a;
-   color: #004739;
+   border-bottom: 12px solid #00624e;
+   background-color: #009577;
+   color: #00221b;
    text-shadow: 0px 0px 0px #00725b;
-   box-shadow: inset 10px -5px 14px #07b592, inset -10px -7px 22px #08ab8b;
+   box-shadow: inset 10px -5px 14px #008a6e, inset -10px -7px 22px #009e7f;
 }
 
 /* Red Allert Button */
