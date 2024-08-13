@@ -3,5 +3,8 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.9"
+  },
+  "dependencies": {
+    "@g-loot/css-framework": "^1.0.116"
   }
 }
