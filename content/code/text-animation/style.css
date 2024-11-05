@@ -4,6 +4,7 @@ html{
   height:100%;
   width:100%;
   background:#000000;
+  color: #e23b4a;
 }
 
 body {
@@ -21,10 +22,6 @@ body {
   font: 3em/1.5 "Chakra Petch", sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #e23b4a;
-  background: -webkit-linear-gradient(330deg, #23966c 0%, #faaa54 25%, #e23b4a 50%, #db0768 75%, #360670 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .animated-text span.letter{
