@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 html{
   height:100%;
   width:100%;
-  background:#353940;
-  color:#f66;
+  background:#000000;
+  color:#00FFCC;
 }
 
 body {
@@ -18,7 +19,9 @@ body {
 }
 
 .animated-text {
-  font: 3em/1.5 "Baloo";
+  font: 3em/1.5 "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .animated-text span.letter{
